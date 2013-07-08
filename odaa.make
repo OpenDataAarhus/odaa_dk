@@ -4,6 +4,8 @@ core = 7.x
 api = 2
 
 ; Projects
+projects[drupal][version] = "7.22"
+
 projects[apachesolr][subdir] = "contrib"
 projects[apachesolr][version] = "1.3"
 
