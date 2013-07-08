@@ -31,14 +31,14 @@ Go into your web-root and execute this command to download drupal
 
 ```sh
   ~$ cd DRUPAL/sites
-  ~$ git clone git@github.com:aakb/odaa_dk.git odaa_dk
-  ~$ mkdir -p odaa_dk/files
-  ~$ mkdir -p odaa_dk/private/files
-  ~$ mkdir -p odaa_dk/private/temp
-  ~$ cp default/default.settings.php odaa_dk/settings.php
-  ~$ chown www-data:www-data odaa_dk/files
-  ~$ chown -R www-data:www-data odaa_dk/private
-  ~$ chmod 777 odaa_dk/settings.php
+  ~$ git clone git@github.com:aakb/odaa_dk.git odaa.dk
+  ~$ mkdir -p odaa.dk/files
+  ~$ mkdir -p odaa.dk/private/files
+  ~$ mkdir -p odaa.dk/private/temp
+  ~$ cp default/default.settings.php odaa.dk/settings.php
+  ~$ chown www-data:www-data odaa.dk/files
+  ~$ chown -R www-data:www-data odaa.dk/private
+  ~$ chmod 777 odaa.dk/settings.php
 ```
 
 Next edit copy the sites file and add your local alias for the site to it. 
