@@ -62,4 +62,4 @@ Next go into the odaa.dk folder and run this command.
 
 ## Install the site
 In your browser goto http://odaa.local and run the default installation process. After that sync files and
-the database from the production system and your are ready to stater coding.
+the database from the production system and your are ready to start coding.
