@@ -45,7 +45,7 @@ Next edit copy the sites file and add your local alias for the site to it.
   
 ```sh
   ~$ cp example.sites.php sites.php  
-  ~$ nane -w sites.php
+  ~$ nano -w sites.php
 ```
 
 Add this line to the file, if your local alias is odaa.local.
@@ -54,7 +54,7 @@ Add this line to the file, if your local alias is odaa.local.
   $sites['odaa.local'] = 'odaa.dk';
 ```
 
-Next go into the odaa_dk folder and run this command.
+Next go into the odaa.dk folder and run this command.
 
 ```sh
   ~$ drush make --no-core --contrib-destination=. odaa.make -y
