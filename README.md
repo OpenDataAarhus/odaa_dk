@@ -2,11 +2,11 @@ This project is based on Drupal and creates bridge between [ckan](http://ckan.or
 Drupal as frontend.
 
 # How to build the site.
-Install the dependencies and start by downloading a fresh copy of drupal and make sure that it's ready to 
+Install the dependencies and start by downloading a fresh copy of Drupal and make sure that it's ready to
 begin the installation process (e.g. LAMP stack configured).
 
 ## Install drush
-This project uses drush make to handle contib modules and libraries (if you are using a mac you can use
+This project uses drush make to handle contib modules and libraries (if you are using a Mac you can use
 homebrew to install drush.).
 
   ~$ pear channel-discover pear.drush.org
@@ -19,9 +19,9 @@ homebrew to install drush.).
 Go into your web-root and execute this command to download drupal
 
   ~$ drush dl drupal-7.x
-	~$ mv drupal-7.x/* .
-	~$ mv drupal-7.x/.* .
-	~$ rm -r drupal-7.x
+  ~$ mv drupal-7.x/* .
+  ~$ mv drupal-7.x/.* .
+  ~$ rm -r drupal-7.x
 
 ## Prepare the site
 
@@ -46,7 +46,7 @@ Add this line to the file, if your local alias is odaa.local.
   
 Next go into the odaa_dk folder and run this command.
 
-  ~$ drush make --no-core --contrib-destination=. odaa.make
+  ~$ drush make --no-core --contrib-destination=. odaa.make -y
   
 ## Install the site
 In your browser goto http://odaa.local and run the default installation process. After that sync files and
