@@ -14,9 +14,9 @@ function odaa_user_user_login(&$edit, $account) {
   else {
     // User does not exists in CKAN, lets create one!
     $options = array(
-        'name' => $account->name,
-        'email' => $account->mail,
-        'password' => md5(uniqid()),
+      'name' => $account->name,
+      'email' => $account->mail,
+      'password' => md5(uniqid()),
     );
     // http://docs.ckan.org/en/latest/api.html#ckan.logic.action.create.user_create
     $data = _odaa_user_api_call('http://stg.odaa.dk/api/3/action/user_create', $options);
@@ -24,8 +24,7 @@ function odaa_user_user_login(&$edit, $account) {
 }
 
 /**
- * hook_menu()
- * @return array
+ * Implements hook_menu()
  */
 function odaa_user_menu() {
   $items = array();
@@ -44,7 +43,7 @@ function odaa_user_menu() {
 /**
  * Convert session id to user id
  * @param string $session_id
- * @return JSON
+ * @return JSON with uid
  */
 function _odaa_user_validate_session($session_id) {
   $uid = db_select('sessions', 's')
@@ -57,46 +56,55 @@ function _odaa_user_validate_session($session_id) {
 }
 
 /**
- * Simple internal function for API calls to CKAN
+ * Internal function for API calls to CKAN
  * @param string $call
  * @param array $data
  * @return FALSE or data array
  */
 function _odaa_user_api_call($call, $data = NULL) {
   $options = array(
-      'headers' => array(
-        'Content-Type' => 'application/json', 
-        'Accept' => 'application/json', 
-        'X-CKAN-API-Key' => '5cd01727-e833-489d-99b2-73275c683b49'
-      ),
-      'method' => 'POST',
-      'timeout' => 15,
+    'headers' => array(
+      'Content-Type' => 'application/json', 
+      'Accept' => 'application/json', 
+      'X-CKAN-API-Key' => '5cd01727-e833-489d-99b2-73275c683b49'
+    ),
+    'method' => 'POST',
+    'timeout' => 15,
   );
+
   if ($data != NULL) {
+    // Inserting post data
     $options['data'] = json_encode($data);
   }
+  
   $output = drupal_http_request($call, $options);
   
   if (($data = json_decode($output->data)) !== FALSE) {
+    // Data is JSON
     if ($data->success == 1) {
+      // Successfull request
       return $data->result;
     }
   }
+  
   return FALSE;
 }
 
 /**
- * Simple function to check if username exists in CKAN
+ * Interal function to check if username exists in CKAN
  * @param string $username
  * @return FALSE or user object
  */
 function _odaa_user_get_ckan_find_user($username) {
   // http://docs.ckan.org/en/latest/api.html#ckan.logic.action.get.user_list
+  // Get user_list
   $users = _odaa_user_api_call('http://stg.odaa.dk/api/3/action/user_list');
   foreach ($users as $user) {
     if ($user->name == $username) {
+      // User found!
       return $user;
     }
   }
+  
   return FALSE;
 }
