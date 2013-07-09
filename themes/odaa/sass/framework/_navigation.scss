@@ -141,7 +141,7 @@
   @include background-image(linear-gradient(darken($base-secondary-color, 5%), $base-secondary-color));
   @include border-radius($base-border-radius $base-border-radius 0 0);
 
-  border-bottom: 1px solid darken($base-secondary-color, 10%);
+  border-bottom: 1px dashed darken($base-secondary-color, 10%);
   font-size: $font-size-large;
   margin-bottom: 0;
   padding-top: 14px;
@@ -154,7 +154,6 @@
   padding-left: 0;
 
   > li {
-
     /* Level 1 */
     .menu-item {
       @extend .icon-angle-right;

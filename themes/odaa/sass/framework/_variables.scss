@@ -77,7 +77,7 @@ $font-bold:                       "exodemi_bold";
 $font-bold-italic:                "exodemi_bold_italic";
 $font-color-primary:              darken($base-secondary-color, 50%);
 $font-color-secondary:            transparentize($black, .3);
-$font-heading:                    "LaconicRegular";
+$font-alternate:                  "LaconicRegular";
 
 
 /* Font variables
@@ -86,7 +86,6 @@ $font-heading:                    "LaconicRegular";
 $base-font-size:                  14px;
 $base-line-height:                24px;
 $base-font-family:                $font-regular, "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
-$secondary-font-family:           $font-heading, "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
 $base-font-weight-normal:         normal;
 $base-font-weight-bold:           normal;
 
