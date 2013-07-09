@@ -1,8 +1,6 @@
 <?php
 /**
- * Create / update user information in CKAN
- * @param object $edit
- * @param object $account
+ * Implements hook_user_login()
  */
 function odaa_user_user_login(&$edit, $account) {
   // First lets check if the user is created
@@ -98,11 +96,13 @@ function _odaa_user_validate_session($session_id) {
  * @return FALSE or data array
  */
 function _odaa_user_api_call($call, $data = NULL) {
+  $api_key = variable_get('odaa_user_api_key', '');
+  
   $options = array(
     'headers' => array(
       'Content-Type' => 'application/json', 
       'Accept' => 'application/json', 
-      'X-CKAN-API-Key' => '5cd01727-e833-489d-99b2-73275c683b49'
+      'X-CKAN-API-Key' => $api_key,
     ),
     'method' => 'POST',
     'timeout' => 15,
