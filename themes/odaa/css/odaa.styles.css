@@ -460,7 +460,7 @@ body {
   background-color: white;
   color: gray;
   font-family: "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 
@@ -471,7 +471,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "LaconicRegular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "exodemi_bold";
+  font-weight: normal;
+  font-family: "LaconicRegular", "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   /* This fixes huge spaces when a heading wraps onto two lines */
   line-height: 1.2;
   margin-top: 0;
@@ -648,7 +650,7 @@ ul li {
    ========================================================================== */
 /* line 182, ../sass/framework/_base.scss */
 fieldset {
-  border-color: #999999;
+  border-color: #efefef;
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 20px;
@@ -716,14 +718,14 @@ select {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #999999), color-stop(100%, #cccccc));
-  background-image: -webkit-linear-gradient(#999999, #cccccc);
-  background-image: -moz-linear-gradient(#999999, #cccccc);
-  background-image: -o-linear-gradient(#999999, #cccccc);
-  background-image: linear-gradient(#999999, #cccccc);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efefef), color-stop(100%, #fbfbfb));
+  background-image: -webkit-linear-gradient(#efefef, #fbfbfb);
+  background-image: -moz-linear-gradient(#efefef, #fbfbfb);
+  background-image: -o-linear-gradient(#efefef, #fbfbfb);
+  background-image: linear-gradient(#efefef, #fbfbfb);
   /* Required for setting height in webkit browsers on mac */
   -webkit-appearance: menulist-button;
-  border: 1px solid gray;
+  border: 1px solid #d5d5d5;
   height: 36px;
   min-width: 100%;
   padding: 8px;
@@ -794,8 +796,8 @@ textarea[disabled] {
   -webkit-box-shadow: 0 0 0;
   -moz-box-shadow: 0 0 0;
   box-shadow: 0 0 0;
-  background-color: #a6a6a6;
-  border: 1px solid #999999;
+  background-color: #fbfbfb;
+  border: 1px solid #efefef;
 }
 
 /**
@@ -819,7 +821,7 @@ table {
 
 /* line 31, ../sass/framework/_tables.scss */
 th {
-  background-color: #999999;
+  background-color: #efefef;
   /* Drupal system stylesheet adds bottom border */
   border-bottom: 0;
 }
@@ -827,12 +829,12 @@ th {
 /* Drupal uses these */
 /* line 39, ../sass/framework/_tables.scss */
 tr.even {
-  background-color: #999999;
+  background-color: #efefef;
 }
 
 /* line 43, ../sass/framework/_tables.scss */
 tr.odd {
-  background-color: #8f8f8f;
+  background-color: #e4e4e4;
 }
 
 /* Baseline styling
@@ -845,7 +847,7 @@ tr.odd {
 .table th, table th,
 .table td,
 table td {
-  border-top: 1px solid gray;
+  border-top: 1px solid #d5d5d5;
   padding: 10px;
   text-align: left;
   vertical-align: top;
@@ -881,7 +883,7 @@ table thead:first-child tr:first-child td {
 }
 /* line 86, ../sass/framework/_tables.scss */
 .table tbody + tbody, table tbody + tbody {
-  border-top: 2px solid gray;
+  border-top: 2px solid #d5d5d5;
 }
 
 /* Condensed table w/ half padding */
@@ -900,7 +902,7 @@ table thead:first-child tr:first-child td {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  border: 1px solid gray;
+  border: 1px solid #d5d5d5;
   /* Done so we can round those corners! */
   border-collapse: separate;
   /* IE7 can't round corners anyway */
@@ -911,7 +913,7 @@ table thead:first-child tr:first-child td {
 .table-bordered th, table th,
 .table-bordered td,
 table td {
-  border-left: 1px solid gray;
+  border-left: 1px solid #d5d5d5;
 }
 /* line 125, ../sass/framework/_tables.scss */
 .table-bordered caption + thead tr:first-child th, table caption + thead tr:first-child th,
@@ -987,7 +989,7 @@ table tbody:last-child tr:last-child td:last-child {
 /* line 163, ../sass/framework/_tables.scss */
 .table-striped tbody tr:nth-child(odd) td,
 .table-striped tbody tr:nth-child(odd) th {
-  background-color: #cccccc;
+  background-color: #fbfbfb;
 }
 
 /* Hover effect.
@@ -997,7 +999,7 @@ table tbody:last-child tr:last-child td:last-child {
 .table tbody tr:hover td, table tbody tr:hover td,
 .table tbody tr:hover th,
 table tbody tr:hover th {
-  background-color: #999999;
+  background-color: #efefef;
 }
 
 /**
@@ -1155,13 +1157,13 @@ button.button,
 .tabs li.active a:hover,
 .tabs li:hover a:hover,
 .tabs li.active:hover a:hover {
-  background: #cccccc;
+  background: #fbfbfb;
   color: black;
   text-decoration: none;
 }
 /* line 44, ../sass/framework/_tabs.scss */
 .tabs li a {
-  background: #999999;
+  background: #efefef;
 }
 /* line 48, ../sass/framework/_tabs.scss */
 .tabs li a.active {
@@ -1179,7 +1181,7 @@ button.button,
 }
 /* line 62, ../sass/framework/_tabs.scss */
 .tabs.secondary li a.active {
-  background: #999999;
+  background: #efefef;
 }
 /* line 71, ../sass/framework/_tabs.scss */
 .tabs.secondary li a,
@@ -1402,11 +1404,11 @@ button.button,
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 5px #cccccc;
-  -moz-box-shadow: 0 0 5px #cccccc;
-  box-shadow: 0 0 5px #cccccc;
+  -webkit-box-shadow: 0 0 5px #efefef;
+  -moz-box-shadow: 0 0 5px #efefef;
+  box-shadow: 0 0 5px #efefef;
   background-color: white;
-  border: 1px solid #cccccc;
+  border: 1px solid #d5d5d5;
   margin-top: 20px;
 }
 @media only screen and (max-width: 768px) {
@@ -1428,10 +1430,10 @@ button.button,
   -ms-border-radius: 5px 5px 0 0;
   -o-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px dashed #e6e6e6;
   font-size: 130%;
   margin-bottom: 0;
-  padding-top: 10px;
+  padding-top: 14px;
   padding-right: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -1448,7 +1450,7 @@ button.button,
      padding left according to the nesting level. */
   /* Level 2 */
 }
-/* line 159, ../sass/framework/_navigation.scss */
+/* line 158, ../sass/framework/_navigation.scss */
 .sub-menu > li .menu-item {
   border-bottom: 1px dashed #e6e6e6;
   color: gray;
@@ -1457,38 +1459,50 @@ button.button,
   padding-bottom: 8px;
   padding-left: 20px;
 }
-/* line 169, ../sass/framework/_navigation.scss */
+/* line 168, ../sass/framework/_navigation.scss */
 .sub-menu > li .menu-item:before {
   float: left;
   font-family: "FontAwesome";
   font-size: 130%;
   margin-right: 10px;
 }
-/* line 176, ../sass/framework/_navigation.scss */
+/* line 175, ../sass/framework/_navigation.scss */
 .sub-menu > li .menu-item.active {
-  color: #e66c00;
   font-family: "exodemi_bold";
   font-weight: normal;
+  color: #e66c00;
 }
-/* line 182, ../sass/framework/_navigation.scss */
+/* line 181, ../sass/framework/_navigation.scss */
 .sub-menu > li .menu-item:hover {
   text-decoration: none;
   color: #f07100;
 }
-/* line 192, ../sass/framework/_navigation.scss */
+/* line 191, ../sass/framework/_navigation.scss */
 .sub-menu > li ul {
   border-bottom: 1px dashed #e6e6e6;
   /* Level 3 */
 }
-/* line 195, ../sass/framework/_navigation.scss */
+/* line 194, ../sass/framework/_navigation.scss */
 .sub-menu > li ul .menu-item {
   padding-left: 40px;
 }
-/* line 201, ../sass/framework/_navigation.scss */
+/* line 200, ../sass/framework/_navigation.scss */
 .sub-menu > li ul ul .menu-item {
   padding-left: 60px;
 }
-/* line 208, ../sass/framework/_navigation.scss */
+/* line 207, ../sass/framework/_navigation.scss */
+.sub-menu > li li:hover {
+  background-color: #ebebeb;
+}
+/* line 212, ../sass/framework/_navigation.scss */
+.sub-menu > li li li:hover {
+  background-color: #d6d6d6;
+}
+/* line 218, ../sass/framework/_navigation.scss */
+.sub-menu > li:hover {
+  background-color: whitesmoke;
+}
+/* line 223, ../sass/framework/_navigation.scss */
 .sub-menu > li.last .menu-item {
   border-bottom: 0;
 }
@@ -3804,7 +3818,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   background-image: -moz-linear-gradient(#e0e0e0, #f7f7f7);
   background-image: -o-linear-gradient(#e0e0e0, #f7f7f7);
   background-image: linear-gradient(#e0e0e0, #f7f7f7);
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #fbfbfb;
 }
 
 /* line 20, ../sass/layout/_layout.scss */
@@ -3851,7 +3865,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
    ========================================================================== */
 /* line 50, ../sass/layout/_layout.scss */
 .content-wrapper {
-  border-top: 1px solid #999999;
+  border-top: 1px solid #efefef;
   clear: both;
   overflow: hidden;
   padding-bottom: 20px;
@@ -3868,29 +3882,10 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 /* Layouts
    ========================================================================== */
 /* line 68, ../sass/layout/_layout.scss */
-.static-content {
-  float: right;
-  width: 33.33333%;
-  margin-right: 0%;
-  margin-left: -33.33333%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/sites/all/themes/litteratursiden/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-}
-
-/* line 72, ../sass/layout/_layout.scss */
 .front {
   /* Media queries */
 }
-/* line 73, ../sass/layout/_layout.scss */
+/* line 69, ../sass/layout/_layout.scss */
 .front .primary-content {
   float: left;
   width: 66.66667%;
@@ -3908,7 +3903,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 77, ../sass/layout/_layout.scss */
+/* line 73, ../sass/layout/_layout.scss */
 .front .secondary-content {
   clear: right;
   float: right;
@@ -3927,7 +3922,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 82, ../sass/layout/_layout.scss */
+/* line 78, ../sass/layout/_layout.scss */
 .front .tertiary-content {
   clear: left;
   float: left;
@@ -3946,7 +3941,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 86, ../sass/layout/_layout.scss */
+/* line 82, ../sass/layout/_layout.scss */
 .front .tertiary-content .spotbox:nth-child(odd) {
   clear: left;
   float: left;
@@ -3965,7 +3960,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 91, ../sass/layout/_layout.scss */
+/* line 87, ../sass/layout/_layout.scss */
 .front .tertiary-content .spotbox:nth-child(even) {
   float: right;
   width: 50%;
@@ -3983,12 +3978,12 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 96, ../sass/layout/_layout.scss */
+/* line 92, ../sass/layout/_layout.scss */
 .front .attachment-wrapper {
   clear: both;
 }
 @media only screen and (max-width: 768px) {
-  /* line 104, ../sass/layout/_layout.scss */
+  /* line 100, ../sass/layout/_layout.scss */
   .front .primary-content,
   .front .secondary-content,
   .front .tertiary-content {
@@ -4009,7 +4004,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 110, ../sass/layout/_layout.scss */
+  /* line 106, ../sass/layout/_layout.scss */
   .front .primary-content .spotbox,
   .front .primary-content .spotbox:nth-child(odd),
   .front .primary-content .spotbox:nth-child(even),
@@ -4039,7 +4034,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 /* Right sidebar only */
-/* line 121, ../sass/layout/_layout.scss */
+/* line 117, ../sass/layout/_layout.scss */
 .left-sidebar .primary-content {
   float: right;
   width: 75%;
@@ -4057,7 +4052,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 125, ../sass/layout/_layout.scss */
+/* line 121, ../sass/layout/_layout.scss */
 .left-sidebar .secondary-content {
   float: left;
   width: 25%;
@@ -4075,7 +4070,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 129, ../sass/layout/_layout.scss */
+/* line 125, ../sass/layout/_layout.scss */
 .left-sidebar .tertiary-content {
   clear: both;
   float: left;
@@ -4094,7 +4089,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 133, ../sass/layout/_layout.scss */
+/* line 129, ../sass/layout/_layout.scss */
 .left-sidebar .tertiary-content .spotbox:nth-child(odd) {
   clear: left;
   float: left;
@@ -4113,7 +4108,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 138, ../sass/layout/_layout.scss */
+/* line 134, ../sass/layout/_layout.scss */
 .left-sidebar .tertiary-content .spotbox:nth-child(even) {
   float: right;
   width: 50%;
@@ -4133,7 +4128,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 /* Both sidebars */
-/* line 147, ../sass/layout/_layout.scss */
+/* line 143, ../sass/layout/_layout.scss */
 .both-sidebars .static-content {
   float: right;
   width: 25%;
@@ -4151,7 +4146,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 151, ../sass/layout/_layout.scss */
+/* line 147, ../sass/layout/_layout.scss */
 .both-sidebars .primary-content {
   float: left;
   width: 50%;
@@ -4169,7 +4164,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 155, ../sass/layout/_layout.scss */
+/* line 151, ../sass/layout/_layout.scss */
 .both-sidebars .secondary-content {
   float: left;
   width: 25%;
@@ -4187,7 +4182,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 159, ../sass/layout/_layout.scss */
+/* line 155, ../sass/layout/_layout.scss */
 .both-sidebars .tertiary-content {
   clear: right;
   float: right;
@@ -4207,12 +4202,12 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow-y: visible;
 }
 
-/* line 167, ../sass/layout/_layout.scss */
+/* line 163, ../sass/layout/_layout.scss */
 .attachment-wrapper {
   clear: both;
 }
 
-/* line 171, ../sass/layout/_layout.scss */
+/* line 167, ../sass/layout/_layout.scss */
 .attachment-first {
   float: left;
   width: 25%;
@@ -4231,7 +4226,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow-y: visible;
 }
 
-/* line 175, ../sass/layout/_layout.scss */
+/* line 171, ../sass/layout/_layout.scss */
 .attachment-second {
   float: left;
   width: 25%;
@@ -4250,7 +4245,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow-y: visible;
 }
 
-/* line 179, ../sass/layout/_layout.scss */
+/* line 175, ../sass/layout/_layout.scss */
 .attachment-third {
   float: right;
   width: 25%;
@@ -4269,7 +4264,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow-y: visible;
 }
 
-/* line 183, ../sass/layout/_layout.scss */
+/* line 179, ../sass/layout/_layout.scss */
 .attachment-fourth {
   float: right;
   width: 25%;

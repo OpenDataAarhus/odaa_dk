@@ -34,26 +34,26 @@
         </div>
         <div class="secondary-content">
           <div class="sub-menu-wrapper">
-            <h2 class="sub-menu-title">Om Litteratursiden</h2>
+            <h2 class="sub-menu-title">Om ODAA</h2>
             <ul class="sub-menu">
-              <li><a href="#" class="menu-item"><span>Skønlitteratur</span></a></li>
-              <li><a href="#" class="menu-item"><span>Faglitteratur</span></a></li>
-              <li><a href="#" class="menu-item"><span>Game of Thrones</span></a>
+              <li><a href="#" class="menu-item"><span>FAQ</span></a></li>
+              <li><a href="#" class="menu-item"><span>Kontakt</span></a></li>
+              <li><a href="#" class="menu-item"><span>Vilkår og betingelser</span></a>
                 <ul class="sub-menu">
-                  <li><a href="#" class="menu-item"><span>Skønlitteratur</span></a></li>
+                  <li><a href="#" class="menu-item"><span>Underpunkt</span></a></li>
                   <li>
-                    <a href="#" class="menu-item"><span>Faglitteratur</span></a>
+                    <a href="#" class="menu-item"><span>Underpunkt</span></a>
                     <ul class="sub-menu">
-                      <li><a href="#" class="menu-item active"><span>Skønlitteratur</span></a></li>
-                      <li><a href="#" class="menu-item"><span>Faglitteratur</span></a></li>
-                      <li class="last"><a href="#" class="menu-item"><span>Game of Thrones</span></a></li>
+                      <li><a href="#" class="menu-item active"><span>Underpunkt</span></a></li>
+                      <li><a href="#" class="menu-item"><span>Underpunkt</span></a></li>
+                      <li class="last"><a href="#" class="menu-item"><span>Underpunkt</span></a></li>
                     </ul>
                   </li>
-                  <li class="last"><a href="#" class="menu-item"><span>Game of Thrones</span></a></li>
+                  <li class="last"><a href="#" class="menu-item"><span>Nyhedsbrev</span></a></li>
                 </ul>
               </li>
-              <li><a href="#" class="menu-item"><span>Skønlitteratur</span></a></li>
-              <li class="last"><a href="#" class="menu-item"><span>Faglitteratur</span></a></li>
+              <li><a href="#" class="menu-item"><span>Something else</span></a></li>
+              <li class="last"><a href="#" class="menu-item"><span>Open Source</span></a></li>
             </ul>
           </div>
         </div>
