@@ -25,8 +25,6 @@
    ========================================================================== */
 /* Links
    ========================================================================== */
-/* Articles (used in modules e.g. news, events)
-   ========================================================================== */
 /**
  * Mixins
  *
@@ -3938,10 +3936,8 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
-  padding-right: 0;
-  padding-left: 0;
 }
-/* line 89, ../sass/layout/_layout.scss */
+/* line 86, ../sass/layout/_layout.scss */
 .front .tertiary-content .spotbox:nth-child(odd) {
   clear: left;
   float: left;
@@ -3960,7 +3956,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 94, ../sass/layout/_layout.scss */
+/* line 91, ../sass/layout/_layout.scss */
 .front .tertiary-content .spotbox:nth-child(even) {
   float: right;
   width: 50%;
@@ -3978,12 +3974,12 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 99, ../sass/layout/_layout.scss */
+/* line 96, ../sass/layout/_layout.scss */
 .front .attachment-wrapper {
   clear: both;
 }
 @media only screen and (max-width: 768px) {
-  /* line 107, ../sass/layout/_layout.scss */
+  /* line 104, ../sass/layout/_layout.scss */
   .front .primary-content,
   .front .secondary-content,
   .front .tertiary-content {
@@ -4004,7 +4000,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 113, ../sass/layout/_layout.scss */
+  /* line 110, ../sass/layout/_layout.scss */
   .front .primary-content .spotbox,
   .front .primary-content .spotbox:nth-child(odd),
   .front .primary-content .spotbox:nth-child(even),
@@ -4034,7 +4030,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 /* Right sidebar only */
-/* line 124, ../sass/layout/_layout.scss */
+/* line 121, ../sass/layout/_layout.scss */
 .right-sidebar .primary-content {
   float: left;
   width: 66.66667%;
@@ -4052,7 +4048,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 128, ../sass/layout/_layout.scss */
+/* line 125, ../sass/layout/_layout.scss */
 .right-sidebar .secondary-content {
   clear: right;
   float: right;
@@ -4071,7 +4067,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 133, ../sass/layout/_layout.scss */
+/* line 130, ../sass/layout/_layout.scss */
 .right-sidebar .tertiary-content {
   clear: left;
   float: left;
@@ -4092,7 +4088,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   padding-right: 0;
   padding-left: 0;
 }
-/* line 140, ../sass/layout/_layout.scss */
+/* line 137, ../sass/layout/_layout.scss */
 .right-sidebar .tertiary-content .spotbox:nth-child(odd) {
   clear: left;
   float: left;
@@ -4111,7 +4107,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 145, ../sass/layout/_layout.scss */
+/* line 142, ../sass/layout/_layout.scss */
 .right-sidebar .tertiary-content .spotbox:nth-child(even) {
   float: right;
   width: 50%;
@@ -4131,7 +4127,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 /* Both sidebars */
-/* line 154, ../sass/layout/_layout.scss */
+/* line 151, ../sass/layout/_layout.scss */
 .both-sidebars .static-content {
   float: right;
   width: 25%;
@@ -4149,7 +4145,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 158, ../sass/layout/_layout.scss */
+/* line 155, ../sass/layout/_layout.scss */
 .both-sidebars .primary-content {
   float: left;
   width: 50%;
@@ -4167,7 +4163,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 162, ../sass/layout/_layout.scss */
+/* line 159, ../sass/layout/_layout.scss */
 .both-sidebars .secondary-content {
   float: left;
   width: 25%;
@@ -4185,7 +4181,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 166, ../sass/layout/_layout.scss */
+/* line 163, ../sass/layout/_layout.scss */
 .both-sidebars .tertiary-content {
   clear: right;
   float: right;
@@ -4205,12 +4201,12 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow-y: visible;
 }
 
-/* line 174, ../sass/layout/_layout.scss */
+/* line 171, ../sass/layout/_layout.scss */
 .attachment-wrapper {
   clear: both;
 }
 
-/* line 178, ../sass/layout/_layout.scss */
+/* line 175, ../sass/layout/_layout.scss */
 .attachment-first {
   float: left;
   width: 25%;
@@ -4229,7 +4225,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow-y: visible;
 }
 
-/* line 182, ../sass/layout/_layout.scss */
+/* line 179, ../sass/layout/_layout.scss */
 .attachment-second {
   float: left;
   width: 25%;
@@ -4248,7 +4244,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow-y: visible;
 }
 
-/* line 186, ../sass/layout/_layout.scss */
+/* line 183, ../sass/layout/_layout.scss */
 .attachment-third {
   float: right;
   width: 25%;
@@ -4267,7 +4263,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow-y: visible;
 }
 
-/* line 190, ../sass/layout/_layout.scss */
+/* line 187, ../sass/layout/_layout.scss */
 .attachment-fourth {
   float: right;
   width: 25%;
