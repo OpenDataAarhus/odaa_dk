@@ -1,0 +1,69 @@
+<?php
+/**
+ * Implementation of hook_form_alter().
+ * Change the normal form login form behaviour.
+ */
+function odaa_user_form_user_login_alter(&$form, $form_state) {
+  $form['#validate'] = array(
+    'user_login_name_validate', 
+    'odaa_user_login_validate', 
+    'user_login_final_validate'
+  );
+} 
+
+/**
+ * Implementation of hook_form_alter().
+ * Change the normal form login form behaviour.
+ */
+function odaa_user_form_user_login_block_alter(&$form, $form_state) {
+  $form['#validate'] = array(
+    'user_login_name_validate', 
+    'odaa_user_login_validate', 
+    'user_login_final_validate'
+  );  
+}
+/**
+ * Form validate, if user exist, log the user in, else create it and log the newly created user in
+ * @param type $form
+ * @param type $form_state
+ */
+function odaa_user_login_validate($form, &$form_state) {
+  $username = $form_state['values']['name'];
+  if (_odaa_user_check_user($username, $form_state['values']['pass'])) {
+    user_external_login_register($username, 'odaa_user' );
+    $account = _odaa_user_external_load($username);
+    $form_state['uid'] = $account->uid;
+  }
+}
+
+/**
+ * Validate with external CKAN
+ * @param type $username
+ * @param type $password
+ * @return boolean
+ */
+function _odaa_user_check_user($username, $password) {
+  try {
+    // here goes the login validate talk talk to CKAN
+    if ($username && $password) {
+      return true;
+    }
+    return false;
+  }
+  catch (Exception $e) {
+    watchdog('odaa_user', print_r($e, true));
+    return false;
+  }
+}
+
+/**
+ * Load user from CKAN
+ * @param type $username
+ * @return \stdClass
+ */
+function _odaa_user_external_load($username) {
+  $user = new stdClass;
+  $user->uid = rand(10, 1000);
+  
+  return $user;
+}
