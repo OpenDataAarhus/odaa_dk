@@ -17,8 +17,3 @@
   regions[content]           = Primary content
   regions[secondary_content] = Secondary content
   regions[tertiary_content]  = Tertiary content
-  regions[attachment_first]  = Attachment first
-  regions[attachment_second] = Attachment second
-  regions[attachment_third]  = Attachment third
-  regions[attachment_fourth] = Attachment fourth
-  regions[footer]            = Footer
