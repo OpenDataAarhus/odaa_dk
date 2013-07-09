@@ -745,11 +745,11 @@ textarea {
   -moz-transition: all 0.15s linear;
   -o-transition: all 0.15s linear;
   transition: all 0.15s linear;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1012,11 +1012,11 @@ table tbody tr:hover th {
 /* line 31, ../sass/framework/_buttons.scss */
 .button, #block-user-0 #user-login-form .form-submit,
 a.button {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
   font-family: "ChivoBlack";
   font-weight: normal;
   display: inline-block;
@@ -1138,11 +1138,11 @@ button.button,
 .tabs li.active a,
 .tabs li:hover a,
 .tabs li.active:hover a {
-  -webkit-border-radius: 3px 3px 0 0;
-  -moz-border-radius: 3px 3px 0 0;
-  -ms-border-radius: 3px 3px 0 0;
-  -o-border-radius: 3px 3px 0 0;
-  border-radius: 3px 3px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
   border: none;
   display: block;
   line-height: 31.2px;
@@ -1186,11 +1186,11 @@ button.button,
 .tabs.secondary li.active a,
 .tabs.secondary li:hover a,
 .tabs.secondary li.active:hover a {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
 
 /**
@@ -1305,11 +1305,11 @@ button.button,
 }
 /* line 52, ../sass/framework/_navigation.scss */
 .main-menu .menu-item {
-  -webkit-border-radius: 3px 3px 0 0;
-  -moz-border-radius: 3px 3px 0 0;
-  -ms-border-radius: 3px 3px 0 0;
-  -o-border-radius: 3px 3px 0 0;
-  border-radius: 3px 3px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
   font-family: "ChivoBlack";
   font-weight: normal;
@@ -1397,18 +1397,17 @@ button.button,
    ========================================================================== */
 /* line 127, ../sass/framework/_navigation.scss */
 .sub-menu-wrapper {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
   -webkit-box-shadow: 0 0 5px #cccccc;
   -moz-box-shadow: 0 0 5px #cccccc;
   box-shadow: 0 0 5px #cccccc;
   background-color: white;
   border: 1px solid #cccccc;
   margin-top: 20px;
-  padding: 20px;
 }
 @media only screen and (max-width: 768px) {
   /* line 127, ../sass/framework/_navigation.scss */
@@ -1417,73 +1416,80 @@ button.button,
   }
 }
 
-/* line 141, ../sass/framework/_navigation.scss */
+/* line 140, ../sass/framework/_navigation.scss */
 .sub-menu-title {
-  -webkit-border-radius: 3px 0 0 3px;
-  -moz-border-radius: 3px 0 0 3px;
-  -ms-border-radius: 3px 0 0 3px;
-  -o-border-radius: 3px 0 0 3px;
-  border-radius: 3px 0 0 3px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(#f2f2f2, #ffffff);
+  background-image: -moz-linear-gradient(#f2f2f2, #ffffff);
+  background-image: -o-linear-gradient(#f2f2f2, #ffffff);
+  background-image: linear-gradient(#f2f2f2, #ffffff);
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
   border-bottom: 1px solid #e6e6e6;
   font-size: 130%;
   margin-bottom: 0;
+  padding-top: 10px;
+  padding-right: 10px;
   padding-bottom: 10px;
+  padding-left: 10px;
 }
 
-/* line 150, ../sass/framework/_navigation.scss */
+/* line 153, ../sass/framework/_navigation.scss */
 .sub-menu {
   padding-left: 0;
 }
-/* line 153, ../sass/framework/_navigation.scss */
+/* line 156, ../sass/framework/_navigation.scss */
 .sub-menu > li {
-  -webkit-border-radius: 3px 0 0 3px;
-  -moz-border-radius: 3px 0 0 3px;
-  -ms-border-radius: 3px 0 0 3px;
-  -o-border-radius: 3px 0 0 3px;
-  border-radius: 3px 0 0 3px;
-  border-bottom: 1px solid #e6e6e6;
+  /* Level 1 */
+  /* We want the border bottom to have full width so we have to increase
+     padding left according to the nesting level. */
+  /* Level 2 */
 }
-/* line 158, ../sass/framework/_navigation.scss */
-.sub-menu > li a {
+/* line 159, ../sass/framework/_navigation.scss */
+.sub-menu > li .menu-item {
+  border-bottom: 1px dashed #e6e6e6;
   color: gray;
   display: block;
   padding-top: 10px;
   padding-bottom: 8px;
-  padding-left: 35px;
+  padding-left: 20px;
 }
-/* line 165, ../sass/framework/_navigation.scss */
-.sub-menu > li a.active {
-  font-family: "ChivoBlack";
-  font-weight: normal;
-}
-/* line 170, ../sass/framework/_navigation.scss */
-.sub-menu > li a:hover {
-  text-decoration: none;
-  color: #f07100;
-}
-/* line 180, ../sass/framework/_navigation.scss */
-.sub-menu li:before {
+/* line 169, ../sass/framework/_navigation.scss */
+.sub-menu > li .menu-item:before {
   float: left;
   font-family: "FontAwesome";
   font-size: 130%;
-  margin-top: 9px;
-  margin-left: 1px;
+  margin-right: 10px;
 }
-/* line 191, ../sass/framework/_navigation.scss */
-.sub-menu ul li {
-  padding-left: 10px;
-}
-/* line 194, ../sass/framework/_navigation.scss */
-.sub-menu ul li li {
-  border-left: 0;
-  padding-left: 25px;
-}
-/* line 198, ../sass/framework/_navigation.scss */
-.sub-menu ul li li .active {
+/* line 176, ../sass/framework/_navigation.scss */
+.sub-menu > li .menu-item.active {
   color: #e66c00;
+  font-family: "ChivoBlack";
+  font-weight: normal;
 }
-/* line 203, ../sass/framework/_navigation.scss */
-.sub-menu ul li.last {
+/* line 182, ../sass/framework/_navigation.scss */
+.sub-menu > li .menu-item:hover {
+  text-decoration: none;
+  color: #f07100;
+}
+/* line 192, ../sass/framework/_navigation.scss */
+.sub-menu > li ul {
+  border-bottom: 1px dashed #e6e6e6;
+  /* Level 3 */
+}
+/* line 195, ../sass/framework/_navigation.scss */
+.sub-menu > li ul .menu-item {
+  padding-left: 40px;
+}
+/* line 201, ../sass/framework/_navigation.scss */
+.sub-menu > li ul ul .menu-item {
+  padding-left: 60px;
+}
+/* line 208, ../sass/framework/_navigation.scss */
+.sub-menu > li.last .menu-item {
   border-bottom: 0;
 }
 
@@ -3134,7 +3140,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 /* line 245, ../sass/framework/fontawesome/scss/_icons.scss */
-.icon-angle-right:before, .main-menu li:before, .sub-menu li:before {
+.icon-angle-right:before, .main-menu li:before, .sub-menu > li .menu-item:before {
   content: "\f105";
 }
 
@@ -4467,9 +4473,9 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 /* line 43, ../sass/module/_module.scss */
 .spotbox--inner, .create-user .create-user-inner, .user--block--logged-in-inner {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   overflow: hidden;
 }
 
@@ -4607,9 +4613,9 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 /* %module--block image */
 /* line 180, ../sass/module/_module.scss */
 .spotbox--image {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.25);
   float: right;
   margin-top: 20px;
@@ -4624,9 +4630,9 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 /* %module--block list image */
 /* line 196, ../sass/module/_module.scss */
 .spotbox--list-image {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.25);
   float: left;
   margin-right: 15px;
@@ -4959,9 +4965,9 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 /* line 172, ../sass/module/_user.scss */
 .user--block--logged-in-user-image {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.25);
   max-width: 50px;
   overflow: hidden;

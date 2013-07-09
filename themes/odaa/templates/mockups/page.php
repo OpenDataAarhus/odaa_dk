@@ -38,11 +38,11 @@
             <ul class="sub-menu">
               <li><a href="#" class="menu-item"><span>Skønlitteratur</span></a></li>
               <li><a href="#" class="menu-item"><span>Faglitteratur</span></a></li>
-              <li class="last"><a href="#" class="menu-item active"><span>Game of Thrones</span></a>
+              <li><a href="#" class="menu-item"><span>Game of Thrones</span></a>
                 <ul class="sub-menu">
                   <li><a href="#" class="menu-item"><span>Skønlitteratur</span></a></li>
                   <li>
-                    <a href="#" class="menu-item active"><span>Faglitteratur</span></a>
+                    <a href="#" class="menu-item"><span>Faglitteratur</span></a>
                     <ul class="sub-menu">
                       <li><a href="#" class="menu-item active"><span>Skønlitteratur</span></a></li>
                       <li><a href="#" class="menu-item"><span>Faglitteratur</span></a></li>
@@ -52,6 +52,8 @@
                   <li class="last"><a href="#" class="menu-item"><span>Game of Thrones</span></a></li>
                 </ul>
               </li>
+              <li><a href="#" class="menu-item"><span>Skønlitteratur</span></a></li>
+              <li class="last"><a href="#" class="menu-item"><span>Faglitteratur</span></a></li>
             </ul>
           </div>
         </div>
