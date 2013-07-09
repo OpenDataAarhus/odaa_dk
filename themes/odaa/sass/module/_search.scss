@@ -1,0 +1,42 @@
+/**
+ * Search
+ *
+ * @author magnify
+ */
+
+
+
+/* Search form
+   ========================================================================== */
+
+.search-form {
+  @include opacity(.9);
+
+  bottom: 1px;
+  position: absolute;
+  right: 10px;
+
+  .search-form-text,
+  .button {
+    float: left;
+  }
+
+  .search-form-text {
+    @include box-sizing(border-box);
+
+    border: 1px solid transparentize($black, .1);
+    min-width: 370px;
+    padding-right: 85px;
+  }
+
+  .button {
+    @include box-sizing(border-box);
+
+    border: 1px solid transparentize($black, .5);
+    /* Use javascript to display button */
+    display: none;
+    margin-left: -75px;
+    min-width: 75px;
+    padding-bottom: 9px;
+  }
+}

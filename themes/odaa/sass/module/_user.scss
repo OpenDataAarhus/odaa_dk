@@ -1,0 +1,292 @@
+/**
+ * User
+ *
+ * @author magnify
+ */
+
+
+
+/* User login
+   ========================================================================== */
+
+.user-login {
+  @include zen-grid-item(8, 1, right);
+
+  margin-top: 15px;
+  padding-right: 0;
+  position: relative;
+  text-align: right;
+
+  .username-wrapper,
+  .password-wrapper {
+    min-width: 300px;
+  }
+
+  .user-login-label {
+    @include font-bold();
+
+    color: $font-color-secondary;
+    display: inline-block;
+    margin-bottom: 3px;
+  }
+
+  .username-wrapper,
+  .password-wrapper {
+    display: inline-block;
+    margin-right: 5px;
+    text-align: left;
+  }
+
+  .button {
+    position: absolute;
+    right: 0;
+    top: 28px;
+  }
+
+  .user-login-new-user {
+    color: $font-color-secondary;
+  }
+}
+
+
+/* Create user
+   ========================================================================== */
+
+.create-user {
+  @include text-shadow(1px 1px 0 transparentize($black, .5));
+
+  color: $white;
+  margin-top: $large-spacing;
+
+  .create-user-inner {
+    @extend %module--block--inner;
+
+    background: transparentize(darken($base-secondary-color, 50%), .3) url('../images/ribbon-free.png') no-repeat 15px -10px;
+    padding: $large-spacing;
+  }
+
+  .create-user-header {
+    margin-left: 65px;
+  }
+
+  .create-user-form-wrapper {
+    display: none;
+  }
+
+  .create-user-form {
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  .create-user-label {
+    @include font-bold();
+
+    display: inline-block;
+    margin-bottom: 3px;
+  }
+
+  input[type="text"] {
+    border: 1px solid darken($base-primary-color, 15%);
+
+    &:focus {
+      border: 1px solid darken($base-primary-color, 20%);
+    }
+  }
+
+  .create-user-buttons {
+    padding-top: 10px;
+    text-align: center;
+
+    .create-user-splitter-text {
+      @include font-bold();
+
+      margin-top: 10px;
+    }
+
+    .button {
+      @include box-sizing(border-box);
+
+      border: 1px solid transparentize($black, .4);
+      width: 207px;
+    }
+  }
+
+  .button {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+
+/* User logged in
+   ========================================================================== */
+
+.user--block--logged-in {
+  @include text-shadow(1px 1px 0 transparentize($black, .5));
+
+  color: $white;
+  margin-top: $large-spacing;
+  position: relative;
+
+  a:link {
+    color: $white;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: darken($white, 3%);
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus {
+    color: $base-primary-color;
+    text-decoration: none;
+  }
+}
+
+
+.user--block--logged-in-inner {
+  @extend %module--block--inner;
+
+  background-color: transparentize(darken($base-secondary-color, 50%), .3);
+}
+
+
+.user--block--logged-in-header {
+  background-color: darken($base-secondary-color, 50%);
+  margin-bottom: 0;
+  min-height: 62px;
+  padding-top: 15px;
+  padding-right: $large-spacing;
+  padding-bottom: 15px;
+  padding-left: $large-spacing;
+
+  /* Make room for user image */
+  padding-right: 70px;
+}
+
+
+.user--block--logged-in-user-image {
+  @include border-radius($base-border-radius);
+
+  border: 1px solid transparentize($black, .75);
+  max-width: 50px;
+  overflow: hidden;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+
+.user--block--logged-in-content {
+  @include font-bold();
+  @extend %module--block--content;
+
+  font-size: $font-size-medium;
+  padding: 0;
+}
+
+
+.user--block--logged-in-list {
+  @extend %module--block--list;
+}
+
+
+.user--block--logged-in-list-item {
+  @extend %module--block--list-item;
+}
+
+
+.user--block--logged-in-my-account,
+.user--block--logged-in-add-content {
+  i[class^="icon-"] {
+    float: left;
+    font-size: $font-size-large;
+    margin-right: 10px;
+    padding-left: 2px;
+    vertical-align: top;
+  }
+}
+
+
+.user--block--logged-in-link {
+  float: left;
+  padding-top: 1px;
+}
+
+/* Litteratursiden out the box Drupal */
+
+// User login block placed in site header
+#block-user-0 {
+  @extend .user-login;
+
+  h2 {
+    display: none;
+  }
+
+  label {
+    @extend .user-login-label;
+  }
+
+  .form-item {
+    margin: 0;
+    padding: 0;
+  }
+
+  #edit-persistent-login-wrapper {
+    display: none;
+  }
+
+  #user-login-form {
+    @extend .user-login--form;
+
+    text-align: right;
+
+    #edit-name-wrapper {
+      @extend .username-wrapper;
+    }
+
+    #edit-pass-wrapper {
+      @extend .password-wrapper;
+
+      padding-right: 91px;
+    }
+
+    .form-submit {
+      @extend .button;
+
+      top: 27px;
+    }
+  }
+
+  .item-list {
+    @extend .user-login-new-user;
+
+    display: inline-block;
+
+    ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+      float: left;
+      margin-right: 20px;
+
+      &.last {
+        margin-right: 5px;
+      }
+
+      &.openid-link a {
+        padding-right: 0;
+      }
+    }
+  }
+}
+// EOF User login block-user-0
+
+

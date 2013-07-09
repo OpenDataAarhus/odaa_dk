@@ -1,0 +1,24 @@
+;----------// Theme Information
+  name        = ODAA - Open Data Aarhus
+  description = Theme for the Open Data Aarhus project
+  core        = 7.x
+  release     = 7.x-1.x
+
+
+;----------// Stylesheets
+
+
+;----------// JavaScripts
+
+
+;----------// Regions
+  regions[header]            = Header
+  regions[navigation]        = Navigation
+  regions[content]           = Primary content
+  regions[secondary_content] = Secondary content
+  regions[tertiary_content]  = Tertiary content
+  regions[attachment_first]  = Attachment first
+  regions[attachment_second] = Attachment second
+  regions[attachment_third]  = Attachment third
+  regions[attachment_fourth] = Attachment fourth
+  regions[footer]            = Footer

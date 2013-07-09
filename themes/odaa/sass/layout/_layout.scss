@@ -1,0 +1,204 @@
+/**
+ * Layout
+ *
+ * Base layout stuff
+ *
+ * @author magnify
+ */
+
+
+
+/* Site header
+   ========================================================================== */
+
+.site-header {
+  @include box-sizing(border-box);
+
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  min-height: 243px;
+  overflow: hidden;
+  position: relative;
+}
+
+.site-header-inner {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.header-wrapper {
+  bottom: 0;
+  clear: both;
+  left: 10px;
+  overflow: hidden;
+  position: absolute;
+  right: 10px;
+
+  .header-inner {
+    margin-top: 10px;
+  }
+}
+
+.secondary-header-wrapper {
+  clear: both;
+  overflow: hidden;
+}
+
+
+/* Logo
+   ========================================================================== */
+
+.logo {
+  @include zen-grid-item(4, 1);
+
+  margin-top: 30px;
+  padding-left: 0;
+}
+
+
+/* Content
+   ========================================================================== */
+
+.content-wrapper {
+  clear: both;
+  overflow: hidden;
+  padding-bottom: $large-spacing;
+}
+
+.content-inner {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  overflow: visible;
+}
+
+
+/* Layouts
+   ========================================================================== */
+
+.static-content {
+  @include zen-grid-item(4, 1, right);
+}
+
+.front {
+  .primary-content {
+    @include zen-grid-item(8, 1);
+  }
+
+  .secondary-content {
+    @include zen-clear(right);
+    @include zen-grid-item(4, 1, right);
+  }
+
+  .tertiary-content {
+    @include zen-clear(left);
+    @include zen-grid-item(8, 1);
+
+    padding-right: 0;
+    padding-left: 0;
+
+    .spotbox:nth-child(odd) {
+      @include zen-clear(left);
+      @include zen-grid-item(6, 1);
+    }
+
+    .spotbox:nth-child(even) {
+      @include zen-grid-item(6, 1, right);
+    }
+  }
+
+  .attachment-wrapper {
+    @include zen-clear(both);
+  }
+
+  /* Media queries */
+  @include small-medium() {
+    .primary-content,
+    .secondary-content,
+    .tertiary-content {
+      @include zen-clear();
+      @include zen-grid-item(12, 1);
+
+      .spotbox,
+      .spotbox:nth-child(odd),
+      .spotbox:nth-child(even) {
+        @include zen-clear();
+        @include zen-grid-item(12, 1);
+      }
+    }
+  }
+}
+
+
+/* Right sidebar only */
+.right-sidebar {
+  .primary-content {
+    @include zen-grid-item(8, 1);
+  }
+
+  .secondary-content {
+    @include zen-clear(right);
+    @include zen-grid-item(4, 1, right);
+  }
+
+  .tertiary-content {
+    @include zen-clear(left);
+    @include zen-grid-item(8, 1);
+
+    padding-right: 0;
+    padding-left: 0;
+
+    .spotbox:nth-child(odd) {
+      @include zen-clear(left);
+      @include zen-grid-item(6, 1);
+    }
+
+    .spotbox:nth-child(even) {
+      @include zen-grid-item(6, 1, right);
+    }
+  }
+}
+
+
+/* Both sidebars */
+.both-sidebars {
+  .static-content {
+    @include zen-grid-item(3, 1, right);
+  }
+
+  .primary-content {
+    @include zen-grid-item(6, 4);
+  }
+
+  .secondary-content {
+    @include zen-grid-item(3, 1);
+  }
+
+  .tertiary-content {
+    @include zen-clear(right);
+    @include zen-grid-item(3, 1, right);
+  }
+}
+
+
+
+.attachment-wrapper {
+  @include zen-clear(both);
+}
+
+.attachment-first {
+  @include zen-grid-item(3, 1);
+}
+
+.attachment-second {
+  @include zen-grid-item(3, 4);
+}
+
+.attachment-third {
+  @include zen-grid-item(3, 4, right);
+}
+
+.attachment-fourth {
+  @include zen-grid-item(3, 1, right);
+}

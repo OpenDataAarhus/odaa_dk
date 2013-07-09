@@ -1,0 +1,211 @@
+/**
+ * Spotbox
+ *
+ * @author magnify
+ */
+
+
+
+/* Spotbox
+   ========================================================================== */
+
+
+/* Spotbox links */
+.spotbox {
+  @extend %module--block;
+}
+
+.spotbox--content,
+.spotbox--meta-wrapper {
+  a:link {
+    color: $link-color;
+  }
+
+  a:visited {
+    color: darken($link-color, 5%);
+  }
+}
+
+
+.spotbox--inner {
+  @extend %module--block--inner;
+
+  background-color: $base-secondary-color;
+}
+
+
+/* Spotbox header */
+.spotbox--header {
+  @extend %module--block--header;
+}
+
+.spotbox--header-label {
+  @extend %module--block--header-label;
+}
+
+
+.spotbox--list-header-label {
+  @extend %module--block--list-header-label;
+}
+
+
+.spotbox--list-header {
+  @extend %module--block--list-header;
+}
+
+
+/* Spotbox content */
+.spotbox--content-wrapper {
+  @extend %module--block--content-wrapper;
+}
+
+.spotbox--content {
+  @extend %module--block--content;
+}
+
+.spotbox--meta-wrapper {
+  @extend %module--block--meta-wrapper;
+}
+
+
+/* Spotbox list */
+.spotbox--list {
+  @extend %module--block--list;
+}
+
+.spotbox--list-item {
+  @extend %module--block--list-item;
+}
+
+.spotbox--list-posted {
+  @extend %module--block--list-posted;
+}
+
+
+/* Spotbox list latest */
+.spotbox--list-latest {
+  @extend %module--block--list;
+
+  .spotbox--list-image {
+    @include border-radius(0);
+  }
+
+  .spotbox--list-header,
+  .spotbox--content,
+  .spotbox--meta-wrapper {
+    margin-left: 50px;
+  }
+
+  .spotbox--content {
+    padding-top: 10px;
+  }
+
+}
+
+
+.spotbox--date {
+  @extend %module--block--date;
+}
+
+
+/* Spotbox images */
+.spotbox--image {
+  @extend %module--block--image;
+}
+
+
+.spotbox--list-image {
+  @extend %module--block--list-image;
+}
+
+
+/* Spotbox footer */
+.spotbox--footer {
+  @extend %module--block--footer;
+}
+
+.spotbox--read-more {
+  @extend %module--block--read-more;
+}
+
+
+/* Spotboxes in primary content
+   ========================================================================== */
+
+.primary-content {
+  .spotbox--inner {
+    @include background-image(linear-gradient(darken($base-secondary-color, 5%), $base-secondary-color));
+
+    background-color: $base-secondary-color;
+  }
+
+  .spotbox--list-label {
+    @include opacity(.75);
+  }
+
+  .spotbox--list-header {
+    @include font-bold();
+  }
+
+  /* Reset margin bottom on last spotbox in primary content */
+  .spotbox:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+/* Spotboxes in secondary content
+   ========================================================================== */
+
+.secondary-content {
+  .spotbox--inner {
+    @include background-image(linear-gradient(lighten($base-secondary-color, 5%), $base-secondary-color));
+
+    background-color: $base-secondary-color;
+  }
+
+  .spotbox--header {
+    font-size: $font-size-large;
+  }
+
+  .spotbox--content {
+  }
+}
+
+
+/* Spotboxes in tertiary content
+   ========================================================================== */
+
+.tertiary-content {
+  .spotbox--inner {
+    @include background-image(linear-gradient(lighten($base-secondary-color, 8%), lighten($base-secondary-color, 5%)));
+
+    background-color: lighten($base-tertiary-color, 5%);
+  }
+
+  .spotbox--header {
+    font-size: $font-size-large;
+  }
+}
+
+
+/* Spotboxes as attachment
+   ========================================================================== */
+
+.attachment-wrapper {
+  .spotbox--inner {
+    background-color: lighten($base-tertiary-color, 5%);
+  }
+
+  .spotbox--header {
+    font-size: $font-size-medium;
+  }
+
+  .spotbox--image {
+    max-width: 50px;
+  }
+
+  .spotbox--content {
+    display: none;
+  }
+}
