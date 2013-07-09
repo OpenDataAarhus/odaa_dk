@@ -126,10 +126,11 @@
 
 .sub-menu-wrapper {
   @include border-radius($base-border-radius);
+  @include box-shadow(0 0 5px $gray-lighter);
 
   background-color: $base-secondary-color;
+  border: 1px solid $gray-lighter;
   margin-top: $large-spacing;
-  padding: $large-spacing;
 
   @include small-medium() {
     display: none;
@@ -137,31 +138,43 @@
 }
 
 .sub-menu-title {
-  @include border-radius($base-border-radius 0 0 $base-border-radius);
+  @include background-image(linear-gradient(darken($base-secondary-color, 5%), $base-secondary-color));
+  @include border-radius($base-border-radius $base-border-radius 0 0);
 
   border-bottom: 1px solid darken($base-secondary-color, 10%);
   font-size: $font-size-large;
   margin-bottom: 0;
+  padding-top: $medium-spacing;
+  padding-right: $medium-spacing;
   padding-bottom: $medium-spacing;
+  padding-left: $medium-spacing;
 }
 
 .sub-menu {
   padding-left: 0;
 
   > li {
-    @include border-radius($base-border-radius 0 0 $base-border-radius);
 
-    border-bottom: 1px solid darken($base-secondary-color, 10%);
+    /* Level 1 */
+    .menu-item {
+      @extend .icon-angle-right;
 
-    a {
+      border-bottom: 1px dashed darken($base-secondary-color, 10%);
       color: $font-color-primary;
       display: block;
-      margin-left: -20px;
       padding-top: 10px;
       padding-bottom: 8px;
-      padding-left: 35px;
+      padding-left: 20px;
+
+      &:before {
+        float: left;
+        font-family: $base-icon-library-font;
+        font-size: $font-size-large;
+        margin-right: 10px;
+      }
 
       &.active {
+        color: $link-color;
         font-family: $font-bold;
         font-weight: $base-font-weight-bold;
       }
@@ -171,36 +184,28 @@
         color: $link-color-hover;
       }
     }
-  }
 
-  li {
-    @extend .icon-angle-right;
+    /* We want the border bottom to have full width so we have to increase
+       padding left according to the nesting level. */
 
-    &:before {
-      float: left;
-      font-family: $base-icon-library-font;
-      font-size: $font-size-large;
-      margin-top: 9px;
-      margin-left: 1px;
-    }
+    /* Level 2 */
+    ul {
+      border-bottom: 1px dashed darken($base-secondary-color, 10%);
 
-  }
-
-  ul {
-    li {
-      border-left: 7px solid darken($base-secondary-color, 10%);
-      padding-left: 10px;
-
-      li {
-        border-left: 0;
-        padding-left: 25px;
-
-        .active {
-          color: $link-color;
-        }
+      .menu-item {
+        padding-left: 40px;
       }
 
-      &.last {
+      /* Level 3 */
+      ul {
+        .menu-item {
+          padding-left: 60px;
+        }
+      }
+    }
+
+    &.last {
+      .menu-item {
         border-bottom: 0;
       }
     }

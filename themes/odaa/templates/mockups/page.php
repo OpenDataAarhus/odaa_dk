@@ -18,7 +18,7 @@
   <title>Welcome to dev.odaa.dk | dev.odaa.dk</title>
   <link type="text/css" rel="stylesheet" href="/sites/odaa.dk/themes/odaa/css/odaa.styles.css" media="all" />
 </head>
-<body class="html front not-logged-in no-sidebars page-node">
+<body class="left-sidebar">
   <div id="page" class="page">
     <header class="site-header">
       <section class="header-wrapper">
@@ -33,7 +33,29 @@
           Primary content
         </div>
         <div class="secondary-content">
-          Secondary content
+          <div class="sub-menu-wrapper">
+            <h2 class="sub-menu-title">Om Litteratursiden</h2>
+            <ul class="sub-menu">
+              <li><a href="#" class="menu-item"><span>Skønlitteratur</span></a></li>
+              <li><a href="#" class="menu-item"><span>Faglitteratur</span></a></li>
+              <li><a href="#" class="menu-item"><span>Game of Thrones</span></a>
+                <ul class="sub-menu">
+                  <li><a href="#" class="menu-item"><span>Skønlitteratur</span></a></li>
+                  <li>
+                    <a href="#" class="menu-item"><span>Faglitteratur</span></a>
+                    <ul class="sub-menu">
+                      <li><a href="#" class="menu-item active"><span>Skønlitteratur</span></a></li>
+                      <li><a href="#" class="menu-item"><span>Faglitteratur</span></a></li>
+                      <li class="last"><a href="#" class="menu-item"><span>Game of Thrones</span></a></li>
+                    </ul>
+                  </li>
+                  <li class="last"><a href="#" class="menu-item"><span>Game of Thrones</span></a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="menu-item"><span>Skønlitteratur</span></a></li>
+              <li class="last"><a href="#" class="menu-item"><span>Faglitteratur</span></a></li>
+            </ul>
+          </div>
         </div>
         <div class="tertiary-content">
           Tertiary content

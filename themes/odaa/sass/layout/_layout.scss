@@ -117,22 +117,18 @@
 
 
 /* Right sidebar only */
-.right-sidebar {
+.left-sidebar {
   .primary-content {
-    @include zen-grid-item(8, 1);
+    @include zen-grid-item(9, 1, right);
   }
 
   .secondary-content {
-    @include zen-clear(right);
-    @include zen-grid-item(4, 1, right);
+    @include zen-grid-item(3, 1);
   }
 
   .tertiary-content {
-    @include zen-clear(left);
-    @include zen-grid-item(8, 1);
-
-    padding-right: 0;
-    padding-left: 0;
+    @include zen-clear(both);
+    @include zen-grid-item(12, 1);
 
     .spotbox:nth-child(odd) {
       @include zen-clear(left);

@@ -1,3 +1,5 @@
+@import url(../font/exo/exo.css);
+@import url(../font/laconic/laconic.css);
 /**
  * Variables
  *
@@ -456,8 +458,8 @@ table {
 /* line 8, ../sass/framework/_base.scss */
 body {
   background-color: white;
-  color: #726650;
-  font-family: "SourceSansProLight", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  color: gray;
+  font-family: "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
@@ -469,8 +471,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "SourceSansProSemibold";
-  font-weight: normal;
+  font-family: "LaconicRegular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   /* This fixes huge spaces when a heading wraps onto two lines */
   line-height: 1.2;
   margin-top: 0;
@@ -485,7 +486,7 @@ h3 a:link,
 h4 a:link,
 h5 a:link,
 h6 a:link {
-  color: #726650;
+  color: gray;
   text-decoration: none;
 }
 /* line 40, ../sass/framework/_base.scss */
@@ -495,7 +496,7 @@ h3 a:visited,
 h4 a:visited,
 h5 a:visited,
 h6 a:visited {
-  color: #27231b;
+  color: #404040;
 }
 /* line 44, ../sass/framework/_base.scss */
 h1 a:hover,
@@ -504,7 +505,7 @@ h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover {
-  color: #27231b;
+  color: #404040;
 }
 /* line 48, ../sass/framework/_base.scss */
 h1 a:focus,
@@ -513,7 +514,7 @@ h3 a:focus,
 h4 a:focus,
 h5 a:focus,
 h6 a:focus {
-  color: #27231b;
+  color: #404040;
 }
 /* line 52, ../sass/framework/_base.scss */
 h1 a:active,
@@ -523,7 +524,7 @@ h4 a:active,
 h5 a:active,
 h6 a:active {
   background-color: transparent;
-  color: #27231b;
+  color: #404040;
 }
 
 /* line 60, ../sass/framework/_base.scss */
@@ -558,18 +559,18 @@ h6 {
 
 /* line 85, ../sass/framework/_base.scss */
 strong {
-  font-family: "SourceSansProSemibold";
+  font-family: "exodemi_bold";
   font-weight: normal;
 }
 
 /* line 90, ../sass/framework/_base.scss */
 em {
-  font-family: "SourceSansProLightItalic";
+  font-family: "exoextra_light_italic";
   font-weight: normal;
 }
 /* line 93, ../sass/framework/_base.scss */
 em strong {
-  font-family: "SourceSansProSemibold";
+  font-family: "exodemi_bold";
   font-weight: normal;
 }
 
@@ -647,7 +648,7 @@ ul li {
    ========================================================================== */
 /* line 182, ../sass/framework/_base.scss */
 fieldset {
-  border-color: white;
+  border-color: #999999;
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 20px;
@@ -660,7 +661,7 @@ fieldset {
 
 /* line 194, ../sass/framework/_base.scss */
 legend {
-  font-family: "SourceSansProSemibold";
+  font-family: "exodemi_bold";
   font-weight: normal;
   display: block;
   font-size: 110%;
@@ -696,7 +697,7 @@ legend {
 input,
 textarea,
 select {
-  font-family: "SourceSansProLight", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 100%;
   letter-spacing: 1px;
 }
@@ -715,14 +716,14 @@ select {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f2f2f2));
-  background-image: -webkit-linear-gradient(#ffffff, #f2f2f2);
-  background-image: -moz-linear-gradient(#ffffff, #f2f2f2);
-  background-image: -o-linear-gradient(#ffffff, #f2f2f2);
-  background-image: linear-gradient(#ffffff, #f2f2f2);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #999999), color-stop(100%, #cccccc));
+  background-image: -webkit-linear-gradient(#999999, #cccccc);
+  background-image: -moz-linear-gradient(#999999, #cccccc);
+  background-image: -o-linear-gradient(#999999, #cccccc);
+  background-image: linear-gradient(#999999, #cccccc);
   /* Required for setting height in webkit browsers on mac */
   -webkit-appearance: menulist-button;
-  border: 1px solid #b3b3b3;
+  border: 1px solid gray;
   height: 36px;
   min-width: 100%;
   padding: 8px;
@@ -744,18 +745,18 @@ textarea {
   -moz-transition: all 0.15s linear;
   -o-transition: all 0.15s linear;
   transition: all 0.15s linear;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.4);
   display: block;
-  font-family: "SourceSansProLight", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 100%;
   min-height: 10px;
   margin-bottom: 10px;
@@ -793,8 +794,8 @@ textarea[disabled] {
   -webkit-box-shadow: 0 0 0;
   -moz-box-shadow: 0 0 0;
   box-shadow: 0 0 0;
-  background-color: white;
-  border: 1px solid white;
+  background-color: #a6a6a6;
+  border: 1px solid #999999;
 }
 
 /**
@@ -818,7 +819,7 @@ table {
 
 /* line 31, ../sass/framework/_tables.scss */
 th {
-  background-color: white;
+  background-color: #999999;
   /* Drupal system stylesheet adds bottom border */
   border-bottom: 0;
 }
@@ -826,12 +827,12 @@ th {
 /* Drupal uses these */
 /* line 39, ../sass/framework/_tables.scss */
 tr.even {
-  background-color: white;
+  background-color: #999999;
 }
 
 /* line 43, ../sass/framework/_tables.scss */
 tr.odd {
-  background-color: whitesmoke;
+  background-color: #8f8f8f;
 }
 
 /* Baseline styling
@@ -844,14 +845,14 @@ tr.odd {
 .table th, table th,
 .table td,
 table td {
-  border-top: 1px solid #b3b3b3;
+  border-top: 1px solid gray;
   padding: 10px;
   text-align: left;
   vertical-align: top;
 }
 /* line 62, ../sass/framework/_tables.scss */
 .table th, table th {
-  font-family: "SourceSansProSemibold";
+  font-family: "exodemi_bold";
   font-weight: normal;
   padding-top: 10px;
   padding-right: 10px;
@@ -880,7 +881,7 @@ table thead:first-child tr:first-child td {
 }
 /* line 86, ../sass/framework/_tables.scss */
 .table tbody + tbody, table tbody + tbody {
-  border-top: 2px solid #b3b3b3;
+  border-top: 2px solid gray;
 }
 
 /* Condensed table w/ half padding */
@@ -899,7 +900,7 @@ table thead:first-child tr:first-child td {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  border: 1px solid #b3b3b3;
+  border: 1px solid gray;
   /* Done so we can round those corners! */
   border-collapse: separate;
   /* IE7 can't round corners anyway */
@@ -910,7 +911,7 @@ table thead:first-child tr:first-child td {
 .table-bordered th, table th,
 .table-bordered td,
 table td {
-  border-left: 1px solid #b3b3b3;
+  border-left: 1px solid gray;
 }
 /* line 125, ../sass/framework/_tables.scss */
 .table-bordered caption + thead tr:first-child th, table caption + thead tr:first-child th,
@@ -986,7 +987,7 @@ table tbody:last-child tr:last-child td:last-child {
 /* line 163, ../sass/framework/_tables.scss */
 .table-striped tbody tr:nth-child(odd) td,
 .table-striped tbody tr:nth-child(odd) th {
-  background-color: #f2f2f2;
+  background-color: #cccccc;
 }
 
 /* Hover effect.
@@ -996,7 +997,7 @@ table tbody:last-child tr:last-child td:last-child {
 .table tbody tr:hover td, table tbody tr:hover td,
 .table tbody tr:hover th,
 table tbody tr:hover th {
-  background-color: white;
+  background-color: #999999;
 }
 
 /**
@@ -1011,12 +1012,12 @@ table tbody tr:hover th {
 /* line 31, ../sass/framework/_buttons.scss */
 .button, #block-user-0 #user-login-form .form-submit,
 a.button {
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
-  font-family: "SourceSansProSemibold";
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  font-family: "exodemi_bold";
   font-weight: normal;
   display: inline-block;
   font-size: 100%;
@@ -1137,11 +1138,11 @@ button.button,
 .tabs li.active a,
 .tabs li:hover a,
 .tabs li.active:hover a {
-  -webkit-border-radius: 8px 8px 0 0;
-  -moz-border-radius: 8px 8px 0 0;
-  -ms-border-radius: 8px 8px 0 0;
-  -o-border-radius: 8px 8px 0 0;
-  border-radius: 8px 8px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
   border: none;
   display: block;
   line-height: 31.2px;
@@ -1154,13 +1155,13 @@ button.button,
 .tabs li.active a:hover,
 .tabs li:hover a:hover,
 .tabs li.active:hover a:hover {
-  background: #f2f2f2;
+  background: #cccccc;
   color: black;
   text-decoration: none;
 }
 /* line 44, ../sass/framework/_tabs.scss */
 .tabs li a {
-  background: white;
+  background: #999999;
 }
 /* line 48, ../sass/framework/_tabs.scss */
 .tabs li a.active {
@@ -1178,18 +1179,18 @@ button.button,
 }
 /* line 62, ../sass/framework/_tabs.scss */
 .tabs.secondary li a.active {
-  background: white;
+  background: #999999;
 }
 /* line 71, ../sass/framework/_tabs.scss */
 .tabs.secondary li a,
 .tabs.secondary li.active a,
 .tabs.secondary li:hover a,
 .tabs.secondary li.active:hover a {
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
 
 /**
@@ -1304,13 +1305,13 @@ button.button,
 }
 /* line 52, ../sass/framework/_navigation.scss */
 .main-menu .menu-item {
-  -webkit-border-radius: 8px 8px 0 0;
-  -moz-border-radius: 8px 8px 0 0;
-  -ms-border-radius: 8px 8px 0 0;
-  -o-border-radius: 8px 8px 0 0;
-  border-radius: 8px 8px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
-  font-family: "SourceSansProSemibold";
+  font-family: "exodemi_bold";
   font-weight: normal;
   background-color: rgba(0, 0, 0, 0.65);
   color: white;
@@ -1396,14 +1397,17 @@ button.button,
    ========================================================================== */
 /* line 127, ../sass/framework/_navigation.scss */
 .sub-menu-wrapper {
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
-  background-color: #e6e2db;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px #cccccc;
+  -moz-box-shadow: 0 0 5px #cccccc;
+  box-shadow: 0 0 5px #cccccc;
+  background-color: white;
+  border: 1px solid #cccccc;
   margin-top: 20px;
-  padding: 20px;
 }
 @media only screen and (max-width: 768px) {
   /* line 127, ../sass/framework/_navigation.scss */
@@ -1412,75 +1416,80 @@ button.button,
   }
 }
 
-/* line 139, ../sass/framework/_navigation.scss */
+/* line 140, ../sass/framework/_navigation.scss */
 .sub-menu-title {
-  -webkit-border-radius: 8px 0 0 8px;
-  -moz-border-radius: 8px 0 0 8px;
-  -ms-border-radius: 8px 0 0 8px;
-  -o-border-radius: 8px 0 0 8px;
-  border-radius: 8px 0 0 8px;
-  border-bottom: 1px solid #d1cabd;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(#f2f2f2, #ffffff);
+  background-image: -moz-linear-gradient(#f2f2f2, #ffffff);
+  background-image: -o-linear-gradient(#f2f2f2, #ffffff);
+  background-image: linear-gradient(#f2f2f2, #ffffff);
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid #e6e6e6;
   font-size: 130%;
   margin-bottom: 0;
+  padding-top: 10px;
+  padding-right: 10px;
   padding-bottom: 10px;
+  padding-left: 10px;
 }
 
-/* line 148, ../sass/framework/_navigation.scss */
+/* line 153, ../sass/framework/_navigation.scss */
 .sub-menu {
   padding-left: 0;
 }
-/* line 151, ../sass/framework/_navigation.scss */
-.sub-menu > li {
-  -webkit-border-radius: 8px 0 0 8px;
-  -moz-border-radius: 8px 0 0 8px;
-  -ms-border-radius: 8px 0 0 8px;
-  -o-border-radius: 8px 0 0 8px;
-  border-radius: 8px 0 0 8px;
-  border-bottom: 1px solid #d1cabd;
-}
 /* line 156, ../sass/framework/_navigation.scss */
-.sub-menu > li a {
-  color: #726650;
+.sub-menu > li {
+  /* Level 1 */
+  /* We want the border bottom to have full width so we have to increase
+     padding left according to the nesting level. */
+  /* Level 2 */
+}
+/* line 159, ../sass/framework/_navigation.scss */
+.sub-menu > li .menu-item {
+  border-bottom: 1px dashed #e6e6e6;
+  color: gray;
   display: block;
-  margin-left: -20px;
   padding-top: 10px;
   padding-bottom: 8px;
-  padding-left: 35px;
-}
-/* line 164, ../sass/framework/_navigation.scss */
-.sub-menu > li a.active {
-  font-family: "SourceSansProSemibold";
-  font-weight: normal;
+  padding-left: 20px;
 }
 /* line 169, ../sass/framework/_navigation.scss */
-.sub-menu > li a:hover {
-  text-decoration: none;
-  color: #f07100;
-}
-/* line 179, ../sass/framework/_navigation.scss */
-.sub-menu li:before {
+.sub-menu > li .menu-item:before {
   float: left;
   font-family: "FontAwesome";
   font-size: 130%;
-  margin-top: 9px;
-  margin-left: 1px;
+  margin-right: 10px;
 }
-/* line 190, ../sass/framework/_navigation.scss */
-.sub-menu ul li {
-  border-left: 7px solid #d1cabd;
-  padding-left: 10px;
-}
-/* line 194, ../sass/framework/_navigation.scss */
-.sub-menu ul li li {
-  border-left: 0;
-  padding-left: 25px;
-}
-/* line 198, ../sass/framework/_navigation.scss */
-.sub-menu ul li li .active {
+/* line 176, ../sass/framework/_navigation.scss */
+.sub-menu > li .menu-item.active {
   color: #e66c00;
+  font-family: "exodemi_bold";
+  font-weight: normal;
 }
-/* line 203, ../sass/framework/_navigation.scss */
-.sub-menu ul li.last {
+/* line 182, ../sass/framework/_navigation.scss */
+.sub-menu > li .menu-item:hover {
+  text-decoration: none;
+  color: #f07100;
+}
+/* line 192, ../sass/framework/_navigation.scss */
+.sub-menu > li ul {
+  border-bottom: 1px dashed #e6e6e6;
+  /* Level 3 */
+}
+/* line 195, ../sass/framework/_navigation.scss */
+.sub-menu > li ul .menu-item {
+  padding-left: 40px;
+}
+/* line 201, ../sass/framework/_navigation.scss */
+.sub-menu > li ul ul .menu-item {
+  padding-left: 60px;
+}
+/* line 208, ../sass/framework/_navigation.scss */
+.sub-menu > li.last .menu-item {
   border-bottom: 0;
 }
 
@@ -3131,7 +3140,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 /* line 245, ../sass/framework/fontawesome/scss/_icons.scss */
-.icon-angle-right:before, .main-menu li:before, .sub-menu li:before {
+.icon-angle-right:before, .main-menu li:before, .sub-menu > li .menu-item:before {
   content: "\f105";
 }
 
@@ -3795,7 +3804,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   background-image: -moz-linear-gradient(#e0e0e0, #f7f7f7);
   background-image: -o-linear-gradient(#e0e0e0, #f7f7f7);
   background-image: linear-gradient(#e0e0e0, #f7f7f7);
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #cccccc;
 }
 
 /* line 20, ../sass/layout/_layout.scss */
@@ -3842,7 +3851,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
    ========================================================================== */
 /* line 50, ../sass/layout/_layout.scss */
 .content-wrapper {
-  border-top: 1px solid white;
+  border-top: 1px solid #999999;
   clear: both;
   overflow: hidden;
   padding-bottom: 20px;
@@ -4031,11 +4040,11 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 /* Right sidebar only */
 /* line 121, ../sass/layout/_layout.scss */
-.right-sidebar .primary-content {
-  float: left;
-  width: 66.66667%;
-  margin-left: 0%;
-  margin-right: -66.66667%;
+.left-sidebar .primary-content {
+  float: right;
+  width: 75%;
+  margin-right: 0%;
+  margin-left: -75%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -4049,31 +4058,11 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow-y: visible;
 }
 /* line 125, ../sass/layout/_layout.scss */
-.right-sidebar .secondary-content {
-  clear: right;
-  float: right;
-  width: 33.33333%;
-  margin-right: 0%;
-  margin-left: -33.33333%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/sites/all/themes/litteratursiden/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-}
-/* line 130, ../sass/layout/_layout.scss */
-.right-sidebar .tertiary-content {
-  clear: left;
+.left-sidebar .secondary-content {
   float: left;
-  width: 66.66667%;
+  width: 25%;
   margin-left: 0%;
-  margin-right: -66.66667%;
+  margin-right: -25%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -4085,11 +4074,28 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
-  padding-right: 0;
-  padding-left: 0;
 }
-/* line 137, ../sass/layout/_layout.scss */
-.right-sidebar .tertiary-content .spotbox:nth-child(odd) {
+/* line 129, ../sass/layout/_layout.scss */
+.left-sidebar .tertiary-content {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/all/themes/litteratursiden/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 133, ../sass/layout/_layout.scss */
+.left-sidebar .tertiary-content .spotbox:nth-child(odd) {
   clear: left;
   float: left;
   width: 50%;
@@ -4107,8 +4113,8 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 142, ../sass/layout/_layout.scss */
-.right-sidebar .tertiary-content .spotbox:nth-child(even) {
+/* line 138, ../sass/layout/_layout.scss */
+.left-sidebar .tertiary-content .spotbox:nth-child(even) {
   float: right;
   width: 50%;
   margin-right: 0%;
@@ -4127,7 +4133,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 /* Both sidebars */
-/* line 151, ../sass/layout/_layout.scss */
+/* line 147, ../sass/layout/_layout.scss */
 .both-sidebars .static-content {
   float: right;
   width: 25%;
@@ -4145,7 +4151,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 155, ../sass/layout/_layout.scss */
+/* line 151, ../sass/layout/_layout.scss */
 .both-sidebars .primary-content {
   float: left;
   width: 50%;
@@ -4163,7 +4169,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 159, ../sass/layout/_layout.scss */
+/* line 155, ../sass/layout/_layout.scss */
 .both-sidebars .secondary-content {
   float: left;
   width: 25%;
@@ -4181,7 +4187,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 163, ../sass/layout/_layout.scss */
+/* line 159, ../sass/layout/_layout.scss */
 .both-sidebars .tertiary-content {
   clear: right;
   float: right;
@@ -4201,12 +4207,12 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow-y: visible;
 }
 
-/* line 171, ../sass/layout/_layout.scss */
+/* line 167, ../sass/layout/_layout.scss */
 .attachment-wrapper {
   clear: both;
 }
 
-/* line 175, ../sass/layout/_layout.scss */
+/* line 171, ../sass/layout/_layout.scss */
 .attachment-first {
   float: left;
   width: 25%;
@@ -4225,7 +4231,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow-y: visible;
 }
 
-/* line 179, ../sass/layout/_layout.scss */
+/* line 175, ../sass/layout/_layout.scss */
 .attachment-second {
   float: left;
   width: 25%;
@@ -4244,7 +4250,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow-y: visible;
 }
 
-/* line 183, ../sass/layout/_layout.scss */
+/* line 179, ../sass/layout/_layout.scss */
 .attachment-third {
   float: right;
   width: 25%;
@@ -4263,7 +4269,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow-y: visible;
 }
 
-/* line 187, ../sass/layout/_layout.scss */
+/* line 183, ../sass/layout/_layout.scss */
 .attachment-fourth {
   float: right;
   width: 25%;
@@ -4441,12 +4447,12 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 /* line 16, ../sass/module/_module.scss */
 .spotbox a:link {
-  color: #726650;
+  color: gray;
   text-decoration: none;
 }
 /* line 21, ../sass/module/_module.scss */
 .spotbox a:visited {
-  color: #635845;
+  color: #737373;
   text-decoration: none;
 }
 /* line 26, ../sass/module/_module.scss */
@@ -4467,16 +4473,16 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 /* line 43, ../sass/module/_module.scss */
 .spotbox--inner, .create-user .create-user-inner, .user--block--logged-in-inner {
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   overflow: hidden;
 }
 
 /* %module--block headers */
 /* line 51, ../sass/module/_module.scss */
 .spotbox--header {
-  background-color: #d1cabd;
+  background-color: #e6e6e6;
   margin-bottom: 0;
   padding-top: 20px;
   padding-right: 20px;
@@ -4490,7 +4496,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 /* line 63, ../sass/module/_module.scss */
 .spotbox--header a:hover [class$="header-label"] {
-  color: #726650;
+  color: gray;
 }
 /* line 68, ../sass/module/_module.scss */
 .spotbox--header i[class^="icon-"] {
@@ -4512,7 +4518,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 /* line 85, ../sass/module/_module.scss */
 .spotbox--list-header {
-  font-family: "SourceSansProLight", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: normal;
   font-size: 100%;
   margin-bottom: 0;
@@ -4607,9 +4613,9 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 /* %module--block image */
 /* line 180, ../sass/module/_module.scss */
 .spotbox--image {
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.25);
   float: right;
   margin-top: 20px;
@@ -4624,9 +4630,9 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 /* %module--block list image */
 /* line 196, ../sass/module/_module.scss */
 .spotbox--list-image {
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.25);
   float: left;
   margin-right: 15px;
@@ -4674,7 +4680,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 /* line 30, ../sass/module/_spotbox.scss */
 .spotbox--inner {
-  background-color: #e6e2db;
+  background-color: white;
 }
 
 /* Spotbox header */
@@ -4708,12 +4714,12 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 /* line 136, ../sass/module/_spotbox.scss */
 .primary-content .spotbox--inner {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dcd6cc), color-stop(100%, #e6e2db));
-  background-image: -webkit-linear-gradient(#dcd6cc, #e6e2db);
-  background-image: -moz-linear-gradient(#dcd6cc, #e6e2db);
-  background-image: -o-linear-gradient(#dcd6cc, #e6e2db);
-  background-image: linear-gradient(#dcd6cc, #e6e2db);
-  background-color: #e6e2db;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(#f2f2f2, #ffffff);
+  background-image: -moz-linear-gradient(#f2f2f2, #ffffff);
+  background-image: -o-linear-gradient(#f2f2f2, #ffffff);
+  background-image: linear-gradient(#f2f2f2, #ffffff);
+  background-color: white;
 }
 /* line 142, ../sass/module/_spotbox.scss */
 .primary-content .spotbox--list-label {
@@ -4722,7 +4728,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 /* line 146, ../sass/module/_spotbox.scss */
 .primary-content .spotbox--list-header {
-  font-family: "SourceSansProSemibold";
+  font-family: "exodemi_bold";
   font-weight: normal;
 }
 /* line 151, ../sass/module/_spotbox.scss */
@@ -4734,12 +4740,12 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
    ========================================================================== */
 /* line 161, ../sass/module/_spotbox.scss */
 .secondary-content .spotbox--inner {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f0eeea), color-stop(100%, #e6e2db));
-  background-image: -webkit-linear-gradient(#f0eeea, #e6e2db);
-  background-image: -moz-linear-gradient(#f0eeea, #e6e2db);
-  background-image: -o-linear-gradient(#f0eeea, #e6e2db);
-  background-image: linear-gradient(#f0eeea, #e6e2db);
-  background-color: #e6e2db;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(#ffffff, #ffffff);
+  background-image: -moz-linear-gradient(#ffffff, #ffffff);
+  background-image: -o-linear-gradient(#ffffff, #ffffff);
+  background-image: linear-gradient(#ffffff, #ffffff);
+  background-color: white;
 }
 /* line 167, ../sass/module/_spotbox.scss */
 .secondary-content .spotbox--header {
@@ -4750,11 +4756,11 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
    ========================================================================== */
 /* line 180, ../sass/module/_spotbox.scss */
 .tertiary-content .spotbox--inner {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f7f5f3), color-stop(100%, #f0eeea));
-  background-image: -webkit-linear-gradient(#f7f5f3, #f0eeea);
-  background-image: -moz-linear-gradient(#f7f5f3, #f0eeea);
-  background-image: -o-linear-gradient(#f7f5f3, #f0eeea);
-  background-image: linear-gradient(#f7f5f3, #f0eeea);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(#ffffff, #ffffff);
+  background-image: -moz-linear-gradient(#ffffff, #ffffff);
+  background-image: -o-linear-gradient(#ffffff, #ffffff);
+  background-image: linear-gradient(#ffffff, #ffffff);
   background-color: #f0eeea;
 }
 /* line 186, ../sass/module/_spotbox.scss */
@@ -4819,7 +4825,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 /* line 25, ../sass/module/_user.scss */
 .user-login .user-login-label, #block-user-0 .user-login-label, #block-user-0 label {
-  font-family: "SourceSansProSemibold";
+  font-family: "exodemi_bold";
   font-weight: normal;
   color: rgba(0, 0, 0, 0.7);
   display: inline-block;
@@ -4855,7 +4861,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 /* line 61, ../sass/module/_user.scss */
 .create-user .create-user-inner {
-  background: rgba(114, 102, 80, 0.7) url("../images/ribbon-free.png") no-repeat 15px -10px;
+  background: rgba(128, 128, 128, 0.7) url("../images/ribbon-free.png") no-repeat 15px -10px;
   padding: 20px;
 }
 /* line 68, ../sass/module/_user.scss */
@@ -4873,7 +4879,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 /* line 81, ../sass/module/_user.scss */
 .create-user .create-user-label {
-  font-family: "SourceSansProSemibold";
+  font-family: "exodemi_bold";
   font-weight: normal;
   display: inline-block;
   margin-bottom: 3px;
@@ -4893,7 +4899,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 /* line 100, ../sass/module/_user.scss */
 .create-user .create-user-buttons .create-user-splitter-text {
-  font-family: "SourceSansProSemibold";
+  font-family: "exodemi_bold";
   font-weight: normal;
   margin-top: 10px;
 }
@@ -4941,12 +4947,12 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 /* line 151, ../sass/module/_user.scss */
 .user--block--logged-in-inner {
-  background-color: rgba(114, 102, 80, 0.7);
+  background-color: rgba(128, 128, 128, 0.7);
 }
 
 /* line 158, ../sass/module/_user.scss */
 .user--block--logged-in-header {
-  background-color: #726650;
+  background-color: gray;
   margin-bottom: 0;
   min-height: 62px;
   padding-top: 15px;
@@ -4959,9 +4965,9 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 /* line 172, ../sass/module/_user.scss */
 .user--block--logged-in-user-image {
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.25);
   max-width: 50px;
   overflow: hidden;
@@ -4972,7 +4978,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 /* line 184, ../sass/module/_user.scss */
 .user--block--logged-in-content {
-  font-family: "SourceSansProSemibold";
+  font-family: "exodemi_bold";
   font-weight: normal;
   font-size: 110%;
   padding: 0;

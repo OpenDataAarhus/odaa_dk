@@ -41,11 +41,11 @@ $breakpoint-x-large:              1210px;
 $white:                          #fff !default;
 $black:                          #000 !default;
 $gray-darkest:                   #333333;
-$gray-darker:                    lighten($gray-darkest, 20%);
-$gray-dark:                      lighten($gray-darkest, 25%);
-$gray:                           lighten($gray-darkest, 50%);
-$gray-lighter:                   lighten($gray-darkest, 75%);
-$gray-light:                     lighten($gray-darkest, 90%);
+$gray-darker:                    lighten($gray-darkest, 10%);
+$gray-dark:                      lighten($gray-darkest, 20%);
+$gray:                           lighten($gray-darkest, 30%);
+$gray-light:                     lighten($gray-darkest, 40%);
+$gray-lighter:                   lighten($gray-darkest, 60%);
 $red:                            #a32e10;
 $green:                          #528c10;
 $yellow:                         #f0cb28;
@@ -56,7 +56,7 @@ $yellow:                         #f0cb28;
    ========================================================================== */
 
 $base-primary-color:             #ff861a;
-$base-secondary-color:           #e6e2db;
+$base-secondary-color:           $white;
 $base-tertiary-color:            #e6e2db;
 
 
@@ -71,15 +71,13 @@ $base-icon-library-font:         "FontAwesome";
 /* Typography
    ========================================================================== */
 
-$font-light:                      "SourceSansProLight";
-$font-light-italic:               "SourceSansProLightItalic";
-$font-regular:                    "SourceSansProRegular";
-$font-regular-italic:             "SourceSansProItalic";
-$font-bold:                       "SourceSansProSemibold";
-$font-bold-italic:                "SourceSansProSemiboldItalic";
+$font-regular:                    "exoextra_light";
+$font-regular-italic:             "exoextra_light_italic";
+$font-bold:                       "exodemi_bold";
+$font-bold-italic:                "exodemi_bold_italic";
 $font-color-primary:              darken($base-secondary-color, 50%);
 $font-color-secondary:            transparentize($black, .3);
-
+$font-heading:                   "LaconicRegular";
 
 
 /* Font variables
@@ -87,7 +85,8 @@ $font-color-secondary:            transparentize($black, .3);
 
 $base-font-size:                  16px;
 $base-line-height:                24px;
-$base-font-family:                $font-light, "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+$base-font-family:                $font-regular, "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+$secondary-font-family:           $font-heading, "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
 $base-font-weight-normal:         normal;
 $base-font-weight-bold:           normal;
 
@@ -109,7 +108,7 @@ $font-size-tiny:                  75%;
 /* Layout
    ========================================================================== */
 
-$base-border-radius:              8px;
+$base-border-radius:              5px;
 
 
 
