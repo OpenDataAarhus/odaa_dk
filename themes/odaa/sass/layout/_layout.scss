@@ -12,37 +12,25 @@
    ========================================================================== */
 
 .site-header {
-  @include box-sizing(border-box);
+  @include background-image(linear-gradient(darken($white, 12%), darken($white, 3%)));
 
+  border-bottom: 1px solid $gray-lighter;
+}
+
+.header-wrapper {
   margin-right: auto;
   margin-left: auto;
   max-width: 1200px;
-  min-height: 243px;
   overflow: hidden;
   position: relative;
 }
 
-.site-header-inner {
+.header-inner {
+  overflow: hidden;
+  padding-top: 20px;
   padding-right: 10px;
+  padding-bottom: 20px;
   padding-left: 10px;
-}
-
-.header-wrapper {
-  bottom: 0;
-  clear: both;
-  left: 10px;
-  overflow: hidden;
-  position: absolute;
-  right: 10px;
-
-  .header-inner {
-    margin-top: 10px;
-  }
-}
-
-.secondary-header-wrapper {
-  clear: both;
-  overflow: hidden;
 }
 
 
@@ -52,7 +40,6 @@
 .logo {
   @include zen-grid-item(4, 1);
 
-  margin-top: 30px;
   padding-left: 0;
 }
 
@@ -61,6 +48,7 @@
    ========================================================================== */
 
 .content-wrapper {
+  border-top: 1px solid $gray-light;
   clear: both;
   overflow: hidden;
   padding-bottom: $large-spacing;
@@ -94,9 +82,6 @@
   .tertiary-content {
     @include zen-clear(left);
     @include zen-grid-item(8, 1);
-
-    padding-right: 0;
-    padding-left: 0;
 
     .spotbox:nth-child(odd) {
       @include zen-clear(left);

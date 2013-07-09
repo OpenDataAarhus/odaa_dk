@@ -40,12 +40,12 @@ $breakpoint-x-large:              1210px;
 
 $white:                          #fff !default;
 $black:                          #000 !default;
-$gray:                           #d5d5d5 !default;
-$gray-light:                     lighten($gray, 10%) !default;
-$gray-lighter:                   lighten($gray, 15%) !default;
-$gray-dark:                      darken($gray, 10%) !default;
-$gray-darker:                    darken($gray, 25%) !default;
-$gray-darkest:                   darken($gray, 35%) !default;
+$gray-darkest:                   #333333;
+$gray-darker:                    lighten($gray-darkest, 20%);
+$gray-dark:                      lighten($gray-darkest, 25%);
+$gray:                           lighten($gray-darkest, 50%);
+$gray-lighter:                   lighten($gray-darkest, 75%);
+$gray-light:                     lighten($gray-darkest, 90%);
 $red:                            #a32e10;
 $green:                          #528c10;
 $yellow:                         #f0cb28;
@@ -117,14 +117,3 @@ $base-border-radius:              8px;
 
 $link-color:                      darken($base-primary-color, 10%);
 $link-color-hover:                darken($base-primary-color, 8%);
-
-
-
-/* Articles (used in modules e.g. news, events)
-   ========================================================================== */
-
-$article-background:              #ebebeb;
-$article-background-odd:          #e8e8e8;
-$article-background-even:         #f2f2f2;
-$article-text:                    #4c4c4c;
-
