@@ -126,8 +126,10 @@
 
 .sub-menu-wrapper {
   @include border-radius($base-border-radius);
+  @include box-shadow(0 0 5px $gray-lighter);
 
   background-color: $base-secondary-color;
+  border: 1px solid $gray-lighter;
   margin-top: $large-spacing;
   padding: $large-spacing;
 
@@ -156,7 +158,6 @@
     a {
       color: $font-color-primary;
       display: block;
-      margin-left: -20px;
       padding-top: 10px;
       padding-bottom: 8px;
       padding-left: 35px;
@@ -188,7 +189,6 @@
 
   ul {
     li {
-      border-left: 7px solid darken($base-secondary-color, 10%);
       padding-left: 10px;
 
       li {
