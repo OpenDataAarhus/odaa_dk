@@ -9,6 +9,7 @@ function odaa_user_user_login(&$edit, $account) {
   $username =_odaa_user_get_ckan_find_user($account->name);
   if ($username != FALSE) {
     // User exist in CKAN, update?
+    // http://docs.ckan.org/en/latest/api.html#ckan.logic.action.update.user_update
   }
   else {
     // User does not exists in CKAN, lets create one!
@@ -17,6 +18,7 @@ function odaa_user_user_login(&$edit, $account) {
         'email' => $account->mail,
         'password' => md5(uniqid()),
     );
+    // http://docs.ckan.org/en/latest/api.html#ckan.logic.action.create.user_create
     $data = _odaa_user_api_call('http://stg.odaa.dk/api/3/action/user_create', $options);
   }
 }
@@ -89,6 +91,7 @@ function _odaa_user_api_call($call, $data = NULL) {
  * @return FALSE or user object
  */
 function _odaa_user_get_ckan_find_user($username) {
+  // http://docs.ckan.org/en/latest/api.html#ckan.logic.action.get.user_list
   $users = _odaa_user_api_call('http://stg.odaa.dk/api/3/action/user_list');
   foreach ($users as $user) {
     if ($user->name == $username) {
