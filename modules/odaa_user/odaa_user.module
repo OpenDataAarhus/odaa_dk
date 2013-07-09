@@ -1,69 +1,99 @@
 <?php
 /**
- * Implementation of hook_form_alter().
- * Change the normal form login form behaviour.
+ * Create / update user information in CKAN
+ * @param object $edit
+ * @param object $account
  */
-function odaa_user_form_user_login_alter(&$form, $form_state) {
-  $form['#validate'] = array(
-    'user_login_name_validate', 
-    'odaa_user_login_validate', 
-    'user_login_final_validate'
-  );
-} 
-
-/**
- * Implementation of hook_form_alter().
- * Change the normal form login form behaviour.
- */
-function odaa_user_form_user_login_block_alter(&$form, $form_state) {
-  $form['#validate'] = array(
-    'user_login_name_validate', 
-    'odaa_user_login_validate', 
-    'user_login_final_validate'
-  );  
-}
-/**
- * Form validate, if user exist, log the user in, else create it and log the newly created user in
- * @param type $form
- * @param type $form_state
- */
-function odaa_user_login_validate($form, &$form_state) {
-  $username = $form_state['values']['name'];
-  if (_odaa_user_check_user($username, $form_state['values']['pass'])) {
-    user_external_login_register($username, 'odaa_user' );
-    $account = _odaa_user_external_load($username);
-    $form_state['uid'] = $account->uid;
+function odaa_user_user_login(&$edit, $account) {
+  // First lets check if the user is created
+  $username =_odaa_user_get_ckan_find_user($account->name);
+  if ($username != FALSE) {
+    // User exist in CKAN, update?
+  }
+  else {
+    // User does not exists in CKAN, lets create one!
+    $options = array(
+        'name' => $account->name,
+        'email' => $account->mail,
+        'password' => md5(uniqid()),
+    );
+    $data = _odaa_user_api_call('http://stg.odaa.dk/api/3/action/user_create', $options);
   }
 }
 
 /**
- * Validate with external CKAN
- * @param type $username
- * @param type $password
- * @return boolean
+ * hook_menu()
+ * @return array
  */
-function _odaa_user_check_user($username, $password) {
-  try {
-    // here goes the login validate talk talk to CKAN
-    if ($username && $password) {
-      return true;
-    }
-    return false;
-  }
-  catch (Exception $e) {
-    watchdog('odaa_user', print_r($e, true));
-    return false;
-  }
-}
-
-/**
- * Load user from CKAN
- * @param type $username
- * @return \stdClass
- */
-function _odaa_user_external_load($username) {
-  $user = new stdClass;
-  $user->uid = rand(10, 1000);
+function odaa_user_menu() {
+  $items = array();
   
-  return $user;
+  $items['odaa_user/%'] = array(
+    'title' => 'Validate session',
+    'page callback' => '_odaa_user_validate_session',
+    'page arguments' => array(1),
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  
+  return $items;
+}
+
+/**
+ * Convert session id to user id
+ * @param string $session_id
+ * @return JSON
+ */
+function _odaa_user_validate_session($session_id) {
+  $uid = db_select('sessions', 's')
+          ->fields('s', array('uid'))
+          ->condition('sid', $session_id)
+          ->execute()
+          ->fetchField();
+  
+  return drupal_json_output(array($uid));
+}
+
+/**
+ * Simple internal function for API calls to CKAN
+ * @param string $call
+ * @param array $data
+ * @return FALSE or data array
+ */
+function _odaa_user_api_call($call, $data = NULL) {
+  $options = array(
+      'headers' => array(
+        'Content-Type' => 'application/json', 
+        'Accept' => 'application/json', 
+        'X-CKAN-API-Key' => '5cd01727-e833-489d-99b2-73275c683b49'
+      ),
+      'method' => 'POST',
+      'timeout' => 15,
+  );
+  if ($data != NULL) {
+    $options['data'] = json_encode($data);
+  }
+  $output = drupal_http_request($call, $options);
+  
+  if (($data = json_decode($output->data)) !== FALSE) {
+    if ($data->success == 1) {
+      return $data->result;
+    }
+  }
+  return FALSE;
+}
+
+/**
+ * Simple function to check if username exists in CKAN
+ * @param string $username
+ * @return FALSE or user object
+ */
+function _odaa_user_get_ckan_find_user($username) {
+  $users = _odaa_user_api_call('http://stg.odaa.dk/api/3/action/user_list');
+  foreach ($users as $user) {
+    if ($user->name == $username) {
+      return $user;
+    }
+  }
+  return FALSE;
 }
