@@ -57,7 +57,7 @@ $yellow:                         #f0cb28;
 
 $base-primary-color:             #ff861a;
 $base-secondary-color:           $white;
-$base-tertiary-color:            #e6e2db;
+$base-tertiary-color:            #96b000;
 
 
 
@@ -75,7 +75,7 @@ $font-regular:                    "exoextra_light";
 $font-regular-italic:             "exoextra_light_italic";
 $font-bold:                       "exodemi_bold";
 $font-bold-italic:                "exodemi_bold_italic";
-$font-color-primary:              darken($base-secondary-color, 50%);
+$font-color-primary:              darken($base-secondary-color, 75%);
 $font-color-secondary:            transparentize($black, .3);
 $font-alternate:                  "LaconicRegular";
 
@@ -108,6 +108,7 @@ $font-size-tiny:                  75%;
    ========================================================================== */
 
 $base-border-radius:              5px;
+$base-box-shadow:                 0 0 5px $gray;
 
 
 

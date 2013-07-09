@@ -1,0 +1,25 @@
+/**
+ * Page
+ *
+ * @author magnify
+ */
+
+
+
+/* Page
+   ========================================================================== */
+
+.page-content {
+  @include border-radius($base-border-radius);
+  @include box-shadow($base-box-shadow);
+
+  background-color: $white;
+  border: 1px solid $gray;
+  margin-top: $large-spacing;
+  padding: $large-spacing;
+
+  /* Headers in page content */
+  h3 {
+    margin-top: 20px;
+  }
+}

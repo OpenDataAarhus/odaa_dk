@@ -126,9 +126,9 @@
 
 .sub-menu-wrapper {
   @include border-radius($base-border-radius);
-  @include box-shadow(0 0 5px $gray-light);
+  @include box-shadow($base-box-shadow);
 
-  background-color: $base-secondary-color;
+  background-color: $white;
   border: 1px solid $gray;
   margin-top: $large-spacing;
 

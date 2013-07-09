@@ -7,14 +7,18 @@
  */
 
 
+/* Body */
+body {
+  background: url('../images/pw-maze-white-pattern.png');
+}
+
+
 
 /* Site header
    ========================================================================== */
 
 .site-header {
   @include background-image(linear-gradient(darken($white, 12%), darken($white, 3%)));
-
-  border-bottom: 1px solid $gray-lighter;
 }
 
 .header-wrapper {
@@ -48,7 +52,7 @@
    ========================================================================== */
 
 .content-wrapper {
-  border-top: 1px solid $gray-light;
+  border-top: 20px solid transparentize($base-tertiary-color, .7);
   clear: both;
   overflow: hidden;
   padding-bottom: $large-spacing;
