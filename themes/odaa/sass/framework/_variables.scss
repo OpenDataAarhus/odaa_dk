@@ -71,10 +71,10 @@ $base-icon-library-font:         "FontAwesome";
 /* Typography
    ========================================================================== */
 
-$font-regular:                    "ChivoRegular";
-$font-regular-italic:             "ChivoItalic";
-$font-bold:                       "ChivoBlack";
-$font-bold-italic:                "ChivoBlackItalic";
+$font-regular:                    "exoextra_light";
+$font-regular-italic:             "exoextra_light_italic";
+$font-bold:                       "exodemi_bold";
+$font-bold-italic:                "exodemi_bold_italic";
 $font-color-primary:              darken($base-secondary-color, 50%);
 $font-color-secondary:            transparentize($black, .3);
 $font-heading:                   "LaconicRegular";
