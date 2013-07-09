@@ -65,10 +65,6 @@
 /* Layouts
    ========================================================================== */
 
-.static-content {
-  @include zen-grid-item(4, 1, right);
-}
-
 .front {
   .primary-content {
     @include zen-grid-item(8, 1);
