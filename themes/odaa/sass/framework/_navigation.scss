@@ -174,9 +174,9 @@
       }
 
       &.active {
+        @include font-bold();
+
         color: $link-color;
-        font-family: $font-bold;
-        font-weight: $base-font-weight-bold;
       }
 
       &:hover {

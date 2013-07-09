@@ -1,4 +1,4 @@
-@import url(../font/chivo/chivo.css);
+@import url(../font/exo/exo.css);
 @import url(../font/laconic/laconic.css);
 /**
  * Variables
@@ -459,7 +459,7 @@ table {
 body {
   background-color: white;
   color: gray;
-  font-family: "ChivoRegular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
 }
@@ -559,18 +559,18 @@ h6 {
 
 /* line 85, ../sass/framework/_base.scss */
 strong {
-  font-family: "ChivoRegular";
+  font-family: "exodemi_bold";
   font-weight: normal;
 }
 
 /* line 90, ../sass/framework/_base.scss */
 em {
-  font-family: "ChivoItalic";
+  font-family: "exoextra_light_italic";
   font-weight: normal;
 }
 /* line 93, ../sass/framework/_base.scss */
 em strong {
-  font-family: "ChivoRegular";
+  font-family: "exodemi_bold";
   font-weight: normal;
 }
 
@@ -661,7 +661,7 @@ fieldset {
 
 /* line 194, ../sass/framework/_base.scss */
 legend {
-  font-family: "ChivoRegular";
+  font-family: "exodemi_bold";
   font-weight: normal;
   display: block;
   font-size: 110%;
@@ -697,7 +697,7 @@ legend {
 input,
 textarea,
 select {
-  font-family: "ChivoRegular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 100%;
   letter-spacing: 1px;
 }
@@ -756,7 +756,7 @@ textarea {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.4);
   display: block;
-  font-family: "ChivoRegular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 100%;
   min-height: 10px;
   margin-bottom: 10px;
@@ -852,7 +852,7 @@ table td {
 }
 /* line 62, ../sass/framework/_tables.scss */
 .table th, table th {
-  font-family: "ChivoRegular";
+  font-family: "exodemi_bold";
   font-weight: normal;
   padding-top: 10px;
   padding-right: 10px;
@@ -1017,7 +1017,7 @@ a.button {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  font-family: "ChivoRegular";
+  font-family: "exodemi_bold";
   font-weight: normal;
   display: inline-block;
   font-size: 100%;
@@ -1311,7 +1311,7 @@ button.button,
   -o-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
-  font-family: "ChivoRegular";
+  font-family: "exodemi_bold";
   font-weight: normal;
   background-color: rgba(0, 0, 0, 0.65);
   color: white;
@@ -1466,9 +1466,9 @@ button.button,
 }
 /* line 176, ../sass/framework/_navigation.scss */
 .sub-menu > li .menu-item.active {
-  color: #e66c00;
-  font-family: "ChivoRegular";
+  font-family: "exodemi_bold";
   font-weight: normal;
+  color: #e66c00;
 }
 /* line 182, ../sass/framework/_navigation.scss */
 .sub-menu > li .menu-item:hover {
@@ -4511,7 +4511,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 /* line 85, ../sass/module/_module.scss */
 .spotbox--list-header {
-  font-family: "ChivoRegular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: normal;
   font-size: 100%;
   margin-bottom: 0;
@@ -4721,7 +4721,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 /* line 146, ../sass/module/_spotbox.scss */
 .primary-content .spotbox--list-header {
-  font-family: "ChivoRegular";
+  font-family: "exodemi_bold";
   font-weight: normal;
 }
 /* line 151, ../sass/module/_spotbox.scss */
@@ -4818,7 +4818,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 /* line 25, ../sass/module/_user.scss */
 .user-login .user-login-label, #block-user-0 .user-login-label, #block-user-0 label {
-  font-family: "ChivoRegular";
+  font-family: "exodemi_bold";
   font-weight: normal;
   color: rgba(0, 0, 0, 0.7);
   display: inline-block;
@@ -4872,7 +4872,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 /* line 81, ../sass/module/_user.scss */
 .create-user .create-user-label {
-  font-family: "ChivoRegular";
+  font-family: "exodemi_bold";
   font-weight: normal;
   display: inline-block;
   margin-bottom: 3px;
@@ -4892,7 +4892,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 /* line 100, ../sass/module/_user.scss */
 .create-user .create-user-buttons .create-user-splitter-text {
-  font-family: "ChivoRegular";
+  font-family: "exodemi_bold";
   font-weight: normal;
   margin-top: 10px;
 }
@@ -4971,7 +4971,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 /* line 184, ../sass/module/_user.scss */
 .user--block--logged-in-content {
-  font-family: "ChivoRegular";
+  font-family: "exodemi_bold";
   font-weight: normal;
   font-size: 110%;
   padding: 0;
