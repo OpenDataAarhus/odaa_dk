@@ -1,28 +1,35 @@
 <?php
 /**
- * Implements hook_user_login()
+ * @file
+ * CKAN requires to validate session data, for a SSO.
+ * Drupal will register new users to CKAN on login.
+ */
+
+/**
+ * Implements hook_user_login().
+ * 
+ * @see http://docs.ckan.org/en/latest/api.html#ckan.logic.action.update.user_update
+ * @see http://docs.ckan.org/en/latest/api.html#ckan.logic.action.create.user_create
  */
 function odaa_user_user_login(&$edit, $account) {
-  // First lets check if the user is created
+  // First lets check if the user is created.
   $username =_odaa_user_get_ckan_find_user($account->name);
   if ($username != FALSE) {
-    // User exist in CKAN, update?
-    // http://docs.ckan.org/en/latest/api.html#ckan.logic.action.update.user_update
+    // User exist in CKAN, update.
   }
   else {
-    // User does not exists in CKAN, lets create one!
+    // User does not exists in CKAN, lets create one.
     $options = array(
       'name' => $account->name,
       'email' => $account->mail,
       'password' => md5(uniqid()),
     );
-    // http://docs.ckan.org/en/latest/api.html#ckan.logic.action.create.user_create
     $data = _odaa_user_api_call('/user_create', $options);
   }
 }
 
 /**
- * Implements hook_menu()
+ * Implements hook_menu().
  */
 function odaa_user_menu() {
   $items = array();
@@ -35,7 +42,7 @@ function odaa_user_menu() {
     'type' => MENU_CALLBACK,
   );
   
-  // Admin page
+  // Admin page.
   $items['admin/config/system/odaa'] = array(
     'title' => 'Odaa',
     'description' => t('Odaa CKAN configuration'),
@@ -52,48 +59,55 @@ function odaa_user_menu() {
  * Administrative configuration form.
  *
  * @return 
- *   System Settings Form
+ *   System Settings Form.
  */
 function odaa_user_admin() {
   $form = array();
   
   $form['odaa_user_api_key'] = array(
-      '#type' => 'textfield',
-      '#title' => t('API key'),
-      '#default_value' => variable_get('odaa_user_api_key', ''),
-      '#required' => TRUE,
+    '#type' => 'textfield',
+    '#title' => t('API key'),
+    '#default_value' => variable_get('odaa_user_api_key', ''),
+    '#required' => TRUE,
   );
 
   $form['odaa_user_ckan_url'] = array(
-      '#type' => 'textfield',
-      '#title' => t('CKAN URL'),
-      '#default_value' => variable_get('odaa_user_ckan_url', ''),
-      '#required' => TRUE,
+    '#type' => 'textfield',
+    '#title' => t('CKAN URL'),
+    '#default_value' => variable_get('odaa_user_ckan_url', ''),
+    '#required' => TRUE,
   );
 
   return system_settings_form($form);
 }
 
 /**
- * Convert session id to user id
+ * Convert session id to user id.
+ * 
  * @param string $session_id
- * @return JSON with uid
+ *  Drupal session id
+ * @return mixed
+ *  JSON Drupal user id
  */
 function _odaa_user_validate_session($session_id) {
   $uid = db_select('sessions', 's')
-          ->fields('s', array('uid'))
-          ->condition('sid', $session_id)
-          ->execute()
-          ->fetchField();
+    ->fields('s', array('uid'))
+    ->condition('sid', $session_id)
+    ->execute()
+    ->fetchField();
   
   return drupal_json_output(array($uid));
 }
 
 /**
- * Internal function for API calls to CKAN
+ * Internal function for API calls to CKAN.
+ * 
  * @param string $call
  * @param array $data
- * @return FALSE or data array
+ * 
+ * @return mixed
+ *  FALSE if no data.
+ *  CKAN data array.
  */
 function _odaa_user_api_call($call, $data = NULL) {
   $api_key = variable_get('odaa_user_api_key', '');
@@ -109,7 +123,7 @@ function _odaa_user_api_call($call, $data = NULL) {
   );
 
   if ($data != NULL) {
-    // Inserting post data
+    // Inserting post data.
     $options['data'] = json_encode($data);
   }
   
@@ -118,9 +132,9 @@ function _odaa_user_api_call($call, $data = NULL) {
   $output = drupal_http_request($url.$call, $options);
   
   if (($data = json_decode($output->data)) !== FALSE) {
-    // Data is JSON
+    // Data is JSON.
     if ($data->success == 1) {
-      // Successfull request
+      // Successfull request.
       return $data->result;
     }
   }
@@ -129,17 +143,22 @@ function _odaa_user_api_call($call, $data = NULL) {
 }
 
 /**
- * Interal function to check if username exists in CKAN
+ * Interal function to check if username exists in CKAN.
+ * 
  * @param string $username
+ * 
  * @return FALSE or user object
+ *  FALSE if username not found.
+ *  CKAN data with user array.
+ * 
+ * @see http://docs.ckan.org/en/latest/api.html#ckan.logic.action.get.user_list
  */
 function _odaa_user_get_ckan_find_user($username) {
-  // http://docs.ckan.org/en/latest/api.html#ckan.logic.action.get.user_list
-  // Get user_list
+  // Get user_list.
   $users = _odaa_user_api_call('/user_list');
   foreach ($users as $user) {
     if ($user->name == $username) {
-      // User found!
+      // User found.
       return $user;
     }
   }
