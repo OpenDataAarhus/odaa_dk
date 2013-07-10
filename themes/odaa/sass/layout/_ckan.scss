@@ -1,0 +1,95 @@
+/**
+ * CKAN
+ *
+ * @author magnify
+ */
+
+
+/* Format labels
+   ========================================================================== */
+.ckan--format-label {
+  background: url("../images/ckan-sprite-resource-icons.png") no-repeat scroll 0 0 transparent;
+  display: inline-block;
+  height: 16px;
+  position: relative;
+  text-indent: -900em;
+  top: 2px;
+  vertical-align: text-bottom;
+  width: 16px;
+}
+
+.ckan--format-label {
+  background-position: 0 -62px;
+  height: 35px;
+  width: 32px;
+}
+
+.ckan--format-label[data-format="rdf"],
+.ckan--format-label[data-format*="rdf"] {
+  background-position: -32px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+.ckan--format-label[data-format="pdf"],
+.ckan--format-label[data-format*="pdf"] {
+  background-position: -64px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+.ckan--format-label[data-format="api"],
+.ckan--format-label[data-format*="api"] {
+  background-position: -96px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+.ckan--format-label[data-format="zip"],
+.ckan--format-label[data-format*="zip"] {
+  background-position: -128px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+.ckan--format-label[data-format="xls"],
+.ckan--format-label[data-format*="xls"] {
+  background-position: -160px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+.ckan--format-label[data-format="csv"],
+.ckan--format-label[data-format*="csv"] {
+  background-position: -192px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+.ckan--format-label[data-format="txt"],
+.ckan--format-label[data-format*="txt"] {
+  background-position: -224px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+.ckan--format-label[data-format="xml"],
+.ckan--format-label[data-format*="xml"] {
+  background-position: -256px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+.ckan--format-label[data-format="json"],
+.ckan--format-label[data-format*="json"] {
+  background-position: -288px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+.ckan--format-label[data-format="html"],
+.ckan--format-label[data-format*="html"] {
+  background-position: -320px -62px;
+  height: 35px;
+  width: 32px;
+}

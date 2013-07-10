@@ -5,8 +5,6 @@
  */
 
 
-/* Variables
-   ========================================================================== */
 
 $button-border:                   0;
 $button-box-shadow:               0 0 1px lighten($black, 35%) inset;
@@ -86,6 +84,10 @@ $button-danger-color:             #fff;
     @include background-image(linear-gradient(darken($bg-start-color, 5%), darken($bg-end-color, 5%)));
 
     background-color: $bg-end-color;
+  }
+
+  i[class^="icon-"] {
+    margin-right: 8px;
   }
 }
 

@@ -1007,11 +1007,9 @@ table tbody tr:hover th {
  *
  * @author magnify
  */
-/* Variables
-   ========================================================================== */
 /* Extends
    ========================================================================== */
-/* line 31, ../sass/framework/_buttons.scss */
+/* line 29, ../sass/framework/_buttons.scss */
 .button, #block-user-0 #user-login-form .form-submit,
 a.button {
   -webkit-border-radius: 5px;
@@ -1030,11 +1028,11 @@ a.button {
   text-align: center;
   vertical-align: middle;
 }
-/* line 47, ../sass/framework/_buttons.scss */
+/* line 45, ../sass/framework/_buttons.scss */
 .button:focus, #block-user-0 #user-login-form .form-submit:focus, .button:hover, #block-user-0 #user-login-form .form-submit:hover, .button:active, #block-user-0 #user-login-form .form-submit:active {
   text-decoration: none;
 }
-/* line 53, ../sass/framework/_buttons.scss */
+/* line 51, ../sass/framework/_buttons.scss */
 .disabled.button, #block-user-0 #user-login-form .disabled.form-submit, [disabled].button, #block-user-0 #user-login-form [disabled].form-submit {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
@@ -1047,7 +1045,7 @@ a.button {
 /* Mixins
    ========================================================================== */
 /* Default button */
-/* line 96, ../sass/framework/_buttons.scss */
+/* line 98, ../sass/framework/_buttons.scss */
 .button, #block-user-0 #user-login-form .form-submit,
 a.button,
 #block-user-0 #user-login-form a.form-submit {
@@ -1061,7 +1059,7 @@ a.button,
   border: 0;
   color: white;
 }
-/* line 78, ../sass/framework/_buttons.scss */
+/* line 76, ../sass/framework/_buttons.scss */
 .button:link, #block-user-0 #user-login-form .form-submit:link, .button:visited, #block-user-0 #user-login-form .form-submit:visited,
 a.button:link,
 #block-user-0 #user-login-form a.form-submit:link,
@@ -1069,7 +1067,7 @@ a.button:visited,
 #block-user-0 #user-login-form a.form-submit:visited {
   color: white;
 }
-/* line 85, ../sass/framework/_buttons.scss */
+/* line 83, ../sass/framework/_buttons.scss */
 .button:focus, #block-user-0 #user-login-form .form-submit:focus, .button:hover, #block-user-0 #user-login-form .form-submit:hover, .button:active, #block-user-0 #user-login-form .form-submit:active,
 a.button:focus,
 #block-user-0 #user-login-form a.form-submit:focus,
@@ -1084,13 +1082,19 @@ a.button:active,
   background-image: linear-gradient(#262626, #000000);
   background-color: #0d0d0d;
 }
+/* line 89, ../sass/framework/_buttons.scss */
+.button i[class^="icon-"], #block-user-0 #user-login-form .form-submit i[class^="icon-"],
+a.button i[class^="icon-"],
+#block-user-0 #user-login-form a.form-submit i[class^="icon-"] {
+  margin-right: 8px;
+}
 
 /* Theme button */
 /* Action button */
 /* Warning button */
 /* Danger button */
 /* Don't use native buttons on iOS */
-/* line 123, ../sass/framework/_buttons.scss */
+/* line 125, ../sass/framework/_buttons.scss */
 input[type=submit].button, #block-user-0 #user-login-form input[type=submit].form-submit,
 button.button,
 #block-user-0 #user-login-form button.form-submit {
@@ -1099,7 +1103,7 @@ button.button,
 
 /* Correct FF button padding */
 @-moz-document url-prefix() {
-  /* line 134, ../sass/framework/_buttons.scss */
+  /* line 136, ../sass/framework/_buttons.scss */
   button::-moz-focus-inner,
   input[type="reset"]::-moz-focus-inner,
   input[type="button"]::-moz-focus-inner,
@@ -4406,6 +4410,112 @@ body {
 .messages a:active {
   background-color: transparent;
   color: #bfbfbf;
+}
+
+/**
+ * CKAN
+ *
+ * @author magnify
+ */
+/* Format labels
+   ========================================================================== */
+/* line 10, ../sass/layout/_ckan.scss */
+.ckan--format-label {
+  background: url("../images/ckan-sprite-resource-icons.png") no-repeat scroll 0 0 transparent;
+  display: inline-block;
+  height: 16px;
+  position: relative;
+  text-indent: -900em;
+  top: 2px;
+  vertical-align: text-bottom;
+  width: 16px;
+}
+
+/* line 21, ../sass/layout/_ckan.scss */
+.ckan--format-label {
+  background-position: 0 -62px;
+  height: 35px;
+  width: 32px;
+}
+
+/* line 28, ../sass/layout/_ckan.scss */
+.ckan--format-label[data-format="rdf"],
+.ckan--format-label[data-format*="rdf"] {
+  background-position: -32px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+/* line 35, ../sass/layout/_ckan.scss */
+.ckan--format-label[data-format="pdf"],
+.ckan--format-label[data-format*="pdf"] {
+  background-position: -64px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+/* line 42, ../sass/layout/_ckan.scss */
+.ckan--format-label[data-format="api"],
+.ckan--format-label[data-format*="api"] {
+  background-position: -96px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+/* line 49, ../sass/layout/_ckan.scss */
+.ckan--format-label[data-format="zip"],
+.ckan--format-label[data-format*="zip"] {
+  background-position: -128px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+/* line 56, ../sass/layout/_ckan.scss */
+.ckan--format-label[data-format="xls"],
+.ckan--format-label[data-format*="xls"] {
+  background-position: -160px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+/* line 63, ../sass/layout/_ckan.scss */
+.ckan--format-label[data-format="csv"],
+.ckan--format-label[data-format*="csv"] {
+  background-position: -192px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+/* line 70, ../sass/layout/_ckan.scss */
+.ckan--format-label[data-format="txt"],
+.ckan--format-label[data-format*="txt"] {
+  background-position: -224px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+/* line 77, ../sass/layout/_ckan.scss */
+.ckan--format-label[data-format="xml"],
+.ckan--format-label[data-format*="xml"] {
+  background-position: -256px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+/* line 84, ../sass/layout/_ckan.scss */
+.ckan--format-label[data-format="json"],
+.ckan--format-label[data-format*="json"] {
+  background-position: -288px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+/* line 91, ../sass/layout/_ckan.scss */
+.ckan--format-label[data-format="html"],
+.ckan--format-label[data-format*="html"] {
+  background-position: -320px -62px;
+  height: 35px;
+  width: 32px;
 }
 
 /**
