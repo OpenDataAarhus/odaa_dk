@@ -24,6 +24,23 @@
       <section class="header-wrapper">
         <div class="header-inner">
           <a href="/" class="logo"><img alt="" src="/sites/odaa.dk/themes/odaa/logo.png"></a>
+          <div class="search-form">
+            <form>
+              <input type="text" placeholder="Søg..." class="search-form-text" />
+              <input type="submit" value="Søg" class="button" />
+            </form>
+          </div>
+          <ul class="main-menu">
+            <li><a href="#" class="menu-item active"><span>Datasæt</span></a></li>
+            <li><a href="#" class="menu-item"><span>Organisation</span></a></li>
+            <li><a href="#" class="menu-item"><span>Grupper</span></a></li>
+            <li><a href="#" class="menu-item"><span>App</span></a></li>
+            <li><a href="#" class="menu-item"><span>Om</span></a></li>
+          </ul>
+          <ul class="secondary-menu">
+            <li><a href="#" class="menu-item"><span>Login</span></a></li>
+            <li><a href="#" class="menu-item last"><span>Opret bruger</span></a></li>
+          </ul>
         </div>
       </section>
     </header>

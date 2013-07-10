@@ -18,14 +18,13 @@ body {
    ========================================================================== */
 
 .site-header {
-  @include background-image(linear-gradient(darken($white, 12%), darken($white, 3%)));
+  background-color: $white;
 }
 
 .header-wrapper {
   margin-right: auto;
   margin-left: auto;
   max-width: 1200px;
-  overflow: hidden;
   position: relative;
 }
 
@@ -33,7 +32,6 @@ body {
   overflow: hidden;
   padding-top: 20px;
   padding-right: 10px;
-  padding-bottom: 20px;
   padding-left: 10px;
 }
 
@@ -42,7 +40,7 @@ body {
    ========================================================================== */
 
 .logo {
-  @include zen-grid-item(4, 1);
+  @include zen-grid-item(3, 1);
 
   padding-left: 0;
 }

@@ -9,11 +9,12 @@
    ========================================================================== */
 
 .main-menu {
-  float: left;
-  font-size: $font-size-large;
-  margin: 0;
-  padding-left: 0;
-  width: 100%;
+  @include zen-clear(right);
+  @include zen-grid-item(6, 4);
+
+  font-size: $font-size-medium;
+  margin-top: 20px;
+  padding-right: 0;
 
   /* For now Drupal's menu_tree function adds the class "main-menu" so sub-menus
    * as well.
@@ -23,29 +24,11 @@
   }
 
   li {
-    /* Add the icon here so we can show it in other breakpoints */
-    @extend .icon-angle-right;
-
     float: left;
     list-style: none;
 
-    /* Make sure the icon is not displayed in this breakpoint */
-    &:before {
-      display: none;
-    }
-  }
-
-  .first {
-    .menu-item {
-      margin-left: 0;
-    }
-  }
-
-  .last {
-    border-right: 0;
-
-    .menu-item {
-      margin-right: 0;
+    &.menu-item-right {
+      float: right;
     }
   }
 
@@ -57,11 +40,11 @@
     background-color: transparentize($black, .35);
     color: $white;
     display: inline-block;
-    margin-right: 15px;
-    padding-top: 12px;
-    padding-right: 18px;
-    padding-bottom: 12px;
-    padding-left: 18px;
+    margin-right: 5px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
 
     &:hover {
       background-color: transparentize($black, .25);
@@ -72,53 +55,36 @@
     &.active {
       background-color: $base-primary-color;
       color: $white;
-      /* Required for pseudo arrow */
-      position: relative;
 
       &:hover {
         background-color: darken($base-primary-color, 10%);
-
-        &:before {
-          @include pseudo-arrow(10px, darken($base-primary-color, 10%), bottom, center, $offset: 20px);
-        }
       }
+    }
 
-      &:before {
-        @include pseudo-arrow(10px, $base-primary-color, bottom, center, $offset: 20px);
-      }
+    &.last {
+      margin-right: 0;
     }
   }
 }
 
 
-
 /* Secondary menu
    ========================================================================== */
 .secondary-menu {
-  @include box-shadow(inset 0 5px 10px transparentize($black, .75));
+  @include zen-grid-item(3, 1, right);
+  @extend .main-menu;
 
-  background-color: transparentize($black, .3);
-  clear: both;
-  float: left;
-  margin: 0;
-  padding-left: 0;
-  width: 100%;
-
-  li {
-    float: left;
-    list-style: none;
-  }
+  padding-right: 0;
+  width: auto;
 
   .menu-item {
-    color: $white;
-    display: inline-block;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
+    background-color: $base-tertiary-color;
+
+    &:hover {
+      background-color: darken($base-tertiary-color, 10%);
+    }
   }
 }
-
 
 
 /* Sub menu

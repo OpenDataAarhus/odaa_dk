@@ -55,7 +55,7 @@ $yellow:                         #f0cb28;
 /* Theme color definitions
    ========================================================================== */
 
-$base-primary-color:             #ff861a;
+$base-primary-color:             #e5420c;
 $base-secondary-color:           $white;
 $base-tertiary-color:            #96b000;
 
@@ -115,5 +115,5 @@ $base-box-shadow:                 0 0 5px $gray;
 /* Links
    ========================================================================== */
 
-$link-color:                      darken($base-primary-color, 10%);
+$link-color:                      $base-primary-color;
 $link-color-hover:                darken($base-primary-color, 8%);
