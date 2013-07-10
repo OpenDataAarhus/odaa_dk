@@ -7,21 +7,24 @@
  */
 
 
+/* Body */
+body {
+  background: url('../images/pw-maze-white-pattern.png');
+}
+
+
 
 /* Site header
    ========================================================================== */
 
 .site-header {
-  @include background-image(linear-gradient(darken($white, 12%), darken($white, 3%)));
-
-  border-bottom: 1px solid $gray-lighter;
+  background-color: $white;
 }
 
 .header-wrapper {
   margin-right: auto;
   margin-left: auto;
   max-width: 1200px;
-  overflow: hidden;
   position: relative;
 }
 
@@ -29,7 +32,6 @@
   overflow: hidden;
   padding-top: 20px;
   padding-right: 10px;
-  padding-bottom: 20px;
   padding-left: 10px;
 }
 
@@ -38,7 +40,7 @@
    ========================================================================== */
 
 .logo {
-  @include zen-grid-item(4, 1);
+  @include zen-grid-item(3, 1);
 
   padding-left: 0;
 }
@@ -48,7 +50,7 @@
    ========================================================================== */
 
 .content-wrapper {
-  border-top: 1px solid $gray-light;
+  border-top: 20px solid transparentize($base-tertiary-color, .7);
   clear: both;
   overflow: hidden;
   padding-bottom: $large-spacing;

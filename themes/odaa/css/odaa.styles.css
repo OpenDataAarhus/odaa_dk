@@ -458,8 +458,8 @@ table {
 /* line 8, ../sass/framework/_base.scss */
 body {
   background-color: white;
-  color: gray;
-  font-family: "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  color: #404040;
+  font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
 }
@@ -471,9 +471,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
-  font-family: "LaconicRegular", "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "LaconicRegular", "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   /* This fixes huge spaces when a heading wraps onto two lines */
   line-height: 1.2;
   margin-top: 0;
@@ -488,7 +488,7 @@ h3 a:link,
 h4 a:link,
 h5 a:link,
 h6 a:link {
-  color: gray;
+  color: #404040;
   text-decoration: none;
 }
 /* line 40, ../sass/framework/_base.scss */
@@ -498,7 +498,7 @@ h3 a:visited,
 h4 a:visited,
 h5 a:visited,
 h6 a:visited {
-  color: #404040;
+  color: black;
 }
 /* line 44, ../sass/framework/_base.scss */
 h1 a:hover,
@@ -507,7 +507,7 @@ h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover {
-  color: #404040;
+  color: black;
 }
 /* line 48, ../sass/framework/_base.scss */
 h1 a:focus,
@@ -516,7 +516,7 @@ h3 a:focus,
 h4 a:focus,
 h5 a:focus,
 h6 a:focus {
-  color: #404040;
+  color: black;
 }
 /* line 52, ../sass/framework/_base.scss */
 h1 a:active,
@@ -526,7 +526,7 @@ h4 a:active,
 h5 a:active,
 h6 a:active {
   background-color: transparent;
-  color: #404040;
+  color: black;
 }
 
 /* line 60, ../sass/framework/_base.scss */
@@ -561,18 +561,18 @@ h6 {
 
 /* line 85, ../sass/framework/_base.scss */
 strong {
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
 }
 
 /* line 90, ../sass/framework/_base.scss */
 em {
-  font-family: "exoextra_light_italic";
+  font-family: "exo-regular-italic";
   font-weight: normal;
 }
 /* line 93, ../sass/framework/_base.scss */
 em strong {
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
 }
 
@@ -584,17 +584,17 @@ a {
 }
 /* line 106, ../sass/framework/_base.scss */
 a:link {
-  color: #e66c00;
+  color: #e5420c;
   text-decoration: none;
 }
 /* line 111, ../sass/framework/_base.scss */
 a:visited {
-  color: #cd6000;
+  color: #cd3b0b;
   text-decoration: none;
 }
 /* line 116, ../sass/framework/_base.scss */
 a:hover {
-  color: #f07100;
+  color: #be370a;
   text-decoration: underline;
 }
 /* line 120, ../sass/framework/_base.scss */
@@ -603,7 +603,7 @@ a:hover i[class^="icon-"] {
 }
 /* line 125, ../sass/framework/_base.scss */
 a:focus {
-  color: #f07100;
+  color: #be370a;
 }
 
 /* Paragraph
@@ -663,7 +663,7 @@ fieldset {
 
 /* line 194, ../sass/framework/_base.scss */
 legend {
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
   display: block;
   font-size: 110%;
@@ -699,7 +699,7 @@ legend {
 input,
 textarea,
 select {
-  font-family: "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 100%;
   letter-spacing: 1px;
 }
@@ -758,7 +758,7 @@ textarea {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.4);
   display: block;
-  font-family: "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 100%;
   min-height: 10px;
   margin-bottom: 10px;
@@ -778,7 +778,7 @@ input[type="time"]:focus,
 input[type="url"]:focus,
 textarea:focus {
   background-color: #f7f7f7;
-  border: 1px solid #cd6000;
+  border: 1px solid #9c2d08;
   color: black;
 }
 /* line 64, ../sass/framework/_forms.scss */
@@ -854,7 +854,7 @@ table td {
 }
 /* line 62, ../sass/framework/_tables.scss */
 .table th, table th {
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
   padding-top: 10px;
   padding-right: 10px;
@@ -1019,7 +1019,7 @@ a.button {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
   display: inline-block;
   font-size: 100%;
@@ -1268,157 +1268,139 @@ button.button,
 /* Main menu
    ========================================================================== */
 /* line 11, ../sass/framework/_navigation.scss */
-.main-menu {
+.main-menu, .secondary-menu {
+  clear: right;
   float: left;
-  font-size: 130%;
-  margin: 0;
-  padding-left: 0;
-  width: 100%;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: -75%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/all/themes/litteratursiden/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  font-size: 110%;
+  margin-top: 20px;
+  padding-right: 0;
+  width: auto;
   /* For now Drupal's menu_tree function adds the class "main-menu" so sub-menus
    * as well.
    */
 }
-/* line 21, ../sass/framework/_navigation.scss */
-.main-menu .main-menu {
+/* line 23, ../sass/framework/_navigation.scss */
+.main-menu .main-menu, .secondary-menu .main-menu, .main-menu .secondary-menu, .secondary-menu .secondary-menu {
   display: none;
 }
-/* line 25, ../sass/framework/_navigation.scss */
-.main-menu li {
-  /* Add the icon here so we can show it in other breakpoints */
+/* line 27, ../sass/framework/_navigation.scss */
+.main-menu li, .secondary-menu li {
   float: left;
   list-style: none;
-  /* Make sure the icon is not displayed in this breakpoint */
 }
-/* line 33, ../sass/framework/_navigation.scss */
-.main-menu li:before {
-  display: none;
+/* line 31, ../sass/framework/_navigation.scss */
+.main-menu li.menu-item-right, .secondary-menu li.menu-item-right {
+  float: right;
 }
-/* line 39, ../sass/framework/_navigation.scss */
-.main-menu .first .menu-item {
-  margin-left: 0;
-}
-/* line 44, ../sass/framework/_navigation.scss */
-.main-menu .last {
-  border-right: 0;
-}
-/* line 47, ../sass/framework/_navigation.scss */
-.main-menu .last .menu-item {
-  margin-right: 0;
-}
-/* line 52, ../sass/framework/_navigation.scss */
-.main-menu .menu-item {
+/* line 36, ../sass/framework/_navigation.scss */
+.main-menu .menu-item, .secondary-menu .menu-item {
   -webkit-border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
   -ms-border-radius: 5px 5px 0 0;
   -o-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
   background-color: rgba(0, 0, 0, 0.65);
   color: white;
   display: inline-block;
-  margin-right: 15px;
-  padding-top: 12px;
-  padding-right: 18px;
-  padding-bottom: 12px;
-  padding-left: 18px;
+  margin-right: 5px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
 }
-/* line 66, ../sass/framework/_navigation.scss */
-.main-menu .menu-item:hover {
+/* line 50, ../sass/framework/_navigation.scss */
+.main-menu .menu-item:hover, .secondary-menu .menu-item:hover {
   background-color: rgba(0, 0, 0, 0.75);
   color: white;
   text-decoration: none;
 }
-/* line 72, ../sass/framework/_navigation.scss */
-.main-menu .menu-item.active {
-  background-color: #ff861a;
+/* line 56, ../sass/framework/_navigation.scss */
+.main-menu .menu-item.active, .secondary-menu .menu-item.active {
+  background-color: #e5420c;
   color: white;
-  /* Required for pseudo arrow */
-  position: relative;
 }
-/* line 78, ../sass/framework/_navigation.scss */
-.main-menu .menu-item.active:hover {
-  background-color: #e66c00;
+/* line 60, ../sass/framework/_navigation.scss */
+.main-menu .menu-item.active:hover, .secondary-menu .menu-item.active:hover {
+  background-color: #b53409;
 }
-/* line 81, ../sass/framework/_navigation.scss */
-.main-menu .menu-item.active:hover:before {
-  border: 10px solid transparent;
-  content: "";
-  height: 0;
-  position: absolute;
-  width: 0;
-  bottom: -20px;
-  border-top-color: #e66c00;
-  margin-left: -10px;
-  left: 50%;
-}
-/* line 86, ../sass/framework/_navigation.scss */
-.main-menu .menu-item.active:before {
-  border: 10px solid transparent;
-  content: "";
-  height: 0;
-  position: absolute;
-  width: 0;
-  bottom: -20px;
-  border-top-color: #ff861a;
-  margin-left: -10px;
-  left: 50%;
+/* line 65, ../sass/framework/_navigation.scss */
+.main-menu .menu-item.last, .secondary-menu .menu-item.last {
+  margin-right: 0;
 }
 
 /* Secondary menu
    ========================================================================== */
-/* line 97, ../sass/framework/_navigation.scss */
+/* line 74, ../sass/framework/_navigation.scss */
 .secondary-menu {
-  -webkit-box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.25);
-  background-color: rgba(0, 0, 0, 0.7);
-  clear: both;
-  float: left;
-  margin: 0;
-  padding-left: 0;
-  width: 100%;
+  float: right;
+  width: 25%;
+  margin-right: 0%;
+  margin-left: -25%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/all/themes/litteratursiden/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  /* We have to declare these again because zen grid sets width and padding */
+  padding-right: 0;
+  width: auto;
 }
-/* line 107, ../sass/framework/_navigation.scss */
-.secondary-menu li {
-  float: left;
-  list-style: none;
-}
-/* line 112, ../sass/framework/_navigation.scss */
+/* line 82, ../sass/framework/_navigation.scss */
 .secondary-menu .menu-item {
-  color: white;
-  display: inline-block;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
+  background-color: #96b000;
+}
+/* line 85, ../sass/framework/_navigation.scss */
+.secondary-menu .menu-item:hover {
+  background-color: #6b7d00;
 }
 
 /* Sub menu
    ========================================================================== */
-/* line 127, ../sass/framework/_navigation.scss */
+/* line 95, ../sass/framework/_navigation.scss */
 .sub-menu-wrapper {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 5px #efefef;
-  -moz-box-shadow: 0 0 5px #efefef;
-  box-shadow: 0 0 5px #efefef;
+  -webkit-box-shadow: 0 0 5px #d5d5d5;
+  -moz-box-shadow: 0 0 5px #d5d5d5;
+  box-shadow: 0 0 5px #d5d5d5;
   background-color: white;
   border: 1px solid #d5d5d5;
   margin-top: 20px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 127, ../sass/framework/_navigation.scss */
+  /* line 95, ../sass/framework/_navigation.scss */
   .sub-menu-wrapper {
     display: none;
   }
 }
 
-/* line 140, ../sass/framework/_navigation.scss */
+/* line 108, ../sass/framework/_navigation.scss */
 .sub-menu-title {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(100%, #ffffff));
   background-image: -webkit-linear-gradient(#f2f2f2, #ffffff);
@@ -1439,70 +1421,70 @@ button.button,
   padding-left: 10px;
 }
 
-/* line 153, ../sass/framework/_navigation.scss */
+/* line 121, ../sass/framework/_navigation.scss */
 .sub-menu {
   padding-left: 0;
 }
-/* line 156, ../sass/framework/_navigation.scss */
+/* line 124, ../sass/framework/_navigation.scss */
 .sub-menu > li {
   /* Level 1 */
   /* We want the border bottom to have full width so we have to increase
      padding left according to the nesting level. */
   /* Level 2 */
 }
-/* line 158, ../sass/framework/_navigation.scss */
+/* line 126, ../sass/framework/_navigation.scss */
 .sub-menu > li .menu-item {
   border-bottom: 1px dashed #e6e6e6;
-  color: gray;
+  color: #404040;
   display: block;
   padding-top: 10px;
   padding-bottom: 8px;
   padding-left: 20px;
 }
-/* line 168, ../sass/framework/_navigation.scss */
+/* line 136, ../sass/framework/_navigation.scss */
 .sub-menu > li .menu-item:before {
   float: left;
   font-family: "FontAwesome";
   font-size: 130%;
   margin-right: 10px;
 }
-/* line 175, ../sass/framework/_navigation.scss */
+/* line 143, ../sass/framework/_navigation.scss */
 .sub-menu > li .menu-item.active {
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
-  color: #e66c00;
+  color: #e5420c;
 }
-/* line 181, ../sass/framework/_navigation.scss */
+/* line 149, ../sass/framework/_navigation.scss */
 .sub-menu > li .menu-item:hover {
   text-decoration: none;
-  color: #f07100;
+  color: #be370a;
 }
-/* line 191, ../sass/framework/_navigation.scss */
+/* line 159, ../sass/framework/_navigation.scss */
 .sub-menu > li ul {
   border-bottom: 1px dashed #e6e6e6;
   /* Level 3 */
 }
-/* line 194, ../sass/framework/_navigation.scss */
+/* line 162, ../sass/framework/_navigation.scss */
 .sub-menu > li ul .menu-item {
   padding-left: 40px;
 }
-/* line 200, ../sass/framework/_navigation.scss */
+/* line 168, ../sass/framework/_navigation.scss */
 .sub-menu > li ul ul .menu-item {
   padding-left: 60px;
 }
-/* line 207, ../sass/framework/_navigation.scss */
+/* line 175, ../sass/framework/_navigation.scss */
 .sub-menu > li li:hover {
   background-color: #ebebeb;
 }
-/* line 212, ../sass/framework/_navigation.scss */
+/* line 180, ../sass/framework/_navigation.scss */
 .sub-menu > li li li:hover {
   background-color: #d6d6d6;
 }
-/* line 218, ../sass/framework/_navigation.scss */
+/* line 186, ../sass/framework/_navigation.scss */
 .sub-menu > li:hover {
   background-color: whitesmoke;
 }
-/* line 223, ../sass/framework/_navigation.scss */
+/* line 191, ../sass/framework/_navigation.scss */
 .sub-menu > li.last .menu-item {
   border-bottom: 0;
 }
@@ -3154,7 +3136,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 /* line 245, ../sass/framework/fontawesome/scss/_icons.scss */
-.icon-angle-right:before, .main-menu li:before, .sub-menu > li .menu-item:before {
+.icon-angle-right:before, .sub-menu > li .menu-item:before {
   content: "\f105";
 }
 
@@ -3809,44 +3791,43 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
  *
  * @author magnify
  */
-/* Site header
-   ========================================================================== */
-/* line 14, ../sass/layout/_layout.scss */
-.site-header {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e0e0e0), color-stop(100%, #f7f7f7));
-  background-image: -webkit-linear-gradient(#e0e0e0, #f7f7f7);
-  background-image: -moz-linear-gradient(#e0e0e0, #f7f7f7);
-  background-image: -o-linear-gradient(#e0e0e0, #f7f7f7);
-  background-image: linear-gradient(#e0e0e0, #f7f7f7);
-  border-bottom: 1px solid #fbfbfb;
+/* Body */
+/* line 11, ../sass/layout/_layout.scss */
+body {
+  background: url("../images/pw-maze-white-pattern.png");
 }
 
+/* Site header
+   ========================================================================== */
 /* line 20, ../sass/layout/_layout.scss */
+.site-header {
+  background-color: white;
+}
+
+/* line 24, ../sass/layout/_layout.scss */
 .header-wrapper {
   margin-right: auto;
   margin-left: auto;
   max-width: 1200px;
-  overflow: hidden;
   position: relative;
 }
 
-/* line 28, ../sass/layout/_layout.scss */
+/* line 31, ../sass/layout/_layout.scss */
 .header-inner {
   overflow: hidden;
   padding-top: 20px;
   padding-right: 10px;
-  padding-bottom: 20px;
   padding-left: 10px;
 }
 
 /* Logo
    ========================================================================== */
-/* line 40, ../sass/layout/_layout.scss */
+/* line 42, ../sass/layout/_layout.scss */
 .logo {
   float: left;
-  width: 33.33333%;
+  width: 25%;
   margin-left: 0%;
-  margin-right: -33.33333%;
+  margin-right: -25%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -3863,15 +3844,15 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 /* Content
    ========================================================================== */
-/* line 50, ../sass/layout/_layout.scss */
+/* line 52, ../sass/layout/_layout.scss */
 .content-wrapper {
-  border-top: 1px solid #efefef;
+  border-top: 20px solid rgba(150, 176, 0, 0.3);
   clear: both;
   overflow: hidden;
   padding-bottom: 20px;
 }
 
-/* line 57, ../sass/layout/_layout.scss */
+/* line 59, ../sass/layout/_layout.scss */
 .content-inner {
   margin-right: auto;
   margin-left: auto;
@@ -3881,11 +3862,11 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 /* Layouts
    ========================================================================== */
-/* line 68, ../sass/layout/_layout.scss */
+/* line 70, ../sass/layout/_layout.scss */
 .front {
   /* Media queries */
 }
-/* line 69, ../sass/layout/_layout.scss */
+/* line 71, ../sass/layout/_layout.scss */
 .front .primary-content {
   float: left;
   width: 66.66667%;
@@ -3903,7 +3884,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 73, ../sass/layout/_layout.scss */
+/* line 75, ../sass/layout/_layout.scss */
 .front .secondary-content {
   clear: right;
   float: right;
@@ -3922,7 +3903,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 78, ../sass/layout/_layout.scss */
+/* line 80, ../sass/layout/_layout.scss */
 .front .tertiary-content {
   clear: left;
   float: left;
@@ -3941,7 +3922,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 82, ../sass/layout/_layout.scss */
+/* line 84, ../sass/layout/_layout.scss */
 .front .tertiary-content .spotbox:nth-child(odd) {
   clear: left;
   float: left;
@@ -3960,7 +3941,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 87, ../sass/layout/_layout.scss */
+/* line 89, ../sass/layout/_layout.scss */
 .front .tertiary-content .spotbox:nth-child(even) {
   float: right;
   width: 50%;
@@ -3978,12 +3959,12 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 92, ../sass/layout/_layout.scss */
+/* line 94, ../sass/layout/_layout.scss */
 .front .attachment-wrapper {
   clear: both;
 }
 @media only screen and (max-width: 768px) {
-  /* line 100, ../sass/layout/_layout.scss */
+  /* line 102, ../sass/layout/_layout.scss */
   .front .primary-content,
   .front .secondary-content,
   .front .tertiary-content {
@@ -4004,7 +3985,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 106, ../sass/layout/_layout.scss */
+  /* line 108, ../sass/layout/_layout.scss */
   .front .primary-content .spotbox,
   .front .primary-content .spotbox:nth-child(odd),
   .front .primary-content .spotbox:nth-child(even),
@@ -4034,7 +4015,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 /* Right sidebar only */
-/* line 117, ../sass/layout/_layout.scss */
+/* line 119, ../sass/layout/_layout.scss */
 .left-sidebar .primary-content {
   float: right;
   width: 75%;
@@ -4052,7 +4033,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 121, ../sass/layout/_layout.scss */
+/* line 123, ../sass/layout/_layout.scss */
 .left-sidebar .secondary-content {
   float: left;
   width: 25%;
@@ -4070,7 +4051,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 125, ../sass/layout/_layout.scss */
+/* line 127, ../sass/layout/_layout.scss */
 .left-sidebar .tertiary-content {
   clear: both;
   float: left;
@@ -4089,7 +4070,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 129, ../sass/layout/_layout.scss */
+/* line 131, ../sass/layout/_layout.scss */
 .left-sidebar .tertiary-content .spotbox:nth-child(odd) {
   clear: left;
   float: left;
@@ -4108,7 +4089,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 134, ../sass/layout/_layout.scss */
+/* line 136, ../sass/layout/_layout.scss */
 .left-sidebar .tertiary-content .spotbox:nth-child(even) {
   float: right;
   width: 50%;
@@ -4128,7 +4109,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 /* Both sidebars */
-/* line 143, ../sass/layout/_layout.scss */
+/* line 145, ../sass/layout/_layout.scss */
 .both-sidebars .static-content {
   float: right;
   width: 25%;
@@ -4146,7 +4127,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 147, ../sass/layout/_layout.scss */
+/* line 149, ../sass/layout/_layout.scss */
 .both-sidebars .primary-content {
   float: left;
   width: 50%;
@@ -4164,7 +4145,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 151, ../sass/layout/_layout.scss */
+/* line 153, ../sass/layout/_layout.scss */
 .both-sidebars .secondary-content {
   float: left;
   width: 25%;
@@ -4182,7 +4163,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 155, ../sass/layout/_layout.scss */
+/* line 157, ../sass/layout/_layout.scss */
 .both-sidebars .tertiary-content {
   clear: right;
   float: right;
@@ -4202,12 +4183,12 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow-y: visible;
 }
 
-/* line 163, ../sass/layout/_layout.scss */
+/* line 165, ../sass/layout/_layout.scss */
 .attachment-wrapper {
   clear: both;
 }
 
-/* line 167, ../sass/layout/_layout.scss */
+/* line 169, ../sass/layout/_layout.scss */
 .attachment-first {
   float: left;
   width: 25%;
@@ -4226,7 +4207,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow-y: visible;
 }
 
-/* line 171, ../sass/layout/_layout.scss */
+/* line 173, ../sass/layout/_layout.scss */
 .attachment-second {
   float: left;
   width: 25%;
@@ -4245,7 +4226,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow-y: visible;
 }
 
-/* line 175, ../sass/layout/_layout.scss */
+/* line 177, ../sass/layout/_layout.scss */
 .attachment-third {
   float: right;
   width: 25%;
@@ -4264,7 +4245,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   _overflow-y: visible;
 }
 
-/* line 179, ../sass/layout/_layout.scss */
+/* line 181, ../sass/layout/_layout.scss */
 .attachment-fourth {
   float: right;
   width: 25%;
@@ -4452,7 +4433,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 /* line 26, ../sass/module/_module.scss */
 .spotbox a:hover {
-  color: #f07100;
+  color: #be370a;
   text-decoration: none;
 }
 /* line 31, ../sass/module/_module.scss */
@@ -4513,7 +4494,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 /* line 85, ../sass/module/_module.scss */
 .spotbox--list-header {
-  font-family: "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: normal;
   font-size: 100%;
   margin-bottom: 0;
@@ -4536,15 +4517,15 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 /* line 107, ../sass/module/_module.scss */
 .spotbox--content a:link, .user--block--logged-in-content a:link {
-  color: #e66c00;
+  color: #e5420c;
 }
 /* line 111, ../sass/module/_module.scss */
 .spotbox--content a:visited, .user--block--logged-in-content a:visited {
-  color: #c75e00;
+  color: #972c08;
 }
 /* line 115, ../sass/module/_module.scss */
 .spotbox--content a:hover, .user--block--logged-in-content a:hover {
-  color: #f07100;
+  color: #be370a;
 }
 /* line 119, ../sass/module/_module.scss */
 .spotbox--content p, .user--block--logged-in-content p {
@@ -4561,15 +4542,15 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 /* line 132, ../sass/module/_module.scss */
 .spotbox--meta-wrapper a:link {
-  color: #e66c00;
+  color: #e5420c;
 }
 /* line 136, ../sass/module/_module.scss */
 .spotbox--meta-wrapper a:visited {
-  color: #c75e00;
+  color: #972c08;
 }
 /* line 140, ../sass/module/_module.scss */
 .spotbox--meta-wrapper a:hover {
-  color: #f07100;
+  color: #be370a;
 }
 
 /* %module--block list */
@@ -4655,6 +4636,32 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 /**
+ * Page
+ *
+ * @author magnify
+ */
+/* Page
+   ========================================================================== */
+/* line 12, ../sass/module/_page.scss */
+.page-content {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px #d5d5d5;
+  -moz-box-shadow: 0 0 5px #d5d5d5;
+  box-shadow: 0 0 5px #d5d5d5;
+  background-color: white;
+  border: 1px solid #d5d5d5;
+  margin-top: 20px;
+  padding: 20px;
+  /* Headers in page content */
+}
+/* line 22, ../sass/module/_page.scss */
+.page-content h3 {
+  margin-top: 20px;
+}
+
+/**
  * Spotbox
  *
  * @author magnify
@@ -4665,12 +4672,12 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 /* line 20, ../sass/module/_spotbox.scss */
 .spotbox--content a:link,
 .spotbox--meta-wrapper a:link {
-  color: #e66c00;
+  color: #e5420c;
 }
 /* line 24, ../sass/module/_spotbox.scss */
 .spotbox--content a:visited,
 .spotbox--meta-wrapper a:visited {
-  color: #cd6000;
+  color: #cd3b0b;
 }
 
 /* line 30, ../sass/module/_spotbox.scss */
@@ -4723,7 +4730,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 /* line 146, ../sass/module/_spotbox.scss */
 .primary-content .spotbox--list-header {
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
 }
 /* line 151, ../sass/module/_spotbox.scss */
@@ -4756,7 +4763,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   background-image: -moz-linear-gradient(#ffffff, #ffffff);
   background-image: -o-linear-gradient(#ffffff, #ffffff);
   background-image: linear-gradient(#ffffff, #ffffff);
-  background-color: #f0eeea;
+  background-color: #acca00;
 }
 /* line 186, ../sass/module/_spotbox.scss */
 .tertiary-content .spotbox--header {
@@ -4767,7 +4774,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
    ========================================================================== */
 /* line 196, ../sass/module/_spotbox.scss */
 .attachment-wrapper .spotbox--inner {
-  background-color: #f0eeea;
+  background-color: #acca00;
 }
 /* line 200, ../sass/module/_spotbox.scss */
 .attachment-wrapper .spotbox--header {
@@ -4820,7 +4827,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 /* line 25, ../sass/module/_user.scss */
 .user-login .user-login-label, #block-user-0 .user-login-label, #block-user-0 label {
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
   color: rgba(0, 0, 0, 0.7);
   display: inline-block;
@@ -4874,18 +4881,18 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 /* line 81, ../sass/module/_user.scss */
 .create-user .create-user-label {
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
   display: inline-block;
   margin-bottom: 3px;
 }
 /* line 88, ../sass/module/_user.scss */
 .create-user input[type="text"] {
-  border: 1px solid #cd6000;
+  border: 1px solid #9c2d08;
 }
 /* line 91, ../sass/module/_user.scss */
 .create-user input[type="text"]:focus {
-  border: 1px solid #b35400;
+  border: 1px solid #842607;
 }
 /* line 96, ../sass/module/_user.scss */
 .create-user .create-user-buttons {
@@ -4894,7 +4901,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 /* line 100, ../sass/module/_user.scss */
 .create-user .create-user-buttons .create-user-splitter-text {
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
   margin-top: 10px;
 }
@@ -4936,7 +4943,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 /* line 144, ../sass/module/_user.scss */
 .user--block--logged-in a:hover,
 .user--block--logged-in a:focus {
-  color: #ff861a;
+  color: #e5420c;
   text-decoration: none;
 }
 
@@ -4973,7 +4980,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 
 /* line 184, ../sass/module/_user.scss */
 .user--block--logged-in-content {
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
   font-size: 110%;
   padding: 0;
@@ -5054,11 +5061,25 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
    ========================================================================== */
 /* line 12, ../sass/module/_search.scss */
 .search-form {
+  float: right;
+  width: 50%;
+  margin-right: 0%;
+  margin-left: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/all/themes/litteratursiden/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
-  bottom: 1px;
-  position: absolute;
-  right: 10px;
+  padding-right: 0;
+  width: auto;
 }
 /* line 20, ../sass/module/_search.scss */
 .search-form .search-form-text,
@@ -5072,18 +5093,17 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.9);
-  min-width: 370px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+  min-width: 400px;
   padding-right: 85px;
 }
-/* line 32, ../sass/module/_search.scss */
+/* line 33, ../sass/module/_search.scss */
 .search-form .button, .search-form #block-user-0 #user-login-form .form-submit, #block-user-0 #user-login-form .search-form .form-submit {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.5);
-  /* Use javascript to display button */
-  display: none;
   margin-left: -75px;
   min-width: 75px;
   padding-bottom: 9px;
