@@ -15,6 +15,7 @@
   font-size: $font-size-medium;
   margin-top: 20px;
   padding-right: 0;
+  width: auto;
 
   /* For now Drupal's menu_tree function adds the class "main-menu" so sub-menus
    * as well.
@@ -74,6 +75,7 @@
   @include zen-grid-item(3, 1, right);
   @extend .main-menu;
 
+  /* We have to declare these again because zen grid sets width and padding */
   padding-right: 0;
   width: auto;
 

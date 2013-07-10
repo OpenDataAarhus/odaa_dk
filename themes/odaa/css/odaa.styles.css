@@ -459,7 +459,7 @@ table {
 body {
   background-color: white;
   color: #404040;
-  font-family: "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "exoregular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
 }
@@ -473,7 +473,7 @@ h5,
 h6 {
   font-family: "exodemi_bold";
   font-weight: normal;
-  font-family: "LaconicRegular", "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "LaconicRegular", "exoregular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   /* This fixes huge spaces when a heading wraps onto two lines */
   line-height: 1.2;
   margin-top: 0;
@@ -699,7 +699,7 @@ legend {
 input,
 textarea,
 select {
-  font-family: "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "exoregular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 100%;
   letter-spacing: 1px;
 }
@@ -758,7 +758,7 @@ textarea {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.4);
   display: block;
-  font-family: "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "exoregular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 100%;
   min-height: 10px;
   margin-bottom: 10px;
@@ -1288,24 +1288,25 @@ button.button,
   font-size: 110%;
   margin-top: 20px;
   padding-right: 0;
+  width: auto;
   /* For now Drupal's menu_tree function adds the class "main-menu" so sub-menus
    * as well.
    */
 }
-/* line 22, ../sass/framework/_navigation.scss */
+/* line 23, ../sass/framework/_navigation.scss */
 .main-menu .main-menu, .secondary-menu .main-menu, .main-menu .secondary-menu, .secondary-menu .secondary-menu {
   display: none;
 }
-/* line 26, ../sass/framework/_navigation.scss */
+/* line 27, ../sass/framework/_navigation.scss */
 .main-menu li, .secondary-menu li {
   float: left;
   list-style: none;
 }
-/* line 30, ../sass/framework/_navigation.scss */
+/* line 31, ../sass/framework/_navigation.scss */
 .main-menu li.menu-item-right, .secondary-menu li.menu-item-right {
   float: right;
 }
-/* line 35, ../sass/framework/_navigation.scss */
+/* line 36, ../sass/framework/_navigation.scss */
 .main-menu .menu-item, .secondary-menu .menu-item {
   -webkit-border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
@@ -1324,29 +1325,29 @@ button.button,
   padding-bottom: 10px;
   padding-left: 20px;
 }
-/* line 49, ../sass/framework/_navigation.scss */
+/* line 50, ../sass/framework/_navigation.scss */
 .main-menu .menu-item:hover, .secondary-menu .menu-item:hover {
   background-color: rgba(0, 0, 0, 0.75);
   color: white;
   text-decoration: none;
 }
-/* line 55, ../sass/framework/_navigation.scss */
+/* line 56, ../sass/framework/_navigation.scss */
 .main-menu .menu-item.active, .secondary-menu .menu-item.active {
   background-color: #e5420c;
   color: white;
 }
-/* line 59, ../sass/framework/_navigation.scss */
+/* line 60, ../sass/framework/_navigation.scss */
 .main-menu .menu-item.active:hover, .secondary-menu .menu-item.active:hover {
   background-color: #b53409;
 }
-/* line 64, ../sass/framework/_navigation.scss */
+/* line 65, ../sass/framework/_navigation.scss */
 .main-menu .menu-item.last, .secondary-menu .menu-item.last {
   margin-right: 0;
 }
 
 /* Secondary menu
    ========================================================================== */
-/* line 73, ../sass/framework/_navigation.scss */
+/* line 74, ../sass/framework/_navigation.scss */
 .secondary-menu {
   float: right;
   width: 25%;
@@ -1363,21 +1364,22 @@ button.button,
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
+  /* We have to declare these again because zen grid sets width and padding */
   padding-right: 0;
   width: auto;
 }
-/* line 80, ../sass/framework/_navigation.scss */
+/* line 82, ../sass/framework/_navigation.scss */
 .secondary-menu .menu-item {
   background-color: #96b000;
 }
-/* line 83, ../sass/framework/_navigation.scss */
+/* line 85, ../sass/framework/_navigation.scss */
 .secondary-menu .menu-item:hover {
   background-color: #6b7d00;
 }
 
 /* Sub menu
    ========================================================================== */
-/* line 93, ../sass/framework/_navigation.scss */
+/* line 95, ../sass/framework/_navigation.scss */
 .sub-menu-wrapper {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1392,13 +1394,13 @@ button.button,
   margin-top: 20px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 93, ../sass/framework/_navigation.scss */
+  /* line 95, ../sass/framework/_navigation.scss */
   .sub-menu-wrapper {
     display: none;
   }
 }
 
-/* line 106, ../sass/framework/_navigation.scss */
+/* line 108, ../sass/framework/_navigation.scss */
 .sub-menu-title {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(100%, #ffffff));
   background-image: -webkit-linear-gradient(#f2f2f2, #ffffff);
@@ -1419,18 +1421,18 @@ button.button,
   padding-left: 10px;
 }
 
-/* line 119, ../sass/framework/_navigation.scss */
+/* line 121, ../sass/framework/_navigation.scss */
 .sub-menu {
   padding-left: 0;
 }
-/* line 122, ../sass/framework/_navigation.scss */
+/* line 124, ../sass/framework/_navigation.scss */
 .sub-menu > li {
   /* Level 1 */
   /* We want the border bottom to have full width so we have to increase
      padding left according to the nesting level. */
   /* Level 2 */
 }
-/* line 124, ../sass/framework/_navigation.scss */
+/* line 126, ../sass/framework/_navigation.scss */
 .sub-menu > li .menu-item {
   border-bottom: 1px dashed #e6e6e6;
   color: #404040;
@@ -1439,50 +1441,50 @@ button.button,
   padding-bottom: 8px;
   padding-left: 20px;
 }
-/* line 134, ../sass/framework/_navigation.scss */
+/* line 136, ../sass/framework/_navigation.scss */
 .sub-menu > li .menu-item:before {
   float: left;
   font-family: "FontAwesome";
   font-size: 130%;
   margin-right: 10px;
 }
-/* line 141, ../sass/framework/_navigation.scss */
+/* line 143, ../sass/framework/_navigation.scss */
 .sub-menu > li .menu-item.active {
   font-family: "exodemi_bold";
   font-weight: normal;
   color: #e5420c;
 }
-/* line 147, ../sass/framework/_navigation.scss */
+/* line 149, ../sass/framework/_navigation.scss */
 .sub-menu > li .menu-item:hover {
   text-decoration: none;
   color: #be370a;
 }
-/* line 157, ../sass/framework/_navigation.scss */
+/* line 159, ../sass/framework/_navigation.scss */
 .sub-menu > li ul {
   border-bottom: 1px dashed #e6e6e6;
   /* Level 3 */
 }
-/* line 160, ../sass/framework/_navigation.scss */
+/* line 162, ../sass/framework/_navigation.scss */
 .sub-menu > li ul .menu-item {
   padding-left: 40px;
 }
-/* line 166, ../sass/framework/_navigation.scss */
+/* line 168, ../sass/framework/_navigation.scss */
 .sub-menu > li ul ul .menu-item {
   padding-left: 60px;
 }
-/* line 173, ../sass/framework/_navigation.scss */
+/* line 175, ../sass/framework/_navigation.scss */
 .sub-menu > li li:hover {
   background-color: #ebebeb;
 }
-/* line 178, ../sass/framework/_navigation.scss */
+/* line 180, ../sass/framework/_navigation.scss */
 .sub-menu > li li li:hover {
   background-color: #d6d6d6;
 }
-/* line 184, ../sass/framework/_navigation.scss */
+/* line 186, ../sass/framework/_navigation.scss */
 .sub-menu > li:hover {
   background-color: whitesmoke;
 }
-/* line 189, ../sass/framework/_navigation.scss */
+/* line 191, ../sass/framework/_navigation.scss */
 .sub-menu > li.last .menu-item {
   border-bottom: 0;
 }
@@ -4492,7 +4494,7 @@ body {
 
 /* line 85, ../sass/module/_module.scss */
 .spotbox--list-header {
-  font-family: "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "exoregular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: normal;
   font-size: 100%;
   margin-bottom: 0;
