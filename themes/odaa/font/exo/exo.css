@@ -3,7 +3,7 @@
 
 
 @font-face {
-    font-family: 'exodemi_bold_italic';
+    font-family: 'exo-demi-bold-italic';
     src: url('exo-demibold-italic-webfont.eot');
     src: url('exo-demibold-italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('exo-demibold-italic-webfont.woff') format('woff'),
@@ -18,7 +18,7 @@
 
 
 @font-face {
-    font-family: 'exodemi_bold';
+    font-family: 'exo-demi-bold';
     src: url('exo-demibold-webfont.eot');
     src: url('exo-demibold-webfont.eot?#iefix') format('embedded-opentype'),
          url('exo-demibold-webfont.woff') format('woff'),
@@ -33,7 +33,7 @@
 
 
 @font-face {
-    font-family: 'exoextra_light_italic';
+    font-family: 'exo-extra-light-italic';
     src: url('exo-extralight-italic-webfont.eot');
     src: url('exo-extralight-italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('exo-extralight-italic-webfont.woff') format('woff'),
@@ -48,7 +48,7 @@
 
 
 @font-face {
-    font-family: 'exoextra_light';
+    font-family: 'exo-extra-light';
     src: url('exo-extralight-webfont.eot');
     src: url('exo-extralight-webfont.eot?#iefix') format('embedded-opentype'),
          url('exo-extralight-webfont.woff') format('woff'),
@@ -63,7 +63,7 @@
 
 
 @font-face {
-    font-family: 'exoregular_italic';
+    font-family: 'exo-regular-italic';
     src: url('exo-regular-italic-webfont.eot');
     src: url('exo-regular-italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('exo-regular-italic-webfont.woff') format('woff'),
@@ -78,7 +78,7 @@
 
 
 @font-face {
-    font-family: 'exoregular';
+    font-family: 'exo-regular';
     src: url('exo-regular-webfont.eot');
     src: url('exo-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('exo-regular-webfont.woff') format('woff'),

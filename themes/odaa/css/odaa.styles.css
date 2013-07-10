@@ -459,7 +459,7 @@ table {
 body {
   background-color: white;
   color: #404040;
-  font-family: "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
 }
@@ -471,9 +471,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
-  font-family: "LaconicRegular", "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "LaconicRegular", "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   /* This fixes huge spaces when a heading wraps onto two lines */
   line-height: 1.2;
   margin-top: 0;
@@ -561,18 +561,18 @@ h6 {
 
 /* line 85, ../sass/framework/_base.scss */
 strong {
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
 }
 
 /* line 90, ../sass/framework/_base.scss */
 em {
-  font-family: "exoextra_light_italic";
+  font-family: "exo-regular-italic";
   font-weight: normal;
 }
 /* line 93, ../sass/framework/_base.scss */
 em strong {
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
 }
 
@@ -663,7 +663,7 @@ fieldset {
 
 /* line 194, ../sass/framework/_base.scss */
 legend {
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
   display: block;
   font-size: 110%;
@@ -699,7 +699,7 @@ legend {
 input,
 textarea,
 select {
-  font-family: "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 100%;
   letter-spacing: 1px;
 }
@@ -758,7 +758,7 @@ textarea {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.4);
   display: block;
-  font-family: "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 100%;
   min-height: 10px;
   margin-bottom: 10px;
@@ -854,7 +854,7 @@ table td {
 }
 /* line 62, ../sass/framework/_tables.scss */
 .table th, table th {
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
   padding-top: 10px;
   padding-right: 10px;
@@ -1019,7 +1019,7 @@ a.button {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
   display: inline-block;
   font-size: 100%;
@@ -1314,7 +1314,7 @@ button.button,
   -o-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
   background-color: rgba(0, 0, 0, 0.65);
   color: white;
@@ -1450,7 +1450,7 @@ button.button,
 }
 /* line 143, ../sass/framework/_navigation.scss */
 .sub-menu > li .menu-item.active {
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
   color: #e5420c;
 }
@@ -4494,7 +4494,7 @@ body {
 
 /* line 85, ../sass/module/_module.scss */
 .spotbox--list-header {
-  font-family: "exoextra_light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: normal;
   font-size: 100%;
   margin-bottom: 0;
@@ -4730,7 +4730,7 @@ body {
 }
 /* line 146, ../sass/module/_spotbox.scss */
 .primary-content .spotbox--list-header {
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
 }
 /* line 151, ../sass/module/_spotbox.scss */
@@ -4827,7 +4827,7 @@ body {
 }
 /* line 25, ../sass/module/_user.scss */
 .user-login .user-login-label, #block-user-0 .user-login-label, #block-user-0 label {
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
   color: rgba(0, 0, 0, 0.7);
   display: inline-block;
@@ -4881,7 +4881,7 @@ body {
 }
 /* line 81, ../sass/module/_user.scss */
 .create-user .create-user-label {
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
   display: inline-block;
   margin-bottom: 3px;
@@ -4901,7 +4901,7 @@ body {
 }
 /* line 100, ../sass/module/_user.scss */
 .create-user .create-user-buttons .create-user-splitter-text {
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
   margin-top: 10px;
 }
@@ -4980,7 +4980,7 @@ body {
 
 /* line 184, ../sass/module/_user.scss */
 .user--block--logged-in-content {
-  font-family: "exodemi_bold";
+  font-family: "exo-demi-bold";
   font-weight: normal;
   font-size: 110%;
   padding: 0;
