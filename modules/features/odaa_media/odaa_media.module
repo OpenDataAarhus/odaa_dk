@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ODAA media feature.
+ */
+
+include_once 'odaa_media.features.inc';
