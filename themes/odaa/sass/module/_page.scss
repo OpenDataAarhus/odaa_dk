@@ -9,7 +9,7 @@
 /* Page
    ========================================================================== */
 
-.page-content {
+.page--content-wrapper {
   @include border-radius($base-border-radius);
   @include box-shadow($base-box-shadow);
 
@@ -17,7 +17,9 @@
   border: 1px solid $gray;
   margin-top: $large-spacing;
   padding: $large-spacing;
+}
 
+.page--content {
   /* Headers in page content */
   h3 {
     margin-top: 20px;

@@ -29,19 +29,9 @@ table {
 
 
 th {
-  background-color: $gray-light;
+  background-color: darken($gray-light, 5%);
   /* Drupal system stylesheet adds bottom border */
   border-bottom: 0;
-}
-
-
-/* Drupal uses these */
-tr.even {
-  background-color: $gray-light;
-}
-
-tr.odd {
-  background-color: darken($gray-light, 4%);
 }
 
 
@@ -150,29 +140,39 @@ tr.odd {
   /* It is possible to get <th> wrapped in <tbody> instead of <thead> */
   tbody:last-child tr:last-child th:last-child,
   tbody:last-child tr:last-child td:last-child {
-    @include border-radius(0 $table-border-radius 0 0);
+    @include border-radius(0 0 $table-border-radius 0);
   }
 }
 
 /* Zebra-striping
    ========================================================================== */
 
+/* Drupal uses these */
+tr.even {
+  background-color: $gray-lighter;
+}
+
+tr.odd {
+}
+
+
 .table-striped {
   tbody {
     tr:nth-child(odd) td,
     tr:nth-child(odd) th {
-      background-color: $gray-lighter;
+      background-color: darken($gray-lighter, 2%);
     }
   }
 }
 
-/* Hover effect.
+/* Hover effect
    ========================================================================== */
 
 /* Placed here because it has to come after zebra striping */
-.table {
+.table,
+.table-striped {
   tbody tr:hover td,
   tbody tr:hover th {
-    background-color: $gray-light;
+    background-color: darken($gray-lighter, 5%);
   }
 }

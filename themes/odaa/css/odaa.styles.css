@@ -821,29 +821,18 @@ table {
 
 /* line 31, ../sass/framework/_tables.scss */
 th {
-  background-color: #efefef;
+  background-color: #e2e2e2;
   /* Drupal system stylesheet adds bottom border */
   border-bottom: 0;
 }
 
-/* Drupal uses these */
-/* line 39, ../sass/framework/_tables.scss */
-tr.even {
-  background-color: #efefef;
-}
-
-/* line 43, ../sass/framework/_tables.scss */
-tr.odd {
-  background-color: #e4e4e4;
-}
-
 /* Baseline styling
    ========================================================================== */
-/* line 51, ../sass/framework/_tables.scss */
+/* line 41, ../sass/framework/_tables.scss */
 .table, table {
   width: 100%;
 }
-/* line 55, ../sass/framework/_tables.scss */
+/* line 45, ../sass/framework/_tables.scss */
 .table th, table th,
 .table td,
 table td {
@@ -852,7 +841,7 @@ table td {
   text-align: left;
   vertical-align: top;
 }
-/* line 62, ../sass/framework/_tables.scss */
+/* line 52, ../sass/framework/_tables.scss */
 .table th, table th {
   font-family: "exo-demi-bold";
   font-weight: normal;
@@ -861,11 +850,11 @@ table td {
   padding-bottom: 10px;
   padding-left: 10px;
 }
-/* line 71, ../sass/framework/_tables.scss */
+/* line 61, ../sass/framework/_tables.scss */
 .table thead th, table thead th {
   vertical-align: bottom;
 }
-/* line 82, ../sass/framework/_tables.scss */
+/* line 72, ../sass/framework/_tables.scss */
 .table caption + thead tr:first-child th, table caption + thead tr:first-child th,
 .table caption + thead tr:first-child td,
 table caption + thead tr:first-child td,
@@ -881,13 +870,13 @@ table tbody:first-child tr:first-child th,
 table thead:first-child tr:first-child td {
   border-top: 0;
 }
-/* line 86, ../sass/framework/_tables.scss */
+/* line 76, ../sass/framework/_tables.scss */
 .table tbody + tbody, table tbody + tbody {
   border-top: 2px solid #d5d5d5;
 }
 
 /* Condensed table w/ half padding */
-/* line 94, ../sass/framework/_tables.scss */
+/* line 84, ../sass/framework/_tables.scss */
 .table-condensed th,
 .table-condensed td {
   padding: 3px;
@@ -895,7 +884,7 @@ table thead:first-child tr:first-child td {
 
 /* Bordered version
    ========================================================================== */
-/* line 102, ../sass/framework/_tables.scss */
+/* line 92, ../sass/framework/_tables.scss */
 .table-bordered, table {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -909,13 +898,13 @@ table thead:first-child tr:first-child td {
   *border-collapse: collapsed;
   border-left: 0;
 }
-/* line 113, ../sass/framework/_tables.scss */
+/* line 103, ../sass/framework/_tables.scss */
 .table-bordered th, table th,
 .table-bordered td,
 table td {
   border-left: 1px solid #d5d5d5;
 }
-/* line 125, ../sass/framework/_tables.scss */
+/* line 115, ../sass/framework/_tables.scss */
 .table-bordered caption + thead tr:first-child th, table caption + thead tr:first-child th,
 .table-bordered caption + tbody tr:first-child th,
 table caption + tbody tr:first-child th,
@@ -935,7 +924,7 @@ table tbody:first-child tr:first-child th,
 table tbody:first-child tr:first-child td {
   border-top: 0;
 }
-/* line 132, ../sass/framework/_tables.scss */
+/* line 122, ../sass/framework/_tables.scss */
 .table-bordered thead:first-child tr:first-child th:first-child, table thead:first-child tr:first-child th:first-child,
 .table-bordered tbody:first-child tr:first-child th:first-child,
 table tbody:first-child tr:first-child th:first-child,
@@ -947,7 +936,7 @@ table tbody:first-child tr:first-child td:first-child {
   -o-border-radius: 4px 0 0;
   border-radius: 4px 0 0;
 }
-/* line 139, ../sass/framework/_tables.scss */
+/* line 129, ../sass/framework/_tables.scss */
 .table-bordered thead:first-child tr:first-child th:last-child, table thead:first-child tr:first-child th:last-child,
 .table-bordered tbody:first-child tr:first-child th:last-child,
 table tbody:first-child tr:first-child th:last-child,
@@ -959,7 +948,7 @@ table tbody:first-child tr:first-child td:last-child {
   -o-border-radius: 0 4px 0 0;
   border-radius: 0 4px 0 0;
 }
-/* line 146, ../sass/framework/_tables.scss */
+/* line 136, ../sass/framework/_tables.scss */
 .table-bordered thead:last-child tr:last-child th:first-child, table thead:last-child tr:last-child th:first-child,
 .table-bordered tbody:last-child tr:last-child th:first-child,
 table tbody:last-child tr:last-child th:first-child,
@@ -971,34 +960,42 @@ table tbody:last-child tr:last-child td:first-child {
   -o-border-radius: 0 0 0 4px;
   border-radius: 0 0 0 4px;
 }
-/* line 152, ../sass/framework/_tables.scss */
+/* line 142, ../sass/framework/_tables.scss */
 .table-bordered thead:last-child tr:last-child th:last-child, table thead:last-child tr:last-child th:last-child,
 .table-bordered tbody:last-child tr:last-child th:last-child,
 table tbody:last-child tr:last-child th:last-child,
 .table-bordered tbody:last-child tr:last-child td:last-child,
 table tbody:last-child tr:last-child td:last-child {
-  -webkit-border-radius: 0 4px 0 0;
-  -moz-border-radius: 0 4px 0 0;
-  -ms-border-radius: 0 4px 0 0;
-  -o-border-radius: 0 4px 0 0;
-  border-radius: 0 4px 0 0;
+  -webkit-border-radius: 0 0 4px 0;
+  -moz-border-radius: 0 0 4px 0;
+  -ms-border-radius: 0 0 4px 0;
+  -o-border-radius: 0 0 4px 0;
+  border-radius: 0 0 4px 0;
 }
 
 /* Zebra-striping
    ========================================================================== */
-/* line 163, ../sass/framework/_tables.scss */
-.table-striped tbody tr:nth-child(odd) td,
-.table-striped tbody tr:nth-child(odd) th {
+/* Drupal uses these */
+/* line 151, ../sass/framework/_tables.scss */
+tr.even {
   background-color: #fbfbfb;
 }
 
-/* Hover effect.
+/* line 162, ../sass/framework/_tables.scss */
+.table-striped tbody tr:nth-child(odd) td,
+.table-striped tbody tr:nth-child(odd) th {
+  background-color: #f6f6f6;
+}
+
+/* Hover effect
    ========================================================================== */
 /* Placed here because it has to come after zebra striping */
 /* line 175, ../sass/framework/_tables.scss */
 .table tbody tr:hover td, table tbody tr:hover td,
 .table tbody tr:hover th,
-table tbody tr:hover th {
+table tbody tr:hover th,
+.table-striped tbody tr:hover td,
+.table-striped tbody tr:hover th {
   background-color: #efefef;
 }
 
@@ -1011,7 +1008,7 @@ table tbody tr:hover th {
    ========================================================================== */
 /* line 29, ../sass/framework/_buttons.scss */
 .button, #block-user-0 #user-login-form .form-submit,
-a.button {
+a.button, .dataset--list-item .dataset--actions-preview, .dataset--list-item .dataset--actions-download {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -1029,11 +1026,11 @@ a.button {
   vertical-align: middle;
 }
 /* line 45, ../sass/framework/_buttons.scss */
-.button:focus, #block-user-0 #user-login-form .form-submit:focus, .button:hover, #block-user-0 #user-login-form .form-submit:hover, .button:active, #block-user-0 #user-login-form .form-submit:active {
+.button:focus, #block-user-0 #user-login-form .form-submit:focus, .dataset--list-item .dataset--actions-preview:focus, .dataset--list-item .dataset--actions-download:focus, .button:hover, #block-user-0 #user-login-form .form-submit:hover, .dataset--list-item .dataset--actions-preview:hover, .dataset--list-item .dataset--actions-download:hover, .button:active, #block-user-0 #user-login-form .form-submit:active, .dataset--list-item .dataset--actions-preview:active, .dataset--list-item .dataset--actions-download:active {
   text-decoration: none;
 }
 /* line 51, ../sass/framework/_buttons.scss */
-.disabled.button, #block-user-0 #user-login-form .disabled.form-submit, [disabled].button, #block-user-0 #user-login-form [disabled].form-submit {
+.disabled.button, #block-user-0 #user-login-form .disabled.form-submit, .dataset--list-item .disabled.dataset--actions-preview, .dataset--list-item .disabled.dataset--actions-download, [disabled].button, #block-user-0 #user-login-form [disabled].form-submit, .dataset--list-item [disabled].dataset--actions-preview, .dataset--list-item [disabled].dataset--actions-download {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
   -webkit-box-shadow: none;
@@ -1090,7 +1087,67 @@ a.button i[class^="icon-"],
 }
 
 /* Theme button */
+/* line 103, ../sass/framework/_buttons.scss */
+.dataset--list-item .dataset--actions-preview {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e5420c), color-stop(100%, #9c2d08));
+  background-image: -webkit-linear-gradient(#e5420c, #9c2d08);
+  background-image: -moz-linear-gradient(#e5420c, #9c2d08);
+  background-image: -o-linear-gradient(#e5420c, #9c2d08);
+  background-image: linear-gradient(#e5420c, #9c2d08);
+  /* Make sure buttons get a background color in IE */
+  background-color: #e5420c;
+  border: 0;
+  color: white;
+}
+/* line 76, ../sass/framework/_buttons.scss */
+.dataset--list-item .dataset--actions-preview:link, .dataset--list-item .dataset--actions-preview:visited {
+  color: white;
+}
+/* line 83, ../sass/framework/_buttons.scss */
+.dataset--list-item .dataset--actions-preview:focus, .dataset--list-item .dataset--actions-preview:hover, .dataset--list-item .dataset--actions-preview:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cd3b0b), color-stop(100%, #842607));
+  background-image: -webkit-linear-gradient(#cd3b0b, #842607);
+  background-image: -moz-linear-gradient(#cd3b0b, #842607);
+  background-image: -o-linear-gradient(#cd3b0b, #842607);
+  background-image: linear-gradient(#cd3b0b, #842607);
+  background-color: #9c2d08;
+}
+/* line 89, ../sass/framework/_buttons.scss */
+.dataset--list-item .dataset--actions-preview i[class^="icon-"] {
+  margin-right: 8px;
+}
+
 /* Action button */
+/* line 108, ../sass/framework/_buttons.scss */
+.dataset--list-item .dataset--actions-download {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #96b000), color-stop(100%, #556300));
+  background-image: -webkit-linear-gradient(#96b000, #556300);
+  background-image: -moz-linear-gradient(#96b000, #556300);
+  background-image: -o-linear-gradient(#96b000, #556300);
+  background-image: linear-gradient(#96b000, #556300);
+  /* Make sure buttons get a background color in IE */
+  background-color: #96b000;
+  border: 0;
+  color: white;
+}
+/* line 76, ../sass/framework/_buttons.scss */
+.dataset--list-item .dataset--actions-download:link, .dataset--list-item .dataset--actions-download:visited {
+  color: white;
+}
+/* line 83, ../sass/framework/_buttons.scss */
+.dataset--list-item .dataset--actions-download:focus, .dataset--list-item .dataset--actions-download:hover, .dataset--list-item .dataset--actions-download:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #809700), color-stop(100%, #3f4a00));
+  background-image: -webkit-linear-gradient(#809700, #3f4a00);
+  background-image: -moz-linear-gradient(#809700, #3f4a00);
+  background-image: -o-linear-gradient(#809700, #3f4a00);
+  background-image: linear-gradient(#809700, #3f4a00);
+  background-color: #556300;
+}
+/* line 89, ../sass/framework/_buttons.scss */
+.dataset--list-item .dataset--actions-download i[class^="icon-"] {
+  margin-right: 8px;
+}
+
 /* Warning button */
 /* Danger button */
 /* Don't use native buttons on iOS */
@@ -1125,25 +1182,31 @@ button.button,
 }
 
 /* line 12, ../sass/framework/_tabs.scss */
-.tabs.primary {
+.tabs.primary, .primary.dataset--tabs {
   border: none;
   padding-left: 10px;
 }
 /* line 20, ../sass/framework/_tabs.scss */
-.tabs li,
+.tabs li, .dataset--tabs li,
 .tabs li.active,
+.dataset--tabs li.active,
 .tabs li:hover,
-.tabs li.active:hover {
+.dataset--tabs li:hover,
+.tabs li.active:hover,
+.dataset--tabs li.active:hover {
   background: transparent;
   border-right: none;
   display: inline-block;
   padding-right: 0;
 }
 /* line 26, ../sass/framework/_tabs.scss */
-.tabs li a,
+.tabs li a, .dataset--tabs li a,
 .tabs li.active a,
+.dataset--tabs li.active a,
 .tabs li:hover a,
-.tabs li.active:hover a {
+.dataset--tabs li:hover a,
+.tabs li.active:hover a,
+.dataset--tabs li.active:hover a {
   -webkit-border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
   -ms-border-radius: 5px 5px 0 0;
@@ -1157,41 +1220,47 @@ button.button,
   padding-left: 20px;
 }
 /* line 36, ../sass/framework/_tabs.scss */
-.tabs li a:hover,
+.tabs li a:hover, .dataset--tabs li a:hover,
 .tabs li.active a:hover,
+.dataset--tabs li.active a:hover,
 .tabs li:hover a:hover,
-.tabs li.active:hover a:hover {
+.dataset--tabs li:hover a:hover,
+.tabs li.active:hover a:hover,
+.dataset--tabs li.active:hover a:hover {
   background: #fbfbfb;
   color: black;
   text-decoration: none;
 }
 /* line 44, ../sass/framework/_tabs.scss */
-.tabs li a {
+.tabs li a, .dataset--tabs li a {
   background: #efefef;
 }
 /* line 48, ../sass/framework/_tabs.scss */
-.tabs li a.active {
+.tabs li a.active, .dataset--tabs li a.active {
   background: white;
 }
 /* line 52, ../sass/framework/_tabs.scss */
-.tabs.secondary {
+.tabs.secondary, .secondary.dataset--tabs {
   background-color: white;
   padding: 10px;
   margin: 0 10px;
 }
 /* line 58, ../sass/framework/_tabs.scss */
-.tabs.secondary li a {
+.tabs.secondary li a, .secondary.dataset--tabs li a {
   background: white;
 }
 /* line 62, ../sass/framework/_tabs.scss */
-.tabs.secondary li a.active {
+.tabs.secondary li a.active, .secondary.dataset--tabs li a.active {
   background: #efefef;
 }
 /* line 71, ../sass/framework/_tabs.scss */
-.tabs.secondary li a,
+.tabs.secondary li a, .secondary.dataset--tabs li a,
 .tabs.secondary li.active a,
+.secondary.dataset--tabs li.active a,
 .tabs.secondary li:hover a,
-.tabs.secondary li.active:hover a {
+.secondary.dataset--tabs li:hover a,
+.tabs.secondary li.active:hover a,
+.secondary.dataset--tabs li.active:hover a {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -1207,13 +1276,13 @@ button.button,
 /* Variables
    ========================================================================== */
 /* line 21, ../sass/framework/_labels.scss */
-.label, .label-inverted {
+.label, .label-inverted, .dataset--tags-list .dataset--tags-list-tag {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
   border-radius: 8px;
-  background-color: #00b7e7;
+  background-color: #e5420c;
   color: white;
   font-size: 85%;
   padding: 3px 10px;
@@ -1224,17 +1293,17 @@ button.button,
   /* Make sure it works on a link */
 }
 /* line 36, ../sass/framework/_labels.scss */
-.label a:link, .label-inverted a:link, .label a:visited, .label-inverted a:visited, .label a:hover, .label-inverted a:hover {
+.label a:link, .label-inverted a:link, .dataset--tags-list .dataset--tags-list-tag a:link, .label a:visited, .label-inverted a:visited, .dataset--tags-list .dataset--tags-list-tag a:visited, .label a:hover, .label-inverted a:hover, .dataset--tags-list .dataset--tags-list-tag a:hover {
   color: white;
   text-decoration: none;
 }
 /* line 44, ../sass/framework/_labels.scss */
-.label:link, .label-inverted:link, .label:visited, .label-inverted:visited {
+.label:link, .label-inverted:link, .dataset--tags-list .dataset--tags-list-tag:link, .label:visited, .label-inverted:visited, .dataset--tags-list .dataset--tags-list-tag:visited {
   color: white;
 }
 /* line 48, ../sass/framework/_labels.scss */
-.label:hover, .label-inverted:hover {
-  background-color: #008fb4;
+.label:hover, .label-inverted:hover, .dataset--tags-list .dataset--tags-list-tag:hover {
+  background-color: #b53409;
   color: white;
   text-decoration: none;
 }
@@ -4525,39 +4594,67 @@ body {
  *
  * @author magnify
  */
-/* Block
+/* Zebra stribed list
    ========================================================================== */
 /* line 13, ../sass/module/_module.scss */
+.dataset--data-resources, .dataset--tags, .dataset--additional-info {
+  border-top: 1px dashed #e6e6e6;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+/* Zebra stribed list
+   ========================================================================== */
+/* line 23, ../sass/module/_module.scss */
+.dataset--list-item:nth-child(odd) {
+  background-color: #efefef;
+}
+/* line 26, ../sass/module/_module.scss */
+.dataset--list-item:nth-child(odd):hover {
+  background-color: #e2e2e2;
+}
+/* line 31, ../sass/module/_module.scss */
+.dataset--list-item:nth-child(even) {
+  background-color: #fbfbfb;
+}
+/* line 34, ../sass/module/_module.scss */
+.dataset--list-item:nth-child(even):hover {
+  background-color: #e2e2e2;
+}
+
+/* Block
+   ========================================================================== */
+/* line 45, ../sass/module/_module.scss */
 .spotbox {
   margin-top: 20px;
 }
-/* line 16, ../sass/module/_module.scss */
+/* line 48, ../sass/module/_module.scss */
 .spotbox a:link {
   color: gray;
   text-decoration: none;
 }
-/* line 21, ../sass/module/_module.scss */
+/* line 53, ../sass/module/_module.scss */
 .spotbox a:visited {
   color: #737373;
   text-decoration: none;
 }
-/* line 26, ../sass/module/_module.scss */
+/* line 58, ../sass/module/_module.scss */
 .spotbox a:hover {
   color: #be370a;
   text-decoration: none;
 }
-/* line 31, ../sass/module/_module.scss */
+/* line 63, ../sass/module/_module.scss */
 .spotbox a:focus {
   color: black;
 }
-/* line 35, ../sass/module/_module.scss */
+/* line 67, ../sass/module/_module.scss */
 .spotbox i[class^="icon-"] {
   margin-right: 5px;
   /* Icon gets cut off when it is the first item from the left */
   padding-left: 1px;
 }
 
-/* line 43, ../sass/module/_module.scss */
+/* line 75, ../sass/module/_module.scss */
 .spotbox--inner, .create-user .create-user-inner, .user--block--logged-in-inner {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -4566,7 +4663,7 @@ body {
 }
 
 /* %module--block headers */
-/* line 51, ../sass/module/_module.scss */
+/* line 83, ../sass/module/_module.scss */
 .spotbox--header {
   background-color: #e6e6e6;
   margin-bottom: 0;
@@ -4575,34 +4672,34 @@ body {
   padding-bottom: 15px;
   padding-left: 20px;
 }
-/* line 59, ../sass/module/_module.scss */
+/* line 91, ../sass/module/_module.scss */
 .spotbox--header a:hover {
   text-decoration: none;
   /* Inherit hover color for header labels */
 }
-/* line 63, ../sass/module/_module.scss */
+/* line 95, ../sass/module/_module.scss */
 .spotbox--header a:hover [class$="header-label"] {
   color: gray;
 }
-/* line 68, ../sass/module/_module.scss */
+/* line 100, ../sass/module/_module.scss */
 .spotbox--header i[class^="icon-"] {
   margin-right: 8px;
 }
 
-/* line 73, ../sass/module/_module.scss */
+/* line 105, ../sass/module/_module.scss */
 .spotbox--header-label {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
 
-/* line 78, ../sass/module/_module.scss */
+/* line 110, ../sass/module/_module.scss */
 .spotbox--list-header-label {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
   margin-right: 5px;
 }
 
-/* line 85, ../sass/module/_module.scss */
+/* line 117, ../sass/module/_module.scss */
 .spotbox--list-header {
   font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: normal;
@@ -4612,37 +4709,37 @@ body {
 }
 
 /* %module--block content */
-/* line 95, ../sass/module/_module.scss */
+/* line 127, ../sass/module/_module.scss */
 .spotbox--content-wrapper {
   /* Correct spacing for line height */
   margin-top: -5px;
   vertical-align: top;
 }
 
-/* line 102, ../sass/module/_module.scss */
+/* line 134, ../sass/module/_module.scss */
 .spotbox--content, .user--block--logged-in-content {
   padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
 }
-/* line 107, ../sass/module/_module.scss */
+/* line 139, ../sass/module/_module.scss */
 .spotbox--content a:link, .user--block--logged-in-content a:link {
   color: #e5420c;
 }
-/* line 111, ../sass/module/_module.scss */
+/* line 143, ../sass/module/_module.scss */
 .spotbox--content a:visited, .user--block--logged-in-content a:visited {
   color: #972c08;
 }
-/* line 115, ../sass/module/_module.scss */
+/* line 147, ../sass/module/_module.scss */
 .spotbox--content a:hover, .user--block--logged-in-content a:hover {
   color: #be370a;
 }
-/* line 119, ../sass/module/_module.scss */
+/* line 151, ../sass/module/_module.scss */
 .spotbox--content p, .user--block--logged-in-content p {
   margin-bottom: 0;
 }
 
-/* line 125, ../sass/module/_module.scss */
+/* line 157, ../sass/module/_module.scss */
 .spotbox--meta-wrapper {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
@@ -4650,21 +4747,21 @@ body {
   padding-right: 20px;
   padding-left: 20px;
 }
-/* line 132, ../sass/module/_module.scss */
+/* line 164, ../sass/module/_module.scss */
 .spotbox--meta-wrapper a:link {
   color: #e5420c;
 }
-/* line 136, ../sass/module/_module.scss */
+/* line 168, ../sass/module/_module.scss */
 .spotbox--meta-wrapper a:visited {
   color: #972c08;
 }
-/* line 140, ../sass/module/_module.scss */
+/* line 172, ../sass/module/_module.scss */
 .spotbox--meta-wrapper a:hover {
   color: #be370a;
 }
 
 /* %module--block list */
-/* line 147, ../sass/module/_module.scss */
+/* line 179, ../sass/module/_module.scss */
 .spotbox--list, .spotbox--list-latest, .user--block--logged-in-list {
   padding-top: 20px;
   padding-right: 20px;
@@ -4672,32 +4769,32 @@ body {
   padding-left: 20px;
 }
 
-/* line 155, ../sass/module/_module.scss */
+/* line 187, ../sass/module/_module.scss */
 .spotbox--list-item, .user--block--logged-in-list-item {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
   overflow: hidden;
   padding-bottom: 10px;
 }
-/* line 161, ../sass/module/_module.scss */
+/* line 193, ../sass/module/_module.scss */
 .last.spotbox--list-item, .last.user--block--logged-in-list-item {
   border-bottom: 0;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-/* line 169, ../sass/module/_module.scss */
+/* line 201, ../sass/module/_module.scss */
 .spotbox--list-posted {
   margin-bottom: 0;
 }
 
-/* line 174, ../sass/module/_module.scss */
+/* line 206, ../sass/module/_module.scss */
 .spotbox--date {
   display: block;
 }
 
 /* %module--block image */
-/* line 180, ../sass/module/_module.scss */
+/* line 212, ../sass/module/_module.scss */
 .spotbox--image {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -4714,7 +4811,7 @@ body {
 }
 
 /* %module--block list image */
-/* line 196, ../sass/module/_module.scss */
+/* line 228, ../sass/module/_module.scss */
 .spotbox--list-image {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -4728,7 +4825,7 @@ body {
 }
 
 /* %module--block footer */
-/* line 209, ../sass/module/_module.scss */
+/* line 241, ../sass/module/_module.scss */
 .spotbox--footer {
   border-top: 1px dashed rgba(0, 0, 0, 0.1);
   clear: both;
@@ -4740,7 +4837,7 @@ body {
   padding-bottom: 15px;
 }
 
-/* line 221, ../sass/module/_module.scss */
+/* line 253, ../sass/module/_module.scss */
 .spotbox--read-more {
   float: right;
 }
@@ -4753,7 +4850,7 @@ body {
 /* Page
    ========================================================================== */
 /* line 12, ../sass/module/_page.scss */
-.page-content {
+.page--content-wrapper {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -4764,10 +4861,14 @@ body {
   border: 1px solid #d5d5d5;
   margin-top: 20px;
   padding: 20px;
+}
+
+/* line 22, ../sass/module/_page.scss */
+.page--content {
   /* Headers in page content */
 }
-/* line 22, ../sass/module/_page.scss */
-.page-content h3 {
+/* line 24, ../sass/module/_page.scss */
+.page--content h3 {
   margin-top: 20px;
 }
 
@@ -5218,3 +5319,102 @@ body {
   min-width: 75px;
   padding-bottom: 9px;
 }
+
+/**
+ * Dataset
+ *
+ * @author magnify
+ */
+/* Dataset tabs
+   ========================================================================== */
+/* line 10, ../sass/module/_dataset.scss */
+.dataset--tabs {
+  background-color: #efefef;
+  border-bottom: 1px solid #d5d5d5;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* line 25, ../sass/module/_dataset.scss */
+.dataset--tab,
+.dataset--tab-active {
+  margin-right: 11px;
+}
+/* line 29, ../sass/module/_dataset.scss */
+.dataset--tab .dataset--tab-link,
+.dataset--tab .dataset--tab-link:hover,
+.dataset--tab-active .dataset--tab-link,
+.dataset--tab-active .dataset--tab-link:hover {
+  border-top: 1px solid #d5d5d5;
+  border-right: 1px solid #d5d5d5;
+  border-left: 1px solid #d5d5d5;
+}
+
+/* line 38, ../sass/module/_dataset.scss */
+.dataset--tab-active .dataset--tab-link,
+.dataset--tab-active .dataset--tab-link:hover {
+  background-color: white;
+  border-bottom: 1px solid white;
+  margin-bottom: -1px;
+}
+
+/* Dataset list resources
+   ========================================================================== */
+/* line 51, ../sass/module/_dataset.scss */
+.dataset--list {
+  padding-left: 0;
+}
+
+/* line 55, ../sass/module/_dataset.scss */
+.dataset--list-item {
+  overflow: hidden;
+  padding: 10px 10px 10px 60px;
+  position: relative;
+}
+/* line 62, ../sass/module/_dataset.scss */
+.dataset--list-item .dataset--info {
+  float: left;
+}
+/* line 66, ../sass/module/_dataset.scss */
+.dataset--list-item .ckan--format-label {
+  left: 10px;
+  position: absolute;
+  top: 10px;
+}
+/* line 72, ../sass/module/_dataset.scss */
+.dataset--list-item .dataset--description {
+  margin-bottom: 0;
+}
+/* line 76, ../sass/module/_dataset.scss */
+.dataset--list-item .dataset--description-empty {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  font-family: "exo-regular-italic";
+  font-weight: normal;
+}
+/* line 81, ../sass/module/_dataset.scss */
+.dataset--list-item .dataset--actions {
+  float: right;
+  margin-top: 2px;
+}
+
+/* Dataset list tags
+   ========================================================================== */
+/* line 103, ../sass/module/_dataset.scss */
+.dataset--tags-list {
+  background-color: #efefef;
+  padding: 20px;
+}
+/* line 107, ../sass/module/_dataset.scss */
+.dataset--tags-list .dataset--tags-list-item {
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Dataset list tags
+   ========================================================================== */
