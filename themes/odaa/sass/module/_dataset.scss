@@ -6,12 +6,10 @@
 
 
 
-/* Dataset list
+/* Dataset list resources
    ========================================================================== */
 .dataset--data-resources {
-  border-top: $base-border-style;
-  margin-top: $large-spacing;
-  padding-top: $large-spacing;
+  @extend %section-spacing;
 }
 
 .dataset--list {
@@ -19,7 +17,8 @@
 }
 
 .dataset--list-item {
-  background-color: $gray-light;
+  @extend %zebra-list;
+
   overflow: hidden;
   padding: $medium-spacing $medium-spacing $medium-spacing 60px;
   position: relative;
@@ -38,12 +37,51 @@
     margin-bottom: 0;
   }
 
+  .dataset--description-empty {
+    @include opacity(.5);
+    @include font-italic();
+  }
+
   .dataset--actions {
     float: right;
     margin-top: 2px;
   }
 
-  .button {
+  .dataset--actions-preview {
+    @extend %button-theme;
+  }
+
+  .dataset--actions-download {
     @extend %button-action;
   }
+}
+
+
+
+/* Dataset list tags
+   ========================================================================== */
+.dataset--tags {
+  @extend %section-spacing;
+}
+
+.dataset--tags-list {
+  background-color: $base-color-odd;
+  padding: $large-spacing;
+
+  .dataset--tags-list-item {
+    display: inline-block;
+    margin-right: 6px;
+  }
+
+  .dataset--tags-list-tag {
+    @extend .label;
+  }
+}
+
+
+
+/* Dataset list tags
+   ========================================================================== */
+.dataset--additional-info {
+  @extend %section-spacing;
 }

@@ -58,7 +58,8 @@ $yellow:                         #f0cb28;
 $base-primary-color:             #e5420c;
 $base-secondary-color:           $white;
 $base-tertiary-color:            #96b000;
-
+$base-color-odd:                 darken($gray-lighter, 5%);
+$base-color-even:                $gray-lighter;
 
 
 /* Font library

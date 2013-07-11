@@ -34,14 +34,92 @@
                       savebygnings_view.xml
                       <span data-format="xml" property="dc:format" class="ckan--format-label">XML</span>
                     </a>
-                    <p class="dataset--description"><span class="empty">No description for this resource</span></p>
+                    <p class="dataset--description"><span class="dataset--description-empty">No description for this resource</span></p>
                   </div>
                   <div class="dataset--actions">
-                    <a class="button" href="/dataset/bevaringsvaerdige-bygninger-i-aarhus-kommune/resource/127751d2-8a48-4c57-a206-e03b4330f317"><i class="icon-bar-chart"></i>Preview/eksempel</a>
-                    <a class="button" href="http://www.odaa.dk/storage/f/2013-02-05T10%3A43%3A38.516Z/savebygnings-view.xml"><i class="icon-download"></i>Download</a>
+                    <a class="dataset--actions-preview" href="/dataset/bevaringsvaerdige-bygninger-i-aarhus-kommune/resource/127751d2-8a48-4c57-a206-e03b4330f317"><i class="icon-bar-chart"></i>Preview/eksempel</a>
+                    <a class="dataset--actions-download" href="http://www.odaa.dk/storage/f/2013-02-05T10%3A43%3A38.516Z/savebygnings-view.xml"><i class="icon-download"></i>Download</a>
+                  </div>
+                </li>
+                <li class="dataset--list-item">
+                  <div class="dataset--info">
+                    <a class="dataset--list-item-heading" title="savebygnings_view.xml" href="/dataset/bevaringsvaerdige-bygninger-i-aarhus-kommune/resource/127751d2-8a48-4c57-a206-e03b4330f317">
+                      savebygnings_view.xml
+                      <span data-format="xml" property="dc:format" class="ckan--format-label">XML</span>
+                    </a>
+                    <p class="dataset--description"><span class="dataset--description-empty">No description for this resource</span></p>
+                  </div>
+                  <div class="dataset--actions">
+                    <a class="dataset--actions-preview" href="/dataset/bevaringsvaerdige-bygninger-i-aarhus-kommune/resource/127751d2-8a48-4c57-a206-e03b4330f317"><i class="icon-bar-chart"></i>Preview/eksempel</a>
+                    <a class="dataset--actions-download" href="http://www.odaa.dk/storage/f/2013-02-05T10%3A43%3A38.516Z/savebygnings-view.xml"><i class="icon-download"></i>Download</a>
+                  </div>
+                </li>
+                <li class="dataset--list-item">
+                  <div class="dataset--info">
+                    <a class="dataset--list-item-heading" title="savebygnings_view.xml" href="/dataset/bevaringsvaerdige-bygninger-i-aarhus-kommune/resource/127751d2-8a48-4c57-a206-e03b4330f317">
+                      savebygnings_view.xml
+                      <span data-format="xml" property="dc:format" class="ckan--format-label">XML</span>
+                    </a>
+                    <p class="dataset--description">Vilkårene følger forslagene til standardvilkår udarbejdet af...</p>
+                  </div>
+                  <div class="dataset--actions">
+                    <a class="dataset--actions-preview" href="/dataset/bevaringsvaerdige-bygninger-i-aarhus-kommune/resource/127751d2-8a48-4c57-a206-e03b4330f317"><i class="icon-bar-chart"></i>Preview/eksempel</a>
+                    <a class="dataset--actions-download" href="http://www.odaa.dk/storage/f/2013-02-05T10%3A43%3A38.516Z/savebygnings-view.xml"><i class="icon-download"></i>Download</a>
+                  </div>
+                </li>
+                <li class="dataset--list-item">
+                  <div class="dataset--info">
+                    <a class="dataset--list-item-heading" title="savebygnings_view.xml" href="/dataset/bevaringsvaerdige-bygninger-i-aarhus-kommune/resource/127751d2-8a48-4c57-a206-e03b4330f317">
+                      savebygnings_view.xml
+                      <span data-format="xml" property="dc:format" class="ckan--format-label">XML</span>
+                    </a>
+                    <p class="dataset--description"><span class="dataset--description-empty">No description for this resource</span></p>
+                  </div>
+                  <div class="dataset--actions">
+                    <a class="dataset--actions-preview" href="/dataset/bevaringsvaerdige-bygninger-i-aarhus-kommune/resource/127751d2-8a48-4c57-a206-e03b4330f317"><i class="icon-bar-chart"></i>Preview/eksempel</a>
+                    <a class="dataset--actions-download" href="http://www.odaa.dk/storage/f/2013-02-05T10%3A43%3A38.516Z/savebygnings-view.xml"><i class="icon-download"></i>Download</a>
                   </div>
                 </li>
               </ul>
+            </section>
+            <section class="dataset--tags">
+              <h2 class="section-title">Tags</h2>
+                <ul class="dataset--tags-list">
+                  <li class="dataset--tags-list-item"><a href="/dataset?tags=invalidepladser" class="dataset--tags-list-tag">invalidepladser</a></li>
+                  <li class="dataset--tags-list-item"><a href="/dataset?tags=lastbiler" class="dataset--tags-list-tag">lastbiler</a></li>
+                  <li class="dataset--tags-list-item"><a href="/dataset?tags=mc-parkering" class="dataset--tags-list-tag">mc-parkering</a></li>
+                  <li class="dataset--tags-list-item"><a href="/dataset?tags=parkeringspladser" class="dataset--tags-list-tag">parkeringspladser</a></li>
+                  <li class="dataset--tags-list-item"><a href="/dataset?tags=turistbus" class="dataset--tags-list-tag">turistbus</a></li>
+                </ul>
+            </section>
+            <section class="dataset--additional-info">
+              <h2 class="section-title">Additional info</h2>
+              <table class="table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Felt</th>
+                    <th scope="col">Værdi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="dataset-label" scope="row">Forfatter</th>
+                    <td property="dc:creator" class="dataset-details">Aarhus Kommune</td>
+                  </tr>
+                  <tr>
+                    <td class="dataset-label" scope="row">Vedligeholdelse af</th>
+                    <td property="dc:contributor" class="dataset-details"><a href="mailto:pema@aarhus.dk">Peter Schack Madsen</a></td>
+                  </tr>
+                  <tr>
+                    <td class="dataset-label" scope="row">Forfatter</th>
+                    <td property="dc:creator" class="dataset-details">Aarhus Kommune</td>
+                  </tr>
+                  <tr>
+                    <td class="dataset-label" scope="row">Vedligeholdelse af</th>
+                    <td property="dc:contributor" class="dataset-details"><a href="mailto:pema@aarhus.dk">Peter Schack Madsen</a></td>
+                  </tr>                  
+                </tbody>
+              </table>
             </section>
           </div>
         </div>

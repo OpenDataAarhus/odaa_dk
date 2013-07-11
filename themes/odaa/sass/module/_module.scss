@@ -7,6 +7,38 @@
  */
 
 
+
+/* Zebra stribed list
+   ========================================================================== */
+%section-spacing {
+  border-top: $base-border-style;
+  margin-top: $large-spacing;
+  padding-top: $large-spacing;
+}
+
+
+/* Zebra stribed list
+   ========================================================================== */
+%zebra-list {
+  &:nth-child(odd) {
+    background-color: $base-color-odd;
+
+    &:hover {
+      background-color: darken($base-color-odd, 5%);
+    }
+  }
+
+  &:nth-child(even) {
+    background-color: $base-color-even;
+
+    &:hover {
+      background-color: darken($base-color-even, 10%);
+    }
+  }
+}
+
+
+
 /* Block
    ========================================================================== */
 
