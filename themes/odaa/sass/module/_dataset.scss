@@ -1,0 +1,26 @@
+/**
+ * Dataset
+ *
+ * @author magnify
+ */
+
+
+
+/* Dataset list
+   ========================================================================== */
+.dataset--data-resources {
+  border-top: $base-border-style;
+  margin-top: $large-spacing;
+  padding-top: $large-spacing;
+}
+
+.dataset--list-item {
+  padding-left: 60px;
+  position: relative;
+
+  .ckan--format-label {
+    left: 10px;
+    position: absolute;
+    top: 10px;
+  }
+}

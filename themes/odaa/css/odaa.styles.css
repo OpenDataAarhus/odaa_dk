@@ -4753,7 +4753,7 @@ body {
 /* Page
    ========================================================================== */
 /* line 12, ../sass/module/_page.scss */
-.page-content {
+.page--content-wrapper {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -4764,10 +4764,14 @@ body {
   border: 1px solid #d5d5d5;
   margin-top: 20px;
   padding: 20px;
+}
+
+/* line 22, ../sass/module/_page.scss */
+.page--content {
   /* Headers in page content */
 }
-/* line 22, ../sass/module/_page.scss */
-.page-content h3 {
+/* line 24, ../sass/module/_page.scss */
+.page--content h3 {
   margin-top: 20px;
 }
 
@@ -5217,4 +5221,30 @@ body {
   margin-left: -75px;
   min-width: 75px;
   padding-bottom: 9px;
+}
+
+/**
+ * Dataset
+ *
+ * @author magnify
+ */
+/* Dataset list
+   ========================================================================== */
+/* line 11, ../sass/module/_dataset.scss */
+.dataset--data-resources {
+  border-top: 1px dashed #e6e6e6;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+/* line 17, ../sass/module/_dataset.scss */
+.dataset--list-item {
+  padding-left: 60px;
+  position: relative;
+}
+/* line 21, ../sass/module/_dataset.scss */
+.dataset--list-item .ckan--format-label {
+  left: 10px;
+  position: absolute;
+  top: 10px;
 }
