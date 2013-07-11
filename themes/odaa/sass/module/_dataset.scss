@@ -5,6 +5,42 @@
  */
 
 
+/* Dataset tabs
+   ========================================================================== */
+.dataset--tabs {
+  @extend .tabs;
+
+  background-color: $gray-light;
+  border-bottom: 1px solid $gray;
+  margin-top: -$large-spacing;
+  margin-bottom: $large-spacing;
+  margin-right: -$large-spacing;
+  margin-left: -$large-spacing;
+  padding-top: $large-spacing;
+  padding-right: $large-spacing;
+  padding-left: $large-spacing;
+}
+
+.dataset--tab,
+.dataset--tab-active {
+  margin-right: 11px;
+
+  .dataset--tab-link,
+  .dataset--tab-link:hover {
+    border-top: 1px solid $gray;
+    border-right: 1px solid $gray;
+    border-left: 1px solid $gray;
+  }
+}
+
+.dataset--tab-active {
+  .dataset--tab-link,
+  .dataset--tab-link:hover {
+    background-color: $white;
+    border-bottom: 1px solid $white;
+    margin-bottom: -1px;
+  }
+}
 
 /* Dataset list resources
    ========================================================================== */

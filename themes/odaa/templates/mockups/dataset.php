@@ -20,6 +20,11 @@
       <div class="content-inner">
         <div class="primary-content">
           <div class="page--content-wrapper">
+            <ul class="dataset--tabs">
+              <li class="dataset--tab-active"><a href="/dataset/parkering" class="dataset--tab-link"><i class="icon-sitemap"></i> Datasæt</a></li>
+              <li class="dataset--tab"><a href="/dataset/activity/parkering" class="dataset--tab-link"><i class="icon-time"></i> Activity Stream</a></li>
+              <li class="dataset--tab"><a href="/dataset/parkering/related" class="dataset--tab-link"><i class="icon-picture"></i> Relateret</a></li>
+            </ul>
             <section class="page--content">
               <h1 class="page--title"> Bevaringsværdige bygninger i Aarhus Kommune</h1>
               <p>Datasættet beskriver de bygninger, der er registreret som bevaringsværdige i kommuneatlas (http://gis.aarhus.dk/kommuneatlas/) Mere om vurdering af bevaringsværdi efter SAVE-metoden: https://www.kulturarv.dk/fbb/bevaringsvaerdier.htm</p>
