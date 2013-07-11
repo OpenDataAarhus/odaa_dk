@@ -2,7 +2,7 @@
 <?php include './snippets/doctype.inc'; ?>
 <head profile="http://www.w3.org/1999/xhtml/vocab">
   <?php include 'snippets/head.inc'; ?>
-  <title>Welcome to dev.odaa.dk | dev.odaa.dk</title>
+  <title>Om ODAA</title>
 </head>
 <body class="left-sidebar">
   <div id="page" class="page">
@@ -19,7 +19,7 @@
     <div class="content-wrapper">
       <div class="content-inner">
         <div class="primary-content">
-          <div class="page-content">
+          <section class="page-content">
             <h1 class="page-title">Open Data Aarhus (ODAA)</h1>
             <p>Det overordnede formål med www.odaa.dk er at gøre data frit tilgængelige for at understøtte produktivitet og innovativ udvikling ved højere grad af udnyttelse af data. Udviklere, iværksættere, virksomheder, institutioner, borgere m.fl. får mulighed for nemt at kunne tilgå åbne data og forvandle dem til nye services/applikationer, der kan gøre det bedre, sjovere og nemmere at være borger, gæst, tilflytter osv. i Aarhus-området.</p>
             <p>Nogle data er allerede tilgængelige, men med www.odaa.dk skabes overblik på ét søgbart website.</p>
@@ -42,7 +42,7 @@
             <p>Du kan benytte kontaktformularen her.</p>
             <p>Eller du kan kontakte projektleder Birgitte Kjærgaard, bikj@aarhus.dk</p>
             <p>Du kan desuden få svar på flere af dine spørgsmål under FAQ.</p>
-          </div>
+          </section>
         </div>
         <div class="secondary-content">
           <?php include 'snippets/sub-menu.inc'; ?>
