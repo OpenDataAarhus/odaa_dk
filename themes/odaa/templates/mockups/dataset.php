@@ -110,14 +110,6 @@
                     <td class="dataset-label" scope="row">Vedligeholdelse af</th>
                     <td property="dc:contributor" class="dataset-details"><a href="mailto:pema@aarhus.dk">Peter Schack Madsen</a></td>
                   </tr>
-                  <tr>
-                    <td class="dataset-label" scope="row">Forfatter</th>
-                    <td property="dc:creator" class="dataset-details">Aarhus Kommune</td>
-                  </tr>
-                  <tr>
-                    <td class="dataset-label" scope="row">Vedligeholdelse af</th>
-                    <td property="dc:contributor" class="dataset-details"><a href="mailto:pema@aarhus.dk">Peter Schack Madsen</a></td>
-                  </tr>                  
                 </tbody>
               </table>
             </section>
