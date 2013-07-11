@@ -19,7 +19,7 @@ function odaa_wysiwyg_filter_default_formats() {
     'weight' => 0,
     'filters' => array(
       'wysiwyg' => array(
-        'weight' => -48,
+        'weight' => -50,
         'status' => 1,
         'settings' => array(
           'valid_elements' => 'a[!href|target<_blank|title],
@@ -152,14 +152,19 @@ h2,h3,h4,h5,h6,br,span,em,strong,u,cite,code,blockquote,ul,ol,li,dl,dt,dd,table,
         ),
       ),
       'filter_url' => array(
-        'weight' => -47,
+        'weight' => -49,
         'status' => 1,
         'settings' => array(
           'filter_url_length' => 72,
         ),
       ),
+      'media_filter' => array(
+        'weight' => -48,
+        'status' => 1,
+        'settings' => array(),
+      ),
       'filter_htmlcorrector' => array(
-        'weight' => -45,
+        'weight' => -47,
         'status' => 1,
         'settings' => array(),
       ),
@@ -220,6 +225,11 @@ h2,h3,h4,h5,h6,br,span,em,strong,u,cite,code,blockquote,ul,ol,li,dl,dt,dd,table,
       ),
       'filter_autop' => array(
         'weight' => 1,
+        'status' => 1,
+        'settings' => array(),
+      ),
+      'media_filter' => array(
+        'weight' => 2,
         'status' => 1,
         'settings' => array(),
       ),
