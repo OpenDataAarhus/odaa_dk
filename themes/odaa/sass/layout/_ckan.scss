@@ -93,3 +93,209 @@
   height: 35px;
   width: 32px;
 }
+
+
+/* Dataset activity icons
+ *
+ * TODO: Clean this mess up when got the time
+   ========================================================================== */
+.dataset--activity {
+  margin: 10px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.dataset--activity .dataset--activity-item {
+  border-bottom: $base-border-style;
+  margin: 0 0 15px 0;
+  position: relative;
+  padding-bottom: $large-spacing;
+  *zoom: 1;
+
+  &:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.dataset--activity .dataset--activity-item:before,
+.dataset--activity .dataset--activity-item:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.dataset--activity .dataset--activity-item:after {
+  clear: both;
+}
+
+.dataset--activity .dataset--activity-item .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  font-weight: normal;
+  margin-right: 10px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+  padding-left: 1px;
+  padding-bottom: 1px;
+}
+
+.dataset--activity .dataset--activity-item .gravatar {
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+
+.dataset--activity .dataset--activity-item .dataset--activity-actor .gravatar {
+  position: absolute;
+  top: 0;
+  left: 40px;
+}
+
+.dataset--activity .dataset--activity-item p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 5px 0 0 80px;
+}
+
+.dataset--activity .dataset--activity-item .dataset--activity-date {
+  color: #999;
+  display: block;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.dataset--activity .dataset--activity-item .new {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  top: -3px;
+  left: -3px;
+  width: 10px;
+  height: 10px;
+  background-color: #A35647;
+  border: 1px solid #FFF;
+  text-indent: -1000px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.dataset--activity .load-less {
+  margin-bottom: 15px;
+}
+
+.dataset--activity .dataset--activity-item .icon {
+  background-color: #999999;
+}
+
+.dataset--activity .dataset--activity-item.added-tag .icon {
+  background-color: #6995A6;
+}
+
+.dataset--activity .dataset--activity-item.changed-group .icon {
+  background-color: #767DCE;
+}
+
+.dataset--activity .dataset--activity-item.changed-package .icon {
+  background-color: #8C76CE;
+}
+
+.dataset--activity .dataset--activity-item.changed-package_extra .icon {
+  background-color: #769ACE;
+}
+
+.dataset--activity .dataset--activity-item.changed-resource .icon {
+  background-color: #AA76CE;
+}
+
+.dataset--activity .dataset--activity-item.changed-user .icon {
+  background-color: #76B8CE;
+}
+
+.dataset--activity .dataset--activity-item.changed-organization .icon {
+  background-color: #699FA6;
+}
+
+.dataset--activity .dataset--activity-item.deleted-group .icon {
+  background-color: #B95252;
+}
+
+.dataset--activity .dataset--activity-item.deleted-package .icon {
+  background-color: #B97452;
+}
+
+.dataset--activity .dataset--activity-item.deleted-package_extra .icon {
+  background-color: #B95274;
+}
+
+.dataset--activity .dataset--activity-item.deleted-resource .icon {
+  background-color: #B99752;
+}
+
+.dataset--activity .dataset--activity-item.deleted-organization .icon {
+  background-color: #B95297;
+}
+
+.dataset--activity .dataset--activity-item.new-group .icon {
+  background-color: #69A67A;
+}
+
+.dataset--activity .dataset--activity-item.new-package .icon {
+  background-color: #69A68E;
+}
+
+.dataset--activity .dataset--activity-item.new-package_extra .icon {
+  background-color: #6CA669;
+}
+
+.dataset--activity .dataset--activity-item.new-resource .icon {
+  background-color: #81A669;
+}
+
+.dataset--activity .dataset--activity-item.new-user .icon {
+  background-color: #69A6A3;
+}
+
+.dataset--activity .dataset--activity-item.new-organization .icon {
+  background-color: #81A669;
+}
+
+.dataset--activity .dataset--activity-item.removed-tag .icon {
+  background-color: #B95297;
+}
+
+.dataset--activity .dataset--activity-item.deleted-related-item .icon {
+  background-color: #B9B952;
+}
+
+.dataset--activity .dataset--activity-item.follow-dataset .icon {
+  background-color: #767DCE;
+}
+
+.dataset--activity .dataset--activity-item.follow-user .icon {
+  background-color: #8C76CE;
+}
+
+.dataset--activity .dataset--activity-item.new-related-item .icon {
+  background-color: #95A669;
+}
+
+.dataset--activity .dataset--activity-item.follow-group .icon {
+  background-color: #8BA669;
+}
