@@ -1,0 +1,4 @@
+name = Odaa Comment
+description = Comment handling in CKAN
+core = 7.x
+version = 7.x-1.0
