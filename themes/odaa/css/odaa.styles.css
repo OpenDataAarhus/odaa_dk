@@ -3933,13 +3933,44 @@ body {
   overflow: visible;
 }
 
+/* Site footer
+   ========================================================================== */
+/* line 69, ../sass/layout/_layout.scss */
+.site-footer {
+  -webkit-box-shadow: 0 0 5px #d5d5d5;
+  -moz-box-shadow: 0 0 5px #d5d5d5;
+  box-shadow: 0 0 5px #d5d5d5;
+  border-top: 20px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 75, ../sass/layout/_layout.scss */
+.footer-wrapper {
+  background-color: #96b000;
+  position: relative;
+}
+
+/* line 80, ../sass/layout/_layout.scss */
+.footer-inner {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
 /* Layouts
    ========================================================================== */
-/* line 70, ../sass/layout/_layout.scss */
+/* line 97, ../sass/layout/_layout.scss */
 .front {
   /* Media queries */
 }
-/* line 71, ../sass/layout/_layout.scss */
+/* line 98, ../sass/layout/_layout.scss */
 .front .primary-content {
   float: left;
   width: 66.66667%;
@@ -3957,7 +3988,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 75, ../sass/layout/_layout.scss */
+/* line 102, ../sass/layout/_layout.scss */
 .front .secondary-content {
   clear: right;
   float: right;
@@ -3976,7 +4007,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 80, ../sass/layout/_layout.scss */
+/* line 107, ../sass/layout/_layout.scss */
 .front .tertiary-content {
   clear: left;
   float: left;
@@ -3995,7 +4026,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 84, ../sass/layout/_layout.scss */
+/* line 111, ../sass/layout/_layout.scss */
 .front .tertiary-content .spotbox:nth-child(odd), .front .tertiary-content .twitter-widget:nth-child(odd) {
   clear: left;
   float: left;
@@ -4014,7 +4045,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 89, ../sass/layout/_layout.scss */
+/* line 116, ../sass/layout/_layout.scss */
 .front .tertiary-content .spotbox:nth-child(even), .front .tertiary-content .twitter-widget:nth-child(even) {
   float: right;
   width: 50%;
@@ -4032,12 +4063,12 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 94, ../sass/layout/_layout.scss */
+/* line 121, ../sass/layout/_layout.scss */
 .front .attachment-wrapper {
   clear: both;
 }
 @media only screen and (max-width: 768px) {
-  /* line 102, ../sass/layout/_layout.scss */
+  /* line 129, ../sass/layout/_layout.scss */
   .front .primary-content,
   .front .secondary-content,
   .front .tertiary-content {
@@ -4058,7 +4089,7 @@ body {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 108, ../sass/layout/_layout.scss */
+  /* line 135, ../sass/layout/_layout.scss */
   .front .primary-content .spotbox, .front .primary-content .twitter-widget,
   .front .primary-content .spotbox:nth-child(odd),
   .front .primary-content .twitter-widget:nth-child(odd),
@@ -4096,7 +4127,7 @@ body {
 }
 
 /* Right sidebar only */
-/* line 119, ../sass/layout/_layout.scss */
+/* line 146, ../sass/layout/_layout.scss */
 .left-sidebar .primary-content {
   float: right;
   width: 75%;
@@ -4114,7 +4145,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 123, ../sass/layout/_layout.scss */
+/* line 150, ../sass/layout/_layout.scss */
 .left-sidebar .secondary-content {
   float: left;
   width: 25%;
@@ -4132,7 +4163,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 127, ../sass/layout/_layout.scss */
+/* line 154, ../sass/layout/_layout.scss */
 .left-sidebar .tertiary-content {
   clear: both;
   float: left;
@@ -4151,7 +4182,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 131, ../sass/layout/_layout.scss */
+/* line 158, ../sass/layout/_layout.scss */
 .left-sidebar .tertiary-content .spotbox:nth-child(odd), .left-sidebar .tertiary-content .twitter-widget:nth-child(odd) {
   clear: left;
   float: left;
@@ -4170,7 +4201,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 136, ../sass/layout/_layout.scss */
+/* line 163, ../sass/layout/_layout.scss */
 .left-sidebar .tertiary-content .spotbox:nth-child(even), .left-sidebar .tertiary-content .twitter-widget:nth-child(even) {
   float: right;
   width: 50%;
@@ -4190,7 +4221,7 @@ body {
 }
 
 /* Both sidebars */
-/* line 145, ../sass/layout/_layout.scss */
+/* line 172, ../sass/layout/_layout.scss */
 .both-sidebars .static-content {
   float: right;
   width: 25%;
@@ -4208,7 +4239,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 149, ../sass/layout/_layout.scss */
+/* line 176, ../sass/layout/_layout.scss */
 .both-sidebars .primary-content {
   float: left;
   width: 50%;
@@ -4226,7 +4257,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 153, ../sass/layout/_layout.scss */
+/* line 180, ../sass/layout/_layout.scss */
 .both-sidebars .secondary-content {
   float: left;
   width: 25%;
@@ -4244,7 +4275,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 157, ../sass/layout/_layout.scss */
+/* line 184, ../sass/layout/_layout.scss */
 .both-sidebars .tertiary-content {
   clear: right;
   float: right;
@@ -4264,12 +4295,12 @@ body {
   _overflow-y: visible;
 }
 
-/* line 165, ../sass/layout/_layout.scss */
+/* line 192, ../sass/layout/_layout.scss */
 .attachment-wrapper {
   clear: both;
 }
 
-/* line 169, ../sass/layout/_layout.scss */
+/* line 196, ../sass/layout/_layout.scss */
 .attachment-first {
   float: left;
   width: 25%;
@@ -4288,7 +4319,7 @@ body {
   _overflow-y: visible;
 }
 
-/* line 173, ../sass/layout/_layout.scss */
+/* line 200, ../sass/layout/_layout.scss */
 .attachment-second {
   float: left;
   width: 25%;
@@ -4307,7 +4338,7 @@ body {
   _overflow-y: visible;
 }
 
-/* line 177, ../sass/layout/_layout.scss */
+/* line 204, ../sass/layout/_layout.scss */
 .attachment-third {
   float: right;
   width: 25%;
@@ -4326,7 +4357,7 @@ body {
   _overflow-y: visible;
 }
 
-/* line 181, ../sass/layout/_layout.scss */
+/* line 208, ../sass/layout/_layout.scss */
 .attachment-fourth {
   float: right;
   width: 25%;
