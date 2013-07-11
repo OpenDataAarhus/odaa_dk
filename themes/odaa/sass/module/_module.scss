@@ -8,6 +8,13 @@
 
 
 
+/* Twitter widget
+   ========================================================================== */
+.twitter-widget {
+  @extend .spotbox;
+}
+
+
 /* Empty text
  *
  * Used by CKAN for empty descriptions etc.

@@ -621,7 +621,7 @@ img {
   display: inline;
   height: auto;
   max-width: 100%;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 /* Lists
@@ -3996,7 +3996,7 @@ body {
   _overflow-y: visible;
 }
 /* line 84, ../sass/layout/_layout.scss */
-.front .tertiary-content .spotbox:nth-child(odd) {
+.front .tertiary-content .spotbox:nth-child(odd), .front .tertiary-content .twitter-widget:nth-child(odd) {
   clear: left;
   float: left;
   width: 50%;
@@ -4015,7 +4015,7 @@ body {
   _overflow-y: visible;
 }
 /* line 89, ../sass/layout/_layout.scss */
-.front .tertiary-content .spotbox:nth-child(even) {
+.front .tertiary-content .spotbox:nth-child(even), .front .tertiary-content .twitter-widget:nth-child(even) {
   float: right;
   width: 50%;
   margin-right: 0%;
@@ -4059,15 +4059,23 @@ body {
     _overflow-y: visible;
   }
   /* line 108, ../sass/layout/_layout.scss */
-  .front .primary-content .spotbox,
+  .front .primary-content .spotbox, .front .primary-content .twitter-widget,
   .front .primary-content .spotbox:nth-child(odd),
+  .front .primary-content .twitter-widget:nth-child(odd),
   .front .primary-content .spotbox:nth-child(even),
+  .front .primary-content .twitter-widget:nth-child(even),
   .front .secondary-content .spotbox,
+  .front .secondary-content .twitter-widget,
   .front .secondary-content .spotbox:nth-child(odd),
+  .front .secondary-content .twitter-widget:nth-child(odd),
   .front .secondary-content .spotbox:nth-child(even),
+  .front .secondary-content .twitter-widget:nth-child(even),
   .front .tertiary-content .spotbox,
+  .front .tertiary-content .twitter-widget,
   .front .tertiary-content .spotbox:nth-child(odd),
-  .front .tertiary-content .spotbox:nth-child(even) {
+  .front .tertiary-content .twitter-widget:nth-child(odd),
+  .front .tertiary-content .spotbox:nth-child(even),
+  .front .tertiary-content .twitter-widget:nth-child(even) {
     clear: left;
     float: left;
     width: 100%;
@@ -4144,7 +4152,7 @@ body {
   _overflow-y: visible;
 }
 /* line 131, ../sass/layout/_layout.scss */
-.left-sidebar .tertiary-content .spotbox:nth-child(odd) {
+.left-sidebar .tertiary-content .spotbox:nth-child(odd), .left-sidebar .tertiary-content .twitter-widget:nth-child(odd) {
   clear: left;
   float: left;
   width: 50%;
@@ -4163,7 +4171,7 @@ body {
   _overflow-y: visible;
 }
 /* line 136, ../sass/layout/_layout.scss */
-.left-sidebar .tertiary-content .spotbox:nth-child(even) {
+.left-sidebar .tertiary-content .spotbox:nth-child(even), .left-sidebar .tertiary-content .twitter-widget:nth-child(even) {
   float: right;
   width: 50%;
   margin-right: 0%;
@@ -4594,11 +4602,13 @@ body {
  *
  * @author magnify
  */
+/* Twitter widget
+   ========================================================================== */
 /* Empty text
  *
  * Used by CKAN for empty descriptions etc.
    ========================================================================== */
-/* line 15, ../sass/module/_module.scss */
+/* line 22, ../sass/module/_module.scss */
 .spotbox--content-empty, .dataset--list-item .dataset--description-empty {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
@@ -4608,7 +4618,7 @@ body {
 
 /* Zebra stribed list
    ========================================================================== */
-/* line 23, ../sass/module/_module.scss */
+/* line 30, ../sass/module/_module.scss */
 .dataset--data-resources, .dataset--tags, .dataset--additional-info {
   border-top: 1px dashed #e6e6e6;
   margin-top: 20px;
@@ -4617,26 +4627,26 @@ body {
 
 /* Zebra stribed list
    ========================================================================== */
-/* line 33, ../sass/module/_module.scss */
+/* line 40, ../sass/module/_module.scss */
 .dataset--list-item:nth-child(odd) {
   background-color: #efefef;
 }
-/* line 36, ../sass/module/_module.scss */
+/* line 43, ../sass/module/_module.scss */
 .dataset--list-item:nth-child(odd):hover {
   background-color: #e2e2e2;
 }
-/* line 41, ../sass/module/_module.scss */
+/* line 48, ../sass/module/_module.scss */
 .dataset--list-item:nth-child(even) {
   background-color: #fbfbfb;
 }
-/* line 44, ../sass/module/_module.scss */
+/* line 51, ../sass/module/_module.scss */
 .dataset--list-item:nth-child(even):hover {
   background-color: #e2e2e2;
 }
 
 /* Block module
    ========================================================================== */
-/* line 54, ../sass/module/_module.scss */
+/* line 61, ../sass/module/_module.scss */
 .spotbox--inner, .create-user .create-user-inner, .user--block--logged-in-inner, .page--content-wrapper {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -4650,38 +4660,38 @@ body {
   padding: 20px;
 }
 
-/* line 65, ../sass/module/_module.scss */
-.spotbox {
+/* line 72, ../sass/module/_module.scss */
+.spotbox, .twitter-widget {
   margin-top: 20px;
 }
-/* line 68, ../sass/module/_module.scss */
-.spotbox a:link {
+/* line 75, ../sass/module/_module.scss */
+.spotbox a:link, .twitter-widget a:link {
   color: gray;
   text-decoration: none;
 }
-/* line 73, ../sass/module/_module.scss */
-.spotbox a:visited {
+/* line 80, ../sass/module/_module.scss */
+.spotbox a:visited, .twitter-widget a:visited {
   color: #737373;
   text-decoration: none;
 }
-/* line 78, ../sass/module/_module.scss */
-.spotbox a:hover {
+/* line 85, ../sass/module/_module.scss */
+.spotbox a:hover, .twitter-widget a:hover {
   color: #be370a;
   text-decoration: none;
 }
-/* line 83, ../sass/module/_module.scss */
-.spotbox a:focus {
+/* line 90, ../sass/module/_module.scss */
+.spotbox a:focus, .twitter-widget a:focus {
   color: black;
 }
-/* line 87, ../sass/module/_module.scss */
-.spotbox i[class^="icon-"] {
+/* line 94, ../sass/module/_module.scss */
+.spotbox i[class^="icon-"], .twitter-widget i[class^="icon-"] {
   margin-right: 5px;
   /* Icon gets cut off when it is the first item from the left */
   padding-left: 1px;
 }
 
 /* %module--block headers */
-/* line 101, ../sass/module/_module.scss */
+/* line 108, ../sass/module/_module.scss */
 .spotbox--header {
   -webkit-border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
@@ -4697,34 +4707,34 @@ body {
   padding-bottom: 10px;
   padding-left: 20px;
 }
-/* line 115, ../sass/module/_module.scss */
+/* line 122, ../sass/module/_module.scss */
 .spotbox--header a:hover {
   text-decoration: none;
   /* Inherit hover color for header labels */
 }
-/* line 119, ../sass/module/_module.scss */
+/* line 126, ../sass/module/_module.scss */
 .spotbox--header a:hover [class$="header-label"] {
   color: gray;
 }
-/* line 124, ../sass/module/_module.scss */
+/* line 131, ../sass/module/_module.scss */
 .spotbox--header i[class^="icon-"] {
   margin-right: 8px;
 }
 
-/* line 129, ../sass/module/_module.scss */
+/* line 136, ../sass/module/_module.scss */
 .spotbox--header-label {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
 
-/* line 134, ../sass/module/_module.scss */
+/* line 141, ../sass/module/_module.scss */
 .spotbox--list-header-label {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
   margin-right: 5px;
 }
 
-/* line 141, ../sass/module/_module.scss */
+/* line 148, ../sass/module/_module.scss */
 .spotbox--list-header {
   font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: normal;
@@ -4734,37 +4744,37 @@ body {
 }
 
 /* %module--block content */
-/* line 151, ../sass/module/_module.scss */
+/* line 158, ../sass/module/_module.scss */
 .spotbox--content-wrapper {
   /* Correct spacing for line height */
   margin-top: -5px;
   vertical-align: top;
 }
 
-/* line 158, ../sass/module/_module.scss */
+/* line 165, ../sass/module/_module.scss */
 .spotbox--content, .user--block--logged-in-content {
   padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
 }
-/* line 163, ../sass/module/_module.scss */
+/* line 170, ../sass/module/_module.scss */
 .spotbox--content a:link, .user--block--logged-in-content a:link {
   color: #e5420c;
 }
-/* line 167, ../sass/module/_module.scss */
+/* line 174, ../sass/module/_module.scss */
 .spotbox--content a:visited, .user--block--logged-in-content a:visited {
   color: #972c08;
 }
-/* line 171, ../sass/module/_module.scss */
+/* line 178, ../sass/module/_module.scss */
 .spotbox--content a:hover, .user--block--logged-in-content a:hover {
   color: #be370a;
 }
-/* line 175, ../sass/module/_module.scss */
+/* line 182, ../sass/module/_module.scss */
 .spotbox--content p, .user--block--logged-in-content p {
   margin-bottom: 0;
 }
 
-/* line 181, ../sass/module/_module.scss */
+/* line 188, ../sass/module/_module.scss */
 .spotbox--meta-wrapper {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
@@ -4772,57 +4782,57 @@ body {
   padding-right: 20px;
   padding-left: 20px;
 }
-/* line 188, ../sass/module/_module.scss */
+/* line 195, ../sass/module/_module.scss */
 .spotbox--meta-wrapper a:link {
   color: #e5420c;
 }
-/* line 192, ../sass/module/_module.scss */
+/* line 199, ../sass/module/_module.scss */
 .spotbox--meta-wrapper a:visited {
   color: #972c08;
 }
-/* line 196, ../sass/module/_module.scss */
+/* line 203, ../sass/module/_module.scss */
 .spotbox--meta-wrapper a:hover {
   color: #be370a;
 }
 
 /* %module--block list */
-/* line 203, ../sass/module/_module.scss */
+/* line 210, ../sass/module/_module.scss */
 .spotbox--list, .spotbox--list-latest, .user--block--logged-in-list {
   padding-left: 0;
 }
 
-/* line 208, ../sass/module/_module.scss */
+/* line 215, ../sass/module/_module.scss */
 .spotbox--list-item, .user--block--logged-in-list-item {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
   overflow: hidden;
   padding-bottom: 10px;
 }
-/* line 214, ../sass/module/_module.scss */
+/* line 221, ../sass/module/_module.scss */
 .last.spotbox--list-item, .last.user--block--logged-in-list-item {
   border-bottom: 0;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-/* line 222, ../sass/module/_module.scss */
+/* line 229, ../sass/module/_module.scss */
 .spotbox--list-posted {
   margin-bottom: 0;
 }
 
-/* line 227, ../sass/module/_module.scss */
+/* line 234, ../sass/module/_module.scss */
 .spotbox--date {
   display: block;
 }
 
 /* %module--block image */
-/* line 233, ../sass/module/_module.scss */
+/* line 240, ../sass/module/_module.scss */
 .spotbox--image {
   margin-bottom: 20px;
 }
 
 /* %module--block list image */
-/* line 239, ../sass/module/_module.scss */
+/* line 246, ../sass/module/_module.scss */
 .spotbox--list-image {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -4836,7 +4846,7 @@ body {
 }
 
 /* %module--block footer */
-/* line 252, ../sass/module/_module.scss */
+/* line 259, ../sass/module/_module.scss */
 .spotbox--footer {
   border-top: 1px dashed rgba(0, 0, 0, 0.1);
   clear: both;
@@ -4848,7 +4858,7 @@ body {
   padding-bottom: 15px;
 }
 
-/* line 264, ../sass/module/_module.scss */
+/* line 271, ../sass/module/_module.scss */
 .spotbox--read-more {
   float: right;
 }
@@ -4942,7 +4952,7 @@ body {
   font-weight: normal;
 }
 /* line 155, ../sass/module/_spotbox.scss */
-.primary-content .spotbox:last-child {
+.primary-content .spotbox:last-child, .primary-content .twitter-widget:last-child {
   margin-bottom: 0;
 }
 
