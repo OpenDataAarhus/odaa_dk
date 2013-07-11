@@ -71,7 +71,7 @@ projects[field_group][subdir] = "contrib"
 projects[field_group][version] = "1.1"
 
 projects[file_entity][subdir] = "contrib"
-projects[file_entity][version] = "2.0-unstable7"
+projects[file_entity][version] = "2.x-dev"
 
 projects[flexslider][subdir] = "contrib"
 projects[flexslider][version] = "1.0-rc3"
@@ -110,8 +110,11 @@ projects[location][version] = "3.0-rc2"
 projects[mailchimp][subdir] = "contrib"
 projects[mailchimp][version] = "2.10"
 
+projects[media_browser_plus][subdir] = "contrib"
+projects[media_browser_plus][version] = "3.x-dev"
+
 projects[media][subdir] = "contrib"
-projects[media][version] = "2.0-unstable7"
+projects[media][version] = "2.x-dev"
 
 projects[mediaelement][subdir] = "contrib"
 projects[mediaelement][version] = "1.2"
