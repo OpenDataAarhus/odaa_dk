@@ -5,3 +5,27 @@
  */
 
 include_once 'odaa_media.features.inc';
+
+/**
+* Implements hook_entity_info_alter().
+*
+* Create new view modes for file display.
+*/
+function odaa_media_entity_info_alter(&$entity_info) {
+  $entity_info['file']['view modes']['thumbnail'] = array(
+    'label' => t('Thumbnail'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['file']['view modes']['small'] = array(
+    'label' => t('Small'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['file']['view modes']['medium'] = array(
+    'label' => t('Medium'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['file']['view modes']['large'] = array(
+    'label' => t('Large'),
+    'custom settings' => TRUE,
+  );
+}
