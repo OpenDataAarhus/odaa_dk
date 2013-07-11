@@ -8,6 +8,16 @@
 
 
 
+/* Empty text
+ *
+ * Used by CKAN for empty descriptions etc.
+   ========================================================================== */
+%empty-text {
+  @include opacity(.5);
+  @include font-italic();
+}
+
+
 /* Zebra stribed list
    ========================================================================== */
 %section-spacing {
@@ -39,8 +49,18 @@
 
 
 
-/* Block
+/* Block module
    ========================================================================== */
+%module-wrapper-style {
+  @include border-radius($base-border-radius);
+  @include box-shadow($base-box-shadow);
+
+  background-color: $white;
+  border: 1px solid $gray;
+  margin-top: $large-spacing;
+  padding: $large-spacing;
+}
+
 
 %module--block {
   margin-top: $large-spacing;
@@ -73,19 +93,23 @@
 
 
 %module--block--inner {
-  @include border-radius($base-border-radius);
-
-  overflow: hidden;
+  @extend %module-wrapper-style;
 }
 
 
 /* %module--block headers */
 %module--block--header {
-  background-color: darken($base-secondary-color, 10%);
-  margin-bottom: 0;
-  padding-top: $large-spacing;
+  @include border-radius($base-border-radius $base-border-radius 0 0);
+
+  background-color: $gray-light;
+  border-bottom: 1px solid $gray;
+  margin-top: -$large-spacing;
+  margin-bottom: $large-spacing;
+  margin-right: -$large-spacing;
+  margin-left: -$large-spacing;
+  padding-top: 14px;
   padding-right: $large-spacing;
-  padding-bottom: 15px;
+  padding-bottom: $medium-spacing;
   padding-left: $large-spacing;
 
   a:hover {
@@ -177,10 +201,7 @@
 
 /* %module--block list */
 %module--block--list {
-  padding-top: $large-spacing;
-  padding-right: $large-spacing;
-  padding-bottom: $large-spacing;
-  padding-left: $large-spacing;
+  padding-left: 0;
 }
 
 
@@ -210,17 +231,7 @@
 
 /* %module--block image */
 %module--block--image {
-  @include border-radius($base-border-radius);
-
-  border: 1px solid transparentize($black, .75);
-  float: right;
-  margin-top: $large-spacing;
-  margin-right: $large-spacing;
   margin-bottom: $large-spacing;
-  margin-left: $large-spacing;
-  max-width: 100px;
-  overflow: hidden;
-  vertical-align: top;
 }
 
 

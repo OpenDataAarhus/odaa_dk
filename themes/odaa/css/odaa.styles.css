@@ -4594,9 +4594,21 @@ body {
  *
  * @author magnify
  */
+/* Empty text
+ *
+ * Used by CKAN for empty descriptions etc.
+   ========================================================================== */
+/* line 15, ../sass/module/_module.scss */
+.spotbox--content-empty, .dataset--list-item .dataset--description-empty {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  font-family: "exo-regular-italic";
+  font-weight: normal;
+}
+
 /* Zebra stribed list
    ========================================================================== */
-/* line 13, ../sass/module/_module.scss */
+/* line 23, ../sass/module/_module.scss */
 .dataset--data-resources, .dataset--tags, .dataset--additional-info {
   border-top: 1px dashed #e6e6e6;
   margin-top: 20px;
@@ -4605,101 +4617,114 @@ body {
 
 /* Zebra stribed list
    ========================================================================== */
-/* line 23, ../sass/module/_module.scss */
+/* line 33, ../sass/module/_module.scss */
 .dataset--list-item:nth-child(odd) {
   background-color: #efefef;
 }
-/* line 26, ../sass/module/_module.scss */
+/* line 36, ../sass/module/_module.scss */
 .dataset--list-item:nth-child(odd):hover {
   background-color: #e2e2e2;
 }
-/* line 31, ../sass/module/_module.scss */
+/* line 41, ../sass/module/_module.scss */
 .dataset--list-item:nth-child(even) {
   background-color: #fbfbfb;
 }
-/* line 34, ../sass/module/_module.scss */
+/* line 44, ../sass/module/_module.scss */
 .dataset--list-item:nth-child(even):hover {
   background-color: #e2e2e2;
 }
 
-/* Block
+/* Block module
    ========================================================================== */
-/* line 45, ../sass/module/_module.scss */
+/* line 54, ../sass/module/_module.scss */
+.spotbox--inner, .create-user .create-user-inner, .user--block--logged-in-inner, .page--content-wrapper {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px #d5d5d5;
+  -moz-box-shadow: 0 0 5px #d5d5d5;
+  box-shadow: 0 0 5px #d5d5d5;
+  background-color: white;
+  border: 1px solid #d5d5d5;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+/* line 65, ../sass/module/_module.scss */
 .spotbox {
   margin-top: 20px;
 }
-/* line 48, ../sass/module/_module.scss */
+/* line 68, ../sass/module/_module.scss */
 .spotbox a:link {
   color: gray;
   text-decoration: none;
 }
-/* line 53, ../sass/module/_module.scss */
+/* line 73, ../sass/module/_module.scss */
 .spotbox a:visited {
   color: #737373;
   text-decoration: none;
 }
-/* line 58, ../sass/module/_module.scss */
+/* line 78, ../sass/module/_module.scss */
 .spotbox a:hover {
   color: #be370a;
   text-decoration: none;
 }
-/* line 63, ../sass/module/_module.scss */
+/* line 83, ../sass/module/_module.scss */
 .spotbox a:focus {
   color: black;
 }
-/* line 67, ../sass/module/_module.scss */
+/* line 87, ../sass/module/_module.scss */
 .spotbox i[class^="icon-"] {
   margin-right: 5px;
   /* Icon gets cut off when it is the first item from the left */
   padding-left: 1px;
 }
 
-/* line 75, ../sass/module/_module.scss */
-.spotbox--inner, .create-user .create-user-inner, .user--block--logged-in-inner {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
 /* %module--block headers */
-/* line 83, ../sass/module/_module.scss */
+/* line 101, ../sass/module/_module.scss */
 .spotbox--header {
-  background-color: #e6e6e6;
-  margin-bottom: 0;
-  padding-top: 20px;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  background-color: #efefef;
+  border-bottom: 1px solid #d5d5d5;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding-top: 14px;
   padding-right: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   padding-left: 20px;
 }
-/* line 91, ../sass/module/_module.scss */
+/* line 115, ../sass/module/_module.scss */
 .spotbox--header a:hover {
   text-decoration: none;
   /* Inherit hover color for header labels */
 }
-/* line 95, ../sass/module/_module.scss */
+/* line 119, ../sass/module/_module.scss */
 .spotbox--header a:hover [class$="header-label"] {
   color: gray;
 }
-/* line 100, ../sass/module/_module.scss */
+/* line 124, ../sass/module/_module.scss */
 .spotbox--header i[class^="icon-"] {
   margin-right: 8px;
 }
 
-/* line 105, ../sass/module/_module.scss */
+/* line 129, ../sass/module/_module.scss */
 .spotbox--header-label {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
 
-/* line 110, ../sass/module/_module.scss */
+/* line 134, ../sass/module/_module.scss */
 .spotbox--list-header-label {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
   margin-right: 5px;
 }
 
-/* line 117, ../sass/module/_module.scss */
+/* line 141, ../sass/module/_module.scss */
 .spotbox--list-header {
   font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: normal;
@@ -4709,37 +4734,37 @@ body {
 }
 
 /* %module--block content */
-/* line 127, ../sass/module/_module.scss */
+/* line 151, ../sass/module/_module.scss */
 .spotbox--content-wrapper {
   /* Correct spacing for line height */
   margin-top: -5px;
   vertical-align: top;
 }
 
-/* line 134, ../sass/module/_module.scss */
+/* line 158, ../sass/module/_module.scss */
 .spotbox--content, .user--block--logged-in-content {
   padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
 }
-/* line 139, ../sass/module/_module.scss */
+/* line 163, ../sass/module/_module.scss */
 .spotbox--content a:link, .user--block--logged-in-content a:link {
   color: #e5420c;
 }
-/* line 143, ../sass/module/_module.scss */
+/* line 167, ../sass/module/_module.scss */
 .spotbox--content a:visited, .user--block--logged-in-content a:visited {
   color: #972c08;
 }
-/* line 147, ../sass/module/_module.scss */
+/* line 171, ../sass/module/_module.scss */
 .spotbox--content a:hover, .user--block--logged-in-content a:hover {
   color: #be370a;
 }
-/* line 151, ../sass/module/_module.scss */
+/* line 175, ../sass/module/_module.scss */
 .spotbox--content p, .user--block--logged-in-content p {
   margin-bottom: 0;
 }
 
-/* line 157, ../sass/module/_module.scss */
+/* line 181, ../sass/module/_module.scss */
 .spotbox--meta-wrapper {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
@@ -4747,71 +4772,57 @@ body {
   padding-right: 20px;
   padding-left: 20px;
 }
-/* line 164, ../sass/module/_module.scss */
+/* line 188, ../sass/module/_module.scss */
 .spotbox--meta-wrapper a:link {
   color: #e5420c;
 }
-/* line 168, ../sass/module/_module.scss */
+/* line 192, ../sass/module/_module.scss */
 .spotbox--meta-wrapper a:visited {
   color: #972c08;
 }
-/* line 172, ../sass/module/_module.scss */
+/* line 196, ../sass/module/_module.scss */
 .spotbox--meta-wrapper a:hover {
   color: #be370a;
 }
 
 /* %module--block list */
-/* line 179, ../sass/module/_module.scss */
+/* line 203, ../sass/module/_module.scss */
 .spotbox--list, .spotbox--list-latest, .user--block--logged-in-list {
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 0;
 }
 
-/* line 187, ../sass/module/_module.scss */
+/* line 208, ../sass/module/_module.scss */
 .spotbox--list-item, .user--block--logged-in-list-item {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
   overflow: hidden;
   padding-bottom: 10px;
 }
-/* line 193, ../sass/module/_module.scss */
+/* line 214, ../sass/module/_module.scss */
 .last.spotbox--list-item, .last.user--block--logged-in-list-item {
   border-bottom: 0;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-/* line 201, ../sass/module/_module.scss */
+/* line 222, ../sass/module/_module.scss */
 .spotbox--list-posted {
   margin-bottom: 0;
 }
 
-/* line 206, ../sass/module/_module.scss */
+/* line 227, ../sass/module/_module.scss */
 .spotbox--date {
   display: block;
 }
 
 /* %module--block image */
-/* line 212, ../sass/module/_module.scss */
+/* line 233, ../sass/module/_module.scss */
 .spotbox--image {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  float: right;
-  margin-top: 20px;
-  margin-right: 20px;
   margin-bottom: 20px;
-  margin-left: 20px;
-  max-width: 100px;
-  overflow: hidden;
-  vertical-align: top;
 }
 
 /* %module--block list image */
-/* line 228, ../sass/module/_module.scss */
+/* line 239, ../sass/module/_module.scss */
 .spotbox--list-image {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -4825,7 +4836,7 @@ body {
 }
 
 /* %module--block footer */
-/* line 241, ../sass/module/_module.scss */
+/* line 252, ../sass/module/_module.scss */
 .spotbox--footer {
   border-top: 1px dashed rgba(0, 0, 0, 0.1);
   clear: both;
@@ -4837,7 +4848,7 @@ body {
   padding-bottom: 15px;
 }
 
-/* line 253, ../sass/module/_module.scss */
+/* line 264, ../sass/module/_module.scss */
 .spotbox--read-more {
   float: right;
 }
@@ -4849,25 +4860,11 @@ body {
  */
 /* Page
    ========================================================================== */
-/* line 12, ../sass/module/_page.scss */
-.page--content-wrapper {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 5px #d5d5d5;
-  -moz-box-shadow: 0 0 5px #d5d5d5;
-  box-shadow: 0 0 5px #d5d5d5;
-  background-color: white;
-  border: 1px solid #d5d5d5;
-  margin-top: 20px;
-  padding: 20px;
-}
-
-/* line 22, ../sass/module/_page.scss */
+/* line 16, ../sass/module/_page.scss */
 .page--content {
   /* Headers in page content */
 }
-/* line 24, ../sass/module/_page.scss */
+/* line 18, ../sass/module/_page.scss */
 .page--content h3 {
   margin-top: 20px;
 }
@@ -4900,19 +4897,19 @@ body {
 /* Spotbox content */
 /* Spotbox list */
 /* Spotbox list latest */
-/* line 89, ../sass/module/_spotbox.scss */
+/* line 93, ../sass/module/_spotbox.scss */
 .spotbox--list-latest .spotbox--list-image {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
-/* line 95, ../sass/module/_spotbox.scss */
+/* line 99, ../sass/module/_spotbox.scss */
 .spotbox--list-latest .spotbox--list-header,
 .spotbox--list-latest .spotbox--content,
 .spotbox--list-latest .spotbox--meta-wrapper {
   margin-left: 50px;
 }
-/* line 99, ../sass/module/_spotbox.scss */
+/* line 103, ../sass/module/_spotbox.scss */
 .spotbox--list-latest .spotbox--content {
   padding-top: 10px;
 }
@@ -4921,11 +4918,11 @@ body {
 /* Spotbox footer */
 /* Spotboxes in primary content
    ========================================================================== */
-/* line 135, ../sass/module/_spotbox.scss */
+/* line 139, ../sass/module/_spotbox.scss */
 .primary-content {
   /* Reset margin bottom on last spotbox in primary content */
 }
-/* line 136, ../sass/module/_spotbox.scss */
+/* line 140, ../sass/module/_spotbox.scss */
 .primary-content .spotbox--inner {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(100%, #ffffff));
   background-image: -webkit-linear-gradient(#f2f2f2, #ffffff);
@@ -4934,24 +4931,24 @@ body {
   background-image: linear-gradient(#f2f2f2, #ffffff);
   background-color: white;
 }
-/* line 142, ../sass/module/_spotbox.scss */
+/* line 146, ../sass/module/_spotbox.scss */
 .primary-content .spotbox--list-label {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
 }
-/* line 146, ../sass/module/_spotbox.scss */
+/* line 150, ../sass/module/_spotbox.scss */
 .primary-content .spotbox--list-header {
   font-family: "exo-demi-bold";
   font-weight: normal;
 }
-/* line 151, ../sass/module/_spotbox.scss */
+/* line 155, ../sass/module/_spotbox.scss */
 .primary-content .spotbox:last-child {
   margin-bottom: 0;
 }
 
 /* Spotboxes in secondary content
    ========================================================================== */
-/* line 161, ../sass/module/_spotbox.scss */
+/* line 165, ../sass/module/_spotbox.scss */
 .secondary-content .spotbox--inner {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ffffff));
   background-image: -webkit-linear-gradient(#ffffff, #ffffff);
@@ -4960,14 +4957,14 @@ body {
   background-image: linear-gradient(#ffffff, #ffffff);
   background-color: white;
 }
-/* line 167, ../sass/module/_spotbox.scss */
+/* line 171, ../sass/module/_spotbox.scss */
 .secondary-content .spotbox--header {
   font-size: 130%;
 }
 
 /* Spotboxes in tertiary content
    ========================================================================== */
-/* line 180, ../sass/module/_spotbox.scss */
+/* line 184, ../sass/module/_spotbox.scss */
 .tertiary-content .spotbox--inner {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ffffff));
   background-image: -webkit-linear-gradient(#ffffff, #ffffff);
@@ -4976,26 +4973,26 @@ body {
   background-image: linear-gradient(#ffffff, #ffffff);
   background-color: #acca00;
 }
-/* line 186, ../sass/module/_spotbox.scss */
+/* line 190, ../sass/module/_spotbox.scss */
 .tertiary-content .spotbox--header {
   font-size: 130%;
 }
 
 /* Spotboxes as attachment
    ========================================================================== */
-/* line 196, ../sass/module/_spotbox.scss */
+/* line 200, ../sass/module/_spotbox.scss */
 .attachment-wrapper .spotbox--inner {
   background-color: #acca00;
 }
-/* line 200, ../sass/module/_spotbox.scss */
+/* line 204, ../sass/module/_spotbox.scss */
 .attachment-wrapper .spotbox--header {
   font-size: 110%;
 }
-/* line 204, ../sass/module/_spotbox.scss */
+/* line 208, ../sass/module/_spotbox.scss */
 .attachment-wrapper .spotbox--image {
   max-width: 50px;
 }
-/* line 208, ../sass/module/_spotbox.scss */
+/* line 212, ../sass/module/_spotbox.scss */
 .attachment-wrapper .spotbox--content {
   display: none;
 }
@@ -5329,6 +5326,9 @@ body {
    ========================================================================== */
 /* line 10, ../sass/module/_dataset.scss */
 .dataset--tabs {
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
   background-color: #efefef;
   border-bottom: 1px solid #d5d5d5;
   margin-top: -20px;
@@ -5340,12 +5340,12 @@ body {
   padding-left: 20px;
 }
 
-/* line 25, ../sass/module/_dataset.scss */
+/* line 26, ../sass/module/_dataset.scss */
 .dataset--tab,
 .dataset--tab-active {
   margin-right: 11px;
 }
-/* line 29, ../sass/module/_dataset.scss */
+/* line 30, ../sass/module/_dataset.scss */
 .dataset--tab .dataset--tab-link,
 .dataset--tab .dataset--tab-link:hover,
 .dataset--tab-active .dataset--tab-link,
@@ -5355,7 +5355,7 @@ body {
   border-left: 1px solid #d5d5d5;
 }
 
-/* line 38, ../sass/module/_dataset.scss */
+/* line 39, ../sass/module/_dataset.scss */
 .dataset--tab-active .dataset--tab-link,
 .dataset--tab-active .dataset--tab-link:hover {
   background-color: white;
@@ -5365,37 +5365,30 @@ body {
 
 /* Dataset list resources
    ========================================================================== */
-/* line 51, ../sass/module/_dataset.scss */
+/* line 52, ../sass/module/_dataset.scss */
 .dataset--list {
   padding-left: 0;
 }
 
-/* line 55, ../sass/module/_dataset.scss */
+/* line 56, ../sass/module/_dataset.scss */
 .dataset--list-item {
   overflow: hidden;
   padding: 10px 10px 10px 60px;
   position: relative;
 }
-/* line 62, ../sass/module/_dataset.scss */
+/* line 63, ../sass/module/_dataset.scss */
 .dataset--list-item .dataset--info {
   float: left;
 }
-/* line 66, ../sass/module/_dataset.scss */
+/* line 67, ../sass/module/_dataset.scss */
 .dataset--list-item .ckan--format-label {
   left: 10px;
   position: absolute;
   top: 10px;
 }
-/* line 72, ../sass/module/_dataset.scss */
+/* line 73, ../sass/module/_dataset.scss */
 .dataset--list-item .dataset--description {
   margin-bottom: 0;
-}
-/* line 76, ../sass/module/_dataset.scss */
-.dataset--list-item .dataset--description-empty {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;
-  font-family: "exo-regular-italic";
-  font-weight: normal;
 }
 /* line 81, ../sass/module/_dataset.scss */
 .dataset--list-item .dataset--actions {

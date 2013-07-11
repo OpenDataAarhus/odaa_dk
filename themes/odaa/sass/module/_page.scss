@@ -10,13 +10,7 @@
    ========================================================================== */
 
 .page--content-wrapper {
-  @include border-radius($base-border-radius);
-  @include box-shadow($base-box-shadow);
-
-  background-color: $white;
-  border: 1px solid $gray;
-  margin-top: $large-spacing;
-  padding: $large-spacing;
+  @extend %module-wrapper-style;
 }
 
 .page--content {

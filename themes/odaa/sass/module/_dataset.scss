@@ -8,6 +8,7 @@
 /* Dataset tabs
    ========================================================================== */
 .dataset--tabs {
+  @include border-radius($base-border-radius $base-border-radius 0 0);
   @extend .tabs;
 
   background-color: $gray-light;
@@ -74,8 +75,7 @@
   }
 
   .dataset--description-empty {
-    @include opacity(.5);
-    @include font-italic();
+    @extend %empty-text;
   }
 
   .dataset--actions {

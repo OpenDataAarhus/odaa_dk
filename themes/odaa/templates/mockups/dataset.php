@@ -121,7 +121,23 @@
           </div>
         </div>
         <div class="secondary-content">
-          <?php include 'snippets/sub-menu.inc'; ?>
+          <div class="spotbox">
+            <div class="spotbox--inner">
+              <div class="spotbox--image"><a href="/organization/aarhus-kommune"><img width="200" alt="aarhus-kommune" src="http://www.aarhus.dk/~/media/Subsites/AAK-Designguide/Logovarianter/Logo-med-tekst/Dansk/Kompakt-version/PNG/AAK-02-venstre-70.png"></a></div>
+              <h3 class="spotbox--header">Aarhus Kommune</h3>
+              <p class="spotbox--content-empty">There is no description for this organization</p>
+            </div>
+          </div>
+          <div class="spotbox">
+            <div class="spotbox--inner">
+              <h3 class="spotbox--header">Aarhus Kommune</h3>
+              <ul class="spotbox--list">
+                <li class="spotbox--list-item first"><a target="_blank" href="https://plus.google.com/share?url=http://www.odaa.dk/dataset/parkering"><i class="icon-google-plus-sign"></i> Google+</a></li>
+                <li class="spotbox--list-item"><a target="_blank" href="https://twitter.com/share?url=http://www.odaa.dk/dataset/parkering"><i class="icon-twitter-sign"></i> Twitter</a></li>
+                <li class="spotbox--list-item last"><a target="_blank" href="https://www.facebook.com/sharer.php?u=http://www.odaa.dk/dataset/parkering"><i class="icon-facebook-sign"></i> Facebook</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="tertiary-content">
           Tertiary content
