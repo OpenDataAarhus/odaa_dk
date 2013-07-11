@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ODAA CKAN Comment feature.
+ */
+
+include_once 'odaa_ckan_comment.features.inc';
