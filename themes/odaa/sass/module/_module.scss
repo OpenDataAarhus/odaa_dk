@@ -96,6 +96,10 @@
     /* Icon gets cut off when it is the first item from the left */
     padding-left: 1px;
   }
+
+  p {
+    margin-bottom: 0;
+  }
 }
 
 
@@ -177,10 +181,6 @@
 
   a:hover {
     color: $link-color-hover;
-  }
-
-  p {
-    margin-bottom: 0;
   }
 }
 

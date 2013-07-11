@@ -4689,9 +4689,13 @@ body {
   /* Icon gets cut off when it is the first item from the left */
   padding-left: 1px;
 }
+/* line 100, ../sass/module/_module.scss */
+.spotbox p, .twitter-widget p {
+  margin-bottom: 0;
+}
 
 /* %module--block headers */
-/* line 108, ../sass/module/_module.scss */
+/* line 112, ../sass/module/_module.scss */
 .spotbox--header {
   -webkit-border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
@@ -4707,34 +4711,34 @@ body {
   padding-bottom: 10px;
   padding-left: 20px;
 }
-/* line 122, ../sass/module/_module.scss */
+/* line 126, ../sass/module/_module.scss */
 .spotbox--header a:hover {
   text-decoration: none;
   /* Inherit hover color for header labels */
 }
-/* line 126, ../sass/module/_module.scss */
+/* line 130, ../sass/module/_module.scss */
 .spotbox--header a:hover [class$="header-label"] {
   color: gray;
 }
-/* line 131, ../sass/module/_module.scss */
+/* line 135, ../sass/module/_module.scss */
 .spotbox--header i[class^="icon-"] {
   margin-right: 8px;
 }
 
-/* line 136, ../sass/module/_module.scss */
+/* line 140, ../sass/module/_module.scss */
 .spotbox--header-label {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
 
-/* line 141, ../sass/module/_module.scss */
+/* line 145, ../sass/module/_module.scss */
 .spotbox--list-header-label {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
   margin-right: 5px;
 }
 
-/* line 148, ../sass/module/_module.scss */
+/* line 152, ../sass/module/_module.scss */
 .spotbox--list-header {
   font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: normal;
@@ -4744,34 +4748,30 @@ body {
 }
 
 /* %module--block content */
-/* line 158, ../sass/module/_module.scss */
+/* line 162, ../sass/module/_module.scss */
 .spotbox--content-wrapper {
   /* Correct spacing for line height */
   margin-top: -5px;
   vertical-align: top;
 }
 
-/* line 165, ../sass/module/_module.scss */
+/* line 169, ../sass/module/_module.scss */
 .spotbox--content, .user--block--logged-in-content {
   padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
 }
-/* line 170, ../sass/module/_module.scss */
+/* line 174, ../sass/module/_module.scss */
 .spotbox--content a:link, .user--block--logged-in-content a:link {
   color: #e5420c;
 }
-/* line 174, ../sass/module/_module.scss */
+/* line 178, ../sass/module/_module.scss */
 .spotbox--content a:visited, .user--block--logged-in-content a:visited {
   color: #972c08;
 }
-/* line 178, ../sass/module/_module.scss */
+/* line 182, ../sass/module/_module.scss */
 .spotbox--content a:hover, .user--block--logged-in-content a:hover {
   color: #be370a;
-}
-/* line 182, ../sass/module/_module.scss */
-.spotbox--content p, .user--block--logged-in-content p {
-  margin-bottom: 0;
 }
 
 /* line 188, ../sass/module/_module.scss */
