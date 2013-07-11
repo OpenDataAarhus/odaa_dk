@@ -14,13 +14,36 @@
   padding-top: $large-spacing;
 }
 
+.dataset--list {
+  padding-left: 0;
+}
+
 .dataset--list-item {
-  padding-left: 60px;
+  background-color: $gray-light;
+  overflow: hidden;
+  padding: $medium-spacing $medium-spacing $medium-spacing 60px;
   position: relative;
+
+  .dataset--info {
+    float: left;
+  }
 
   .ckan--format-label {
     left: 10px;
     position: absolute;
     top: 10px;
+  }
+
+  .dataset--description {
+    margin-bottom: 0;
+  }
+
+  .dataset--actions {
+    float: right;
+    margin-top: 2px;
+  }
+
+  .button {
+    @extend %button-action;
   }
 }

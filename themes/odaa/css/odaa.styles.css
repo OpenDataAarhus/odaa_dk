@@ -1091,6 +1091,36 @@ a.button i[class^="icon-"],
 
 /* Theme button */
 /* Action button */
+/* line 108, ../sass/framework/_buttons.scss */
+.dataset--list-item .button, .dataset--list-item #block-user-0 #user-login-form .form-submit, #block-user-0 #user-login-form .dataset--list-item .form-submit {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #96b000), color-stop(100%, #556300));
+  background-image: -webkit-linear-gradient(#96b000, #556300);
+  background-image: -moz-linear-gradient(#96b000, #556300);
+  background-image: -o-linear-gradient(#96b000, #556300);
+  background-image: linear-gradient(#96b000, #556300);
+  /* Make sure buttons get a background color in IE */
+  background-color: #96b000;
+  border: 0;
+  color: white;
+}
+/* line 76, ../sass/framework/_buttons.scss */
+.dataset--list-item .button:link, .dataset--list-item #block-user-0 #user-login-form .form-submit:link, #block-user-0 #user-login-form .dataset--list-item .form-submit:link, .dataset--list-item .button:visited, .dataset--list-item #block-user-0 #user-login-form .form-submit:visited, #block-user-0 #user-login-form .dataset--list-item .form-submit:visited {
+  color: white;
+}
+/* line 83, ../sass/framework/_buttons.scss */
+.dataset--list-item .button:focus, .dataset--list-item #block-user-0 #user-login-form .form-submit:focus, #block-user-0 #user-login-form .dataset--list-item .form-submit:focus, .dataset--list-item .button:hover, .dataset--list-item #block-user-0 #user-login-form .form-submit:hover, #block-user-0 #user-login-form .dataset--list-item .form-submit:hover, .dataset--list-item .button:active, .dataset--list-item #block-user-0 #user-login-form .form-submit:active, #block-user-0 #user-login-form .dataset--list-item .form-submit:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #809700), color-stop(100%, #3f4a00));
+  background-image: -webkit-linear-gradient(#809700, #3f4a00);
+  background-image: -moz-linear-gradient(#809700, #3f4a00);
+  background-image: -o-linear-gradient(#809700, #3f4a00);
+  background-image: linear-gradient(#809700, #3f4a00);
+  background-color: #556300;
+}
+/* line 89, ../sass/framework/_buttons.scss */
+.dataset--list-item .button i[class^="icon-"], .dataset--list-item #block-user-0 #user-login-form .form-submit i[class^="icon-"], #block-user-0 #user-login-form .dataset--list-item .form-submit i[class^="icon-"] {
+  margin-right: 8px;
+}
+
 /* Warning button */
 /* Danger button */
 /* Don't use native buttons on iOS */
@@ -5238,13 +5268,33 @@ body {
 }
 
 /* line 17, ../sass/module/_dataset.scss */
+.dataset--list {
+  padding-left: 0;
+}
+
+/* line 21, ../sass/module/_dataset.scss */
 .dataset--list-item {
-  padding-left: 60px;
+  background-color: #efefef;
+  overflow: hidden;
+  padding: 10px 10px 10px 60px;
   position: relative;
 }
-/* line 21, ../sass/module/_dataset.scss */
+/* line 27, ../sass/module/_dataset.scss */
+.dataset--list-item .dataset--info {
+  float: left;
+}
+/* line 31, ../sass/module/_dataset.scss */
 .dataset--list-item .ckan--format-label {
   left: 10px;
   position: absolute;
   top: 10px;
+}
+/* line 37, ../sass/module/_dataset.scss */
+.dataset--list-item .dataset--description {
+  margin-bottom: 0;
+}
+/* line 41, ../sass/module/_dataset.scss */
+.dataset--list-item .dataset--actions {
+  float: right;
+  margin-top: 2px;
 }
