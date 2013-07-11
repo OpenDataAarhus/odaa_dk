@@ -63,6 +63,10 @@
   @extend %module--block--content;
 }
 
+.spotbox--content-empty {
+  @extend %empty-text;
+}
+
 .spotbox--meta-wrapper {
   @extend %module--block--meta-wrapper;
 }
