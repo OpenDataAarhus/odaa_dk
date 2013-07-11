@@ -1,0 +1,200 @@
+<?php
+/**
+ * @file
+ * Drupal will control our comments, but comments will be displayed within CKAN.
+ * Needed is an API for comment view, add and delete.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function odaa_comment_menu() {
+  $items = array();
+  
+  $items['odaa_comment/view/%'] = array(
+    'title' => 'View comment',
+    'page callback' => '_odaa_comment_view',
+    'page arguments' => array(2),
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  
+  $items['odaa_comment/add/%/%/%'] = array(
+    'title' => 'Add comment',
+    'page callback' => '_odaa_comment_add',
+    'page arguments' => array(2, 3, 4),
+    'access arguments' => array('post comment'),
+    'type' => MENU_CALLBACK,
+  );
+  
+  $items['odaa_comment/delete/%'] = array(
+    'title' => 'Delete comment',
+    'page callback' => '_odaa_comment_delete',
+    'page arguments' => array(2),
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  
+  return $items;
+}
+
+/**
+ * Load comments for a dataset.
+ * 
+ * @param string $hash
+ *  CKAN dataset id
+ * @return mixed
+ *  JSON status code
+ *  JSON data containing comment(s)
+ */
+function _odaa_comment_view($hash) {
+  // Find node matching hash.
+  $nid = _odaa_comment_hash_to_nid($hash);
+
+  $data = array(
+      'status' => FALSE,
+      'data' => array(),
+  );
+  if (isset($nid)) {
+    // Load node.
+    $node = node_load($nid);
+    // Load comment id(s) to node.
+    $comment_ids = comment_get_thread($node, COMMENT_MODE_FLAT, 100);
+    if (!empty($comment_ids)) {
+      // Comments found, load them.
+      $comments = comment_load_multiple($comment_ids);
+      if (!empty($comments)) {
+        // Build data array.
+        $data['status'] = TRUE;
+        foreach ($comments as $comment) {
+          $data['data'][] = array(
+              'cid' => $comment->cid,
+              'author' => $comment->name,
+              'subject' => $comment->subject,
+              'date' => $comment->created,
+          );
+        }
+      }
+    }
+  }
+  // Always return in JSON format.
+  return drupal_json_output($data);
+}
+
+/**
+ * Add comment to dataset.
+ * 
+ * @global mixed $user
+ *  Drupal user object
+ * @param string $hash
+ *  CKAN dataset id
+ * @param string $message
+ *  Comment message
+ * @return mixed
+ *  JSON status
+ */
+function _odaa_comment_add($title, $hash, $message) {
+  // Find node matching hash.
+  $nid = _odaa_comment_hash_to_nid($hash, $title);
+  
+  if (isset($nid)) {
+    // Load $user object.
+    global $user;
+
+    // Create comment.
+    $comment = (object) array(
+      'nid' => $nid,
+      'cid' => 0,
+      'pid' => 0,
+      'uid' => $user->uid,
+      'mail' => '',
+      'is_anonymous' => 0,
+      'homepage' => '',
+      'status' => COMMENT_NOT_PUBLISHED,
+      'subject' => $message,
+      'language' => LANGUAGE_NONE,
+    );
+
+    // Save comment.
+    comment_submit($comment);
+    comment_save($comment);
+    
+    return drupal_json_output(array('status' => TRUE));
+  }
+  else {
+    return drupal_json_output(array('status' => FALSE));
+  }
+}
+
+/**
+ * Deletes a comment from dataset.
+ * 
+ * @param int $cid
+ *  Comment id
+ * @return mixed
+ *  JSON status
+ */
+function _odaa_comment_delete($cid) {
+  // User object.
+  global $user;
+  
+  // Load current comment.
+  $comment = comment_load($cid);
+  
+  if ($comment->uid == $user->uid) {
+    // Author of comment match.
+    comment_delete($cid);
+    
+    return drupal_json_output(array('status' => TRUE));
+  }
+  else {
+    return drupal_json_output(array('status' => FALSE));
+  }
+}
+
+/*
+ * Helper function to find node ID from hash.
+ * Create new node if node id is not found and $title is set.
+ * 
+ * @param string $hash
+ *  CKAN dataset id
+ * @param string $title
+ *  Node title
+ * @return mixed
+ *  Node id or FALSE
+ */
+function _odaa_comment_hash_to_nid($hash, $title = FALSE) {
+  // Find node matching hash.
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'dataset')
+    ->propertyCondition('status', 1)
+    ->fieldCondition('field_ckan_id', 'value', $hash, '=');
+
+  $result = $query->execute();
+  
+  if (isset($result['node'])) {
+    // Found the node.
+    return $result['node'][1]->nid;
+  }
+  else {
+    if ($title) {
+      // Create new node.
+      $node = new stdClass();
+      $node->type = 'dataset';
+      $node->status = 1;
+      $node->uid = 1;
+      $node->is_new;
+      $node->title = $title;
+      $node->created = time();
+      $node->language = 'und';
+      $node->field_ckan_id['und'][0]['value'] = $hash;
+      node_save($node);
+      
+      return _odaa_comment_hash_to_nid($hash);
+           
+    } else {
+      return FALSE;
+    }
+  }
+}

@@ -109,7 +109,7 @@
   @include background-image(linear-gradient(darken($base-secondary-color, 5%), $base-secondary-color));
   @include border-radius($base-border-radius $base-border-radius 0 0);
 
-  border-bottom: 1px dashed darken($base-secondary-color, 10%);
+  border-bottom: $base-border-style;
   font-size: $font-size-large;
   margin-bottom: 0;
   padding-top: 14px;
@@ -126,7 +126,7 @@
     .menu-item {
       @extend .icon-angle-right;
 
-      border-bottom: 1px dashed darken($base-secondary-color, 10%);
+      border-bottom: $base-border-style;
       color: $font-color-primary;
       display: block;
       padding-top: 10px;
@@ -157,7 +157,7 @@
 
     /* Level 2 */
     ul {
-      border-bottom: 1px dashed darken($base-secondary-color, 10%);
+      border-bottom: $base-border-style;
 
       .menu-item {
         padding-left: 40px;
