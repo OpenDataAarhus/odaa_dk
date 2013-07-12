@@ -63,6 +63,33 @@ body {
   overflow: visible;
 }
 
+/* Site footer
+   ========================================================================== */
+
+.site-footer {
+  @include box-shadow($base-box-shadow);
+
+  border-top: 20px solid transparentize($white, .5);
+}
+
+.footer-wrapper {
+  background-color: $base-tertiary-color;
+  position: relative;
+}
+
+.footer-inner {
+  @include box-sizing(border-box);
+
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
 
 /* Layouts
    ========================================================================== */

@@ -4,10 +4,10 @@
 
     $main_menu = array(
       'Forsiden' => '#',
-      'Datasæt' => '#',
+      'Datasæt' => 'dataset.php',
       'Organisation' => '#',
       'Grupper' => '#',
-      'App' => '#',
+      'Forum' => 'forum.php',
       'Om' => '#'
     );
 
