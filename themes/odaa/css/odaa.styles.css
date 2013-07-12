@@ -5849,7 +5849,7 @@ body {
   margin-bottom: 0;
 }
 /* line 22, ../sass/module/_newsletter.scss */
-.newsletter-signup .button, .newsletter-signup #block-user-0 #user-login-form .form-submit, #block-user-0 #user-login-form .newsletter-signup .form-submit {
+.newsletter-signup .button, .newsletter-signup .community--search .community--search--button, .community--search .newsletter-signup .community--search--button, .newsletter-signup .community--actions .community--action-sort-hot, .community--actions .newsletter-signup .community--action-sort-hot, .newsletter-signup #block-user-0 #user-login-form .form-submit, #block-user-0 #user-login-form .newsletter-signup .form-submit {
   vertical-align: top;
   margin-top: 1px;
 }
