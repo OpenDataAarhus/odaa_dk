@@ -7,7 +7,7 @@
       'Datasæt' => 'dataset.php',
       'Organisation' => '#',
       'Grupper' => '#',
-      'Forum' => 'forum.php',
+      'Community' => 'community.php',
       'Om' => '#'
     );
 

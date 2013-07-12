@@ -19,3 +19,7 @@
     margin-top: 20px;
   }
 }
+
+.page--section {
+  @extend %section-spacing;
+}
