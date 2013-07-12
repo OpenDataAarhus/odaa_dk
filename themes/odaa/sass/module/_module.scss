@@ -11,7 +11,7 @@
 /* Twitter widget
    ========================================================================== */
 .twitter-widget {
-  @extend .spotbox;
+  @extend %module-wrapper-style;
 }
 
 
