@@ -1,0 +1,207 @@
+/**
+ * Community
+ *
+ * @author magnify
+ */
+
+
+
+/* Community
+   ========================================================================== */
+.community--wrapper {
+  @extend %section-spacing;
+}
+
+.community--search {
+  @include border-radius($base-border-radius);
+
+  background-color: $gray-light;
+  margin-bottom: $large-spacing;
+  padding: $large-spacing;
+
+  .community--search--label {
+    @include font-bold();
+    @include opacity(.75);
+  }
+
+  .community--search--input {
+    display: inline;
+    min-width: 90%;
+  }
+
+  .community--search--button {
+    @extend .button;
+
+    display: inline-block;
+    margin-top: -2px;
+    padding-top: 11px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.community--actions {
+  .community--action-sort-latest,
+  .community--action-sort-hot {
+    @extend .button;
+
+    &.active {
+      @extend %button-theme;
+    }
+  }
+
+  .community--action-sort-latest {
+    margin-right: $medium-spacing;
+  }
+
+  .community--action-create {
+    @extend %button-action;
+
+    float: right;
+  }
+}
+
+
+/* Community list
+   ========================================================================== */
+.community--list-wrapper {
+  @extend %section-spacing;
+}
+
+.community--list-heading {
+  font-size: $font-size-larger;
+  margin-right: 5px;
+}
+
+.community--empty-text {
+  @extend %empty-text;
+
+  font-size: $font-size-larger;
+}
+
+.community--list {
+  margin-top: $large-spacing;
+  padding-left: 0;
+}
+
+.community--list-item {
+  margin-bottom: $large-spacing;
+  overflow: hidden;
+  padding: $large-spacing;
+
+  &:nth-child(odd) {
+    background-color: $base-color-odd;
+  }
+
+  &:nth-child(even) {
+    background-color: $base-color-even;
+  }
+}
+
+.community--list-icon {
+  @include border-radius($base-border-radius);
+  @include box-sizing(border-box);
+
+  background-color: $base-tertiary-color;
+  color: $white;
+  font-size: 500%;
+  float: left;
+  margin-top: -5px;
+  margin-right: $large-spacing;
+  margin-bottom: $large-spacing;
+  min-width: 100px;
+  padding: $medium-spacing;
+  text-align: center;
+  width: 100px;
+
+  &:hover {
+    background-color: darken($base-tertiary-color, 5%);
+  }
+
+  a {
+    &:link,
+    &:visited,
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+    }
+  }
+}
+
+.community--list-content {
+  display: inline-block;
+  margin-bottom: $large-spacing;
+  max-width: 80%;
+}
+
+
+.community--list-meta {
+  @include opacity(.75);
+
+  margin-bottom: $small-spacing;
+
+  .community--list-posted {
+    margin-right: $small-spacing;
+  }
+
+  .community--list-author {
+    margin-left: $small-spacing;
+  }
+}
+
+.community--list-footer {
+  border-top: 1px dashed darken($base-secondary-color, 25%);
+  margin-top: $large-spacing;
+  padding-top: $medium-spacing;
+  text-align: right;
+
+  .community--list-comments-link {
+    margin-right: $small-spacing;
+  }
+
+  .community--list-read-more {
+    margin-left: $small-spacing;
+  }
+}
+
+.community--tag {
+  @include font-normal();
+  @extend .label;
+
+  font-size: $font-size-large;
+}
+
+
+/* Community filter
+   ========================================================================== */
+.community--filter {
+  @extend %module--block;
+}
+
+.community--filter-inner {
+  @extend %module--block--inner;
+}
+
+.community--filter-header {
+  @extend %module--block--header;
+}
+
+.community--filter-list {
+  @extend %module--block--list;
+}
+
+.community--filter-list-item {
+  @extend %module--block--list-item;
+
+  .active {
+    &:link,
+    &:visited,
+    &:hover,
+    &:focus,
+    &:active {
+      color: $link-color-hover;
+    }
+  }
+}
+

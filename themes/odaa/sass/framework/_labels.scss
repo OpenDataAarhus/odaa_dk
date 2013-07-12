@@ -50,6 +50,10 @@ $label-padding:                   3px 10px;
     color: $label-text-color;
     text-decoration: none;
   }
+  
+  i[class^="icon-"] {
+    margin-right: 5px;
+  }  
 }
 
 
