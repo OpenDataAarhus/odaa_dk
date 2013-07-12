@@ -96,14 +96,15 @@ function _odaa_user_validate_session($session_id) {
     ->execute()
     ->fetchField();
   
-  $account = user_load($uid);
-  
-  if ($account->status) { 
-    dupal_json_output(array($account->name));
-  } 
-  else {
-    drupal_json_output(array('status' => FALSE));
+  if ($uid) {
+    $account = user_load($uid);
+
+    if ($account->status) { 
+      drupal_json_output(array($account->name));
+      exit();
+    }
   }
+  drupal_json_output(array('status' => FALSE));
 }
 
 /**

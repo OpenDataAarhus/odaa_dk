@@ -138,7 +138,9 @@
     <footer class="site-footer">
       <section class="footer-wrapper">
         <div class="footer-inner">
-          Footer
+          <?php include 'snippets/newsletter-signup.inc'; ?>
+          <?php include 'snippets/award-logos.inc'; ?>
+          <?php include 'snippets/poweredby.inc'; ?>
         </div>
       </section>
     </footer>
