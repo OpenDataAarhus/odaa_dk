@@ -3961,7 +3961,7 @@ body {
 
 /* line 75, ../sass/layout/_layout.scss */
 .footer-wrapper {
-  background-color: #96b000;
+  background-color: rgba(150, 176, 0, 0.7);
   position: relative;
 }
 
@@ -5738,6 +5738,120 @@ body {
   margin-left: -75px;
   min-width: 75px;
   padding-bottom: 9px;
+}
+
+/**
+ * Footer
+ *
+ * @author zorp
+ */
+/* Text in footer
+   ========================================================================== */
+/* line 9, ../sass/module/_footer.scss */
+.site-footer {
+  color: black;
+}
+/* line 12, ../sass/module/_footer.scss */
+.site-footer p {
+  margin-bottom: 5px;
+}
+
+/* Logo img in footer
+   ========================================================================== */
+/* line 19, ../sass/module/_footer.scss */
+.footer-logo {
+  margin-right: 20px;
+}
+/* line 22, ../sass/module/_footer.scss */
+.footer-logo.last {
+  margin-right: 0;
+}
+
+/* Awards block
+   ========================================================================== */
+/* line 29, ../sass/module/_footer.scss */
+.awards {
+  float: right;
+  width: 50%;
+  margin-right: 0%;
+  margin-left: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/all/themes/litteratursiden/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  padding-top: 3px;
+  padding-right: 0;
+  text-align: right;
+}
+
+/* Powered by block
+   ========================================================================== */
+/* line 39, ../sass/module/_footer.scss */
+.powered-by {
+  clear: left;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/all/themes/litteratursiden/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  padding-right: 0;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/**
+ * Search
+ *
+ * @author zorp
+ */
+/* Newsletter signup
+   ========================================================================== */
+/* line 11, ../sass/module/_newsletter.scss */
+.newsletter-signup {
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/all/themes/litteratursiden/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  padding-left: 0;
+}
+/* line 16, ../sass/module/_newsletter.scss */
+.newsletter-signup .email {
+  display: inline-block;
+  min-width: 300px;
+  margin-bottom: 0;
+}
+/* line 22, ../sass/module/_newsletter.scss */
+.newsletter-signup .button, .newsletter-signup #block-user-0 #user-login-form .form-submit, #block-user-0 #user-login-form .newsletter-signup .form-submit {
+  vertical-align: top;
+  margin-top: 1px;
 }
 
 /**
