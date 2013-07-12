@@ -1,0 +1,26 @@
+/**
+ * Search
+ *
+ * @author zorp
+ */
+
+
+
+/* Newsletter signup
+   ========================================================================== */
+.newsletter-signup {
+  @include zen-grid-item(6,1);
+
+  padding-left: 0;
+
+  .email {
+    display: inline-block;
+    min-width: 300px;
+    margin-bottom: 0;
+  }
+
+  .button {
+    vertical-align: top;
+    margin-top: 1px; //adjust so button align with input field.
+  }
+}
