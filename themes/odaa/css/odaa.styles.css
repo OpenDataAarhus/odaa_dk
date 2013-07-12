@@ -4027,7 +4027,7 @@ body {
   _overflow-y: visible;
 }
 /* line 111, ../sass/layout/_layout.scss */
-.front .tertiary-content .spotbox:nth-child(odd), .front .tertiary-content .twitter-widget:nth-child(odd) {
+.front .tertiary-content .spotbox:nth-child(odd) {
   clear: left;
   float: left;
   width: 50%;
@@ -4046,7 +4046,7 @@ body {
   _overflow-y: visible;
 }
 /* line 116, ../sass/layout/_layout.scss */
-.front .tertiary-content .spotbox:nth-child(even), .front .tertiary-content .twitter-widget:nth-child(even) {
+.front .tertiary-content .spotbox:nth-child(even) {
   float: right;
   width: 50%;
   margin-right: 0%;
@@ -4090,23 +4090,15 @@ body {
     _overflow-y: visible;
   }
   /* line 135, ../sass/layout/_layout.scss */
-  .front .primary-content .spotbox, .front .primary-content .twitter-widget,
+  .front .primary-content .spotbox,
   .front .primary-content .spotbox:nth-child(odd),
-  .front .primary-content .twitter-widget:nth-child(odd),
   .front .primary-content .spotbox:nth-child(even),
-  .front .primary-content .twitter-widget:nth-child(even),
   .front .secondary-content .spotbox,
-  .front .secondary-content .twitter-widget,
   .front .secondary-content .spotbox:nth-child(odd),
-  .front .secondary-content .twitter-widget:nth-child(odd),
   .front .secondary-content .spotbox:nth-child(even),
-  .front .secondary-content .twitter-widget:nth-child(even),
   .front .tertiary-content .spotbox,
-  .front .tertiary-content .twitter-widget,
   .front .tertiary-content .spotbox:nth-child(odd),
-  .front .tertiary-content .twitter-widget:nth-child(odd),
-  .front .tertiary-content .spotbox:nth-child(even),
-  .front .tertiary-content .twitter-widget:nth-child(even) {
+  .front .tertiary-content .spotbox:nth-child(even) {
     clear: left;
     float: left;
     width: 100%;
@@ -4183,7 +4175,7 @@ body {
   _overflow-y: visible;
 }
 /* line 158, ../sass/layout/_layout.scss */
-.left-sidebar .tertiary-content .spotbox:nth-child(odd), .left-sidebar .tertiary-content .twitter-widget:nth-child(odd) {
+.left-sidebar .tertiary-content .spotbox:nth-child(odd) {
   clear: left;
   float: left;
   width: 50%;
@@ -4202,7 +4194,7 @@ body {
   _overflow-y: visible;
 }
 /* line 163, ../sass/layout/_layout.scss */
-.left-sidebar .tertiary-content .spotbox:nth-child(even), .left-sidebar .tertiary-content .twitter-widget:nth-child(even) {
+.left-sidebar .tertiary-content .spotbox:nth-child(even) {
   float: right;
   width: 50%;
   margin-right: 0%;
@@ -4919,7 +4911,7 @@ body {
 /* Block module
    ========================================================================== */
 /* line 61, ../sass/module/_module.scss */
-.spotbox--inner, .create-user .create-user-inner, .user--block--logged-in-inner, .page--content-wrapper {
+.twitter-widget, .spotbox--inner, .create-user .create-user-inner, .user--block--logged-in-inner, .page--content-wrapper {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -4933,36 +4925,36 @@ body {
 }
 
 /* line 72, ../sass/module/_module.scss */
-.spotbox, .twitter-widget {
+.spotbox {
   margin-top: 20px;
 }
 /* line 75, ../sass/module/_module.scss */
-.spotbox a:link, .twitter-widget a:link {
+.spotbox a:link {
   color: gray;
   text-decoration: none;
 }
 /* line 80, ../sass/module/_module.scss */
-.spotbox a:visited, .twitter-widget a:visited {
+.spotbox a:visited {
   color: #737373;
   text-decoration: none;
 }
 /* line 85, ../sass/module/_module.scss */
-.spotbox a:hover, .twitter-widget a:hover {
+.spotbox a:hover {
   color: #be370a;
   text-decoration: none;
 }
 /* line 90, ../sass/module/_module.scss */
-.spotbox a:focus, .twitter-widget a:focus {
+.spotbox a:focus {
   color: black;
 }
 /* line 94, ../sass/module/_module.scss */
-.spotbox i[class^="icon-"], .twitter-widget i[class^="icon-"] {
+.spotbox i[class^="icon-"] {
   margin-right: 5px;
   /* Icon gets cut off when it is the first item from the left */
   padding-left: 1px;
 }
 /* line 100, ../sass/module/_module.scss */
-.spotbox p, .twitter-widget p {
+.spotbox p {
   margin-bottom: 0;
 }
 
@@ -5224,7 +5216,7 @@ body {
   font-weight: normal;
 }
 /* line 155, ../sass/module/_spotbox.scss */
-.primary-content .spotbox:last-child, .primary-content .twitter-widget:last-child {
+.primary-content .spotbox:last-child {
   margin-bottom: 0;
 }
 
