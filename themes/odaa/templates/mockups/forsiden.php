@@ -2,7 +2,7 @@
 <?php include './snippets/doctype.inc'; ?>
 <head profile="http://www.w3.org/1999/xhtml/vocab">
   <?php include 'snippets/head.inc'; ?>
-  <title>Om ODAA</title>
+  <title>Welcome to dev.odaa.dk | dev.odaa.dk</title>
 </head>
 <body class="left-sidebar">
   <div id="page" class="page">
@@ -11,7 +11,7 @@
         <div class="header-inner">
           <?php include 'snippets/logo.inc'; ?>
           <?php include 'snippets/search-form.inc'; ?>
-          <?php echo main_menu(3); ?>
+          <?php echo main_menu(0); ?>
           <?php include 'snippets/secondary-menu.inc'; ?>
         </div>
       </section>
