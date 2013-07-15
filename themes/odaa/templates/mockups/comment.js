@@ -3,28 +3,31 @@
   var hash;
   $(document).ready(function($) {
     // Find hash.
-    hash = $('.comment-wrapper').attr('id');
+    hash = $('.comments--wrapper').attr('id');
     
     // Build template.
     var directive = { 
-      'div.comment': {
+      'ul.comments--list': {
         'i<-data': {
-          'div.cid' : 'i.cid',
-          'div.author' : 'i.author',
-          'div.date' : 'i.date',
-          'div.subject' : 'i.subject'
+          '.comments--list--cid' : 'i.cid',
+          '.comments--list-author' : 'i.author',
+          '.comments--list-posted' : 'i.date',
+          '.comments--list-content' : 'i.subject'
         }
       }
     };
 
     // Compile template.
-    template = $('.comment-wrapper').compile(directive);
+    template = $('.comments--wrapper').compile(directive);
+    
+    // Remove template
+    $('.comments--list').empty();
     
     // Generate comments.
     generate_comments();
     
     // Submit formular.
-    $('.new-comment form').live('submit', function(e) {
+    $('.comments--post-comment form').live('submit', function(e) {
       e.preventDefault();
       add_comment();
       
@@ -43,7 +46,7 @@
   });
 
   function delete_comment(cid) {
-    $.getJSON('/odaa_comment/delete/' + cid, function(data) {
+    $.getJSON('http://dev.oda a.dk/odaa_comment/delete/' + cid, function(data) {
       if (data.status) {
        $('div.cid').each(function(index, value) {
           if ($(value).html() === cid) {
@@ -61,7 +64,7 @@
   function add_comment() {
     var input = $('textarea').val();
     var title = $('h1.page--title').html();
-    $.getJSON('/odaa_comment/add/' + title + '/' + hash + '/' + input, function (data) {
+    $.getJSON('http://dev.odaa.dk/odaa_comment/add/' + title + '/' + hash + '/' + input, function (data) {
       if (data.status) {
         // Comment added. Reset.
         $('textarea').val('');
@@ -71,9 +74,12 @@
   }
 
   function generate_comments() {
-    $.getJSON('/odaa_comment/view/'+hash, function(data) {
+    $.getJSON('http://dev.odaa.dk/odaa_comment/view/'+hash, function(data) {
       if (data.status) {
-        $('div.comment-wrapper').render(data, template);
+        $('div.comments--wrapper').render(data, template);
+        
+        // Show comments
+        $('.comments--list').show();
       }
     });
   }
