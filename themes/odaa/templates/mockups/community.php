@@ -126,9 +126,9 @@
               <h3 class="community--filter-header"><i class="icon-filter"></i>Filtrér</h3>
               <ul class="community--filter-list">
                 <li class="community--filter-list-item first"><a href="community.php" class="active"><i class="icon-check"></i>Alle</a></li>
-                <li class="community--filter-list-item first"><a href="community-forum.php"><i class="icon-check-empty"></i>Forum</a></li>
-                <li class="community--filter-list-item"><a href="community-use-cases.php"><i class="icon-check-empty"></i>Use cases</a></li>
-                <li class="community--filter-list-item last"><a href="community-dataset.php"><i class="icon-check-empty"></i>Datasæt</a></li>
+                <li class="community--filter-list-item first"><a href="community-forum.php" class="active"><i class="icon-check"></i>Forum</a></li>
+                <li class="community--filter-list-item"><a href="community-use-cases.php" class="active"><i class="icon-check"></i>Use cases</a></li>
+                <li class="community--filter-list-item last"><a href="community-dataset.php" class="active"><i class="icon-check"></i>Datasæt</a></li>
               </ul>
             </div>
           </div>
