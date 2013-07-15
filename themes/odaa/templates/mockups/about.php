@@ -11,7 +11,7 @@
         <div class="header-inner">
           <?php include 'snippets/logo.inc'; ?>
           <?php include 'snippets/search-form.inc'; ?>
-          <?php echo main_menu(5); ?>
+          <?php echo main_menu(3); ?>
           <?php include 'snippets/secondary-menu.inc'; ?>
         </div>
       </section>

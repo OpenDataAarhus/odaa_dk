@@ -29,6 +29,9 @@ select {
   padding: 8px;
 }
 
+label {
+  @include font-bold();
+}
 
 input[type="text"],
 input[type="password"],
@@ -57,7 +60,7 @@ textarea {
 
   &:focus {
     background-color: darken($white, 3%);
-    border: 1px solid darken($base-primary-color, 15%);
+    border: 1px solid darken($base-tertiary-color, 15%);
     color: darken($black, 10%);
   }
 

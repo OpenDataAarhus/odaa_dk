@@ -5,12 +5,11 @@
  */
 
 
+$spotbox-background-color:        $white;
+
 
 /* Spotbox
    ========================================================================== */
-
-
-/* Spotbox links */
 .spotbox {
   @extend %module--block;
 }
@@ -30,7 +29,7 @@
 .spotbox--inner {
   @extend %module--block--inner;
 
-  background-color: $base-secondary-color;
+  background-color: $spotbox-background-color;
 }
 
 
@@ -138,9 +137,9 @@
 
 .primary-content {
   .spotbox--inner {
-    @include background-image(linear-gradient(darken($base-secondary-color, 5%), $base-secondary-color));
+    @include background-image(linear-gradient(darken($spotbox-background-color, 5%), $spotbox-background-color));
 
-    background-color: $base-secondary-color;
+    background-color: $spotbox-background-color;
   }
 
   .spotbox--list-label {
@@ -163,16 +162,13 @@
 
 .secondary-content {
   .spotbox--inner {
-    @include background-image(linear-gradient(lighten($base-secondary-color, 5%), $base-secondary-color));
+    @include background-image(linear-gradient(lighten($spotbox-background-color, 5%), $spotbox-background-color));
 
-    background-color: $base-secondary-color;
+    background-color: $spotbox-background-color;
   }
 
   .spotbox--header {
     font-size: $font-size-large;
-  }
-
-  .spotbox--content {
   }
 }
 
@@ -182,7 +178,7 @@
 
 .tertiary-content {
   .spotbox--inner {
-    @include background-image(linear-gradient(lighten($base-secondary-color, 8%), lighten($base-secondary-color, 5%)));
+    @include background-image(linear-gradient(lighten($spotbox-background-color, 8%), lighten($spotbox-background-color, 5%)));
 
     background-color: lighten($base-tertiary-color, 5%);
   }

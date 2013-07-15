@@ -11,7 +11,7 @@
         <div class="header-inner">
           <?php include 'snippets/logo.inc'; ?>
           <?php include 'snippets/search-form.inc'; ?>
-          <?php echo main_menu(4); ?>
+          <?php echo main_menu(2); ?>
           <?php include 'snippets/secondary-menu.inc'; ?>
         </div>
       </section>
@@ -32,10 +32,10 @@
                   <input type="submit" class="community--search--button" value="Søg" />
                 </form>
               </div>
-              <div class="community--actions">
-                <a href="#" class="community--action-sort-latest active"><i class="icon-ok"></i>Sortér: Nyeste</a>
-                <a href="#" class="community--action-sort-hot"><i class="icon-comments-alt"></i>Sortér: Mest kommenterede</a>
-                <a href="#" class="community--action-create"><i class="icon-plus"></i>Opret indlæg</a>
+              <div class="list--actions">
+                <a href="#" class="list--action-sort-latest active"><i class="icon-ok"></i>Sortér: Nyeste</a>
+                <a href="#" class="list--action-sort-hot"><i class="icon-comments-alt"></i>Sortér: Mest kommenterede</a>
+                <a href="#" class="list--action-create"><i class="icon-plus"></i>Opret indlæg</a>
               </div>
               <section class="community--list-wrapper">
                 <span class="community--list-heading">Filter:</span><span class="community--empty-text">Ingen</span>

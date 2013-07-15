@@ -8,7 +8,6 @@
 
 /* Search form
    ========================================================================== */
-
 .search-form {
   @include zen-grid-item(6, 1, right);
   @include opacity(.9);
@@ -37,5 +36,52 @@
     margin-left: -75px;
     min-width: 75px;
     padding-bottom: 9px;
+  }
+}
+
+
+/* Spotbox search
+   ========================================================================== */
+.spotbox--search {
+  @include zen-grid-container;
+  @extend .spotbox;
+}
+
+.spotbox--search-inner {
+  @extend .spotbox--inner;
+
+  overflow: hidden;
+}
+
+.spotbox--search-header {
+  @extend .spotbox--header;
+}
+
+.spotbox--search-dataset-amount-wrapper {
+  @include zen-grid-item(3, 1);
+
+  margin-top: 30px;
+  text-align: center;
+}
+
+.spotbox--search-dataset-amount {
+  font-size: 400%;
+  margin-bottom: 10px;
+}
+
+.spotbox--search-dataset-amount-text {
+  @include opacity(.5);
+}
+
+.spotbox--search-wrapper {
+  @include zen-grid-item(9, 4);
+  @extend .search-form;
+
+  border-left: 1px solid $gray;
+  padding-top: 22px;
+  padding-left: 30px;
+
+  .search-form-text {
+    min-width: 100%;
   }
 }

@@ -33,6 +33,7 @@
 @import "layout/_layout";
 @import "layout/_drupal_system_messages";
 @import "layout/_ckan";
+@import "layout/_footer";
 
 
 // Include modules
@@ -41,10 +42,10 @@
 @import "module/_spotbox";
 @import "module/_user";
 @import "module/_search";
-@import "module/_footer";
 @import "module/_newsletter";
 @import "module/_dataset";
 @import "module/_community";
+@import "module/_comment";
 
 // Custom font
 @import "../font/exo/exo.css";

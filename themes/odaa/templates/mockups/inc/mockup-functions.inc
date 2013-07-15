@@ -3,12 +3,10 @@
   function main_menu($active) {
 
     $main_menu = array(
-      'Forsiden' => '#',
+      'Forsiden' => 'forsiden.php',
       'Datasæt' => 'dataset.php',
-      'Organisation' => '#',
-      'Grupper' => '#',
       'Community' => 'community.php',
-      'Om' => '#'
+      'Om ODAA' => 'about.php'
     );
 
     $output = '<ul class="main-menu">';

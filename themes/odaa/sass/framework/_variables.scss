@@ -76,7 +76,7 @@ $font-regular:                    "exo-regular";
 $font-regular-italic:             "exo-regular-italic";
 $font-bold:                       "exo-demi-bold";
 $font-bold-italic:                "exo-demi-bold_italic";
-$font-color-primary:              darken($base-secondary-color, 75%);
+$font-color-primary:              darken($white, 75%);
 $font-color-secondary:            transparentize($black, .3);
 $font-alternate:                  "LaconicRegular";
 
@@ -110,7 +110,7 @@ $font-size-tiny:                  75%;
 
 $base-border-radius:              5px;
 $base-box-shadow:                 0 0 5px $gray;
-$base-border-style:               1px dashed darken($base-secondary-color, 10%);
+$base-border-style:               1px dashed darken($white, 10%);
 
 
 
