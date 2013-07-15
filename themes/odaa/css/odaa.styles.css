@@ -1016,7 +1016,8 @@ table tbody tr:hover th,
 .button, .list--actions .list--action-sort-latest, .comments--list-actions .list--action-sort-latest,
 .list--actions .list--action-sort-hot,
 .comments--list-actions .list--action-sort-hot, #block-user-0 #user-login-form .form-submit, .community--search .community--search--button,
-a.button, .dataset--list-item .dataset--actions-preview, .list--actions .list--action-create, .comments--list-actions .list--action-create, .dataset--list-item .dataset--actions-download {
+a.button, .dataset--list-item .dataset--actions-preview, .list--actions .list--action-create, .comments--list-actions .list--action-create, .dataset--list-item .dataset--actions-download, .comments--post-comment-login,
+.comments--post-comment-create-user {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -1036,19 +1037,24 @@ a.button, .dataset--list-item .dataset--actions-preview, .list--actions .list--a
 /* line 45, ../sass/framework/_buttons.scss */
 .button:focus, .list--actions .list--action-sort-latest:focus, .comments--list-actions .list--action-sort-latest:focus,
 .list--actions .list--action-sort-hot:focus,
-.comments--list-actions .list--action-sort-hot:focus, #block-user-0 #user-login-form .form-submit:focus, .community--search .community--search--button:focus, .dataset--list-item .dataset--actions-preview:focus, .list--actions .list--action-create:focus, .comments--list-actions .list--action-create:focus, .dataset--list-item .dataset--actions-download:focus, .button:hover, .list--actions .list--action-sort-latest:hover, .comments--list-actions .list--action-sort-latest:hover,
+.comments--list-actions .list--action-sort-hot:focus, #block-user-0 #user-login-form .form-submit:focus, .community--search .community--search--button:focus, .dataset--list-item .dataset--actions-preview:focus, .list--actions .list--action-create:focus, .comments--list-actions .list--action-create:focus, .dataset--list-item .dataset--actions-download:focus, .comments--post-comment-login:focus,
+.comments--post-comment-create-user:focus, .button:hover, .list--actions .list--action-sort-latest:hover, .comments--list-actions .list--action-sort-latest:hover,
 .list--actions .list--action-sort-hot:hover,
-.comments--list-actions .list--action-sort-hot:hover, #block-user-0 #user-login-form .form-submit:hover, .community--search .community--search--button:hover, .dataset--list-item .dataset--actions-preview:hover, .list--actions .list--action-create:hover, .comments--list-actions .list--action-create:hover, .dataset--list-item .dataset--actions-download:hover, .button:active, .list--actions .list--action-sort-latest:active, .comments--list-actions .list--action-sort-latest:active,
+.comments--list-actions .list--action-sort-hot:hover, #block-user-0 #user-login-form .form-submit:hover, .community--search .community--search--button:hover, .dataset--list-item .dataset--actions-preview:hover, .list--actions .list--action-create:hover, .comments--list-actions .list--action-create:hover, .dataset--list-item .dataset--actions-download:hover, .comments--post-comment-login:hover,
+.comments--post-comment-create-user:hover, .button:active, .list--actions .list--action-sort-latest:active, .comments--list-actions .list--action-sort-latest:active,
 .list--actions .list--action-sort-hot:active,
-.comments--list-actions .list--action-sort-hot:active, #block-user-0 #user-login-form .form-submit:active, .community--search .community--search--button:active, .dataset--list-item .dataset--actions-preview:active, .list--actions .list--action-create:active, .comments--list-actions .list--action-create:active, .dataset--list-item .dataset--actions-download:active {
+.comments--list-actions .list--action-sort-hot:active, #block-user-0 #user-login-form .form-submit:active, .community--search .community--search--button:active, .dataset--list-item .dataset--actions-preview:active, .list--actions .list--action-create:active, .comments--list-actions .list--action-create:active, .dataset--list-item .dataset--actions-download:active, .comments--post-comment-login:active,
+.comments--post-comment-create-user:active {
   text-decoration: none;
 }
 /* line 51, ../sass/framework/_buttons.scss */
 .disabled.button, .list--actions .disabled.list--action-sort-latest, .comments--list-actions .disabled.list--action-sort-latest,
 .list--actions .disabled.list--action-sort-hot,
-.comments--list-actions .disabled.list--action-sort-hot, #block-user-0 #user-login-form .disabled.form-submit, .community--search .disabled.community--search--button, .dataset--list-item .disabled.dataset--actions-preview, .list--actions .disabled.list--action-create, .comments--list-actions .disabled.list--action-create, .dataset--list-item .disabled.dataset--actions-download, [disabled].button, .list--actions [disabled].list--action-sort-latest, .comments--list-actions [disabled].list--action-sort-latest,
+.comments--list-actions .disabled.list--action-sort-hot, #block-user-0 #user-login-form .disabled.form-submit, .community--search .disabled.community--search--button, .dataset--list-item .disabled.dataset--actions-preview, .list--actions .disabled.list--action-create, .comments--list-actions .disabled.list--action-create, .dataset--list-item .disabled.dataset--actions-download, .disabled.comments--post-comment-login,
+.disabled.comments--post-comment-create-user, [disabled].button, .list--actions [disabled].list--action-sort-latest, .comments--list-actions [disabled].list--action-sort-latest,
 .list--actions [disabled].list--action-sort-hot,
-.comments--list-actions [disabled].list--action-sort-hot, #block-user-0 #user-login-form [disabled].form-submit, .community--search [disabled].community--search--button, .dataset--list-item [disabled].dataset--actions-preview, .list--actions [disabled].list--action-create, .comments--list-actions [disabled].list--action-create, .dataset--list-item [disabled].dataset--actions-download {
+.comments--list-actions [disabled].list--action-sort-hot, #block-user-0 #user-login-form [disabled].form-submit, .community--search [disabled].community--search--button, .dataset--list-item [disabled].dataset--actions-preview, .list--actions [disabled].list--action-create, .comments--list-actions [disabled].list--action-create, .dataset--list-item [disabled].dataset--actions-download, [disabled].comments--post-comment-login,
+[disabled].comments--post-comment-create-user {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
   -webkit-box-shadow: none;
@@ -1200,7 +1206,8 @@ a.button i[class^="icon-"],
 
 /* Action button */
 /* line 108, ../sass/framework/_buttons.scss */
-.list--actions .list--action-create, .comments--list-actions .list--action-create, .dataset--list-item .dataset--actions-download {
+.list--actions .list--action-create, .comments--list-actions .list--action-create, .dataset--list-item .dataset--actions-download, .comments--post-comment-login,
+.comments--post-comment-create-user {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #96b000), color-stop(100%, #556300));
   background-image: -webkit-linear-gradient(#96b000, #556300);
   background-image: -moz-linear-gradient(#96b000, #556300);
@@ -1212,11 +1219,16 @@ a.button i[class^="icon-"],
   color: white;
 }
 /* line 76, ../sass/framework/_buttons.scss */
-.list--actions .list--action-create:link, .comments--list-actions .list--action-create:link, .dataset--list-item .dataset--actions-download:link, .list--actions .list--action-create:visited, .comments--list-actions .list--action-create:visited, .dataset--list-item .dataset--actions-download:visited {
+.list--actions .list--action-create:link, .comments--list-actions .list--action-create:link, .dataset--list-item .dataset--actions-download:link, .comments--post-comment-login:link,
+.comments--post-comment-create-user:link, .list--actions .list--action-create:visited, .comments--list-actions .list--action-create:visited, .dataset--list-item .dataset--actions-download:visited, .comments--post-comment-login:visited,
+.comments--post-comment-create-user:visited {
   color: white;
 }
 /* line 83, ../sass/framework/_buttons.scss */
-.list--actions .list--action-create:focus, .comments--list-actions .list--action-create:focus, .dataset--list-item .dataset--actions-download:focus, .list--actions .list--action-create:hover, .comments--list-actions .list--action-create:hover, .dataset--list-item .dataset--actions-download:hover, .list--actions .list--action-create:active, .comments--list-actions .list--action-create:active, .dataset--list-item .dataset--actions-download:active {
+.list--actions .list--action-create:focus, .comments--list-actions .list--action-create:focus, .dataset--list-item .dataset--actions-download:focus, .comments--post-comment-login:focus,
+.comments--post-comment-create-user:focus, .list--actions .list--action-create:hover, .comments--list-actions .list--action-create:hover, .dataset--list-item .dataset--actions-download:hover, .comments--post-comment-login:hover,
+.comments--post-comment-create-user:hover, .list--actions .list--action-create:active, .comments--list-actions .list--action-create:active, .dataset--list-item .dataset--actions-download:active, .comments--post-comment-login:active,
+.comments--post-comment-create-user:active {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #809700), color-stop(100%, #3f4a00));
   background-image: -webkit-linear-gradient(#809700, #3f4a00);
   background-image: -moz-linear-gradient(#809700, #3f4a00);
@@ -1225,7 +1237,8 @@ a.button i[class^="icon-"],
   background-color: #556300;
 }
 /* line 89, ../sass/framework/_buttons.scss */
-.list--actions .list--action-create i[class^="icon-"], .comments--list-actions .list--action-create i[class^="icon-"], .dataset--list-item .dataset--actions-download i[class^="icon-"] {
+.list--actions .list--action-create i[class^="icon-"], .comments--list-actions .list--action-create i[class^="icon-"], .dataset--list-item .dataset--actions-download i[class^="icon-"], .comments--post-comment-login i[class^="icon-"],
+.comments--post-comment-create-user i[class^="icon-"] {
   margin-right: 8px;
 }
 
@@ -6237,7 +6250,7 @@ body {
 }
 
 /* line 124, ../sass/module/_comment.scss */
-.comments--post-comment {
+.comments--post-comment, .comments--post-comment-not-logged-in {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -6246,11 +6259,16 @@ body {
 }
 
 /* line 131, ../sass/module/_comment.scss */
+.comments--post-comment-not-logged-in {
+  text-align: center;
+}
+
+/* line 142, ../sass/module/_comment.scss */
 .comments--post-field-wrapper {
   margin-bottom: 20px;
 }
 
-/* line 135, ../sass/module/_comment.scss */
+/* line 146, ../sass/module/_comment.scss */
 .comments--post-comment-actions {
   text-align: right;
 }

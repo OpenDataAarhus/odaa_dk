@@ -128,6 +128,17 @@
   padding: $large-spacing;
 }
 
+.comments--post-comment-not-logged-in {
+  @extend .comments--post-comment;
+
+  text-align: center;
+}
+
+.comments--post-comment-login,
+.comments--post-comment-create-user {
+  @extend %button-action;
+}
+
 .comments--post-field-wrapper {
   margin-bottom: 20px;
 }

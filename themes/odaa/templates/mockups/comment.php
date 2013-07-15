@@ -6,7 +6,7 @@
   <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
   <script src="/sites/odaa.dk/themes/odaa/templates/mockups/pure_min.js"></script>
   <script src="/sites/odaa.dk/themes/odaa/templates/mockups/comment.js"></script>
-  
+
 </head>
 <body class="left-sidebar">
   <div id="page" class="page">
@@ -31,23 +31,23 @@
               <h3>Samarbejdspartnere i ODAA</h3>
               <p>Open Data Aarhus er en del af Smart Aarhus (<a href="#">www.smartaarhus.dk</a>).</p>
               <p>Projektet er et samarbejde mellem Aarhus Kommune, Region Midtjylland, Aarhus Universitet og Alexandra Instituttet.</p>
-              
+
               <div class="comment-wrapper" id="34567">
                 <div class="comment">
                   <div class="cid"></div>
                   <div class="author"></div>
                   <div class="date"></div>
-                  <div class="subject"></div> 
+                  <div class="subject"></div>
                   <a class="delete" href="#">Delete-icon</a>
                 </div>
-                
-                <div class="new-comment">
-                  <form action="" method="">
-                    <label for="message">Message</label>
-                    <textarea id="message"></textarea>
-                    <button>Submit</button>
-                  </form>
-                </div>
+                <section class="comments--post-comment-wrapper">
+                  <h2 class="comments--post-comment-header"><a name="postcomment">Skriv kommentar</a></h2>
+                  <div class="comments--post-comment-not-logged-in">
+                    <p>Du skal være logget ind for at kommentere</p>
+                    <a href="#" class="comments--post-comment-login">Log ind</a>
+                    <a href="#" class="comments--post-comment-create-user">Opret bruger</a>
+                  </div>
+                </section>
               </div
             </section>
           </div>
