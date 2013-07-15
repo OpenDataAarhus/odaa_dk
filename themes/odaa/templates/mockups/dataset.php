@@ -174,11 +174,11 @@
                   <form>
                     <div class="comments--post-field-wrapper">
                       <label class="comments--post-label">Navn</label>
-                      <input type="text" placeholder="Indtast dit navn" />
+                      <p>User name</p>
                     </div>
                     <div class="comments--post-field-wrapper">
                       <label class="comments--post-label">E-mail</label>
-                      <input type="text" placeholder="Indtast din e-mail" />
+                      <p>email@example.com</p>
                     </div>
                     <div class="comments--post-field-wrapper">
                       <label class="comments--post-label">Kommentar</label>
