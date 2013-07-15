@@ -20,6 +20,9 @@
     // Compile template.
     template = $('.comments--wrapper').compile(directive);
     
+    // Remove template
+    $('.comments--list').empty();
+    
     // Generate comments.
     generate_comments();
     
@@ -74,6 +77,9 @@
     $.getJSON('http://dev.odaa.dk/odaa_comment/view/'+hash, function(data) {
       if (data.status) {
         $('div.comments--wrapper').render(data, template);
+        
+        // Show comments
+        $('.comments--list').show();
       }
     });
   }
