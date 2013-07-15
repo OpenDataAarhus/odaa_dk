@@ -3,7 +3,7 @@
   var hash;
   $(document).ready(function($) {
     // Find hash.
-    hash = $('.comment-wrapper').attr('id');
+    hash = $('.comments--wrapper').attr('id');
     
     // Build template.
     var directive = { 
