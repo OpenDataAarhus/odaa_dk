@@ -34,12 +34,6 @@
               </div>
             </div>
           </div>
-          <div class="spotbox--featured-dataset">
-            <div class="spotbox--featured-dataset-inner">
-              <h3 class="spotbox--featured-dataset-header">Featured datasæt</h3>
-
-            </div>
-          </div>
           <div class="block spotbox">
             <div class="spotbox--inner">
               <div class="spotbox--content-wrapper">
@@ -78,6 +72,13 @@
               <p>ODAA er en open data platform, hvor åbne data bliver gjort frit tilgængelige, så de er nemme for dig at finde.</p>
               <p>Vi håber, at du vil forvandle de åbne data til nye og innovative services og fortælle om det her på platformen.</p>
               <p>Du kan læse mere <a href="#">Om ODAA her</a>.</p>
+            </div>
+          </div>
+          <div class="spotbox--featured-dataset">
+            <div class="spotbox--featured-dataset-inner">
+              <h3 class="spotbox--featured-dataset-header"><i class="icon-sitemap"></i>Featured datasæt</h3>
+              <h4><a href="#">3D Bygninger - Bymodel</a></h4>
+              <div>3D bygninger for den indre del af Aarhus By (ca. indenfor Ringgaden). Data er på DWG-formatet og er en bygningstrådmodel. Data fylder ca. 50 MB. Vi anbefaler, at du downloader datasættet i Chrome eller Firefox.</div>
             </div>
           </div>
         </div>
