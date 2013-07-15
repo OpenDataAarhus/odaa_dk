@@ -19,19 +19,25 @@
     <div class="content-wrapper">
       <div class="content-inner">
         <div class="primary-content">
-          <div class="spotbox--search">
-            <div class="spotbox--search-inner">
-              <h3 class="spotbox--search-header">Søg efter data</h3>
-              <div class="spotbox--search-dataset-amount-wrapper">
-                <div class="spotbox--search-dataset-amount">1587</div>
-                <div class="spotbox--search-dataset-amount-text">datasæt</div>
+          <div class="search-spotbox">
+            <div class="search-spotbox--inner">
+              <h3 class="search-spotbox--header">Søg efter data</h3>
+              <div class="search-spotbox--dataset-amount-wrapper">
+                <div class="search-spotbox--dataset-amount">1587</div>
+                <div class="search-spotbox--dataset-amount-text">datasæt</div>
               </div>
-              <div class="spotbox--search-wrapper">
+              <div class="search-spotbox--wrapper">
                 <form>
                   <input type="text" placeholder="Søg på f.eks. parkering" class="search-form-text" />
                   <input type="submit" value="Søg" class="button" />
                 </form>
               </div>
+            </div>
+          </div>
+          <div class="spotbox--featured-dataset">
+            <div class="spotbox--featured-dataset-inner">
+              <h3 class="spotbox--featured-dataset-header">Featured datasæt</h3>
+
             </div>
           </div>
         </div>
