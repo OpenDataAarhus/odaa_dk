@@ -100,7 +100,7 @@ function _odaa_user_validate_session($session_id) {
     $account = user_load($uid);
 
     if ($account->status) { 
-      drupal_json_output(array($account->name));
+      drupal_json_output(array('username' => $account->name));
       exit();
     }
   }
