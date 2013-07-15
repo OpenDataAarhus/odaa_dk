@@ -120,13 +120,28 @@
   padding-bottom: $medium-spacing;
   padding-left: $large-spacing;
 
+  a:link {
+    color: $font-color-primary;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: darken($font-color-primary, 2%);
+    text-decoration: none;
+  }
+
   a:hover {
+    color: $link-color-hover;
     text-decoration: none;
 
     /* Inherit hover color for header labels */
     [class$="header-label"] {
       color: darken($white, 50%);
     }
+  }
+
+  a:focus {
+    color: darken($base-primary-color, 75%);
   }
 
   i[class^="icon-"] {
@@ -272,8 +287,31 @@
   float: left;
   margin-right: 15px;
   max-width: 50px;
+  margin-top: 3px;
   overflow: hidden;
   vertical-align: top;
+}
+
+
+%module--block--list-link {
+  a:link {
+    color: $link-color;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: darken($link-color, 2%);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $link-color-hover;
+    text-decoration: none;
+  }
+
+  a:focus {
+    color: darken($link-color-hover, 75%);
+  }
 }
 
 

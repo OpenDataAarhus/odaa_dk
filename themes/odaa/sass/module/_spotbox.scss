@@ -122,6 +122,11 @@ $spotbox-background-color:        $white;
 }
 
 
+.spotbox--list-link {
+  @extend %module--block--list-link;
+}
+
+
 /* Spotbox footer */
 .spotbox--footer {
   @extend %module--block--footer;
@@ -129,61 +134,4 @@ $spotbox-background-color:        $white;
 
 .spotbox--read-more {
   @extend %module--block--read-more;
-}
-
-
-/* Spotboxes in primary content
-   ========================================================================== */
-
-.primary-content {
-  .spotbox--inner {
-    @include background-image(linear-gradient(darken($spotbox-background-color, 5%), $spotbox-background-color));
-
-    background-color: $spotbox-background-color;
-  }
-
-  .spotbox--list-label {
-    @include opacity(.75);
-  }
-
-  .spotbox--list-header {
-    @include font-bold();
-  }
-
-  /* Reset margin bottom on last spotbox in primary content */
-  .spotbox:last-child {
-    margin-bottom: 0;
-  }
-}
-
-
-/* Spotboxes in secondary content
-   ========================================================================== */
-
-.secondary-content {
-  .spotbox--inner {
-    @include background-image(linear-gradient(lighten($spotbox-background-color, 5%), $spotbox-background-color));
-
-    background-color: $spotbox-background-color;
-  }
-
-  .spotbox--header {
-    font-size: $font-size-large;
-  }
-}
-
-
-/* Spotboxes in tertiary content
-   ========================================================================== */
-
-.tertiary-content {
-  .spotbox--inner {
-    @include background-image(linear-gradient(lighten($spotbox-background-color, 8%), lighten($spotbox-background-color, 5%)));
-
-    background-color: lighten($base-tertiary-color, 5%);
-  }
-
-  .spotbox--header {
-    font-size: $font-size-large;
-  }
 }

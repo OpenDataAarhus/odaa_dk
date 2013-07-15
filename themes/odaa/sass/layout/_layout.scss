@@ -107,12 +107,12 @@ body {
     padding-left: 0;
 
     .spotbox:nth-child(odd) {
-      @include zen-grid-item(6, 1);
+      @include zen-grid-item(6, 1, right);
     }
 
     .spotbox:nth-child(even) {
       @include zen-clear(left);
-      @include zen-grid-item(6, 1, right);
+      @include zen-grid-item(6, 1);
     }
   }
 

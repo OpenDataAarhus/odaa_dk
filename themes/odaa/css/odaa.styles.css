@@ -4106,10 +4106,10 @@ body {
 }
 /* line 109, ../sass/layout/_layout.scss */
 .front .primary-content .spotbox:nth-child(odd), .front .primary-content .spotbox--featured-dataset:nth-child(odd) {
-  float: left;
+  float: right;
   width: 50%;
-  margin-left: 0%;
-  margin-right: -50%;
+  margin-right: 0%;
+  margin-left: -50%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -4125,10 +4125,10 @@ body {
 /* line 113, ../sass/layout/_layout.scss */
 .front .primary-content .spotbox:nth-child(even), .front .primary-content .spotbox--featured-dataset:nth-child(even) {
   clear: left;
-  float: right;
+  float: left;
   width: 50%;
-  margin-right: 0%;
-  margin-left: -50%;
+  margin-left: 0%;
+  margin-right: -50%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -5071,33 +5071,48 @@ body {
   padding-left: 20px;
 }
 /* line 123, ../sass/module/_module.scss */
+.spotbox--header a:link, .search-spotbox--header a:link, .spotbox--featured-dataset-header a:link, .community--filter-header a:link {
+  color: #404040;
+  text-decoration: none;
+}
+/* line 128, ../sass/module/_module.scss */
+.spotbox--header a:visited, .search-spotbox--header a:visited, .spotbox--featured-dataset-header a:visited, .community--filter-header a:visited {
+  color: #3b3b3b;
+  text-decoration: none;
+}
+/* line 133, ../sass/module/_module.scss */
 .spotbox--header a:hover, .search-spotbox--header a:hover, .spotbox--featured-dataset-header a:hover, .community--filter-header a:hover {
+  color: #be370a;
   text-decoration: none;
   /* Inherit hover color for header labels */
 }
-/* line 127, ../sass/module/_module.scss */
+/* line 138, ../sass/module/_module.scss */
 .spotbox--header a:hover [class$="header-label"], .search-spotbox--header a:hover [class$="header-label"], .spotbox--featured-dataset-header a:hover [class$="header-label"], .community--filter-header a:hover [class$="header-label"] {
   color: gray;
 }
-/* line 132, ../sass/module/_module.scss */
+/* line 143, ../sass/module/_module.scss */
+.spotbox--header a:focus, .search-spotbox--header a:focus, .spotbox--featured-dataset-header a:focus, .community--filter-header a:focus {
+  color: black;
+}
+/* line 147, ../sass/module/_module.scss */
 .spotbox--header i[class^="icon-"], .search-spotbox--header i[class^="icon-"], .spotbox--featured-dataset-header i[class^="icon-"], .community--filter-header i[class^="icon-"] {
   margin-right: 8px;
 }
 
-/* line 137, ../sass/module/_module.scss */
+/* line 152, ../sass/module/_module.scss */
 .spotbox--header-label {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
 
-/* line 142, ../sass/module/_module.scss */
+/* line 157, ../sass/module/_module.scss */
 .spotbox--list-header-label {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
   margin-right: 5px;
 }
 
-/* line 149, ../sass/module/_module.scss */
+/* line 164, ../sass/module/_module.scss */
 .spotbox--list-header {
   font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: normal;
@@ -5107,33 +5122,33 @@ body {
 }
 
 /* %module--block content */
-/* line 159, ../sass/module/_module.scss */
+/* line 174, ../sass/module/_module.scss */
 .spotbox--content-wrapper {
   /* Correct spacing for line height */
   margin-top: -5px;
   vertical-align: top;
 }
 
-/* line 166, ../sass/module/_module.scss */
+/* line 181, ../sass/module/_module.scss */
 .spotbox--content {
   padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
 }
-/* line 171, ../sass/module/_module.scss */
+/* line 186, ../sass/module/_module.scss */
 .spotbox--content a:link {
   color: #e5420c;
 }
-/* line 175, ../sass/module/_module.scss */
+/* line 190, ../sass/module/_module.scss */
 .spotbox--content a:visited {
   color: #972c08;
 }
-/* line 179, ../sass/module/_module.scss */
+/* line 194, ../sass/module/_module.scss */
 .spotbox--content a:hover {
   color: #be370a;
 }
 
-/* line 185, ../sass/module/_module.scss */
+/* line 200, ../sass/module/_module.scss */
 .spotbox--meta-wrapper {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
@@ -5141,82 +5156,82 @@ body {
   padding-right: 20px;
   padding-left: 20px;
 }
-/* line 192, ../sass/module/_module.scss */
+/* line 207, ../sass/module/_module.scss */
 .spotbox--meta-wrapper a:link {
   color: #e5420c;
 }
-/* line 196, ../sass/module/_module.scss */
+/* line 211, ../sass/module/_module.scss */
 .spotbox--meta-wrapper a:visited {
   color: #972c08;
 }
-/* line 200, ../sass/module/_module.scss */
+/* line 215, ../sass/module/_module.scss */
 .spotbox--meta-wrapper a:hover {
   color: #be370a;
 }
 
 /* %module--block list */
-/* line 207, ../sass/module/_module.scss */
+/* line 222, ../sass/module/_module.scss */
 .spotbox--list, .spotbox--list-latest, .community--filter-list {
   padding-left: 0;
 }
-/* line 210, ../sass/module/_module.scss */
+/* line 225, ../sass/module/_module.scss */
 .spotbox--list a:link, .spotbox--list-latest a:link, .community--filter-list a:link {
   color: #404040;
   text-decoration: none;
 }
-/* line 215, ../sass/module/_module.scss */
+/* line 230, ../sass/module/_module.scss */
 .spotbox--list a:visited, .spotbox--list-latest a:visited, .community--filter-list a:visited {
   color: #3b3b3b;
   text-decoration: none;
 }
-/* line 220, ../sass/module/_module.scss */
+/* line 235, ../sass/module/_module.scss */
 .spotbox--list a:hover, .spotbox--list-latest a:hover, .community--filter-list a:hover {
   color: #be370a;
   text-decoration: none;
 }
-/* line 225, ../sass/module/_module.scss */
+/* line 240, ../sass/module/_module.scss */
 .spotbox--list a:focus, .spotbox--list-latest a:focus, .community--filter-list a:focus {
   color: black;
 }
-/* line 229, ../sass/module/_module.scss */
+/* line 244, ../sass/module/_module.scss */
 .spotbox--list i[class^="icon-"], .spotbox--list-latest i[class^="icon-"], .community--filter-list i[class^="icon-"] {
   margin-right: 5px;
   /* Icon gets cut off when it is the first item from the left */
   padding-left: 1px;
 }
 
-/* line 237, ../sass/module/_module.scss */
+/* line 252, ../sass/module/_module.scss */
 .spotbox--list-item, .community--filter-list-item {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
   overflow: hidden;
   padding-bottom: 10px;
 }
-/* line 243, ../sass/module/_module.scss */
+/* line 258, ../sass/module/_module.scss */
 .last.spotbox--list-item, .last.community--filter-list-item {
   border-bottom: 0;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-/* line 251, ../sass/module/_module.scss */
+/* line 266, ../sass/module/_module.scss */
 .spotbox--list-posted {
   margin-bottom: 0;
 }
 
-/* line 256, ../sass/module/_module.scss */
+/* line 271, ../sass/module/_module.scss */
 .spotbox--date {
   display: block;
 }
 
 /* %module--block image */
-/* line 262, ../sass/module/_module.scss */
+/* line 277, ../sass/module/_module.scss */
 .spotbox--image {
   margin-bottom: 20px;
 }
 
 /* %module--block list image */
-/* line 268, ../sass/module/_module.scss */
+/* line 283, ../sass/module/_module.scss */
 .spotbox--list-image {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -5225,12 +5240,33 @@ body {
   float: left;
   margin-right: 15px;
   max-width: 50px;
+  margin-top: 3px;
   overflow: hidden;
   vertical-align: top;
 }
 
+/* line 297, ../sass/module/_module.scss */
+.spotbox--list-link a:link {
+  color: #e5420c;
+  text-decoration: none;
+}
+/* line 302, ../sass/module/_module.scss */
+.spotbox--list-link a:visited {
+  color: #db3f0b;
+  text-decoration: none;
+}
+/* line 307, ../sass/module/_module.scss */
+.spotbox--list-link a:hover {
+  color: #be370a;
+  text-decoration: none;
+}
+/* line 312, ../sass/module/_module.scss */
+.spotbox--list-link a:focus {
+  color: black;
+}
+
 /* %module--block footer */
-/* line 281, ../sass/module/_module.scss */
+/* line 319, ../sass/module/_module.scss */
 .spotbox--footer {
   border-top: 1px dashed rgba(0, 0, 0, 0.1);
   clear: both;
@@ -5242,37 +5278,37 @@ body {
   padding-bottom: 15px;
 }
 
-/* line 293, ../sass/module/_module.scss */
+/* line 331, ../sass/module/_module.scss */
 .spotbox--read-more {
   float: right;
 }
 
 /* List actions
    ========================================================================== */
-/* line 310, ../sass/module/_module.scss */
+/* line 348, ../sass/module/_module.scss */
 .list--actions .list--action-sort-latest, .comments--list-actions .list--action-sort-latest {
   margin-right: 10px;
 }
-/* line 314, ../sass/module/_module.scss */
+/* line 352, ../sass/module/_module.scss */
 .list--actions .list--action-create, .comments--list-actions .list--action-create {
   float: right;
 }
 
 /* Pager
    ========================================================================== */
-/* line 325, ../sass/module/_module.scss */
+/* line 363, ../sass/module/_module.scss */
 .pager {
   margin-top: 20px;
   padding-left: 0;
   text-align: center;
 }
-/* line 330, ../sass/module/_module.scss */
+/* line 368, ../sass/module/_module.scss */
 .pager li {
   display: inline-block;
   margin-left: -4px;
   margin-right: 4px;
 }
-/* line 336, ../sass/module/_module.scss */
+/* line 374, ../sass/module/_module.scss */
 .pager li.pager-current,
 .pager li a {
   background-color: #efefef;
@@ -5282,26 +5318,26 @@ body {
   padding-bottom: 5px;
   padding-left: 15px;
 }
-/* line 344, ../sass/module/_module.scss */
+/* line 382, ../sass/module/_module.scss */
 .pager li.pager-current:hover,
 .pager li a:hover {
   text-decoration: none;
 }
-/* line 349, ../sass/module/_module.scss */
+/* line 387, ../sass/module/_module.scss */
 .pager li.pager-current {
   background-color: #e2e2e2;
 }
-/* line 355, ../sass/module/_module.scss */
+/* line 393, ../sass/module/_module.scss */
 .pager .active a,
 .pager .active a:hover {
   cursor: default;
   text-decoration: underline;
 }
-/* line 360, ../sass/module/_module.scss */
+/* line 398, ../sass/module/_module.scss */
 .pager .disabled {
   background-color: #fbfbfb;
 }
-/* line 363, ../sass/module/_module.scss */
+/* line 401, ../sass/module/_module.scss */
 .pager .disabled a:hover {
   cursor: default;
   text-decoration: none;
@@ -5374,68 +5410,6 @@ body {
 
 /* Spotbox images */
 /* Spotbox footer */
-/* Spotboxes in primary content
-   ========================================================================== */
-/* line 138, ../sass/module/_spotbox.scss */
-.primary-content {
-  /* Reset margin bottom on last spotbox in primary content */
-}
-/* line 139, ../sass/module/_spotbox.scss */
-.primary-content .spotbox--inner, .primary-content .search-spotbox--inner, .primary-content .spotbox--featured-dataset-inner {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(100%, #ffffff));
-  background-image: -webkit-linear-gradient(#f2f2f2, #ffffff);
-  background-image: -moz-linear-gradient(#f2f2f2, #ffffff);
-  background-image: -o-linear-gradient(#f2f2f2, #ffffff);
-  background-image: linear-gradient(#f2f2f2, #ffffff);
-  background-color: white;
-}
-/* line 145, ../sass/module/_spotbox.scss */
-.primary-content .spotbox--list-label {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
-  opacity: 0.75;
-}
-/* line 149, ../sass/module/_spotbox.scss */
-.primary-content .spotbox--list-header {
-  font-family: "exo-demi-bold";
-  font-weight: normal;
-}
-/* line 154, ../sass/module/_spotbox.scss */
-.primary-content .spotbox:last-child, .primary-content .spotbox--featured-dataset:last-child {
-  margin-bottom: 0;
-}
-
-/* Spotboxes in secondary content
-   ========================================================================== */
-/* line 164, ../sass/module/_spotbox.scss */
-.secondary-content .spotbox--inner, .secondary-content .search-spotbox--inner, .secondary-content .spotbox--featured-dataset-inner {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ffffff));
-  background-image: -webkit-linear-gradient(#ffffff, #ffffff);
-  background-image: -moz-linear-gradient(#ffffff, #ffffff);
-  background-image: -o-linear-gradient(#ffffff, #ffffff);
-  background-image: linear-gradient(#ffffff, #ffffff);
-  background-color: white;
-}
-/* line 170, ../sass/module/_spotbox.scss */
-.secondary-content .spotbox--header, .secondary-content .search-spotbox--header, .secondary-content .spotbox--featured-dataset-header {
-  font-size: 130%;
-}
-
-/* Spotboxes in tertiary content
-   ========================================================================== */
-/* line 180, ../sass/module/_spotbox.scss */
-.tertiary-content .spotbox--inner, .tertiary-content .search-spotbox--inner, .tertiary-content .spotbox--featured-dataset-inner {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ffffff));
-  background-image: -webkit-linear-gradient(#ffffff, #ffffff);
-  background-image: -moz-linear-gradient(#ffffff, #ffffff);
-  background-image: -o-linear-gradient(#ffffff, #ffffff);
-  background-image: linear-gradient(#ffffff, #ffffff);
-  background-color: #acca00;
-}
-/* line 186, ../sass/module/_spotbox.scss */
-.tertiary-content .spotbox--header, .tertiary-content .search-spotbox--header, .tertiary-content .spotbox--featured-dataset-header {
-  font-size: 130%;
-}
-
 /**
  * User
  *
