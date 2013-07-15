@@ -9,10 +9,10 @@
     var directive = { 
       'ul.comments--list': {
         'i<-data': {
-          'div.comments--list--cid' : 'i.cid',
-          'div.comments--list-author' : 'i.author',
-          'div.comments--list-posted' : 'i.date',
-          'div.comments--list-content' : 'i.subject'
+          '.comments--list--cid' : 'i.cid',
+          '.comments--list-author' : 'i.author',
+          '.comments--list-posted' : 'i.date',
+          '.comments--list-content' : 'i.subject'
         }
       }
     };
