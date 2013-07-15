@@ -60,19 +60,21 @@
 .community--list {
   margin-top: $large-spacing;
   padding-left: 0;
+
+
 }
 
 .community--list-item {
-  margin-bottom: $large-spacing;
+  @include border-radius($base-border-radius);
+
+  background-color: $gray-lighter;
+  border: 1px solid $gray-light;
+  margin-top: $large-spacing;
   overflow: hidden;
   padding: $large-spacing;
 
-  &:nth-child(odd) {
-    background-color: $base-color-odd;
-  }
-
-  &:nth-child(even) {
-    background-color: $base-color-even;
+  &:hover {
+    border: 1px solid $gray;
   }
 }
 
@@ -82,15 +84,15 @@
 
   background-color: $base-tertiary-color;
   color: $white;
-  font-size: 500%;
+  font-size: 250%;
   float: left;
   margin-top: -5px;
   margin-right: $large-spacing;
   margin-bottom: $large-spacing;
-  min-width: 100px;
+  min-width: 60px;
   padding: $medium-spacing;
   text-align: center;
-  width: 100px;
+  width: 60px;
 
   &:hover {
     background-color: darken($base-tertiary-color, 5%);
@@ -129,7 +131,7 @@
 }
 
 .community--list-footer {
-  border-top: 1px dashed darken($base-secondary-color, 25%);
+  border-top: $base-border-style;
   margin-top: $large-spacing;
   padding-top: $medium-spacing;
   text-align: right;

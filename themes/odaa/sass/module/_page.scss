@@ -11,6 +11,8 @@
 
 .page--content-wrapper {
   @extend %module-wrapper-style;
+
+  margin-top: $large-spacing;
 }
 
 .page--content {

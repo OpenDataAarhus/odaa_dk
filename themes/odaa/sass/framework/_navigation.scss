@@ -106,7 +106,7 @@
 }
 
 .sub-menu-title {
-  @include background-image(linear-gradient(darken($base-secondary-color, 5%), $base-secondary-color));
+  @include background-image(linear-gradient(darken($white, 5%), $white));
   @include border-radius($base-border-radius $base-border-radius 0 0);
 
   border-bottom: $base-border-style;
@@ -173,18 +173,18 @@
 
     li {
       &:hover {
-        background-color: darken($base-secondary-color, 8%);
+        background-color: darken($white, 8%);
       }
 
       li {
         &:hover {
-          background-color: darken($base-secondary-color, 16%);
+          background-color: darken($white, 16%);
         }
       }
     }
 
     &:hover {
-      background-color: darken($base-secondary-color, 4%);
+      background-color: darken($white, 4%);
     }
 
     &.last {

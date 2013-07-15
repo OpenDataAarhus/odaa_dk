@@ -6,7 +6,7 @@
       'Forsiden' => 'forsiden.php',
       'Datasæt' => 'dataset.php',
       'Community' => 'community.php',
-      'Om' => 'about.php'
+      'Om ODAA' => 'about.php'
     );
 
     $output = '<ul class="main-menu">';

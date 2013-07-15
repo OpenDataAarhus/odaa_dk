@@ -12,6 +12,8 @@
    ========================================================================== */
 .twitter-widget {
   @extend %module-wrapper-style;
+
+  margin-top: $large-spacing;
 }
 
 
@@ -64,7 +66,6 @@
 
   background-color: $white;
   border: 1px solid $gray;
-  margin-top: $large-spacing;
   padding: $large-spacing;
 }
 
@@ -73,12 +74,12 @@
   margin-top: $large-spacing;
 
   a:link {
-    color: darken($base-secondary-color, 50%);
+    color: $base-primary-color;
     text-decoration: none;
   }
 
   a:visited {
-    color: darken($base-secondary-color, 55%);
+    color: darken($link-color-hover, 2%);
     text-decoration: none;
   }
 
@@ -95,10 +96,6 @@
     margin-right: 5px;
     /* Icon gets cut off when it is the first item from the left */
     padding-left: 1px;
-  }
-
-  p {
-    margin-bottom: 0;
   }
 }
 
@@ -128,7 +125,7 @@
 
     /* Inherit hover color for header labels */
     [class$="header-label"] {
-      color: darken($base-secondary-color, 50%);
+      color: darken($white, 50%);
     }
   }
 
@@ -209,6 +206,31 @@
 /* %module--block list */
 %module--block--list {
   padding-left: 0;
+
+  a:link {
+    color: $font-color-primary;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: darken($font-color-primary, 2%);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $link-color-hover;
+    text-decoration: none;
+  }
+
+  a:focus {
+    color: darken($base-primary-color, 75%);
+  }
+
+  i[class^="icon-"] {
+    margin-right: 5px;
+    /* Icon gets cut off when it is the first item from the left */
+    padding-left: 1px;
+  }
 }
 
 
@@ -301,6 +323,7 @@
    ========================================================================== */
 
 .pager {
+  margin-top: $large-spacing;
   padding-left: 0;
   text-align: center;
 
