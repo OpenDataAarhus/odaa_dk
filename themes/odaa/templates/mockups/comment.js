@@ -7,24 +7,24 @@
     
     // Build template.
     var directive = { 
-      'div.comment': {
+      'ul.comments--list': {
         'i<-data': {
           'div.cid' : 'i.cid',
-          'div.author' : 'i.author',
-          'div.date' : 'i.date',
-          'div.subject' : 'i.subject'
+          'div.comments--list-author' : 'i.author',
+          'div.comments--list-posted' : 'i.date',
+          'div.comments--list-content' : 'i.subject'
         }
       }
     };
 
     // Compile template.
-    template = $('.comment-wrapper').compile(directive);
+    template = $('.comments--wrapper').compile(directive);
     
     // Generate comments.
     generate_comments();
     
     // Submit formular.
-    $('.new-comment form').live('submit', function(e) {
+    $('.comments--post-comment form').live('submit', function(e) {
       e.preventDefault();
       add_comment();
       
@@ -73,7 +73,7 @@
   function generate_comments() {
     $.getJSON('/odaa_comment/view/'+hash, function(data) {
       if (data.status) {
-        $('div.comment-wrapper').render(data, template);
+        $('div.comments--wrapper').render(data, template);
       }
     });
   }
