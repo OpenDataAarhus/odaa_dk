@@ -89,6 +89,12 @@
                     </div>
                   </li>
                 </ul>
+                <ul class="pager">
+                  <li class="pager-previous first">&nbsp;</li>
+                  <li class="pager-current">1</li>
+                  <li class="pager-item"><a href="#">2</a></li>
+                  <li class="pager-next last"><a href="#"><i class="icon-angle-right"></i></a></li>
+                </ul>                
               </section>
             </section>
           </div>

@@ -5176,6 +5176,54 @@ body {
   float: right;
 }
 
+/* Pager
+   ========================================================================== */
+/* line 279, ../sass/module/_module.scss */
+.pager {
+  padding-left: 0;
+  text-align: center;
+}
+/* line 283, ../sass/module/_module.scss */
+.pager li {
+  display: inline-block;
+  margin-left: -4px;
+  margin-right: 4px;
+}
+/* line 289, ../sass/module/_module.scss */
+.pager li.pager-current,
+.pager li a {
+  background-color: #efefef;
+  display: inline-block;
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+}
+/* line 297, ../sass/module/_module.scss */
+.pager li.pager-current:hover,
+.pager li a:hover {
+  text-decoration: none;
+}
+/* line 302, ../sass/module/_module.scss */
+.pager li.pager-current {
+  background-color: #e2e2e2;
+}
+/* line 308, ../sass/module/_module.scss */
+.pager .active a,
+.pager .active a:hover {
+  cursor: default;
+  text-decoration: underline;
+}
+/* line 313, ../sass/module/_module.scss */
+.pager .disabled {
+  background-color: #fbfbfb;
+}
+/* line 316, ../sass/module/_module.scss */
+.pager .disabled a:hover {
+  cursor: default;
+  text-decoration: none;
+}
+
 /**
  * Page
  *
