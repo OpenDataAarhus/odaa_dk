@@ -43,7 +43,7 @@
   });
 
   function delete_comment(cid) {
-    $.getJSON('http://dev.odda.dk/odaa_comment/delete/' + cid, function(data) {
+    $.getJSON('http://dev.oda a.dk/odaa_comment/delete/' + cid, function(data) {
       if (data.status) {
        $('div.cid').each(function(index, value) {
           if ($(value).html() === cid) {
@@ -61,7 +61,7 @@
   function add_comment() {
     var input = $('textarea').val();
     var title = $('h1.page--title').html();
-    $.getJSON('http://dev.odda.dk/odaa_comment/add/' + title + '/' + hash + '/' + input, function (data) {
+    $.getJSON('http://dev.odaa.dk/odaa_comment/add/' + title + '/' + hash + '/' + input, function (data) {
       if (data.status) {
         // Comment added. Reset.
         $('textarea').val('');
@@ -71,7 +71,7 @@
   }
 
   function generate_comments() {
-    $.getJSON('http://dev.odda.dk/odaa_comment/view/'+hash, function(data) {
+    $.getJSON('http://dev.odaa.dk/odaa_comment/view/'+hash, function(data) {
       if (data.status) {
         $('div.comments--wrapper').render(data, template);
       }
