@@ -187,25 +187,3 @@ $spotbox-background-color:        $white;
     font-size: $font-size-large;
   }
 }
-
-
-/* Spotboxes as attachment
-   ========================================================================== */
-
-.attachment-wrapper {
-  .spotbox--inner {
-    background-color: lighten($base-tertiary-color, 5%);
-  }
-
-  .spotbox--header {
-    font-size: $font-size-medium;
-  }
-
-  .spotbox--image {
-    max-width: 50px;
-  }
-
-  .spotbox--content {
-    display: none;
-  }
-}
