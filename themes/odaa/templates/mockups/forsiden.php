@@ -76,7 +76,7 @@
           </div>
           <div class="spotbox--featured-dataset">
             <div class="spotbox--featured-dataset-inner">
-              <h3 class="spotbox--featured-dataset-header"><i class="icon-sitemap"></i>Featured datasæt</h3>
+              <h3 class="spotbox--featured-dataset-header"><i class="icon-star-empty"></i>Featured datasæt</h3>
               <h4><a href="#">3D Bygninger - Bymodel</a></h4>
               <div>3D bygninger for den indre del af Aarhus By (ca. indenfor Ringgaden). Data er på DWG-formatet og er en bygningstrådmodel. Data fylder ca. 50 MB. Vi anbefaler, at du downloader datasættet i Chrome eller Firefox.</div>
             </div>
