@@ -32,10 +32,10 @@
                   <input type="submit" class="community--search--button" value="Søg" />
                 </form>
               </div>
-              <div class="community--actions">
-                <a href="#" class="community--action-sort-latest"><i class="icon-time"></i>Sortér: Nyeste</a>
-                <a href="#" class="community--action-sort-hot active"><i class="icon-ok"></i>Sortér: Mest kommenterede</a>
-                <a href="#" class="community--action-create"><i class="icon-plus"></i>Opret indlæg</a>
+              <div class="list--actions">
+                <a href="#" class="list--action-sort-latest"><i class="icon-time"></i>Sortér: Nyeste</a>
+                <a href="#" class="list--action-sort-hot active"><i class="icon-ok"></i>Sortér: Mest kommenterede</a>
+                <a href="#" class="list--action-create"><i class="icon-plus"></i>Opret indlæg</a>
               </div>
               <section class="community--list-wrapper">
                 <span class="community--list-heading">Filter:</span><a href="#" class="community--tag"><i class="icon-remove"></i>Datasæt</a>

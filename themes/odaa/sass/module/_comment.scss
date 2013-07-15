@@ -1,0 +1,137 @@
+/**
+ * Comment
+ *
+ * @author magnify
+ */
+
+.comments {
+  @extend %module-wrapper-style;
+}
+
+.comments--wrapper {
+  @extend %section-spacing;
+}
+
+
+/* Comments list
+   ========================================================================== */
+.comments--list-actions {
+  @extend %section-spacing;
+  @extend .list--actions;
+}
+
+.comments--list {
+  padding-left: 0;
+}
+
+.comments--list-item {
+  margin-bottom: 30px;
+}
+
+.comments--list-image {
+  float: left;
+}
+
+.comments--list-author {
+  display: inline-block;
+  margin-top: 3px;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.comments--list-posted {
+  float: right;
+  margin-top: 6px;
+}
+
+.comments--list-content {
+  @include border-radius($base-border-radius);
+
+  border: 1px solid $gray;
+  margin-top: $medium-spacing;
+  padding: $large-spacing;
+}
+
+.comments--list-item-actions {
+  @extend %section-spacing;
+}
+
+.comments--list-quote {
+  float: left;
+
+  i[class^="icon-"] {
+    margin-right: 5px;
+  }
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.comments--list-rate-up {
+  color: $gray-dark;
+  display: block;
+  font-size: $font-size-giga;
+  text-align: right;
+
+  i[class^="icon-"] {
+    margin-right: 5px;
+  }
+
+  a:link,
+  a:visited {
+    color: $base-tertiary-color;
+  }
+
+  a:hover,
+  a:active {
+    color: darken($base-tertiary-color, 10%);
+    text-decoration: none;
+  }
+}
+
+.comments--list-rate-up-none {
+  @extend .comments--list-rate-up;
+
+  a:link,
+  a:visited {
+    color: $gray-dark;
+  }
+
+  a:hover,
+  a:active {
+    color: darken($gray-dark, 10%);
+  }
+}
+
+
+/* Post comment
+   ========================================================================== */
+.comments--post-comment-wrapper {
+  @extend %section-spacing;
+}
+
+.comments--post-comment-header {
+  a:hover,
+  a:active {
+    text-decoration: none;
+  }
+}
+
+.comments--post-comment {
+  @include border-radius($base-border-radius);
+
+  border: 1px solid $gray;
+  padding: $large-spacing;
+}
+
+.comments--post-field-wrapper {
+  margin-bottom: 20px;
+}
+
+.comments--post-comment-actions {
+  text-align: right;
+}

@@ -20,7 +20,6 @@
   padding: $large-spacing;
 
   .community--search--label {
-    @include font-bold();
     @include opacity(.75);
   }
 
@@ -37,27 +36,6 @@
     padding-top: 11px;
     padding-right: 20px;
     padding-left: 20px;
-  }
-}
-
-.community--actions {
-  .community--action-sort-latest,
-  .community--action-sort-hot {
-    @extend .button;
-
-    &.active {
-      @extend %button-theme;
-    }
-  }
-
-  .community--action-sort-latest {
-    margin-right: $medium-spacing;
-  }
-
-  .community--action-create {
-    @extend %button-action;
-
-    float: right;
   }
 }
 

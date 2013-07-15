@@ -101,6 +101,8 @@
 }
 
 .dataset--tags-list {
+  @include border-radius($base-border-radius);
+
   background-color: $base-color-odd;
   padding: $large-spacing;
 

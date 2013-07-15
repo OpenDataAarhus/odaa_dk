@@ -23,8 +23,6 @@
   }
 
   .user-login-label {
-    @include font-bold();
-
     color: $font-color-secondary;
     display: inline-block;
     margin-bottom: 3px;
@@ -79,8 +77,6 @@
   }
 
   .create-user-label {
-    @include font-bold();
-
     display: inline-block;
     margin-bottom: 3px;
   }

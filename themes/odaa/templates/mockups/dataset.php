@@ -107,17 +107,91 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="dataset-label" scope="row">Forfatter</th>
+                    <td class="dataset-label" scope="row">Forfatter</td>
                     <td property="dc:creator" class="dataset-details">Aarhus Kommune</td>
                   </tr>
                   <tr>
-                    <td class="dataset-label" scope="row">Vedligeholdelse af</th>
+                    <td class="dataset-label" scope="row">Vedligeholdelse af</td>
                     <td property="dc:contributor" class="dataset-details"><a href="mailto:pema@aarhus.dk">Peter Schack Madsen</a></td>
                   </tr>
                 </tbody>
               </table>
             </section>
           </div>
+          <section class="comments">
+            <h2 class="section-title">Kommentarer og debat</h2>
+            <p>Deltag i debatten! Husk at hold en sober tone så vi kan få en konstruktiv debat. :)</p>
+            <div class="comments--list-actions">
+              <a href="#" class="list--action-sort-latest active"><i class="icon-ok"></i>Sortér: Seneste</a>
+              <a href="#" class="list--action-sort-hot"><i class="icon-thumbs-up-alt"></i>Sortér: Bedste</a>
+              <a href="#postcomment" class="list--action-create"><i class="icon-comment-alt"></i>Skriv kommentar</a>
+            </div>
+            <div class="comments--wrapper">
+              <ul class="comments--list">
+                <li class="comments--list-item">
+                  <a href="#" class="comments--list-image"><img width="30" height="30" src="//gravatar.com/avatar/f9879d71855b5ff21e4963273a886bfc?s=30&amp;d=identicon"></a>
+                  <h3 class="comments--list-author"><a href="#">Name</a></h3>
+                  <a href="#commentlink" class="comments--list-posted">20. juli 2013 @ 14:57</a>
+                  <div class="comments--list-content">
+                    <p>Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                    <div class="comments--list-item-actions">
+                      <a href="#" class="comments--list-quote"><i class="icon-quote-left"></i>Quote</a>
+                      <div class="comments--list-rate-up"><a href="#"><i class="icon-thumbs-up-alt"></i></a>+1</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="comments--list-item">
+                  <a href="#" class="comments--list-image"><img width="30" height="30" src="//gravatar.com/avatar/3c0c3f0f2bbd8101fcc64928e7768d67?s=30&amp;d=identicon"></a>
+                  <h3 class="comments--list-author"><a href="#">Blanko</a></h3>
+                  <a href="#commentlink" class="comments--list-posted">20. juli 2013 @ 14:57</a>
+                  <div class="comments--list-content">
+                    <p>Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                    <div class="comments--list-item-actions">
+                      <a href="#" class="comments--list-quote"><i class="icon-quote-left"></i>Quote</a>
+                      <div class="comments--list-rate-up"><a href="#"><i class="icon-thumbs-up-alt"></i></a>+12</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="comments--list-item">
+                  <a href="#" class="comments--list-image"><img width="30" height="30" src="//gravatar.com/avatar/32fc47cc10bc49b47aa0644d79cf04de?s=30&amp;d=identicon"></a>
+                  <h3 class="comments--list-author"><a href="#">Random name</a></h3>
+                  <a href="#commentlink" class="comments--list-posted">20. juli 2013 @ 14:57</a>
+                  <div class="comments--list-content">
+                    <p>Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                    <div class="comments--list-item-actions">
+                      <a href="#" class="comments--list-quote"><i class="icon-quote-left"></i>Quote</a>
+                      <div class="comments--list-rate-up-none"><a href="#"><i class="icon-thumbs-up-alt"></i></a>+0</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <section class="comments--post-comment-wrapper">
+                <h2 class="comments--post-comment-header"><a name="postcomment">Skriv kommentar</a></h2>
+                <div class="comments--post-comment">
+                  <form>
+                    <div class="comments--post-field-wrapper">
+                      <label class="comments--post-label">Navn</label>
+                      <input type="text" placeholder="Indtast dit navn" />
+                    </div>
+                    <div class="comments--post-field-wrapper">
+                      <label class="comments--post-label">E-mail</label>
+                      <input type="text" placeholder="Indtast din e-mail" />
+                    </div>
+                    <div class="comments--post-field-wrapper">
+                      <label class="comments--post-label">Kommentar</label>
+                      <textarea placeholder="Skriv din kommentar" rows="6"></textarea>
+                    </div>
+                    <div class="comments--post-comment-actions">
+                      <input type="submit" value="Skriv kommentar" class="button" />
+                    </div>
+                  </form>
+                </div>
+              </section>
+            </div>
+          </section>
         </div>
         <div class="secondary-content">
           <div class="spotbox">
@@ -160,9 +234,6 @@
             <a class="twitter-timeline"  href="https://twitter.com/OpenDataAarhus" height="380" data-widget-id="319794378895925248" data-chrome="nofooter">Tweets by @OpenDataAarhus</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
           </div>
-        </div>
-        <div class="tertiary-content">
-          Tertiary content
         </div>
       </div>
     </div>

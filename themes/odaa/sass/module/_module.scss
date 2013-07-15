@@ -273,6 +273,30 @@
 }
 
 
+/* List actions
+   ========================================================================== */
+.list--actions {
+  .list--action-sort-latest,
+  .list--action-sort-hot {
+    @extend .button;
+
+    &.active {
+      @extend %button-theme;
+    }
+  }
+
+  .list--action-sort-latest {
+    margin-right: $medium-spacing;
+  }
+
+  .list--action-create {
+    @extend %button-action;
+
+    float: right;
+  }
+}
+
+
 /* Pager
    ========================================================================== */
 
