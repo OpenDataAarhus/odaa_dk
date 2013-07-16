@@ -72,67 +72,129 @@
  * @ingroup themeable
  */
 ?>
-
-<div id="page" class="<?php print $classes; ?>">
-  <?php if (!empty($page['branding']) || !empty($page['header']) || !empty($page['navigation'])): ?>
-    <header class="site-header">
-      <?php if (!empty($page['header'])): ?>
-        <section class="header-wrapper">
-          <div class="header-inner">
-            <?php print render($page['header']); ?>
-          </div>
-        </section>
-      <?php endif; ?>
-
-      <?php if (!empty($page['navigation'])): ?>
-        <section class="navigation-wrapper js-topbar-menu">
-          <div class="navigation-inner">
-            <?php print render($page['navigation']); ?>
-          </div>
-        </section>
-      <?php endif; ?>
-    </header>
-  <?php endif; ?>
-
+<div id="page" class="page <?php print $classes; ?>">
+  <header class="site-header">
+    <section class="header-wrapper">
+      <div class="header-inner">
+        <a href="/" class="logo"><img alt="" src="/sites/odaa.dk/themes/odaa/logo.png"></a>
+        <div class="search-form">
+          <form action="/dataset" method="get">
+            <input type="text" name="q" placeholder="<?php print t('Search for dataset'); ?>..." class="search-form-text" />
+            <input type="submit" value="Søg" class="button" />
+          </form>
+        </div>
+        <?php print render($page['navigation']); ?>        
+      </div>
+    </section>
+  </header>
   <div class="content-wrapper">
     <div class="content-inner">
-      <?php if (!empty($messages)): print $messages; endif; ?>
-      <?php print render($page['help']); ?>
-      <?php if ($tabs): ?>
-        <div class="tabs">
-          <?php print render($tabs); ?>
-        </div>
-      <?php endif; ?>
-
-      <?php if (!empty($page['content'])): ?>
-        <div class="primary-content">
+      <div class="primary-content">
+        <?php if (!empty($page['content'])): ?>
           <?php print render($page['content']); ?>
-        </div>
-      <?php endif ?>
-
-      <?php if (!empty($page['secondary_content']) || (!empty($page['tertiary_content']))): ?>
-        <div class="layout-wrapper">
-        <?php if (!empty($page['secondary_content'])): ?>
-          <div class="secondary-content">
-            <?php print render($page['secondary_content']); ?>
-          </div>
         <?php endif ?>
-
-        <?php if (!empty($page['tertiary_content'])): ?>
-          <div class="tertiary-content">
-            <?php print render($page['tertiary_content']); ?>
+        <div class="search-spotbox">
+          <div class="search-spotbox--inner">
+            <h3 class="search-spotbox--header">Søg efter data</h3>
+            <div class="search-spotbox--dataset-amount-wrapper">
+              <div class="search-spotbox--dataset-amount">1587</div>
+              <div class="search-spotbox--dataset-amount-text">datasæt</div>
+            </div>
+            <div class="search-spotbox--wrapper">
+              <form action="/dataset" method="get">
+                <input type="text" name="q" placeholder="<?php print t('Search for dataset'); ?>..." class="search-form-text" />
+                <input type="submit" value="Søg" class="button" />
+              </form>
+            </div>
           </div>
-        <?php endif ?>
         </div>
-      <?php endif ?>
+        <div class="spotbox">
+          <div class="spotbox--inner">
+            <div class="spotbox--content-wrapper">
+              <h2 class="spotbox--header"><a href="#"><i class="icon-comments-alt"></i>Seneste kommentarer</a></h2>
+              <ul class="spotbox--list">
+                <li class="spotbox--list-item first">
+                  <div class="spotbox--list-image"><a href="#comment1"><img src="//gravatar.com/avatar/f9879d71855b5ff21e4963273a886bfc?s=30&amp;d=identicon" /></a></div>
+                  <span class="spotbox--list-link"><a href="#comment1">Morbi leo risus</a></span>
+                  <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="spotbox">
+          <div class="spotbox--inner">
+            <div class="spotbox--content-wrapper">
+              <h2 class="spotbox--header"><a href="#"><i class="icon-sitemap"></i>Seneste datasæt</a></h2>
+              <ul class="spotbox--list">
+                <li class="spotbox--list-item first">
+                  <div class="spotbox--list-image"><a href="#comment1"><img src="//gravatar.com/avatar/f9879d71855b5ff21e4963273a886bfc?s=30&amp;d=identicon" /></a></div>
+                  <span class="spotbox--list-link"><a href="#comment1">Morbi leo risus</a></span>
+                  <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="secondary-content">
+        <div class="spotbox">
+          <div class="spotbox--inner">
+            <h3 class="spotbox--header">Velkommen til ODAA</h3>
+            <div class="spotbox--image"><a href="#"><img src="http://www.odaa.dk/media/your_rainbow_1_small.jpg" /></a></div>
+            <p>ODAA er en open data platform, hvor åbne data bliver gjort frit tilgængelige, så de er nemme for dig at finde.</p>
+            <p>Vi håber, at du vil forvandle de åbne data til nye og innovative services og fortælle om det her på platformen.</p>
+            <p>Du kan læse mere <a href="#">Om ODAA her</a>.</p>
+          </div>
+        </div>
+        <div class="spotbox--featured-dataset">
+          <div class="spotbox--featured-dataset-inner">
+            <h3 class="spotbox--featured-dataset-header"><i class="icon-star-empty"></i>Featured datasæt</h3>
+            <h4><a href="#">3D Bygninger - Bymodel</a></h4>
+            <div>3D bygninger for den indre del af Aarhus By (ca. indenfor Ringgaden). Data er på DWG-formatet og er en bygningstrådmodel. Data fylder ca. 50 MB. Vi anbefaler, at du downloader datasættet i Chrome eller Firefox.</div>
+          </div>
+        </div>
+      </div>
+      <div class="tertiary-content">
+        <div class="spotbox">
+          <div class="spotbox--inner">
+            <div class="spotbox--content-wrapper">
+              <h2 class="spotbox--header"><a href="#"><i class="icon-lightbulb"></i>Something else</a></h2>
+              <ul class="spotbox--list">
+                <li class="spotbox--list-item first">
+                  <div class="spotbox--list-image"><a href="#comment1"><img src="//gravatar.com/avatar/f9879d71855b5ff21e4963273a886bfc?s=30&amp;d=identicon" /></a></div>
+                  <span class="spotbox--list-link"><a href="#comment1">Morbi leo risus</a></span>
+                  <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                </li>                 
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-
-  <?php if (!empty($page['footer'])): ?>
-    <footer class="footer">
+  <footer class="site-footer">
+    <section class="footer-wrapper">
       <div class="footer-inner">
-        <?php print render($page['footer']); ?>
+        <div class="newsletter-signup">
+          <form action="http://odaa.us5.list-manage1.com/subscribe/post?u=78ef4b94a7d1865894df78e68&amp;id=28f6dabe60" method="post" name="mc-embedded-subscribe-form" class="newsletter-form validate" target="_blank" novalidate="">
+            <h2>Tilmeld dig vores nyhedsbrev</h2>
+            <div class="newsletter-field-group">
+              <input type="email" value="" name="EMAIL" class="email newsletter-field required" placeholder="Email adresse" />
+              <input type="submit" value="Tilmeld" name="subscribe" class="button submit-button newsletter-button" />
+            </div>
+          </form>
+        </div>
+        <div class="awards">
+          <a href="http://www.itaward.dk/default.asp?Id=320&cpc=1"><img class="footer-logo first" src="/sites/odaa.dk/themes/odaa/images/it-award-midtjylland-logo.png" alt="IT-Award Midtjylland logo" title="IT-Award Midtjylland" /></a>
+          <a href="http://www.smartaarhus.dk/"><img class="footer-logo last" src="/sites/odaa.dk/themes/odaa/images/made-with-aarhus-logo.png" alt="Made with Aarhus logo" title="Made with Aarhus" /></a>
+        </div>
+        <div class="powered-by">
+          <p><strong>Powered by</strong></p>
+          <a href="http://ckan.org" title="ckan The open source data portal software"><img class="footer-logo first" src="/sites/odaa.dk/themes/odaa/images/ckan-footer-logo.png" alt="ckan logo" title="Powered by ckan" /></a>
+          <a href="http://drupal.org" title="An open source content management platform powering millions of websites and applications"><img class="footer-logo last" src="/sites/odaa.dk/themes/odaa/images/drupal-footer-logo.png" alt="Drupal logo" title="Powered by Drupal" /></a>
+        </div>
       </div>
-    </footer>
-  <?php endif; ?>
+    </section>
+  </footer>
 </div>

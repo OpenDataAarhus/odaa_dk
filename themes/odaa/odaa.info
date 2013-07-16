@@ -6,7 +6,7 @@
 
 
 ;----------// Stylesheets
-
+  stylesheets[all][] = css/odaa.styles.css
 
 ;----------// JavaScripts
 
