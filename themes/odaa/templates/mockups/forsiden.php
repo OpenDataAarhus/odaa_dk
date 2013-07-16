@@ -41,23 +41,28 @@
                 <ul class="spotbox--list">
                   <li class="spotbox--list-item first">
                     <div class="spotbox--list-image"><a href="#comment1"><img src="//gravatar.com/avatar/f9879d71855b5ff21e4963273a886bfc?s=30&amp;d=identicon" /></a></div>
-                    <span class="spotbox--list-link"><a href="#comment1">Morbi leo risus</a></span><p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                    <span class="spotbox--list-link"><a href="#comment1">Morbi leo risus</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
                   </li>
                   <li class="spotbox--list-item">
                     <div class="spotbox--list-image"><a href="#comment2"><img src="//gravatar.com/avatar/3c0c3f0f2bbd8101fcc64928e7768d67?s=30&amp;d=identicon" /></a></div>
-                    <span class="spotbox--list-link"><a href="#comment2">Porta ac consectetur ac</a></span><p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                    <span class="spotbox--list-link"><a href="#comment2">Porta ac consectetur ac</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
                   </li>
                   <li class="spotbox--list-item">
                     <div class="spotbox--list-image"><a href="#comment3"><img src="//gravatar.com/avatar/32fc47cc10bc49b47aa0644d79cf04de?s=30&amp;d=identicon" /></a></div>
-                    <span class="spotbox--list-link"><a href="#comment3">Vestibulum at eros</a></span><p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                    <span class="spotbox--list-link"><a href="#comment3">Vestibulum at eros</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
                   </li>
                   <li class="spotbox--list-item">
                     <div class="spotbox--list-image"><a href="#comment4"><img src="//gravatar.com/avatar/3c0c3f0f2bbd8101fcc64928e7768d67?s=30&amp;d=identicon" /></a></div>
-                    <span class="spotbox--list-link"><a href="#comment4">Nibh Dolor Ornare</a></span><p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                    <span class="spotbox--list-link"><a href="#comment4">Nibh Dolor Ornare</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
                   </li>
                   <li class="spotbox--list-item last">
                     <div class="spotbox--list-image"><a href="#comment5"><img src="//gravatar.com/avatar/f9879d71855b5ff21e4963273a886bfc?s=30&amp;d=identicon" /></a></div>
-                    <span class="spotbox--list-link"><a href="#comment5">Ridiculus Euismod Lorem</a></span><p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                    <span class="spotbox--list-link"><a href="#comment5">Ridiculus Euismod Lorem</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
                   </li>
                 </ul>
               </div>
@@ -70,23 +75,28 @@
                 <ul class="spotbox--list">
                   <li class="spotbox--list-item first">
                     <div class="spotbox--list-image"><a href="#comment1"><img src="//gravatar.com/avatar/f9879d71855b5ff21e4963273a886bfc?s=30&amp;d=identicon" /></a></div>
-                    <span class="spotbox--list-link"><a href="#comment1">Morbi leo risus</a></span><p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                    <span class="spotbox--list-link"><a href="#comment1">Morbi leo risus</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
                   </li>
                   <li class="spotbox--list-item">
                     <div class="spotbox--list-image"><a href="#comment2"><img src="//gravatar.com/avatar/3c0c3f0f2bbd8101fcc64928e7768d67?s=30&amp;d=identicon" /></a></div>
-                    <span class="spotbox--list-link"><a href="#comment2">Porta ac consectetur ac</a></span><p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                    <span class="spotbox--list-link"><a href="#comment2">Porta ac consectetur ac</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
                   </li>
                   <li class="spotbox--list-item">
                     <div class="spotbox--list-image"><a href="#comment3"><img src="//gravatar.com/avatar/32fc47cc10bc49b47aa0644d79cf04de?s=30&amp;d=identicon" /></a></div>
-                    <span class="spotbox--list-link"><a href="#comment3">Vestibulum at eros</a></span><p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                    <span class="spotbox--list-link"><a href="#comment3">Vestibulum at eros</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
                   </li>
                   <li class="spotbox--list-item">
                     <div class="spotbox--list-image"><a href="#comment4"><img src="//gravatar.com/avatar/3c0c3f0f2bbd8101fcc64928e7768d67?s=30&amp;d=identicon" /></a></div>
-                    <span class="spotbox--list-link"><a href="#comment4">Nibh Dolor Ornare</a></span><p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                    <span class="spotbox--list-link"><a href="#comment4">Nibh Dolor Ornare</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
                   </li>
                   <li class="spotbox--list-item last">
                     <div class="spotbox--list-image"><a href="#comment5"><img src="//gravatar.com/avatar/f9879d71855b5ff21e4963273a886bfc?s=30&amp;d=identicon" /></a></div>
-                    <span class="spotbox--list-link"><a href="#comment5">Ridiculus Euismod Lorem</a></span><p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                    <span class="spotbox--list-link"><a href="#comment5">Ridiculus Euismod Lorem</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
                   </li>
                 </ul>
               </div>
@@ -112,7 +122,40 @@
           </div>
         </div>
         <div class="tertiary-content">
-
+          <div class="spotbox">
+            <div class="spotbox--inner">
+              <div class="spotbox--content-wrapper">
+                <h2 class="spotbox--header"><a href="#"><i class="icon-lightbulb"></i>Something else</a></h2>
+                <ul class="spotbox--list">
+                  <li class="spotbox--list-item first">
+                    <div class="spotbox--list-image"><a href="#comment1"><img src="//gravatar.com/avatar/f9879d71855b5ff21e4963273a886bfc?s=30&amp;d=identicon" /></a></div>
+                    <span class="spotbox--list-link"><a href="#comment1">Morbi leo risus</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                  </li>
+                  <li class="spotbox--list-item">
+                    <div class="spotbox--list-image"><a href="#comment2"><img src="//gravatar.com/avatar/3c0c3f0f2bbd8101fcc64928e7768d67?s=30&amp;d=identicon" /></a></div>
+                    <span class="spotbox--list-link"><a href="#comment2">Porta ac consectetur ac</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                  </li>
+                  <li class="spotbox--list-item">
+                    <div class="spotbox--list-image"><a href="#comment3"><img src="//gravatar.com/avatar/32fc47cc10bc49b47aa0644d79cf04de?s=30&amp;d=identicon" /></a></div>
+                    <span class="spotbox--list-link"><a href="#comment3">Vestibulum at eros</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                  </li>
+                  <li class="spotbox--list-item">
+                    <div class="spotbox--list-image"><a href="#comment4"><img src="//gravatar.com/avatar/3c0c3f0f2bbd8101fcc64928e7768d67?s=30&amp;d=identicon" /></a></div>
+                    <span class="spotbox--list-link"><a href="#comment4">Nibh Dolor Ornare</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                  </li>
+                  <li class="spotbox--list-item last">
+                    <div class="spotbox--list-image"><a href="#comment5"><img src="//gravatar.com/avatar/f9879d71855b5ff21e4963273a886bfc?s=30&amp;d=identicon" /></a></div>
+                    <span class="spotbox--list-link"><a href="#comment5">Ridiculus Euismod Lorem</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
