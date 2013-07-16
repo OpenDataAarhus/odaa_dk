@@ -21,9 +21,7 @@
         <div class="primary-content">
           <div class="page--content-wrapper">
             <section class="page--content">
-              <h1 class="page--title"> Bevaringsværdige bygninger i Aarhus Kommune</h1>
-              <p>Datasættet beskriver de bygninger, der er registreret som bevaringsværdige i kommuneatlas (http://gis.aarhus.dk/kommuneatlas/) Mere om vurdering af bevaringsværdi efter SAVE-metoden: https://www.kulturarv.dk/fbb/bevaringsvaerdier.htm</p>
-              <p>Der er bl.a. angivet adresse med vejnavn/vejkode og husnummer. Ved hjælp af datasættet "Koordinatsætning af Aarhus adresser" kan man fange koordinater, så bygningerne kan placeres i et kort.</p>
+              <h1 class="page--title">Find datasæt</h1>
             </section>
             <div class="search-form--content-block">
               <form>
@@ -32,6 +30,104 @@
                 <input type="submit" class="search-form--content-block--button" value="Søg" />
               </form>
             </div>
+            <div class="dataset--list-actions">
+              <select name="sort" class="dataset--actions-sort">
+                <option value="score desc, metadata_modified desc">Relevance</option>
+                <option selected="selected" value="title_string asc">Name Ascending</option>
+                <option value="title_string desc">Name Descending</option>
+                <option value="metadata_modified desc">Sidst modificeret</option>
+              </select>
+            </div>
+            <section class="dataset--list-wrapper">
+              <ul class="dataset--list">
+                <li class="dataset--list-item">
+                  <div class="dataset--list-content">
+                    <h3 class="dataset--list-header"><a href="dataset.php">Bålpladser i Aarhus</a></h3>
+                    3D bygninger for den indre del af Aarhus By (ca. indenfor Ringgaden). Data er på DWG-formatet og er en bygningstrådmodel. Data fylder ca. 50 MB. Vi anbefaler, at du...
+                  </div>
+                  <div class="dataset--list-footer">
+                    <a href="#" class="dataset--list-comments-link">12 kommentarer</a>|<a href="dataset.php" class="dataset--list-read-more">Se datasættet</a>
+                    <ul class="dataset--list-tags">
+                      <li class="dataset--list-tag-item">
+                        <a data-format="dwg" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">dwg</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="pdf" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">PDF</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="csv" class="label dataset--list-tag" href="/dataset/aarhus-vand-nedbor">CSV</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dataset--list-item">
+                  <div class="dataset--list-content">
+                    <h3 class="dataset--list-header"><a href="dataset.php">Bålpladser i Aarhus</a></h3>
+                    3D bygninger for den indre del af Aarhus By (ca. indenfor Ringgaden). Data er på DWG-formatet og er en bygningstrådmodel. Data fylder ca. 50 MB. Vi anbefaler, at du...
+                  </div>
+                  <div class="dataset--list-footer">
+                    <a href="#" class="dataset--list-comments-link">12 kommentarer</a>|<a href="dataset.php" class="dataset--list-read-more">Se datasættet</a>
+                    <ul class="dataset--list-tags">
+                      <li class="dataset--list-tag-item">
+                        <a data-format="dwg" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">dwg</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="pdf" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">PDF</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="csv" class="label dataset--list-tag" href="/dataset/aarhus-vand-nedbor">CSV</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dataset--list-item">
+                  <div class="dataset--list-content">
+                    <h3 class="dataset--list-header"><a href="dataset.php">Bålpladser i Aarhus</a></h3>
+                    3D bygninger for den indre del af Aarhus By (ca. indenfor Ringgaden). Data er på DWG-formatet og er en bygningstrådmodel. Data fylder ca. 50 MB. Vi anbefaler, at du...
+                  </div>
+                  <div class="dataset--list-footer">
+                    <a href="#" class="dataset--list-comments-link">12 kommentarer</a>|<a href="dataset.php" class="dataset--list-read-more">Se datasættet</a>
+                    <ul class="dataset--list-tags">
+                      <li class="dataset--list-tag-item">
+                        <a data-format="dwg" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">dwg</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="pdf" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">PDF</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="csv" class="label dataset--list-tag" href="/dataset/aarhus-vand-nedbor">CSV</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dataset--list-item">
+                  <div class="dataset--list-content">
+                    <h3 class="dataset--list-header"><a href="dataset.php">Bålpladser i Aarhus</a></h3>
+                    3D bygninger for den indre del af Aarhus By (ca. indenfor Ringgaden). Data er på DWG-formatet og er en bygningstrådmodel. Data fylder ca. 50 MB. Vi anbefaler, at du...
+                  </div>
+                  <div class="dataset--list-footer">
+                    <a href="#" class="dataset--list-comments-link">12 kommentarer</a>|<a href="dataset.php" class="dataset--list-read-more">Se datasættet</a>
+                    <ul class="dataset--list-tags">
+                      <li class="dataset--list-tag-item">
+                        <a data-format="dwg" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">dwg</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="pdf" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">PDF</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="csv" class="label dataset--list-tag" href="/dataset/aarhus-vand-nedbor">CSV</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <ul class="pager">
+                <li class="pager-previous first">&nbsp;</li>
+                <li class="pager-current">1</li>
+                <li class="pager-item"><a href="#">2</a></li>
+                <li class="pager-next last"><a href="#"><i class="icon-angle-right"></i></a></li>
+              </ul>
+            </section>
           </div>
         </div>
         <div class="secondary-content">

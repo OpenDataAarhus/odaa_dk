@@ -726,7 +726,7 @@ select {
   /* Required for setting height in webkit browsers on mac */
   -webkit-appearance: menulist-button;
   border: 1px solid #d5d5d5;
-  height: 36px;
+  height: 40px;
   min-width: 100%;
   padding: 8px;
 }
@@ -1016,7 +1016,7 @@ table tbody tr:hover th,
 .button, .list--actions .list--action-sort-latest, .comments--list-actions .list--action-sort-latest,
 .list--actions .list--action-sort-hot,
 .comments--list-actions .list--action-sort-hot, .search-form--content-block .search-form--content-block--button,
-a.button, .dataset--list-item .dataset--actions-preview, .list--actions .list--action-create, .comments--list-actions .list--action-create, .dataset--list-item .dataset--actions-download, .comments--post-comment-login,
+a.button, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview, .list--actions .list--action-create, .comments--list-actions .list--action-create, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download, .comments--post-comment-login,
 .comments--post-comment-create-user {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1037,23 +1037,23 @@ a.button, .dataset--list-item .dataset--actions-preview, .list--actions .list--a
 /* line 45, ../sass/framework/_buttons.scss */
 .button:focus, .list--actions .list--action-sort-latest:focus, .comments--list-actions .list--action-sort-latest:focus,
 .list--actions .list--action-sort-hot:focus,
-.comments--list-actions .list--action-sort-hot:focus, .search-form--content-block .search-form--content-block--button:focus, .dataset--list-item .dataset--actions-preview:focus, .list--actions .list--action-create:focus, .comments--list-actions .list--action-create:focus, .dataset--list-item .dataset--actions-download:focus, .comments--post-comment-login:focus,
+.comments--list-actions .list--action-sort-hot:focus, .search-form--content-block .search-form--content-block--button:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:focus, .list--actions .list--action-create:focus, .comments--list-actions .list--action-create:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:focus, .comments--post-comment-login:focus,
 .comments--post-comment-create-user:focus, .button:hover, .list--actions .list--action-sort-latest:hover, .comments--list-actions .list--action-sort-latest:hover,
 .list--actions .list--action-sort-hot:hover,
-.comments--list-actions .list--action-sort-hot:hover, .search-form--content-block .search-form--content-block--button:hover, .dataset--list-item .dataset--actions-preview:hover, .list--actions .list--action-create:hover, .comments--list-actions .list--action-create:hover, .dataset--list-item .dataset--actions-download:hover, .comments--post-comment-login:hover,
+.comments--list-actions .list--action-sort-hot:hover, .search-form--content-block .search-form--content-block--button:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:hover, .list--actions .list--action-create:hover, .comments--list-actions .list--action-create:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:hover, .comments--post-comment-login:hover,
 .comments--post-comment-create-user:hover, .button:active, .list--actions .list--action-sort-latest:active, .comments--list-actions .list--action-sort-latest:active,
 .list--actions .list--action-sort-hot:active,
-.comments--list-actions .list--action-sort-hot:active, .search-form--content-block .search-form--content-block--button:active, .dataset--list-item .dataset--actions-preview:active, .list--actions .list--action-create:active, .comments--list-actions .list--action-create:active, .dataset--list-item .dataset--actions-download:active, .comments--post-comment-login:active,
+.comments--list-actions .list--action-sort-hot:active, .search-form--content-block .search-form--content-block--button:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:active, .list--actions .list--action-create:active, .comments--list-actions .list--action-create:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:active, .comments--post-comment-login:active,
 .comments--post-comment-create-user:active {
   text-decoration: none;
 }
 /* line 51, ../sass/framework/_buttons.scss */
 .disabled.button, .list--actions .disabled.list--action-sort-latest, .comments--list-actions .disabled.list--action-sort-latest,
 .list--actions .disabled.list--action-sort-hot,
-.comments--list-actions .disabled.list--action-sort-hot, .search-form--content-block .disabled.search-form--content-block--button, .dataset--list-item .disabled.dataset--actions-preview, .list--actions .disabled.list--action-create, .comments--list-actions .disabled.list--action-create, .dataset--list-item .disabled.dataset--actions-download, .disabled.comments--post-comment-login,
+.comments--list-actions .disabled.list--action-sort-hot, .search-form--content-block .disabled.search-form--content-block--button, .dataset--data-resources--list-item .disabled.dataset--data-resources--list-actions-preview, .list--actions .disabled.list--action-create, .comments--list-actions .disabled.list--action-create, .dataset--data-resources--list-item .disabled.dataset--data-resources--list-actions-download, .disabled.comments--post-comment-login,
 .disabled.comments--post-comment-create-user, [disabled].button, .list--actions [disabled].list--action-sort-latest, .comments--list-actions [disabled].list--action-sort-latest,
 .list--actions [disabled].list--action-sort-hot,
-.comments--list-actions [disabled].list--action-sort-hot, .search-form--content-block [disabled].search-form--content-block--button, .dataset--list-item [disabled].dataset--actions-preview, .list--actions [disabled].list--action-create, .comments--list-actions [disabled].list--action-create, .dataset--list-item [disabled].dataset--actions-download, [disabled].comments--post-comment-login,
+.comments--list-actions [disabled].list--action-sort-hot, .search-form--content-block [disabled].search-form--content-block--button, .dataset--data-resources--list-item [disabled].dataset--data-resources--list-actions-preview, .list--actions [disabled].list--action-create, .comments--list-actions [disabled].list--action-create, .dataset--data-resources--list-item [disabled].dataset--data-resources--list-actions-download, [disabled].comments--post-comment-login,
 [disabled].comments--post-comment-create-user {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
@@ -1156,7 +1156,7 @@ a.button i[class^="icon-"],
 /* line 103, ../sass/framework/_buttons.scss */
 .list--actions .list--action-sort-latest.active, .comments--list-actions .list--action-sort-latest.active,
 .list--actions .list--action-sort-hot.active,
-.comments--list-actions .list--action-sort-hot.active, .dataset--list-item .dataset--actions-preview {
+.comments--list-actions .list--action-sort-hot.active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e5420c), color-stop(100%, #9c2d08));
   background-image: -webkit-linear-gradient(#e5420c, #9c2d08);
   background-image: -moz-linear-gradient(#e5420c, #9c2d08);
@@ -1170,19 +1170,19 @@ a.button i[class^="icon-"],
 /* line 76, ../sass/framework/_buttons.scss */
 .list--actions .list--action-sort-latest.active:link, .comments--list-actions .list--action-sort-latest.active:link,
 .list--actions .list--action-sort-hot.active:link,
-.comments--list-actions .list--action-sort-hot.active:link, .dataset--list-item .dataset--actions-preview:link, .list--actions .list--action-sort-latest.active:visited, .comments--list-actions .list--action-sort-latest.active:visited,
+.comments--list-actions .list--action-sort-hot.active:link, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:link, .list--actions .list--action-sort-latest.active:visited, .comments--list-actions .list--action-sort-latest.active:visited,
 .list--actions .list--action-sort-hot.active:visited,
-.comments--list-actions .list--action-sort-hot.active:visited, .dataset--list-item .dataset--actions-preview:visited {
+.comments--list-actions .list--action-sort-hot.active:visited, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:visited {
   color: white;
 }
 /* line 83, ../sass/framework/_buttons.scss */
 .list--actions .list--action-sort-latest.active:focus, .comments--list-actions .list--action-sort-latest.active:focus,
 .list--actions .list--action-sort-hot.active:focus,
-.comments--list-actions .list--action-sort-hot.active:focus, .dataset--list-item .dataset--actions-preview:focus, .list--actions .list--action-sort-latest.active:hover, .comments--list-actions .list--action-sort-latest.active:hover,
+.comments--list-actions .list--action-sort-hot.active:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:focus, .list--actions .list--action-sort-latest.active:hover, .comments--list-actions .list--action-sort-latest.active:hover,
 .list--actions .list--action-sort-hot.active:hover,
-.comments--list-actions .list--action-sort-hot.active:hover, .dataset--list-item .dataset--actions-preview:hover, .list--actions .list--action-sort-latest.active:active, .comments--list-actions .list--action-sort-latest.active:active,
+.comments--list-actions .list--action-sort-hot.active:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:hover, .list--actions .list--action-sort-latest.active:active, .comments--list-actions .list--action-sort-latest.active:active,
 .list--actions .list--action-sort-hot.active:active,
-.comments--list-actions .list--action-sort-hot.active:active, .dataset--list-item .dataset--actions-preview:active {
+.comments--list-actions .list--action-sort-hot.active:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:active {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cd3b0b), color-stop(100%, #842607));
   background-image: -webkit-linear-gradient(#cd3b0b, #842607);
   background-image: -moz-linear-gradient(#cd3b0b, #842607);
@@ -1193,13 +1193,13 @@ a.button i[class^="icon-"],
 /* line 89, ../sass/framework/_buttons.scss */
 .list--actions .list--action-sort-latest.active i[class^="icon-"], .comments--list-actions .list--action-sort-latest.active i[class^="icon-"],
 .list--actions .list--action-sort-hot.active i[class^="icon-"],
-.comments--list-actions .list--action-sort-hot.active i[class^="icon-"], .dataset--list-item .dataset--actions-preview i[class^="icon-"] {
+.comments--list-actions .list--action-sort-hot.active i[class^="icon-"], .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview i[class^="icon-"] {
   margin-right: 8px;
 }
 
 /* Action button */
 /* line 108, ../sass/framework/_buttons.scss */
-.list--actions .list--action-create, .comments--list-actions .list--action-create, .dataset--list-item .dataset--actions-download, .comments--post-comment-login,
+.list--actions .list--action-create, .comments--list-actions .list--action-create, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download, .comments--post-comment-login,
 .comments--post-comment-create-user {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #96b000), color-stop(100%, #556300));
   background-image: -webkit-linear-gradient(#96b000, #556300);
@@ -1212,15 +1212,15 @@ a.button i[class^="icon-"],
   color: white;
 }
 /* line 76, ../sass/framework/_buttons.scss */
-.list--actions .list--action-create:link, .comments--list-actions .list--action-create:link, .dataset--list-item .dataset--actions-download:link, .comments--post-comment-login:link,
-.comments--post-comment-create-user:link, .list--actions .list--action-create:visited, .comments--list-actions .list--action-create:visited, .dataset--list-item .dataset--actions-download:visited, .comments--post-comment-login:visited,
+.list--actions .list--action-create:link, .comments--list-actions .list--action-create:link, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:link, .comments--post-comment-login:link,
+.comments--post-comment-create-user:link, .list--actions .list--action-create:visited, .comments--list-actions .list--action-create:visited, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:visited, .comments--post-comment-login:visited,
 .comments--post-comment-create-user:visited {
   color: white;
 }
 /* line 83, ../sass/framework/_buttons.scss */
-.list--actions .list--action-create:focus, .comments--list-actions .list--action-create:focus, .dataset--list-item .dataset--actions-download:focus, .comments--post-comment-login:focus,
-.comments--post-comment-create-user:focus, .list--actions .list--action-create:hover, .comments--list-actions .list--action-create:hover, .dataset--list-item .dataset--actions-download:hover, .comments--post-comment-login:hover,
-.comments--post-comment-create-user:hover, .list--actions .list--action-create:active, .comments--list-actions .list--action-create:active, .dataset--list-item .dataset--actions-download:active, .comments--post-comment-login:active,
+.list--actions .list--action-create:focus, .comments--list-actions .list--action-create:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:focus, .comments--post-comment-login:focus,
+.comments--post-comment-create-user:focus, .list--actions .list--action-create:hover, .comments--list-actions .list--action-create:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:hover, .comments--post-comment-login:hover,
+.comments--post-comment-create-user:hover, .list--actions .list--action-create:active, .comments--list-actions .list--action-create:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:active, .comments--post-comment-login:active,
 .comments--post-comment-create-user:active {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #809700), color-stop(100%, #3f4a00));
   background-image: -webkit-linear-gradient(#809700, #3f4a00);
@@ -1230,7 +1230,7 @@ a.button i[class^="icon-"],
   background-color: #556300;
 }
 /* line 89, ../sass/framework/_buttons.scss */
-.list--actions .list--action-create i[class^="icon-"], .comments--list-actions .list--action-create i[class^="icon-"], .dataset--list-item .dataset--actions-download i[class^="icon-"], .comments--post-comment-login i[class^="icon-"],
+.list--actions .list--action-create i[class^="icon-"], .comments--list-actions .list--action-create i[class^="icon-"], .dataset--data-resources--list-item .dataset--data-resources--list-actions-download i[class^="icon-"], .comments--post-comment-login i[class^="icon-"],
 .comments--post-comment-create-user i[class^="icon-"] {
   margin-right: 8px;
 }
@@ -1369,7 +1369,7 @@ button.button,
 /* Variables
    ========================================================================== */
 /* line 21, ../sass/framework/_labels.scss */
-.label, .label-inverted, .dataset--tags-list .dataset--tags-list-tag, .community--tag {
+.label, .label-inverted, .dataset--list-tag, .dataset--tags-list .dataset--tags-list-tag, .community--tag {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
@@ -1386,22 +1386,22 @@ button.button,
   /* Make sure it works on a link */
 }
 /* line 36, ../sass/framework/_labels.scss */
-.label a:link, .label-inverted a:link, .dataset--tags-list .dataset--tags-list-tag a:link, .community--tag a:link, .label a:visited, .label-inverted a:visited, .dataset--tags-list .dataset--tags-list-tag a:visited, .community--tag a:visited, .label a:hover, .label-inverted a:hover, .dataset--tags-list .dataset--tags-list-tag a:hover, .community--tag a:hover {
+.label a:link, .label-inverted a:link, .dataset--list-tag a:link, .dataset--tags-list .dataset--tags-list-tag a:link, .community--tag a:link, .label a:visited, .label-inverted a:visited, .dataset--list-tag a:visited, .dataset--tags-list .dataset--tags-list-tag a:visited, .community--tag a:visited, .label a:hover, .label-inverted a:hover, .dataset--list-tag a:hover, .dataset--tags-list .dataset--tags-list-tag a:hover, .community--tag a:hover {
   color: white;
   text-decoration: none;
 }
 /* line 44, ../sass/framework/_labels.scss */
-.label:link, .label-inverted:link, .dataset--tags-list .dataset--tags-list-tag:link, .community--tag:link, .label:visited, .label-inverted:visited, .dataset--tags-list .dataset--tags-list-tag:visited, .community--tag:visited {
+.label:link, .label-inverted:link, .dataset--list-tag:link, .dataset--tags-list .dataset--tags-list-tag:link, .community--tag:link, .label:visited, .label-inverted:visited, .dataset--list-tag:visited, .dataset--tags-list .dataset--tags-list-tag:visited, .community--tag:visited {
   color: white;
 }
 /* line 48, ../sass/framework/_labels.scss */
-.label:hover, .label-inverted:hover, .dataset--tags-list .dataset--tags-list-tag:hover, .community--tag:hover {
+.label:hover, .label-inverted:hover, .dataset--list-tag:hover, .dataset--tags-list .dataset--tags-list-tag:hover, .community--tag:hover {
   background-color: #b53409;
   color: white;
   text-decoration: none;
 }
 /* line 54, ../sass/framework/_labels.scss */
-.label i[class^="icon-"], .label-inverted i[class^="icon-"], .dataset--tags-list .dataset--tags-list-tag i[class^="icon-"], .community--tag i[class^="icon-"] {
+.label i[class^="icon-"], .label-inverted i[class^="icon-"], .dataset--list-tag i[class^="icon-"], .dataset--tags-list .dataset--tags-list-tag i[class^="icon-"], .community--tag i[class^="icon-"] {
   margin-right: 5px;
 }
 
@@ -4627,7 +4627,7 @@ body {
 
 /* Dataset activity icons
  *
- * TODO: Clean this mess up when got the time
+ * TODO: Clean this mess up when get the time
    ========================================================================== */
 /* line 102, ../sass/layout/_ckan.scss */
 .dataset--activity {
@@ -4866,6 +4866,133 @@ body {
   background-color: #8BA669;
 }
 
+/* Dataset labels
+   ========================================================================== */
+/* line 307, ../sass/layout/_ckan.scss */
+.label[data-format=dwg], [data-format=dwg].label-inverted, [data-format=dwg].dataset--list-tag, .dataset--tags-list [data-format=dwg].dataset--tags-list-tag, [data-format=dwg].community--tag,
+.label[data-format*=dwg],
+[data-format*=dwg].label-inverted,
+[data-format*=dwg].dataset--list-tag,
+.dataset--tags-list [data-format*=dwg].dataset--tags-list-tag,
+[data-format*=dwg].community--tag {
+  background-color: #aaa;
+}
+
+/* line 312, ../sass/layout/_ckan.scss */
+.label[data-format=html], [data-format=html].label-inverted, [data-format=html].dataset--list-tag, .dataset--tags-list [data-format=html].dataset--tags-list-tag, [data-format=html].community--tag,
+.label[data-format*=html],
+[data-format*=html].label-inverted,
+[data-format*=html].dataset--list-tag,
+.dataset--tags-list [data-format*=html].dataset--tags-list-tag,
+[data-format*=html].community--tag {
+  background-color: #55a1ce;
+}
+
+/* line 317, ../sass/layout/_ckan.scss */
+.label[data-format=json], [data-format=json].label-inverted, [data-format=json].dataset--list-tag, .dataset--tags-list [data-format=json].dataset--tags-list-tag, [data-format=json].community--tag,
+.label[data-format*=json],
+[data-format*=json].label-inverted,
+[data-format*=json].dataset--list-tag,
+.dataset--tags-list [data-format*=json].dataset--tags-list-tag,
+[data-format*=json].community--tag {
+  background-color: #ef7100;
+}
+
+/* line 322, ../sass/layout/_ckan.scss */
+.label[data-format=xml], [data-format=xml].label-inverted, [data-format=xml].dataset--list-tag, .dataset--tags-list [data-format=xml].dataset--tags-list-tag, [data-format=xml].community--tag,
+.label[data-format*=xml],
+[data-format*=xml].label-inverted,
+[data-format*=xml].dataset--list-tag,
+.dataset--tags-list [data-format*=xml].dataset--tags-list-tag,
+[data-format*=xml].community--tag {
+  background-color: #ef7100;
+}
+
+/* line 327, ../sass/layout/_ckan.scss */
+.label[data-format=text], [data-format=text].label-inverted, [data-format=text].dataset--list-tag, .dataset--tags-list [data-format=text].dataset--tags-list-tag, [data-format=text].community--tag,
+.label[data-format*=text],
+[data-format*=text].label-inverted,
+[data-format*=text].dataset--list-tag,
+.dataset--tags-list [data-format*=text].dataset--tags-list-tag,
+[data-format*=text].community--tag {
+  background-color: #74cbec;
+}
+
+/* line 332, ../sass/layout/_ckan.scss */
+.label[data-format=csv], [data-format=csv].label-inverted, [data-format=csv].dataset--list-tag, .dataset--tags-list [data-format=csv].dataset--tags-list-tag, [data-format=csv].community--tag,
+.label[data-format*=csv],
+[data-format*=csv].label-inverted,
+[data-format*=csv].dataset--list-tag,
+.dataset--tags-list [data-format*=csv].dataset--tags-list-tag,
+[data-format*=csv].community--tag {
+  background-color: #dfb100;
+}
+
+/* line 337, ../sass/layout/_ckan.scss */
+.label[data-format=xls], [data-format=xls].label-inverted, [data-format=xls].dataset--list-tag, .dataset--tags-list [data-format=xls].dataset--tags-list-tag, [data-format=xls].community--tag,
+.label[data-format*=xls],
+[data-format*=xls].label-inverted,
+[data-format*=xls].dataset--list-tag,
+.dataset--tags-list [data-format*=xls].dataset--tags-list-tag,
+[data-format*=xls].community--tag {
+  background-color: #2db55d;
+}
+
+/* line 342, ../sass/layout/_ckan.scss */
+.label[data-format=zip], [data-format=zip].label-inverted, [data-format=zip].dataset--list-tag, .dataset--tags-list [data-format=zip].dataset--tags-list-tag, [data-format=zip].community--tag,
+.label[data-format*=zip],
+[data-format*=zip].label-inverted,
+[data-format*=zip].dataset--list-tag,
+.dataset--tags-list [data-format*=zip].dataset--tags-list-tag,
+[data-format*=zip].community--tag {
+  background-color: #686868;
+}
+
+/* line 347, ../sass/layout/_ckan.scss */
+.label[data-format=api], [data-format=api].label-inverted, [data-format=api].dataset--list-tag, .dataset--tags-list [data-format=api].dataset--tags-list-tag, [data-format=api].community--tag,
+.label[data-format*=api],
+[data-format*=api].label-inverted,
+[data-format*=api].dataset--list-tag,
+.dataset--tags-list [data-format*=api].dataset--tags-list-tag,
+[data-format*=api].community--tag {
+  background-color: #ec96be;
+}
+
+/* line 352, ../sass/layout/_ckan.scss */
+.label[data-format=pdf], [data-format=pdf].label-inverted, [data-format=pdf].dataset--list-tag, .dataset--tags-list [data-format=pdf].dataset--tags-list-tag, [data-format=pdf].community--tag,
+.label[data-format*=pdf],
+[data-format*=pdf].label-inverted,
+[data-format*=pdf].dataset--list-tag,
+.dataset--tags-list [data-format*=pdf].dataset--tags-list-tag,
+[data-format*=pdf].community--tag {
+  background-color: #e0051e;
+}
+
+/* line 360, ../sass/layout/_ckan.scss */
+.label[data-format=rdf], [data-format=rdf].label-inverted, [data-format=rdf].dataset--list-tag, .dataset--tags-list [data-format=rdf].dataset--tags-list-tag, [data-format=rdf].community--tag,
+.label[data-format*=rdf],
+[data-format*=rdf].label-inverted,
+[data-format*=rdf].dataset--list-tag,
+.dataset--tags-list [data-format*=rdf].dataset--tags-list-tag,
+[data-format*=rdf].community--tag,
+.label[data-format*=nquad],
+[data-format*=nquad].label-inverted,
+[data-format*=nquad].dataset--list-tag,
+.dataset--tags-list [data-format*=nquad].dataset--tags-list-tag,
+[data-format*=nquad].community--tag,
+.label[data-format*=ntriples],
+[data-format*=ntriples].label-inverted,
+[data-format*=ntriples].dataset--list-tag,
+.dataset--tags-list [data-format*=ntriples].dataset--tags-list-tag,
+[data-format*=ntriples].community--tag,
+.label[data-format*=turtle],
+[data-format*=turtle].label-inverted,
+[data-format*=turtle].dataset--list-tag,
+.dataset--tags-list [data-format*=turtle].dataset--tags-list-tag,
+[data-format*=turtle].community--tag {
+  background-color: #0b4498;
+}
+
 /**
  * Footer
  *
@@ -4978,7 +5105,7 @@ body {
  * Used by CKAN for empty descriptions etc.
    ========================================================================== */
 /* line 24, ../sass/module/_module.scss */
-.spotbox--content-empty, .dataset--list-item .dataset--description-empty, .community--empty-text {
+.spotbox--content-empty, .dataset--empty-text, .dataset--data-resources--list-item .dataset--data-resources--list-description-empty, .community--empty-text {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
   font-family: "exo-regular-italic";
@@ -4988,7 +5115,7 @@ body {
 /* Section spacing
    ========================================================================== */
 /* line 32, ../sass/module/_module.scss */
-.page--section, .dataset--data-resources, .dataset--tags, .dataset--additional-info, .community--wrapper, .community--list-wrapper, .comments--wrapper, .comments--list-actions, .comments--list-item-actions, .comments--post-comment-wrapper {
+.page--section, .dataset--list-wrapper, .dataset--data-resources, .dataset--tags, .dataset--additional-info, .community--wrapper, .community--list-wrapper, .comments--wrapper, .comments--list-actions, .comments--list-item-actions, .comments--post-comment-wrapper {
   border-top: 1px dashed #e6e6e6;
   margin-top: 20px;
   padding-top: 20px;
@@ -4997,19 +5124,19 @@ body {
 /* Zebra stribed list
    ========================================================================== */
 /* line 42, ../sass/module/_module.scss */
-.dataset--list-item:nth-child(odd) {
+.dataset--data-resources--list-item:nth-child(odd) {
   background-color: #f6f6f6;
 }
 /* line 45, ../sass/module/_module.scss */
-.dataset--list-item:nth-child(odd):hover {
+.dataset--data-resources--list-item:nth-child(odd):hover {
   background-color: #e9e9e9;
 }
 /* line 50, ../sass/module/_module.scss */
-.dataset--list-item:nth-child(even) {
+.dataset--data-resources--list-item:nth-child(even) {
   background-color: #fbfbfb;
 }
 /* line 53, ../sass/module/_module.scss */
-.dataset--list-item:nth-child(even):hover {
+.dataset--data-resources--list-item:nth-child(even):hover {
   background-color: #e2e2e2;
 }
 
@@ -5293,35 +5420,34 @@ body {
 /* %module-list-alternate
    ========================================================================== */
 /* line 340, ../sass/module/_module.scss */
-.community--list {
-  margin-top: 20px;
+.dataset--list, .community--list {
   padding-left: 0;
 }
 
-/* line 345, ../sass/module/_module.scss */
-.community--list-heading {
+/* line 344, ../sass/module/_module.scss */
+.dataset--list-heading, .community--list-heading {
   font-size: 160%;
   margin-right: 5px;
 }
 
-/* line 350, ../sass/module/_module.scss */
-.community--list-item {
+/* line 349, ../sass/module/_module.scss */
+.dataset--list-item, .community--list-item {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   background-color: #fbfbfb;
   border: 1px solid #efefef;
-  margin-top: 20px;
+  margin-bottom: 20px;
   overflow: hidden;
   padding: 20px;
 }
-/* line 359, ../sass/module/_module.scss */
-.community--list-item:hover {
+/* line 358, ../sass/module/_module.scss */
+.dataset--list-item:hover, .community--list-item:hover {
   border: 1px solid #d5d5d5;
 }
 
-/* line 364, ../sass/module/_module.scss */
-.community--list-icon {
+/* line 363, ../sass/module/_module.scss */
+.dataset--list-icon, .community--list-icon {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -5340,83 +5466,87 @@ body {
   text-align: center;
   width: 60px;
 }
-/* line 380, ../sass/module/_module.scss */
-.community--list-icon:hover {
+/* line 379, ../sass/module/_module.scss */
+.dataset--list-icon:hover, .community--list-icon:hover {
   background-color: #809700;
 }
-/* line 389, ../sass/module/_module.scss */
-.community--list-icon a:link, .community--list-icon a:visited, .community--list-icon a:hover, .community--list-icon a:focus, .community--list-icon a:active {
+/* line 388, ../sass/module/_module.scss */
+.dataset--list-icon a:link, .community--list-icon a:link, .dataset--list-icon a:visited, .community--list-icon a:visited, .dataset--list-icon a:hover, .community--list-icon a:hover, .dataset--list-icon a:focus, .community--list-icon a:focus, .dataset--list-icon a:active, .community--list-icon a:active {
   color: white;
 }
 
-/* line 395, ../sass/module/_module.scss */
-.community--list-content {
+/* line 394, ../sass/module/_module.scss */
+.dataset--list-content, .community--list-content {
   display: inline-block;
   margin-bottom: 20px;
   max-width: 80%;
 }
 
-/* line 402, ../sass/module/_module.scss */
-.community--list-meta {
+/* line 401, ../sass/module/_module.scss */
+.dataset--list-meta, .community--list-meta {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
   margin-bottom: 5px;
 }
 
-/* line 408, ../sass/module/_module.scss */
-.community--list-posted {
+/* line 407, ../sass/module/_module.scss */
+.dataset--list-posted, .community--list-posted {
   margin-right: 5px;
 }
 
-/* line 412, ../sass/module/_module.scss */
-.community--list-author {
+/* line 411, ../sass/module/_module.scss */
+.dataset--list-author, .community--list-author {
   margin-left: 5px;
 }
 
-/* line 416, ../sass/module/_module.scss */
-.community--list-footer {
+/* line 415, ../sass/module/_module.scss */
+.dataset--list-footer, .community--list-footer {
   border-top: 1px dashed #e6e6e6;
   margin-top: 20px;
   padding-top: 10px;
   text-align: right;
 }
 
-/* line 423, ../sass/module/_module.scss */
-.community--list-comments-link {
+/* line 422, ../sass/module/_module.scss */
+.dataset--list-comments-link, .community--list-comments-link {
   margin-right: 5px;
 }
 
-/* line 427, ../sass/module/_module.scss */
-.community--list-read-more {
+/* line 426, ../sass/module/_module.scss */
+.dataset--list-read-more, .community--list-read-more {
   margin-left: 5px;
 }
 
 /* List actions
    ========================================================================== */
-/* line 444, ../sass/module/_module.scss */
+/* line 433, ../sass/module/_module.scss */
+.list--actions, .comments--list-actions {
+  margin-bottom: 20px;
+}
+/* line 445, ../sass/module/_module.scss */
 .list--actions .list--action-sort-latest, .comments--list-actions .list--action-sort-latest {
   margin-right: 10px;
 }
-/* line 448, ../sass/module/_module.scss */
+/* line 449, ../sass/module/_module.scss */
 .list--actions .list--action-create, .comments--list-actions .list--action-create {
   float: right;
 }
 
 /* Pager
    ========================================================================== */
-/* line 459, ../sass/module/_module.scss */
+/* line 460, ../sass/module/_module.scss */
 .pager {
   margin-top: 20px;
   padding-left: 0;
   text-align: center;
 }
-/* line 464, ../sass/module/_module.scss */
+/* line 465, ../sass/module/_module.scss */
 .pager li {
   display: inline-block;
   margin-left: -4px;
   margin-right: 4px;
 }
-/* line 470, ../sass/module/_module.scss */
+/* line 471, ../sass/module/_module.scss */
 .pager li.pager-current,
 .pager li a {
   background-color: #efefef;
@@ -5426,26 +5556,26 @@ body {
   padding-bottom: 5px;
   padding-left: 15px;
 }
-/* line 478, ../sass/module/_module.scss */
+/* line 479, ../sass/module/_module.scss */
 .pager li.pager-current:hover,
 .pager li a:hover {
   text-decoration: none;
 }
-/* line 483, ../sass/module/_module.scss */
+/* line 484, ../sass/module/_module.scss */
 .pager li.pager-current {
   background-color: #e2e2e2;
 }
-/* line 489, ../sass/module/_module.scss */
+/* line 490, ../sass/module/_module.scss */
 .pager .active a,
 .pager .active a:hover {
   cursor: default;
   text-decoration: underline;
 }
-/* line 494, ../sass/module/_module.scss */
+/* line 495, ../sass/module/_module.scss */
 .pager .disabled {
   background-color: #fbfbfb;
 }
-/* line 497, ../sass/module/_module.scss */
+/* line 498, ../sass/module/_module.scss */
 .pager .disabled a:hover {
   cursor: default;
   text-decoration: none;
@@ -5827,9 +5957,50 @@ body {
  *
  * @author magnify
  */
+/* Dataset list
+   ========================================================================== */
+/* line 18, ../sass/module/_dataset.scss */
+.dataset--empty-text {
+  font-size: 160%;
+}
+
+/* line 36, ../sass/module/_dataset.scss */
+.dataset--list-content {
+  margin-bottom: 0;
+}
+
+/* line 67, ../sass/module/_dataset.scss */
+.dataset--list-tags {
+  float: left;
+  padding-left: 0;
+}
+
+/* line 72, ../sass/module/_dataset.scss */
+.dataset--list-tag-item {
+  display: inline-block;
+}
+
+/* line 76, ../sass/module/_dataset.scss */
+.dataset--list-tag {
+  font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-weight: normal;
+}
+
+/* Dataset actions
+   ========================================================================== */
+/* line 84, ../sass/module/_dataset.scss */
+.dataset--list-actions {
+  text-align: right;
+}
+
+/* line 88, ../sass/module/_dataset.scss */
+.dataset--actions-sort {
+  min-width: 35%;
+}
+
 /* Dataset tabs
    ========================================================================== */
-/* line 10, ../sass/module/_dataset.scss */
+/* line 94, ../sass/module/_dataset.scss */
 .dataset--tabs {
   -webkit-border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
@@ -5845,12 +6016,12 @@ body {
   padding-left: 20px;
 }
 
-/* line 26, ../sass/module/_dataset.scss */
+/* line 110, ../sass/module/_dataset.scss */
 .dataset--tab,
 .dataset--tab-active {
   margin-right: 11px;
 }
-/* line 30, ../sass/module/_dataset.scss */
+/* line 114, ../sass/module/_dataset.scss */
 .dataset--tab .dataset--tab-link,
 .dataset--tab .dataset--tab-link:hover,
 .dataset--tab-active .dataset--tab-link,
@@ -5860,7 +6031,7 @@ body {
   border-left: 1px solid #d5d5d5;
 }
 
-/* line 39, ../sass/module/_dataset.scss */
+/* line 123, ../sass/module/_dataset.scss */
 .dataset--tab-active .dataset--tab-link,
 .dataset--tab-active .dataset--tab-link:hover {
   background-color: white;
@@ -5870,40 +6041,40 @@ body {
 
 /* Dataset list resources
    ========================================================================== */
-/* line 52, ../sass/module/_dataset.scss */
-.dataset--list {
+/* line 136, ../sass/module/_dataset.scss */
+.dataset--data-resources--list {
   padding-left: 0;
 }
 
-/* line 56, ../sass/module/_dataset.scss */
-.dataset--list-item {
+/* line 140, ../sass/module/_dataset.scss */
+.dataset--data-resources--list-item {
   overflow: hidden;
   padding: 10px 10px 10px 60px;
   position: relative;
 }
-/* line 63, ../sass/module/_dataset.scss */
-.dataset--list-item .dataset--info {
+/* line 147, ../sass/module/_dataset.scss */
+.dataset--data-resources--list-item .dataset--data-resources--list-info {
   float: left;
 }
-/* line 67, ../sass/module/_dataset.scss */
-.dataset--list-item .ckan--format-label {
+/* line 151, ../sass/module/_dataset.scss */
+.dataset--data-resources--list-item .ckan--format-label {
   left: 10px;
   position: absolute;
   top: 10px;
 }
-/* line 73, ../sass/module/_dataset.scss */
-.dataset--list-item .dataset--description {
+/* line 157, ../sass/module/_dataset.scss */
+.dataset--data-resources--list-item .dataset--data-resources--list-description {
   margin-bottom: 0;
 }
-/* line 81, ../sass/module/_dataset.scss */
-.dataset--list-item .dataset--actions {
+/* line 165, ../sass/module/_dataset.scss */
+.dataset--data-resources--list-item .dataset--data-resources--list-actions {
   float: right;
   margin-top: 2px;
 }
 
 /* Dataset list tags
    ========================================================================== */
-/* line 103, ../sass/module/_dataset.scss */
+/* line 187, ../sass/module/_dataset.scss */
 .dataset--tags-list {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -5911,7 +6082,7 @@ body {
   background-color: #f6f6f6;
   padding: 20px;
 }
-/* line 109, ../sass/module/_dataset.scss */
+/* line 193, ../sass/module/_dataset.scss */
 .dataset--tags-list .dataset--tags-list-item {
   display: inline-block;
   margin-right: 6px;
@@ -5935,7 +6106,12 @@ body {
   font-size: 160%;
 }
 
-/* line 73, ../sass/module/_community.scss */
+/* line 32, ../sass/module/_community.scss */
+.community--list {
+  margin-top: 20px;
+}
+
+/* line 75, ../sass/module/_community.scss */
 .community--tag {
   font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: normal;
@@ -5944,7 +6120,7 @@ body {
 
 /* Community filter
    ========================================================================== */
-/* line 107, ../sass/module/_community.scss */
+/* line 109, ../sass/module/_community.scss */
 .community--filter-list-item .active:link, .community--filter-list-item .active:visited, .community--filter-list-item .active:hover, .community--filter-list-item .active:focus, .community--filter-list-item .active:active {
   color: #be370a;
 }

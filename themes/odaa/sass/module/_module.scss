@@ -338,7 +338,6 @@
 /* %module-list-alternate
    ========================================================================== */
 %module-list-alternate {
-  margin-top: $large-spacing;
   padding-left: 0;
 }
 
@@ -352,7 +351,7 @@
 
   background-color: $gray-lighter;
   border: 1px solid $gray-light;
-  margin-top: $large-spacing;
+  margin-bottom: $large-spacing;
   overflow: hidden;
   padding: $large-spacing;
 
@@ -432,6 +431,8 @@
 /* List actions
    ========================================================================== */
 .list--actions {
+  margin-bottom: $large-spacing;
+
   .list--action-sort-latest,
   .list--action-sort-hot {
     @extend .button;

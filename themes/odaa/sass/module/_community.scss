@@ -31,6 +31,8 @@
 
 .community--list {
   @extend %module-list-alternate;
+
+  margin-top: $large-spacing;
 }
 
 .community--list-item {

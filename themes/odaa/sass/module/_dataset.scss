@@ -5,6 +5,90 @@
  */
 
 
+/* Dataset list
+   ========================================================================== */
+.dataset--list-wrapper {
+  @extend %section-spacing;
+}
+
+.dataset--list-heading {
+  @extend %module-list-alternate-heading;
+}
+
+.dataset--empty-text {
+  @extend %empty-text;
+
+  font-size: $font-size-larger;
+}
+
+.dataset--list {
+  @extend %module-list-alternate;
+}
+
+.dataset--list-item {
+  @extend %module-list-alternate-item;
+}
+
+.dataset--list-icon {
+  @extend %module-list-alternate-icon;
+}
+
+.dataset--list-content {
+  @extend %module-list-alternate-content;
+
+  margin-bottom: 0;
+}
+
+
+.dataset--list-meta {
+  @extend %module-list-alternate-meta;
+}
+
+.dataset--list-posted {
+  @extend %module-list-alternate-posted;
+}
+
+.dataset--list-author {
+  @extend %module-list-alternate-author;
+}
+
+.dataset--list-footer {
+  @extend %module-list-alternate-footer;
+}
+
+.dataset--list-comments-link {
+  @extend %module-list-alternate-comments-link;
+}
+
+.dataset--list-read-more {
+  @extend %module-list-alternate-read-more;
+}
+
+.dataset--list-tags {
+  float: left;
+  padding-left: 0;
+}
+
+.dataset--list-tag-item {
+  display: inline-block;
+}
+
+.dataset--list-tag {
+  @include font-normal();
+  @extend .label;
+}
+
+
+/* Dataset actions
+   ========================================================================== */
+.dataset--list-actions {
+  text-align: right;
+}
+
+.dataset--actions-sort {
+  min-width: 35%;
+}
+
 /* Dataset tabs
    ========================================================================== */
 .dataset--tabs {
@@ -49,18 +133,18 @@
   @extend %section-spacing;
 }
 
-.dataset--list {
+.dataset--data-resources--list {
   padding-left: 0;
 }
 
-.dataset--list-item {
+.dataset--data-resources--list-item {
   @extend %zebra-list;
 
   overflow: hidden;
   padding: $medium-spacing $medium-spacing $medium-spacing 60px;
   position: relative;
 
-  .dataset--info {
+  .dataset--data-resources--list-info {
     float: left;
   }
 
@@ -70,24 +154,24 @@
     top: 10px;
   }
 
-  .dataset--description {
+  .dataset--data-resources--list-description {
     margin-bottom: 0;
   }
 
-  .dataset--description-empty {
+  .dataset--data-resources--list-description-empty {
     @extend %empty-text;
   }
 
-  .dataset--actions {
+  .dataset--data-resources--list-actions {
     float: right;
     margin-top: 2px;
   }
 
-  .dataset--actions-preview {
+  .dataset--data-resources--list-actions-preview {
     @extend %button-theme;
   }
 
-  .dataset--actions-download {
+  .dataset--data-resources--list-actions-download {
     @extend %button-action;
   }
 }
