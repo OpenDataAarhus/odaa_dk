@@ -5,6 +5,80 @@
  */
 
 
+/* Dataset list
+   ========================================================================== */
+.dataset--list-wrapper {
+  @extend %section-spacing;
+}
+
+.dataset--list-heading {
+  @extend %module-list-alternate-heading;
+}
+
+.dataset--empty-text {
+  @extend %empty-text;
+
+  font-size: $font-size-larger;
+}
+
+.dataset--list {
+  @extend %module-list-alternate;
+}
+
+.dataset--list-item {
+  @extend %module-list-alternate-item;
+}
+
+.dataset--list-icon {
+  @extend %module-list-alternate-icon;
+}
+
+.dataset--list-content {
+  @extend %module-list-alternate-content;
+
+  margin-bottom: 0;
+}
+
+
+.dataset--list-meta {
+  @extend %module-list-alternate-meta;
+}
+
+.dataset--list-posted {
+  @extend %module-list-alternate-posted;
+}
+
+.dataset--list-author {
+  @extend %module-list-alternate-author;
+}
+
+.dataset--list-footer {
+  @extend %module-list-alternate-footer;
+}
+
+.dataset--list-comments-link {
+  @extend %module-list-alternate-comments-link;
+}
+
+.dataset--list-read-more {
+  @extend %module-list-alternate-read-more;
+}
+
+.dataset--list-tags {
+  float: left;
+  padding-left: 0;
+}
+
+.dataset--list-tag-item {
+  display: inline-block;
+}
+
+.dataset--list-tag {
+  @include font-normal();
+  @extend .label;
+}
+
+
 /* Dataset actions
    ========================================================================== */
 .dataset--list-actions {
