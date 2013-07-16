@@ -42,11 +42,11 @@
               <ul class="dataset--list">
                 <li class="dataset--list-item">
                   <div class="dataset--list-content">
-                    <h3 class="dataset--list-header"><a href="#">Bålpladser i Aarhus</a></h3>
+                    <h3 class="dataset--list-header"><a href="dataset.php">Bålpladser i Aarhus</a></h3>
                     3D bygninger for den indre del af Aarhus By (ca. indenfor Ringgaden). Data er på DWG-formatet og er en bygningstrådmodel. Data fylder ca. 50 MB. Vi anbefaler, at du...
                   </div>
                   <div class="dataset--list-footer">
-                    <a href="#" class="dataset--list-comments-link">12 kommentarer</a>|<a href="#" class="dataset--list-read-more">Se datasættet</a>
+                    <a href="#" class="dataset--list-comments-link">12 kommentarer</a>|<a href="dataset.php" class="dataset--list-read-more">Se datasættet</a>
                     <ul class="dataset--list-tags">
                       <li class="dataset--list-tag-item">
                         <a data-format="dwg" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">dwg</a>
@@ -62,11 +62,11 @@
                 </li>
                 <li class="dataset--list-item">
                   <div class="dataset--list-content">
-                    <h3 class="dataset--list-header"><a href="#">Bålpladser i Aarhus</a></h3>
+                    <h3 class="dataset--list-header"><a href="dataset.php">Bålpladser i Aarhus</a></h3>
                     3D bygninger for den indre del af Aarhus By (ca. indenfor Ringgaden). Data er på DWG-formatet og er en bygningstrådmodel. Data fylder ca. 50 MB. Vi anbefaler, at du...
                   </div>
                   <div class="dataset--list-footer">
-                    <a href="#" class="dataset--list-comments-link">12 kommentarer</a>|<a href="#" class="dataset--list-read-more">Se datasættet</a>
+                    <a href="#" class="dataset--list-comments-link">12 kommentarer</a>|<a href="dataset.php" class="dataset--list-read-more">Se datasættet</a>
                     <ul class="dataset--list-tags">
                       <li class="dataset--list-tag-item">
                         <a data-format="dwg" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">dwg</a>
@@ -82,11 +82,11 @@
                 </li>
                 <li class="dataset--list-item">
                   <div class="dataset--list-content">
-                    <h3 class="dataset--list-header"><a href="#">Bålpladser i Aarhus</a></h3>
+                    <h3 class="dataset--list-header"><a href="dataset.php">Bålpladser i Aarhus</a></h3>
                     3D bygninger for den indre del af Aarhus By (ca. indenfor Ringgaden). Data er på DWG-formatet og er en bygningstrådmodel. Data fylder ca. 50 MB. Vi anbefaler, at du...
                   </div>
                   <div class="dataset--list-footer">
-                    <a href="#" class="dataset--list-comments-link">12 kommentarer</a>|<a href="#" class="dataset--list-read-more">Se datasættet</a>
+                    <a href="#" class="dataset--list-comments-link">12 kommentarer</a>|<a href="dataset.php" class="dataset--list-read-more">Se datasættet</a>
                     <ul class="dataset--list-tags">
                       <li class="dataset--list-tag-item">
                         <a data-format="dwg" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">dwg</a>
@@ -102,11 +102,11 @@
                 </li>
                 <li class="dataset--list-item">
                   <div class="dataset--list-content">
-                    <h3 class="dataset--list-header"><a href="#">Bålpladser i Aarhus</a></h3>
+                    <h3 class="dataset--list-header"><a href="dataset.php">Bålpladser i Aarhus</a></h3>
                     3D bygninger for den indre del af Aarhus By (ca. indenfor Ringgaden). Data er på DWG-formatet og er en bygningstrådmodel. Data fylder ca. 50 MB. Vi anbefaler, at du...
                   </div>
                   <div class="dataset--list-footer">
-                    <a href="#" class="dataset--list-comments-link">12 kommentarer</a>|<a href="#" class="dataset--list-read-more">Se datasættet</a>
+                    <a href="#" class="dataset--list-comments-link">12 kommentarer</a>|<a href="dataset.php" class="dataset--list-read-more">Se datasættet</a>
                     <ul class="dataset--list-tags">
                       <li class="dataset--list-tag-item">
                         <a data-format="dwg" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">dwg</a>
