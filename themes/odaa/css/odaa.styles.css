@@ -5421,33 +5421,32 @@ body {
    ========================================================================== */
 /* line 340, ../sass/module/_module.scss */
 .dataset--list, .community--list {
-  margin-top: 20px;
   padding-left: 0;
 }
 
-/* line 345, ../sass/module/_module.scss */
+/* line 344, ../sass/module/_module.scss */
 .dataset--list-heading, .community--list-heading {
   font-size: 160%;
   margin-right: 5px;
 }
 
-/* line 350, ../sass/module/_module.scss */
+/* line 349, ../sass/module/_module.scss */
 .dataset--list-item, .community--list-item {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   background-color: #fbfbfb;
   border: 1px solid #efefef;
-  margin-top: 20px;
+  margin-bottom: 20px;
   overflow: hidden;
   padding: 20px;
 }
-/* line 359, ../sass/module/_module.scss */
+/* line 358, ../sass/module/_module.scss */
 .dataset--list-item:hover, .community--list-item:hover {
   border: 1px solid #d5d5d5;
 }
 
-/* line 364, ../sass/module/_module.scss */
+/* line 363, ../sass/module/_module.scss */
 .dataset--list-icon, .community--list-icon {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -5467,40 +5466,40 @@ body {
   text-align: center;
   width: 60px;
 }
-/* line 380, ../sass/module/_module.scss */
+/* line 379, ../sass/module/_module.scss */
 .dataset--list-icon:hover, .community--list-icon:hover {
   background-color: #809700;
 }
-/* line 389, ../sass/module/_module.scss */
+/* line 388, ../sass/module/_module.scss */
 .dataset--list-icon a:link, .community--list-icon a:link, .dataset--list-icon a:visited, .community--list-icon a:visited, .dataset--list-icon a:hover, .community--list-icon a:hover, .dataset--list-icon a:focus, .community--list-icon a:focus, .dataset--list-icon a:active, .community--list-icon a:active {
   color: white;
 }
 
-/* line 395, ../sass/module/_module.scss */
+/* line 394, ../sass/module/_module.scss */
 .dataset--list-content, .community--list-content {
   display: inline-block;
   margin-bottom: 20px;
   max-width: 80%;
 }
 
-/* line 402, ../sass/module/_module.scss */
+/* line 401, ../sass/module/_module.scss */
 .dataset--list-meta, .community--list-meta {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
   margin-bottom: 5px;
 }
 
-/* line 408, ../sass/module/_module.scss */
+/* line 407, ../sass/module/_module.scss */
 .dataset--list-posted, .community--list-posted {
   margin-right: 5px;
 }
 
-/* line 412, ../sass/module/_module.scss */
+/* line 411, ../sass/module/_module.scss */
 .dataset--list-author, .community--list-author {
   margin-left: 5px;
 }
 
-/* line 416, ../sass/module/_module.scss */
+/* line 415, ../sass/module/_module.scss */
 .dataset--list-footer, .community--list-footer {
   border-top: 1px dashed #e6e6e6;
   margin-top: 20px;
@@ -5508,42 +5507,46 @@ body {
   text-align: right;
 }
 
-/* line 423, ../sass/module/_module.scss */
+/* line 422, ../sass/module/_module.scss */
 .dataset--list-comments-link, .community--list-comments-link {
   margin-right: 5px;
 }
 
-/* line 427, ../sass/module/_module.scss */
+/* line 426, ../sass/module/_module.scss */
 .dataset--list-read-more, .community--list-read-more {
   margin-left: 5px;
 }
 
 /* List actions
    ========================================================================== */
-/* line 444, ../sass/module/_module.scss */
+/* line 433, ../sass/module/_module.scss */
+.list--actions, .comments--list-actions {
+  margin-bottom: 20px;
+}
+/* line 445, ../sass/module/_module.scss */
 .list--actions .list--action-sort-latest, .comments--list-actions .list--action-sort-latest {
   margin-right: 10px;
 }
-/* line 448, ../sass/module/_module.scss */
+/* line 449, ../sass/module/_module.scss */
 .list--actions .list--action-create, .comments--list-actions .list--action-create {
   float: right;
 }
 
 /* Pager
    ========================================================================== */
-/* line 459, ../sass/module/_module.scss */
+/* line 460, ../sass/module/_module.scss */
 .pager {
   margin-top: 20px;
   padding-left: 0;
   text-align: center;
 }
-/* line 464, ../sass/module/_module.scss */
+/* line 465, ../sass/module/_module.scss */
 .pager li {
   display: inline-block;
   margin-left: -4px;
   margin-right: 4px;
 }
-/* line 470, ../sass/module/_module.scss */
+/* line 471, ../sass/module/_module.scss */
 .pager li.pager-current,
 .pager li a {
   background-color: #efefef;
@@ -5553,26 +5556,26 @@ body {
   padding-bottom: 5px;
   padding-left: 15px;
 }
-/* line 478, ../sass/module/_module.scss */
+/* line 479, ../sass/module/_module.scss */
 .pager li.pager-current:hover,
 .pager li a:hover {
   text-decoration: none;
 }
-/* line 483, ../sass/module/_module.scss */
+/* line 484, ../sass/module/_module.scss */
 .pager li.pager-current {
   background-color: #e2e2e2;
 }
-/* line 489, ../sass/module/_module.scss */
+/* line 490, ../sass/module/_module.scss */
 .pager .active a,
 .pager .active a:hover {
   cursor: default;
   text-decoration: underline;
 }
-/* line 494, ../sass/module/_module.scss */
+/* line 495, ../sass/module/_module.scss */
 .pager .disabled {
   background-color: #fbfbfb;
 }
-/* line 497, ../sass/module/_module.scss */
+/* line 498, ../sass/module/_module.scss */
 .pager .disabled a:hover {
   cursor: default;
   text-decoration: none;
@@ -6103,7 +6106,12 @@ body {
   font-size: 160%;
 }
 
-/* line 73, ../sass/module/_community.scss */
+/* line 32, ../sass/module/_community.scss */
+.community--list {
+  margin-top: 20px;
+}
+
+/* line 75, ../sass/module/_community.scss */
 .community--tag {
   font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: normal;
@@ -6112,7 +6120,7 @@ body {
 
 /* Community filter
    ========================================================================== */
-/* line 107, ../sass/module/_community.scss */
+/* line 109, ../sass/module/_community.scss */
 .community--filter-list-item .active:link, .community--filter-list-item .active:visited, .community--filter-list-item .active:hover, .community--filter-list-item .active:focus, .community--filter-list-item .active:active {
   color: #be370a;
 }
