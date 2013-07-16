@@ -120,6 +120,10 @@ body {
     @include zen-grid-item(4, 1, right);
   }
 
+  .tertiary-content {
+    @include zen-clear(left);
+    @include zen-grid-item(8, 1);
+  }
 
   /* Media queries */
   @include small-medium() {
