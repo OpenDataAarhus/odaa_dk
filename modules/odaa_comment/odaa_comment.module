@@ -175,7 +175,8 @@ function _odaa_comment_hash_to_nid($hash, $title = FALSE) {
   
   if (isset($result['node'])) {
     // Found the node.
-    return $result['node'][1]->nid;
+    $element = array_shift($resutl['node']);
+    return $element->nid;
   }
   else {
     if ($title) {
