@@ -67,11 +67,13 @@ function _odaa_comment_view($hash) {
         // Build data array.
         $data['status'] = TRUE;
         foreach ($comments as $comment) {
+          // 20. juli 2013 @ 14:57
+          $date = format_date($comment->created, 'custom', 'j. F Y @ G:i');
           $data['data'][] = array(
               'cid' => $comment->cid,
               'author' => $comment->name,
               'subject' => $comment->subject,
-              'date' => $comment->created,
+              'date' => $date,
           );
         }
       }
