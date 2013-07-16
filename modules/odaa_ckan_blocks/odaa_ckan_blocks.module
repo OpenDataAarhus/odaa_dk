@@ -5,7 +5,7 @@
  */
 
 /**
- * Implements hook_block_info.
+ * Implements hook_block_info().
  */
 function odaa_ckan_blocks_block_info() {
   $blocks = array();
@@ -22,7 +22,7 @@ function odaa_ckan_blocks_block_info() {
 }  
 
 /**
- * Implements hook_block_view.
+ * Implements hook_block_view().
  */
 function odaa_ckan_blocks_block_view($delta = '') {
   $block = array();
@@ -42,16 +42,18 @@ function odaa_ckan_blocks_block_view($delta = '') {
 }
 
 /**
- * Implements hook_theme.
+ * Implements hook_theme().
  */
 function odaa_ckan_blocks_theme() {
   $module_path = drupal_get_path('module', 'odaa_ckan_blocks');
   return array(
+    // Dataset template.
     'odaa_ckan_blocks_datasets' => array(
       'variables' => array('count' => NULL),
       'template' => 'block--odaa-ckan-blocks-datasets',
       'path' => $module_path.'/templates',
     ),
+    // Recent changes template.  
     'odaa_ckan_blocks_recent_dataset_changes' => array(
       'variables' => array('list' => NULL),
       'template' => 'block--odaa-ckan-blocks-recent-dataset-changes',
@@ -60,36 +62,57 @@ function odaa_ckan_blocks_theme() {
   );
 }
 
+/**
+ * Gets all active datasets.
+ * 
+ * Cached for 5 minutes.
+ * 
+ * @return string
+ *  Themed HTML.
+ */
 function _odaa_ckan_blocks_datasets() {
   $cid = basename(__FILE__) . '_datasets';
   $cache = cache_get($cid);
   if ($cache && $cache->expire > REQUEST_TIME) {
+    // Valid cache.
     $data = $cache->data;
   }
   else {
+    // No cache, ask for current package list.
     $data = _odaa_user_api_call('/package_list');
     cache_set($cid, $data, 'cache', time() + 300);
   }
 
-  $output = theme('odaa_ckan_blocks_datasets', array('count' => sizeof($data)));
-  return $output;
+  // Theme datasets and return it.
+  return theme('odaa_ckan_blocks_datasets', array('count' => sizeof($data)));
 }
 
+/**
+ * Gets recent changes and calculate 'since'.
+ * 
+ * Cached for 5 minutes.
+ * 
+ * @return string
+ *  Themed HTML
+ */
 function _odaa_ckan_blocks_recent_dataset_changes() {
   $cid = basename(__FILE__) . '_recent_dataset_changes';
   $cache = cache_get($cid);
   if ($cache && $cache->expire > REQUEST_TIME) {
+    // Valid cache.
     $data = $cache->data;
   }
   else {
+    // No cache, ask for recent package list.
     $data = _odaa_user_api_call('/current_package_list_with_resources');
     cache_set($cid, $data, 'cache', time() + 300);
   }
   
   foreach ($data as $d_key => $dataset) {
+    // Add format_interval aka since.
     $data[$d_key]->format_interval = format_interval(time() - strtotime($dataset->metadata_modified), 2);
   }
   
-  $output = theme('odaa_ckan_blocks_recent_dataset_changes', array('list' => $data));
-  return $output;
+  // Theme datasets and return it.
+  return theme('odaa_ckan_blocks_recent_dataset_changes', array('list' => $data));
 } 
