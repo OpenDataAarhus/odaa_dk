@@ -1015,7 +1015,7 @@ table tbody tr:hover th,
 /* line 29, ../sass/framework/_buttons.scss */
 .button, .list--actions .list--action-sort-latest, .comments--list-actions .list--action-sort-latest,
 .list--actions .list--action-sort-hot,
-.comments--list-actions .list--action-sort-hot, .community--search .community--search--button,
+.comments--list-actions .list--action-sort-hot, .search-form--content-block .search-form--content-block--button,
 a.button, .dataset--list-item .dataset--actions-preview, .list--actions .list--action-create, .comments--list-actions .list--action-create, .dataset--list-item .dataset--actions-download, .comments--post-comment-login,
 .comments--post-comment-create-user {
   -webkit-border-radius: 5px;
@@ -1037,23 +1037,23 @@ a.button, .dataset--list-item .dataset--actions-preview, .list--actions .list--a
 /* line 45, ../sass/framework/_buttons.scss */
 .button:focus, .list--actions .list--action-sort-latest:focus, .comments--list-actions .list--action-sort-latest:focus,
 .list--actions .list--action-sort-hot:focus,
-.comments--list-actions .list--action-sort-hot:focus, .community--search .community--search--button:focus, .dataset--list-item .dataset--actions-preview:focus, .list--actions .list--action-create:focus, .comments--list-actions .list--action-create:focus, .dataset--list-item .dataset--actions-download:focus, .comments--post-comment-login:focus,
+.comments--list-actions .list--action-sort-hot:focus, .search-form--content-block .search-form--content-block--button:focus, .dataset--list-item .dataset--actions-preview:focus, .list--actions .list--action-create:focus, .comments--list-actions .list--action-create:focus, .dataset--list-item .dataset--actions-download:focus, .comments--post-comment-login:focus,
 .comments--post-comment-create-user:focus, .button:hover, .list--actions .list--action-sort-latest:hover, .comments--list-actions .list--action-sort-latest:hover,
 .list--actions .list--action-sort-hot:hover,
-.comments--list-actions .list--action-sort-hot:hover, .community--search .community--search--button:hover, .dataset--list-item .dataset--actions-preview:hover, .list--actions .list--action-create:hover, .comments--list-actions .list--action-create:hover, .dataset--list-item .dataset--actions-download:hover, .comments--post-comment-login:hover,
+.comments--list-actions .list--action-sort-hot:hover, .search-form--content-block .search-form--content-block--button:hover, .dataset--list-item .dataset--actions-preview:hover, .list--actions .list--action-create:hover, .comments--list-actions .list--action-create:hover, .dataset--list-item .dataset--actions-download:hover, .comments--post-comment-login:hover,
 .comments--post-comment-create-user:hover, .button:active, .list--actions .list--action-sort-latest:active, .comments--list-actions .list--action-sort-latest:active,
 .list--actions .list--action-sort-hot:active,
-.comments--list-actions .list--action-sort-hot:active, .community--search .community--search--button:active, .dataset--list-item .dataset--actions-preview:active, .list--actions .list--action-create:active, .comments--list-actions .list--action-create:active, .dataset--list-item .dataset--actions-download:active, .comments--post-comment-login:active,
+.comments--list-actions .list--action-sort-hot:active, .search-form--content-block .search-form--content-block--button:active, .dataset--list-item .dataset--actions-preview:active, .list--actions .list--action-create:active, .comments--list-actions .list--action-create:active, .dataset--list-item .dataset--actions-download:active, .comments--post-comment-login:active,
 .comments--post-comment-create-user:active {
   text-decoration: none;
 }
 /* line 51, ../sass/framework/_buttons.scss */
 .disabled.button, .list--actions .disabled.list--action-sort-latest, .comments--list-actions .disabled.list--action-sort-latest,
 .list--actions .disabled.list--action-sort-hot,
-.comments--list-actions .disabled.list--action-sort-hot, .community--search .disabled.community--search--button, .dataset--list-item .disabled.dataset--actions-preview, .list--actions .disabled.list--action-create, .comments--list-actions .disabled.list--action-create, .dataset--list-item .disabled.dataset--actions-download, .disabled.comments--post-comment-login,
+.comments--list-actions .disabled.list--action-sort-hot, .search-form--content-block .disabled.search-form--content-block--button, .dataset--list-item .disabled.dataset--actions-preview, .list--actions .disabled.list--action-create, .comments--list-actions .disabled.list--action-create, .dataset--list-item .disabled.dataset--actions-download, .disabled.comments--post-comment-login,
 .disabled.comments--post-comment-create-user, [disabled].button, .list--actions [disabled].list--action-sort-latest, .comments--list-actions [disabled].list--action-sort-latest,
 .list--actions [disabled].list--action-sort-hot,
-.comments--list-actions [disabled].list--action-sort-hot, .community--search [disabled].community--search--button, .dataset--list-item [disabled].dataset--actions-preview, .list--actions [disabled].list--action-create, .comments--list-actions [disabled].list--action-create, .dataset--list-item [disabled].dataset--actions-download, [disabled].comments--post-comment-login,
+.comments--list-actions [disabled].list--action-sort-hot, .search-form--content-block [disabled].search-form--content-block--button, .dataset--list-item [disabled].dataset--actions-preview, .list--actions [disabled].list--action-create, .comments--list-actions [disabled].list--action-create, .dataset--list-item [disabled].dataset--actions-download, [disabled].comments--post-comment-login,
 [disabled].comments--post-comment-create-user {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
@@ -1069,13 +1069,13 @@ a.button, .dataset--list-item .dataset--actions-preview, .list--actions .list--a
 /* line 98, ../sass/framework/_buttons.scss */
 .button, .list--actions .list--action-sort-latest, .comments--list-actions .list--action-sort-latest,
 .list--actions .list--action-sort-hot,
-.comments--list-actions .list--action-sort-hot, .community--search .community--search--button,
+.comments--list-actions .list--action-sort-hot, .search-form--content-block .search-form--content-block--button,
 a.button,
 .list--actions a.list--action-sort-latest,
 .comments--list-actions a.list--action-sort-latest,
 .list--actions a.list--action-sort-hot,
 .comments--list-actions a.list--action-sort-hot,
-.community--search a.community--search--button {
+.search-form--content-block a.search-form--content-block--button {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #0d0d0d));
   background-image: -webkit-linear-gradient(#333333, #0d0d0d);
   background-image: -moz-linear-gradient(#333333, #0d0d0d);
@@ -1089,49 +1089,49 @@ a.button,
 /* line 76, ../sass/framework/_buttons.scss */
 .button:link, .list--actions .list--action-sort-latest:link, .comments--list-actions .list--action-sort-latest:link,
 .list--actions .list--action-sort-hot:link,
-.comments--list-actions .list--action-sort-hot:link, .community--search .community--search--button:link, .button:visited, .list--actions .list--action-sort-latest:visited, .comments--list-actions .list--action-sort-latest:visited,
+.comments--list-actions .list--action-sort-hot:link, .search-form--content-block .search-form--content-block--button:link, .button:visited, .list--actions .list--action-sort-latest:visited, .comments--list-actions .list--action-sort-latest:visited,
 .list--actions .list--action-sort-hot:visited,
-.comments--list-actions .list--action-sort-hot:visited, .community--search .community--search--button:visited,
+.comments--list-actions .list--action-sort-hot:visited, .search-form--content-block .search-form--content-block--button:visited,
 a.button:link,
 .list--actions a.list--action-sort-latest:link,
 .comments--list-actions a.list--action-sort-latest:link,
 .list--actions a.list--action-sort-hot:link,
 .comments--list-actions a.list--action-sort-hot:link,
-.community--search a.community--search--button:link,
+.search-form--content-block a.search-form--content-block--button:link,
 a.button:visited,
 .list--actions a.list--action-sort-latest:visited,
 .comments--list-actions a.list--action-sort-latest:visited,
 .list--actions a.list--action-sort-hot:visited,
 .comments--list-actions a.list--action-sort-hot:visited,
-.community--search a.community--search--button:visited {
+.search-form--content-block a.search-form--content-block--button:visited {
   color: white;
 }
 /* line 83, ../sass/framework/_buttons.scss */
 .button:focus, .list--actions .list--action-sort-latest:focus, .comments--list-actions .list--action-sort-latest:focus,
 .list--actions .list--action-sort-hot:focus,
-.comments--list-actions .list--action-sort-hot:focus, .community--search .community--search--button:focus, .button:hover, .list--actions .list--action-sort-latest:hover, .comments--list-actions .list--action-sort-latest:hover,
+.comments--list-actions .list--action-sort-hot:focus, .search-form--content-block .search-form--content-block--button:focus, .button:hover, .list--actions .list--action-sort-latest:hover, .comments--list-actions .list--action-sort-latest:hover,
 .list--actions .list--action-sort-hot:hover,
-.comments--list-actions .list--action-sort-hot:hover, .community--search .community--search--button:hover, .button:active, .list--actions .list--action-sort-latest:active, .comments--list-actions .list--action-sort-latest:active,
+.comments--list-actions .list--action-sort-hot:hover, .search-form--content-block .search-form--content-block--button:hover, .button:active, .list--actions .list--action-sort-latest:active, .comments--list-actions .list--action-sort-latest:active,
 .list--actions .list--action-sort-hot:active,
-.comments--list-actions .list--action-sort-hot:active, .community--search .community--search--button:active,
+.comments--list-actions .list--action-sort-hot:active, .search-form--content-block .search-form--content-block--button:active,
 a.button:focus,
 .list--actions a.list--action-sort-latest:focus,
 .comments--list-actions a.list--action-sort-latest:focus,
 .list--actions a.list--action-sort-hot:focus,
 .comments--list-actions a.list--action-sort-hot:focus,
-.community--search a.community--search--button:focus,
+.search-form--content-block a.search-form--content-block--button:focus,
 a.button:hover,
 .list--actions a.list--action-sort-latest:hover,
 .comments--list-actions a.list--action-sort-latest:hover,
 .list--actions a.list--action-sort-hot:hover,
 .comments--list-actions a.list--action-sort-hot:hover,
-.community--search a.community--search--button:hover,
+.search-form--content-block a.search-form--content-block--button:hover,
 a.button:active,
 .list--actions a.list--action-sort-latest:active,
 .comments--list-actions a.list--action-sort-latest:active,
 .list--actions a.list--action-sort-hot:active,
 .comments--list-actions a.list--action-sort-hot:active,
-.community--search a.community--search--button:active {
+.search-form--content-block a.search-form--content-block--button:active {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #262626), color-stop(100%, #000000));
   background-image: -webkit-linear-gradient(#262626, #000000);
   background-image: -moz-linear-gradient(#262626, #000000);
@@ -1142,13 +1142,13 @@ a.button:active,
 /* line 89, ../sass/framework/_buttons.scss */
 .button i[class^="icon-"], .list--actions .list--action-sort-latest i[class^="icon-"], .comments--list-actions .list--action-sort-latest i[class^="icon-"],
 .list--actions .list--action-sort-hot i[class^="icon-"],
-.comments--list-actions .list--action-sort-hot i[class^="icon-"], .community--search .community--search--button i[class^="icon-"],
+.comments--list-actions .list--action-sort-hot i[class^="icon-"], .search-form--content-block .search-form--content-block--button i[class^="icon-"],
 a.button i[class^="icon-"],
 .list--actions a.list--action-sort-latest i[class^="icon-"],
 .comments--list-actions a.list--action-sort-latest i[class^="icon-"],
 .list--actions a.list--action-sort-hot i[class^="icon-"],
 .comments--list-actions a.list--action-sort-hot i[class^="icon-"],
-.community--search a.community--search--button i[class^="icon-"] {
+.search-form--content-block a.search-form--content-block--button i[class^="icon-"] {
   margin-right: 8px;
 }
 
@@ -1241,13 +1241,13 @@ a.button i[class^="icon-"],
 /* line 125, ../sass/framework/_buttons.scss */
 input[type=submit].button, .list--actions input[type=submit].list--action-sort-latest, .comments--list-actions input[type=submit].list--action-sort-latest,
 .list--actions input[type=submit].list--action-sort-hot,
-.comments--list-actions input[type=submit].list--action-sort-hot, .community--search input[type=submit].community--search--button,
+.comments--list-actions input[type=submit].list--action-sort-hot, .search-form--content-block input[type=submit].search-form--content-block--button,
 button.button,
 .list--actions button.list--action-sort-latest,
 .comments--list-actions button.list--action-sort-latest,
 .list--actions button.list--action-sort-hot,
 .comments--list-actions button.list--action-sort-hot,
-.community--search button.community--search--button {
+.search-form--content-block button.search-form--content-block--button {
   -webkit-appearance: none;
 }
 
@@ -5570,7 +5570,7 @@ body {
 .user-login .list--actions .list--action-sort-hot,
 .list--actions .user-login .list--action-sort-hot,
 .user-login .comments--list-actions .list--action-sort-hot,
-.comments--list-actions .user-login .list--action-sort-hot, .user-login .community--search .community--search--button, .community--search .user-login .community--search--button {
+.comments--list-actions .user-login .list--action-sort-hot, .user-login .search-form--content-block .search-form--content-block--button, .search-form--content-block .user-login .search-form--content-block--button {
   position: absolute;
   right: 0;
   top: 28px;
@@ -5629,10 +5629,10 @@ body {
 .comments--list-actions .search-form .list--action-sort-hot,
 .search-spotbox--wrapper .comments--list-actions .list--action-sort-hot,
 .comments--list-actions .search-spotbox--wrapper .list--action-sort-hot,
-.search-form .community--search .community--search--button,
-.community--search .search-form .community--search--button,
-.search-spotbox--wrapper .community--search .community--search--button,
-.community--search .search-spotbox--wrapper .community--search--button {
+.search-form .search-form--content-block .search-form--content-block--button,
+.search-form--content-block .search-form .search-form--content-block--button,
+.search-spotbox--wrapper .search-form--content-block .search-form--content-block--button,
+.search-form--content-block .search-spotbox--wrapper .search-form--content-block--button {
   float: left;
 }
 /* line 23, ../sass/module/_search.scss */
@@ -5654,7 +5654,7 @@ body {
 .search-form .comments--list-actions .list--action-sort-hot,
 .comments--list-actions .search-form .list--action-sort-hot,
 .search-spotbox--wrapper .comments--list-actions .list--action-sort-hot,
-.comments--list-actions .search-spotbox--wrapper .list--action-sort-hot, .search-form .community--search .community--search--button, .community--search .search-form .community--search--button, .search-spotbox--wrapper .community--search .community--search--button, .community--search .search-spotbox--wrapper .community--search--button {
+.comments--list-actions .search-spotbox--wrapper .list--action-sort-hot, .search-form .search-form--content-block .search-form--content-block--button, .search-form--content-block .search-form .search-form--content-block--button, .search-spotbox--wrapper .search-form--content-block .search-form--content-block--button, .search-form--content-block .search-spotbox--wrapper .search-form--content-block--button {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -5664,9 +5664,39 @@ body {
   padding-bottom: 9px;
 }
 
-/* Search spotbox
+/* Search form in content
    ========================================================================== */
 /* line 45, ../sass/module/_search.scss */
+.search-form--content-block {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #efefef;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+/* line 52, ../sass/module/_search.scss */
+.search-form--content-block .search-form--content-block--label {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75;
+}
+/* line 56, ../sass/module/_search.scss */
+.search-form--content-block .search-form--content-block--input {
+  display: inline;
+  min-width: 90%;
+}
+/* line 61, ../sass/module/_search.scss */
+.search-form--content-block .search-form--content-block--button {
+  display: inline-block;
+  margin-top: -2px;
+  padding-top: 11px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* Search spotbox
+   ========================================================================== */
+/* line 75, ../sass/module/_search.scss */
 .search-spotbox {
   float: left;
   width: 100%;
@@ -5686,12 +5716,12 @@ body {
   margin-top: 20px;
 }
 
-/* line 51, ../sass/module/_search.scss */
+/* line 81, ../sass/module/_search.scss */
 .search-spotbox--inner {
   overflow: hidden;
 }
 
-/* line 61, ../sass/module/_search.scss */
+/* line 91, ../sass/module/_search.scss */
 .search-spotbox--dataset-amount-wrapper {
   float: left;
   width: 25%;
@@ -5712,19 +5742,19 @@ body {
   text-align: center;
 }
 
-/* line 68, ../sass/module/_search.scss */
+/* line 98, ../sass/module/_search.scss */
 .search-spotbox--dataset-amount {
   font-size: 400%;
   margin-bottom: 10px;
 }
 
-/* line 73, ../sass/module/_search.scss */
+/* line 103, ../sass/module/_search.scss */
 .search-spotbox--dataset-amount-text {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
 
-/* line 77, ../sass/module/_search.scss */
+/* line 107, ../sass/module/_search.scss */
 .search-spotbox--wrapper {
   float: left;
   width: 75%;
@@ -5745,7 +5775,7 @@ body {
   padding-top: 22px;
   padding-left: 30px;
 }
-/* line 85, ../sass/module/_search.scss */
+/* line 115, ../sass/module/_search.scss */
 .search-spotbox--wrapper .search-form-text {
   min-width: 100%;
 }
@@ -5787,7 +5817,7 @@ body {
 .newsletter-signup .list--actions .list--action-sort-hot,
 .list--actions .newsletter-signup .list--action-sort-hot,
 .newsletter-signup .comments--list-actions .list--action-sort-hot,
-.comments--list-actions .newsletter-signup .list--action-sort-hot, .newsletter-signup .community--search .community--search--button, .community--search .newsletter-signup .community--search--button {
+.comments--list-actions .newsletter-signup .list--action-sort-hot, .newsletter-signup .search-form--content-block .search-form--content-block--button, .search-form--content-block .newsletter-signup .search-form--content-block--button {
   vertical-align: top;
   margin-top: 1px;
 }
@@ -5898,42 +5928,14 @@ body {
  */
 /* Community
    ========================================================================== */
-/* line 15, ../sass/module/_community.scss */
-.community--search {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  background-color: #efefef;
-  margin-bottom: 20px;
-  padding: 20px;
-}
-/* line 22, ../sass/module/_community.scss */
-.community--search .community--search--label {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
-  opacity: 0.75;
-}
-/* line 26, ../sass/module/_community.scss */
-.community--search .community--search--input {
-  display: inline;
-  min-width: 90%;
-}
-/* line 31, ../sass/module/_community.scss */
-.community--search .community--search--button {
-  display: inline-block;
-  margin-top: -2px;
-  padding-top: 11px;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
 /* Community list
    ========================================================================== */
-/* line 53, ../sass/module/_community.scss */
+/* line 26, ../sass/module/_community.scss */
 .community--empty-text {
   font-size: 160%;
 }
 
-/* line 100, ../sass/module/_community.scss */
+/* line 73, ../sass/module/_community.scss */
 .community--tag {
   font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: normal;
@@ -5942,7 +5944,7 @@ body {
 
 /* Community filter
    ========================================================================== */
-/* line 134, ../sass/module/_community.scss */
+/* line 107, ../sass/module/_community.scss */
 .community--filter-list-item .active:link, .community--filter-list-item .active:visited, .community--filter-list-item .active:hover, .community--filter-list-item .active:focus, .community--filter-list-item .active:active {
   color: #be370a;
 }
