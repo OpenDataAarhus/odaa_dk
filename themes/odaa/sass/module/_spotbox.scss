@@ -135,3 +135,68 @@ $spotbox-background-color:        $white;
 .spotbox--read-more {
   @extend %module--block--read-more;
 }
+
+
+/* Spotbox alternate list
+   ========================================================================== */
+.spotbox-alternate--list-wrapper {
+  @extend %section-spacing;
+}
+
+.spotbox-alternate--list-heading {
+  @extend %module-list-alternate-heading;
+}
+
+.spotbox-alternate--empty-text {
+  @extend %empty-text;
+
+  font-size: $font-size-larger;
+}
+
+.spotbox-alternate--list {
+  @extend %module-list-alternate;
+}
+
+.spotbox-alternate--list-item {
+  @extend %module-list-alternate-item;
+}
+
+.spotbox-alternate--list-icon {
+  @extend %module-list-alternate-icon;
+}
+
+.spotbox-alternate--list-content {
+  @extend %module-list-alternate-content;
+}
+
+
+.spotbox-alternate--list-meta {
+  @extend %module-list-alternate-meta;
+}
+
+.spotbox-alternate--list-posted {
+  @extend %module-list-alternate-posted;
+}
+
+.spotbox-alternate--list-author {
+  @extend %module-list-alternate-author;
+}
+
+.spotbox-alternate--list-footer {
+  @extend %module-list-alternate-footer;
+}
+
+.spotbox-alternate--list-comments-link {
+  @extend %module-list-alternate-comments-link;
+}
+
+.spotbox-alternate--list-read-more {
+  @extend %module-list-alternate-read-more;
+}
+
+.spotbox-alternate--tag {
+  @include font-normal();
+  @extend .label;
+
+  font-size: $font-size-large;
+}
