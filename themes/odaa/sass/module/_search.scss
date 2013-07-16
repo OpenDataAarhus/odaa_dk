@@ -40,6 +40,36 @@
 }
 
 
+/* Search form in content
+   ========================================================================== */
+.search-form--content-block {
+  @include border-radius($base-border-radius);
+
+  background-color: $gray-light;
+  margin-bottom: $large-spacing;
+  padding: $large-spacing;
+
+  .search-form--content-block--label {
+    @include opacity(.75);
+  }
+
+  .search-form--content-block--input {
+    display: inline;
+    min-width: 90%;
+  }
+
+  .search-form--content-block--button {
+    @extend .button;
+
+    display: inline-block;
+    margin-top: -2px;
+    padding-top: 11px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+
 /* Search spotbox
    ========================================================================== */
 .search-spotbox {
