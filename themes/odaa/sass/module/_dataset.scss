@@ -5,6 +5,16 @@
  */
 
 
+/* Dataset actions
+   ========================================================================== */
+.dataset--list-actions {
+  text-align: right;
+}
+
+.dataset--actions-sort {
+  min-width: 35%;
+}
+
 /* Dataset tabs
    ========================================================================== */
 .dataset--tabs {
@@ -49,18 +59,18 @@
   @extend %section-spacing;
 }
 
-.dataset--list {
+.dataset--data-resources--list {
   padding-left: 0;
 }
 
-.dataset--list-item {
+.dataset--data-resources--list-item {
   @extend %zebra-list;
 
   overflow: hidden;
   padding: $medium-spacing $medium-spacing $medium-spacing 60px;
   position: relative;
 
-  .dataset--info {
+  .dataset--data-resources--list--info {
     float: left;
   }
 
@@ -70,24 +80,24 @@
     top: 10px;
   }
 
-  .dataset--description {
+  .dataset--data-resources--list--description {
     margin-bottom: 0;
   }
 
-  .dataset--description-empty {
+  .dataset--data-resources--list--description-empty {
     @extend %empty-text;
   }
 
-  .dataset--actions {
+  .dataset--data-resources--list--actions {
     float: right;
     margin-top: 2px;
   }
 
-  .dataset--actions-preview {
+  .dataset--data-resources--list--actions-preview {
     @extend %button-theme;
   }
 
-  .dataset--actions-download {
+  .dataset--data-resources--list--actions-download {
     @extend %button-action;
   }
 }
