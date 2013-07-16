@@ -2,47 +2,48 @@
   var template;
   var hash;
   $(document).ready(function($) {
-    // Find hash.
-    hash = $('.comments--wrapper').attr('id');
-    
-    // Build template.
-    var directive = { 
-      'ul.comments--list': {
-        'i<-data': {
-          '.comments--list--cid' : 'i.cid',
-          '.comments--list-author' : 'i.author',
-          '.comments--list-posted' : 'i.date',
-          '.comments--list-content' : 'i.subject'
+    if ($('.comments--wrapper').length) {
+      // Find hash.
+      hash = $('.comments--wrapper').attr('id');
+
+      // Build template.
+      var directive = { 
+        'ul.comments--list': {
+          'i<-data': {
+            '.comments--list--cid' : 'i.cid',
+            '.comments--list-author' : 'i.author',
+            '.comments--list-posted' : 'i.date',
+            '.comments--list-content' : 'i.subject'
+          }
         }
-      }
-    };
+      };
 
-    // Compile template.
-    template = $('.comments--wrapper').compile(directive);
-    
-    // Remove template
-    $('.comments--list').empty();
-    
-    // Generate comments.
-    generate_comments();
-    
-    // Submit formular.
-    $('.comments--post-comment form').live('submit', function(e) {
-      e.preventDefault();
-      add_comment();
-      
-      return false;
-    });
-    
-    // Delete a comment.
-    $('div.comment a.delete').live('click', function(e) {
-      e.preventDefault();
-      var cid = $(this).parent().find('.cid').html();
-      delete_comment(cid);
-      
-      return false;
-    });
+      // Compile template.
+      template = $('.comments--wrapper').compile(directive);
 
+      // Remove template
+      $('.comments--list').empty();
+
+      // Generate comments.
+      generate_comments();
+
+      // Submit formular.
+      $('.comments--post-comment form').live('submit', function(e) {
+        e.preventDefault();
+        add_comment();
+
+        return false;
+      });
+
+      // Delete a comment.
+      $('div.comment a.delete').live('click', function(e) {
+        e.preventDefault();
+        var cid = $(this).parent().find('.cid').html();
+        delete_comment(cid);
+
+        return false;
+      });
+    }
   });
 
   function delete_comment(cid) {
