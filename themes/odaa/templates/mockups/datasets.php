@@ -120,6 +120,166 @@
                     </ul>
                   </div>
                 </li>
+                <li class="dataset--list-item">
+                  <div class="dataset--list-content">
+                    <h3 class="dataset--list-header"><a href="dataset.php">Bålpladser i Aarhus</a></h3>
+                    3D bygninger for den indre del af Aarhus By (ca. indenfor Ringgaden). Data er på DWG-formatet og er en bygningstrådmodel. Data fylder ca. 50 MB. Vi anbefaler, at du...
+                  </div>
+                  <div class="dataset--list-footer">
+                    <a href="#" class="dataset--list-comments-link">12 kommentarer</a>|<a href="dataset.php" class="dataset--list-read-more">Se datasættet</a>
+                    <ul class="dataset--list-tags">
+                      <li class="dataset--list-tag-item">
+                        <a data-format="dwg" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">dwg</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="pdf" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">PDF</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="csv" class="label dataset--list-tag" href="/dataset/aarhus-vand-nedbor">CSV</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dataset--list-item">
+                  <div class="dataset--list-content">
+                    <h3 class="dataset--list-header"><a href="dataset.php">Bålpladser i Aarhus</a></h3>
+                    3D bygninger for den indre del af Aarhus By (ca. indenfor Ringgaden). Data er på DWG-formatet og er en bygningstrådmodel. Data fylder ca. 50 MB. Vi anbefaler, at du...
+                  </div>
+                  <div class="dataset--list-footer">
+                    <a href="#" class="dataset--list-comments-link">12 kommentarer</a>|<a href="dataset.php" class="dataset--list-read-more">Se datasættet</a>
+                    <ul class="dataset--list-tags">
+                      <li class="dataset--list-tag-item">
+                        <a data-format="dwg" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">dwg</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="pdf" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">PDF</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="csv" class="label dataset--list-tag" href="/dataset/aarhus-vand-nedbor">CSV</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dataset--list-item">
+                  <div class="dataset--list-content">
+                    <h3 class="dataset--list-header"><a href="dataset.php">Bålpladser i Aarhus</a></h3>
+                    3D bygninger for den indre del af Aarhus By (ca. indenfor Ringgaden). Data er på DWG-formatet og er en bygningstrådmodel. Data fylder ca. 50 MB. Vi anbefaler, at du...
+                  </div>
+                  <div class="dataset--list-footer">
+                    <a href="#" class="dataset--list-comments-link">12 kommentarer</a>|<a href="dataset.php" class="dataset--list-read-more">Se datasættet</a>
+                    <ul class="dataset--list-tags">
+                      <li class="dataset--list-tag-item">
+                        <a data-format="dwg" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">dwg</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="pdf" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">PDF</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="csv" class="label dataset--list-tag" href="/dataset/aarhus-vand-nedbor">CSV</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dataset--list-item">
+                  <div class="dataset--list-content">
+                    <h3 class="dataset--list-header"><a href="dataset.php">Bålpladser i Aarhus</a></h3>
+                    3D bygninger for den indre del af Aarhus By (ca. indenfor Ringgaden). Data er på DWG-formatet og er en bygningstrådmodel. Data fylder ca. 50 MB. Vi anbefaler, at du...
+                  </div>
+                  <div class="dataset--list-footer">
+                    <a href="#" class="dataset--list-comments-link">12 kommentarer</a>|<a href="dataset.php" class="dataset--list-read-more">Se datasættet</a>
+                    <ul class="dataset--list-tags">
+                      <li class="dataset--list-tag-item">
+                        <a data-format="dwg" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">dwg</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="pdf" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">PDF</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="csv" class="label dataset--list-tag" href="/dataset/aarhus-vand-nedbor">CSV</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dataset--list-item">
+                  <div class="dataset--list-content">
+                    <h3 class="dataset--list-header"><a href="dataset.php">Bålpladser i Aarhus</a></h3>
+                    3D bygninger for den indre del af Aarhus By (ca. indenfor Ringgaden). Data er på DWG-formatet og er en bygningstrådmodel. Data fylder ca. 50 MB. Vi anbefaler, at du...
+                  </div>
+                  <div class="dataset--list-footer">
+                    <a href="#" class="dataset--list-comments-link">12 kommentarer</a>|<a href="dataset.php" class="dataset--list-read-more">Se datasættet</a>
+                    <ul class="dataset--list-tags">
+                      <li class="dataset--list-tag-item">
+                        <a data-format="dwg" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">dwg</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="pdf" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">PDF</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="csv" class="label dataset--list-tag" href="/dataset/aarhus-vand-nedbor">CSV</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dataset--list-item">
+                  <div class="dataset--list-content">
+                    <h3 class="dataset--list-header"><a href="dataset.php">Bålpladser i Aarhus</a></h3>
+                    3D bygninger for den indre del af Aarhus By (ca. indenfor Ringgaden). Data er på DWG-formatet og er en bygningstrådmodel. Data fylder ca. 50 MB. Vi anbefaler, at du...
+                  </div>
+                  <div class="dataset--list-footer">
+                    <a href="#" class="dataset--list-comments-link">12 kommentarer</a>|<a href="dataset.php" class="dataset--list-read-more">Se datasættet</a>
+                    <ul class="dataset--list-tags">
+                      <li class="dataset--list-tag-item">
+                        <a data-format="dwg" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">dwg</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="pdf" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">PDF</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="csv" class="label dataset--list-tag" href="/dataset/aarhus-vand-nedbor">CSV</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dataset--list-item">
+                  <div class="dataset--list-content">
+                    <h3 class="dataset--list-header"><a href="dataset.php">Bålpladser i Aarhus</a></h3>
+                    3D bygninger for den indre del af Aarhus By (ca. indenfor Ringgaden). Data er på DWG-formatet og er en bygningstrådmodel. Data fylder ca. 50 MB. Vi anbefaler, at du...
+                  </div>
+                  <div class="dataset--list-footer">
+                    <a href="#" class="dataset--list-comments-link">12 kommentarer</a>|<a href="dataset.php" class="dataset--list-read-more">Se datasættet</a>
+                    <ul class="dataset--list-tags">
+                      <li class="dataset--list-tag-item">
+                        <a data-format="dwg" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">dwg</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="pdf" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">PDF</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="csv" class="label dataset--list-tag" href="/dataset/aarhus-vand-nedbor">CSV</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dataset--list-item">
+                  <div class="dataset--list-content">
+                    <h3 class="dataset--list-header"><a href="dataset.php">Bålpladser i Aarhus</a></h3>
+                    3D bygninger for den indre del af Aarhus By (ca. indenfor Ringgaden). Data er på DWG-formatet og er en bygningstrådmodel. Data fylder ca. 50 MB. Vi anbefaler, at du...
+                  </div>
+                  <div class="dataset--list-footer">
+                    <a href="#" class="dataset--list-comments-link">12 kommentarer</a>|<a href="dataset.php" class="dataset--list-read-more">Se datasættet</a>
+                    <ul class="dataset--list-tags">
+                      <li class="dataset--list-tag-item">
+                        <a data-format="dwg" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">dwg</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="pdf" class="label dataset--list-tag" href="/dataset/3d-bygninger-bymodel">PDF</a>
+                      </li>
+                      <li class="dataset--list-tag-item">
+                        <a data-format="csv" class="label dataset--list-tag" href="/dataset/aarhus-vand-nedbor">CSV</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
               </ul>
               <ul class="pager">
                 <li class="pager-previous first">&nbsp;</li>
@@ -134,8 +294,44 @@
           <div class="spotbox-menu">
             <div class="spotbox-menu--inner">
               <h3 class="spotbox-menu--header"><i class="icon-filter"></i>Tags</h3>
+              <p class="spotbox-menu--list-remove-all"><a href="#"><i class="icon-remove"></i>Fjern alle</a></p>
               <ul class="spotbox-menu--list">
-                <li class="spotbox-menu--list-item first"><a href="#"><i class="icon-remove"></i>Fjern alle</a></li>
+                <li class="spotbox-menu--list-item first"><a href="#" class="active"><i class="icon-check"></i>Aarhus Kommune (15)</a></li>
+                <li class="spotbox-menu--list-item"><a href="#" class="active"><i class="icon-check"></i>Aarhus Kommune (10)</a></li>
+                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-check-empty"></i>vandværker (1)</a></li>
+                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-check-empty"></i>vandindvinding (1)</a></li>
+                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-check-empty"></i>toiletter (1)</a></li>
+                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-check-empty"></i>toilet (1)</a></li>
+                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-check-empty"></i>skove (1)</a></li>
+                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-check-empty"></i>parker (1)</a></li>
+                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-check-empty"></i>p-pladser (1)</a></li>
+                <li class="spotbox-menu--list-item last"><a href="#"><i class="icon-check-empty"></i>p-pladser (1)</a></li>
+              </ul>
+              <p class="spotbox-menu--list-show-more"><a href="#">Vis flere tags</a></p>
+            </div>
+          </div>
+          <div class="spotbox-menu">
+            <div class="spotbox-menu--inner">
+              <h3 class="spotbox-menu--header"><i class="icon-filter"></i>Formater</h3>
+              <ul class="spotbox-menu--list">
+                <li class="spotbox-menu--list-item first"><a href="#"><i class="icon-check-empty"></i>PDF (23)</a></li>
+                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-check-empty"></i>KML (17)</a></li>
+                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-check-empty"></i>xlsx (8)</a></li>
+                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-check-empty"></i>HTML (6)</a></li>
+                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-check-empty"></i>XML (5)</a></li>
+                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-check-empty"></i>CSV (3)</a></li>
+                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-check-empty"></i>dwg (2)</a></li>
+                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-check-empty"></i>docx (2)</a></li>
+                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-check-empty"></i>XLS (2)</a></li>
+                <li class="spotbox-menu--list-item last"><a href="#"><i class="icon-check-empty"></i>TXT (2)</a></li>
+              </ul>
+              <p class="spotbox-menu--list-show-more"><a href="#">Vis flere formater</a></p>
+            </div>
+          </div>
+          <div class="spotbox-menu">
+            <div class="spotbox-menu--inner">
+              <h3 class="spotbox-menu--header"><i class="icon-filter"></i>Grupper</h3>
+              <ul class="spotbox-menu--list">
                 <li class="spotbox-menu--list-item"><a href="#"><i class="icon-check-empty"></i>Aarhus Kommune (15)</a></li>
                 <li class="spotbox-menu--list-item"><a href="#"><i class="icon-check-empty"></i>Aarhus Kommune (10)</a></li>
                 <li class="spotbox-menu--list-item"><a href="#"><i class="icon-check-empty"></i>vandværker (1)</a></li>
@@ -145,9 +341,9 @@
                 <li class="spotbox-menu--list-item"><a href="#"><i class="icon-check-empty"></i>skove (1)</a></li>
                 <li class="spotbox-menu--list-item"><a href="#"><i class="icon-check-empty"></i>parker (1)</a></li>
                 <li class="spotbox-menu--list-item"><a href="#"><i class="icon-check-empty"></i>p-pladser (1)</a></li>
-                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-check-empty"></i>p-pladser (1)</a></li>
-                <li class="spotbox-menu--list-item last"><a href="#">Vis flere tags</a></li>
+                <li class="spotbox-menu--list-item last"><a href="#"><i class="icon-check-empty"></i>p-pladser (1)</a></li>
               </ul>
+              <p class="spotbox-menu--list-show-more"><a href="#">Vis flere grupper</a></p>
             </div>
           </div>
         </div>
