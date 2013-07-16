@@ -4159,8 +4159,27 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
+/* line 123, ../sass/layout/_layout.scss */
+.front .tertiary-content {
+  clear: left;
+  float: left;
+  width: 66.66667%;
+  margin-left: 0%;
+  margin-right: -66.66667%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/all/themes/litteratursiden/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
 @media only screen and (max-width: 768px) {
-  /* line 128, ../sass/layout/_layout.scss */
+  /* line 132, ../sass/layout/_layout.scss */
   .front .primary-content,
   .front .secondary-content,
   .front .tertiary-content {
@@ -4181,7 +4200,7 @@ body {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 134, ../sass/layout/_layout.scss */
+  /* line 138, ../sass/layout/_layout.scss */
   .front .primary-content .spotbox, .front .primary-content .spotbox--featured-dataset,
   .front .primary-content .spotbox:nth-child(odd),
   .front .primary-content .spotbox--featured-dataset:nth-child(odd),
@@ -4219,7 +4238,7 @@ body {
 }
 
 /* Right sidebar only */
-/* line 145, ../sass/layout/_layout.scss */
+/* line 149, ../sass/layout/_layout.scss */
 .left-sidebar .primary-content {
   float: right;
   width: 75%;
@@ -4237,7 +4256,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 149, ../sass/layout/_layout.scss */
+/* line 153, ../sass/layout/_layout.scss */
 .left-sidebar .secondary-content {
   float: left;
   width: 25%;
@@ -4255,7 +4274,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 153, ../sass/layout/_layout.scss */
+/* line 157, ../sass/layout/_layout.scss */
 .left-sidebar .tertiary-content {
   clear: both;
   float: left;
@@ -4274,7 +4293,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 157, ../sass/layout/_layout.scss */
+/* line 161, ../sass/layout/_layout.scss */
 .left-sidebar .tertiary-content .spotbox:nth-child(odd), .left-sidebar .tertiary-content .spotbox--featured-dataset:nth-child(odd) {
   clear: left;
   float: left;
@@ -4293,7 +4312,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 162, ../sass/layout/_layout.scss */
+/* line 166, ../sass/layout/_layout.scss */
 .left-sidebar .tertiary-content .spotbox:nth-child(even), .left-sidebar .tertiary-content .spotbox--featured-dataset:nth-child(even) {
   float: right;
   width: 50%;
@@ -4313,7 +4332,7 @@ body {
 }
 
 /* Both sidebars */
-/* line 171, ../sass/layout/_layout.scss */
+/* line 175, ../sass/layout/_layout.scss */
 .both-sidebars .static-content {
   float: right;
   width: 25%;
@@ -4331,7 +4350,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 175, ../sass/layout/_layout.scss */
+/* line 179, ../sass/layout/_layout.scss */
 .both-sidebars .primary-content {
   float: left;
   width: 50%;
@@ -4349,7 +4368,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 179, ../sass/layout/_layout.scss */
+/* line 183, ../sass/layout/_layout.scss */
 .both-sidebars .secondary-content {
   float: left;
   width: 25%;
@@ -4367,7 +4386,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 183, ../sass/layout/_layout.scss */
+/* line 187, ../sass/layout/_layout.scss */
 .both-sidebars .tertiary-content {
   clear: right;
   float: right;
@@ -5216,22 +5235,24 @@ body {
 
 /* line 266, ../sass/module/_module.scss */
 .spotbox--list-posted {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
   margin-bottom: 0;
 }
 
-/* line 271, ../sass/module/_module.scss */
+/* line 273, ../sass/module/_module.scss */
 .spotbox--date {
   display: block;
 }
 
 /* %module--block image */
-/* line 277, ../sass/module/_module.scss */
+/* line 279, ../sass/module/_module.scss */
 .spotbox--image {
   margin-bottom: 20px;
 }
 
 /* %module--block list image */
-/* line 283, ../sass/module/_module.scss */
+/* line 285, ../sass/module/_module.scss */
 .spotbox--list-image {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -5245,28 +5266,28 @@ body {
   vertical-align: top;
 }
 
-/* line 297, ../sass/module/_module.scss */
+/* line 299, ../sass/module/_module.scss */
 .spotbox--list-link a:link {
   color: #e5420c;
   text-decoration: none;
 }
-/* line 302, ../sass/module/_module.scss */
+/* line 304, ../sass/module/_module.scss */
 .spotbox--list-link a:visited {
   color: #db3f0b;
   text-decoration: none;
 }
-/* line 307, ../sass/module/_module.scss */
+/* line 309, ../sass/module/_module.scss */
 .spotbox--list-link a:hover {
   color: #be370a;
   text-decoration: none;
 }
-/* line 312, ../sass/module/_module.scss */
+/* line 314, ../sass/module/_module.scss */
 .spotbox--list-link a:focus {
   color: black;
 }
 
 /* %module--block footer */
-/* line 319, ../sass/module/_module.scss */
+/* line 321, ../sass/module/_module.scss */
 .spotbox--footer {
   border-top: 1px dashed rgba(0, 0, 0, 0.1);
   clear: both;
@@ -5278,37 +5299,138 @@ body {
   padding-bottom: 15px;
 }
 
-/* line 331, ../sass/module/_module.scss */
+/* line 333, ../sass/module/_module.scss */
 .spotbox--read-more {
   float: right;
 }
 
+/* %module-list-alternate
+   ========================================================================== */
+/* line 340, ../sass/module/_module.scss */
+.community--list {
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+/* line 345, ../sass/module/_module.scss */
+.community--list-heading {
+  font-size: 160%;
+  margin-right: 5px;
+}
+
+/* line 350, ../sass/module/_module.scss */
+.community--list-item {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fbfbfb;
+  border: 1px solid #efefef;
+  margin-top: 20px;
+  overflow: hidden;
+  padding: 20px;
+}
+/* line 359, ../sass/module/_module.scss */
+.community--list-item:hover {
+  border: 1px solid #d5d5d5;
+}
+
+/* line 364, ../sass/module/_module.scss */
+.community--list-icon {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #96b000;
+  color: white;
+  font-size: 250%;
+  float: left;
+  margin-top: -5px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  min-width: 60px;
+  padding: 10px;
+  text-align: center;
+  width: 60px;
+}
+/* line 380, ../sass/module/_module.scss */
+.community--list-icon:hover {
+  background-color: #809700;
+}
+/* line 389, ../sass/module/_module.scss */
+.community--list-icon a:link, .community--list-icon a:visited, .community--list-icon a:hover, .community--list-icon a:focus, .community--list-icon a:active {
+  color: white;
+}
+
+/* line 395, ../sass/module/_module.scss */
+.community--list-content {
+  display: inline-block;
+  margin-bottom: 20px;
+  max-width: 80%;
+}
+
+/* line 402, ../sass/module/_module.scss */
+.community--list-meta {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75;
+  margin-bottom: 5px;
+}
+
+/* line 408, ../sass/module/_module.scss */
+.community--list-posted {
+  margin-right: 5px;
+}
+
+/* line 412, ../sass/module/_module.scss */
+.community--list-author {
+  margin-left: 5px;
+}
+
+/* line 416, ../sass/module/_module.scss */
+.community--list-footer {
+  border-top: 1px dashed #e6e6e6;
+  margin-top: 20px;
+  padding-top: 10px;
+  text-align: right;
+}
+
+/* line 423, ../sass/module/_module.scss */
+.community--list-comments-link {
+  margin-right: 5px;
+}
+
+/* line 427, ../sass/module/_module.scss */
+.community--list-read-more {
+  margin-left: 5px;
+}
+
 /* List actions
    ========================================================================== */
-/* line 348, ../sass/module/_module.scss */
+/* line 444, ../sass/module/_module.scss */
 .list--actions .list--action-sort-latest, .comments--list-actions .list--action-sort-latest {
   margin-right: 10px;
 }
-/* line 352, ../sass/module/_module.scss */
+/* line 448, ../sass/module/_module.scss */
 .list--actions .list--action-create, .comments--list-actions .list--action-create {
   float: right;
 }
 
 /* Pager
    ========================================================================== */
-/* line 363, ../sass/module/_module.scss */
+/* line 459, ../sass/module/_module.scss */
 .pager {
   margin-top: 20px;
   padding-left: 0;
   text-align: center;
 }
-/* line 368, ../sass/module/_module.scss */
+/* line 464, ../sass/module/_module.scss */
 .pager li {
   display: inline-block;
   margin-left: -4px;
   margin-right: 4px;
 }
-/* line 374, ../sass/module/_module.scss */
+/* line 470, ../sass/module/_module.scss */
 .pager li.pager-current,
 .pager li a {
   background-color: #efefef;
@@ -5318,26 +5440,26 @@ body {
   padding-bottom: 5px;
   padding-left: 15px;
 }
-/* line 382, ../sass/module/_module.scss */
+/* line 478, ../sass/module/_module.scss */
 .pager li.pager-current:hover,
 .pager li a:hover {
   text-decoration: none;
 }
-/* line 387, ../sass/module/_module.scss */
+/* line 483, ../sass/module/_module.scss */
 .pager li.pager-current {
   background-color: #e2e2e2;
 }
-/* line 393, ../sass/module/_module.scss */
+/* line 489, ../sass/module/_module.scss */
 .pager .active a,
 .pager .active a:hover {
   cursor: default;
   text-decoration: underline;
 }
-/* line 398, ../sass/module/_module.scss */
+/* line 494, ../sass/module/_module.scss */
 .pager .disabled {
   background-color: #fbfbfb;
 }
-/* line 401, ../sass/module/_module.scss */
+/* line 497, ../sass/module/_module.scss */
 .pager .disabled a:hover {
   cursor: default;
   text-decoration: none;
@@ -5820,107 +5942,12 @@ body {
 
 /* Community list
    ========================================================================== */
-/* line 49, ../sass/module/_community.scss */
-.community--list-heading {
-  font-size: 160%;
-  margin-right: 5px;
-}
-
-/* line 54, ../sass/module/_community.scss */
+/* line 53, ../sass/module/_community.scss */
 .community--empty-text {
   font-size: 160%;
 }
 
-/* line 60, ../sass/module/_community.scss */
-.community--list {
-  margin-top: 20px;
-  padding-left: 0;
-}
-
-/* line 67, ../sass/module/_community.scss */
-.community--list-item {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  background-color: #fbfbfb;
-  border: 1px solid #efefef;
-  margin-top: 20px;
-  overflow: hidden;
-  padding: 20px;
-}
-/* line 76, ../sass/module/_community.scss */
-.community--list-item:hover {
-  border: 1px solid #d5d5d5;
-}
-
-/* line 81, ../sass/module/_community.scss */
-.community--list-icon {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background-color: #96b000;
-  color: white;
-  font-size: 250%;
-  float: left;
-  margin-top: -5px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  min-width: 60px;
-  padding: 10px;
-  text-align: center;
-  width: 60px;
-}
-/* line 97, ../sass/module/_community.scss */
-.community--list-icon:hover {
-  background-color: #809700;
-}
-/* line 106, ../sass/module/_community.scss */
-.community--list-icon a:link, .community--list-icon a:visited, .community--list-icon a:hover, .community--list-icon a:focus, .community--list-icon a:active {
-  color: white;
-}
-
-/* line 112, ../sass/module/_community.scss */
-.community--list-content {
-  display: inline-block;
-  margin-bottom: 20px;
-  max-width: 80%;
-}
-
-/* line 119, ../sass/module/_community.scss */
-.community--list-meta {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
-  opacity: 0.75;
-  margin-bottom: 5px;
-}
-/* line 124, ../sass/module/_community.scss */
-.community--list-meta .community--list-posted {
-  margin-right: 5px;
-}
-/* line 128, ../sass/module/_community.scss */
-.community--list-meta .community--list-author {
-  margin-left: 5px;
-}
-
-/* line 133, ../sass/module/_community.scss */
-.community--list-footer {
-  border-top: 1px dashed #e6e6e6;
-  margin-top: 20px;
-  padding-top: 10px;
-  text-align: right;
-}
-/* line 139, ../sass/module/_community.scss */
-.community--list-footer .community--list-comments-link {
-  margin-right: 5px;
-}
-/* line 143, ../sass/module/_community.scss */
-.community--list-footer .community--list-read-more {
-  margin-left: 5px;
-}
-
-/* line 148, ../sass/module/_community.scss */
+/* line 100, ../sass/module/_community.scss */
 .community--tag {
   font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: normal;
@@ -5929,7 +5956,7 @@ body {
 
 /* Community filter
    ========================================================================== */
-/* line 182, ../sass/module/_community.scss */
+/* line 134, ../sass/module/_community.scss */
 .community--filter-list-item .active:link, .community--filter-list-item .active:visited, .community--filter-list-item .active:hover, .community--filter-list-item .active:focus, .community--filter-list-item .active:active {
   color: #be370a;
 }
