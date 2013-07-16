@@ -67,11 +67,13 @@ function _odaa_comment_view($hash) {
         // Build data array.
         $data['status'] = TRUE;
         foreach ($comments as $comment) {
+          // 20. juli 2013 @ 14:57
+          $date = format_date($comment->created, 'custom', 'j. F Y @ G:i');
           $data['data'][] = array(
               'cid' => $comment->cid,
               'author' => $comment->name,
               'subject' => $comment->subject,
-              'date' => $comment->created,
+              'date' => $date,
           );
         }
       }
@@ -175,7 +177,8 @@ function _odaa_comment_hash_to_nid($hash, $title = FALSE) {
   
   if (isset($result['node'])) {
     // Found the node.
-    return $result['node'][1]->nid;
+    $element = array_shift($result['node']);
+    return $element->nid;
   }
   else {
     if ($title) {
