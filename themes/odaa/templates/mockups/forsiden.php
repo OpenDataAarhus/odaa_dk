@@ -34,7 +34,7 @@
               </div>
             </div>
           </div>
-          <div class="block spotbox">
+          <div class="spotbox">
             <div class="spotbox--inner">
               <div class="spotbox--content-wrapper">
                 <h2 class="spotbox--header"><a href="#"><i class="icon-comments-alt"></i>Seneste kommentarer</a></h2>
@@ -63,7 +63,7 @@
               </div>
             </div>
           </div>
-          <div class="block spotbox">
+          <div class="spotbox">
             <div class="spotbox--inner">
               <div class="spotbox--content-wrapper">
                 <h2 class="spotbox--header"><a href="#"><i class="icon-sitemap"></i>Seneste datasæt</a></h2>
@@ -110,6 +110,9 @@
               <div>3D bygninger for den indre del af Aarhus By (ca. indenfor Ringgaden). Data er på DWG-formatet og er en bygningstrådmodel. Data fylder ca. 50 MB. Vi anbefaler, at du downloader datasættet i Chrome eller Firefox.</div>
             </div>
           </div>
+        </div>
+        <div class="tertiary-content">
+
         </div>
       </div>
     </div>
