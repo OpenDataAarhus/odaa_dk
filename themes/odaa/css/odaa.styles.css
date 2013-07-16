@@ -1013,7 +1013,8 @@ table tbody tr:hover th,
 /* Extends
    ========================================================================== */
 /* line 29, ../sass/framework/_buttons.scss */
-.button, #context-inline-editor li.context-editable div.links .edit, .list--actions .list--action-sort-latest, .comments--list-actions .list--action-sort-latest,
+.button, #context-inline-editor li.context-editable div.links .edit,
+#context-inline-editor li.context-editing div.links .done, .list--actions .list--action-sort-latest, .comments--list-actions .list--action-sort-latest,
 .list--actions .list--action-sort-hot,
 .comments--list-actions .list--action-sort-hot, .search-form--content-block .search-form--content-block--button,
 a.button, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview, .list--actions .list--action-create, .comments--list-actions .list--action-create, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download, .comments--post-comment-login,
@@ -1035,23 +1036,28 @@ a.button, .dataset--data-resources--list-item .dataset--data-resources--list-act
   vertical-align: middle;
 }
 /* line 45, ../sass/framework/_buttons.scss */
-.button:focus, #context-inline-editor li.context-editable div.links .edit:focus, .list--actions .list--action-sort-latest:focus, .comments--list-actions .list--action-sort-latest:focus,
+.button:focus, #context-inline-editor li.context-editable div.links .edit:focus,
+#context-inline-editor li.context-editing div.links .done:focus, .list--actions .list--action-sort-latest:focus, .comments--list-actions .list--action-sort-latest:focus,
 .list--actions .list--action-sort-hot:focus,
 .comments--list-actions .list--action-sort-hot:focus, .search-form--content-block .search-form--content-block--button:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:focus, .list--actions .list--action-create:focus, .comments--list-actions .list--action-create:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:focus, .comments--post-comment-login:focus,
-.comments--post-comment-create-user:focus, .button:hover, #context-inline-editor li.context-editable div.links .edit:hover, .list--actions .list--action-sort-latest:hover, .comments--list-actions .list--action-sort-latest:hover,
+.comments--post-comment-create-user:focus, .button:hover, #context-inline-editor li.context-editable div.links .edit:hover,
+#context-inline-editor li.context-editing div.links .done:hover, .list--actions .list--action-sort-latest:hover, .comments--list-actions .list--action-sort-latest:hover,
 .list--actions .list--action-sort-hot:hover,
 .comments--list-actions .list--action-sort-hot:hover, .search-form--content-block .search-form--content-block--button:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:hover, .list--actions .list--action-create:hover, .comments--list-actions .list--action-create:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:hover, .comments--post-comment-login:hover,
-.comments--post-comment-create-user:hover, .button:active, #context-inline-editor li.context-editable div.links .edit:active, .list--actions .list--action-sort-latest:active, .comments--list-actions .list--action-sort-latest:active,
+.comments--post-comment-create-user:hover, .button:active, #context-inline-editor li.context-editable div.links .edit:active,
+#context-inline-editor li.context-editing div.links .done:active, .list--actions .list--action-sort-latest:active, .comments--list-actions .list--action-sort-latest:active,
 .list--actions .list--action-sort-hot:active,
 .comments--list-actions .list--action-sort-hot:active, .search-form--content-block .search-form--content-block--button:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:active, .list--actions .list--action-create:active, .comments--list-actions .list--action-create:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:active, .comments--post-comment-login:active,
 .comments--post-comment-create-user:active {
   text-decoration: none;
 }
 /* line 51, ../sass/framework/_buttons.scss */
-.disabled.button, #context-inline-editor li.context-editable div.links .disabled.edit, .list--actions .disabled.list--action-sort-latest, .comments--list-actions .disabled.list--action-sort-latest,
+.disabled.button, #context-inline-editor li.context-editable div.links .disabled.edit,
+#context-inline-editor li.context-editing div.links .disabled.done, .list--actions .disabled.list--action-sort-latest, .comments--list-actions .disabled.list--action-sort-latest,
 .list--actions .disabled.list--action-sort-hot,
 .comments--list-actions .disabled.list--action-sort-hot, .search-form--content-block .disabled.search-form--content-block--button, .dataset--data-resources--list-item .disabled.dataset--data-resources--list-actions-preview, .list--actions .disabled.list--action-create, .comments--list-actions .disabled.list--action-create, .dataset--data-resources--list-item .disabled.dataset--data-resources--list-actions-download, .disabled.comments--post-comment-login,
-.disabled.comments--post-comment-create-user, [disabled].button, #context-inline-editor li.context-editable div.links [disabled].edit, .list--actions [disabled].list--action-sort-latest, .comments--list-actions [disabled].list--action-sort-latest,
+.disabled.comments--post-comment-create-user, [disabled].button, #context-inline-editor li.context-editable div.links [disabled].edit,
+#context-inline-editor li.context-editing div.links [disabled].done, .list--actions [disabled].list--action-sort-latest, .comments--list-actions [disabled].list--action-sort-latest,
 .list--actions [disabled].list--action-sort-hot,
 .comments--list-actions [disabled].list--action-sort-hot, .search-form--content-block [disabled].search-form--content-block--button, .dataset--data-resources--list-item [disabled].dataset--data-resources--list-actions-preview, .list--actions [disabled].list--action-create, .comments--list-actions [disabled].list--action-create, .dataset--data-resources--list-item [disabled].dataset--data-resources--list-actions-download, [disabled].comments--post-comment-login,
 [disabled].comments--post-comment-create-user {
@@ -1067,11 +1073,13 @@ a.button, .dataset--data-resources--list-item .dataset--data-resources--list-act
    ========================================================================== */
 /* Default button */
 /* line 98, ../sass/framework/_buttons.scss */
-.button, #context-inline-editor li.context-editable div.links .edit, .list--actions .list--action-sort-latest, .comments--list-actions .list--action-sort-latest,
+.button, #context-inline-editor li.context-editable div.links .edit,
+#context-inline-editor li.context-editing div.links .done, .list--actions .list--action-sort-latest, .comments--list-actions .list--action-sort-latest,
 .list--actions .list--action-sort-hot,
 .comments--list-actions .list--action-sort-hot, .search-form--content-block .search-form--content-block--button,
 a.button,
 #context-inline-editor li.context-editable div.links a.edit,
+#context-inline-editor li.context-editing div.links a.done,
 .list--actions a.list--action-sort-latest,
 .comments--list-actions a.list--action-sort-latest,
 .list--actions a.list--action-sort-hot,
@@ -1088,13 +1096,16 @@ a.button,
   color: white;
 }
 /* line 76, ../sass/framework/_buttons.scss */
-.button:link, #context-inline-editor li.context-editable div.links .edit:link, .list--actions .list--action-sort-latest:link, .comments--list-actions .list--action-sort-latest:link,
+.button:link, #context-inline-editor li.context-editable div.links .edit:link,
+#context-inline-editor li.context-editing div.links .done:link, .list--actions .list--action-sort-latest:link, .comments--list-actions .list--action-sort-latest:link,
 .list--actions .list--action-sort-hot:link,
-.comments--list-actions .list--action-sort-hot:link, .search-form--content-block .search-form--content-block--button:link, .button:visited, #context-inline-editor li.context-editable div.links .edit:visited, .list--actions .list--action-sort-latest:visited, .comments--list-actions .list--action-sort-latest:visited,
+.comments--list-actions .list--action-sort-hot:link, .search-form--content-block .search-form--content-block--button:link, .button:visited, #context-inline-editor li.context-editable div.links .edit:visited,
+#context-inline-editor li.context-editing div.links .done:visited, .list--actions .list--action-sort-latest:visited, .comments--list-actions .list--action-sort-latest:visited,
 .list--actions .list--action-sort-hot:visited,
 .comments--list-actions .list--action-sort-hot:visited, .search-form--content-block .search-form--content-block--button:visited,
 a.button:link,
 #context-inline-editor li.context-editable div.links a.edit:link,
+#context-inline-editor li.context-editing div.links a.done:link,
 .list--actions a.list--action-sort-latest:link,
 .comments--list-actions a.list--action-sort-latest:link,
 .list--actions a.list--action-sort-hot:link,
@@ -1102,6 +1113,7 @@ a.button:link,
 .search-form--content-block a.search-form--content-block--button:link,
 a.button:visited,
 #context-inline-editor li.context-editable div.links a.edit:visited,
+#context-inline-editor li.context-editing div.links a.done:visited,
 .list--actions a.list--action-sort-latest:visited,
 .comments--list-actions a.list--action-sort-latest:visited,
 .list--actions a.list--action-sort-hot:visited,
@@ -1110,15 +1122,19 @@ a.button:visited,
   color: white;
 }
 /* line 83, ../sass/framework/_buttons.scss */
-.button:focus, #context-inline-editor li.context-editable div.links .edit:focus, .list--actions .list--action-sort-latest:focus, .comments--list-actions .list--action-sort-latest:focus,
+.button:focus, #context-inline-editor li.context-editable div.links .edit:focus,
+#context-inline-editor li.context-editing div.links .done:focus, .list--actions .list--action-sort-latest:focus, .comments--list-actions .list--action-sort-latest:focus,
 .list--actions .list--action-sort-hot:focus,
-.comments--list-actions .list--action-sort-hot:focus, .search-form--content-block .search-form--content-block--button:focus, .button:hover, #context-inline-editor li.context-editable div.links .edit:hover, .list--actions .list--action-sort-latest:hover, .comments--list-actions .list--action-sort-latest:hover,
+.comments--list-actions .list--action-sort-hot:focus, .search-form--content-block .search-form--content-block--button:focus, .button:hover, #context-inline-editor li.context-editable div.links .edit:hover,
+#context-inline-editor li.context-editing div.links .done:hover, .list--actions .list--action-sort-latest:hover, .comments--list-actions .list--action-sort-latest:hover,
 .list--actions .list--action-sort-hot:hover,
-.comments--list-actions .list--action-sort-hot:hover, .search-form--content-block .search-form--content-block--button:hover, .button:active, #context-inline-editor li.context-editable div.links .edit:active, .list--actions .list--action-sort-latest:active, .comments--list-actions .list--action-sort-latest:active,
+.comments--list-actions .list--action-sort-hot:hover, .search-form--content-block .search-form--content-block--button:hover, .button:active, #context-inline-editor li.context-editable div.links .edit:active,
+#context-inline-editor li.context-editing div.links .done:active, .list--actions .list--action-sort-latest:active, .comments--list-actions .list--action-sort-latest:active,
 .list--actions .list--action-sort-hot:active,
 .comments--list-actions .list--action-sort-hot:active, .search-form--content-block .search-form--content-block--button:active,
 a.button:focus,
 #context-inline-editor li.context-editable div.links a.edit:focus,
+#context-inline-editor li.context-editing div.links a.done:focus,
 .list--actions a.list--action-sort-latest:focus,
 .comments--list-actions a.list--action-sort-latest:focus,
 .list--actions a.list--action-sort-hot:focus,
@@ -1126,6 +1142,7 @@ a.button:focus,
 .search-form--content-block a.search-form--content-block--button:focus,
 a.button:hover,
 #context-inline-editor li.context-editable div.links a.edit:hover,
+#context-inline-editor li.context-editing div.links a.done:hover,
 .list--actions a.list--action-sort-latest:hover,
 .comments--list-actions a.list--action-sort-latest:hover,
 .list--actions a.list--action-sort-hot:hover,
@@ -1133,6 +1150,7 @@ a.button:hover,
 .search-form--content-block a.search-form--content-block--button:hover,
 a.button:active,
 #context-inline-editor li.context-editable div.links a.edit:active,
+#context-inline-editor li.context-editing div.links a.done:active,
 .list--actions a.list--action-sort-latest:active,
 .comments--list-actions a.list--action-sort-latest:active,
 .list--actions a.list--action-sort-hot:active,
@@ -1146,11 +1164,13 @@ a.button:active,
   background-color: #0d0d0d;
 }
 /* line 89, ../sass/framework/_buttons.scss */
-.button i[class^="icon-"], #context-inline-editor li.context-editable div.links .edit i[class^="icon-"], .list--actions .list--action-sort-latest i[class^="icon-"], .comments--list-actions .list--action-sort-latest i[class^="icon-"],
+.button i[class^="icon-"], #context-inline-editor li.context-editable div.links .edit i[class^="icon-"],
+#context-inline-editor li.context-editing div.links .done i[class^="icon-"], .list--actions .list--action-sort-latest i[class^="icon-"], .comments--list-actions .list--action-sort-latest i[class^="icon-"],
 .list--actions .list--action-sort-hot i[class^="icon-"],
 .comments--list-actions .list--action-sort-hot i[class^="icon-"], .search-form--content-block .search-form--content-block--button i[class^="icon-"],
 a.button i[class^="icon-"],
 #context-inline-editor li.context-editable div.links a.edit i[class^="icon-"],
+#context-inline-editor li.context-editing div.links a.done i[class^="icon-"],
 .list--actions a.list--action-sort-latest i[class^="icon-"],
 .comments--list-actions a.list--action-sort-latest i[class^="icon-"],
 .list--actions a.list--action-sort-hot i[class^="icon-"],
@@ -1246,11 +1266,13 @@ a.button i[class^="icon-"],
 /* Danger button */
 /* Don't use native buttons on iOS */
 /* line 125, ../sass/framework/_buttons.scss */
-input[type=submit].button, #context-inline-editor li.context-editable div.links input[type=submit].edit, .list--actions input[type=submit].list--action-sort-latest, .comments--list-actions input[type=submit].list--action-sort-latest,
+input[type=submit].button, #context-inline-editor li.context-editable div.links input[type=submit].edit,
+#context-inline-editor li.context-editing div.links input[type=submit].done, .list--actions input[type=submit].list--action-sort-latest, .comments--list-actions input[type=submit].list--action-sort-latest,
 .list--actions input[type=submit].list--action-sort-hot,
 .comments--list-actions input[type=submit].list--action-sort-hot, .search-form--content-block input[type=submit].search-form--content-block--button,
 button.button,
 #context-inline-editor li.context-editable div.links button.edit,
+#context-inline-editor li.context-editing div.links button.done,
 .list--actions button.list--action-sort-latest,
 .comments--list-actions button.list--action-sort-latest,
 .list--actions button.list--action-sort-hot,
@@ -5055,16 +5077,23 @@ div.context-editor div.label.top, div.context-editor div.top.label-inverted, div
   color: #404040;
 }
 
-/* line 50, ../sass/layout/_drupal.scss */
-#context-inline-editor li.context-editable div.links .edit {
+/* line 51, ../sass/layout/_drupal.scss */
+#context-inline-editor li.context-editable div.links .edit,
+#context-inline-editor li.context-editing div.links .done {
   padding: 3px 20px;
 }
 
 /* line 57, ../sass/layout/_drupal.scss */
+#context-inline-editor li.context-editing div.links .edit.active {
+  /* Hide the edit button when editing */
+  display: none;
+}
+
+/* line 63, ../sass/layout/_drupal.scss */
 div.context-editor div.context-editable fieldset {
   padding: 0;
 }
-/* line 61, ../sass/layout/_drupal.scss */
+/* line 67, ../sass/layout/_drupal.scss */
 div.context-editor div.context-editable legend {
   margin: 0;
   padding: 0;
@@ -5812,7 +5841,9 @@ div.context-editor div.context-editable legend {
   text-align: left;
 }
 /* line 38, ../sass/module/_user.scss */
-.user-login .button, .user-login #context-inline-editor li.context-editable div.links .edit, #context-inline-editor li.context-editable div.links .user-login .edit, .user-login .list--actions .list--action-sort-latest, .list--actions .user-login .list--action-sort-latest, .user-login .comments--list-actions .list--action-sort-latest, .comments--list-actions .user-login .list--action-sort-latest,
+.user-login .button, .user-login #context-inline-editor li.context-editable div.links .edit, #context-inline-editor li.context-editable div.links .user-login .edit,
+.user-login #context-inline-editor li.context-editing div.links .done,
+#context-inline-editor li.context-editing div.links .user-login .done, .user-login .list--actions .list--action-sort-latest, .list--actions .user-login .list--action-sort-latest, .user-login .comments--list-actions .list--action-sort-latest, .comments--list-actions .user-login .list--action-sort-latest,
 .user-login .list--actions .list--action-sort-hot,
 .list--actions .user-login .list--action-sort-hot,
 .user-login .comments--list-actions .list--action-sort-hot,
@@ -5863,6 +5894,10 @@ div.context-editor div.context-editable legend {
 #context-inline-editor li.context-editable div.links .search-form .edit,
 .search-spotbox--wrapper #context-inline-editor li.context-editable div.links .edit,
 #context-inline-editor li.context-editable div.links .search-spotbox--wrapper .edit,
+.search-form #context-inline-editor li.context-editing div.links .done,
+#context-inline-editor li.context-editing div.links .search-form .done,
+.search-spotbox--wrapper #context-inline-editor li.context-editing div.links .done,
+#context-inline-editor li.context-editing div.links .search-spotbox--wrapper .done,
 .search-form .list--actions .list--action-sort-latest,
 .list--actions .search-form .list--action-sort-latest,
 .search-spotbox--wrapper .list--actions .list--action-sort-latest,
@@ -5896,7 +5931,11 @@ div.context-editor div.context-editable legend {
   padding-right: 85px;
 }
 /* line 32, ../sass/module/_search.scss */
-.search-form .button, .search-spotbox--wrapper .button, .search-form #context-inline-editor li.context-editable div.links .edit, #context-inline-editor li.context-editable div.links .search-form .edit, .search-spotbox--wrapper #context-inline-editor li.context-editable div.links .edit, #context-inline-editor li.context-editable div.links .search-spotbox--wrapper .edit, .search-form .list--actions .list--action-sort-latest, .list--actions .search-form .list--action-sort-latest, .search-spotbox--wrapper .list--actions .list--action-sort-latest, .list--actions .search-spotbox--wrapper .list--action-sort-latest, .search-form .comments--list-actions .list--action-sort-latest, .comments--list-actions .search-form .list--action-sort-latest, .search-spotbox--wrapper .comments--list-actions .list--action-sort-latest, .comments--list-actions .search-spotbox--wrapper .list--action-sort-latest,
+.search-form .button, .search-spotbox--wrapper .button, .search-form #context-inline-editor li.context-editable div.links .edit, #context-inline-editor li.context-editable div.links .search-form .edit, .search-spotbox--wrapper #context-inline-editor li.context-editable div.links .edit, #context-inline-editor li.context-editable div.links .search-spotbox--wrapper .edit,
+.search-form #context-inline-editor li.context-editing div.links .done,
+#context-inline-editor li.context-editing div.links .search-form .done,
+.search-spotbox--wrapper #context-inline-editor li.context-editing div.links .done,
+#context-inline-editor li.context-editing div.links .search-spotbox--wrapper .done, .search-form .list--actions .list--action-sort-latest, .list--actions .search-form .list--action-sort-latest, .search-spotbox--wrapper .list--actions .list--action-sort-latest, .list--actions .search-spotbox--wrapper .list--action-sort-latest, .search-form .comments--list-actions .list--action-sort-latest, .comments--list-actions .search-form .list--action-sort-latest, .search-spotbox--wrapper .comments--list-actions .list--action-sort-latest, .comments--list-actions .search-spotbox--wrapper .list--action-sort-latest,
 .search-form .list--actions .list--action-sort-hot,
 .list--actions .search-form .list--action-sort-hot,
 .search-spotbox--wrapper .list--actions .list--action-sort-hot,
@@ -6063,7 +6102,9 @@ div.context-editor div.context-editable legend {
   margin-bottom: 0;
 }
 /* line 22, ../sass/module/_newsletter.scss */
-.newsletter-signup .button, .newsletter-signup #context-inline-editor li.context-editable div.links .edit, #context-inline-editor li.context-editable div.links .newsletter-signup .edit, .newsletter-signup .list--actions .list--action-sort-latest, .list--actions .newsletter-signup .list--action-sort-latest, .newsletter-signup .comments--list-actions .list--action-sort-latest, .comments--list-actions .newsletter-signup .list--action-sort-latest,
+.newsletter-signup .button, .newsletter-signup #context-inline-editor li.context-editable div.links .edit, #context-inline-editor li.context-editable div.links .newsletter-signup .edit,
+.newsletter-signup #context-inline-editor li.context-editing div.links .done,
+#context-inline-editor li.context-editing div.links .newsletter-signup .done, .newsletter-signup .list--actions .list--action-sort-latest, .list--actions .newsletter-signup .list--action-sort-latest, .newsletter-signup .comments--list-actions .list--action-sort-latest, .comments--list-actions .newsletter-signup .list--action-sort-latest,
 .newsletter-signup .list--actions .list--action-sort-hot,
 .list--actions .newsletter-signup .list--action-sort-hot,
 .newsletter-signup .comments--list-actions .list--action-sort-hot,

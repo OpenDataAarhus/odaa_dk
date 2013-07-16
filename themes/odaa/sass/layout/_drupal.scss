@@ -47,10 +47,16 @@ div.context-editor div.label.top {
   color: $font-color-primary;
 }
 
-#context-inline-editor li.context-editable div.links .edit {
+#context-inline-editor li.context-editable div.links .edit,
+#context-inline-editor li.context-editing div.links .done {
   @extend .button;
 
   padding: 3px 20px;
+}
+
+#context-inline-editor li.context-editing div.links .edit.active {
+  /* Hide the edit button when editing */
+  display: none;
 }
 
 div.context-editor div.context-editable {
