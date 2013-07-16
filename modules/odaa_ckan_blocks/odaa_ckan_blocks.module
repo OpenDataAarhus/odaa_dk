@@ -1,0 +1,78 @@
+<?php
+/**
+ * @file
+ * Simple API integration to CKAN to display minor statistics from CKAN.
+ */
+
+/**
+ * Implements hook_block_info.
+ */
+function odaa_ckan_blocks_block_info() {
+  $blocks = array();
+  
+  $blocks['datasets'] = array(
+    // info: The name of the block.
+    'info' => t('CKAN - Datasets'),
+  );
+  
+  $blocks['recent_dataset_changes'] = array(
+    'info' => t('CKAN - Recent Dataset Changes'),
+  );
+  
+  return $blocks;
+}  
+
+/**
+ * Implements hook_block_view.
+ */
+function odaa_ckan_blocks_block_view($delta = '') {
+  $block = array();
+  
+  switch ($delta) {
+    case 'datasets':
+      $block['content'] = _odaa_ckan_blocks_datasets();
+      break;
+
+    case 'recent_dataset_changes':
+      $block['content'] = _odaa_ckan_blocks_recent_dataset_changes();
+      break;
+
+    
+  }
+  return $block;
+}
+
+/**
+ * Implements hook_theme.
+ */
+function odaa_ckan_blocks_theme() {
+  $module_path = drupal_get_path('module', 'odaa_ckan_blocks');
+  return array(
+    'odaa_ckan_blocks_datasets' => array(
+      'variables' => array('count' => NULL),
+      'template' => 'block--odaa-ckan-blocks-datasets',
+      'path' => $module_path.'/templates',
+    ),
+    'odaa_ckan_blocks_recent_dataset_changes' => array(
+      'variables' => array('list' => NULL),
+      'template' => 'block--odaa-ckan-blocks-recent-dataset-changes',
+      'path' => $module_path.'/templates',
+    ),
+  );
+}
+
+function _odaa_ckan_blocks_datasets() {
+  $packages = _odaa_user_api_call('/package_list');
+  $output = theme('odaa_ckan_blocks_datasets', array('count' => sizeof($packages)));
+  return $output;
+}
+
+function _odaa_ckan_blocks_recent_dataset_changes() {
+  $datasets = _odaa_user_api_call('/current_package_list_with_resources');
+  foreach ($datasets as $d_key => $dataset) {
+    $datasets[$d_key]->format_interval = format_interval(time() - strtotime($dataset->metadata_modified), 2);
+  }
+  
+  $output = theme('odaa_ckan_blocks_recent_dataset_changes', array('list' => $datasets));
+  return $output;
+}
