@@ -6,6 +6,8 @@
 
 .comments {
   @extend %module-wrapper-style;
+
+  margin-top: $large-spacing;
 }
 
 .comments--wrapper {

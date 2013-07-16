@@ -117,9 +117,23 @@
 }
 
 
-
 /* Dataset list tags
    ========================================================================== */
 .dataset--additional-info {
   @extend %section-spacing;
+}
+
+
+/* Featured dataset
+   ========================================================================== */
+.spotbox--featured-dataset {
+  @extend .spotbox;
+}
+
+.spotbox--featured-dataset-inner {
+  @extend .spotbox--inner;
+}
+
+.spotbox--featured-dataset-header {
+  @extend .spotbox--header;
 }

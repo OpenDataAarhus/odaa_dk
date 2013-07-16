@@ -68,33 +68,6 @@ body {
   overflow: visible;
 }
 
-/* Site footer
-   ========================================================================== */
-
-.site-footer {
-  @include box-shadow($base-box-shadow);
-
-  border-top: 20px solid transparentize($white, .5);
-}
-
-.footer-wrapper {
-  background-color: transparentize($base-tertiary-color, .3);
-  position: relative;
-}
-
-.footer-inner {
-  @include box-sizing(border-box);
-
-  overflow: hidden;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1200px;
-  padding-top: 20px;
-  padding-right: 10px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-}
-
 
 /* Layouts
    ========================================================================== */
@@ -102,29 +75,27 @@ body {
 .front {
   .primary-content {
     @include zen-grid-item(8, 1);
+
+    padding-right: 0;
+    padding-left: 0;
+
+    .spotbox:nth-child(odd) {
+      @include zen-grid-item(6, 1, right);
+    }
+
+    .spotbox:nth-child(even) {
+      @include zen-clear(left);
+      @include zen-grid-item(6, 1);
+    }
   }
 
   .secondary-content {
-    @include zen-clear(right);
     @include zen-grid-item(4, 1, right);
   }
 
   .tertiary-content {
     @include zen-clear(left);
     @include zen-grid-item(8, 1);
-
-    .spotbox:nth-child(odd) {
-      @include zen-clear(left);
-      @include zen-grid-item(6, 1);
-    }
-
-    .spotbox:nth-child(even) {
-      @include zen-grid-item(6, 1, right);
-    }
-  }
-
-  .attachment-wrapper {
-    @include zen-clear(both);
   }
 
   /* Media queries */
@@ -190,26 +161,4 @@ body {
     @include zen-clear(right);
     @include zen-grid-item(3, 1, right);
   }
-}
-
-
-
-.attachment-wrapper {
-  @include zen-clear(both);
-}
-
-.attachment-first {
-  @include zen-grid-item(3, 1);
-}
-
-.attachment-second {
-  @include zen-grid-item(3, 4);
-}
-
-.attachment-third {
-  @include zen-grid-item(3, 4, right);
-}
-
-.attachment-fourth {
-  @include zen-grid-item(3, 1, right);
 }

@@ -1015,7 +1015,7 @@ table tbody tr:hover th,
 /* line 29, ../sass/framework/_buttons.scss */
 .button, .list--actions .list--action-sort-latest, .comments--list-actions .list--action-sort-latest,
 .list--actions .list--action-sort-hot,
-.comments--list-actions .list--action-sort-hot, .community--search .community--search--button,
+.comments--list-actions .list--action-sort-hot, .search-form--content-block .search-form--content-block--button,
 a.button, .dataset--list-item .dataset--actions-preview, .list--actions .list--action-create, .comments--list-actions .list--action-create, .dataset--list-item .dataset--actions-download, .comments--post-comment-login,
 .comments--post-comment-create-user {
   -webkit-border-radius: 5px;
@@ -1037,23 +1037,23 @@ a.button, .dataset--list-item .dataset--actions-preview, .list--actions .list--a
 /* line 45, ../sass/framework/_buttons.scss */
 .button:focus, .list--actions .list--action-sort-latest:focus, .comments--list-actions .list--action-sort-latest:focus,
 .list--actions .list--action-sort-hot:focus,
-.comments--list-actions .list--action-sort-hot:focus, .community--search .community--search--button:focus, .dataset--list-item .dataset--actions-preview:focus, .list--actions .list--action-create:focus, .comments--list-actions .list--action-create:focus, .dataset--list-item .dataset--actions-download:focus, .comments--post-comment-login:focus,
+.comments--list-actions .list--action-sort-hot:focus, .search-form--content-block .search-form--content-block--button:focus, .dataset--list-item .dataset--actions-preview:focus, .list--actions .list--action-create:focus, .comments--list-actions .list--action-create:focus, .dataset--list-item .dataset--actions-download:focus, .comments--post-comment-login:focus,
 .comments--post-comment-create-user:focus, .button:hover, .list--actions .list--action-sort-latest:hover, .comments--list-actions .list--action-sort-latest:hover,
 .list--actions .list--action-sort-hot:hover,
-.comments--list-actions .list--action-sort-hot:hover, .community--search .community--search--button:hover, .dataset--list-item .dataset--actions-preview:hover, .list--actions .list--action-create:hover, .comments--list-actions .list--action-create:hover, .dataset--list-item .dataset--actions-download:hover, .comments--post-comment-login:hover,
+.comments--list-actions .list--action-sort-hot:hover, .search-form--content-block .search-form--content-block--button:hover, .dataset--list-item .dataset--actions-preview:hover, .list--actions .list--action-create:hover, .comments--list-actions .list--action-create:hover, .dataset--list-item .dataset--actions-download:hover, .comments--post-comment-login:hover,
 .comments--post-comment-create-user:hover, .button:active, .list--actions .list--action-sort-latest:active, .comments--list-actions .list--action-sort-latest:active,
 .list--actions .list--action-sort-hot:active,
-.comments--list-actions .list--action-sort-hot:active, .community--search .community--search--button:active, .dataset--list-item .dataset--actions-preview:active, .list--actions .list--action-create:active, .comments--list-actions .list--action-create:active, .dataset--list-item .dataset--actions-download:active, .comments--post-comment-login:active,
+.comments--list-actions .list--action-sort-hot:active, .search-form--content-block .search-form--content-block--button:active, .dataset--list-item .dataset--actions-preview:active, .list--actions .list--action-create:active, .comments--list-actions .list--action-create:active, .dataset--list-item .dataset--actions-download:active, .comments--post-comment-login:active,
 .comments--post-comment-create-user:active {
   text-decoration: none;
 }
 /* line 51, ../sass/framework/_buttons.scss */
 .disabled.button, .list--actions .disabled.list--action-sort-latest, .comments--list-actions .disabled.list--action-sort-latest,
 .list--actions .disabled.list--action-sort-hot,
-.comments--list-actions .disabled.list--action-sort-hot, .community--search .disabled.community--search--button, .dataset--list-item .disabled.dataset--actions-preview, .list--actions .disabled.list--action-create, .comments--list-actions .disabled.list--action-create, .dataset--list-item .disabled.dataset--actions-download, .disabled.comments--post-comment-login,
+.comments--list-actions .disabled.list--action-sort-hot, .search-form--content-block .disabled.search-form--content-block--button, .dataset--list-item .disabled.dataset--actions-preview, .list--actions .disabled.list--action-create, .comments--list-actions .disabled.list--action-create, .dataset--list-item .disabled.dataset--actions-download, .disabled.comments--post-comment-login,
 .disabled.comments--post-comment-create-user, [disabled].button, .list--actions [disabled].list--action-sort-latest, .comments--list-actions [disabled].list--action-sort-latest,
 .list--actions [disabled].list--action-sort-hot,
-.comments--list-actions [disabled].list--action-sort-hot, .community--search [disabled].community--search--button, .dataset--list-item [disabled].dataset--actions-preview, .list--actions [disabled].list--action-create, .comments--list-actions [disabled].list--action-create, .dataset--list-item [disabled].dataset--actions-download, [disabled].comments--post-comment-login,
+.comments--list-actions [disabled].list--action-sort-hot, .search-form--content-block [disabled].search-form--content-block--button, .dataset--list-item [disabled].dataset--actions-preview, .list--actions [disabled].list--action-create, .comments--list-actions [disabled].list--action-create, .dataset--list-item [disabled].dataset--actions-download, [disabled].comments--post-comment-login,
 [disabled].comments--post-comment-create-user {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
@@ -1069,13 +1069,13 @@ a.button, .dataset--list-item .dataset--actions-preview, .list--actions .list--a
 /* line 98, ../sass/framework/_buttons.scss */
 .button, .list--actions .list--action-sort-latest, .comments--list-actions .list--action-sort-latest,
 .list--actions .list--action-sort-hot,
-.comments--list-actions .list--action-sort-hot, .community--search .community--search--button,
+.comments--list-actions .list--action-sort-hot, .search-form--content-block .search-form--content-block--button,
 a.button,
 .list--actions a.list--action-sort-latest,
 .comments--list-actions a.list--action-sort-latest,
 .list--actions a.list--action-sort-hot,
 .comments--list-actions a.list--action-sort-hot,
-.community--search a.community--search--button {
+.search-form--content-block a.search-form--content-block--button {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #0d0d0d));
   background-image: -webkit-linear-gradient(#333333, #0d0d0d);
   background-image: -moz-linear-gradient(#333333, #0d0d0d);
@@ -1089,49 +1089,49 @@ a.button,
 /* line 76, ../sass/framework/_buttons.scss */
 .button:link, .list--actions .list--action-sort-latest:link, .comments--list-actions .list--action-sort-latest:link,
 .list--actions .list--action-sort-hot:link,
-.comments--list-actions .list--action-sort-hot:link, .community--search .community--search--button:link, .button:visited, .list--actions .list--action-sort-latest:visited, .comments--list-actions .list--action-sort-latest:visited,
+.comments--list-actions .list--action-sort-hot:link, .search-form--content-block .search-form--content-block--button:link, .button:visited, .list--actions .list--action-sort-latest:visited, .comments--list-actions .list--action-sort-latest:visited,
 .list--actions .list--action-sort-hot:visited,
-.comments--list-actions .list--action-sort-hot:visited, .community--search .community--search--button:visited,
+.comments--list-actions .list--action-sort-hot:visited, .search-form--content-block .search-form--content-block--button:visited,
 a.button:link,
 .list--actions a.list--action-sort-latest:link,
 .comments--list-actions a.list--action-sort-latest:link,
 .list--actions a.list--action-sort-hot:link,
 .comments--list-actions a.list--action-sort-hot:link,
-.community--search a.community--search--button:link,
+.search-form--content-block a.search-form--content-block--button:link,
 a.button:visited,
 .list--actions a.list--action-sort-latest:visited,
 .comments--list-actions a.list--action-sort-latest:visited,
 .list--actions a.list--action-sort-hot:visited,
 .comments--list-actions a.list--action-sort-hot:visited,
-.community--search a.community--search--button:visited {
+.search-form--content-block a.search-form--content-block--button:visited {
   color: white;
 }
 /* line 83, ../sass/framework/_buttons.scss */
 .button:focus, .list--actions .list--action-sort-latest:focus, .comments--list-actions .list--action-sort-latest:focus,
 .list--actions .list--action-sort-hot:focus,
-.comments--list-actions .list--action-sort-hot:focus, .community--search .community--search--button:focus, .button:hover, .list--actions .list--action-sort-latest:hover, .comments--list-actions .list--action-sort-latest:hover,
+.comments--list-actions .list--action-sort-hot:focus, .search-form--content-block .search-form--content-block--button:focus, .button:hover, .list--actions .list--action-sort-latest:hover, .comments--list-actions .list--action-sort-latest:hover,
 .list--actions .list--action-sort-hot:hover,
-.comments--list-actions .list--action-sort-hot:hover, .community--search .community--search--button:hover, .button:active, .list--actions .list--action-sort-latest:active, .comments--list-actions .list--action-sort-latest:active,
+.comments--list-actions .list--action-sort-hot:hover, .search-form--content-block .search-form--content-block--button:hover, .button:active, .list--actions .list--action-sort-latest:active, .comments--list-actions .list--action-sort-latest:active,
 .list--actions .list--action-sort-hot:active,
-.comments--list-actions .list--action-sort-hot:active, .community--search .community--search--button:active,
+.comments--list-actions .list--action-sort-hot:active, .search-form--content-block .search-form--content-block--button:active,
 a.button:focus,
 .list--actions a.list--action-sort-latest:focus,
 .comments--list-actions a.list--action-sort-latest:focus,
 .list--actions a.list--action-sort-hot:focus,
 .comments--list-actions a.list--action-sort-hot:focus,
-.community--search a.community--search--button:focus,
+.search-form--content-block a.search-form--content-block--button:focus,
 a.button:hover,
 .list--actions a.list--action-sort-latest:hover,
 .comments--list-actions a.list--action-sort-latest:hover,
 .list--actions a.list--action-sort-hot:hover,
 .comments--list-actions a.list--action-sort-hot:hover,
-.community--search a.community--search--button:hover,
+.search-form--content-block a.search-form--content-block--button:hover,
 a.button:active,
 .list--actions a.list--action-sort-latest:active,
 .comments--list-actions a.list--action-sort-latest:active,
 .list--actions a.list--action-sort-hot:active,
 .comments--list-actions a.list--action-sort-hot:active,
-.community--search a.community--search--button:active {
+.search-form--content-block a.search-form--content-block--button:active {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #262626), color-stop(100%, #000000));
   background-image: -webkit-linear-gradient(#262626, #000000);
   background-image: -moz-linear-gradient(#262626, #000000);
@@ -1142,13 +1142,13 @@ a.button:active,
 /* line 89, ../sass/framework/_buttons.scss */
 .button i[class^="icon-"], .list--actions .list--action-sort-latest i[class^="icon-"], .comments--list-actions .list--action-sort-latest i[class^="icon-"],
 .list--actions .list--action-sort-hot i[class^="icon-"],
-.comments--list-actions .list--action-sort-hot i[class^="icon-"], .community--search .community--search--button i[class^="icon-"],
+.comments--list-actions .list--action-sort-hot i[class^="icon-"], .search-form--content-block .search-form--content-block--button i[class^="icon-"],
 a.button i[class^="icon-"],
 .list--actions a.list--action-sort-latest i[class^="icon-"],
 .comments--list-actions a.list--action-sort-latest i[class^="icon-"],
 .list--actions a.list--action-sort-hot i[class^="icon-"],
 .comments--list-actions a.list--action-sort-hot i[class^="icon-"],
-.community--search a.community--search--button i[class^="icon-"] {
+.search-form--content-block a.search-form--content-block--button i[class^="icon-"] {
   margin-right: 8px;
 }
 
@@ -1241,13 +1241,13 @@ a.button i[class^="icon-"],
 /* line 125, ../sass/framework/_buttons.scss */
 input[type=submit].button, .list--actions input[type=submit].list--action-sort-latest, .comments--list-actions input[type=submit].list--action-sort-latest,
 .list--actions input[type=submit].list--action-sort-hot,
-.comments--list-actions input[type=submit].list--action-sort-hot, .community--search input[type=submit].community--search--button,
+.comments--list-actions input[type=submit].list--action-sort-hot, .search-form--content-block input[type=submit].search-form--content-block--button,
 button.button,
 .list--actions button.list--action-sort-latest,
 .comments--list-actions button.list--action-sort-latest,
 .list--actions button.list--action-sort-hot,
 .comments--list-actions button.list--action-sort-hot,
-.community--search button.community--search--button {
+.search-form--content-block button.search-form--content-block--button {
   -webkit-appearance: none;
 }
 
@@ -4047,44 +4047,13 @@ body {
   overflow: visible;
 }
 
-/* Site footer
-   ========================================================================== */
-/* line 74, ../sass/layout/_layout.scss */
-.site-footer {
-  -webkit-box-shadow: 0 0 5px #d5d5d5;
-  -moz-box-shadow: 0 0 5px #d5d5d5;
-  box-shadow: 0 0 5px #d5d5d5;
-  border-top: 20px solid rgba(255, 255, 255, 0.5);
-}
-
-/* line 80, ../sass/layout/_layout.scss */
-.footer-wrapper {
-  background-color: rgba(150, 176, 0, 0.7);
-  position: relative;
-}
-
-/* line 85, ../sass/layout/_layout.scss */
-.footer-inner {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  overflow: hidden;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1200px;
-  padding-top: 20px;
-  padding-right: 10px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-}
-
 /* Layouts
    ========================================================================== */
-/* line 102, ../sass/layout/_layout.scss */
+/* line 75, ../sass/layout/_layout.scss */
 .front {
   /* Media queries */
 }
-/* line 103, ../sass/layout/_layout.scss */
+/* line 76, ../sass/layout/_layout.scss */
 .front .primary-content {
   float: left;
   width: 66.66667%;
@@ -4101,10 +4070,48 @@ body {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
+  padding-right: 0;
+  padding-left: 0;
 }
-/* line 107, ../sass/layout/_layout.scss */
+/* line 82, ../sass/layout/_layout.scss */
+.front .primary-content .spotbox:nth-child(odd), .front .primary-content .spotbox--featured-dataset:nth-child(odd) {
+  float: right;
+  width: 50%;
+  margin-right: 0%;
+  margin-left: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/all/themes/litteratursiden/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 86, ../sass/layout/_layout.scss */
+.front .primary-content .spotbox:nth-child(even), .front .primary-content .spotbox--featured-dataset:nth-child(even) {
+  clear: left;
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/all/themes/litteratursiden/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 92, ../sass/layout/_layout.scss */
 .front .secondary-content {
-  clear: right;
   float: right;
   width: 33.33333%;
   margin-right: 0%;
@@ -4121,7 +4128,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 112, ../sass/layout/_layout.scss */
+/* line 96, ../sass/layout/_layout.scss */
 .front .tertiary-content {
   clear: left;
   float: left;
@@ -4140,49 +4147,8 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 116, ../sass/layout/_layout.scss */
-.front .tertiary-content .spotbox:nth-child(odd), .front .tertiary-content .spotbox--search:nth-child(odd) {
-  clear: left;
-  float: left;
-  width: 50%;
-  margin-left: 0%;
-  margin-right: -50%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/sites/all/themes/litteratursiden/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-}
-/* line 121, ../sass/layout/_layout.scss */
-.front .tertiary-content .spotbox:nth-child(even), .front .tertiary-content .spotbox--search:nth-child(even) {
-  float: right;
-  width: 50%;
-  margin-right: 0%;
-  margin-left: -50%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/sites/all/themes/litteratursiden/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-}
-/* line 126, ../sass/layout/_layout.scss */
-.front .attachment-wrapper {
-  clear: both;
-}
 @media only screen and (max-width: 768px) {
-  /* line 134, ../sass/layout/_layout.scss */
+  /* line 105, ../sass/layout/_layout.scss */
   .front .primary-content,
   .front .secondary-content,
   .front .tertiary-content {
@@ -4203,24 +4169,24 @@ body {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 140, ../sass/layout/_layout.scss */
-  .front .primary-content .spotbox, .front .primary-content .spotbox--search,
+  /* line 111, ../sass/layout/_layout.scss */
+  .front .primary-content .spotbox, .front .primary-content .spotbox--featured-dataset,
   .front .primary-content .spotbox:nth-child(odd),
-  .front .primary-content .spotbox--search:nth-child(odd),
+  .front .primary-content .spotbox--featured-dataset:nth-child(odd),
   .front .primary-content .spotbox:nth-child(even),
-  .front .primary-content .spotbox--search:nth-child(even),
+  .front .primary-content .spotbox--featured-dataset:nth-child(even),
   .front .secondary-content .spotbox,
-  .front .secondary-content .spotbox--search,
+  .front .secondary-content .spotbox--featured-dataset,
   .front .secondary-content .spotbox:nth-child(odd),
-  .front .secondary-content .spotbox--search:nth-child(odd),
+  .front .secondary-content .spotbox--featured-dataset:nth-child(odd),
   .front .secondary-content .spotbox:nth-child(even),
-  .front .secondary-content .spotbox--search:nth-child(even),
+  .front .secondary-content .spotbox--featured-dataset:nth-child(even),
   .front .tertiary-content .spotbox,
-  .front .tertiary-content .spotbox--search,
+  .front .tertiary-content .spotbox--featured-dataset,
   .front .tertiary-content .spotbox:nth-child(odd),
-  .front .tertiary-content .spotbox--search:nth-child(odd),
+  .front .tertiary-content .spotbox--featured-dataset:nth-child(odd),
   .front .tertiary-content .spotbox:nth-child(even),
-  .front .tertiary-content .spotbox--search:nth-child(even) {
+  .front .tertiary-content .spotbox--featured-dataset:nth-child(even) {
     clear: left;
     float: left;
     width: 100%;
@@ -4241,7 +4207,7 @@ body {
 }
 
 /* Right sidebar only */
-/* line 151, ../sass/layout/_layout.scss */
+/* line 122, ../sass/layout/_layout.scss */
 .left-sidebar .primary-content {
   float: right;
   width: 75%;
@@ -4259,7 +4225,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 155, ../sass/layout/_layout.scss */
+/* line 126, ../sass/layout/_layout.scss */
 .left-sidebar .secondary-content {
   float: left;
   width: 25%;
@@ -4277,7 +4243,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 159, ../sass/layout/_layout.scss */
+/* line 130, ../sass/layout/_layout.scss */
 .left-sidebar .tertiary-content {
   clear: both;
   float: left;
@@ -4296,8 +4262,8 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 163, ../sass/layout/_layout.scss */
-.left-sidebar .tertiary-content .spotbox:nth-child(odd), .left-sidebar .tertiary-content .spotbox--search:nth-child(odd) {
+/* line 134, ../sass/layout/_layout.scss */
+.left-sidebar .tertiary-content .spotbox:nth-child(odd), .left-sidebar .tertiary-content .spotbox--featured-dataset:nth-child(odd) {
   clear: left;
   float: left;
   width: 50%;
@@ -4315,8 +4281,8 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 168, ../sass/layout/_layout.scss */
-.left-sidebar .tertiary-content .spotbox:nth-child(even), .left-sidebar .tertiary-content .spotbox--search:nth-child(even) {
+/* line 139, ../sass/layout/_layout.scss */
+.left-sidebar .tertiary-content .spotbox:nth-child(even), .left-sidebar .tertiary-content .spotbox--featured-dataset:nth-child(even) {
   float: right;
   width: 50%;
   margin-right: 0%;
@@ -4335,7 +4301,7 @@ body {
 }
 
 /* Both sidebars */
-/* line 177, ../sass/layout/_layout.scss */
+/* line 148, ../sass/layout/_layout.scss */
 .both-sidebars .static-content {
   float: right;
   width: 25%;
@@ -4353,7 +4319,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 181, ../sass/layout/_layout.scss */
+/* line 152, ../sass/layout/_layout.scss */
 .both-sidebars .primary-content {
   float: left;
   width: 50%;
@@ -4371,7 +4337,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 185, ../sass/layout/_layout.scss */
+/* line 156, ../sass/layout/_layout.scss */
 .both-sidebars .secondary-content {
   float: left;
   width: 25%;
@@ -4389,90 +4355,9 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 189, ../sass/layout/_layout.scss */
+/* line 160, ../sass/layout/_layout.scss */
 .both-sidebars .tertiary-content {
   clear: right;
-  float: right;
-  width: 25%;
-  margin-right: 0%;
-  margin-left: -25%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/sites/all/themes/litteratursiden/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-}
-
-/* line 197, ../sass/layout/_layout.scss */
-.attachment-wrapper {
-  clear: both;
-}
-
-/* line 201, ../sass/layout/_layout.scss */
-.attachment-first {
-  float: left;
-  width: 25%;
-  margin-left: 0%;
-  margin-right: -25%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/sites/all/themes/litteratursiden/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-}
-
-/* line 205, ../sass/layout/_layout.scss */
-.attachment-second {
-  float: left;
-  width: 25%;
-  margin-left: 25%;
-  margin-right: -50%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/sites/all/themes/litteratursiden/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-}
-
-/* line 209, ../sass/layout/_layout.scss */
-.attachment-third {
-  float: right;
-  width: 25%;
-  margin-right: 25%;
-  margin-left: -50%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/sites/all/themes/litteratursiden/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-}
-
-/* line 213, ../sass/layout/_layout.scss */
-.attachment-fourth {
   float: right;
   width: 25%;
   margin-right: 0%;
@@ -4986,31 +4871,47 @@ body {
  *
  * @author zorp
  */
-/* Text in footer
-   ========================================================================== */
-/* line 9, ../sass/layout/_footer.scss */
+/* line 8, ../sass/layout/_footer.scss */
 .site-footer {
+  border-top: 20px solid rgba(150, 176, 0, 0.35);
   color: black;
 }
-/* line 12, ../sass/layout/_footer.scss */
-.site-footer p {
-  margin-bottom: 5px;
+
+/* line 13, ../sass/layout/_footer.scss */
+.footer-wrapper {
+  background-color: rgba(150, 176, 0, 0.7);
+  position: relative;
+}
+
+/* line 18, ../sass/layout/_footer.scss */
+.footer-inner {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  padding-top: 40px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+  padding-left: 10px;
 }
 
 /* Logo img in footer
    ========================================================================== */
-/* line 19, ../sass/layout/_footer.scss */
+/* line 34, ../sass/layout/_footer.scss */
 .footer-logo {
   margin-right: 20px;
 }
-/* line 22, ../sass/layout/_footer.scss */
+/* line 37, ../sass/layout/_footer.scss */
 .footer-logo.last {
   margin-right: 0;
 }
 
 /* Awards block
    ========================================================================== */
-/* line 29, ../sass/layout/_footer.scss */
+/* line 44, ../sass/layout/_footer.scss */
 .awards {
   float: right;
   width: 50%;
@@ -5027,6 +4928,7 @@ body {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
+  /* Adjust height to align bottom with newsletter signup form */
   padding-top: 3px;
   padding-right: 0;
   text-align: right;
@@ -5034,7 +4936,7 @@ body {
 
 /* Powered by block
    ========================================================================== */
-/* line 39, ../sass/layout/_footer.scss */
+/* line 55, ../sass/layout/_footer.scss */
 .powered-by {
   clear: left;
   float: left;
@@ -5114,7 +5016,7 @@ body {
 /* Block module
    ========================================================================== */
 /* line 63, ../sass/module/_module.scss */
-.twitter-widget, .spotbox--inner, .spotbox--search-inner, .community--filter-inner, .page--content-wrapper, .comments {
+.twitter-widget, .spotbox--inner, .search-spotbox--inner, .spotbox--featured-dataset-inner, .community--filter-inner, .page--content-wrapper, .comments {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -5127,30 +5029,30 @@ body {
 }
 
 /* line 73, ../sass/module/_module.scss */
-.spotbox, .spotbox--search, .community--filter {
+.spotbox, .spotbox--featured-dataset, .community--filter {
   margin-top: 20px;
 }
 /* line 76, ../sass/module/_module.scss */
-.spotbox a:link, .spotbox--search a:link, .community--filter a:link {
+.spotbox a:link, .spotbox--featured-dataset a:link, .community--filter a:link {
   color: #e5420c;
   text-decoration: none;
 }
 /* line 81, ../sass/module/_module.scss */
-.spotbox a:visited, .spotbox--search a:visited, .community--filter a:visited {
+.spotbox a:visited, .spotbox--featured-dataset a:visited, .community--filter a:visited {
   color: #b53409;
   text-decoration: none;
 }
 /* line 86, ../sass/module/_module.scss */
-.spotbox a:hover, .spotbox--search a:hover, .community--filter a:hover {
+.spotbox a:hover, .spotbox--featured-dataset a:hover, .community--filter a:hover {
   color: #be370a;
   text-decoration: none;
 }
 /* line 91, ../sass/module/_module.scss */
-.spotbox a:focus, .spotbox--search a:focus, .community--filter a:focus {
+.spotbox a:focus, .spotbox--featured-dataset a:focus, .community--filter a:focus {
   color: black;
 }
 /* line 95, ../sass/module/_module.scss */
-.spotbox i[class^="icon-"], .spotbox--search i[class^="icon-"], .community--filter i[class^="icon-"] {
+.spotbox i[class^="icon-"], .spotbox--featured-dataset i[class^="icon-"], .community--filter i[class^="icon-"] {
   margin-right: 5px;
   /* Icon gets cut off when it is the first item from the left */
   padding-left: 1px;
@@ -5158,7 +5060,7 @@ body {
 
 /* %module--block headers */
 /* line 109, ../sass/module/_module.scss */
-.spotbox--header, .spotbox--search-header, .community--filter-header {
+.spotbox--header, .search-spotbox--header, .spotbox--featured-dataset-header, .community--filter-header {
   -webkit-border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
@@ -5174,33 +5076,48 @@ body {
   padding-left: 20px;
 }
 /* line 123, ../sass/module/_module.scss */
-.spotbox--header a:hover, .spotbox--search-header a:hover, .community--filter-header a:hover {
+.spotbox--header a:link, .search-spotbox--header a:link, .spotbox--featured-dataset-header a:link, .community--filter-header a:link {
+  color: #404040;
+  text-decoration: none;
+}
+/* line 128, ../sass/module/_module.scss */
+.spotbox--header a:visited, .search-spotbox--header a:visited, .spotbox--featured-dataset-header a:visited, .community--filter-header a:visited {
+  color: #3b3b3b;
+  text-decoration: none;
+}
+/* line 133, ../sass/module/_module.scss */
+.spotbox--header a:hover, .search-spotbox--header a:hover, .spotbox--featured-dataset-header a:hover, .community--filter-header a:hover {
+  color: #be370a;
   text-decoration: none;
   /* Inherit hover color for header labels */
 }
-/* line 127, ../sass/module/_module.scss */
-.spotbox--header a:hover [class$="header-label"], .spotbox--search-header a:hover [class$="header-label"], .community--filter-header a:hover [class$="header-label"] {
+/* line 138, ../sass/module/_module.scss */
+.spotbox--header a:hover [class$="header-label"], .search-spotbox--header a:hover [class$="header-label"], .spotbox--featured-dataset-header a:hover [class$="header-label"], .community--filter-header a:hover [class$="header-label"] {
   color: gray;
 }
-/* line 132, ../sass/module/_module.scss */
-.spotbox--header i[class^="icon-"], .spotbox--search-header i[class^="icon-"], .community--filter-header i[class^="icon-"] {
+/* line 143, ../sass/module/_module.scss */
+.spotbox--header a:focus, .search-spotbox--header a:focus, .spotbox--featured-dataset-header a:focus, .community--filter-header a:focus {
+  color: black;
+}
+/* line 147, ../sass/module/_module.scss */
+.spotbox--header i[class^="icon-"], .search-spotbox--header i[class^="icon-"], .spotbox--featured-dataset-header i[class^="icon-"], .community--filter-header i[class^="icon-"] {
   margin-right: 8px;
 }
 
-/* line 137, ../sass/module/_module.scss */
+/* line 152, ../sass/module/_module.scss */
 .spotbox--header-label {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
 
-/* line 142, ../sass/module/_module.scss */
+/* line 157, ../sass/module/_module.scss */
 .spotbox--list-header-label {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
   margin-right: 5px;
 }
 
-/* line 149, ../sass/module/_module.scss */
+/* line 164, ../sass/module/_module.scss */
 .spotbox--list-header {
   font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: normal;
@@ -5210,33 +5127,33 @@ body {
 }
 
 /* %module--block content */
-/* line 159, ../sass/module/_module.scss */
+/* line 174, ../sass/module/_module.scss */
 .spotbox--content-wrapper {
   /* Correct spacing for line height */
   margin-top: -5px;
   vertical-align: top;
 }
 
-/* line 166, ../sass/module/_module.scss */
+/* line 181, ../sass/module/_module.scss */
 .spotbox--content {
   padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
 }
-/* line 171, ../sass/module/_module.scss */
+/* line 186, ../sass/module/_module.scss */
 .spotbox--content a:link {
   color: #e5420c;
 }
-/* line 175, ../sass/module/_module.scss */
+/* line 190, ../sass/module/_module.scss */
 .spotbox--content a:visited {
   color: #972c08;
 }
-/* line 179, ../sass/module/_module.scss */
+/* line 194, ../sass/module/_module.scss */
 .spotbox--content a:hover {
   color: #be370a;
 }
 
-/* line 185, ../sass/module/_module.scss */
+/* line 200, ../sass/module/_module.scss */
 .spotbox--meta-wrapper {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
@@ -5244,82 +5161,84 @@ body {
   padding-right: 20px;
   padding-left: 20px;
 }
-/* line 192, ../sass/module/_module.scss */
+/* line 207, ../sass/module/_module.scss */
 .spotbox--meta-wrapper a:link {
   color: #e5420c;
 }
-/* line 196, ../sass/module/_module.scss */
+/* line 211, ../sass/module/_module.scss */
 .spotbox--meta-wrapper a:visited {
   color: #972c08;
 }
-/* line 200, ../sass/module/_module.scss */
+/* line 215, ../sass/module/_module.scss */
 .spotbox--meta-wrapper a:hover {
   color: #be370a;
 }
 
 /* %module--block list */
-/* line 207, ../sass/module/_module.scss */
+/* line 222, ../sass/module/_module.scss */
 .spotbox--list, .spotbox--list-latest, .community--filter-list {
   padding-left: 0;
 }
-/* line 210, ../sass/module/_module.scss */
+/* line 225, ../sass/module/_module.scss */
 .spotbox--list a:link, .spotbox--list-latest a:link, .community--filter-list a:link {
   color: #404040;
   text-decoration: none;
 }
-/* line 215, ../sass/module/_module.scss */
+/* line 230, ../sass/module/_module.scss */
 .spotbox--list a:visited, .spotbox--list-latest a:visited, .community--filter-list a:visited {
   color: #3b3b3b;
   text-decoration: none;
 }
-/* line 220, ../sass/module/_module.scss */
+/* line 235, ../sass/module/_module.scss */
 .spotbox--list a:hover, .spotbox--list-latest a:hover, .community--filter-list a:hover {
   color: #be370a;
   text-decoration: none;
 }
-/* line 225, ../sass/module/_module.scss */
+/* line 240, ../sass/module/_module.scss */
 .spotbox--list a:focus, .spotbox--list-latest a:focus, .community--filter-list a:focus {
   color: black;
 }
-/* line 229, ../sass/module/_module.scss */
+/* line 244, ../sass/module/_module.scss */
 .spotbox--list i[class^="icon-"], .spotbox--list-latest i[class^="icon-"], .community--filter-list i[class^="icon-"] {
   margin-right: 5px;
   /* Icon gets cut off when it is the first item from the left */
   padding-left: 1px;
 }
 
-/* line 237, ../sass/module/_module.scss */
+/* line 252, ../sass/module/_module.scss */
 .spotbox--list-item, .community--filter-list-item {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
   overflow: hidden;
   padding-bottom: 10px;
 }
-/* line 243, ../sass/module/_module.scss */
+/* line 258, ../sass/module/_module.scss */
 .last.spotbox--list-item, .last.community--filter-list-item {
   border-bottom: 0;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-/* line 251, ../sass/module/_module.scss */
+/* line 266, ../sass/module/_module.scss */
 .spotbox--list-posted {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
   margin-bottom: 0;
 }
 
-/* line 256, ../sass/module/_module.scss */
+/* line 273, ../sass/module/_module.scss */
 .spotbox--date {
   display: block;
 }
 
 /* %module--block image */
-/* line 262, ../sass/module/_module.scss */
+/* line 279, ../sass/module/_module.scss */
 .spotbox--image {
   margin-bottom: 20px;
 }
 
 /* %module--block list image */
-/* line 268, ../sass/module/_module.scss */
+/* line 285, ../sass/module/_module.scss */
 .spotbox--list-image {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -5328,12 +5247,33 @@ body {
   float: left;
   margin-right: 15px;
   max-width: 50px;
+  margin-top: 3px;
   overflow: hidden;
   vertical-align: top;
 }
 
+/* line 299, ../sass/module/_module.scss */
+.spotbox--list-link a:link {
+  color: #e5420c;
+  text-decoration: none;
+}
+/* line 304, ../sass/module/_module.scss */
+.spotbox--list-link a:visited {
+  color: #db3f0b;
+  text-decoration: none;
+}
+/* line 309, ../sass/module/_module.scss */
+.spotbox--list-link a:hover {
+  color: #be370a;
+  text-decoration: none;
+}
+/* line 314, ../sass/module/_module.scss */
+.spotbox--list-link a:focus {
+  color: black;
+}
+
 /* %module--block footer */
-/* line 281, ../sass/module/_module.scss */
+/* line 321, ../sass/module/_module.scss */
 .spotbox--footer {
   border-top: 1px dashed rgba(0, 0, 0, 0.1);
   clear: both;
@@ -5345,37 +5285,138 @@ body {
   padding-bottom: 15px;
 }
 
-/* line 293, ../sass/module/_module.scss */
+/* line 333, ../sass/module/_module.scss */
 .spotbox--read-more {
   float: right;
 }
 
+/* %module-list-alternate
+   ========================================================================== */
+/* line 340, ../sass/module/_module.scss */
+.community--list {
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+/* line 345, ../sass/module/_module.scss */
+.community--list-heading {
+  font-size: 160%;
+  margin-right: 5px;
+}
+
+/* line 350, ../sass/module/_module.scss */
+.community--list-item {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fbfbfb;
+  border: 1px solid #efefef;
+  margin-top: 20px;
+  overflow: hidden;
+  padding: 20px;
+}
+/* line 359, ../sass/module/_module.scss */
+.community--list-item:hover {
+  border: 1px solid #d5d5d5;
+}
+
+/* line 364, ../sass/module/_module.scss */
+.community--list-icon {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #96b000;
+  color: white;
+  font-size: 250%;
+  float: left;
+  margin-top: -5px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  min-width: 60px;
+  padding: 10px;
+  text-align: center;
+  width: 60px;
+}
+/* line 380, ../sass/module/_module.scss */
+.community--list-icon:hover {
+  background-color: #809700;
+}
+/* line 389, ../sass/module/_module.scss */
+.community--list-icon a:link, .community--list-icon a:visited, .community--list-icon a:hover, .community--list-icon a:focus, .community--list-icon a:active {
+  color: white;
+}
+
+/* line 395, ../sass/module/_module.scss */
+.community--list-content {
+  display: inline-block;
+  margin-bottom: 20px;
+  max-width: 80%;
+}
+
+/* line 402, ../sass/module/_module.scss */
+.community--list-meta {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75;
+  margin-bottom: 5px;
+}
+
+/* line 408, ../sass/module/_module.scss */
+.community--list-posted {
+  margin-right: 5px;
+}
+
+/* line 412, ../sass/module/_module.scss */
+.community--list-author {
+  margin-left: 5px;
+}
+
+/* line 416, ../sass/module/_module.scss */
+.community--list-footer {
+  border-top: 1px dashed #e6e6e6;
+  margin-top: 20px;
+  padding-top: 10px;
+  text-align: right;
+}
+
+/* line 423, ../sass/module/_module.scss */
+.community--list-comments-link {
+  margin-right: 5px;
+}
+
+/* line 427, ../sass/module/_module.scss */
+.community--list-read-more {
+  margin-left: 5px;
+}
+
 /* List actions
    ========================================================================== */
-/* line 310, ../sass/module/_module.scss */
+/* line 444, ../sass/module/_module.scss */
 .list--actions .list--action-sort-latest, .comments--list-actions .list--action-sort-latest {
   margin-right: 10px;
 }
-/* line 314, ../sass/module/_module.scss */
+/* line 448, ../sass/module/_module.scss */
 .list--actions .list--action-create, .comments--list-actions .list--action-create {
   float: right;
 }
 
 /* Pager
    ========================================================================== */
-/* line 325, ../sass/module/_module.scss */
+/* line 459, ../sass/module/_module.scss */
 .pager {
   margin-top: 20px;
   padding-left: 0;
   text-align: center;
 }
-/* line 330, ../sass/module/_module.scss */
+/* line 464, ../sass/module/_module.scss */
 .pager li {
   display: inline-block;
   margin-left: -4px;
   margin-right: 4px;
 }
-/* line 336, ../sass/module/_module.scss */
+/* line 470, ../sass/module/_module.scss */
 .pager li.pager-current,
 .pager li a {
   background-color: #efefef;
@@ -5385,26 +5426,26 @@ body {
   padding-bottom: 5px;
   padding-left: 15px;
 }
-/* line 344, ../sass/module/_module.scss */
+/* line 478, ../sass/module/_module.scss */
 .pager li.pager-current:hover,
 .pager li a:hover {
   text-decoration: none;
 }
-/* line 349, ../sass/module/_module.scss */
+/* line 483, ../sass/module/_module.scss */
 .pager li.pager-current {
   background-color: #e2e2e2;
 }
-/* line 355, ../sass/module/_module.scss */
+/* line 489, ../sass/module/_module.scss */
 .pager .active a,
 .pager .active a:hover {
   cursor: default;
   text-decoration: underline;
 }
-/* line 360, ../sass/module/_module.scss */
+/* line 494, ../sass/module/_module.scss */
 .pager .disabled {
   background-color: #fbfbfb;
 }
-/* line 363, ../sass/module/_module.scss */
+/* line 497, ../sass/module/_module.scss */
 .pager .disabled a:hover {
   cursor: default;
   text-decoration: none;
@@ -5450,7 +5491,7 @@ body {
 }
 
 /* line 29, ../sass/module/_spotbox.scss */
-.spotbox--inner, .spotbox--search-inner {
+.spotbox--inner, .search-spotbox--inner, .spotbox--featured-dataset-inner {
   background-color: white;
 }
 
@@ -5477,87 +5518,6 @@ body {
 
 /* Spotbox images */
 /* Spotbox footer */
-/* Spotboxes in primary content
-   ========================================================================== */
-/* line 138, ../sass/module/_spotbox.scss */
-.primary-content {
-  /* Reset margin bottom on last spotbox in primary content */
-}
-/* line 139, ../sass/module/_spotbox.scss */
-.primary-content .spotbox--inner, .primary-content .spotbox--search-inner {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(100%, #ffffff));
-  background-image: -webkit-linear-gradient(#f2f2f2, #ffffff);
-  background-image: -moz-linear-gradient(#f2f2f2, #ffffff);
-  background-image: -o-linear-gradient(#f2f2f2, #ffffff);
-  background-image: linear-gradient(#f2f2f2, #ffffff);
-  background-color: white;
-}
-/* line 145, ../sass/module/_spotbox.scss */
-.primary-content .spotbox--list-label {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
-  opacity: 0.75;
-}
-/* line 149, ../sass/module/_spotbox.scss */
-.primary-content .spotbox--list-header {
-  font-family: "exo-demi-bold";
-  font-weight: normal;
-}
-/* line 154, ../sass/module/_spotbox.scss */
-.primary-content .spotbox:last-child, .primary-content .spotbox--search:last-child {
-  margin-bottom: 0;
-}
-
-/* Spotboxes in secondary content
-   ========================================================================== */
-/* line 164, ../sass/module/_spotbox.scss */
-.secondary-content .spotbox--inner, .secondary-content .spotbox--search-inner {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ffffff));
-  background-image: -webkit-linear-gradient(#ffffff, #ffffff);
-  background-image: -moz-linear-gradient(#ffffff, #ffffff);
-  background-image: -o-linear-gradient(#ffffff, #ffffff);
-  background-image: linear-gradient(#ffffff, #ffffff);
-  background-color: white;
-}
-/* line 170, ../sass/module/_spotbox.scss */
-.secondary-content .spotbox--header, .secondary-content .spotbox--search-header {
-  font-size: 130%;
-}
-
-/* Spotboxes in tertiary content
-   ========================================================================== */
-/* line 180, ../sass/module/_spotbox.scss */
-.tertiary-content .spotbox--inner, .tertiary-content .spotbox--search-inner {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ffffff));
-  background-image: -webkit-linear-gradient(#ffffff, #ffffff);
-  background-image: -moz-linear-gradient(#ffffff, #ffffff);
-  background-image: -o-linear-gradient(#ffffff, #ffffff);
-  background-image: linear-gradient(#ffffff, #ffffff);
-  background-color: #acca00;
-}
-/* line 186, ../sass/module/_spotbox.scss */
-.tertiary-content .spotbox--header, .tertiary-content .spotbox--search-header {
-  font-size: 130%;
-}
-
-/* Spotboxes as attachment
-   ========================================================================== */
-/* line 196, ../sass/module/_spotbox.scss */
-.attachment-wrapper .spotbox--inner, .attachment-wrapper .spotbox--search-inner {
-  background-color: #acca00;
-}
-/* line 200, ../sass/module/_spotbox.scss */
-.attachment-wrapper .spotbox--header, .attachment-wrapper .spotbox--search-header {
-  font-size: 110%;
-}
-/* line 204, ../sass/module/_spotbox.scss */
-.attachment-wrapper .spotbox--image {
-  max-width: 50px;
-}
-/* line 208, ../sass/module/_spotbox.scss */
-.attachment-wrapper .spotbox--content {
-  display: none;
-}
-
 /**
  * User
  *
@@ -5610,7 +5570,7 @@ body {
 .user-login .list--actions .list--action-sort-hot,
 .list--actions .user-login .list--action-sort-hot,
 .user-login .comments--list-actions .list--action-sort-hot,
-.comments--list-actions .user-login .list--action-sort-hot, .user-login .community--search .community--search--button, .community--search .user-login .community--search--button {
+.comments--list-actions .user-login .list--action-sort-hot, .user-login .search-form--content-block .search-form--content-block--button, .search-form--content-block .user-login .search-form--content-block--button {
   position: absolute;
   right: 0;
   top: 28px;
@@ -5628,7 +5588,7 @@ body {
 /* Search form
    ========================================================================== */
 /* line 11, ../sass/module/_search.scss */
-.search-form, .spotbox--search-wrapper {
+.search-form, .search-spotbox--wrapper {
   float: right;
   width: 50%;
   margin-right: 0%;
@@ -5650,33 +5610,33 @@ body {
   width: auto;
 }
 /* line 19, ../sass/module/_search.scss */
-.search-form .search-form-text, .spotbox--search-wrapper .search-form-text,
+.search-form .search-form-text, .search-spotbox--wrapper .search-form-text,
 .search-form .button,
-.spotbox--search-wrapper .button,
+.search-spotbox--wrapper .button,
 .search-form .list--actions .list--action-sort-latest,
 .list--actions .search-form .list--action-sort-latest,
-.spotbox--search-wrapper .list--actions .list--action-sort-latest,
-.list--actions .spotbox--search-wrapper .list--action-sort-latest,
+.search-spotbox--wrapper .list--actions .list--action-sort-latest,
+.list--actions .search-spotbox--wrapper .list--action-sort-latest,
 .search-form .comments--list-actions .list--action-sort-latest,
 .comments--list-actions .search-form .list--action-sort-latest,
-.spotbox--search-wrapper .comments--list-actions .list--action-sort-latest,
-.comments--list-actions .spotbox--search-wrapper .list--action-sort-latest,
+.search-spotbox--wrapper .comments--list-actions .list--action-sort-latest,
+.comments--list-actions .search-spotbox--wrapper .list--action-sort-latest,
 .search-form .list--actions .list--action-sort-hot,
 .list--actions .search-form .list--action-sort-hot,
-.spotbox--search-wrapper .list--actions .list--action-sort-hot,
-.list--actions .spotbox--search-wrapper .list--action-sort-hot,
+.search-spotbox--wrapper .list--actions .list--action-sort-hot,
+.list--actions .search-spotbox--wrapper .list--action-sort-hot,
 .search-form .comments--list-actions .list--action-sort-hot,
 .comments--list-actions .search-form .list--action-sort-hot,
-.spotbox--search-wrapper .comments--list-actions .list--action-sort-hot,
-.comments--list-actions .spotbox--search-wrapper .list--action-sort-hot,
-.search-form .community--search .community--search--button,
-.community--search .search-form .community--search--button,
-.spotbox--search-wrapper .community--search .community--search--button,
-.community--search .spotbox--search-wrapper .community--search--button {
+.search-spotbox--wrapper .comments--list-actions .list--action-sort-hot,
+.comments--list-actions .search-spotbox--wrapper .list--action-sort-hot,
+.search-form .search-form--content-block .search-form--content-block--button,
+.search-form--content-block .search-form .search-form--content-block--button,
+.search-spotbox--wrapper .search-form--content-block .search-form--content-block--button,
+.search-form--content-block .search-spotbox--wrapper .search-form--content-block--button {
   float: left;
 }
 /* line 23, ../sass/module/_search.scss */
-.search-form .search-form-text, .spotbox--search-wrapper .search-form-text {
+.search-form .search-form-text, .search-spotbox--wrapper .search-form-text {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -5686,15 +5646,15 @@ body {
   padding-right: 85px;
 }
 /* line 32, ../sass/module/_search.scss */
-.search-form .button, .spotbox--search-wrapper .button, .search-form .list--actions .list--action-sort-latest, .list--actions .search-form .list--action-sort-latest, .spotbox--search-wrapper .list--actions .list--action-sort-latest, .list--actions .spotbox--search-wrapper .list--action-sort-latest, .search-form .comments--list-actions .list--action-sort-latest, .comments--list-actions .search-form .list--action-sort-latest, .spotbox--search-wrapper .comments--list-actions .list--action-sort-latest, .comments--list-actions .spotbox--search-wrapper .list--action-sort-latest,
+.search-form .button, .search-spotbox--wrapper .button, .search-form .list--actions .list--action-sort-latest, .list--actions .search-form .list--action-sort-latest, .search-spotbox--wrapper .list--actions .list--action-sort-latest, .list--actions .search-spotbox--wrapper .list--action-sort-latest, .search-form .comments--list-actions .list--action-sort-latest, .comments--list-actions .search-form .list--action-sort-latest, .search-spotbox--wrapper .comments--list-actions .list--action-sort-latest, .comments--list-actions .search-spotbox--wrapper .list--action-sort-latest,
 .search-form .list--actions .list--action-sort-hot,
 .list--actions .search-form .list--action-sort-hot,
-.spotbox--search-wrapper .list--actions .list--action-sort-hot,
-.list--actions .spotbox--search-wrapper .list--action-sort-hot,
+.search-spotbox--wrapper .list--actions .list--action-sort-hot,
+.list--actions .search-spotbox--wrapper .list--action-sort-hot,
 .search-form .comments--list-actions .list--action-sort-hot,
 .comments--list-actions .search-form .list--action-sort-hot,
-.spotbox--search-wrapper .comments--list-actions .list--action-sort-hot,
-.comments--list-actions .spotbox--search-wrapper .list--action-sort-hot, .search-form .community--search .community--search--button, .community--search .search-form .community--search--button, .spotbox--search-wrapper .community--search .community--search--button, .community--search .spotbox--search-wrapper .community--search--button {
+.search-spotbox--wrapper .comments--list-actions .list--action-sort-hot,
+.comments--list-actions .search-spotbox--wrapper .list--action-sort-hot, .search-form .search-form--content-block .search-form--content-block--button, .search-form--content-block .search-form .search-form--content-block--button, .search-spotbox--wrapper .search-form--content-block .search-form--content-block--button, .search-form--content-block .search-spotbox--wrapper .search-form--content-block--button {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -5704,30 +5664,65 @@ body {
   padding-bottom: 9px;
 }
 
-/* Spotbox search
+/* Search form in content
    ========================================================================== */
 /* line 45, ../sass/module/_search.scss */
-.spotbox--search {
-  *position: relative;
-  *zoom: 1;
+.search-form--content-block {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #efefef;
+  margin-bottom: 20px;
+  padding: 20px;
 }
-/* line 46, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
-.spotbox--search:before, .spotbox--search:after {
-  content: "";
-  display: table;
+/* line 52, ../sass/module/_search.scss */
+.search-form--content-block .search-form--content-block--label {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75;
 }
-/* line 50, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
-.spotbox--search:after {
-  clear: both;
+/* line 56, ../sass/module/_search.scss */
+.search-form--content-block .search-form--content-block--input {
+  display: inline;
+  min-width: 90%;
+}
+/* line 61, ../sass/module/_search.scss */
+.search-form--content-block .search-form--content-block--button {
+  display: inline-block;
+  margin-top: -2px;
+  padding-top: 11px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
-/* line 50, ../sass/module/_search.scss */
-.spotbox--search-inner {
+/* Search spotbox
+   ========================================================================== */
+/* line 75, ../sass/module/_search.scss */
+.search-spotbox {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/all/themes/litteratursiden/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  margin-top: 20px;
+}
+
+/* line 81, ../sass/module/_search.scss */
+.search-spotbox--inner {
   overflow: hidden;
 }
 
-/* line 60, ../sass/module/_search.scss */
-.spotbox--search-dataset-amount-wrapper {
+/* line 91, ../sass/module/_search.scss */
+.search-spotbox--dataset-amount-wrapper {
   float: left;
   width: 25%;
   margin-left: 0%;
@@ -5747,20 +5742,20 @@ body {
   text-align: center;
 }
 
-/* line 67, ../sass/module/_search.scss */
-.spotbox--search-dataset-amount {
+/* line 98, ../sass/module/_search.scss */
+.search-spotbox--dataset-amount {
   font-size: 400%;
   margin-bottom: 10px;
 }
 
-/* line 72, ../sass/module/_search.scss */
-.spotbox--search-dataset-amount-text {
+/* line 103, ../sass/module/_search.scss */
+.search-spotbox--dataset-amount-text {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
 
-/* line 76, ../sass/module/_search.scss */
-.spotbox--search-wrapper {
+/* line 107, ../sass/module/_search.scss */
+.search-spotbox--wrapper {
   float: left;
   width: 75%;
   margin-left: 25%;
@@ -5780,8 +5775,8 @@ body {
   padding-top: 22px;
   padding-left: 30px;
 }
-/* line 84, ../sass/module/_search.scss */
-.spotbox--search-wrapper .search-form-text {
+/* line 115, ../sass/module/_search.scss */
+.search-spotbox--wrapper .search-form-text {
   min-width: 100%;
 }
 
@@ -5822,7 +5817,7 @@ body {
 .newsletter-signup .list--actions .list--action-sort-hot,
 .list--actions .newsletter-signup .list--action-sort-hot,
 .newsletter-signup .comments--list-actions .list--action-sort-hot,
-.comments--list-actions .newsletter-signup .list--action-sort-hot, .newsletter-signup .community--search .community--search--button, .community--search .newsletter-signup .community--search--button {
+.comments--list-actions .newsletter-signup .list--action-sort-hot, .newsletter-signup .search-form--content-block .search-form--content-block--button, .search-form--content-block .newsletter-signup .search-form--content-block--button {
   vertical-align: top;
   margin-top: 1px;
 }
@@ -5924,6 +5919,8 @@ body {
 
 /* Dataset list tags
    ========================================================================== */
+/* Featured dataset
+   ========================================================================== */
 /**
  * Community
  *
@@ -5931,137 +5928,14 @@ body {
  */
 /* Community
    ========================================================================== */
-/* line 15, ../sass/module/_community.scss */
-.community--search {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  background-color: #efefef;
-  margin-bottom: 20px;
-  padding: 20px;
-}
-/* line 22, ../sass/module/_community.scss */
-.community--search .community--search--label {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
-  opacity: 0.75;
-}
-/* line 26, ../sass/module/_community.scss */
-.community--search .community--search--input {
-  display: inline;
-  min-width: 90%;
-}
-/* line 31, ../sass/module/_community.scss */
-.community--search .community--search--button {
-  display: inline-block;
-  margin-top: -2px;
-  padding-top: 11px;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
 /* Community list
    ========================================================================== */
-/* line 49, ../sass/module/_community.scss */
-.community--list-heading {
-  font-size: 160%;
-  margin-right: 5px;
-}
-
-/* line 54, ../sass/module/_community.scss */
+/* line 26, ../sass/module/_community.scss */
 .community--empty-text {
   font-size: 160%;
 }
 
-/* line 60, ../sass/module/_community.scss */
-.community--list {
-  margin-top: 20px;
-  padding-left: 0;
-}
-
-/* line 67, ../sass/module/_community.scss */
-.community--list-item {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  background-color: #fbfbfb;
-  border: 1px solid #efefef;
-  margin-top: 20px;
-  overflow: hidden;
-  padding: 20px;
-}
-/* line 76, ../sass/module/_community.scss */
-.community--list-item:hover {
-  border: 1px solid #d5d5d5;
-}
-
-/* line 81, ../sass/module/_community.scss */
-.community--list-icon {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background-color: #96b000;
-  color: white;
-  font-size: 250%;
-  float: left;
-  margin-top: -5px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  min-width: 60px;
-  padding: 10px;
-  text-align: center;
-  width: 60px;
-}
-/* line 97, ../sass/module/_community.scss */
-.community--list-icon:hover {
-  background-color: #809700;
-}
-/* line 106, ../sass/module/_community.scss */
-.community--list-icon a:link, .community--list-icon a:visited, .community--list-icon a:hover, .community--list-icon a:focus, .community--list-icon a:active {
-  color: white;
-}
-
-/* line 112, ../sass/module/_community.scss */
-.community--list-content {
-  display: inline-block;
-  margin-bottom: 20px;
-  max-width: 80%;
-}
-
-/* line 119, ../sass/module/_community.scss */
-.community--list-meta {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
-  opacity: 0.75;
-  margin-bottom: 5px;
-}
-/* line 124, ../sass/module/_community.scss */
-.community--list-meta .community--list-posted {
-  margin-right: 5px;
-}
-/* line 128, ../sass/module/_community.scss */
-.community--list-meta .community--list-author {
-  margin-left: 5px;
-}
-
-/* line 133, ../sass/module/_community.scss */
-.community--list-footer {
-  border-top: 1px dashed #e6e6e6;
-  margin-top: 20px;
-  padding-top: 10px;
-  text-align: right;
-}
-/* line 139, ../sass/module/_community.scss */
-.community--list-footer .community--list-comments-link {
-  margin-right: 5px;
-}
-/* line 143, ../sass/module/_community.scss */
-.community--list-footer .community--list-read-more {
-  margin-left: 5px;
-}
-
-/* line 148, ../sass/module/_community.scss */
+/* line 73, ../sass/module/_community.scss */
 .community--tag {
   font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: normal;
@@ -6070,7 +5944,7 @@ body {
 
 /* Community filter
    ========================================================================== */
-/* line 182, ../sass/module/_community.scss */
+/* line 107, ../sass/module/_community.scss */
 .community--filter-list-item .active:link, .community--filter-list-item .active:visited, .community--filter-list-item .active:hover, .community--filter-list-item .active:focus, .community--filter-list-item .active:active {
   color: #be370a;
 }
@@ -6080,24 +5954,29 @@ body {
  *
  * @author magnify
  */
+/* line 7, ../sass/module/_comment.scss */
+.comments {
+  margin-top: 20px;
+}
+
 /* Comments list
    ========================================================================== */
-/* line 23, ../sass/module/_comment.scss */
+/* line 25, ../sass/module/_comment.scss */
 .comments--list {
   padding-left: 0;
 }
 
-/* line 27, ../sass/module/_comment.scss */
+/* line 29, ../sass/module/_comment.scss */
 .comments--list-item {
   margin-bottom: 30px;
 }
 
-/* line 31, ../sass/module/_comment.scss */
+/* line 33, ../sass/module/_comment.scss */
 .comments--list-image {
   float: left;
 }
 
-/* line 35, ../sass/module/_comment.scss */
+/* line 37, ../sass/module/_comment.scss */
 .comments--list-author {
   display: inline-block;
   margin-top: 3px;
@@ -6105,13 +5984,13 @@ body {
   margin-left: 10px;
 }
 
-/* line 42, ../sass/module/_comment.scss */
+/* line 44, ../sass/module/_comment.scss */
 .comments--list-posted {
   float: right;
   margin-top: 6px;
 }
 
-/* line 47, ../sass/module/_comment.scss */
+/* line 49, ../sass/module/_comment.scss */
 .comments--list-content {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -6121,37 +6000,37 @@ body {
   padding: 20px;
 }
 
-/* line 59, ../sass/module/_comment.scss */
+/* line 61, ../sass/module/_comment.scss */
 .comments--list-quote {
   float: left;
 }
-/* line 62, ../sass/module/_comment.scss */
+/* line 64, ../sass/module/_comment.scss */
 .comments--list-quote i[class^="icon-"] {
   margin-right: 5px;
 }
-/* line 69, ../sass/module/_comment.scss */
+/* line 71, ../sass/module/_comment.scss */
 .comments--list-quote:link, .comments--list-quote:visited, .comments--list-quote:hover, .comments--list-quote:active {
   text-decoration: none;
 }
 
-/* line 74, ../sass/module/_comment.scss */
+/* line 76, ../sass/module/_comment.scss */
 .comments--list-rate-up, .comments--list-rate-up-none {
   color: #bcbcbc;
   display: block;
   font-size: 200%;
   text-align: right;
 }
-/* line 80, ../sass/module/_comment.scss */
+/* line 82, ../sass/module/_comment.scss */
 .comments--list-rate-up i[class^="icon-"], .comments--list-rate-up-none i[class^="icon-"] {
   margin-right: 5px;
 }
-/* line 85, ../sass/module/_comment.scss */
+/* line 87, ../sass/module/_comment.scss */
 .comments--list-rate-up a:link, .comments--list-rate-up-none a:link,
 .comments--list-rate-up a:visited,
 .comments--list-rate-up-none a:visited {
   color: #96b000;
 }
-/* line 90, ../sass/module/_comment.scss */
+/* line 92, ../sass/module/_comment.scss */
 .comments--list-rate-up a:hover, .comments--list-rate-up-none a:hover,
 .comments--list-rate-up a:active,
 .comments--list-rate-up-none a:active {
@@ -6159,12 +6038,12 @@ body {
   text-decoration: none;
 }
 
-/* line 100, ../sass/module/_comment.scss */
+/* line 102, ../sass/module/_comment.scss */
 .comments--list-rate-up-none a:link,
 .comments--list-rate-up-none a:visited {
   color: #bcbcbc;
 }
-/* line 105, ../sass/module/_comment.scss */
+/* line 107, ../sass/module/_comment.scss */
 .comments--list-rate-up-none a:hover,
 .comments--list-rate-up-none a:active {
   color: #a2a2a2;
@@ -6172,13 +6051,13 @@ body {
 
 /* Post comment
    ========================================================================== */
-/* line 119, ../sass/module/_comment.scss */
+/* line 121, ../sass/module/_comment.scss */
 .comments--post-comment-header a:hover,
 .comments--post-comment-header a:active {
   text-decoration: none;
 }
 
-/* line 124, ../sass/module/_comment.scss */
+/* line 126, ../sass/module/_comment.scss */
 .comments--post-comment, .comments--post-comment-not-logged-in {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -6187,17 +6066,17 @@ body {
   padding: 20px;
 }
 
-/* line 131, ../sass/module/_comment.scss */
+/* line 133, ../sass/module/_comment.scss */
 .comments--post-comment-not-logged-in {
   text-align: center;
 }
 
-/* line 142, ../sass/module/_comment.scss */
+/* line 144, ../sass/module/_comment.scss */
 .comments--post-field-wrapper {
   margin-bottom: 20px;
 }
 
-/* line 146, ../sass/module/_comment.scss */
+/* line 148, ../sass/module/_comment.scss */
 .comments--post-comment-actions {
   text-align: right;
 }

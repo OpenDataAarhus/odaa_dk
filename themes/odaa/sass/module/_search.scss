@@ -40,40 +40,71 @@
 }
 
 
-/* Spotbox search
+/* Search form in content
    ========================================================================== */
-.spotbox--search {
-  @include zen-grid-container;
-  @extend .spotbox;
+.search-form--content-block {
+  @include border-radius($base-border-radius);
+
+  background-color: $gray-light;
+  margin-bottom: $large-spacing;
+  padding: $large-spacing;
+
+  .search-form--content-block--label {
+    @include opacity(.75);
+  }
+
+  .search-form--content-block--input {
+    display: inline;
+    min-width: 90%;
+  }
+
+  .search-form--content-block--button {
+    @extend .button;
+
+    display: inline-block;
+    margin-top: -2px;
+    padding-top: 11px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
-.spotbox--search-inner {
+
+/* Search spotbox
+   ========================================================================== */
+.search-spotbox {
+  @include zen-grid-item(12, 1);
+
+  margin-top: $large-spacing;
+}
+
+.search-spotbox--inner {
   @extend .spotbox--inner;
 
   overflow: hidden;
 }
 
-.spotbox--search-header {
+.search-spotbox--header {
   @extend .spotbox--header;
 }
 
-.spotbox--search-dataset-amount-wrapper {
+.search-spotbox--dataset-amount-wrapper {
   @include zen-grid-item(3, 1);
 
   margin-top: 30px;
   text-align: center;
 }
 
-.spotbox--search-dataset-amount {
+.search-spotbox--dataset-amount {
   font-size: 400%;
   margin-bottom: 10px;
 }
 
-.spotbox--search-dataset-amount-text {
+.search-spotbox--dataset-amount-text {
   @include opacity(.5);
 }
 
-.spotbox--search-wrapper {
+.search-spotbox--wrapper {
   @include zen-grid-item(9, 4);
   @extend .search-form;
 
