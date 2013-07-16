@@ -144,7 +144,7 @@
   padding: $medium-spacing $medium-spacing $medium-spacing 60px;
   position: relative;
 
-  .dataset--data-resources--list--info {
+  .dataset--data-resources--list-info {
     float: left;
   }
 
@@ -154,24 +154,24 @@
     top: 10px;
   }
 
-  .dataset--data-resources--list--description {
+  .dataset--data-resources--list-description {
     margin-bottom: 0;
   }
 
-  .dataset--data-resources--list--description-empty {
+  .dataset--data-resources--list-description-empty {
     @extend %empty-text;
   }
 
-  .dataset--data-resources--list--actions {
+  .dataset--data-resources--list-actions {
     float: right;
     margin-top: 2px;
   }
 
-  .dataset--data-resources--list--actions-preview {
+  .dataset--data-resources--list-actions-preview {
     @extend %button-theme;
   }
 
-  .dataset--data-resources--list--actions-download {
+  .dataset--data-resources--list-actions-download {
     @extend %button-action;
   }
 }

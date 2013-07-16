@@ -1016,7 +1016,7 @@ table tbody tr:hover th,
 .button, .list--actions .list--action-sort-latest, .comments--list-actions .list--action-sort-latest,
 .list--actions .list--action-sort-hot,
 .comments--list-actions .list--action-sort-hot, .search-form--content-block .search-form--content-block--button,
-a.button, .dataset--data-resources--list-item .dataset--data-resources--list--actions-preview, .list--actions .list--action-create, .comments--list-actions .list--action-create, .dataset--data-resources--list-item .dataset--data-resources--list--actions-download, .comments--post-comment-login,
+a.button, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview, .list--actions .list--action-create, .comments--list-actions .list--action-create, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download, .comments--post-comment-login,
 .comments--post-comment-create-user {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1037,23 +1037,23 @@ a.button, .dataset--data-resources--list-item .dataset--data-resources--list--ac
 /* line 45, ../sass/framework/_buttons.scss */
 .button:focus, .list--actions .list--action-sort-latest:focus, .comments--list-actions .list--action-sort-latest:focus,
 .list--actions .list--action-sort-hot:focus,
-.comments--list-actions .list--action-sort-hot:focus, .search-form--content-block .search-form--content-block--button:focus, .dataset--data-resources--list-item .dataset--data-resources--list--actions-preview:focus, .list--actions .list--action-create:focus, .comments--list-actions .list--action-create:focus, .dataset--data-resources--list-item .dataset--data-resources--list--actions-download:focus, .comments--post-comment-login:focus,
+.comments--list-actions .list--action-sort-hot:focus, .search-form--content-block .search-form--content-block--button:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:focus, .list--actions .list--action-create:focus, .comments--list-actions .list--action-create:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:focus, .comments--post-comment-login:focus,
 .comments--post-comment-create-user:focus, .button:hover, .list--actions .list--action-sort-latest:hover, .comments--list-actions .list--action-sort-latest:hover,
 .list--actions .list--action-sort-hot:hover,
-.comments--list-actions .list--action-sort-hot:hover, .search-form--content-block .search-form--content-block--button:hover, .dataset--data-resources--list-item .dataset--data-resources--list--actions-preview:hover, .list--actions .list--action-create:hover, .comments--list-actions .list--action-create:hover, .dataset--data-resources--list-item .dataset--data-resources--list--actions-download:hover, .comments--post-comment-login:hover,
+.comments--list-actions .list--action-sort-hot:hover, .search-form--content-block .search-form--content-block--button:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:hover, .list--actions .list--action-create:hover, .comments--list-actions .list--action-create:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:hover, .comments--post-comment-login:hover,
 .comments--post-comment-create-user:hover, .button:active, .list--actions .list--action-sort-latest:active, .comments--list-actions .list--action-sort-latest:active,
 .list--actions .list--action-sort-hot:active,
-.comments--list-actions .list--action-sort-hot:active, .search-form--content-block .search-form--content-block--button:active, .dataset--data-resources--list-item .dataset--data-resources--list--actions-preview:active, .list--actions .list--action-create:active, .comments--list-actions .list--action-create:active, .dataset--data-resources--list-item .dataset--data-resources--list--actions-download:active, .comments--post-comment-login:active,
+.comments--list-actions .list--action-sort-hot:active, .search-form--content-block .search-form--content-block--button:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:active, .list--actions .list--action-create:active, .comments--list-actions .list--action-create:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:active, .comments--post-comment-login:active,
 .comments--post-comment-create-user:active {
   text-decoration: none;
 }
 /* line 51, ../sass/framework/_buttons.scss */
 .disabled.button, .list--actions .disabled.list--action-sort-latest, .comments--list-actions .disabled.list--action-sort-latest,
 .list--actions .disabled.list--action-sort-hot,
-.comments--list-actions .disabled.list--action-sort-hot, .search-form--content-block .disabled.search-form--content-block--button, .dataset--data-resources--list-item .disabled.dataset--data-resources--list--actions-preview, .list--actions .disabled.list--action-create, .comments--list-actions .disabled.list--action-create, .dataset--data-resources--list-item .disabled.dataset--data-resources--list--actions-download, .disabled.comments--post-comment-login,
+.comments--list-actions .disabled.list--action-sort-hot, .search-form--content-block .disabled.search-form--content-block--button, .dataset--data-resources--list-item .disabled.dataset--data-resources--list-actions-preview, .list--actions .disabled.list--action-create, .comments--list-actions .disabled.list--action-create, .dataset--data-resources--list-item .disabled.dataset--data-resources--list-actions-download, .disabled.comments--post-comment-login,
 .disabled.comments--post-comment-create-user, [disabled].button, .list--actions [disabled].list--action-sort-latest, .comments--list-actions [disabled].list--action-sort-latest,
 .list--actions [disabled].list--action-sort-hot,
-.comments--list-actions [disabled].list--action-sort-hot, .search-form--content-block [disabled].search-form--content-block--button, .dataset--data-resources--list-item [disabled].dataset--data-resources--list--actions-preview, .list--actions [disabled].list--action-create, .comments--list-actions [disabled].list--action-create, .dataset--data-resources--list-item [disabled].dataset--data-resources--list--actions-download, [disabled].comments--post-comment-login,
+.comments--list-actions [disabled].list--action-sort-hot, .search-form--content-block [disabled].search-form--content-block--button, .dataset--data-resources--list-item [disabled].dataset--data-resources--list-actions-preview, .list--actions [disabled].list--action-create, .comments--list-actions [disabled].list--action-create, .dataset--data-resources--list-item [disabled].dataset--data-resources--list-actions-download, [disabled].comments--post-comment-login,
 [disabled].comments--post-comment-create-user {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
@@ -1156,7 +1156,7 @@ a.button i[class^="icon-"],
 /* line 103, ../sass/framework/_buttons.scss */
 .list--actions .list--action-sort-latest.active, .comments--list-actions .list--action-sort-latest.active,
 .list--actions .list--action-sort-hot.active,
-.comments--list-actions .list--action-sort-hot.active, .dataset--data-resources--list-item .dataset--data-resources--list--actions-preview {
+.comments--list-actions .list--action-sort-hot.active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e5420c), color-stop(100%, #9c2d08));
   background-image: -webkit-linear-gradient(#e5420c, #9c2d08);
   background-image: -moz-linear-gradient(#e5420c, #9c2d08);
@@ -1170,19 +1170,19 @@ a.button i[class^="icon-"],
 /* line 76, ../sass/framework/_buttons.scss */
 .list--actions .list--action-sort-latest.active:link, .comments--list-actions .list--action-sort-latest.active:link,
 .list--actions .list--action-sort-hot.active:link,
-.comments--list-actions .list--action-sort-hot.active:link, .dataset--data-resources--list-item .dataset--data-resources--list--actions-preview:link, .list--actions .list--action-sort-latest.active:visited, .comments--list-actions .list--action-sort-latest.active:visited,
+.comments--list-actions .list--action-sort-hot.active:link, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:link, .list--actions .list--action-sort-latest.active:visited, .comments--list-actions .list--action-sort-latest.active:visited,
 .list--actions .list--action-sort-hot.active:visited,
-.comments--list-actions .list--action-sort-hot.active:visited, .dataset--data-resources--list-item .dataset--data-resources--list--actions-preview:visited {
+.comments--list-actions .list--action-sort-hot.active:visited, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:visited {
   color: white;
 }
 /* line 83, ../sass/framework/_buttons.scss */
 .list--actions .list--action-sort-latest.active:focus, .comments--list-actions .list--action-sort-latest.active:focus,
 .list--actions .list--action-sort-hot.active:focus,
-.comments--list-actions .list--action-sort-hot.active:focus, .dataset--data-resources--list-item .dataset--data-resources--list--actions-preview:focus, .list--actions .list--action-sort-latest.active:hover, .comments--list-actions .list--action-sort-latest.active:hover,
+.comments--list-actions .list--action-sort-hot.active:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:focus, .list--actions .list--action-sort-latest.active:hover, .comments--list-actions .list--action-sort-latest.active:hover,
 .list--actions .list--action-sort-hot.active:hover,
-.comments--list-actions .list--action-sort-hot.active:hover, .dataset--data-resources--list-item .dataset--data-resources--list--actions-preview:hover, .list--actions .list--action-sort-latest.active:active, .comments--list-actions .list--action-sort-latest.active:active,
+.comments--list-actions .list--action-sort-hot.active:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:hover, .list--actions .list--action-sort-latest.active:active, .comments--list-actions .list--action-sort-latest.active:active,
 .list--actions .list--action-sort-hot.active:active,
-.comments--list-actions .list--action-sort-hot.active:active, .dataset--data-resources--list-item .dataset--data-resources--list--actions-preview:active {
+.comments--list-actions .list--action-sort-hot.active:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:active {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cd3b0b), color-stop(100%, #842607));
   background-image: -webkit-linear-gradient(#cd3b0b, #842607);
   background-image: -moz-linear-gradient(#cd3b0b, #842607);
@@ -1193,13 +1193,13 @@ a.button i[class^="icon-"],
 /* line 89, ../sass/framework/_buttons.scss */
 .list--actions .list--action-sort-latest.active i[class^="icon-"], .comments--list-actions .list--action-sort-latest.active i[class^="icon-"],
 .list--actions .list--action-sort-hot.active i[class^="icon-"],
-.comments--list-actions .list--action-sort-hot.active i[class^="icon-"], .dataset--data-resources--list-item .dataset--data-resources--list--actions-preview i[class^="icon-"] {
+.comments--list-actions .list--action-sort-hot.active i[class^="icon-"], .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview i[class^="icon-"] {
   margin-right: 8px;
 }
 
 /* Action button */
 /* line 108, ../sass/framework/_buttons.scss */
-.list--actions .list--action-create, .comments--list-actions .list--action-create, .dataset--data-resources--list-item .dataset--data-resources--list--actions-download, .comments--post-comment-login,
+.list--actions .list--action-create, .comments--list-actions .list--action-create, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download, .comments--post-comment-login,
 .comments--post-comment-create-user {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #96b000), color-stop(100%, #556300));
   background-image: -webkit-linear-gradient(#96b000, #556300);
@@ -1212,15 +1212,15 @@ a.button i[class^="icon-"],
   color: white;
 }
 /* line 76, ../sass/framework/_buttons.scss */
-.list--actions .list--action-create:link, .comments--list-actions .list--action-create:link, .dataset--data-resources--list-item .dataset--data-resources--list--actions-download:link, .comments--post-comment-login:link,
-.comments--post-comment-create-user:link, .list--actions .list--action-create:visited, .comments--list-actions .list--action-create:visited, .dataset--data-resources--list-item .dataset--data-resources--list--actions-download:visited, .comments--post-comment-login:visited,
+.list--actions .list--action-create:link, .comments--list-actions .list--action-create:link, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:link, .comments--post-comment-login:link,
+.comments--post-comment-create-user:link, .list--actions .list--action-create:visited, .comments--list-actions .list--action-create:visited, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:visited, .comments--post-comment-login:visited,
 .comments--post-comment-create-user:visited {
   color: white;
 }
 /* line 83, ../sass/framework/_buttons.scss */
-.list--actions .list--action-create:focus, .comments--list-actions .list--action-create:focus, .dataset--data-resources--list-item .dataset--data-resources--list--actions-download:focus, .comments--post-comment-login:focus,
-.comments--post-comment-create-user:focus, .list--actions .list--action-create:hover, .comments--list-actions .list--action-create:hover, .dataset--data-resources--list-item .dataset--data-resources--list--actions-download:hover, .comments--post-comment-login:hover,
-.comments--post-comment-create-user:hover, .list--actions .list--action-create:active, .comments--list-actions .list--action-create:active, .dataset--data-resources--list-item .dataset--data-resources--list--actions-download:active, .comments--post-comment-login:active,
+.list--actions .list--action-create:focus, .comments--list-actions .list--action-create:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:focus, .comments--post-comment-login:focus,
+.comments--post-comment-create-user:focus, .list--actions .list--action-create:hover, .comments--list-actions .list--action-create:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:hover, .comments--post-comment-login:hover,
+.comments--post-comment-create-user:hover, .list--actions .list--action-create:active, .comments--list-actions .list--action-create:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:active, .comments--post-comment-login:active,
 .comments--post-comment-create-user:active {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #809700), color-stop(100%, #3f4a00));
   background-image: -webkit-linear-gradient(#809700, #3f4a00);
@@ -1230,7 +1230,7 @@ a.button i[class^="icon-"],
   background-color: #556300;
 }
 /* line 89, ../sass/framework/_buttons.scss */
-.list--actions .list--action-create i[class^="icon-"], .comments--list-actions .list--action-create i[class^="icon-"], .dataset--data-resources--list-item .dataset--data-resources--list--actions-download i[class^="icon-"], .comments--post-comment-login i[class^="icon-"],
+.list--actions .list--action-create i[class^="icon-"], .comments--list-actions .list--action-create i[class^="icon-"], .dataset--data-resources--list-item .dataset--data-resources--list-actions-download i[class^="icon-"], .comments--post-comment-login i[class^="icon-"],
 .comments--post-comment-create-user i[class^="icon-"] {
   margin-right: 8px;
 }
@@ -5105,7 +5105,7 @@ body {
  * Used by CKAN for empty descriptions etc.
    ========================================================================== */
 /* line 24, ../sass/module/_module.scss */
-.spotbox--content-empty, .dataset--empty-text, .dataset--data-resources--list-item .dataset--data-resources--list--description-empty, .community--empty-text {
+.spotbox--content-empty, .dataset--empty-text, .dataset--data-resources--list-item .dataset--data-resources--list-description-empty, .community--empty-text {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
   font-family: "exo-regular-italic";
@@ -6053,7 +6053,7 @@ body {
   position: relative;
 }
 /* line 147, ../sass/module/_dataset.scss */
-.dataset--data-resources--list-item .dataset--data-resources--list--info {
+.dataset--data-resources--list-item .dataset--data-resources--list-info {
   float: left;
 }
 /* line 151, ../sass/module/_dataset.scss */
@@ -6063,11 +6063,11 @@ body {
   top: 10px;
 }
 /* line 157, ../sass/module/_dataset.scss */
-.dataset--data-resources--list-item .dataset--data-resources--list--description {
+.dataset--data-resources--list-item .dataset--data-resources--list-description {
   margin-bottom: 0;
 }
 /* line 165, ../sass/module/_dataset.scss */
-.dataset--data-resources--list-item .dataset--data-resources--list--actions {
+.dataset--data-resources--list-item .dataset--data-resources--list-actions {
   float: right;
   margin-top: 2px;
 }
