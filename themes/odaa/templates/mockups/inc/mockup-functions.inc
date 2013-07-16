@@ -4,7 +4,7 @@
 
     $main_menu = array(
       'Forsiden' => 'forsiden.php',
-      'Datasæt' => 'dataset.php',
+      'Datasæt' => 'datasets.php',
       'Community' => 'community.php',
       'Om ODAA' => 'about.php'
     );
