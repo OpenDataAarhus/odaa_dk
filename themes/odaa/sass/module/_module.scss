@@ -264,6 +264,8 @@
 
 
 %module--block--list-posted {
+  @include opacity(.5);
+
   margin-bottom: 0;
 }
 
