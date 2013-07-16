@@ -5143,7 +5143,7 @@ body {
 /* Block module
    ========================================================================== */
 /* line 63, ../sass/module/_module.scss */
-.twitter-widget, .spotbox--inner, .search-spotbox--inner, .spotbox--featured-dataset-inner, .community--filter-inner, .page--content-wrapper, .comments {
+.twitter-widget, .spotbox--inner, .search-spotbox--inner, .spotbox--featured-dataset-inner, .spotbox-menu--inner, .page--content-wrapper, .comments {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -5156,30 +5156,30 @@ body {
 }
 
 /* line 73, ../sass/module/_module.scss */
-.spotbox, .spotbox--featured-dataset, .community--filter {
+.spotbox, .spotbox--featured-dataset, .spotbox-menu {
   margin-top: 20px;
 }
 /* line 76, ../sass/module/_module.scss */
-.spotbox a:link, .spotbox--featured-dataset a:link, .community--filter a:link {
+.spotbox a:link, .spotbox--featured-dataset a:link, .spotbox-menu a:link {
   color: #e5420c;
   text-decoration: none;
 }
 /* line 81, ../sass/module/_module.scss */
-.spotbox a:visited, .spotbox--featured-dataset a:visited, .community--filter a:visited {
+.spotbox a:visited, .spotbox--featured-dataset a:visited, .spotbox-menu a:visited {
   color: #b53409;
   text-decoration: none;
 }
 /* line 86, ../sass/module/_module.scss */
-.spotbox a:hover, .spotbox--featured-dataset a:hover, .community--filter a:hover {
+.spotbox a:hover, .spotbox--featured-dataset a:hover, .spotbox-menu a:hover {
   color: #be370a;
   text-decoration: none;
 }
 /* line 91, ../sass/module/_module.scss */
-.spotbox a:focus, .spotbox--featured-dataset a:focus, .community--filter a:focus {
+.spotbox a:focus, .spotbox--featured-dataset a:focus, .spotbox-menu a:focus {
   color: black;
 }
 /* line 95, ../sass/module/_module.scss */
-.spotbox i[class^="icon-"], .spotbox--featured-dataset i[class^="icon-"], .community--filter i[class^="icon-"] {
+.spotbox i[class^="icon-"], .spotbox--featured-dataset i[class^="icon-"], .spotbox-menu i[class^="icon-"] {
   margin-right: 5px;
   /* Icon gets cut off when it is the first item from the left */
   padding-left: 1px;
@@ -5187,7 +5187,7 @@ body {
 
 /* %module--block headers */
 /* line 109, ../sass/module/_module.scss */
-.spotbox--header, .search-spotbox--header, .spotbox--featured-dataset-header, .community--filter-header {
+.spotbox--header, .search-spotbox--header, .spotbox--featured-dataset-header, .spotbox-menu--header {
   -webkit-border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
@@ -5203,31 +5203,31 @@ body {
   padding-left: 20px;
 }
 /* line 123, ../sass/module/_module.scss */
-.spotbox--header a:link, .search-spotbox--header a:link, .spotbox--featured-dataset-header a:link, .community--filter-header a:link {
+.spotbox--header a:link, .search-spotbox--header a:link, .spotbox--featured-dataset-header a:link, .spotbox-menu--header a:link {
   color: #404040;
   text-decoration: none;
 }
 /* line 128, ../sass/module/_module.scss */
-.spotbox--header a:visited, .search-spotbox--header a:visited, .spotbox--featured-dataset-header a:visited, .community--filter-header a:visited {
+.spotbox--header a:visited, .search-spotbox--header a:visited, .spotbox--featured-dataset-header a:visited, .spotbox-menu--header a:visited {
   color: #3b3b3b;
   text-decoration: none;
 }
 /* line 133, ../sass/module/_module.scss */
-.spotbox--header a:hover, .search-spotbox--header a:hover, .spotbox--featured-dataset-header a:hover, .community--filter-header a:hover {
+.spotbox--header a:hover, .search-spotbox--header a:hover, .spotbox--featured-dataset-header a:hover, .spotbox-menu--header a:hover {
   color: #be370a;
   text-decoration: none;
   /* Inherit hover color for header labels */
 }
 /* line 138, ../sass/module/_module.scss */
-.spotbox--header a:hover [class$="header-label"], .search-spotbox--header a:hover [class$="header-label"], .spotbox--featured-dataset-header a:hover [class$="header-label"], .community--filter-header a:hover [class$="header-label"] {
+.spotbox--header a:hover [class$="header-label"], .search-spotbox--header a:hover [class$="header-label"], .spotbox--featured-dataset-header a:hover [class$="header-label"], .spotbox-menu--header a:hover [class$="header-label"] {
   color: gray;
 }
 /* line 143, ../sass/module/_module.scss */
-.spotbox--header a:focus, .search-spotbox--header a:focus, .spotbox--featured-dataset-header a:focus, .community--filter-header a:focus {
+.spotbox--header a:focus, .search-spotbox--header a:focus, .spotbox--featured-dataset-header a:focus, .spotbox-menu--header a:focus {
   color: black;
 }
 /* line 147, ../sass/module/_module.scss */
-.spotbox--header i[class^="icon-"], .search-spotbox--header i[class^="icon-"], .spotbox--featured-dataset-header i[class^="icon-"], .community--filter-header i[class^="icon-"] {
+.spotbox--header i[class^="icon-"], .search-spotbox--header i[class^="icon-"], .spotbox--featured-dataset-header i[class^="icon-"], .spotbox-menu--header i[class^="icon-"] {
   margin-right: 8px;
 }
 
@@ -5303,44 +5303,44 @@ body {
 
 /* %module--block list */
 /* line 222, ../sass/module/_module.scss */
-.spotbox--list, .spotbox--list-latest, .community--filter-list {
+.spotbox--list, .spotbox--list-latest, .spotbox-menu--list {
   padding-left: 0;
 }
 /* line 225, ../sass/module/_module.scss */
-.spotbox--list a:link, .spotbox--list-latest a:link, .community--filter-list a:link {
+.spotbox--list a:link, .spotbox--list-latest a:link, .spotbox-menu--list a:link {
   color: #404040;
   text-decoration: none;
 }
 /* line 230, ../sass/module/_module.scss */
-.spotbox--list a:visited, .spotbox--list-latest a:visited, .community--filter-list a:visited {
+.spotbox--list a:visited, .spotbox--list-latest a:visited, .spotbox-menu--list a:visited {
   color: #3b3b3b;
   text-decoration: none;
 }
 /* line 235, ../sass/module/_module.scss */
-.spotbox--list a:hover, .spotbox--list-latest a:hover, .community--filter-list a:hover {
+.spotbox--list a:hover, .spotbox--list-latest a:hover, .spotbox-menu--list a:hover {
   color: #be370a;
   text-decoration: none;
 }
 /* line 240, ../sass/module/_module.scss */
-.spotbox--list a:focus, .spotbox--list-latest a:focus, .community--filter-list a:focus {
+.spotbox--list a:focus, .spotbox--list-latest a:focus, .spotbox-menu--list a:focus {
   color: black;
 }
 /* line 244, ../sass/module/_module.scss */
-.spotbox--list i[class^="icon-"], .spotbox--list-latest i[class^="icon-"], .community--filter-list i[class^="icon-"] {
+.spotbox--list i[class^="icon-"], .spotbox--list-latest i[class^="icon-"], .spotbox-menu--list i[class^="icon-"] {
   margin-right: 5px;
   /* Icon gets cut off when it is the first item from the left */
   padding-left: 1px;
 }
 
 /* line 252, ../sass/module/_module.scss */
-.spotbox--list-item, .community--filter-list-item {
+.spotbox--list-item, .spotbox-menu--list-item {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
   overflow: hidden;
   padding-bottom: 10px;
 }
 /* line 258, ../sass/module/_module.scss */
-.last.spotbox--list-item, .last.community--filter-list-item {
+.last.spotbox--list-item, .last.spotbox-menu--list-item {
   border-bottom: 0;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -5648,6 +5648,13 @@ body {
 
 /* Spotbox images */
 /* Spotbox footer */
+/* Spotbox menu
+   ========================================================================== */
+/* line 166, ../sass/module/_spotbox.scss */
+.spotbox-menu--list-item .active:link, .spotbox-menu--list-item .active:visited, .spotbox-menu--list-item .active:hover, .spotbox-menu--list-item .active:focus, .spotbox-menu--list-item .active:active {
+  color: #be370a;
+}
+
 /**
  * User
  *
@@ -6116,13 +6123,6 @@ body {
   font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: normal;
   font-size: 130%;
-}
-
-/* Community filter
-   ========================================================================== */
-/* line 109, ../sass/module/_community.scss */
-.community--filter-list-item .active:link, .community--filter-list-item .active:visited, .community--filter-list-item .active:hover, .community--filter-list-item .active:focus, .community--filter-list-item .active:active {
-  color: #be370a;
 }
 
 /**

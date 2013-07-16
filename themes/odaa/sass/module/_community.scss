@@ -78,37 +78,3 @@
 
   font-size: $font-size-large;
 }
-
-
-/* Community filter
-   ========================================================================== */
-.community--filter {
-  @extend %module--block;
-}
-
-.community--filter-inner {
-  @extend %module--block--inner;
-}
-
-.community--filter-header {
-  @extend %module--block--header;
-}
-
-.community--filter-list {
-  @extend %module--block--list;
-}
-
-.community--filter-list-item {
-  @extend %module--block--list-item;
-
-  .active {
-    &:link,
-    &:visited,
-    &:hover,
-    &:focus,
-    &:active {
-      color: $link-color-hover;
-    }
-  }
-}
-

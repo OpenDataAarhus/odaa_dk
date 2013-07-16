@@ -135,3 +135,36 @@ $spotbox-background-color:        $white;
 .spotbox--read-more {
   @extend %module--block--read-more;
 }
+
+
+/* Spotbox menu
+   ========================================================================== */
+.spotbox-menu {
+  @extend %module--block;
+}
+
+.spotbox-menu--inner {
+  @extend %module--block--inner;
+}
+
+.spotbox-menu--header {
+  @extend %module--block--header;
+}
+
+.spotbox-menu--list {
+  @extend %module--block--list;
+}
+
+.spotbox-menu--list-item {
+  @extend %module--block--list-item;
+
+  .active {
+    &:link,
+    &:visited,
+    &:hover,
+    &:focus,
+    &:active {
+      color: $link-color-hover;
+    }
+  }
+}
