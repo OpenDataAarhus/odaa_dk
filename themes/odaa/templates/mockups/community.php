@@ -25,11 +25,11 @@
               <p>Open Source er fedt, åben data er fedt! Velkommen til ODAAs Community - fedt du kiggede forbi! :)</p>
             </section>
             <section class="community--wrapper">
-              <div class="community--search">
+              <div class="search-form--content-block">
                 <form>
-                  <label class="community--search--label">Søg i communitiet</label>
-                  <input type="text" placeholder="F.eks. på navn på datasæt, brugernavn eller lign." class="community--search--input" />
-                  <input type="submit" class="community--search--button" value="Søg" />
+                  <label class="search-form--content-block--label">Søg i communitiet</label>
+                  <input type="text" placeholder="F.eks. på navn på datasæt, brugernavn eller lign." class="search-form--content-block--input" />
+                  <input type="submit" class="search-form--content-block--button" value="Søg" />
                 </form>
               </div>
               <div class="list--actions">
