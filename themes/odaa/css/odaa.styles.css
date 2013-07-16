@@ -4047,44 +4047,13 @@ body {
   overflow: visible;
 }
 
-/* Site footer
-   ========================================================================== */
-/* line 74, ../sass/layout/_layout.scss */
-.site-footer {
-  -webkit-box-shadow: 0 0 5px #d5d5d5;
-  -moz-box-shadow: 0 0 5px #d5d5d5;
-  box-shadow: 0 0 5px #d5d5d5;
-  border-top: 20px solid rgba(255, 255, 255, 0.5);
-}
-
-/* line 80, ../sass/layout/_layout.scss */
-.footer-wrapper {
-  background-color: rgba(150, 176, 0, 0.7);
-  position: relative;
-}
-
-/* line 85, ../sass/layout/_layout.scss */
-.footer-inner {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  overflow: hidden;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1200px;
-  padding-top: 20px;
-  padding-right: 10px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-}
-
 /* Layouts
    ========================================================================== */
-/* line 102, ../sass/layout/_layout.scss */
+/* line 75, ../sass/layout/_layout.scss */
 .front {
   /* Media queries */
 }
-/* line 103, ../sass/layout/_layout.scss */
+/* line 76, ../sass/layout/_layout.scss */
 .front .primary-content {
   float: left;
   width: 66.66667%;
@@ -4104,7 +4073,7 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 109, ../sass/layout/_layout.scss */
+/* line 82, ../sass/layout/_layout.scss */
 .front .primary-content .spotbox:nth-child(odd), .front .primary-content .spotbox--featured-dataset:nth-child(odd) {
   float: right;
   width: 50%;
@@ -4122,7 +4091,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 113, ../sass/layout/_layout.scss */
+/* line 86, ../sass/layout/_layout.scss */
 .front .primary-content .spotbox:nth-child(even), .front .primary-content .spotbox--featured-dataset:nth-child(even) {
   clear: left;
   float: left;
@@ -4141,7 +4110,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 119, ../sass/layout/_layout.scss */
+/* line 92, ../sass/layout/_layout.scss */
 .front .secondary-content {
   float: right;
   width: 33.33333%;
@@ -4159,7 +4128,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 123, ../sass/layout/_layout.scss */
+/* line 96, ../sass/layout/_layout.scss */
 .front .tertiary-content {
   clear: left;
   float: left;
@@ -4179,7 +4148,7 @@ body {
   _overflow-y: visible;
 }
 @media only screen and (max-width: 768px) {
-  /* line 132, ../sass/layout/_layout.scss */
+  /* line 105, ../sass/layout/_layout.scss */
   .front .primary-content,
   .front .secondary-content,
   .front .tertiary-content {
@@ -4200,7 +4169,7 @@ body {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 138, ../sass/layout/_layout.scss */
+  /* line 111, ../sass/layout/_layout.scss */
   .front .primary-content .spotbox, .front .primary-content .spotbox--featured-dataset,
   .front .primary-content .spotbox:nth-child(odd),
   .front .primary-content .spotbox--featured-dataset:nth-child(odd),
@@ -4238,7 +4207,7 @@ body {
 }
 
 /* Right sidebar only */
-/* line 149, ../sass/layout/_layout.scss */
+/* line 122, ../sass/layout/_layout.scss */
 .left-sidebar .primary-content {
   float: right;
   width: 75%;
@@ -4256,7 +4225,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 153, ../sass/layout/_layout.scss */
+/* line 126, ../sass/layout/_layout.scss */
 .left-sidebar .secondary-content {
   float: left;
   width: 25%;
@@ -4274,7 +4243,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 157, ../sass/layout/_layout.scss */
+/* line 130, ../sass/layout/_layout.scss */
 .left-sidebar .tertiary-content {
   clear: both;
   float: left;
@@ -4293,7 +4262,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 161, ../sass/layout/_layout.scss */
+/* line 134, ../sass/layout/_layout.scss */
 .left-sidebar .tertiary-content .spotbox:nth-child(odd), .left-sidebar .tertiary-content .spotbox--featured-dataset:nth-child(odd) {
   clear: left;
   float: left;
@@ -4312,7 +4281,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 166, ../sass/layout/_layout.scss */
+/* line 139, ../sass/layout/_layout.scss */
 .left-sidebar .tertiary-content .spotbox:nth-child(even), .left-sidebar .tertiary-content .spotbox--featured-dataset:nth-child(even) {
   float: right;
   width: 50%;
@@ -4332,7 +4301,7 @@ body {
 }
 
 /* Both sidebars */
-/* line 175, ../sass/layout/_layout.scss */
+/* line 148, ../sass/layout/_layout.scss */
 .both-sidebars .static-content {
   float: right;
   width: 25%;
@@ -4350,7 +4319,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 179, ../sass/layout/_layout.scss */
+/* line 152, ../sass/layout/_layout.scss */
 .both-sidebars .primary-content {
   float: left;
   width: 50%;
@@ -4368,7 +4337,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 183, ../sass/layout/_layout.scss */
+/* line 156, ../sass/layout/_layout.scss */
 .both-sidebars .secondary-content {
   float: left;
   width: 25%;
@@ -4386,7 +4355,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 187, ../sass/layout/_layout.scss */
+/* line 160, ../sass/layout/_layout.scss */
 .both-sidebars .tertiary-content {
   clear: right;
   float: right;
@@ -4902,31 +4871,47 @@ body {
  *
  * @author zorp
  */
-/* Text in footer
-   ========================================================================== */
-/* line 9, ../sass/layout/_footer.scss */
+/* line 8, ../sass/layout/_footer.scss */
 .site-footer {
+  border-top: 20px solid rgba(150, 176, 0, 0.35);
   color: black;
 }
-/* line 12, ../sass/layout/_footer.scss */
-.site-footer p {
-  margin-bottom: 5px;
+
+/* line 13, ../sass/layout/_footer.scss */
+.footer-wrapper {
+  background-color: rgba(150, 176, 0, 0.7);
+  position: relative;
+}
+
+/* line 18, ../sass/layout/_footer.scss */
+.footer-inner {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  padding-top: 40px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+  padding-left: 10px;
 }
 
 /* Logo img in footer
    ========================================================================== */
-/* line 19, ../sass/layout/_footer.scss */
+/* line 34, ../sass/layout/_footer.scss */
 .footer-logo {
   margin-right: 20px;
 }
-/* line 22, ../sass/layout/_footer.scss */
+/* line 37, ../sass/layout/_footer.scss */
 .footer-logo.last {
   margin-right: 0;
 }
 
 /* Awards block
    ========================================================================== */
-/* line 29, ../sass/layout/_footer.scss */
+/* line 44, ../sass/layout/_footer.scss */
 .awards {
   float: right;
   width: 50%;
@@ -4943,6 +4928,7 @@ body {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
+  /* Adjust height to align bottom with newsletter signup form */
   padding-top: 3px;
   padding-right: 0;
   text-align: right;
@@ -4950,7 +4936,7 @@ body {
 
 /* Powered by block
    ========================================================================== */
-/* line 39, ../sass/layout/_footer.scss */
+/* line 55, ../sass/layout/_footer.scss */
 .powered-by {
   clear: left;
   float: left;

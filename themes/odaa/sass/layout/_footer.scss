@@ -4,15 +4,30 @@
  * @author zorp
  */
 
-/* Text in footer
-   ========================================================================== */
-.site-footer {
-  color: $black;
 
-  p {
-    margin-bottom: 5px;
-  }
+.site-footer {
+  border-top: 20px solid transparentize($base-tertiary-color, .65);
+  color: $black;
 }
+
+.footer-wrapper {
+  background-color: transparentize($base-tertiary-color, .3);
+  position: relative;
+}
+
+.footer-inner {
+  @include box-sizing(border-box);
+
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  padding-top: 40px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+}
+
 
 /* Logo img in footer
    ========================================================================== */
@@ -29,7 +44,8 @@
 .awards {
   @include zen-grid-item(6, 1, right);
 
-  padding-top: 3px; //Adjust height to align bottom with newsletter signup form.
+  /* Adjust height to align bottom with newsletter signup form */
+  padding-top: 3px;
   padding-right: 0;
   text-align: right;
 }
