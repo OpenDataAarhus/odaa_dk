@@ -83,7 +83,7 @@
             <input type="submit" value="Søg" class="button" />
           </form>
         </div>
-        <?php print render($page['navigation']); ?>        
+        <?php print render($page['navigation']); ?>
       </div>
     </section>
   </header>
@@ -93,83 +93,16 @@
         <?php if (!empty($page['content'])): ?>
           <?php print render($page['content']); ?>
         <?php endif ?>
-        <div class="search-spotbox">
-          <div class="search-spotbox--inner">
-            <h3 class="search-spotbox--header">Søg efter data</h3>
-            <div class="search-spotbox--dataset-amount-wrapper">
-              <div class="search-spotbox--dataset-amount">1587</div>
-              <div class="search-spotbox--dataset-amount-text">datasæt</div>
-            </div>
-            <div class="search-spotbox--wrapper">
-              <form action="/dataset" method="get">
-                <input type="text" name="q" placeholder="<?php print t('Search for dataset'); ?>..." class="search-form-text" />
-                <input type="submit" value="Søg" class="button" />
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="spotbox">
-          <div class="spotbox--inner">
-            <div class="spotbox--content-wrapper">
-              <h2 class="spotbox--header"><a href="#"><i class="icon-comments-alt"></i>Seneste kommentarer</a></h2>
-              <ul class="spotbox--list">
-                <li class="spotbox--list-item first">
-                  <div class="spotbox--list-image"><a href="#comment1"><img src="//gravatar.com/avatar/f9879d71855b5ff21e4963273a886bfc?s=30&amp;d=identicon" /></a></div>
-                  <span class="spotbox--list-link"><a href="#comment1">Morbi leo risus</a></span>
-                  <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="spotbox">
-          <div class="spotbox--inner">
-            <div class="spotbox--content-wrapper">
-              <h2 class="spotbox--header"><a href="#"><i class="icon-sitemap"></i>Seneste datasæt</a></h2>
-              <ul class="spotbox--list">
-                <li class="spotbox--list-item first">
-                  <div class="spotbox--list-image"><a href="#comment1"><img src="//gravatar.com/avatar/f9879d71855b5ff21e4963273a886bfc?s=30&amp;d=identicon" /></a></div>
-                  <span class="spotbox--list-link"><a href="#comment1">Morbi leo risus</a></span>
-                  <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
       <div class="secondary-content">
-        <div class="spotbox">
-          <div class="spotbox--inner">
-            <h3 class="spotbox--header">Velkommen til ODAA</h3>
-            <div class="spotbox--image"><a href="#"><img src="http://www.odaa.dk/media/your_rainbow_1_small.jpg" /></a></div>
-            <p>ODAA er en open data platform, hvor åbne data bliver gjort frit tilgængelige, så de er nemme for dig at finde.</p>
-            <p>Vi håber, at du vil forvandle de åbne data til nye og innovative services og fortælle om det her på platformen.</p>
-            <p>Du kan læse mere <a href="#">Om ODAA her</a>.</p>
-          </div>
-        </div>
-        <div class="spotbox--featured-dataset">
-          <div class="spotbox--featured-dataset-inner">
-            <h3 class="spotbox--featured-dataset-header"><i class="icon-star-empty"></i>Featured datasæt</h3>
-            <h4><a href="#">3D Bygninger - Bymodel</a></h4>
-            <div>3D bygninger for den indre del af Aarhus By (ca. indenfor Ringgaden). Data er på DWG-formatet og er en bygningstrådmodel. Data fylder ca. 50 MB. Vi anbefaler, at du downloader datasættet i Chrome eller Firefox.</div>
-          </div>
-        </div>
+        <?php if (!empty($page['secondary_content'])): ?>
+          <?php print render($page['secondary_content']); ?>
+        <?php endif ?>
       </div>
       <div class="tertiary-content">
-        <div class="spotbox">
-          <div class="spotbox--inner">
-            <div class="spotbox--content-wrapper">
-              <h2 class="spotbox--header"><a href="#"><i class="icon-lightbulb"></i>Something else</a></h2>
-              <ul class="spotbox--list">
-                <li class="spotbox--list-item first">
-                  <div class="spotbox--list-image"><a href="#comment1"><img src="//gravatar.com/avatar/f9879d71855b5ff21e4963273a886bfc?s=30&amp;d=identicon" /></a></div>
-                  <span class="spotbox--list-link"><a href="#comment1">Morbi leo risus</a></span>
-                  <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
-                </li>                 
-              </ul>
-            </div>
-          </div>
-        </div>
+        <?php if (!empty($page['tertiary_content'])): ?>
+          <?php print render($page['tertiary_content']); ?>
+        <?php endif ?>
       </div>
     </div>
   </div>
