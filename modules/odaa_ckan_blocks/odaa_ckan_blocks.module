@@ -11,7 +11,6 @@ function odaa_ckan_blocks_block_info() {
   $blocks = array();
   
   $blocks['datasets'] = array(
-    // info: The name of the block.
     'info' => t('CKAN - Datasets'),
   );
   
@@ -62,17 +61,35 @@ function odaa_ckan_blocks_theme() {
 }
 
 function _odaa_ckan_blocks_datasets() {
-  $packages = _odaa_user_api_call('/package_list');
-  $output = theme('odaa_ckan_blocks_datasets', array('count' => sizeof($packages)));
+  $cid = basename(__FILE__) . '_datasets';
+  $cache = cache_get($cid);
+  if ($cache && $cache->expire > REQUEST_TIME) {
+    $data = $cache->data;
+  }
+  else {
+    $data = _odaa_user_api_call('/package_list');
+    cache_set($cid, $data, 'cache', time() + 300);
+  }
+
+  $output = theme('odaa_ckan_blocks_datasets', array('count' => sizeof($data)));
   return $output;
 }
 
 function _odaa_ckan_blocks_recent_dataset_changes() {
-  $datasets = _odaa_user_api_call('/current_package_list_with_resources');
-  foreach ($datasets as $d_key => $dataset) {
-    $datasets[$d_key]->format_interval = format_interval(time() - strtotime($dataset->metadata_modified), 2);
+  $cid = basename(__FILE__) . '_recent_dataset_changes';
+  $cache = cache_get($cid);
+  if ($cache && $cache->expire > REQUEST_TIME) {
+    $data = $cache->data;
+  }
+  else {
+    $data = _odaa_user_api_call('/current_package_list_with_resources');
+    cache_set($cid, $data, 'cache', time() + 300);
   }
   
-  $output = theme('odaa_ckan_blocks_recent_dataset_changes', array('list' => $datasets));
+  foreach ($data as $d_key => $dataset) {
+    $data[$d_key]->format_interval = format_interval(time() - strtotime($dataset->metadata_modified), 2);
+  }
+  
+  $output = theme('odaa_ckan_blocks_recent_dataset_changes', array('list' => $data));
   return $output;
-}
+} 
