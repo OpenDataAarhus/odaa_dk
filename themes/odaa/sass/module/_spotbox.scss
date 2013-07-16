@@ -168,3 +168,36 @@ $spotbox-background-color:        $white;
     }
   }
 }
+
+.spotbox-menu--list-remove-all {
+  @extend %module--block--list-item;
+
+  a:link,
+  a:visited,
+  a:focus {
+    color: $font-color-primary;
+  }
+
+  a:hover,
+  a:active {
+    color: $link-color-hover;
+  }
+}
+
+.spotbox-menu--list-show-more {
+  border-top: 1px dashed transparentize($black, .9);
+  margin-top: $medium-spacing;
+  margin-bottom: 0;
+  padding-top: $medium-spacing;
+
+  a:link,
+  a:visited,
+  a:focus {
+    @include font-bold();
+  }
+
+  a:hover,
+  a:active {
+    color: darken($link-color-hover, 10%);
+  }
+}
