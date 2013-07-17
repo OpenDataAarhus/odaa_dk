@@ -53,3 +53,12 @@ function odaa_menu_link($vars) {
   $output = l('<span>'.$element['#title'].'</span>', $element['#href'], $element['#localized_options']);
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
+
+/**
+ * Implements theme_preprocess_block().
+ */
+function odaa_preprocess_block(&$variables) {
+  if (isset($variables['elements']['#class'])) {
+    $variables['classes_array'][] = $variables['elements']['#class'];
+  }
+}
