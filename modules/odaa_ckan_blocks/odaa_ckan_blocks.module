@@ -9,24 +9,24 @@
  */
 function odaa_ckan_blocks_block_info() {
   $blocks = array();
-  
+
   $blocks['datasets'] = array(
     'info' => t('CKAN - Datasets'),
   );
-  
+
   $blocks['recent_dataset_changes'] = array(
     'info' => t('CKAN - Recent Dataset Changes'),
   );
-  
+
   return $blocks;
-}  
+}
 
 /**
  * Implements hook_block_view().
  */
 function odaa_ckan_blocks_block_view($delta = '') {
   $block = array();
-  
+
   switch ($delta) {
     case 'datasets':
       $block['content'] = _odaa_ckan_blocks_datasets();
@@ -36,7 +36,7 @@ function odaa_ckan_blocks_block_view($delta = '') {
       $block['content'] = _odaa_ckan_blocks_recent_dataset_changes();
       break;
 
-    
+
   }
   return $block;
 }
@@ -53,7 +53,7 @@ function odaa_ckan_blocks_theme() {
       'template' => 'odaa-ckan-blocks-datasets',
       'path' => $module_path.'/templates',
     ),
-    // Recent changes template.  
+    // Recent changes template.
     'odaa_ckan_blocks_recent_dataset_changes' => array(
       'variables' => array('list' => NULL),
       'template' => 'odaa-ckan-blocks-recent-dataset-changes',
@@ -64,9 +64,9 @@ function odaa_ckan_blocks_theme() {
 
 /**
  * Gets all active datasets.
- * 
+ *
  * Cached for 5 minutes.
- * 
+ *
  * @return string
  *  Themed HTML.
  */
@@ -84,14 +84,14 @@ function _odaa_ckan_blocks_datasets() {
   }
 
   // Theme datasets and return it.
-  return array('#theme' => 'odaa_ckan_blocks_datasets', '#count' => sizeof($data), '#class' => 'datasets');
+  return array('#theme' => 'odaa_ckan_blocks_datasets', '#count' => sizeof($data), '#class' => 'ckan-block-search-dataset');
 }
 
 /**
  * Gets recent changes and calculate 'since'.
- * 
+ *
  * Cached for 5 minutes.
- * 
+ *
  * @return string
  *  Themed HTML
  */
@@ -107,16 +107,16 @@ function _odaa_ckan_blocks_recent_dataset_changes() {
     $data = _odaa_user_api_call('/current_package_list_with_resources');
     cache_set($cid, $data, 'cache', time() + 300);
   }
-  
+
   foreach ($data as $d_key => $dataset) {
     // Add format_interval aka since.
     $data[$d_key]->format_interval = format_interval(time() - strtotime($dataset->metadata_modified), 2);
   }
-  
+
   /*echo "<pre>";
   print_r($data);
   die();*/
-  
+
   // Theme datasets and return it.
-  return array('#theme' => 'odaa_ckan_blocks_recent_dataset_changes', '#list' => $data, '#class' => 'recent_dataset_changes');
-} 
+  return array('#theme' => 'odaa_ckan_blocks_recent_dataset_changes', '#list' => $data, '#class' => 'ckan-block-recent-datasets');
+}
