@@ -61,8 +61,12 @@ function odaa_preprocess_block(&$variables) {
   if (isset($variables['elements']['content']['#class'])) {
     // Logged in
     $variables['classes_array'][] = $variables['elements']['content']['#class'];
- } else if (isset($variables['elements']['#class'])) {
-   // Logged out
-   $variables['classes_array'][] = $variables['elements']['#class'];
- }
+  } 
+  else if (isset($variables['elements']['#class'])) {
+    // Logged out
+    $variables['classes_array'][] = $variables['elements']['#class'];
+  } 
+  else {
+    $variables['classes_array'][] = 'spotbox';
+  }
 }
