@@ -4104,7 +4104,7 @@ body {
   padding-left: 0;
 }
 /* line 82, ../sass/layout/_layout.scss */
-.front .primary-content .spotbox:nth-child(odd), .front .primary-content .spotbox--featured-dataset:nth-child(odd) {
+.front .primary-content .spotbox:nth-child(odd) {
   float: right;
   width: 50%;
   margin-right: 0%;
@@ -4122,7 +4122,7 @@ body {
   _overflow-y: visible;
 }
 /* line 86, ../sass/layout/_layout.scss */
-.front .primary-content .spotbox:nth-child(even), .front .primary-content .spotbox--featured-dataset:nth-child(even) {
+.front .primary-content .spotbox:nth-child(even) {
   clear: left;
   float: left;
   width: 50%;
@@ -4200,23 +4200,15 @@ body {
     _overflow-y: visible;
   }
   /* line 111, ../sass/layout/_layout.scss */
-  .front .primary-content .spotbox, .front .primary-content .spotbox--featured-dataset,
+  .front .primary-content .spotbox,
   .front .primary-content .spotbox:nth-child(odd),
-  .front .primary-content .spotbox--featured-dataset:nth-child(odd),
   .front .primary-content .spotbox:nth-child(even),
-  .front .primary-content .spotbox--featured-dataset:nth-child(even),
   .front .secondary-content .spotbox,
-  .front .secondary-content .spotbox--featured-dataset,
   .front .secondary-content .spotbox:nth-child(odd),
-  .front .secondary-content .spotbox--featured-dataset:nth-child(odd),
   .front .secondary-content .spotbox:nth-child(even),
-  .front .secondary-content .spotbox--featured-dataset:nth-child(even),
   .front .tertiary-content .spotbox,
-  .front .tertiary-content .spotbox--featured-dataset,
   .front .tertiary-content .spotbox:nth-child(odd),
-  .front .tertiary-content .spotbox--featured-dataset:nth-child(odd),
-  .front .tertiary-content .spotbox:nth-child(even),
-  .front .tertiary-content .spotbox--featured-dataset:nth-child(even) {
+  .front .tertiary-content .spotbox:nth-child(even) {
     clear: left;
     float: left;
     width: 100%;
@@ -4293,7 +4285,7 @@ body {
   _overflow-y: visible;
 }
 /* line 134, ../sass/layout/_layout.scss */
-.left-sidebar .tertiary-content .spotbox:nth-child(odd), .left-sidebar .tertiary-content .spotbox--featured-dataset:nth-child(odd) {
+.left-sidebar .tertiary-content .spotbox:nth-child(odd) {
   clear: left;
   float: left;
   width: 50%;
@@ -4312,7 +4304,7 @@ body {
   _overflow-y: visible;
 }
 /* line 139, ../sass/layout/_layout.scss */
-.left-sidebar .tertiary-content .spotbox:nth-child(even), .left-sidebar .tertiary-content .spotbox--featured-dataset:nth-child(even) {
+.left-sidebar .tertiary-content .spotbox:nth-child(even) {
   float: right;
   width: 50%;
   margin-right: 0%;
@@ -5249,7 +5241,7 @@ div.context-editor div.context-editable legend {
 /* Block module
    ========================================================================== */
 /* line 63, ../sass/module/_module.scss */
-.twitter-widget, .spotbox--inner, .search-spotbox--inner, .spotbox--featured-dataset-inner, .spotbox-menu--inner, .page--content-wrapper, .comments {
+.twitter-widget, .spotbox--inner, .search-spotbox--inner, .spotbox-menu--inner, .page--content-wrapper, .comments {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -5262,30 +5254,30 @@ div.context-editor div.context-editable legend {
 }
 
 /* line 73, ../sass/module/_module.scss */
-.spotbox, .spotbox--featured-dataset, .spotbox-menu {
+.spotbox, .spotbox-menu {
   margin-top: 20px;
 }
 /* line 76, ../sass/module/_module.scss */
-.spotbox a:link, .spotbox--featured-dataset a:link, .spotbox-menu a:link {
+.spotbox a:link, .spotbox-menu a:link {
   color: #e5420c;
   text-decoration: none;
 }
 /* line 81, ../sass/module/_module.scss */
-.spotbox a:visited, .spotbox--featured-dataset a:visited, .spotbox-menu a:visited {
+.spotbox a:visited, .spotbox-menu a:visited {
   color: #b53409;
   text-decoration: none;
 }
 /* line 86, ../sass/module/_module.scss */
-.spotbox a:hover, .spotbox--featured-dataset a:hover, .spotbox-menu a:hover {
+.spotbox a:hover, .spotbox-menu a:hover {
   color: #be370a;
   text-decoration: none;
 }
 /* line 91, ../sass/module/_module.scss */
-.spotbox a:focus, .spotbox--featured-dataset a:focus, .spotbox-menu a:focus {
+.spotbox a:focus, .spotbox-menu a:focus {
   color: black;
 }
 /* line 95, ../sass/module/_module.scss */
-.spotbox i[class^="icon-"], .spotbox--featured-dataset i[class^="icon-"], .spotbox-menu i[class^="icon-"] {
+.spotbox i[class^="icon-"], .spotbox-menu i[class^="icon-"] {
   margin-right: 5px;
   /* Icon gets cut off when it is the first item from the left */
   padding-left: 1px;
@@ -5293,7 +5285,7 @@ div.context-editor div.context-editable legend {
 
 /* %module--block headers */
 /* line 109, ../sass/module/_module.scss */
-.spotbox--header, .search-spotbox--header, .spotbox--featured-dataset-header, .spotbox-menu--header {
+.spotbox--header, .search-spotbox--header, .spotbox-menu--header {
   -webkit-border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
@@ -5309,31 +5301,31 @@ div.context-editor div.context-editable legend {
   padding-left: 20px;
 }
 /* line 123, ../sass/module/_module.scss */
-.spotbox--header a:link, .search-spotbox--header a:link, .spotbox--featured-dataset-header a:link, .spotbox-menu--header a:link {
+.spotbox--header a:link, .search-spotbox--header a:link, .spotbox-menu--header a:link {
   color: #404040;
   text-decoration: none;
 }
 /* line 128, ../sass/module/_module.scss */
-.spotbox--header a:visited, .search-spotbox--header a:visited, .spotbox--featured-dataset-header a:visited, .spotbox-menu--header a:visited {
+.spotbox--header a:visited, .search-spotbox--header a:visited, .spotbox-menu--header a:visited {
   color: #3b3b3b;
   text-decoration: none;
 }
 /* line 133, ../sass/module/_module.scss */
-.spotbox--header a:hover, .search-spotbox--header a:hover, .spotbox--featured-dataset-header a:hover, .spotbox-menu--header a:hover {
+.spotbox--header a:hover, .search-spotbox--header a:hover, .spotbox-menu--header a:hover {
   color: #be370a;
   text-decoration: none;
   /* Inherit hover color for header labels */
 }
 /* line 138, ../sass/module/_module.scss */
-.spotbox--header a:hover [class$="header-label"], .search-spotbox--header a:hover [class$="header-label"], .spotbox--featured-dataset-header a:hover [class$="header-label"], .spotbox-menu--header a:hover [class$="header-label"] {
+.spotbox--header a:hover [class$="header-label"], .search-spotbox--header a:hover [class$="header-label"], .spotbox-menu--header a:hover [class$="header-label"] {
   color: gray;
 }
 /* line 143, ../sass/module/_module.scss */
-.spotbox--header a:focus, .search-spotbox--header a:focus, .spotbox--featured-dataset-header a:focus, .spotbox-menu--header a:focus {
+.spotbox--header a:focus, .search-spotbox--header a:focus, .spotbox-menu--header a:focus {
   color: black;
 }
 /* line 147, ../sass/module/_module.scss */
-.spotbox--header i[class^="icon-"], .search-spotbox--header i[class^="icon-"], .spotbox--featured-dataset-header i[class^="icon-"], .spotbox-menu--header i[class^="icon-"] {
+.spotbox--header i[class^="icon-"], .search-spotbox--header i[class^="icon-"], .spotbox-menu--header i[class^="icon-"] {
   margin-right: 8px;
 }
 
@@ -5680,7 +5672,7 @@ div.context-editor div.context-editable legend {
 }
 
 /* line 28, ../sass/module/_spotbox.scss */
-.spotbox--inner, .search-spotbox--inner, .spotbox--featured-dataset-inner {
+.spotbox--inner, .search-spotbox--inner {
   background-color: white;
 }
 
@@ -6185,8 +6177,6 @@ div.context-editor div.context-editable legend {
 }
 
 /* Dataset list tags
-   ========================================================================== */
-/* Featured dataset
    ========================================================================== */
 /**
  * Community
