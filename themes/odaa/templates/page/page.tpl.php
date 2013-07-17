@@ -76,7 +76,6 @@
   <header class="site-header">
     <section class="header-wrapper">
       <div class="header-inner">
-        <?php print render($page['header']); ?>
         <a href="/" class="logo"><img alt="" src="/sites/odaa.dk/themes/odaa/logo.png"></a>
         <div class="search-form">
           <form action="/dataset" method="get">
