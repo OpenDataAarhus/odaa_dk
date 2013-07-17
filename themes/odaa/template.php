@@ -60,5 +60,5 @@ function odaa_menu_link($vars) {
 function odaa_preprocess_block(&$variables) {
   if (isset($variables['elements']['#class'])) {
     $variables['classes_array'][] = $variables['elements']['#class'];
- }
+  }
 }
