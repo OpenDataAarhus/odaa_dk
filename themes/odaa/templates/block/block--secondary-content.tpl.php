@@ -44,7 +44,7 @@
  * @ingroup themeable
  */
 ?>
-<div class="spotbox <?php print $classes; ?>"<?php print $attributes; ?> rel="<?php print $block_html_id; ?>">
+<div class="<?php print $classes; ?>"<?php print $attributes; ?> rel="<?php print $block_html_id; ?>">
   <div class="spotbox--inner">
     <?php print render($title_prefix); ?>
     <?php if ($block->subject): ?>
