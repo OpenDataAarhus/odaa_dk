@@ -1,0 +1,71 @@
+/**
+ * Drupal
+ *
+ * @author magnify
+ */
+
+
+/* Context override
+   ========================================================================== */
+.context-editor-title {
+  border-bottom: $base-border-style;
+  font-size: $font-size-medium;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.context-help {
+  /* For now we hide the help, the text is way to long and should only be
+   * visible if looking for it */
+  display: none !important;
+}
+
+.editing-context-label {
+  /* Hide the "Now editing" text, the markup order makes it difficult to
+   * show it in an optimal position */
+  display: none !important;
+}
+
+#context-inline-editor li {
+  border-bottom: $base-border-style;
+  margin-bottom: 10px;
+  margin-left: 0;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+div.context-editor div.label {
+  @include border-radius(0);
+
+  background-color: transparent;
+  clear: both;
+  padding: 0;
+}
+
+div.context-editor div.label.top {
+  color: $font-color-primary;
+}
+
+#context-inline-editor li.context-editable div.links .edit,
+#context-inline-editor li.context-editing div.links .done {
+  @extend .button;
+
+  padding: 3px 20px;
+}
+
+#context-inline-editor li.context-editing div.links .edit.active {
+  /* Hide the edit button when editing */
+  display: none;
+}
+
+div.context-editor div.context-editable {
+  fieldset {
+    padding: 0;
+  }
+
+  legend {
+    margin: 0;
+    padding: 0;
+  }
+}
