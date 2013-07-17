@@ -60,15 +60,11 @@ function odaa_menu_link($vars) {
 function odaa_preprocess_block(&$variables) {
   switch ($variables['block']->delta) {
     case 'datasets':
-      $variables['classes_array'][] = 'datasets';
+      $variables['classes_array'][] = 'search-spotbox';
       break;
-    
-    case 'recent_dataset_changes':
-      $variables['classes_array'][] = 'recent-dataset-changes';
-      break;
-    
-    case defaults:
+
+    default:
       $variables['classes_array'][] = 'spotbox';
-      breaK;
+      break;
   }
 }
