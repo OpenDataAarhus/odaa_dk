@@ -58,15 +58,17 @@ function odaa_menu_link($vars) {
  * Implements template_preprocess_block().
  */
 function odaa_preprocess_block(&$variables) {
-  if (isset($variables['elements']['content']['#class'])) {
-    // Logged in
-    $variables['classes_array'][] = $variables['elements']['content']['#class'];
-  } 
-  else if (isset($variables['elements']['#class'])) {
-    // Logged out
-    $variables['classes_array'][] = $variables['elements']['#class'];
-  } 
-  else {
-    $variables['classes_array'][] = 'spotbox';
+  switch ($variables['block']->delta) {
+    case 'datasets':
+      $variables['classes_array'][] = 'datasets';
+      break;
+    
+    case 'recent_dataset_changes':
+      $variables['classes_array'][] = 'recent-dataset-changes';
+      break;
+    
+    case defaults:
+      $variables['classes_array'][] = 'spotbox';
+      breaK;
   }
 }
