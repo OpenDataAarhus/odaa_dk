@@ -104,9 +104,11 @@
             <div class="spotbox--inner">
               <h3 class="spotbox--header">Velkommen til ODAA</h3>
               <div class="spotbox--image"><a href="#"><img src="http://www.odaa.dk/media/your_rainbow_1_small.jpg" /></a></div>
-              <p>ODAA er en open data platform, hvor åbne data bliver gjort frit tilgængelige, så de er nemme for dig at finde.</p>
-              <p>Vi håber, at du vil forvandle de åbne data til nye og innovative services og fortælle om det her på platformen.</p>
-              <p>Du kan læse mere <a href="#">Om ODAA her</a>.</p>
+              <div class="spotbox--content">
+                <p>ODAA er en open data platform, hvor åbne data bliver gjort frit tilgængelige, så de er nemme for dig at finde.</p>
+                <p>Vi håber, at du vil forvandle de åbne data til nye og innovative services og fortælle om det her på platformen.</p>
+                <p>Du kan læse mere <a href="#">Om ODAA her</a>.</p>
+              </div>
             </div>
           </div>
           <div class="spotbox">
