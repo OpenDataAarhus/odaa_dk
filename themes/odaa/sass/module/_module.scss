@@ -149,17 +149,6 @@
   }
 }
 
-%module--block--header-label {
-  @include opacity(.5);
-}
-
-
-%module--block--list-header-label {
-  @include opacity(.5);
-
-  margin-right: 5px;
-}
-
 
 %module--block--list-header {
   @include font-normal();
@@ -179,10 +168,6 @@
 
 
 %module--block--content {
-  padding-top: $large-spacing;
-  padding-right: $large-spacing;
-  padding-left: $large-spacing;
-
   a:link {
     color: $link-color;
   }

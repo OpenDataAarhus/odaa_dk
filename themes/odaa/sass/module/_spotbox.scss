@@ -1,5 +1,5 @@
 /**
- * Spotbox
+ * Spotbox [refactored]
  *
  * @author magnify
  */
@@ -14,8 +14,7 @@ $spotbox-background-color:        $white;
   @extend %module--block;
 }
 
-.spotbox--content,
-.spotbox--meta-wrapper {
+.spotbox--content {
   a:link {
     color: $link-color;
   }
@@ -38,25 +37,10 @@ $spotbox-background-color:        $white;
   @extend %module--block--header;
 }
 
-.spotbox--header-label {
-  @extend %module--block--header-label;
-}
-
-
-.spotbox--list-header-label {
-  @extend %module--block--list-header-label;
-}
-
-
 .spotbox--list-header {
   @extend %module--block--list-header;
 }
 
-
-/* Spotbox content */
-.spotbox--content-wrapper {
-  @extend %module--block--content-wrapper;
-}
 
 .spotbox--content {
   @extend %module--block--content;
@@ -64,10 +48,6 @@ $spotbox-background-color:        $white;
 
 .spotbox--content-empty {
   @extend %empty-text;
-}
-
-.spotbox--meta-wrapper {
-  @extend %module--block--meta-wrapper;
 }
 
 
@@ -82,32 +62,6 @@ $spotbox-background-color:        $white;
 
 .spotbox--list-posted {
   @extend %module--block--list-posted;
-}
-
-
-/* Spotbox list latest */
-.spotbox--list-latest {
-  @extend %module--block--list;
-
-  .spotbox--list-image {
-    @include border-radius(0);
-  }
-
-  .spotbox--list-header,
-  .spotbox--content,
-  .spotbox--meta-wrapper {
-    margin-left: 50px;
-  }
-
-  .spotbox--content {
-    padding-top: 10px;
-  }
-
-}
-
-
-.spotbox--date {
-  @extend %module--block--date;
 }
 
 
