@@ -113,10 +113,6 @@ function _odaa_ckan_blocks_recent_dataset_changes() {
     $data[$d_key]->format_interval = format_interval(time() - strtotime($dataset->metadata_modified), 2);
   }
 
-  /*echo "<pre>";
-  print_r($data);
-  die();*/
-
   // Theme datasets and return it.
   return array('#theme' => 'odaa_ckan_blocks_recent_dataset_changes', '#list' => $data, '#class' => 'ckan-block-recent-datasets');
 }
