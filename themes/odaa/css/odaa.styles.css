@@ -5339,13 +5339,6 @@ div.context-editor div.context-editable legend {
 }
 
 /* %module--block content */
-/* line 163, ../sass/module/_module.scss */
-.spotbox--content-wrapper {
-  /* Correct spacing for line height */
-  margin-top: -5px;
-  vertical-align: top;
-}
-
 /* line 171, ../sass/module/_module.scss */
 .spotbox--content a:link {
   color: #e5420c;
@@ -5677,44 +5670,43 @@ div.context-editor div.context-editable legend {
 }
 
 /* Spotbox header */
-/* Spotbox content */
 /* Spotbox list */
 /* Spotbox images */
 /* Spotbox footer */
 /* Spotbox menu
    ========================================================================== */
-/* line 125, ../sass/module/_spotbox.scss */
+/* line 120, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-item .active:link, .spotbox-menu--list-item .active:visited, .spotbox-menu--list-item .active:hover, .spotbox-menu--list-item .active:focus, .spotbox-menu--list-item .active:active {
   color: #be370a;
 }
 
-/* line 136, ../sass/module/_spotbox.scss */
+/* line 131, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-remove-all a:link,
 .spotbox-menu--list-remove-all a:visited,
 .spotbox-menu--list-remove-all a:focus {
   color: #404040;
 }
-/* line 141, ../sass/module/_spotbox.scss */
+/* line 136, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-remove-all a:hover,
 .spotbox-menu--list-remove-all a:active {
   color: #be370a;
 }
 
-/* line 146, ../sass/module/_spotbox.scss */
+/* line 141, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-show-more {
   border-top: 1px dashed rgba(0, 0, 0, 0.1);
   margin-top: 10px;
   margin-bottom: 0;
   padding-top: 10px;
 }
-/* line 154, ../sass/module/_spotbox.scss */
+/* line 149, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-show-more a:link,
 .spotbox-menu--list-show-more a:visited,
 .spotbox-menu--list-show-more a:focus {
   font-family: "exo-demi-bold";
   font-weight: normal;
 }
-/* line 159, ../sass/module/_spotbox.scss */
+/* line 154, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-show-more a:hover,
 .spotbox-menu--list-show-more a:active {
   color: #8e2907;

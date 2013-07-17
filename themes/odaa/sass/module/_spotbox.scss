@@ -42,11 +42,6 @@ $spotbox-background-color:        $white;
 }
 
 
-/* Spotbox content */
-.spotbox--content-wrapper {
-  @extend %module--block--content-wrapper;
-}
-
 .spotbox--content {
   @extend %module--block--content;
 }
