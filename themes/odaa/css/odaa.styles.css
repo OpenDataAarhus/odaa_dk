@@ -5337,20 +5337,7 @@ div.context-editor div.context-editable legend {
   margin-right: 8px;
 }
 
-/* line 152, ../sass/module/_module.scss */
-.spotbox--header-label {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;
-}
-
-/* line 157, ../sass/module/_module.scss */
-.spotbox--list-header-label {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;
-  margin-right: 5px;
-}
-
-/* line 164, ../sass/module/_module.scss */
+/* line 153, ../sass/module/_module.scss */
 .spotbox--list-header {
   font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: normal;
@@ -5360,118 +5347,86 @@ div.context-editor div.context-editable legend {
 }
 
 /* %module--block content */
-/* line 174, ../sass/module/_module.scss */
+/* line 163, ../sass/module/_module.scss */
 .spotbox--content-wrapper {
   /* Correct spacing for line height */
   margin-top: -5px;
   vertical-align: top;
 }
 
-/* line 181, ../sass/module/_module.scss */
-.spotbox--content {
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-/* line 186, ../sass/module/_module.scss */
+/* line 171, ../sass/module/_module.scss */
 .spotbox--content a:link {
   color: #e5420c;
 }
-/* line 190, ../sass/module/_module.scss */
+/* line 175, ../sass/module/_module.scss */
 .spotbox--content a:visited {
   color: #972c08;
 }
-/* line 194, ../sass/module/_module.scss */
+/* line 179, ../sass/module/_module.scss */
 .spotbox--content a:hover {
   color: #be370a;
 }
 
-/* line 200, ../sass/module/_module.scss */
-.spotbox--meta-wrapper {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
-  opacity: 0.75;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-/* line 207, ../sass/module/_module.scss */
-.spotbox--meta-wrapper a:link {
-  color: #e5420c;
-}
-/* line 211, ../sass/module/_module.scss */
-.spotbox--meta-wrapper a:visited {
-  color: #972c08;
-}
-/* line 215, ../sass/module/_module.scss */
-.spotbox--meta-wrapper a:hover {
-  color: #be370a;
-}
-
 /* %module--block list */
-/* line 222, ../sass/module/_module.scss */
-.spotbox--list, .spotbox--list-latest, .spotbox-menu--list {
+/* line 207, ../sass/module/_module.scss */
+.spotbox--list, .spotbox-menu--list {
   padding-left: 0;
 }
-/* line 225, ../sass/module/_module.scss */
-.spotbox--list a:link, .spotbox--list-latest a:link, .spotbox-menu--list a:link {
+/* line 210, ../sass/module/_module.scss */
+.spotbox--list a:link, .spotbox-menu--list a:link {
   color: #404040;
   text-decoration: none;
 }
-/* line 230, ../sass/module/_module.scss */
-.spotbox--list a:visited, .spotbox--list-latest a:visited, .spotbox-menu--list a:visited {
+/* line 215, ../sass/module/_module.scss */
+.spotbox--list a:visited, .spotbox-menu--list a:visited {
   color: #3b3b3b;
   text-decoration: none;
 }
-/* line 235, ../sass/module/_module.scss */
-.spotbox--list a:hover, .spotbox--list-latest a:hover, .spotbox-menu--list a:hover {
+/* line 220, ../sass/module/_module.scss */
+.spotbox--list a:hover, .spotbox-menu--list a:hover {
   color: #be370a;
   text-decoration: none;
 }
-/* line 240, ../sass/module/_module.scss */
-.spotbox--list a:focus, .spotbox--list-latest a:focus, .spotbox-menu--list a:focus {
+/* line 225, ../sass/module/_module.scss */
+.spotbox--list a:focus, .spotbox-menu--list a:focus {
   color: black;
 }
-/* line 244, ../sass/module/_module.scss */
-.spotbox--list i[class^="icon-"], .spotbox--list-latest i[class^="icon-"], .spotbox-menu--list i[class^="icon-"] {
+/* line 229, ../sass/module/_module.scss */
+.spotbox--list i[class^="icon-"], .spotbox-menu--list i[class^="icon-"] {
   margin-right: 5px;
   /* Icon gets cut off when it is the first item from the left */
   padding-left: 1px;
 }
 
-/* line 252, ../sass/module/_module.scss */
+/* line 237, ../sass/module/_module.scss */
 .spotbox--list-item, .spotbox-menu--list-item, .spotbox-menu--list-remove-all {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
   overflow: hidden;
   padding-bottom: 10px;
 }
-/* line 258, ../sass/module/_module.scss */
+/* line 243, ../sass/module/_module.scss */
 .last.spotbox--list-item, .last.spotbox-menu--list-item, .last.spotbox-menu--list-remove-all {
   border-bottom: 0;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-/* line 266, ../sass/module/_module.scss */
+/* line 251, ../sass/module/_module.scss */
 .spotbox--list-posted {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
   margin-bottom: 0;
 }
 
-/* line 273, ../sass/module/_module.scss */
-.spotbox--date {
-  display: block;
-}
-
 /* %module--block image */
-/* line 279, ../sass/module/_module.scss */
+/* line 264, ../sass/module/_module.scss */
 .spotbox--image {
   margin-bottom: 20px;
 }
 
 /* %module--block list image */
-/* line 285, ../sass/module/_module.scss */
+/* line 270, ../sass/module/_module.scss */
 .spotbox--list-image {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -5485,28 +5440,28 @@ div.context-editor div.context-editable legend {
   vertical-align: top;
 }
 
-/* line 299, ../sass/module/_module.scss */
+/* line 284, ../sass/module/_module.scss */
 .spotbox--list-link a:link {
   color: #e5420c;
   text-decoration: none;
 }
-/* line 304, ../sass/module/_module.scss */
+/* line 289, ../sass/module/_module.scss */
 .spotbox--list-link a:visited {
   color: #db3f0b;
   text-decoration: none;
 }
-/* line 309, ../sass/module/_module.scss */
+/* line 294, ../sass/module/_module.scss */
 .spotbox--list-link a:hover {
   color: #be370a;
   text-decoration: none;
 }
-/* line 314, ../sass/module/_module.scss */
+/* line 299, ../sass/module/_module.scss */
 .spotbox--list-link a:focus {
   color: black;
 }
 
 /* %module--block footer */
-/* line 321, ../sass/module/_module.scss */
+/* line 306, ../sass/module/_module.scss */
 .spotbox--footer {
   border-top: 1px dashed rgba(0, 0, 0, 0.1);
   clear: both;
@@ -5518,25 +5473,25 @@ div.context-editor div.context-editable legend {
   padding-bottom: 15px;
 }
 
-/* line 333, ../sass/module/_module.scss */
+/* line 318, ../sass/module/_module.scss */
 .spotbox--read-more {
   float: right;
 }
 
 /* %module-list-alternate
    ========================================================================== */
-/* line 340, ../sass/module/_module.scss */
+/* line 325, ../sass/module/_module.scss */
 .dataset--list, .community--list {
   padding-left: 0;
 }
 
-/* line 344, ../sass/module/_module.scss */
+/* line 329, ../sass/module/_module.scss */
 .dataset--list-heading, .community--list-heading {
   font-size: 160%;
   margin-right: 5px;
 }
 
-/* line 349, ../sass/module/_module.scss */
+/* line 334, ../sass/module/_module.scss */
 .dataset--list-item, .community--list-item {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -5547,12 +5502,12 @@ div.context-editor div.context-editable legend {
   overflow: hidden;
   padding: 20px;
 }
-/* line 358, ../sass/module/_module.scss */
+/* line 343, ../sass/module/_module.scss */
 .dataset--list-item:hover, .community--list-item:hover {
   border: 1px solid #d5d5d5;
 }
 
-/* line 363, ../sass/module/_module.scss */
+/* line 348, ../sass/module/_module.scss */
 .dataset--list-icon, .community--list-icon {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -5572,40 +5527,40 @@ div.context-editor div.context-editable legend {
   text-align: center;
   width: 60px;
 }
-/* line 379, ../sass/module/_module.scss */
+/* line 364, ../sass/module/_module.scss */
 .dataset--list-icon:hover, .community--list-icon:hover {
   background-color: #809700;
 }
-/* line 388, ../sass/module/_module.scss */
+/* line 373, ../sass/module/_module.scss */
 .dataset--list-icon a:link, .community--list-icon a:link, .dataset--list-icon a:visited, .community--list-icon a:visited, .dataset--list-icon a:hover, .community--list-icon a:hover, .dataset--list-icon a:focus, .community--list-icon a:focus, .dataset--list-icon a:active, .community--list-icon a:active {
   color: white;
 }
 
-/* line 394, ../sass/module/_module.scss */
+/* line 379, ../sass/module/_module.scss */
 .dataset--list-content, .community--list-content {
   display: inline-block;
   margin-bottom: 20px;
   max-width: 80%;
 }
 
-/* line 401, ../sass/module/_module.scss */
+/* line 386, ../sass/module/_module.scss */
 .dataset--list-meta, .community--list-meta {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
   margin-bottom: 5px;
 }
 
-/* line 407, ../sass/module/_module.scss */
+/* line 392, ../sass/module/_module.scss */
 .dataset--list-posted, .community--list-posted {
   margin-right: 5px;
 }
 
-/* line 411, ../sass/module/_module.scss */
+/* line 396, ../sass/module/_module.scss */
 .dataset--list-author, .community--list-author {
   margin-left: 5px;
 }
 
-/* line 415, ../sass/module/_module.scss */
+/* line 400, ../sass/module/_module.scss */
 .dataset--list-footer, .community--list-footer {
   border-top: 1px dashed #e6e6e6;
   margin-top: 20px;
@@ -5613,46 +5568,46 @@ div.context-editor div.context-editable legend {
   text-align: right;
 }
 
-/* line 422, ../sass/module/_module.scss */
+/* line 407, ../sass/module/_module.scss */
 .dataset--list-comments-link, .community--list-comments-link {
   margin-right: 5px;
 }
 
-/* line 426, ../sass/module/_module.scss */
+/* line 411, ../sass/module/_module.scss */
 .dataset--list-read-more, .community--list-read-more {
   margin-left: 5px;
 }
 
 /* List actions
    ========================================================================== */
-/* line 433, ../sass/module/_module.scss */
+/* line 418, ../sass/module/_module.scss */
 .list--actions, .comments--list-actions {
   margin-bottom: 20px;
 }
-/* line 445, ../sass/module/_module.scss */
+/* line 430, ../sass/module/_module.scss */
 .list--actions .list--action-sort-latest, .comments--list-actions .list--action-sort-latest {
   margin-right: 10px;
 }
-/* line 449, ../sass/module/_module.scss */
+/* line 434, ../sass/module/_module.scss */
 .list--actions .list--action-create, .comments--list-actions .list--action-create {
   float: right;
 }
 
 /* Pager
    ========================================================================== */
-/* line 460, ../sass/module/_module.scss */
+/* line 445, ../sass/module/_module.scss */
 .pager {
   margin-top: 20px;
   padding-left: 0;
   text-align: center;
 }
-/* line 465, ../sass/module/_module.scss */
+/* line 450, ../sass/module/_module.scss */
 .pager li {
   display: inline-block;
   margin-left: -4px;
   margin-right: 4px;
 }
-/* line 471, ../sass/module/_module.scss */
+/* line 456, ../sass/module/_module.scss */
 .pager li.pager-current,
 .pager li a {
   background-color: #efefef;
@@ -5662,26 +5617,26 @@ div.context-editor div.context-editable legend {
   padding-bottom: 5px;
   padding-left: 15px;
 }
-/* line 479, ../sass/module/_module.scss */
+/* line 464, ../sass/module/_module.scss */
 .pager li.pager-current:hover,
 .pager li a:hover {
   text-decoration: none;
 }
-/* line 484, ../sass/module/_module.scss */
+/* line 469, ../sass/module/_module.scss */
 .pager li.pager-current {
   background-color: #e2e2e2;
 }
-/* line 490, ../sass/module/_module.scss */
+/* line 475, ../sass/module/_module.scss */
 .pager .active a,
 .pager .active a:hover {
   cursor: default;
   text-decoration: underline;
 }
-/* line 495, ../sass/module/_module.scss */
+/* line 480, ../sass/module/_module.scss */
 .pager .disabled {
   background-color: #fbfbfb;
 }
-/* line 498, ../sass/module/_module.scss */
+/* line 483, ../sass/module/_module.scss */
 .pager .disabled a:hover {
   cursor: default;
   text-decoration: none;
@@ -5709,24 +5664,22 @@ div.context-editor div.context-editable legend {
 }
 
 /**
- * Spotbox
+ * Spotbox [refactored]
  *
  * @author magnify
  */
 /* Spotbox
    ========================================================================== */
-/* line 19, ../sass/module/_spotbox.scss */
-.spotbox--content a:link,
-.spotbox--meta-wrapper a:link {
+/* line 18, ../sass/module/_spotbox.scss */
+.spotbox--content a:link {
   color: #e5420c;
 }
-/* line 23, ../sass/module/_spotbox.scss */
-.spotbox--content a:visited,
-.spotbox--meta-wrapper a:visited {
+/* line 22, ../sass/module/_spotbox.scss */
+.spotbox--content a:visited {
   color: #cd3b0b;
 }
 
-/* line 29, ../sass/module/_spotbox.scss */
+/* line 28, ../sass/module/_spotbox.scss */
 .spotbox--inner, .search-spotbox--inner, .spotbox--featured-dataset-inner {
   background-color: white;
 }
@@ -5734,60 +5687,42 @@ div.context-editor div.context-editable legend {
 /* Spotbox header */
 /* Spotbox content */
 /* Spotbox list */
-/* Spotbox list latest */
-/* line 92, ../sass/module/_spotbox.scss */
-.spotbox--list-latest .spotbox--list-image {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-}
-/* line 98, ../sass/module/_spotbox.scss */
-.spotbox--list-latest .spotbox--list-header,
-.spotbox--list-latest .spotbox--content,
-.spotbox--list-latest .spotbox--meta-wrapper {
-  margin-left: 50px;
-}
-/* line 102, ../sass/module/_spotbox.scss */
-.spotbox--list-latest .spotbox--content {
-  padding-top: 10px;
-}
-
 /* Spotbox images */
 /* Spotbox footer */
 /* Spotbox menu
    ========================================================================== */
-/* line 166, ../sass/module/_spotbox.scss */
+/* line 125, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-item .active:link, .spotbox-menu--list-item .active:visited, .spotbox-menu--list-item .active:hover, .spotbox-menu--list-item .active:focus, .spotbox-menu--list-item .active:active {
   color: #be370a;
 }
 
-/* line 177, ../sass/module/_spotbox.scss */
+/* line 136, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-remove-all a:link,
 .spotbox-menu--list-remove-all a:visited,
 .spotbox-menu--list-remove-all a:focus {
   color: #404040;
 }
-/* line 182, ../sass/module/_spotbox.scss */
+/* line 141, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-remove-all a:hover,
 .spotbox-menu--list-remove-all a:active {
   color: #be370a;
 }
 
-/* line 187, ../sass/module/_spotbox.scss */
+/* line 146, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-show-more {
   border-top: 1px dashed rgba(0, 0, 0, 0.1);
   margin-top: 10px;
   margin-bottom: 0;
   padding-top: 10px;
 }
-/* line 195, ../sass/module/_spotbox.scss */
+/* line 154, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-show-more a:link,
 .spotbox-menu--list-show-more a:visited,
 .spotbox-menu--list-show-more a:focus {
   font-family: "exo-demi-bold";
   font-weight: normal;
 }
-/* line 200, ../sass/module/_spotbox.scss */
+/* line 159, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-show-more a:hover,
 .spotbox-menu--list-show-more a:active {
   color: #8e2907;
