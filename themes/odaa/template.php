@@ -55,10 +55,14 @@ function odaa_menu_link($vars) {
 }
 
 /**
- * Implements theme_preprocess_block().
+ * Implements template_preprocess_block().
  */
 function odaa_preprocess_block(&$variables) {
-  if (isset($variables['elements']['#class'])) {
-    $variables['classes_array'][] = $variables['elements']['#class'];
-  }
+  if (isset($variables['elements']['content']['#class'])) {
+    // Logged in
+    $variables['classes_array'][] = $variables['elements']['content']['#class'];
+ } else if (isset($variables['elements']['#class'])) {
+   // Logged out
+   $variables['classes_array'][] = $variables['elements']['#class'];
+ }
 }
