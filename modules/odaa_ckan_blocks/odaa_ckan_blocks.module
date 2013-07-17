@@ -50,13 +50,13 @@ function odaa_ckan_blocks_theme() {
     // Dataset template.
     'odaa_ckan_blocks_datasets' => array(
       'variables' => array('count' => NULL),
-      'template' => 'block--odaa-ckan-blocks-datasets',
+      'template' => 'odaa-ckan-blocks-datasets',
       'path' => $module_path.'/templates',
     ),
     // Recent changes template.  
     'odaa_ckan_blocks_recent_dataset_changes' => array(
       'variables' => array('list' => NULL),
-      'template' => 'block--odaa-ckan-blocks-recent-dataset-changes',
+      'template' => 'odaa-ckan-blocks-recent-dataset-changes',
       'path' => $module_path.'/templates',
     ),
   );
