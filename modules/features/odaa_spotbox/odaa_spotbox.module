@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ODAA Spotbox feature.
+ */
+
+include_once 'odaa_spotbox.features.inc';
