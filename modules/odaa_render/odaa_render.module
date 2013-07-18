@@ -1,0 +1,186 @@
+<?php
+/**
+ * @file
+ * CKAN requires to validate session data, for a SSO.
+ * Drupal will register new users to CKAN on login.
+ */
+
+/**
+ * Implements hook_page_alter().
+ *
+ * This function ensures that either regions are render and returned as JSON or
+ * that the core content is returned with out the regions, which will be load be
+ * by an ajax callback later.
+ */
+function odaa_render_page_alter(&$page) {
+  if (isset($_GET['regions'])) {
+    // Run drupal_page_alter on themes, as they will always come last. In the
+    // drupal_alter function, but we need to have all regions avaliable now. So
+    // do the same as drupal_alter does with the themes. An better solution may
+    // exists..
+    odaa_render_theme_page_alter('page_alter', $page);
+    $main_content_display = &drupal_static('system_main_content_added', FALSE);
+    if (!$main_content_display) {
+      $page['content']['system_main'] = drupal_set_page_content();
+    }
+
+    // Make sure that all page level hook_preprocess_page and hook_process_page
+    // are executed to ensure suff like menus and other theme variables are
+    // genenrated for use in the regions rendered later on. This code is
+    // basically taken from theme.inc.
+    $hooks = theme_get_registry(FALSE);
+    $hook = 'page';
+    $info = $hooks[$hook];
+
+    // Merge in argument defaults.
+    $variables = array();
+    $variables[$info['render element']] = $page;
+    if (!empty($info['variables'])) {
+      $variables += $info['variables'];
+    }
+    elseif (!empty($info['render element'])) {
+      $variables += array($info['render element'] => array());
+    }
+    if (isset($info['base hook'])) {
+      $base_hook = $info['base hook'];
+      $base_hook_info = $hooks[$base_hook];
+      if (isset($base_hook_info['preprocess functions']) || isset($base_hook_info['process functions'])) {
+        $variables['theme_hook_suggestion'] = $hook;
+        $hook = $base_hook;
+        $info = $base_hook_info;
+      }
+    }
+
+    // Make sure that preprocess and process functions are executed.
+    if (isset($info['preprocess functions']) || isset($info['process functions'])) {
+      $variables['theme_hook_suggestions'] = array();
+      foreach (array('preprocess functions', 'process functions') as $phase) {
+        if (!empty($info[$phase])) {
+          foreach ($info[$phase] as $processor_function) {
+            if (function_exists($processor_function)) {
+              // We don't want a poorly behaved process function changing $hook.
+              $hook_clone = $hook;
+              $processor_function($variables, $hook_clone);
+            }
+          }
+        }
+      }
+      // This allows the preprocess/process step to route to a more specific
+      // theme hook.
+      $suggestions = array();
+      if (!empty($variables['theme_hook_suggestions'])) {
+        $suggestions = $variables['theme_hook_suggestions'];
+      }
+      if (!empty($variables['theme_hook_suggestion'])) {
+        $suggestions[] = $variables['theme_hook_suggestion'];
+      }
+      foreach (array_reverse($suggestions) as $suggestion) {
+        if (isset($hooks[$suggestion])) {
+          $info = $hooks[$suggestion];
+          break;
+        }
+      }
+    }
+
+    // @todo: Fix form callback URI's as they will contain the ajax callback
+    // parameters, when rendered below. SOLUTION: use post's not get's.
+
+    // @todo: move parsing of parameters into own fuction.
+
+    // Check if a preset was in the ajax callback
+    $regions = array();
+    // Check if any regions was in the ajax callback.
+    $names = explode(',', check_plain($_GET['regions']));
+    foreach ($names as $name) {
+      $regions[$name] = $name;
+    }
+
+    // Render the regions.
+    $output = array();
+    $regions_arrays = odaa_render_find_regions($page, array_filter($regions));
+    foreach ($regions_arrays as $name => $array) {
+      $output[$name] = drupal_render($array);
+    }
+
+    // Return the render regions as json.
+    print_r($output);
+    drupal_exit();
+  }
+}
+
+/**
+ * Find the render array for regions in the page render array.
+ *
+ * @param array $data
+ *  Page render array.
+ * @param array $regions
+ *  The regions which should be extracted from the array, the key an value
+ *  should be the same (e.g 'menu' => 'menu').
+ * @return array
+ *  Regions found indexed by region name.
+ */
+function odaa_render_find_regions(&$data, $regions) {
+  // @todo: apply cache to speed up walker based on preset. Make it optional.
+  $array = array();
+  $keys = array_keys($data);
+  foreach ($keys as $key) {
+    if ((!preg_match('/^#/', $key)) && is_array($data[$key])) {
+      
+      if (isset($regions[$key])) {
+      
+        $array[$key] = $data[$key];
+        // $array[] = render array for region.
+
+        // pop $regions
+        unset($regions[$key]);
+
+        // If $regions empty break loop, no more finding need.
+        if (empty($regions)) {
+          break;
+        }
+      }
+      $array = array_merge(odaa_render_find_regions($data[$key], $regions), $array);
+    }
+  }
+  return $array;
+}
+
+/**
+ * Calls theme alters and makes sure that the theme gets a change to alter
+ * regions befor they are rendered.
+ *
+ * @global type $theme
+ * @global type $base_theme_info
+ * @staticvar type $drupal_static_fast
+ * @param type $hook
+ * @param type $data
+ */
+function odaa_render_theme_page_alter($hook, &$data) {
+  static $drupal_static_fast;
+  if (!isset($drupal_static_fast)) {
+    $drupal_static_fast['functions'] = &drupal_static('drupal_alter');
+  }
+  $functions = &$drupal_static_fast['functions'];
+
+  global $theme, $base_theme_info;
+  $theme_alters = array();
+  if (isset($theme)) {
+    $theme_keys = array();
+    foreach ($base_theme_info as $base) {
+      $theme_keys[] = $base->name;
+    }
+    $theme_keys[] = $theme;
+    foreach ($theme_keys as $theme_key) {
+      $function = $theme_key . '_' . $hook;
+      if (function_exists($function)) {
+        $theme_alters[] = $function;
+      }
+    }
+  }
+
+  // Call hooks and save theme in the cache.
+  foreach ($theme_alters as $function) {
+    $function($data);
+    $functions[$hook][] = $function;
+  }
+}
