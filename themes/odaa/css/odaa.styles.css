@@ -1300,16 +1300,16 @@ button.button,
  * @author magnify
  */
 /* line 7, ../sass/framework/_tabs.scss */
-#tabs {
+.tabs, .dataset--tabs {
+  margin-top: 20px;
   margin-bottom: -20px;
 }
-
-/* line 12, ../sass/framework/_tabs.scss */
+/* line 11, ../sass/framework/_tabs.scss */
 .tabs.primary, .primary.dataset--tabs {
   border: none;
   padding-left: 10px;
 }
-/* line 20, ../sass/framework/_tabs.scss */
+/* line 19, ../sass/framework/_tabs.scss */
 .tabs li, .dataset--tabs li,
 .tabs li.active,
 .dataset--tabs li.active,
@@ -1322,7 +1322,7 @@ button.button,
   display: inline-block;
   padding-right: 0;
 }
-/* line 26, ../sass/framework/_tabs.scss */
+/* line 25, ../sass/framework/_tabs.scss */
 .tabs li a, .dataset--tabs li a,
 .tabs li.active a,
 .dataset--tabs li.active a,
@@ -1335,14 +1335,16 @@ button.button,
   -ms-border-radius: 5px 5px 0 0;
   -o-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
-  border: none;
+  border-top: 1px solid #d5d5d5;
+  border-right: 1px solid #d5d5d5;
+  border-left: 1px solid #d5d5d5;
   display: block;
   line-height: 31.2px;
   margin: 0;
   padding-right: 20px;
   padding-left: 20px;
 }
-/* line 36, ../sass/framework/_tabs.scss */
+/* line 37, ../sass/framework/_tabs.scss */
 .tabs li a:hover, .dataset--tabs li a:hover,
 .tabs li.active a:hover,
 .dataset--tabs li.active a:hover,
@@ -1354,29 +1356,29 @@ button.button,
   color: black;
   text-decoration: none;
 }
-/* line 44, ../sass/framework/_tabs.scss */
+/* line 45, ../sass/framework/_tabs.scss */
 .tabs li a, .dataset--tabs li a {
   background: #efefef;
 }
-/* line 48, ../sass/framework/_tabs.scss */
+/* line 49, ../sass/framework/_tabs.scss */
 .tabs li a.active, .dataset--tabs li a.active {
   background: white;
 }
-/* line 52, ../sass/framework/_tabs.scss */
+/* line 53, ../sass/framework/_tabs.scss */
 .tabs.secondary, .secondary.dataset--tabs {
   background-color: white;
   padding: 10px;
   margin: 0 10px;
 }
-/* line 58, ../sass/framework/_tabs.scss */
+/* line 59, ../sass/framework/_tabs.scss */
 .tabs.secondary li a, .secondary.dataset--tabs li a {
   background: white;
 }
-/* line 62, ../sass/framework/_tabs.scss */
+/* line 63, ../sass/framework/_tabs.scss */
 .tabs.secondary li a.active, .secondary.dataset--tabs li a.active {
   background: #efefef;
 }
-/* line 71, ../sass/framework/_tabs.scss */
+/* line 72, ../sass/framework/_tabs.scss */
 .tabs.secondary li a, .secondary.dataset--tabs li a,
 .tabs.secondary li.active a,
 .secondary.dataset--tabs li.active a,

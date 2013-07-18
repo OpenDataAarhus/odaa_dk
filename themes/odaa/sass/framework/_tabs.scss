@@ -4,11 +4,10 @@
  * @author magnify
  */
 
-#tabs {
-  margin-bottom: -20px;
-}
-
 .tabs {
+  margin-top: 20px;
+  margin-bottom: -20px;
+
   &.primary {
   	border: none;
     padding-left: $medium-spacing;
@@ -26,7 +25,9 @@
     a {
       @include border-radius($base-border-radius $base-border-radius 0 0);
 
-      border: none;
+      border-top: 1px solid $gray;
+      border-right: 1px solid $gray;
+      border-left: 1px solid $gray;
       display: block;
       line-height: $base-line-height * 1.3;
       margin: 0;
