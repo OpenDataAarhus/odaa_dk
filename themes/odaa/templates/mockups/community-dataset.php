@@ -100,14 +100,14 @@
           </div>
         </div>
         <div class="secondary-content">
-          <div class="community--filter">
-            <div class="community--filter-inner">
-              <h3 class="community--filter-header"><i class="icon-filter"></i>Filtrér</h3>
-              <ul class="community--filter-list">
-                <li class="community--filter-list-item first"><a href="community.php"><i class="icon-check-empty"></i>Alle</a></li>
-                <li class="community--filter-list-item first"><a href="community-forum.php"><i class="icon-check-empty"></i>Forum</a></li>
-                <li class="community--filter-list-item"><a href="community-use-cases.php"><i class="icon-check-empty"></i>Use cases</a></li>
-                <li class="community--filter-list-item last"><a href="community-dataset.php" class="active"><i class="icon-check"></i>Datasæt</a></li>
+          <div class="spotbox-menu">
+            <div class="spotbox-menu--inner">
+              <h3 class="spotbox-menu--header"><i class="icon-filter"></i>Filtrér</h3>
+              <ul class="spotbox-menu--list">
+                <li class="spotbox-menu--list-item first"><a href="community.php" class="active"><i class="icon-check"></i>Alle</a></li>
+                <li class="spotbox-menu--list-item first"><a href="community-forum.php" class="active"><i class="icon-check"></i>Forum</a></li>
+                <li class="spotbox-menu--list-item"><a href="community-use-cases.php" class="active"><i class="icon-check"></i>Use cases</a></li>
+                <li class="spotbox-menu--list-item last"><a href="community-dataset.php" class="active"><i class="icon-check"></i>Datasæt</a></li>
               </ul>
             </div>
           </div>

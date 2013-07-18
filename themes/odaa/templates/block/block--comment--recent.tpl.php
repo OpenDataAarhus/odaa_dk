@@ -48,7 +48,7 @@
   <div class="spotbox--inner">
     <?php print render($title_prefix); ?>
     <?php if ($block->subject): ?>
-      <h2 class="spotbox--header"><?php print $block->subject ?></h2>
+      <h2 class="spotbox--header"><i class="icon-comments-alt"></i><?php print $block->subject ?></h2>
     <?php endif;?>
     <?php print render($title_suffix); ?>
 
