@@ -1,4 +1,4 @@
-<h3 class="search-spotbox--header"><?php print t('Search for'); ?></h3>
+<h3 class="search-spotbox--header"><i class="icon-search"></i><?php print t('Search for dataset'); ?></h3>
 <div class="search-spotbox--dataset-amount-wrapper">
   <div class="search-spotbox--dataset-amount"><?php print $count; ?></div>
   <div class="search-spotbox--dataset-amount-text"><?php print t('dataset'); ?></div>

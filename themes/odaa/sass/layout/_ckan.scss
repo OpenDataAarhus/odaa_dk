@@ -5,6 +5,26 @@
  */
 
 
+/* Extend pager
+   ========================================================================== */
+.pagination {
+  @extend .pager;
+
+  .active  {
+    a:link,
+    a:visited {
+      background-color: darken($gray-light, 5%);
+      color: $font-color-primary;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+
 /* Format labels
    ========================================================================== */
 .ckan--format-label {

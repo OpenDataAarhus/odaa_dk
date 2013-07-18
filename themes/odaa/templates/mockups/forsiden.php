@@ -21,7 +21,7 @@
         <div class="primary-content">
           <div class="search-spotbox">
             <div class="search-spotbox--inner">
-              <h3 class="search-spotbox--header">Søg efter data</h3>
+              <h3 class="search-spotbox--header"><i class="icon-search"></i>Søg efter data</h3>
               <div class="search-spotbox--dataset-amount-wrapper">
                 <div class="search-spotbox--dataset-amount">1587</div>
                 <div class="search-spotbox--dataset-amount-text">datasæt</div>

@@ -451,30 +451,24 @@
     display: inline-block;
     margin-left: -4px;
     margin-right: 4px;
+  }
 
-    &.pager-current,
-    a {
-      background-color: $gray-light;
-      display: inline-block;
-      padding-top: $small-spacing;
-      padding-right: 15px;
-      padding-bottom: $small-spacing;
-      padding-left: 15px;
+  .pager-current,
+  a {
+    background-color: $gray-light;
+    display: inline-block;
+    padding-top: $small-spacing;
+    padding-right: 15px;
+    padding-bottom: $small-spacing;
+    padding-left: 15px;
 
-      &:hover {
-        text-decoration: none;
-      }
-    }
-
-    &.pager-current {
-      background-color: darken($gray-light, 5%);
+    &:hover {
+      text-decoration: none;
     }
   }
 
-  .active a,
-  .active a:hover {
-    cursor: default;
-    text-decoration: underline;
+  .pager-current {
+    background-color: darken($gray-light, 5%);
   }
 
   .disabled {
