@@ -287,14 +287,6 @@
                 <li class="pager-item"><a href="#">2</a></li>
                 <li class="pager-next last"><a href="#">»</a></li>
               </ul>
-              <div class="pagination pagination-centered">
-                <ul>
-                  <li class="active"><a href="/dataset?q=&amp;page=1">1</a></li>
-                  <li><a href="/dataset?q=&amp;page=2">2</a></li>
-                  <li><a href="/dataset?q=&amp;page=3">3</a></li>
-                  <li><a href="/dataset?q=&amp;page=2">»</a></li>
-                </ul>
-              </div>
             </section>
           </div>
         </div>
