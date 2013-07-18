@@ -23,21 +23,21 @@
             <section class="page--content">
               <h1 class="page--title">Find datasæt</h1>
             </section>
-            <div class="search-form--content-block">
-              <form>
+            <form>
+              <div class="search-form--content-block">
                 <label class="search-form--content-block--label">Søg i datasæt</label>
                 <input type="text" placeholder="F.eks. parkering, bygninger eller lignende" class="search-form--content-block--input" />
                 <input type="submit" class="search-form--content-block--button" value="Søg" />
-              </form>
-            </div>
-            <div class="dataset--list-actions">
-              <select name="sort" class="dataset--actions-sort">
-                <option value="score desc, metadata_modified desc">Relevance</option>
-                <option selected="selected" value="title_string asc">Name Ascending</option>
-                <option value="title_string desc">Name Descending</option>
-                <option value="metadata_modified desc">Sidst modificeret</option>
-              </select>
-            </div>
+              </div>
+              <div class="dataset--list-actions">
+                <select name="sort" class="dataset--actions-sort">
+                  <option value="score desc, metadata_modified desc">Relevance</option>
+                  <option selected="selected" value="title_string asc">Name Ascending</option>
+                  <option value="title_string desc">Name Descending</option>
+                  <option value="metadata_modified desc">Sidst modificeret</option>
+                </select>
+              </div>
+            </form>
             <section class="dataset--list-wrapper">
               <ul class="dataset--list">
                 <li class="dataset--list-item">
