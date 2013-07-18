@@ -96,14 +96,12 @@ function odaa_render_page_alter(&$page) {
     }
 
     // Render the regions.
-    $output = array();
     $regions_arrays = odaa_render_find_regions($page, array_filter($regions));
     foreach ($regions_arrays as $name => $array) {
-      $output[$name] = drupal_render($array);
+      // Return the render regions as json.
+      echo drupal_render($array);
     }
 
-    // Return the render regions as json.
-    print_r($output);
     drupal_exit();
   }
 }
