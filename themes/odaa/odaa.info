@@ -8,6 +8,11 @@
 ;----------// Stylesheets
   stylesheets[all][] = css/odaa.styles.css
 
+
+;----------// Override stylesheets
+  stylesheets[all][] = system.messages.css
+
+
 ;----------// JavaScripts
 
 
