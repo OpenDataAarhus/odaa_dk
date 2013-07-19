@@ -204,6 +204,9 @@ projects[wysiwyg_filter][version] = "1.6-rc2"
 projects[fences][subdir] = "contrib"
 projects[fences][version] = "1.0"
 
+projects[menu_item_visibility][subdir] = "contrib"
+projects[menu_item_visibility][version] = "1.0-beta1"
+
 ; Libraries
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.zip"
