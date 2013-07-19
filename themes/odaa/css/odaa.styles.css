@@ -4106,24 +4106,6 @@ body {
   padding-left: 0;
 }
 /* line 82, ../sass/layout/_layout.scss */
-.front .primary-content .spotbox:nth-child(odd) {
-  float: right;
-  width: 50%;
-  margin-right: 0%;
-  margin-left: -50%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/sites/all/themes/litteratursiden/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-}
-/* line 86, ../sass/layout/_layout.scss */
 .front .primary-content .spotbox:nth-child(even) {
   clear: left;
   float: left;
@@ -4141,8 +4123,28 @@ body {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
+  border: 1px dashed red;
 }
-/* line 92, ../sass/layout/_layout.scss */
+/* line 89, ../sass/layout/_layout.scss */
+.front .primary-content .spotbox:nth-child(odd) {
+  float: right;
+  width: 50%;
+  margin-right: 0%;
+  margin-left: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/all/themes/litteratursiden/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  border: 1px dashed green;
+}
+/* line 96, ../sass/layout/_layout.scss */
 .front .secondary-content {
   float: right;
   width: 33.33333%;
@@ -4160,7 +4162,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 96, ../sass/layout/_layout.scss */
+/* line 100, ../sass/layout/_layout.scss */
 .front .tertiary-content {
   clear: left;
   float: left;
@@ -4180,7 +4182,7 @@ body {
   _overflow-y: visible;
 }
 @media only screen and (max-width: 768px) {
-  /* line 105, ../sass/layout/_layout.scss */
+  /* line 109, ../sass/layout/_layout.scss */
   .front .primary-content,
   .front .secondary-content,
   .front .tertiary-content {
@@ -4201,7 +4203,7 @@ body {
     _overflow: hidden;
     _overflow-y: visible;
   }
-  /* line 111, ../sass/layout/_layout.scss */
+  /* line 115, ../sass/layout/_layout.scss */
   .front .primary-content .spotbox,
   .front .primary-content .spotbox:nth-child(odd),
   .front .primary-content .spotbox:nth-child(even),
@@ -4231,7 +4233,7 @@ body {
 }
 
 /* Right sidebar only */
-/* line 122, ../sass/layout/_layout.scss */
+/* line 126, ../sass/layout/_layout.scss */
 .left-sidebar .primary-content {
   float: right;
   width: 75%;
@@ -4249,7 +4251,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 126, ../sass/layout/_layout.scss */
+/* line 130, ../sass/layout/_layout.scss */
 .left-sidebar .secondary-content {
   float: left;
   width: 25%;
@@ -4267,7 +4269,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 130, ../sass/layout/_layout.scss */
+/* line 134, ../sass/layout/_layout.scss */
 .left-sidebar .tertiary-content {
   clear: both;
   float: left;
@@ -4286,7 +4288,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 134, ../sass/layout/_layout.scss */
+/* line 138, ../sass/layout/_layout.scss */
 .left-sidebar .tertiary-content .spotbox:nth-child(odd) {
   clear: left;
   float: left;
@@ -4305,7 +4307,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 139, ../sass/layout/_layout.scss */
+/* line 143, ../sass/layout/_layout.scss */
 .left-sidebar .tertiary-content .spotbox:nth-child(even) {
   float: right;
   width: 50%;
@@ -4325,7 +4327,7 @@ body {
 }
 
 /* Both sidebars */
-/* line 148, ../sass/layout/_layout.scss */
+/* line 152, ../sass/layout/_layout.scss */
 .both-sidebars .static-content {
   float: right;
   width: 25%;
@@ -4343,7 +4345,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 152, ../sass/layout/_layout.scss */
+/* line 156, ../sass/layout/_layout.scss */
 .both-sidebars .primary-content {
   float: left;
   width: 50%;
@@ -4361,7 +4363,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 156, ../sass/layout/_layout.scss */
+/* line 160, ../sass/layout/_layout.scss */
 .both-sidebars .secondary-content {
   float: left;
   width: 25%;
@@ -4379,7 +4381,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 160, ../sass/layout/_layout.scss */
+/* line 164, ../sass/layout/_layout.scss */
 .both-sidebars .tertiary-content {
   clear: right;
   float: right;
