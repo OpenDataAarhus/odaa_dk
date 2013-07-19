@@ -81,21 +81,24 @@ body {
   }
 
   .secondary-content {
-    @include zen-clear(left);
-    @include zen-grid-item(8, 1);
-
-    .spotbox:nth-child(even) {
-      @include zen-clear(left);
-      @include zen-grid-item(6, 1);
-    }
-
-    .spotbox:nth-child(odd) {
-      @include zen-grid-item(6, 1, right);
-    }
+    @include zen-grid-item(4, 1, right);
   }
 
   .tertiary-content {
-    @include zen-grid-item(4, 1, right);
+    @include zen-clear(left);
+    @include zen-grid-item(8, 1);
+
+    padding-right: 0;
+    padding-left: 0;
+
+    .spotbox:nth-child(odd) {
+      @include zen-clear(right);
+      @include zen-grid-item(6, 1);
+    }
+
+    .spotbox:nth-child(even) {
+      @include zen-grid-item(6, 1, right);
+    }
   }
 }
 
