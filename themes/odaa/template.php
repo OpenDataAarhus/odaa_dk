@@ -68,3 +68,8 @@ function odaa_preprocess_block(&$variables) {
       break;
   }
 }
+
+function odaa_preprocess_page(&$vars, $hook) {
+  if (isset($vars['is_front']))
+    unset($vars['page']['content']['system_main']['default_message']);
+}
