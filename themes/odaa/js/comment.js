@@ -89,7 +89,7 @@
   }
   
   function update_comment_form() {
-    $.getJSON('/odaa_comment/get_user', function (data)) {
+    $.getJSON('/odaa_comment/get_user', function (data) {
       if (data.status) {
         // Logged in user.
         $('.js-comment-username').html(data.account.name);
@@ -99,6 +99,6 @@
         // Hide formular.
         $('.comments--post-comment-wrapper').hide();
       }
-    }
+    });
   }
 })(jQuery);
