@@ -23,3 +23,8 @@
   regions[content]           = Primary content
   regions[secondary_content] = Secondary content
   regions[tertiary_content]  = Tertiary content
+
+;----------// Context locked regions
+regions_locked[] = header
+regions_locked[] = navigation
+regions_locked[] = content
