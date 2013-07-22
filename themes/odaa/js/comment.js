@@ -93,7 +93,7 @@
       if (data.status) {
         // Logged in user.
         $('.js-comment-username').html(data.account.name);
-        $('.js-comment-username').html(data.account.email);
+        $('.js-comment-mail').html(data.account.mail);
       }
       else {
         // Hide formular.
