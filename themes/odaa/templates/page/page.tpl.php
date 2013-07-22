@@ -89,11 +89,11 @@
   </header>
   <div class="content-wrapper">
     <div class="content-inner">
+      <?php print $messages; ?>
       <div class="primary-content">
-        <?php print $messages; ?>
 
         <?php if (!$is_front): ?>
-          <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
+          <?php if (!empty($tabs['#primary'])): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
           <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
         <?php endif; ?>
 

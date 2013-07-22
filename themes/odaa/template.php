@@ -20,21 +20,26 @@
  */
 
 // Main menu
-function odaa_menu_tree__menu_block__1($vars) {
-  return '<ul class="main-menu">' . $vars['tree'] . '</ul>';
+function odaa_menu_tree__menu_block__1($variables) {
+  return '<ul class="main-menu">' . $variables['tree'] . '</ul>';
+}
+
+// Sub menu
+function odaa_menu_tree__menu_block__3($variables) {
+  return '<ul class="sub-menu">' . $variables['tree'] . '</ul>';
 }
 
 /**
  * Implements theme_menu_link().
  */
-function odaa_menu_link($vars) {
+function odaa_menu_link($variables) {
 
   // Check if the class array is empty.
-  if(empty($vars['element']['#attributes']['class'])){
-    unset($vars['element']['#attributes']['class']);
+  if(empty($variables['element']['#attributes']['class'])){
+    unset($variables['element']['#attributes']['class']);
   }
 
-  $element = $vars['element'];
+  $element = $variables['element'];
 
   $sub_menu = '';
 
@@ -47,12 +52,39 @@ function odaa_menu_link($vars) {
     'menu-item',
   );
 
-  // Make sure text string is treated as html by l function
+  // Make sure text string is treated as html by l function.
   $element['#localized_options']['html'] = true;
 
   $output = l('<span>'.$element['#title'].'</span>', $element['#href'], $element['#localized_options']);
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
+
+
+/**
+ * Implements template_preprocess_html().
+ *
+ * Add classes to body.
+ */
+function odaa_preprocess_html(&$variables) {
+  // Remove default classes.
+  $variables['classes_array'] = array();
+
+  // Add front class.
+  if (isset($variables['is_front'])) {
+    $variables['classes_array'][] = 'front';
+  }
+
+  // Add logged in class.
+  if (isset($variables['logged_in'])) {
+    $variables['classes_array'][] = 'logged-in';
+  }
+
+  // Add the node type class.
+  if ($node = menu_get_object()) {
+    $variables['classes_array'][] = drupal_html_class('node-type-' . $node->type);
+  }
+}
+
 
 /**
  * Implements template_preprocess_block().
@@ -69,7 +101,7 @@ function odaa_preprocess_block(&$variables) {
   }
 }
 
-function odaa_preprocess_page(&$vars, $hook) {
-  if (isset($vars['is_front']))
-    unset($vars['page']['content']['system_main']['default_message']);
+function odaa_preprocess_page(&$variables, $hook) {
+  if (isset($variables['is_front']))
+    unset($variables['page']['content']['system_main']['default_message']);
 }

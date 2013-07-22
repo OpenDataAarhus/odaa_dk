@@ -4081,7 +4081,104 @@ body {
 
 /* Layouts
    ========================================================================== */
-/* line 76, ../sass/layout/_layout.scss */
+/* Default layout */
+/* line 77, ../sass/layout/_layout.scss */
+.not-front .primary-content {
+  float: right;
+  width: 75%;
+  margin-right: 0%;
+  margin-left: -75%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 81, ../sass/layout/_layout.scss */
+.not-front .secondary-content {
+  float: left;
+  width: 25%;
+  margin-left: 0%;
+  margin-right: -25%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 85, ../sass/layout/_layout.scss */
+.not-front .tertiary-content {
+  clear: right;
+  float: right;
+  width: 75%;
+  margin-right: 0%;
+  margin-left: -75%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  padding-right: 0;
+  padding-left: 0;
+}
+/* line 92, ../sass/layout/_layout.scss */
+.not-front .tertiary-content .spotbox:nth-child(odd) {
+  clear: left;
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 97, ../sass/layout/_layout.scss */
+.not-front .tertiary-content .spotbox:nth-child(even) {
+  float: right;
+  width: 50%;
+  margin-right: 0%;
+  margin-left: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/* Frontpage lauyout */
+/* line 106, ../sass/layout/_layout.scss */
 .front .primary-content {
   float: left;
   width: 66.66667%;
@@ -4101,7 +4198,7 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 83, ../sass/layout/_layout.scss */
+/* line 113, ../sass/layout/_layout.scss */
 .front .secondary-content {
   float: right;
   width: 33.33333%;
@@ -4119,7 +4216,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 87, ../sass/layout/_layout.scss */
+/* line 117, ../sass/layout/_layout.scss */
 .front .tertiary-content {
   clear: left;
   float: left;
@@ -4140,7 +4237,7 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 94, ../sass/layout/_layout.scss */
+/* line 124, ../sass/layout/_layout.scss */
 .front .tertiary-content .spotbox:nth-child(odd) {
   clear: right;
   float: left;
@@ -4159,7 +4256,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 99, ../sass/layout/_layout.scss */
+/* line 129, ../sass/layout/_layout.scss */
 .front .tertiary-content .spotbox:nth-child(even) {
   float: right;
   width: 50%;
@@ -4178,9 +4275,9 @@ body {
   _overflow-y: visible;
 }
 
-/* Right sidebar only */
-/* line 108, ../sass/layout/_layout.scss */
-.left-sidebar .primary-content {
+/* Page layout */
+/* line 138, ../sass/layout/_layout.scss */
+.node-type-page .primary-content {
   float: right;
   width: 75%;
   margin-right: 0%;
@@ -4197,8 +4294,8 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 112, ../sass/layout/_layout.scss */
-.left-sidebar .secondary-content {
+/* line 142, ../sass/layout/_layout.scss */
+.node-type-page .secondary-content {
   float: left;
   width: 25%;
   margin-left: 0%;
@@ -4215,13 +4312,13 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 116, ../sass/layout/_layout.scss */
-.left-sidebar .tertiary-content {
-  clear: both;
-  float: left;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: -100%;
+/* line 146, ../sass/layout/_layout.scss */
+.node-type-page .tertiary-content {
+  clear: right;
+  float: right;
+  width: 75%;
+  margin-right: 0%;
+  margin-left: -75%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -4233,9 +4330,11 @@ body {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
+  padding-right: 0;
+  padding-left: 0;
 }
-/* line 120, ../sass/layout/_layout.scss */
-.left-sidebar .tertiary-content .spotbox:nth-child(odd) {
+/* line 153, ../sass/layout/_layout.scss */
+.node-type-page .tertiary-content .spotbox:nth-child(odd) {
   clear: left;
   float: left;
   width: 50%;
@@ -4253,69 +4352,12 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 125, ../sass/layout/_layout.scss */
-.left-sidebar .tertiary-content .spotbox:nth-child(even) {
+/* line 158, ../sass/layout/_layout.scss */
+.node-type-page .tertiary-content .spotbox:nth-child(even) {
   float: right;
   width: 50%;
   margin-right: 0%;
   margin-left: -50%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-}
-
-/* Both sidebars */
-/* line 134, ../sass/layout/_layout.scss */
-.both-sidebars .primary-content {
-  float: left;
-  width: 50%;
-  margin-left: 25%;
-  margin-right: -75%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-}
-/* line 138, ../sass/layout/_layout.scss */
-.both-sidebars .secondary-content {
-  float: left;
-  width: 25%;
-  margin-left: 0%;
-  margin-right: -25%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-}
-/* line 142, ../sass/layout/_layout.scss */
-.both-sidebars .tertiary-content {
-  clear: right;
-  float: right;
-  width: 25%;
-  margin-right: 0%;
-  margin-left: -25%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -4369,12 +4411,14 @@ body {
   position: relative;
   overflow: hidden;
   margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   padding-top: 15px;
   padding-right: 20px;
   padding-bottom: 15px;
   padding-left: 60px;
 }
-/* line 31, ../sass/layout/_drupal_system_messages.scss */
+/* line 33, ../sass/layout/_drupal_system_messages.scss */
 .messages:before {
   position: absolute;
   top: 30%;
@@ -4383,92 +4427,92 @@ body {
   font-size: 200%;
   margin-right: 15px;
 }
-/* line 45, ../sass/layout/_drupal_system_messages.scss */
+/* line 47, ../sass/layout/_drupal_system_messages.scss */
 .messages.status,
 .messages .ok {
   color: white;
 }
-/* line 50, ../sass/layout/_drupal_system_messages.scss */
+/* line 52, ../sass/layout/_drupal_system_messages.scss */
 .messages.status,
 .messages table tr.ok {
   background-color: #528c10;
 }
-/* line 59, ../sass/layout/_drupal_system_messages.scss */
+/* line 61, ../sass/layout/_drupal_system_messages.scss */
 .messages.warning,
 .messages .warning {
   color: black;
 }
-/* line 63, ../sass/layout/_drupal_system_messages.scss */
+/* line 65, ../sass/layout/_drupal_system_messages.scss */
 .messages.warning a:link,
 .messages .warning a:link {
   color: black;
 }
-/* line 67, ../sass/layout/_drupal_system_messages.scss */
+/* line 69, ../sass/layout/_drupal_system_messages.scss */
 .messages.warning a:visited,
 .messages .warning a:visited {
   color: black;
 }
-/* line 71, ../sass/layout/_drupal_system_messages.scss */
+/* line 73, ../sass/layout/_drupal_system_messages.scss */
 .messages.warning a:hover,
 .messages .warning a:hover {
   color: #404040;
 }
-/* line 75, ../sass/layout/_drupal_system_messages.scss */
+/* line 77, ../sass/layout/_drupal_system_messages.scss */
 .messages.warning a:focus,
 .messages .warning a:focus {
   color: #404040;
 }
-/* line 79, ../sass/layout/_drupal_system_messages.scss */
+/* line 81, ../sass/layout/_drupal_system_messages.scss */
 .messages.warning a:active,
 .messages .warning a:active {
   color: #404040;
 }
-/* line 85, ../sass/layout/_drupal_system_messages.scss */
+/* line 87, ../sass/layout/_drupal_system_messages.scss */
 .messages.warning,
 .messages table tr.warning {
   background-color: #f0cb28;
 }
-/* line 94, ../sass/layout/_drupal_system_messages.scss */
+/* line 96, ../sass/layout/_drupal_system_messages.scss */
 .messages.error,
 .messages .error {
   color: white;
 }
-/* line 99, ../sass/layout/_drupal_system_messages.scss */
+/* line 101, ../sass/layout/_drupal_system_messages.scss */
 .messages.error,
 .messages table tr.error {
   background-color: #a32e10;
 }
-/* line 103, ../sass/layout/_drupal_system_messages.scss */
+/* line 105, ../sass/layout/_drupal_system_messages.scss */
 .messages.error p.error {
   color: white;
 }
-/* line 107, ../sass/layout/_drupal_system_messages.scss */
+/* line 109, ../sass/layout/_drupal_system_messages.scss */
 .messages ul {
   margin: 0;
   padding: 0;
 }
-/* line 111, ../sass/layout/_drupal_system_messages.scss */
+/* line 113, ../sass/layout/_drupal_system_messages.scss */
 .messages ul li {
   list-style-image: none;
 }
-/* line 116, ../sass/layout/_drupal_system_messages.scss */
+/* line 118, ../sass/layout/_drupal_system_messages.scss */
 .messages a:link {
   color: white;
   text-decoration: underline;
 }
-/* line 121, ../sass/layout/_drupal_system_messages.scss */
+/* line 123, ../sass/layout/_drupal_system_messages.scss */
 .messages a:visited {
   color: white;
 }
-/* line 125, ../sass/layout/_drupal_system_messages.scss */
+/* line 127, ../sass/layout/_drupal_system_messages.scss */
 .messages a:hover {
   color: #bfbfbf;
 }
-/* line 129, ../sass/layout/_drupal_system_messages.scss */
+/* line 131, ../sass/layout/_drupal_system_messages.scss */
 .messages a:focus {
   color: #bfbfbf;
 }
-/* line 133, ../sass/layout/_drupal_system_messages.scss */
+/* line 135, ../sass/layout/_drupal_system_messages.scss */
 .messages a:active {
   background-color: transparent;
   color: #bfbfbf;
