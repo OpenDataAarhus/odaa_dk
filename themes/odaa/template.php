@@ -20,26 +20,26 @@
  */
 
 // Main menu
-function odaa_menu_tree__menu_block__1($vars) {
-  return '<ul class="main-menu">' . $vars['tree'] . '</ul>';
+function odaa_menu_tree__menu_block__1($variables) {
+  return '<ul class="main-menu">' . $variables['tree'] . '</ul>';
 }
 
 // Sub menu
-function odaa_menu_tree__menu_block__3($vars) {
-  return '<ul class="sub-menu">' . $vars['tree'] . '</ul>';
+function odaa_menu_tree__menu_block__3($variables) {
+  return '<ul class="sub-menu">' . $variables['tree'] . '</ul>';
 }
 
 /**
  * Implements theme_menu_link().
  */
-function odaa_menu_link($vars) {
+function odaa_menu_link($variables) {
 
   // Check if the class array is empty.
-  if(empty($vars['element']['#attributes']['class'])){
-    unset($vars['element']['#attributes']['class']);
+  if(empty($variables['element']['#attributes']['class'])){
+    unset($variables['element']['#attributes']['class']);
   }
 
-  $element = $vars['element'];
+  $element = $variables['element'];
 
   $sub_menu = '';
 
@@ -83,7 +83,7 @@ function odaa_preprocess_block(&$variables) {
   }
 }
 
-function odaa_preprocess_page(&$vars, $hook) {
-  if (isset($vars['is_front']))
-    unset($vars['page']['content']['system_main']['default_message']);
+function odaa_preprocess_page(&$variables, $hook) {
+  if (isset($variables['is_front']))
+    unset($variables['page']['content']['system_main']['default_message']);
 }
