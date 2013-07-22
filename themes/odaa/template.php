@@ -64,7 +64,7 @@ function odaa_menu_link($variables) {
  * Implements template_preprocess_html
  */
 function odaa_preprocess_html(&$variables) {
-  // Add class to body
+  // Add classes to body
 
   // Remove default classes
   $variables['classes_array'] = '';
@@ -79,7 +79,7 @@ function odaa_preprocess_html(&$variables) {
     $variables['classes_array'][] = 'logged-in';
   }
 
-  // If on an individual node page, add the node type to body class
+  // Add the node type class
   if ($node = menu_get_object()) {
     $variables['classes_array'][] = drupal_html_class('node-type-' . $node->type);
   }
