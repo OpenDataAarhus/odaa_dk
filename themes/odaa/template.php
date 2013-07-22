@@ -59,6 +59,15 @@ function odaa_menu_link($vars) {
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
 
+
+/**
+ * Implements template_preprocess_html
+ */
+function odaa_preprocess_html(&$variables) {
+
+}
+
+
 /**
  * Implements template_preprocess_block().
  */
