@@ -73,7 +73,7 @@ body {
    ========================================================================== */
 
 /* Default layout */
-.not-front {
+.page {
   .primary-content {
     @include zen-grid-item(9, 1, right);
   }
@@ -101,7 +101,7 @@ body {
 }
 
 
-/* Frontpage lauyout */
+/* Frontpage layout */
 .front {
   .primary-content {
     @include zen-grid-item(8, 1);

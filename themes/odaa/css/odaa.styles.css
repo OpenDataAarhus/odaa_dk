@@ -4083,7 +4083,7 @@ body {
    ========================================================================== */
 /* Default layout */
 /* line 77, ../sass/layout/_layout.scss */
-.not-front .primary-content {
+.page .primary-content {
   float: right;
   width: 75%;
   margin-right: 0%;
@@ -4101,7 +4101,7 @@ body {
   _overflow-y: visible;
 }
 /* line 81, ../sass/layout/_layout.scss */
-.not-front .secondary-content {
+.page .secondary-content {
   float: left;
   width: 25%;
   margin-left: 0%;
@@ -4119,7 +4119,7 @@ body {
   _overflow-y: visible;
 }
 /* line 85, ../sass/layout/_layout.scss */
-.not-front .tertiary-content {
+.page .tertiary-content {
   clear: right;
   float: right;
   width: 75%;
@@ -4140,7 +4140,7 @@ body {
   padding-left: 0;
 }
 /* line 92, ../sass/layout/_layout.scss */
-.not-front .tertiary-content .spotbox:nth-child(odd) {
+.page .tertiary-content .spotbox:nth-child(odd) {
   clear: left;
   float: left;
   width: 50%;
@@ -4159,7 +4159,7 @@ body {
   _overflow-y: visible;
 }
 /* line 97, ../sass/layout/_layout.scss */
-.not-front .tertiary-content .spotbox:nth-child(even) {
+.page .tertiary-content .spotbox:nth-child(even) {
   float: right;
   width: 50%;
   margin-right: 0%;
@@ -4177,7 +4177,7 @@ body {
   _overflow-y: visible;
 }
 
-/* Frontpage lauyout */
+/* Frontpage layout */
 /* line 106, ../sass/layout/_layout.scss */
 .front .primary-content {
   float: left;
