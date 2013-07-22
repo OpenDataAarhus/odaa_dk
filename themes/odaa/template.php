@@ -24,6 +24,11 @@ function odaa_menu_tree__menu_block__1($vars) {
   return '<ul class="main-menu">' . $vars['tree'] . '</ul>';
 }
 
+// Sub menu
+function odaa_menu_tree__menu_block__3($vars) {
+  return '<ul class="sub-menu">' . $vars['tree'] . '</ul>';
+}
+
 /**
  * Implements theme_menu_link().
  */
