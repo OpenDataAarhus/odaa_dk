@@ -4369,12 +4369,14 @@ body {
   position: relative;
   overflow: hidden;
   margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   padding-top: 15px;
   padding-right: 20px;
   padding-bottom: 15px;
   padding-left: 60px;
 }
-/* line 31, ../sass/layout/_drupal_system_messages.scss */
+/* line 33, ../sass/layout/_drupal_system_messages.scss */
 .messages:before {
   position: absolute;
   top: 30%;
@@ -4383,92 +4385,92 @@ body {
   font-size: 200%;
   margin-right: 15px;
 }
-/* line 45, ../sass/layout/_drupal_system_messages.scss */
+/* line 47, ../sass/layout/_drupal_system_messages.scss */
 .messages.status,
 .messages .ok {
   color: white;
 }
-/* line 50, ../sass/layout/_drupal_system_messages.scss */
+/* line 52, ../sass/layout/_drupal_system_messages.scss */
 .messages.status,
 .messages table tr.ok {
   background-color: #528c10;
 }
-/* line 59, ../sass/layout/_drupal_system_messages.scss */
+/* line 61, ../sass/layout/_drupal_system_messages.scss */
 .messages.warning,
 .messages .warning {
   color: black;
 }
-/* line 63, ../sass/layout/_drupal_system_messages.scss */
+/* line 65, ../sass/layout/_drupal_system_messages.scss */
 .messages.warning a:link,
 .messages .warning a:link {
   color: black;
 }
-/* line 67, ../sass/layout/_drupal_system_messages.scss */
+/* line 69, ../sass/layout/_drupal_system_messages.scss */
 .messages.warning a:visited,
 .messages .warning a:visited {
   color: black;
 }
-/* line 71, ../sass/layout/_drupal_system_messages.scss */
+/* line 73, ../sass/layout/_drupal_system_messages.scss */
 .messages.warning a:hover,
 .messages .warning a:hover {
   color: #404040;
 }
-/* line 75, ../sass/layout/_drupal_system_messages.scss */
+/* line 77, ../sass/layout/_drupal_system_messages.scss */
 .messages.warning a:focus,
 .messages .warning a:focus {
   color: #404040;
 }
-/* line 79, ../sass/layout/_drupal_system_messages.scss */
+/* line 81, ../sass/layout/_drupal_system_messages.scss */
 .messages.warning a:active,
 .messages .warning a:active {
   color: #404040;
 }
-/* line 85, ../sass/layout/_drupal_system_messages.scss */
+/* line 87, ../sass/layout/_drupal_system_messages.scss */
 .messages.warning,
 .messages table tr.warning {
   background-color: #f0cb28;
 }
-/* line 94, ../sass/layout/_drupal_system_messages.scss */
+/* line 96, ../sass/layout/_drupal_system_messages.scss */
 .messages.error,
 .messages .error {
   color: white;
 }
-/* line 99, ../sass/layout/_drupal_system_messages.scss */
+/* line 101, ../sass/layout/_drupal_system_messages.scss */
 .messages.error,
 .messages table tr.error {
   background-color: #a32e10;
 }
-/* line 103, ../sass/layout/_drupal_system_messages.scss */
+/* line 105, ../sass/layout/_drupal_system_messages.scss */
 .messages.error p.error {
   color: white;
 }
-/* line 107, ../sass/layout/_drupal_system_messages.scss */
+/* line 109, ../sass/layout/_drupal_system_messages.scss */
 .messages ul {
   margin: 0;
   padding: 0;
 }
-/* line 111, ../sass/layout/_drupal_system_messages.scss */
+/* line 113, ../sass/layout/_drupal_system_messages.scss */
 .messages ul li {
   list-style-image: none;
 }
-/* line 116, ../sass/layout/_drupal_system_messages.scss */
+/* line 118, ../sass/layout/_drupal_system_messages.scss */
 .messages a:link {
   color: white;
   text-decoration: underline;
 }
-/* line 121, ../sass/layout/_drupal_system_messages.scss */
+/* line 123, ../sass/layout/_drupal_system_messages.scss */
 .messages a:visited {
   color: white;
 }
-/* line 125, ../sass/layout/_drupal_system_messages.scss */
+/* line 127, ../sass/layout/_drupal_system_messages.scss */
 .messages a:hover {
   color: #bfbfbf;
 }
-/* line 129, ../sass/layout/_drupal_system_messages.scss */
+/* line 131, ../sass/layout/_drupal_system_messages.scss */
 .messages a:focus {
   color: #bfbfbf;
 }
-/* line 133, ../sass/layout/_drupal_system_messages.scss */
+/* line 135, ../sass/layout/_drupal_system_messages.scss */
 .messages a:active {
   background-color: transparent;
   color: #bfbfbf;
