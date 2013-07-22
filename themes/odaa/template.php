@@ -66,22 +66,24 @@ function odaa_menu_link($variables) {
  * Add classes to body.
  */
 function odaa_preprocess_html(&$variables) {
+  print (isset($variables['is_front']));
+
   // Remove default classes.
   $variables['classes_array'] = array();
 
   // Add front class.
-  if (isset($variables['is_front'])) {
+  if (!empty($variables['is_front'])) {
     $variables['classes_array'][] = 'front';
   }
 
   // Add logged in class.
-  if (isset($variables['logged_in'])) {
+  if (!empty($variables['logged_in'])) {
     $variables['classes_array'][] = 'logged-in';
   }
 
   // Add the node type class (except for frontpage).
-  if ($node = menu_get_object() && !isset($variables['is_front'])) {
-    $variables['classes_array'][] = drupal_html_class('node-type-' . $node->type);
+  if (isset($variables['page']['#type']) && empty($variables['is_front'])) {
+    $variables['classes_array'][] = drupal_html_class('node-type-' . $variables['page']['#type']);
   }
 }
 
