@@ -66,8 +66,6 @@ function odaa_menu_link($variables) {
  * Add classes to body.
  */
 function odaa_preprocess_html(&$variables) {
-  print (isset($variables['is_front']));
-
   // Remove default classes.
   $variables['classes_array'] = array();
 
