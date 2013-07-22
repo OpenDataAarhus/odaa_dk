@@ -4081,7 +4081,104 @@ body {
 
 /* Layouts
    ========================================================================== */
-/* line 76, ../sass/layout/_layout.scss */
+/* Default layout */
+/* line 77, ../sass/layout/_layout.scss */
+.not-front .primary-content {
+  float: right;
+  width: 75%;
+  margin-right: 0%;
+  margin-left: -75%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 81, ../sass/layout/_layout.scss */
+.not-front .secondary-content {
+  float: left;
+  width: 25%;
+  margin-left: 0%;
+  margin-right: -25%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 85, ../sass/layout/_layout.scss */
+.not-front .tertiary-content {
+  clear: right;
+  float: right;
+  width: 75%;
+  margin-right: 0%;
+  margin-left: -75%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  padding-right: 0;
+  padding-left: 0;
+}
+/* line 92, ../sass/layout/_layout.scss */
+.not-front .tertiary-content .spotbox:nth-child(odd) {
+  clear: left;
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 97, ../sass/layout/_layout.scss */
+.not-front .tertiary-content .spotbox:nth-child(even) {
+  float: right;
+  width: 50%;
+  margin-right: 0%;
+  margin-left: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/* Frontpage lauyout */
+/* line 106, ../sass/layout/_layout.scss */
 .front .primary-content {
   float: left;
   width: 66.66667%;
@@ -4101,7 +4198,7 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 83, ../sass/layout/_layout.scss */
+/* line 113, ../sass/layout/_layout.scss */
 .front .secondary-content {
   float: right;
   width: 33.33333%;
@@ -4119,7 +4216,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 87, ../sass/layout/_layout.scss */
+/* line 117, ../sass/layout/_layout.scss */
 .front .tertiary-content {
   clear: left;
   float: left;
@@ -4140,7 +4237,7 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 94, ../sass/layout/_layout.scss */
+/* line 124, ../sass/layout/_layout.scss */
 .front .tertiary-content .spotbox:nth-child(odd) {
   clear: right;
   float: left;
@@ -4159,7 +4256,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 99, ../sass/layout/_layout.scss */
+/* line 129, ../sass/layout/_layout.scss */
 .front .tertiary-content .spotbox:nth-child(even) {
   float: right;
   width: 50%;
@@ -4178,9 +4275,9 @@ body {
   _overflow-y: visible;
 }
 
-/* Right sidebar only */
-/* line 108, ../sass/layout/_layout.scss */
-.left-sidebar .primary-content {
+/* Page layout */
+/* line 138, ../sass/layout/_layout.scss */
+.node-type-page .primary-content {
   float: right;
   width: 75%;
   margin-right: 0%;
@@ -4197,8 +4294,8 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 112, ../sass/layout/_layout.scss */
-.left-sidebar .secondary-content {
+/* line 142, ../sass/layout/_layout.scss */
+.node-type-page .secondary-content {
   float: left;
   width: 25%;
   margin-left: 0%;
@@ -4215,13 +4312,13 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 116, ../sass/layout/_layout.scss */
-.left-sidebar .tertiary-content {
-  clear: both;
-  float: left;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: -100%;
+/* line 146, ../sass/layout/_layout.scss */
+.node-type-page .tertiary-content {
+  clear: right;
+  float: right;
+  width: 75%;
+  margin-right: 0%;
+  margin-left: -75%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -4233,9 +4330,11 @@ body {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
+  padding-right: 0;
+  padding-left: 0;
 }
-/* line 120, ../sass/layout/_layout.scss */
-.left-sidebar .tertiary-content .spotbox:nth-child(odd) {
+/* line 153, ../sass/layout/_layout.scss */
+.node-type-page .tertiary-content .spotbox:nth-child(odd) {
   clear: left;
   float: left;
   width: 50%;
@@ -4253,69 +4352,12 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 125, ../sass/layout/_layout.scss */
-.left-sidebar .tertiary-content .spotbox:nth-child(even) {
+/* line 158, ../sass/layout/_layout.scss */
+.node-type-page .tertiary-content .spotbox:nth-child(even) {
   float: right;
   width: 50%;
   margin-right: 0%;
   margin-left: -50%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-}
-
-/* Both sidebars */
-/* line 134, ../sass/layout/_layout.scss */
-.both-sidebars .primary-content {
-  float: left;
-  width: 50%;
-  margin-left: 25%;
-  margin-right: -75%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-}
-/* line 138, ../sass/layout/_layout.scss */
-.both-sidebars .secondary-content {
-  float: left;
-  width: 25%;
-  margin-left: 0%;
-  margin-right: -25%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-}
-/* line 142, ../sass/layout/_layout.scss */
-.both-sidebars .tertiary-content {
-  clear: right;
-  float: right;
-  width: 25%;
-  margin-right: 0%;
-  margin-left: -25%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;

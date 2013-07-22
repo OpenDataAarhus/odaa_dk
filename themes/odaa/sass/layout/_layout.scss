@@ -72,6 +72,36 @@ body {
 /* Layouts
    ========================================================================== */
 
+/* Default layout */
+.not-front {
+  .primary-content {
+    @include zen-grid-item(9, 1, right);
+  }
+
+  .secondary-content {
+    @include zen-grid-item(3, 1);
+  }
+
+  .tertiary-content {
+    @include zen-clear(right);
+    @include zen-grid-item(9, 1, right);
+
+    padding-right: 0;
+    padding-left: 0;
+
+    .spotbox:nth-child(odd) {
+      @include zen-clear(left);
+      @include zen-grid-item(6, 1);
+    }
+
+    .spotbox:nth-child(even) {
+      @include zen-grid-item(6, 1, right);
+    }
+  }
+}
+
+
+/* Frontpage lauyout */
 .front {
   .primary-content {
     @include zen-grid-item(8, 1);
@@ -103,8 +133,8 @@ body {
 }
 
 
-/* Right sidebar only */
-.left-sidebar {
+/* Page layout */
+.node-type-page {
   .primary-content {
     @include zen-grid-item(9, 1, right);
   }
@@ -114,8 +144,11 @@ body {
   }
 
   .tertiary-content {
-    @include zen-clear(both);
-    @include zen-grid-item(12, 1);
+    @include zen-clear(right);
+    @include zen-grid-item(9, 1, right);
+
+    padding-right: 0;
+    padding-left: 0;
 
     .spotbox:nth-child(odd) {
       @include zen-clear(left);
@@ -125,22 +158,5 @@ body {
     .spotbox:nth-child(even) {
       @include zen-grid-item(6, 1, right);
     }
-  }
-}
-
-
-/* Both sidebars */
-.both-sidebars {
-  .primary-content {
-    @include zen-grid-item(6, 4);
-  }
-
-  .secondary-content {
-    @include zen-grid-item(3, 1);
-  }
-
-  .tertiary-content {
-    @include zen-clear(right);
-    @include zen-grid-item(3, 1, right);
   }
 }
