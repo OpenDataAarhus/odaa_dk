@@ -23,7 +23,7 @@ function odaa_comment_menu() {
     'title' => 'Add comment',
     'page callback' => '_odaa_comment_add',
     'page arguments' => array(2, 3, 4),
-    'access arguments' => array('post comment'),
+    'access arguments' => array('post comments'),
     'type' => MENU_CALLBACK,
   );
   
