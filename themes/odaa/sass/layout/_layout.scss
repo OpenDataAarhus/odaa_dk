@@ -73,30 +73,28 @@ body {
    ========================================================================== */
 
 /* Default layout */
-.not-front {
-  .primary-content {
-    @include zen-grid-item(9, 1, right);
+.primary-content {
+  @include zen-grid-item(9, 1, right);
+}
+
+.secondary-content {
+  @include zen-grid-item(3, 1);
+}
+
+.tertiary-content {
+  @include zen-clear(right);
+  @include zen-grid-item(9, 1, right);
+
+  padding-right: 0;
+  padding-left: 0;
+
+  .spotbox:nth-child(odd) {
+    @include zen-clear(left);
+    @include zen-grid-item(6, 1);
   }
 
-  .secondary-content {
-    @include zen-grid-item(3, 1);
-  }
-
-  .tertiary-content {
-    @include zen-clear(right);
-    @include zen-grid-item(9, 1, right);
-
-    padding-right: 0;
-    padding-left: 0;
-
-    .spotbox:nth-child(odd) {
-      @include zen-clear(left);
-      @include zen-grid-item(6, 1);
-    }
-
-    .spotbox:nth-child(even) {
-      @include zen-grid-item(6, 1, right);
-    }
+  .spotbox:nth-child(even) {
+    @include zen-grid-item(6, 1, right);
   }
 }
 

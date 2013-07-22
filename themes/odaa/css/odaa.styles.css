@@ -4082,8 +4082,8 @@ body {
 /* Layouts
    ========================================================================== */
 /* Default layout */
-/* line 77, ../sass/layout/_layout.scss */
-.not-front .primary-content {
+/* line 76, ../sass/layout/_layout.scss */
+.primary-content {
   float: right;
   width: 75%;
   margin-right: 0%;
@@ -4100,8 +4100,9 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 81, ../sass/layout/_layout.scss */
-.not-front .secondary-content {
+
+/* line 80, ../sass/layout/_layout.scss */
+.secondary-content {
   float: left;
   width: 25%;
   margin-left: 0%;
@@ -4118,8 +4119,9 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 85, ../sass/layout/_layout.scss */
-.not-front .tertiary-content {
+
+/* line 84, ../sass/layout/_layout.scss */
+.tertiary-content {
   clear: right;
   float: right;
   width: 75%;
@@ -4139,8 +4141,8 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 92, ../sass/layout/_layout.scss */
-.not-front .tertiary-content .spotbox:nth-child(odd) {
+/* line 91, ../sass/layout/_layout.scss */
+.tertiary-content .spotbox:nth-child(odd) {
   clear: left;
   float: left;
   width: 50%;
@@ -4158,8 +4160,8 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 97, ../sass/layout/_layout.scss */
-.not-front .tertiary-content .spotbox:nth-child(even) {
+/* line 96, ../sass/layout/_layout.scss */
+.tertiary-content .spotbox:nth-child(even) {
   float: right;
   width: 50%;
   margin-right: 0%;
@@ -4178,7 +4180,7 @@ body {
 }
 
 /* Frontpage lauyout */
-/* line 106, ../sass/layout/_layout.scss */
+/* line 104, ../sass/layout/_layout.scss */
 .front .primary-content {
   float: left;
   width: 66.66667%;
@@ -4198,7 +4200,7 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 113, ../sass/layout/_layout.scss */
+/* line 111, ../sass/layout/_layout.scss */
 .front .secondary-content {
   float: right;
   width: 33.33333%;
@@ -4216,7 +4218,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 117, ../sass/layout/_layout.scss */
+/* line 115, ../sass/layout/_layout.scss */
 .front .tertiary-content {
   clear: left;
   float: left;
@@ -4237,7 +4239,7 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 124, ../sass/layout/_layout.scss */
+/* line 122, ../sass/layout/_layout.scss */
 .front .tertiary-content .spotbox:nth-child(odd) {
   clear: right;
   float: left;
@@ -4256,7 +4258,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 129, ../sass/layout/_layout.scss */
+/* line 127, ../sass/layout/_layout.scss */
 .front .tertiary-content .spotbox:nth-child(even) {
   float: right;
   width: 50%;
@@ -4276,7 +4278,7 @@ body {
 }
 
 /* Page layout */
-/* line 138, ../sass/layout/_layout.scss */
+/* line 136, ../sass/layout/_layout.scss */
 .node-type-page .primary-content {
   float: right;
   width: 75%;
@@ -4294,7 +4296,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 142, ../sass/layout/_layout.scss */
+/* line 140, ../sass/layout/_layout.scss */
 .node-type-page .secondary-content {
   float: left;
   width: 25%;
@@ -4312,7 +4314,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 146, ../sass/layout/_layout.scss */
+/* line 144, ../sass/layout/_layout.scss */
 .node-type-page .tertiary-content {
   clear: right;
   float: right;
@@ -4333,7 +4335,7 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 153, ../sass/layout/_layout.scss */
+/* line 151, ../sass/layout/_layout.scss */
 .node-type-page .tertiary-content .spotbox:nth-child(odd) {
   clear: left;
   float: left;
@@ -4352,7 +4354,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 158, ../sass/layout/_layout.scss */
+/* line 156, ../sass/layout/_layout.scss */
 .node-type-page .tertiary-content .spotbox:nth-child(even) {
   float: right;
   width: 50%;
