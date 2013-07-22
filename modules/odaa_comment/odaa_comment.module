@@ -215,7 +215,7 @@ function _odaa_comment_hash_to_nid($hash, $title = FALSE) {
 function _odaa_comment_get_user() {
   global $user;
   
-  if (isset($user->uid)) {
+  if (!empty($user->uid)) {
     $account = array(
         'name' => $user->name,
         'mail' => $user->mail,
