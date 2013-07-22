@@ -64,7 +64,25 @@ function odaa_menu_link($variables) {
  * Implements template_preprocess_html
  */
 function odaa_preprocess_html(&$variables) {
+  // Add class to body
 
+  // Remove default classes
+  $variables['classes_array'] = '';
+
+  // Add front class
+  if (isset($variables['is_front'])) {
+    $variables['classes_array'][] = 'front';
+  }
+
+  // Add logged in class
+  if (isset($variables['logged_in'])) {
+    $variables['classes_array'][] = 'logged-in';
+  }
+
+  // If on an individual node page, add the node type to body class
+  if ($node = menu_get_object()) {
+    $variables['classes_array'][] = drupal_html_class('node-type-' . $node->type);
+  }
 }
 
 
