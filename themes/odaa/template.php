@@ -52,7 +52,7 @@ function odaa_menu_link($variables) {
     'menu-item',
   );
 
-  // Make sure text string is treated as html by l function
+  // Make sure text string is treated as html by l function.
   $element['#localized_options']['html'] = true;
 
   $output = l('<span>'.$element['#title'].'</span>', $element['#href'], $element['#localized_options']);
@@ -61,25 +61,25 @@ function odaa_menu_link($variables) {
 
 
 /**
- * Implements template_preprocess_html
+ * Implements template_preprocess_html().
  */
 function odaa_preprocess_html(&$variables) {
-  // Add classes to body
+  // Add classes to body.
 
-  // Remove default classes
+  // Remove default classes.
   $variables['classes_array'] = '';
 
-  // Add front class
+  // Add front class.
   if (isset($variables['is_front'])) {
     $variables['classes_array'][] = 'front';
   }
 
-  // Add logged in class
+  // Add logged in class.
   if (isset($variables['logged_in'])) {
     $variables['classes_array'][] = 'logged-in';
   }
 
-  // Add the node type class
+  // Add the node type class.
   if ($node = menu_get_object()) {
     $variables['classes_array'][] = drupal_html_class('node-type-' . $node->type);
   }
