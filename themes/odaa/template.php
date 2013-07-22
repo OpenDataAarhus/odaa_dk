@@ -62,12 +62,12 @@ function odaa_menu_link($variables) {
 
 /**
  * Implements template_preprocess_html().
+ *
+ * Add classes to body.
  */
 function odaa_preprocess_html(&$variables) {
-  // Add classes to body.
-
   // Remove default classes.
-  $variables['classes_array'] = '';
+  $variables['classes_array'] = array();
 
   // Add front class.
   if (isset($variables['is_front'])) {
