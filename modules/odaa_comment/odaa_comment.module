@@ -35,6 +35,13 @@ function odaa_comment_menu() {
     'type' => MENU_CALLBACK,
   );
   
+  $items['odaa_comment/get_user'] = array(
+    'title' => 'Get username and e-mail',
+    'page callback' => '_odaa_comment_get_user',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  
   return $items;
 }
 
@@ -199,5 +206,25 @@ function _odaa_comment_hash_to_nid($hash, $title = FALSE) {
     } else {
       return FALSE;
     }
+  }
+}
+
+/**
+ * Returns name and email of current user.
+ */
+function _odaa_comment_get_user() {
+  global $user;
+  
+  if (isset($user->uid)) {
+    $account = array(
+        'name' => $user->name,
+        'email' => $user->mail,
+    );
+
+    drupal_json_output(array('status' => TRUE, 'account' => $account));
+  }
+  else {
+    drupal_json_output(array('status' => FALSE));
+
   }
 }
