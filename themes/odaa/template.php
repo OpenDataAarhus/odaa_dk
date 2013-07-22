@@ -79,8 +79,8 @@ function odaa_preprocess_html(&$variables) {
     $variables['classes_array'][] = 'logged-in';
   }
 
-  // Add the node type class.
-  if ($node = menu_get_object()) {
+  // Add the node type class (except for frontpage).
+  if ($node = menu_get_object() && !isset($variables['is_front'])) {
     $variables['classes_array'][] = drupal_html_class('node-type-' . $node->type);
   }
 }
