@@ -7,7 +7,7 @@
       hash = $('.comments--wrapper').attr('data');
 
       // Build template.
-      var directive = { 
+      var directive = {
         'ul.comments--list': {
           'i<-data': {
             '.comments--list--cid' : 'i.cid',
@@ -26,7 +26,7 @@
 
       // Generate comments.
       generate_comments();
-      
+
       // Update formular.
       update_comment_form();
 
@@ -72,10 +72,7 @@
           }
         });
       }
-      else {
-        alert('No access');
-      }
-    });
+   });
   }
 
   function add_comment() {
@@ -95,7 +92,7 @@
       if (data.status) {
         $('div.comments--wrapper').removeClass('comments--wrapper-empty');
         $('div.comments--wrapper').render(data, template);
-        
+
         // Show comments
         $('.comments--list').show();
       }
@@ -104,7 +101,7 @@
       }
     });
   }
-  
+
   function update_comment_form() {
     $.getJSON('/odaa_comment/get_user', function (data) {
       if (data.status) {
