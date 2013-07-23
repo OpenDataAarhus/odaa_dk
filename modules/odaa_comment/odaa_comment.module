@@ -110,6 +110,7 @@ function _odaa_comment_view($hash) {
     // Load node.
     $node = node_load($nid);
     // Load comment id(s) to node.
+    print_r($node);
     $comment_count = $node->comment_count;
     if (!empty($comment_count)) {
       // Comments found, load them.
@@ -119,7 +120,6 @@ function _odaa_comment_view($hash) {
         $data['data'][] = array(
             'count' => $comment_count,
         );
-        print $comment_count;
       }
     }
   }
