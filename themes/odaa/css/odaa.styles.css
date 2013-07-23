@@ -6194,24 +6194,29 @@ div.context-editor div.context-editable legend {
   margin-top: 20px;
 }
 
+/* line 16, ../sass/module/_comment.scss */
+.comments--wrapper.comments--wrapper-empty {
+  display: none;
+}
+
 /* Comments list
    ========================================================================== */
-/* line 25, ../sass/module/_comment.scss */
+/* line 29, ../sass/module/_comment.scss */
 .comments--list {
   padding-left: 0;
 }
 
-/* line 29, ../sass/module/_comment.scss */
+/* line 33, ../sass/module/_comment.scss */
 .comments--list-item {
   margin-bottom: 30px;
 }
 
-/* line 33, ../sass/module/_comment.scss */
+/* line 37, ../sass/module/_comment.scss */
 .comments--list-image {
   float: left;
 }
 
-/* line 37, ../sass/module/_comment.scss */
+/* line 41, ../sass/module/_comment.scss */
 .comments--list-author {
   display: inline-block;
   margin-top: 3px;
@@ -6219,13 +6224,13 @@ div.context-editor div.context-editable legend {
   margin-left: 10px;
 }
 
-/* line 44, ../sass/module/_comment.scss */
+/* line 48, ../sass/module/_comment.scss */
 .comments--list-posted {
   float: right;
   margin-top: 6px;
 }
 
-/* line 49, ../sass/module/_comment.scss */
+/* line 53, ../sass/module/_comment.scss */
 .comments--list-content {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -6235,37 +6240,37 @@ div.context-editor div.context-editable legend {
   padding: 20px;
 }
 
-/* line 61, ../sass/module/_comment.scss */
+/* line 65, ../sass/module/_comment.scss */
 .comments--list-quote {
   float: left;
 }
-/* line 64, ../sass/module/_comment.scss */
+/* line 68, ../sass/module/_comment.scss */
 .comments--list-quote i[class^="icon-"] {
   margin-right: 5px;
 }
-/* line 71, ../sass/module/_comment.scss */
+/* line 75, ../sass/module/_comment.scss */
 .comments--list-quote:link, .comments--list-quote:visited, .comments--list-quote:hover, .comments--list-quote:active {
   text-decoration: none;
 }
 
-/* line 76, ../sass/module/_comment.scss */
+/* line 80, ../sass/module/_comment.scss */
 .comments--list-rate-up, .comments--list-rate-up-none {
   color: #bcbcbc;
   display: block;
   font-size: 200%;
   text-align: right;
 }
-/* line 82, ../sass/module/_comment.scss */
+/* line 86, ../sass/module/_comment.scss */
 .comments--list-rate-up i[class^="icon-"], .comments--list-rate-up-none i[class^="icon-"] {
   margin-right: 5px;
 }
-/* line 87, ../sass/module/_comment.scss */
+/* line 91, ../sass/module/_comment.scss */
 .comments--list-rate-up a:link, .comments--list-rate-up-none a:link,
 .comments--list-rate-up a:visited,
 .comments--list-rate-up-none a:visited {
   color: #96b000;
 }
-/* line 92, ../sass/module/_comment.scss */
+/* line 96, ../sass/module/_comment.scss */
 .comments--list-rate-up a:hover, .comments--list-rate-up-none a:hover,
 .comments--list-rate-up a:active,
 .comments--list-rate-up-none a:active {
@@ -6273,12 +6278,12 @@ div.context-editor div.context-editable legend {
   text-decoration: none;
 }
 
-/* line 102, ../sass/module/_comment.scss */
+/* line 106, ../sass/module/_comment.scss */
 .comments--list-rate-up-none a:link,
 .comments--list-rate-up-none a:visited {
   color: #bcbcbc;
 }
-/* line 107, ../sass/module/_comment.scss */
+/* line 111, ../sass/module/_comment.scss */
 .comments--list-rate-up-none a:hover,
 .comments--list-rate-up-none a:active {
   color: #a2a2a2;
@@ -6286,13 +6291,13 @@ div.context-editor div.context-editable legend {
 
 /* Post comment
    ========================================================================== */
-/* line 121, ../sass/module/_comment.scss */
+/* line 125, ../sass/module/_comment.scss */
 .comments--post-comment-header a:hover,
 .comments--post-comment-header a:active {
   text-decoration: none;
 }
 
-/* line 126, ../sass/module/_comment.scss */
+/* line 130, ../sass/module/_comment.scss */
 .comments--post-comment, .comments--post-comment-not-logged-in {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -6301,17 +6306,17 @@ div.context-editor div.context-editable legend {
   padding: 20px;
 }
 
-/* line 133, ../sass/module/_comment.scss */
+/* line 137, ../sass/module/_comment.scss */
 .comments--post-comment-not-logged-in {
   text-align: center;
 }
 
-/* line 144, ../sass/module/_comment.scss */
+/* line 148, ../sass/module/_comment.scss */
 .comments--post-field-wrapper {
   margin-bottom: 20px;
 }
 
-/* line 148, ../sass/module/_comment.scss */
+/* line 152, ../sass/module/_comment.scss */
 .comments--post-comment-actions {
   text-align: right;
 }
