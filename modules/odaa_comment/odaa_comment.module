@@ -106,22 +106,17 @@ function _odaa_comment_view($hash) {
       'status' => FALSE,
       'data' => array(),
   );
-   $data['data']['count'] = 0;
-  if (isset($nid)) {
-    // Load node.
+  $data['data']['count'] = 0;
+  if (!empty($nid)) {
+  // Load node.
     $node = node_load($nid);
     // Load comment id(s) to node.
-    $comment_count = $node->comment_count;
-    if (!empty($comment_count)) {
-      // Comments found, load them.
-      if (!empty($comments)) {
+    $comment_ids = comment_get_thread($node, COMMENT_MODE_FLAT, 100);
+    if (!empty($comment_ids)) {
         // Build data array.
         $data['status'] = TRUE;
-        $data['data'][] = array(
-            'count' => $comment_count,
-        );
+        $data['data']['count'] = count($comment_ids);
       }
-    }
   }
   // Always return in JSON format.
   return drupal_json_output($data);
@@ -156,7 +151,7 @@ function _odaa_comment_add($title, $hash, $message) {
       'mail' => '',
       'is_anonymous' => 0,
       'homepage' => '',
-      'status' => COMMENT_NOT_PUBLISHED,
+      'status' => COMMENT_PUBLISHED,
       'subject' => $message,
       'language' => LANGUAGE_NONE,
     );
