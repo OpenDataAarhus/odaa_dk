@@ -4,7 +4,7 @@
   $(document).ready(function($) {
     if ($('.comments--wrapper').length) {
       // Find hash.
-      hash = $('.comments--wrapper').attr('id');
+      hash = $('.comments--wrapper').attr('data');
 
       // Build template.
       var directive = { 
@@ -21,7 +21,7 @@
       // Compile template.
       template = $('.comments--wrapper').compile(directive);
 
-      // Remove template
+      // Remove template.
       $('.comments--list').empty();
 
       // Generate comments.
