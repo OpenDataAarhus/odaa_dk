@@ -41,9 +41,9 @@ function odaa_menu_tree__menu_block__3($variables) {
  */
 function odaa_theme() {
   return array(
-    'spotbox_comment' => array(
+    'spotbox_recent_comment' => array(
       'variables' => array('comment' => NULL),
-      'template' => 'templates/spotbox-comment'
+      'template' => 'templates/spotbox-recent-comment'
     ),
   );
 }
@@ -135,7 +135,7 @@ function odaa_comment_block() {
   $number = variable_get('comment_block_count', 10);
   foreach (comment_get_recent($number) as $comment) {
     $data = array(
-      '#theme' => 'spotbox_comment',
+      '#theme' => 'spotbox_recent_comment',
       '#comment' => $comment,
     );
     
