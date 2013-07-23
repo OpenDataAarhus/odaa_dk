@@ -41,9 +41,13 @@ function odaa_menu_tree__menu_block__3($variables) {
  */
 function odaa_theme() {
   return array(
-    'spotbox_recent_comment' => array(
+    'odaa_comment_recent_inner' => array(
       'variables' => array('comment' => NULL),
-      'template' => 'templates/spotbox-recent-comment'
+      'template' => 'templates/block/block--comment--recent-inner',
+    ),
+    'odaa_comment_recent_list' => array(
+      'variables' => array('items' => NULL),
+      'template' => 'templates/block/block--comment--recent-list',
     ),
   );
 }
@@ -135,18 +139,20 @@ function odaa_comment_block() {
   $number = variable_get('comment_block_count', 10);
   foreach (comment_get_recent($number) as $comment) {
     $data = array(
-      '#theme' => 'spotbox_recent_comment',
+      '#theme' => 'odaa_comment_recent_inner',
       '#comment' => $comment,
     );
     
     $items[] = array(
-      'data' => drupal_render($data),
-      'class' => array('spotbox--list-item'),
+      'data' => $data,
+      'attributes' => array(
+        'class' => array('spotbox--list-item'),
+      ),
     );
   }
 
   if ($items) {
-    return theme('item_list', array('items' => $items));
+    return theme('odaa_comment_recent_list', array('items' => $items));
   }
   else {
     return t('No comments available.');
