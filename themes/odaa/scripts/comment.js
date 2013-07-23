@@ -51,10 +51,6 @@
       $('li.dataset--list-item').each(function (item) {
         // Find hash
         var hash = $(item).attr('data-hash');
-        $.getJSON('/odaa_comment/comment_count/'+hash, function (data) {
-      $('li.dataset--list-item').each(function (id, item) {
-        // Find hash
-        var hash = $(item).attr('data-hash');
         $.getJSON('/odaa_comment/count/'+hash, function (data) {
           if (data.status) {
             var html = $(item).closest('.dataset--list-comments-link').html();
