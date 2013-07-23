@@ -105,17 +105,16 @@
   }
 }
 
-.sub-menu-title {
+.sub-menu-header {
   @include background-image(linear-gradient(darken($white, 5%), $white));
   @include border-radius($base-border-radius $base-border-radius 0 0);
 
-  border-bottom: $base-border-style;
   font-size: $font-size-large;
   margin-bottom: 0;
   padding-top: 14px;
   padding-right: 10px;
   padding-bottom: 10px;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .sub-menu {
@@ -126,7 +125,7 @@
     .menu-item {
       @extend .icon-angle-right;
 
-      border-bottom: $base-border-style;
+      border-top: $base-border-style;
       color: $font-color-primary;
       display: block;
       padding-top: 10px;
@@ -157,8 +156,6 @@
 
     /* Level 2 */
     ul {
-      border-bottom: $base-border-style;
-
       .menu-item {
         padding-left: 40px;
       }
@@ -188,8 +185,8 @@
     }
 
     &.last {
-      .menu-item {
-        border-bottom: 0;
+      &:hover {
+        @include border-radius(0 0 $base-border-radius $base-border-radius);
       }
     }
   }

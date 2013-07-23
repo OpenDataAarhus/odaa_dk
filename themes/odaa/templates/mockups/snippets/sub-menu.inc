@@ -1,5 +1,5 @@
 <div class="sub-menu-wrapper">
-  <h2 class="sub-menu-title">Om ODAA</h2>
+  <h2 class="sub-menu-header">Om ODAA</h2>
   <ul class="sub-menu">
     <li><a href="#" class="menu-item"><span>FAQ</span></a></li>
     <li><a href="#" class="menu-item"><span>Kontakt</span></a></li>
