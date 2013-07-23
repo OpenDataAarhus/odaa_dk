@@ -104,8 +104,9 @@ function _odaa_comment_view($hash) {
 
   $data = array(
       'status' => FALSE,
-      'count' => 0,
+      'data' => array(),
   );
+  $data['data']['count'] = 0;
   if (!empty($nid)) {
   // Load node.
     $node = node_load($nid);
@@ -114,7 +115,7 @@ function _odaa_comment_view($hash) {
     if (!empty($comment_ids)) {
         // Build data array.
         $data['status'] = TRUE;
-        $data['count'] = count($comment_ids);
+        $data['data']['count'] = count($comment_ids);
       }
   }
   // Always return in JSON format.
