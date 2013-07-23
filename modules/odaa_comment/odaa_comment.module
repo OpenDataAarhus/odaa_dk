@@ -103,7 +103,7 @@ function _odaa_comment_view($hash) {
   $nid = _odaa_comment_hash_to_nid($hash);
 
   $data = array(
-      'status' => FALSE,
+      'status' => TRUE,
       'data' => array(),
   );
   $data['data']['count'] = 0;
