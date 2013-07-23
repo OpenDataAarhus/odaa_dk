@@ -141,9 +141,7 @@ function odaa_comment_block() {
     
     $items[] = array(
       'data' => drupal_render($data),
-      'attributes' =>  array(
-        'class' => 'spotbox--list-item',
-      ),
+      'class' => array('spotbox--list-item'),
     );
   }
 
