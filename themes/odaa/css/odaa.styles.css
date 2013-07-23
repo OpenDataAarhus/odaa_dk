@@ -4705,23 +4705,19 @@ body {
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   border-radius: 100px;
-}
-
-/* line 181, ../sass/layout/_ckan.scss */
-.dataset--activity .dataset--activity-item .dataset--activity-actor .gravatar {
+  left: 40px;
   position: absolute;
   top: 0;
-  left: 40px;
 }
 
-/* line 187, ../sass/layout/_ckan.scss */
+/* line 184, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item p {
   font-size: 14px;
   line-height: 1.5;
   margin: 5px 0 0 80px;
 }
 
-/* line 193, ../sass/layout/_ckan.scss */
+/* line 190, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item .dataset--activity-date {
   color: #999;
   display: block;
@@ -4729,7 +4725,7 @@ body {
   white-space: nowrap;
 }
 
-/* line 200, ../sass/layout/_ckan.scss */
+/* line 197, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item .new {
   display: block;
   position: absolute;
@@ -4749,139 +4745,139 @@ body {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* line 219, ../sass/layout/_ckan.scss */
+/* line 216, ../sass/layout/_ckan.scss */
 .dataset--activity .load-less {
   margin-bottom: 15px;
 }
 
-/* line 223, ../sass/layout/_ckan.scss */
+/* line 220, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item .icon {
   background-color: #999999;
 }
 
-/* line 227, ../sass/layout/_ckan.scss */
+/* line 224, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.added-tag .icon {
   background-color: #6995A6;
 }
 
-/* line 231, ../sass/layout/_ckan.scss */
+/* line 228, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.changed-group .icon {
   background-color: #767DCE;
 }
 
-/* line 235, ../sass/layout/_ckan.scss */
+/* line 232, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.changed-package .icon {
   background-color: #8C76CE;
 }
 
-/* line 239, ../sass/layout/_ckan.scss */
+/* line 236, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.changed-package_extra .icon {
   background-color: #769ACE;
 }
 
-/* line 243, ../sass/layout/_ckan.scss */
+/* line 240, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.changed-resource .icon {
   background-color: #AA76CE;
 }
 
-/* line 247, ../sass/layout/_ckan.scss */
+/* line 244, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.changed-user .icon {
   background-color: #76B8CE;
 }
 
-/* line 251, ../sass/layout/_ckan.scss */
+/* line 248, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.changed-organization .icon {
   background-color: #699FA6;
 }
 
-/* line 255, ../sass/layout/_ckan.scss */
+/* line 252, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.deleted-group .icon {
   background-color: #B95252;
 }
 
-/* line 259, ../sass/layout/_ckan.scss */
+/* line 256, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.deleted-package .icon {
   background-color: #B97452;
 }
 
-/* line 263, ../sass/layout/_ckan.scss */
+/* line 260, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.deleted-package_extra .icon {
   background-color: #B95274;
 }
 
-/* line 267, ../sass/layout/_ckan.scss */
+/* line 264, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.deleted-resource .icon {
   background-color: #B99752;
 }
 
-/* line 271, ../sass/layout/_ckan.scss */
+/* line 268, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.deleted-organization .icon {
   background-color: #B95297;
 }
 
-/* line 275, ../sass/layout/_ckan.scss */
+/* line 272, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.new-group .icon {
   background-color: #69A67A;
 }
 
-/* line 279, ../sass/layout/_ckan.scss */
+/* line 276, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.new-package .icon {
   background-color: #69A68E;
 }
 
-/* line 283, ../sass/layout/_ckan.scss */
+/* line 280, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.new-package_extra .icon {
   background-color: #6CA669;
 }
 
-/* line 287, ../sass/layout/_ckan.scss */
+/* line 284, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.new-resource .icon {
   background-color: #81A669;
 }
 
-/* line 291, ../sass/layout/_ckan.scss */
+/* line 288, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.new-user .icon {
   background-color: #69A6A3;
 }
 
-/* line 295, ../sass/layout/_ckan.scss */
+/* line 292, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.new-organization .icon {
   background-color: #81A669;
 }
 
-/* line 299, ../sass/layout/_ckan.scss */
+/* line 296, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.removed-tag .icon {
   background-color: #B95297;
 }
 
-/* line 303, ../sass/layout/_ckan.scss */
+/* line 300, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.deleted-related-item .icon {
   background-color: #B9B952;
 }
 
-/* line 307, ../sass/layout/_ckan.scss */
+/* line 304, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.follow-dataset .icon {
   background-color: #767DCE;
 }
 
-/* line 311, ../sass/layout/_ckan.scss */
+/* line 308, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.follow-user .icon {
   background-color: #8C76CE;
 }
 
-/* line 315, ../sass/layout/_ckan.scss */
+/* line 312, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.new-related-item .icon {
   background-color: #95A669;
 }
 
-/* line 319, ../sass/layout/_ckan.scss */
+/* line 316, ../sass/layout/_ckan.scss */
 .dataset--activity .dataset--activity-item.follow-group .icon {
   background-color: #8BA669;
 }
 
 /* Dataset labels
    ========================================================================== */
-/* line 327, ../sass/layout/_ckan.scss */
+/* line 324, ../sass/layout/_ckan.scss */
 .label[data-format=dwg], [data-format=dwg].label-inverted, [data-format=dwg].dataset--list-tag, .dataset--tags-list [data-format=dwg].dataset--tags-list-tag, [data-format=dwg].community--tag,
 .label[data-format*=dwg],
 [data-format*=dwg].label-inverted,
@@ -4891,7 +4887,7 @@ body {
   background-color: #aaa;
 }
 
-/* line 332, ../sass/layout/_ckan.scss */
+/* line 329, ../sass/layout/_ckan.scss */
 .label[data-format=html], [data-format=html].label-inverted, [data-format=html].dataset--list-tag, .dataset--tags-list [data-format=html].dataset--tags-list-tag, [data-format=html].community--tag,
 .label[data-format*=html],
 [data-format*=html].label-inverted,
@@ -4901,7 +4897,7 @@ body {
   background-color: #55a1ce;
 }
 
-/* line 337, ../sass/layout/_ckan.scss */
+/* line 334, ../sass/layout/_ckan.scss */
 .label[data-format=json], [data-format=json].label-inverted, [data-format=json].dataset--list-tag, .dataset--tags-list [data-format=json].dataset--tags-list-tag, [data-format=json].community--tag,
 .label[data-format*=json],
 [data-format*=json].label-inverted,
@@ -4911,7 +4907,7 @@ body {
   background-color: #ef7100;
 }
 
-/* line 342, ../sass/layout/_ckan.scss */
+/* line 339, ../sass/layout/_ckan.scss */
 .label[data-format=xml], [data-format=xml].label-inverted, [data-format=xml].dataset--list-tag, .dataset--tags-list [data-format=xml].dataset--tags-list-tag, [data-format=xml].community--tag,
 .label[data-format*=xml],
 [data-format*=xml].label-inverted,
@@ -4921,7 +4917,7 @@ body {
   background-color: #ef7100;
 }
 
-/* line 347, ../sass/layout/_ckan.scss */
+/* line 344, ../sass/layout/_ckan.scss */
 .label[data-format=text], [data-format=text].label-inverted, [data-format=text].dataset--list-tag, .dataset--tags-list [data-format=text].dataset--tags-list-tag, [data-format=text].community--tag,
 .label[data-format*=text],
 [data-format*=text].label-inverted,
@@ -4931,7 +4927,7 @@ body {
   background-color: #74cbec;
 }
 
-/* line 352, ../sass/layout/_ckan.scss */
+/* line 349, ../sass/layout/_ckan.scss */
 .label[data-format=csv], [data-format=csv].label-inverted, [data-format=csv].dataset--list-tag, .dataset--tags-list [data-format=csv].dataset--tags-list-tag, [data-format=csv].community--tag,
 .label[data-format*=csv],
 [data-format*=csv].label-inverted,
@@ -4941,7 +4937,7 @@ body {
   background-color: #dfb100;
 }
 
-/* line 357, ../sass/layout/_ckan.scss */
+/* line 354, ../sass/layout/_ckan.scss */
 .label[data-format=xls], [data-format=xls].label-inverted, [data-format=xls].dataset--list-tag, .dataset--tags-list [data-format=xls].dataset--tags-list-tag, [data-format=xls].community--tag,
 .label[data-format*=xls],
 [data-format*=xls].label-inverted,
@@ -4951,7 +4947,7 @@ body {
   background-color: #2db55d;
 }
 
-/* line 362, ../sass/layout/_ckan.scss */
+/* line 359, ../sass/layout/_ckan.scss */
 .label[data-format=zip], [data-format=zip].label-inverted, [data-format=zip].dataset--list-tag, .dataset--tags-list [data-format=zip].dataset--tags-list-tag, [data-format=zip].community--tag,
 .label[data-format*=zip],
 [data-format*=zip].label-inverted,
@@ -4961,7 +4957,7 @@ body {
   background-color: #686868;
 }
 
-/* line 367, ../sass/layout/_ckan.scss */
+/* line 364, ../sass/layout/_ckan.scss */
 .label[data-format=api], [data-format=api].label-inverted, [data-format=api].dataset--list-tag, .dataset--tags-list [data-format=api].dataset--tags-list-tag, [data-format=api].community--tag,
 .label[data-format*=api],
 [data-format*=api].label-inverted,
@@ -4971,7 +4967,7 @@ body {
   background-color: #ec96be;
 }
 
-/* line 372, ../sass/layout/_ckan.scss */
+/* line 369, ../sass/layout/_ckan.scss */
 .label[data-format=pdf], [data-format=pdf].label-inverted, [data-format=pdf].dataset--list-tag, .dataset--tags-list [data-format=pdf].dataset--tags-list-tag, [data-format=pdf].community--tag,
 .label[data-format*=pdf],
 [data-format*=pdf].label-inverted,
@@ -4981,7 +4977,7 @@ body {
   background-color: #e0051e;
 }
 
-/* line 380, ../sass/layout/_ckan.scss */
+/* line 377, ../sass/layout/_ckan.scss */
 .label[data-format=rdf], [data-format=rdf].label-inverted, [data-format=rdf].dataset--list-tag, .dataset--tags-list [data-format=rdf].dataset--tags-list-tag, [data-format=rdf].community--tag,
 .label[data-format*=rdf],
 [data-format*=rdf].label-inverted,
