@@ -107,31 +107,28 @@
 
   /* Can't add a class because it is hardcoded in ODAA */
   li {
-    @extend .dataset--tab;
+    margin-right: 11px;
+
+    .dataset--tab-link,
+    .dataset--tab-link:hover {
+      border-top: 1px solid $gray;
+      border-right: 1px solid $gray;
+      border-left: 1px solid $gray;
+    }
+  }
+
+  li.active {
+    margin-right: 11px;
+
+    .dataset--tab-link,
+    .dataset--tab-link:hover {
+      background-color: $white;
+      border-bottom: 1px solid $white;
+      margin-bottom: -1px;
+    }
   }
 }
 
-.dataset--tab {
-  margin-right: 11px;
-
-  .dataset--tab-link,
-  .dataset--tab-link:hover {
-    border-top: 1px solid $gray;
-    border-right: 1px solid $gray;
-    border-left: 1px solid $gray;
-  }
-}
-
-.dataset--tab.active {
-  margin-right: 11px;
-
-  .dataset--tab-link,
-  .dataset--tab-link:hover {
-    background-color: $white;
-    border-bottom: 1px solid $white;
-    margin-bottom: -1px;
-  }
-}
 
 /* Dataset list resources
    ========================================================================== */
