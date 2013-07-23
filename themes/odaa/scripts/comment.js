@@ -80,10 +80,14 @@
   function generate_comments() {
     $.getJSON('/odaa_comment/view/'+hash, function(data) {
       if (data.status) {
+        $('div.comments--wrapper').removeClass('comments--wrapper-empty');
         $('div.comments--wrapper').render(data, template);
         
         // Show comments
         $('.comments--list').show();
+      }
+      else {
+        $('div.comments--wrapper').addClass('comments--wrapper-empty');
       }
     });
   }
