@@ -5559,31 +5559,32 @@ div.context-editor div.context-editable legend {
 /* line 418, ../sass/module/_module.scss */
 .list--actions, .comments--list-actions {
   margin-bottom: 20px;
+  overflow: hidden;
 }
-/* line 430, ../sass/module/_module.scss */
+/* line 431, ../sass/module/_module.scss */
 .list--actions .list--action-sort-latest, .comments--list-actions .list--action-sort-latest {
   margin-right: 10px;
 }
-/* line 434, ../sass/module/_module.scss */
+/* line 435, ../sass/module/_module.scss */
 .list--actions .list--action-create, .comments--list-actions .list--action-create {
   float: right;
 }
 
 /* Pager
    ========================================================================== */
-/* line 445, ../sass/module/_module.scss */
+/* line 446, ../sass/module/_module.scss */
 .pager, .pagination {
   margin-top: 20px;
   padding-left: 0;
   text-align: center;
 }
-/* line 450, ../sass/module/_module.scss */
+/* line 451, ../sass/module/_module.scss */
 .pager li, .pagination li {
   display: inline-block;
   margin-left: -4px;
   margin-right: 4px;
 }
-/* line 457, ../sass/module/_module.scss */
+/* line 458, ../sass/module/_module.scss */
 .pager .pager-current, .pagination .pager-current,
 .pager a,
 .pagination a {
@@ -5594,21 +5595,21 @@ div.context-editor div.context-editable legend {
   padding-bottom: 5px;
   padding-left: 15px;
 }
-/* line 465, ../sass/module/_module.scss */
+/* line 466, ../sass/module/_module.scss */
 .pager .pager-current:hover, .pagination .pager-current:hover,
 .pager a:hover,
 .pagination a:hover {
   text-decoration: none;
 }
-/* line 470, ../sass/module/_module.scss */
+/* line 471, ../sass/module/_module.scss */
 .pager .pager-current, .pagination .pager-current {
   background-color: #e2e2e2;
 }
-/* line 474, ../sass/module/_module.scss */
+/* line 475, ../sass/module/_module.scss */
 .pager .disabled, .pagination .disabled {
   background-color: #fbfbfb;
 }
-/* line 477, ../sass/module/_module.scss */
+/* line 478, ../sass/module/_module.scss */
 .pager .disabled a:hover, .pagination .disabled a:hover {
   cursor: default;
   text-decoration: none;

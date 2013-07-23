@@ -417,6 +417,7 @@
    ========================================================================== */
 .list--actions {
   margin-bottom: $large-spacing;
+  overflow: hidden;
 
   .list--action-sort-latest,
   .list--action-sort-hot {
