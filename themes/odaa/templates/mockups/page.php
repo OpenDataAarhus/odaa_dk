@@ -4,7 +4,7 @@
   <?php include 'snippets/head.inc'; ?>
   <title>Welcome to dev.odaa.dk | dev.odaa.dk</title>
 </head>
-<body class="left-sidebar">
+<body>
   <div id="page" class="page">
     <header class="site-header">
       <section class="header-wrapper">

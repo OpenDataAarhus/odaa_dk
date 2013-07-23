@@ -10,39 +10,21 @@
    ========================================================================== */
 
 .user-login {
-  @include zen-grid-item(8, 1, right);
-
-  margin-top: 15px;
-  padding-right: 0;
-  position: relative;
-  text-align: right;
-
-  .username-wrapper,
-  .password-wrapper {
-    min-width: 300px;
-  }
-
-  .user-login-label {
-    color: $font-color-secondary;
-    display: inline-block;
-    margin-bottom: 3px;
-  }
-
-  .username-wrapper,
-  .password-wrapper {
-    display: inline-block;
-    margin-right: 5px;
-    text-align: left;
-  }
-
-  .button {
-    position: absolute;
-    right: 0;
-    top: 28px;
-  }
-
-  .user-login-new-user {
-    color: $font-color-secondary;
-  }
 }
 
+.user-login--username-wrapper,
+.user-login--password-wrapper {
+  margin-bottom: $large-spacing;
+}
+
+.user-login--actions {
+  text-align: right;
+}
+
+.user-login--openid {
+  margin-right: 10px;
+}
+
+.user-login--submit {
+  @extend .button;
+}
