@@ -19,6 +19,14 @@ function odaa_comment_menu() {
     'type' => MENU_CALLBACK,
   );
   
+  $items['odaa_comment/count/%'] = array(
+    'title' => 'View comment',
+    'page callback' => '_odaa_comment_count',
+    'page arguments' => array(2),
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  
   $items['odaa_comment/add/%/%/%'] = array(
     'title' => 'Add comment',
     'page callback' => '_odaa_comment_add',
@@ -83,6 +91,34 @@ function _odaa_comment_view($hash) {
               'date' => $date,
           );
         }
+      }
+    }
+  }
+  // Always return in JSON format.
+  return drupal_json_output($data);
+}
+
+ function _odaa_comment_count($hash) {
+  // Find node matching hash.
+  $nid = _odaa_comment_hash_to_nid($hash);
+
+  $data = array(
+      'status' => FALSE,
+      'data' => array(),
+  );
+  if (isset($nid)) {
+    // Load node.
+    $node = node_load($nid);
+    // Load comment id(s) to node.
+    $comment_count = $node->comment_count;
+    if (!empty($comment_count)) {
+      // Comments found, load them.
+      if (!empty($comments)) {
+        // Build data array.
+        $data['status'] = TRUE;
+        $data['data'][] = array(
+            'count' => $comment_count,
+        );
       }
     }
   }
