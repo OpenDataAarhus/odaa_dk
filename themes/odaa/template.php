@@ -35,6 +35,20 @@ function odaa_menu_tree__menu_block__3($variables) {
 }
 
 /**
+ * Implements hook_theme().
+ *
+ * Add new theme functions used to modify the recent comment list.
+ */
+function odaa_theme() {
+  return array(
+    'spotbox_recent_comment' => array(
+      'variables' => array('comment' => NULL),
+      'template' => 'templates/spotbox-recent-comment'
+    ),
+  );
+}
+
+/**
  * Implements theme_menu_link().
  */
 function odaa_menu_link($variables) {
@@ -109,4 +123,34 @@ function odaa_preprocess_block(&$variables) {
 function odaa_preprocess_page(&$variables, $hook) {
   if (isset($variables['is_front']))
     unset($variables['page']['content']['system_main']['default_message']);
+}
+
+/**
+ * Returns HTML for a list of recent comments to be displayed in the comment block.
+ *
+ * @ingroup themeable
+ */
+function odaa_comment_block() {
+  $items = array();
+  $number = variable_get('comment_block_count', 10);
+  foreach (comment_get_recent($number) as $comment) {
+    $data = array(
+      '#theme' => 'spotbox_recent_comment',
+      '#comment' => $comment,
+    );
+    
+    $items[] = array(
+      'data' => drupal_render($data),
+      'attributes' =>  array(
+        'class' => 'spotbox--list-item',
+      ),
+    );
+  }
+
+  if ($items) {
+    return theme('item_list', array('items' => $items));
+  }
+  else {
+    return t('No comments available.');
+  }
 }

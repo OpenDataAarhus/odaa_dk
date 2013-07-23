@@ -198,7 +198,7 @@ projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.2"
 projects[wysiwyg][patch][0] = "http://drupal.org/files/746524-143-D7.patch"
 
-projects[wysiwyg][subdir] = "contrib"
+projects[wysiwyg_filter][subdir] = "contrib"
 projects[wysiwyg_filter][version] = "1.6-rc2"
 
 projects[fences][subdir] = "contrib"
