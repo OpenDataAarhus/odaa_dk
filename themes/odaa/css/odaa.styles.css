@@ -6089,8 +6089,8 @@ div.context-editor div.context-editable legend {
   margin-right: 11px;
 }
 /* line 113, ../sass/module/_dataset.scss */
-.dataset--tabs li .dataset--tab-link,
-.dataset--tabs li .dataset--tab-link:hover {
+.dataset--tabs li a,
+.dataset--tabs li a:hover {
   border-top: 1px solid #d5d5d5;
   border-right: 1px solid #d5d5d5;
   border-left: 1px solid #d5d5d5;
@@ -6100,8 +6100,8 @@ div.context-editor div.context-editable legend {
   margin-right: 11px;
 }
 /* line 124, ../sass/module/_dataset.scss */
-.dataset--tabs li.active .dataset--tab-link,
-.dataset--tabs li.active .dataset--tab-link:hover {
+.dataset--tabs li.active a,
+.dataset--tabs li.active a:hover {
   background-color: white;
   border-bottom: 1px solid white;
   margin-bottom: -1px;
