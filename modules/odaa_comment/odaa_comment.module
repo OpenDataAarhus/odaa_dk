@@ -106,7 +106,7 @@ function _odaa_comment_view($hash) {
       'status' => FALSE,
       'data' => array(),
   );
-   $data['data']['count'] = 0;
+  $data['data']['count'] = 0;
   if (isset($nid)) {
     // Load node.
     $node = node_load($nid);
