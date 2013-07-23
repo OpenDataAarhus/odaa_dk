@@ -58,7 +58,6 @@
             $(item).closest('.dataset--list-comments-link').html(html);
           }
         });
-        
       });
     }
   });
