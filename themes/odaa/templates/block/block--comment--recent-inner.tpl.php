@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Default implementation spotbox-comment.tpl.php.
+ * 
  */
 ?>
 <span class="spotbox--list-link"><?php print l($comment->subject, 'comment/' . $comment->cid, array('fragment' => 'comment-' . $comment->cid)); ?></span>
