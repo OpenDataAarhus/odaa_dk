@@ -53,9 +53,9 @@
         var hash = $(item).attr('data-hash');
         $.getJSON('/odaa_comment/count/'+hash, function (data) {
           if (data.status) {
-            var html = $(item).closest('.dataset--list-comments-link').html();
+            var html = $(item).find('.dataset--list-comments-link').html();
             html = html.replace('--', data.data.count);
-            $(item).closest('.dataset--list-comments-link').html(html);
+            $(item).find('.dataset--list-comments-link').html(html);
           }
         });
       });
