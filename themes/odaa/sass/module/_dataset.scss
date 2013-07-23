@@ -106,8 +106,7 @@
   padding-left: $large-spacing;
 }
 
-.dataset--tab,
-.dataset--tab-active {
+.dataset--tab {
   margin-right: 11px;
 
   .dataset--tab-link,
@@ -118,7 +117,9 @@
   }
 }
 
-.dataset--tab-active {
+.dataset--tab.active {
+  margin-right: 11px;
+
   .dataset--tab-link,
   .dataset--tab-link:hover {
     background-color: $white;
