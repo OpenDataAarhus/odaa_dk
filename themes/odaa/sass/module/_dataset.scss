@@ -104,6 +104,11 @@
   padding-top: $large-spacing;
   padding-right: $large-spacing;
   padding-left: $large-spacing;
+
+  /* Can't add a class because it is hardcoded in ODAA */
+  li {
+    @extend .dataset--tab;
+  }
 }
 
 .dataset--tab {
