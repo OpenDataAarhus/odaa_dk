@@ -5,6 +5,18 @@
  */
 
 
+
+/* Form actions */
+.form-actions {
+  text-align: right;
+}
+
+/* Form submit buttons */
+.form-submit {
+  @extend .button;
+}
+
+
 /* Context override
    ========================================================================== */
 .context-editor-title {
