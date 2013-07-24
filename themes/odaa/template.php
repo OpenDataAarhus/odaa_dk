@@ -172,9 +172,6 @@ function odaa_form_alter(&$form, &$form_state, $form_id){
           <section class="page--content">
             <h1 class="page--title">'.t('User register').'</h1>';
       $form['#suffix']  =  '</div>';
-      echo '<pre>';
-        print_r($form);
-      echo '</pre>';
       break;
     case 'user_login':
       unset($form['name']['#description']);
