@@ -1,5 +1,6 @@
 <?php
 
+  // Main menu
   function main_menu($active) {
 
     $main_menu = array(
@@ -19,6 +20,38 @@
       }
       else {
         $output.= '<li><a href="' . $url .'" class="menu-item"><span>' . $name . '</span></a></li>';
+      }
+
+      $count++;
+    }
+
+    $output.= '</ul>';
+
+    return $output;
+  }
+
+
+  // Secondary menu
+  function secondary_menu($active) {
+
+    $secondary_menu = array(
+      'Log ind' => 'user-login.php',
+      'Opret bruger' => 'user-register.php'
+    );
+
+    $output = '<ul class="secondary-menu">';
+
+    $count = 0;
+    $count_last = count($secondary_menu) - 1;
+
+    foreach ($secondary_menu as $name => $url) {
+      $count == $count_last ? $last = ' last' : $last = '';
+
+      if ($active != false && $count == $active) {
+        $output.= '<li><a href="' . $url .'" class="menu-item active'.$last.'"><span>' . $name . '</span></a></li>';
+      }
+      else {
+        $output.= '<li><a href="' . $url .'" class="menu-item'.$last.'"><span>' . $name . '</span></a></li>';
       }
 
       $count++;

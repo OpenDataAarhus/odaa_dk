@@ -12,10 +12,7 @@
           <?php include 'snippets/logo.inc'; ?>
           <?php include 'snippets/search-form.inc'; ?>
           <?php echo main_menu(5); ?>
-          <ul class="secondary-menu">
-            <li><a href="#" class="menu-item active"><span>Log ind</span></a></li>
-            <li><a href="#" class="menu-item last"><span>Opret bruger</span></a></li>
-          </ul>
+          <?php echo secondary_menu(0); ?>
         </div>
       </section>
     </header>
