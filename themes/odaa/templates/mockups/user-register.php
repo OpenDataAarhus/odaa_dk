@@ -12,7 +12,7 @@
           <?php include 'snippets/logo.inc'; ?>
           <?php include 'snippets/search-form.inc'; ?>
           <?php echo main_menu(5); ?>
-          <?php include 'snippets/secondary-menu.inc'; ?>
+          <?php echo secondary_menu(1); ?>
         </div>
       </section>
     </header>
