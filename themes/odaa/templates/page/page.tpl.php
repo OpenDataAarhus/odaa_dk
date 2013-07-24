@@ -72,6 +72,7 @@
  * @ingroup themeable
  */
 ?>
+<?php global $user;?>
 <div id="page" class="page <?php print $classes; ?>">
   <header class="site-header">
     <section class="header-wrapper">
@@ -93,7 +94,7 @@
       <div class="primary-content">
 
         <?php if (!$is_front): ?>
-          <?php if (!empty($tabs['#primary'])): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
+          <?php if (!empty($tabs['#primary']) && $user->uid > 0): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
           <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
         <?php endif; ?>
 
