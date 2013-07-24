@@ -104,7 +104,11 @@ function odaa_preprocess_html(&$variables) {
 
   // Add the node type class (except for frontpage).
   if (isset($variables['page']['#type']) && empty($variables['is_front'])) {
-    $variables['classes_array'][] = drupal_html_class('node-type-' . $variables['page']['#type']);
+    if(arg(0) == 'user'){
+      $variables['classes_array'][] = 'user';
+    }else{
+      $variables['classes_array'][] = drupal_html_class('node-type-' . $variables['page']['#type']);
+    }
   }
 }
 
@@ -158,3 +162,58 @@ function odaa_comment_block() {
     return t('No comments available.');
   }
 }
+
+
+/**
+ * Implements hook_form_alter().
+ */
+function odaa_form_alter(&$form, &$form_state, $form_id){
+  switch ($form_id) {
+    case 'user_register_form':
+      unset($form['account']['account']);
+      $form['#prefix']  =
+        '<div class="page--content-wrapper">
+          <section class="page--content">
+            <h1 class="page--title">'.t('User register').'</h1>';
+      $form['#suffix']  =  '</div>';
+      break;
+    case 'user_login':
+      unset($form['name']['#description']);
+      unset($form['pass']['#description']);
+      $form['#prefix']  =
+          '<div class="page--content-wrapper">
+             <section class="page--content">
+               <h1 class="page--title">'.t('User login').'</h1>';
+      $form['#suffix']  =  '</div>';
+      $form['actions']['#prefix']  = 
+              '<div class="user-login--actions">
+              <a href="/user/password" class="user-login--forgot-password">'.t('Forgot password?').'</a>';
+      $form['actions']['#suffix']  = '</div>';
+      break;
+  }
+}
+
+
+/**
+ * Implements hook_form_element().
+ */
+/*
+function odaa_form_element($variables){
+         echo '<pre>';
+        //print_r($variables);
+        echo '</pre>';
+  switch ($variables['element']['#title']) {
+    case 'Username':
+      $variables['#attributes']['class'] = 'another-class';
+        echo '<pre>';
+        print_r($variables['element']);
+        echo '</pre>';
+      return theme_form_element($variables);
+      break;
+    case 'Password':
+      $variables['attributes']['class'][] = 'another-class';
+        //print_r($variables['element']);
+      return theme_form_element($variables);
+      break;
+  }
+}*/
