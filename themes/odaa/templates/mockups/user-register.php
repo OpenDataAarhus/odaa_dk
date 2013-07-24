@@ -2,7 +2,7 @@
 <?php include './snippets/doctype.inc'; ?>
 <head profile="http://www.w3.org/1999/xhtml/vocab">
   <?php include 'snippets/head.inc'; ?>
-  <title>User login</title>
+  <title>User register</title>
 </head>
 <body>
   <div id="page" class="page">
@@ -23,32 +23,41 @@
             <section class="page--content">
               <h1 class="page--title">User register</h1>
               <form>
-                <div class="user-login--username-wrapper">
-                  <label class="user-login--label">Username</label>
+                <div class="user-register--username-wrapper">
+                  <label class="user-register--label">Username</label>
                   <input type="text" />
-                  <div class="description">Spaces are allowed; punctuation is not allowed except for periods, hyphens, apostrophes, and underscores.</div>
+                  <div class="user-register--description">Spaces are allowed; punctuation is not allowed except for periods, hyphens, apostrophes, and underscores.</div>
                 </div>
-                <div class="user-login--password-wrapper">
-                  <label class="user-login--label">E-mail address</label>
+                <div class="user-register--password-wrapper">
+                  <label class="user-register--label">E-mail address</label>
                   <input type="text" />
-                  <div class="description">A valid e-mail address. All e-mails from the system will be sent to this address. The e-mail address is not made public and will only be used if you wish to receive a new password or wish to receive certain news or notifications by e-mail.</div>
+                  <div class="user-register--description">A valid e-mail address. All e-mails from the system will be sent to this address. The e-mail address is not made public and will only be used if you wish to receive a new password or wish to receive certain news or notifications by e-mail.</div>
                 </div>
-                <div class="user-login--password-wrapper">
-                  <label class="user-login--label">Password</label>
+                <div class="user-register--password-wrapper">
+                  <label class="user-register--label">Password</label>
                   <input type="password" />
                 </div>
-                <div class="user-login--password-wrapper">
-                  <label class="user-login--label">Confirm password</label>
+                <div class="user-register--password-wrapper">
+                  <label class="user-register--label">Confirm password</label>
                   <input type="password" />
                 </div>
-                <div class="user-login--actions">
-                  <input type="submit" value="Create new account" class="user-login--submit" />
+                <div class="user-register--actions">
+                  <input type="submit" value="Create new account" class="user-register--submit" />
                 </div>
               </form>
             </section>
           </div>
         </div>
         <div class="secondary-content">
+          <div class="spotbox">
+            <div class="spotbox--inner">
+              <h3 class="spotbox--header">Brug for hjælp?</h3>
+              <div class="spotbox--content">
+                <p>Har du problemer med at logge ind eller oprette dig som bruger? Send os en besked så hjælper vi!</p>
+                <p><a href="#">Kontakt os</a></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
