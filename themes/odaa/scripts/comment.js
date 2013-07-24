@@ -76,12 +76,12 @@
   }
 
   function add_comment() {
-    var input = $('textarea').val();
+    var input = $('textarea').html();
     var title = $('h1.page--title').html();
     $.getJSON('/odaa_comment/add/' + title + '/' + hash + '/' + input, function (data) {
       if (data.status) {
         // Comment added. Reset.
-        $('textarea').val('');
+        $('textarea').html('');
         generate_comments(hash);
       }
     });
