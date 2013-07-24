@@ -8,10 +8,6 @@
 
 /* User login
    ========================================================================== */
-
-.user-login {
-}
-
 .user-login--username-wrapper,
 .user-login--password-wrapper {
   margin-bottom: $large-spacing;
@@ -32,12 +28,9 @@
   @extend .button;
 }
 
+
 /* User register
    ========================================================================== */
-
-.user-register {
-}
-
 .user-register--username-wrapper,
 .user-register--password-wrapper {
   margin-bottom: $large-spacing;
