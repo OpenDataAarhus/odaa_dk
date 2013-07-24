@@ -64,12 +64,8 @@
   @extend %module-list-alternate-footer;
 }
 
-.community--list-comments-link {
-  @extend %module-list-alternate-comments-link;
-}
-
-.community--list-read-more {
-  @extend %module-list-alternate-read-more;
+.community--list-footer-link {
+  @extend %module-list-alternate-footer-link;
 }
 
 .community--tag {
