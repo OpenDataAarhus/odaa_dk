@@ -1,0 +1,78 @@
+/**
+ * Community
+ *
+ * @author magnify
+ */
+
+
+
+/* Community
+   ========================================================================== */
+.use-cases--wrapper {
+  @extend %section-spacing;
+}
+
+
+/* Community list
+   ========================================================================== */
+.use-cases--list-wrapper {
+  @extend %section-spacing;
+}
+
+.use-cases--list-heading {
+  @extend %module-list-alternate-heading;
+}
+
+.use-cases--empty-text {
+  @extend %empty-text;
+
+  font-size: $font-size-larger;
+}
+
+.use-cases--list {
+  @extend %module-list-alternate;
+}
+
+.use-cases--list-item {
+  @extend %module-list-alternate-item;
+}
+
+.use-cases--list-image {
+  @extend %module-list-alternate-image;
+}
+
+.use-cases--list-content {
+  @extend %module-list-alternate-content;
+}
+
+
+.use-cases--list-meta {
+  @extend %module-list-alternate-meta;
+}
+
+.use-cases--list-posted {
+  @extend %module-list-alternate-posted;
+}
+
+.use-cases--list-author {
+  @extend %module-list-alternate-author;
+}
+
+.use-cases--list-footer {
+  @extend %module-list-alternate-footer;
+}
+
+.use-cases--list-comments-link {
+  @extend %module-list-alternate-comments-link;
+}
+
+.use-cases--list-read-more {
+  @extend %module-list-alternate-read-more;
+}
+
+.use-cases--tag {
+  @include font-normal();
+  @extend .label;
+
+  font-size: $font-size-large;
+}
