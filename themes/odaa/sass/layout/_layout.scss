@@ -105,9 +105,6 @@ body {
 .front {
   .primary-content {
     @include zen-grid-item(8, 1);
-
-    padding-right: 0;
-    padding-left: 0;
   }
 
   .secondary-content {
@@ -130,6 +127,11 @@ body {
       @include zen-grid-item(6, 1, right);
     }
   }
+}
+
+/* User pages */
+.user {
+  @extend .front;
 }
 
 
