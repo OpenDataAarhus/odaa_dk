@@ -1,78 +1,48 @@
 /**
- * Community
+ * Use cases
  *
  * @author magnify
  */
 
 
 
-/* Community
-   ========================================================================== */
 .use-cases--wrapper {
-  @extend %section-spacing;
+  margin-top: -20px;
+  margin-right: -10px;
+  margin-left: -10px;
+  overflow: hidden;
 }
 
-
-/* Community list
-   ========================================================================== */
-.use-cases--list-wrapper {
-  @extend %section-spacing;
+%use-cases--list-item {
+  @extend %module--block;
 }
 
-.use-cases--list-heading {
-  @extend %module-list-alternate-heading;
+.use-cases--list-item-first {
+  @include zen-clear(left);
+  @include zen-grid-item(4, 1);
+  @extend %use-cases--list-item;
 }
 
-.use-cases--empty-text {
-  @extend %empty-text;
-
-  font-size: $font-size-larger;
+.use-cases--list-item-second {
+  @include zen-grid-item(4, 5);
+  @extend %use-cases--list-item;
 }
 
-.use-cases--list {
-  @extend %module-list-alternate;
+.use-cases--list-item-third {
+  @include zen-grid-item(4, 9);
+  @extend %use-cases--list-item;
 }
 
-.use-cases--list-item {
-  @extend %module-list-alternate-item;
-}
-
-.use-cases--list-image {
-  @extend %module-list-alternate-image;
-}
-
-.use-cases--list-content {
-  @extend %module-list-alternate-content;
-}
-
-
-.use-cases--list-meta {
-  @extend %module-list-alternate-meta;
-}
-
-.use-cases--list-posted {
-  @extend %module-list-alternate-posted;
-}
-
-.use-cases--list-author {
-  @extend %module-list-alternate-author;
+.use-cases--list-item-inner {
+  @extend %module--block--inner;
 }
 
 .use-cases--list-footer {
   @extend %module-list-alternate-footer;
+  
+  text-align: left;
 }
 
 .use-cases--list-footer-link {
   @extend %module-list-alternate-footer-link;
-}
-
-.use-cases--list-read-more {
-  @extend %module-list-alternate-read-more;
-}
-
-.use-cases--tag {
-  @include font-normal();
-  @extend .label;
-
-  font-size: $font-size-large;
 }

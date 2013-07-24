@@ -1425,7 +1425,7 @@ button.user-register--submit,
 /* Variables
    ========================================================================== */
 /* line 21, ../sass/framework/_labels.scss */
-.label, .label-inverted, .dataset--list-tag, .dataset--tags-list .dataset--tags-list-tag, .community--tag, .use-cases--tag {
+.label, .label-inverted, .dataset--list-tag, .dataset--tags-list .dataset--tags-list-tag, .community--tag {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
@@ -1442,22 +1442,22 @@ button.user-register--submit,
   /* Make sure it works on a link */
 }
 /* line 36, ../sass/framework/_labels.scss */
-.label a:link, .label-inverted a:link, .dataset--list-tag a:link, .dataset--tags-list .dataset--tags-list-tag a:link, .community--tag a:link, .use-cases--tag a:link, .label a:visited, .label-inverted a:visited, .dataset--list-tag a:visited, .dataset--tags-list .dataset--tags-list-tag a:visited, .community--tag a:visited, .use-cases--tag a:visited, .label a:hover, .label-inverted a:hover, .dataset--list-tag a:hover, .dataset--tags-list .dataset--tags-list-tag a:hover, .community--tag a:hover, .use-cases--tag a:hover {
+.label a:link, .label-inverted a:link, .dataset--list-tag a:link, .dataset--tags-list .dataset--tags-list-tag a:link, .community--tag a:link, .label a:visited, .label-inverted a:visited, .dataset--list-tag a:visited, .dataset--tags-list .dataset--tags-list-tag a:visited, .community--tag a:visited, .label a:hover, .label-inverted a:hover, .dataset--list-tag a:hover, .dataset--tags-list .dataset--tags-list-tag a:hover, .community--tag a:hover {
   color: white;
   text-decoration: none;
 }
 /* line 44, ../sass/framework/_labels.scss */
-.label:link, .label-inverted:link, .dataset--list-tag:link, .dataset--tags-list .dataset--tags-list-tag:link, .community--tag:link, .use-cases--tag:link, .label:visited, .label-inverted:visited, .dataset--list-tag:visited, .dataset--tags-list .dataset--tags-list-tag:visited, .community--tag:visited, .use-cases--tag:visited {
+.label:link, .label-inverted:link, .dataset--list-tag:link, .dataset--tags-list .dataset--tags-list-tag:link, .community--tag:link, .label:visited, .label-inverted:visited, .dataset--list-tag:visited, .dataset--tags-list .dataset--tags-list-tag:visited, .community--tag:visited {
   color: white;
 }
 /* line 48, ../sass/framework/_labels.scss */
-.label:hover, .label-inverted:hover, .dataset--list-tag:hover, .dataset--tags-list .dataset--tags-list-tag:hover, .community--tag:hover, .use-cases--tag:hover {
+.label:hover, .label-inverted:hover, .dataset--list-tag:hover, .dataset--tags-list .dataset--tags-list-tag:hover, .community--tag:hover {
   background-color: #b53409;
   color: white;
   text-decoration: none;
 }
 /* line 54, ../sass/framework/_labels.scss */
-.label i[class^="icon-"], .label-inverted i[class^="icon-"], .dataset--list-tag i[class^="icon-"], .dataset--tags-list .dataset--tags-list-tag i[class^="icon-"], .community--tag i[class^="icon-"], .use-cases--tag i[class^="icon-"] {
+.label i[class^="icon-"], .label-inverted i[class^="icon-"], .dataset--list-tag i[class^="icon-"], .dataset--tags-list .dataset--tags-list-tag i[class^="icon-"], .community--tag i[class^="icon-"] {
   margin-right: 5px;
 }
 
@@ -4953,141 +4953,127 @@ body {
 /* Dataset labels
    ========================================================================== */
 /* line 358, ../sass/layout/_ckan.scss */
-.label[data-format=dwg], [data-format=dwg].label-inverted, [data-format=dwg].dataset--list-tag, .dataset--tags-list [data-format=dwg].dataset--tags-list-tag, [data-format=dwg].community--tag, [data-format=dwg].use-cases--tag,
+.label[data-format=dwg], [data-format=dwg].label-inverted, [data-format=dwg].dataset--list-tag, .dataset--tags-list [data-format=dwg].dataset--tags-list-tag, [data-format=dwg].community--tag,
 .label[data-format*=dwg],
 [data-format*=dwg].label-inverted,
 [data-format*=dwg].dataset--list-tag,
 .dataset--tags-list [data-format*=dwg].dataset--tags-list-tag,
-[data-format*=dwg].community--tag,
-[data-format*=dwg].use-cases--tag {
+[data-format*=dwg].community--tag {
   background-color: #aaa;
 }
 
 /* line 363, ../sass/layout/_ckan.scss */
-.label[data-format=html], [data-format=html].label-inverted, [data-format=html].dataset--list-tag, .dataset--tags-list [data-format=html].dataset--tags-list-tag, [data-format=html].community--tag, [data-format=html].use-cases--tag,
+.label[data-format=html], [data-format=html].label-inverted, [data-format=html].dataset--list-tag, .dataset--tags-list [data-format=html].dataset--tags-list-tag, [data-format=html].community--tag,
 .label[data-format*=html],
 [data-format*=html].label-inverted,
 [data-format*=html].dataset--list-tag,
 .dataset--tags-list [data-format*=html].dataset--tags-list-tag,
-[data-format*=html].community--tag,
-[data-format*=html].use-cases--tag {
+[data-format*=html].community--tag {
   background-color: #55a1ce;
 }
 
 /* line 368, ../sass/layout/_ckan.scss */
-.label[data-format=json], [data-format=json].label-inverted, [data-format=json].dataset--list-tag, .dataset--tags-list [data-format=json].dataset--tags-list-tag, [data-format=json].community--tag, [data-format=json].use-cases--tag,
+.label[data-format=json], [data-format=json].label-inverted, [data-format=json].dataset--list-tag, .dataset--tags-list [data-format=json].dataset--tags-list-tag, [data-format=json].community--tag,
 .label[data-format*=json],
 [data-format*=json].label-inverted,
 [data-format*=json].dataset--list-tag,
 .dataset--tags-list [data-format*=json].dataset--tags-list-tag,
-[data-format*=json].community--tag,
-[data-format*=json].use-cases--tag {
+[data-format*=json].community--tag {
   background-color: #ef7100;
 }
 
 /* line 373, ../sass/layout/_ckan.scss */
-.label[data-format=xml], [data-format=xml].label-inverted, [data-format=xml].dataset--list-tag, .dataset--tags-list [data-format=xml].dataset--tags-list-tag, [data-format=xml].community--tag, [data-format=xml].use-cases--tag,
+.label[data-format=xml], [data-format=xml].label-inverted, [data-format=xml].dataset--list-tag, .dataset--tags-list [data-format=xml].dataset--tags-list-tag, [data-format=xml].community--tag,
 .label[data-format*=xml],
 [data-format*=xml].label-inverted,
 [data-format*=xml].dataset--list-tag,
 .dataset--tags-list [data-format*=xml].dataset--tags-list-tag,
-[data-format*=xml].community--tag,
-[data-format*=xml].use-cases--tag {
+[data-format*=xml].community--tag {
   background-color: #ef7100;
 }
 
 /* line 378, ../sass/layout/_ckan.scss */
-.label[data-format=text], [data-format=text].label-inverted, [data-format=text].dataset--list-tag, .dataset--tags-list [data-format=text].dataset--tags-list-tag, [data-format=text].community--tag, [data-format=text].use-cases--tag,
+.label[data-format=text], [data-format=text].label-inverted, [data-format=text].dataset--list-tag, .dataset--tags-list [data-format=text].dataset--tags-list-tag, [data-format=text].community--tag,
 .label[data-format*=text],
 [data-format*=text].label-inverted,
 [data-format*=text].dataset--list-tag,
 .dataset--tags-list [data-format*=text].dataset--tags-list-tag,
-[data-format*=text].community--tag,
-[data-format*=text].use-cases--tag {
+[data-format*=text].community--tag {
   background-color: #74cbec;
 }
 
 /* line 383, ../sass/layout/_ckan.scss */
-.label[data-format=csv], [data-format=csv].label-inverted, [data-format=csv].dataset--list-tag, .dataset--tags-list [data-format=csv].dataset--tags-list-tag, [data-format=csv].community--tag, [data-format=csv].use-cases--tag,
+.label[data-format=csv], [data-format=csv].label-inverted, [data-format=csv].dataset--list-tag, .dataset--tags-list [data-format=csv].dataset--tags-list-tag, [data-format=csv].community--tag,
 .label[data-format*=csv],
 [data-format*=csv].label-inverted,
 [data-format*=csv].dataset--list-tag,
 .dataset--tags-list [data-format*=csv].dataset--tags-list-tag,
-[data-format*=csv].community--tag,
-[data-format*=csv].use-cases--tag {
+[data-format*=csv].community--tag {
   background-color: #dfb100;
 }
 
 /* line 388, ../sass/layout/_ckan.scss */
-.label[data-format=xls], [data-format=xls].label-inverted, [data-format=xls].dataset--list-tag, .dataset--tags-list [data-format=xls].dataset--tags-list-tag, [data-format=xls].community--tag, [data-format=xls].use-cases--tag,
+.label[data-format=xls], [data-format=xls].label-inverted, [data-format=xls].dataset--list-tag, .dataset--tags-list [data-format=xls].dataset--tags-list-tag, [data-format=xls].community--tag,
 .label[data-format*=xls],
 [data-format*=xls].label-inverted,
 [data-format*=xls].dataset--list-tag,
 .dataset--tags-list [data-format*=xls].dataset--tags-list-tag,
-[data-format*=xls].community--tag,
-[data-format*=xls].use-cases--tag {
+[data-format*=xls].community--tag {
   background-color: #2db55d;
 }
 
 /* line 393, ../sass/layout/_ckan.scss */
-.label[data-format=zip], [data-format=zip].label-inverted, [data-format=zip].dataset--list-tag, .dataset--tags-list [data-format=zip].dataset--tags-list-tag, [data-format=zip].community--tag, [data-format=zip].use-cases--tag,
+.label[data-format=zip], [data-format=zip].label-inverted, [data-format=zip].dataset--list-tag, .dataset--tags-list [data-format=zip].dataset--tags-list-tag, [data-format=zip].community--tag,
 .label[data-format*=zip],
 [data-format*=zip].label-inverted,
 [data-format*=zip].dataset--list-tag,
 .dataset--tags-list [data-format*=zip].dataset--tags-list-tag,
-[data-format*=zip].community--tag,
-[data-format*=zip].use-cases--tag {
+[data-format*=zip].community--tag {
   background-color: #686868;
 }
 
 /* line 398, ../sass/layout/_ckan.scss */
-.label[data-format=api], [data-format=api].label-inverted, [data-format=api].dataset--list-tag, .dataset--tags-list [data-format=api].dataset--tags-list-tag, [data-format=api].community--tag, [data-format=api].use-cases--tag,
+.label[data-format=api], [data-format=api].label-inverted, [data-format=api].dataset--list-tag, .dataset--tags-list [data-format=api].dataset--tags-list-tag, [data-format=api].community--tag,
 .label[data-format*=api],
 [data-format*=api].label-inverted,
 [data-format*=api].dataset--list-tag,
 .dataset--tags-list [data-format*=api].dataset--tags-list-tag,
-[data-format*=api].community--tag,
-[data-format*=api].use-cases--tag {
+[data-format*=api].community--tag {
   background-color: #ec96be;
 }
 
 /* line 403, ../sass/layout/_ckan.scss */
-.label[data-format=pdf], [data-format=pdf].label-inverted, [data-format=pdf].dataset--list-tag, .dataset--tags-list [data-format=pdf].dataset--tags-list-tag, [data-format=pdf].community--tag, [data-format=pdf].use-cases--tag,
+.label[data-format=pdf], [data-format=pdf].label-inverted, [data-format=pdf].dataset--list-tag, .dataset--tags-list [data-format=pdf].dataset--tags-list-tag, [data-format=pdf].community--tag,
 .label[data-format*=pdf],
 [data-format*=pdf].label-inverted,
 [data-format*=pdf].dataset--list-tag,
 .dataset--tags-list [data-format*=pdf].dataset--tags-list-tag,
-[data-format*=pdf].community--tag,
-[data-format*=pdf].use-cases--tag {
+[data-format*=pdf].community--tag {
   background-color: #e0051e;
 }
 
 /* line 411, ../sass/layout/_ckan.scss */
-.label[data-format=rdf], [data-format=rdf].label-inverted, [data-format=rdf].dataset--list-tag, .dataset--tags-list [data-format=rdf].dataset--tags-list-tag, [data-format=rdf].community--tag, [data-format=rdf].use-cases--tag,
+.label[data-format=rdf], [data-format=rdf].label-inverted, [data-format=rdf].dataset--list-tag, .dataset--tags-list [data-format=rdf].dataset--tags-list-tag, [data-format=rdf].community--tag,
 .label[data-format*=rdf],
 [data-format*=rdf].label-inverted,
 [data-format*=rdf].dataset--list-tag,
 .dataset--tags-list [data-format*=rdf].dataset--tags-list-tag,
 [data-format*=rdf].community--tag,
-[data-format*=rdf].use-cases--tag,
 .label[data-format*=nquad],
 [data-format*=nquad].label-inverted,
 [data-format*=nquad].dataset--list-tag,
 .dataset--tags-list [data-format*=nquad].dataset--tags-list-tag,
 [data-format*=nquad].community--tag,
-[data-format*=nquad].use-cases--tag,
 .label[data-format*=ntriples],
 [data-format*=ntriples].label-inverted,
 [data-format*=ntriples].dataset--list-tag,
 .dataset--tags-list [data-format*=ntriples].dataset--tags-list-tag,
 [data-format*=ntriples].community--tag,
-[data-format*=ntriples].use-cases--tag,
 .label[data-format*=turtle],
 [data-format*=turtle].label-inverted,
 [data-format*=turtle].dataset--list-tag,
 .dataset--tags-list [data-format*=turtle].dataset--tags-list-tag,
-[data-format*=turtle].community--tag,
-[data-format*=turtle].use-cases--tag {
+[data-format*=turtle].community--tag {
   background-color: #0b4498;
 }
 
@@ -5138,7 +5124,7 @@ body {
 }
 
 /* line 50, ../sass/layout/_drupal.scss */
-div.context-editor div.label, div.context-editor div.label-inverted, div.context-editor div.dataset--list-tag, div.context-editor .dataset--tags-list div.dataset--tags-list-tag, .dataset--tags-list div.context-editor div.dataset--tags-list-tag, div.context-editor div.community--tag, div.context-editor div.use-cases--tag {
+div.context-editor div.label, div.context-editor div.label-inverted, div.context-editor div.dataset--list-tag, div.context-editor .dataset--tags-list div.dataset--tags-list-tag, .dataset--tags-list div.context-editor div.dataset--tags-list-tag, div.context-editor div.community--tag {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -5148,7 +5134,7 @@ div.context-editor div.label, div.context-editor div.label-inverted, div.context
 }
 
 /* line 58, ../sass/layout/_drupal.scss */
-div.context-editor div.label.top, div.context-editor div.top.label-inverted, div.context-editor div.top.dataset--list-tag, div.context-editor .dataset--tags-list div.top.dataset--tags-list-tag, .dataset--tags-list div.context-editor div.top.dataset--tags-list-tag, div.context-editor div.top.community--tag, div.context-editor div.top.use-cases--tag {
+div.context-editor div.label.top, div.context-editor div.top.label-inverted, div.context-editor div.top.dataset--list-tag, div.context-editor .dataset--tags-list div.top.dataset--tags-list-tag, .dataset--tags-list div.context-editor div.top.dataset--tags-list-tag, div.context-editor div.top.community--tag {
   color: #404040;
 }
 
@@ -5286,7 +5272,7 @@ div.context-editor div.context-editable legend {
  * Used by CKAN for empty descriptions etc.
    ========================================================================== */
 /* line 24, ../sass/module/_module.scss */
-.spotbox--content-empty, .dataset--empty-text, .dataset--data-resources--list-item .dataset--data-resources--list-description-empty, .community--empty-text, .use-cases--empty-text {
+.spotbox--content-empty, .dataset--empty-text, .dataset--data-resources--list-item .dataset--data-resources--list-description-empty, .community--empty-text {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
   font-family: "exo-regular-italic";
@@ -5296,7 +5282,7 @@ div.context-editor div.context-editable legend {
 /* Section spacing
    ========================================================================== */
 /* line 32, ../sass/module/_module.scss */
-.page--section, .dataset--list-wrapper, .dataset--data-resources, .dataset--tags, .dataset--additional-info, .community--wrapper, .community--list-wrapper, .use-cases--wrapper, .use-cases--list-wrapper, .comments--wrapper, .comments--list-actions, .comments--list-item-actions, .comments--post-comment-wrapper {
+.page--section, .dataset--list-wrapper, .dataset--data-resources, .dataset--tags, .dataset--additional-info, .community--wrapper, .community--list-wrapper, .comments--wrapper, .comments--list-actions, .comments--list-item-actions, .comments--post-comment-wrapper {
   border-top: 1px dashed #e6e6e6;
   margin-top: 20px;
   padding-top: 20px;
@@ -5321,251 +5307,21 @@ div.context-editor div.context-editable legend {
   background-color: #e2e2e2;
 }
 
-/* Block module
-   ========================================================================== */
-/* line 63, ../sass/module/_module.scss */
-.twitter-widget, .spotbox--inner, .search-spotbox--inner, .spotbox-menu--inner, .page--content-wrapper, .comments {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 5px #d5d5d5;
-  -moz-box-shadow: 0 0 5px #d5d5d5;
-  box-shadow: 0 0 5px #d5d5d5;
-  background-color: white;
-  border: 1px solid #d5d5d5;
-  padding: 20px;
-}
-
-/* line 73, ../sass/module/_module.scss */
-.spotbox, .spotbox-menu {
-  margin-top: 20px;
-}
-/* line 76, ../sass/module/_module.scss */
-.spotbox a:link, .spotbox-menu a:link {
-  color: #e5420c;
-  text-decoration: none;
-}
-/* line 81, ../sass/module/_module.scss */
-.spotbox a:visited, .spotbox-menu a:visited {
-  color: #b53409;
-  text-decoration: none;
-}
-/* line 86, ../sass/module/_module.scss */
-.spotbox a:hover, .spotbox-menu a:hover {
-  color: #be370a;
-  text-decoration: none;
-}
-/* line 91, ../sass/module/_module.scss */
-.spotbox a:focus, .spotbox-menu a:focus {
-  color: black;
-}
-/* line 95, ../sass/module/_module.scss */
-.spotbox a.active, .spotbox-menu a.active {
-  font-family: "exo-demi-bold";
-  font-weight: normal;
-}
-/* line 99, ../sass/module/_module.scss */
-.spotbox i[class^="icon-"], .spotbox-menu i[class^="icon-"] {
-  margin-right: 5px;
-  /* Icon gets cut off when it is the first item from the left */
-  padding-left: 1px;
-}
-
-/* %module--block headers */
-/* line 113, ../sass/module/_module.scss */
-.spotbox--header, .search-spotbox--header, .spotbox-menu--header {
-  -webkit-border-radius: 5px 5px 0 0;
-  -moz-border-radius: 5px 5px 0 0;
-  border-radius: 5px 5px 0 0;
-  background-color: #efefef;
-  border-bottom: 1px solid #d5d5d5;
-  margin-top: -20px;
-  margin-bottom: 20px;
-  margin-right: -20px;
-  margin-left: -20px;
-  padding-top: 14px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-}
-/* line 127, ../sass/module/_module.scss */
-.spotbox--header a:link, .search-spotbox--header a:link, .spotbox-menu--header a:link {
-  color: #404040;
-  text-decoration: none;
-}
-/* line 132, ../sass/module/_module.scss */
-.spotbox--header a:visited, .search-spotbox--header a:visited, .spotbox-menu--header a:visited {
-  color: #3b3b3b;
-  text-decoration: none;
-}
-/* line 137, ../sass/module/_module.scss */
-.spotbox--header a:hover, .search-spotbox--header a:hover, .spotbox-menu--header a:hover {
-  color: #be370a;
-  text-decoration: none;
-  /* Inherit hover color for header labels */
-}
-/* line 142, ../sass/module/_module.scss */
-.spotbox--header a:hover [class$="header-label"], .search-spotbox--header a:hover [class$="header-label"], .spotbox-menu--header a:hover [class$="header-label"] {
-  color: gray;
-}
-/* line 147, ../sass/module/_module.scss */
-.spotbox--header a:focus, .search-spotbox--header a:focus, .spotbox-menu--header a:focus {
-  color: black;
-}
-/* line 151, ../sass/module/_module.scss */
-.spotbox--header i[class^="icon-"], .search-spotbox--header i[class^="icon-"], .spotbox-menu--header i[class^="icon-"] {
-  margin-right: 8px;
-}
-
-/* line 157, ../sass/module/_module.scss */
-.spotbox--list-header {
-  font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
-  font-weight: normal;
-  font-size: 100%;
-  margin-bottom: 0;
-  padding-left: 20px;
-}
-
-/* %module--block content */
-/* line 175, ../sass/module/_module.scss */
-.spotbox--content a:link {
-  color: #e5420c;
-}
-/* line 179, ../sass/module/_module.scss */
-.spotbox--content a:visited {
-  color: #972c08;
-}
-/* line 183, ../sass/module/_module.scss */
-.spotbox--content a:hover {
-  color: #be370a;
-}
-
-/* %module--block list */
-/* line 211, ../sass/module/_module.scss */
-.spotbox--list, .spotbox-menu--list {
-  padding-left: 0;
-}
-/* line 214, ../sass/module/_module.scss */
-.spotbox--list a:link, .spotbox-menu--list a:link {
-  color: #e5420c;
-  text-decoration: none;
-}
-/* line 219, ../sass/module/_module.scss */
-.spotbox--list a:visited, .spotbox-menu--list a:visited {
-  color: #db3f0b;
-  text-decoration: none;
-}
-/* line 224, ../sass/module/_module.scss */
-.spotbox--list a:hover, .spotbox-menu--list a:hover {
-  color: #be370a;
-  text-decoration: none;
-}
-/* line 229, ../sass/module/_module.scss */
-.spotbox--list a:focus, .spotbox-menu--list a:focus {
-  color: black;
-}
-/* line 233, ../sass/module/_module.scss */
-.spotbox--list i[class^="icon-"], .spotbox-menu--list i[class^="icon-"] {
-  margin-right: 5px;
-  /* Icon gets cut off when it is the first item from the left */
-  padding-left: 1px;
-}
-
-/* line 241, ../sass/module/_module.scss */
-.spotbox--list-item, .spotbox-menu--list-item, .spotbox-menu--list-remove-all {
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
-  margin-bottom: 10px;
-  overflow: hidden;
-  padding-bottom: 10px;
-}
-/* line 247, ../sass/module/_module.scss */
-.last.spotbox--list-item, .last.spotbox-menu--list-item, .last.spotbox-menu--list-remove-all {
-  border-bottom: 0;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-/* line 255, ../sass/module/_module.scss */
-.spotbox--list-posted {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;
-  margin-bottom: 0;
-}
-
-/* %module--block image */
-/* line 268, ../sass/module/_module.scss */
-.spotbox--image {
-  margin-bottom: 20px;
-}
-
-/* %module--block list image */
-/* line 274, ../sass/module/_module.scss */
-.spotbox--list-image {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  float: left;
-  margin-right: 15px;
-  max-width: 50px;
-  margin-top: 3px;
-  overflow: hidden;
-  vertical-align: top;
-}
-
-/* line 288, ../sass/module/_module.scss */
-.spotbox--list-link a:link {
-  color: #e5420c;
-  text-decoration: none;
-}
-/* line 293, ../sass/module/_module.scss */
-.spotbox--list-link a:visited {
-  color: #db3f0b;
-  text-decoration: none;
-}
-/* line 298, ../sass/module/_module.scss */
-.spotbox--list-link a:hover {
-  color: #be370a;
-  text-decoration: none;
-}
-/* line 303, ../sass/module/_module.scss */
-.spotbox--list-link a:focus {
-  color: black;
-}
-
-/* %module--block footer */
-/* line 310, ../sass/module/_module.scss */
-.spotbox--footer {
-  border-top: 1px dashed rgba(0, 0, 0, 0.1);
-  clear: both;
-  overflow: hidden;
-  margin-top: 10px;
-  margin-right: 20px;
-  margin-left: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-/* line 322, ../sass/module/_module.scss */
-.spotbox--read-more {
-  float: right;
-}
-
 /* %module-list-alternate
    ========================================================================== */
-/* line 329, ../sass/module/_module.scss */
-.dataset--list, .community--list, .use-cases--list {
+/* line 62, ../sass/module/_module.scss */
+.dataset--list, .community--list {
   padding-left: 0;
 }
 
-/* line 333, ../sass/module/_module.scss */
-.dataset--list-heading, .community--list-heading, .use-cases--list-heading {
+/* line 66, ../sass/module/_module.scss */
+.dataset--list-heading, .community--list-heading {
   font-size: 160%;
   margin-right: 5px;
 }
 
-/* line 338, ../sass/module/_module.scss */
-.dataset--list-item, .community--list-item, .use-cases--list-item {
+/* line 71, ../sass/module/_module.scss */
+.dataset--list-item, .community--list-item {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -5575,12 +5331,12 @@ div.context-editor div.context-editable legend {
   overflow: hidden;
   padding: 20px;
 }
-/* line 347, ../sass/module/_module.scss */
-.dataset--list-item:hover, .community--list-item:hover, .use-cases--list-item:hover {
+/* line 80, ../sass/module/_module.scss */
+.dataset--list-item:hover, .community--list-item:hover {
   border: 1px solid #d5d5d5;
 }
 
-/* line 352, ../sass/module/_module.scss */
+/* line 85, ../sass/module/_module.scss */
 .dataset--list-icon, .community--list-icon {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -5600,48 +5356,38 @@ div.context-editor div.context-editable legend {
   text-align: center;
   width: 60px;
 }
-/* line 368, ../sass/module/_module.scss */
+/* line 101, ../sass/module/_module.scss */
 .dataset--list-icon:hover, .community--list-icon:hover {
   background-color: #809700;
 }
-/* line 377, ../sass/module/_module.scss */
+/* line 110, ../sass/module/_module.scss */
 .dataset--list-icon a:link, .community--list-icon a:link, .dataset--list-icon a:visited, .community--list-icon a:visited, .dataset--list-icon a:hover, .community--list-icon a:hover, .dataset--list-icon a:focus, .community--list-icon a:focus, .dataset--list-icon a:active, .community--list-icon a:active {
   color: white;
 }
 
-/* line 383, ../sass/module/_module.scss */
-.use-cases--list-image {
-  float: left;
-  margin-top: -5px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  min-width: 60px;
-  width: 60px;
-}
-
-/* line 392, ../sass/module/_module.scss */
-.dataset--list-content, .community--list-content, .use-cases--list-content {
+/* line 125, ../sass/module/_module.scss */
+.dataset--list-content, .community--list-content {
   display: inline-block;
   max-width: 80%;
 }
 
-/* line 398, ../sass/module/_module.scss */
-.dataset--list-meta, .community--list-meta, .use-cases--list-meta {
+/* line 131, ../sass/module/_module.scss */
+.dataset--list-meta, .community--list-meta {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
 }
 
-/* line 402, ../sass/module/_module.scss */
-.dataset--list-posted, .community--list-posted, .use-cases--list-posted {
+/* line 135, ../sass/module/_module.scss */
+.dataset--list-posted, .community--list-posted {
   margin-right: 5px;
 }
 
-/* line 406, ../sass/module/_module.scss */
-.dataset--list-author, .community--list-author, .use-cases--list-author {
+/* line 139, ../sass/module/_module.scss */
+.dataset--list-author, .community--list-author {
   margin-left: 5px;
 }
 
-/* line 410, ../sass/module/_module.scss */
+/* line 143, ../sass/module/_module.scss */
 .dataset--list-footer, .community--list-footer, .use-cases--list-footer {
   border-top: 1px dashed #e6e6e6;
   margin-top: 20px;
@@ -5649,51 +5395,46 @@ div.context-editor div.context-editable legend {
   text-align: right;
 }
 
-/* line 417, ../sass/module/_module.scss */
+/* line 150, ../sass/module/_module.scss */
 .dataset--list-footer-link, .community--list-footer-link, .use-cases--list-footer-link {
   margin-left: 15px;
 }
-/* line 420, ../sass/module/_module.scss */
+/* line 153, ../sass/module/_module.scss */
 .dataset--list-footer-link i[class^="icon-"], .community--list-footer-link i[class^="icon-"], .use-cases--list-footer-link i[class^="icon-"] {
   margin-right: 5px;
 }
 
-/* line 425, ../sass/module/_module.scss */
-.use-cases--list-read-more {
-  margin-left: 5px;
-}
-
 /* List actions
    ========================================================================== */
-/* line 432, ../sass/module/_module.scss */
+/* line 165, ../sass/module/_module.scss */
 .list--actions, .comments--list-actions {
   margin-bottom: 20px;
   overflow: hidden;
 }
-/* line 445, ../sass/module/_module.scss */
+/* line 178, ../sass/module/_module.scss */
 .list--actions .list--action-sort-latest, .comments--list-actions .list--action-sort-latest {
   margin-right: 10px;
 }
-/* line 449, ../sass/module/_module.scss */
+/* line 182, ../sass/module/_module.scss */
 .list--actions .list--action-create, .comments--list-actions .list--action-create {
   float: right;
 }
 
 /* Pager
    ========================================================================== */
-/* line 460, ../sass/module/_module.scss */
+/* line 193, ../sass/module/_module.scss */
 .pager, .pagination {
   margin-top: 20px;
   padding-left: 0;
   text-align: center;
 }
-/* line 465, ../sass/module/_module.scss */
+/* line 198, ../sass/module/_module.scss */
 .pager li, .pagination li {
   display: inline-block;
   margin-left: -4px;
   margin-right: 4px;
 }
-/* line 472, ../sass/module/_module.scss */
+/* line 205, ../sass/module/_module.scss */
 .pager .pager-current, .pagination .pager-current,
 .pager a,
 .pagination a {
@@ -5704,24 +5445,257 @@ div.context-editor div.context-editable legend {
   padding-bottom: 5px;
   padding-left: 15px;
 }
-/* line 480, ../sass/module/_module.scss */
+/* line 213, ../sass/module/_module.scss */
 .pager .pager-current:hover, .pagination .pager-current:hover,
 .pager a:hover,
 .pagination a:hover {
   text-decoration: none;
 }
-/* line 485, ../sass/module/_module.scss */
+/* line 218, ../sass/module/_module.scss */
 .pager .pager-current, .pagination .pager-current {
   background-color: #e2e2e2;
 }
-/* line 489, ../sass/module/_module.scss */
+/* line 222, ../sass/module/_module.scss */
 .pager .disabled, .pagination .disabled {
   background-color: #fbfbfb;
 }
-/* line 492, ../sass/module/_module.scss */
+/* line 225, ../sass/module/_module.scss */
 .pager .disabled a:hover, .pagination .disabled a:hover {
   cursor: default;
   text-decoration: none;
+}
+
+/**
+ * Block module
+ *
+ * @author magnify
+ */
+/* line 8, ../sass/module/_block.scss */
+.twitter-widget, .spotbox--inner, .search-spotbox--inner, .spotbox-menu--inner, .use-cases--list-item-inner, .page--content-wrapper, .comments {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px #d5d5d5;
+  -moz-box-shadow: 0 0 5px #d5d5d5;
+  box-shadow: 0 0 5px #d5d5d5;
+  background-color: white;
+  border: 1px solid #d5d5d5;
+  padding: 20px;
+}
+
+/* line 18, ../sass/module/_block.scss */
+.spotbox, .spotbox-menu, .use-cases--list-item-first, .use-cases--list-item-second, .use-cases--list-item-third {
+  margin-top: 20px;
+}
+/* line 21, ../sass/module/_block.scss */
+.spotbox a:link, .spotbox-menu a:link, .use-cases--list-item-first a:link, .use-cases--list-item-second a:link, .use-cases--list-item-third a:link {
+  color: #e5420c;
+  text-decoration: none;
+}
+/* line 26, ../sass/module/_block.scss */
+.spotbox a:visited, .spotbox-menu a:visited, .use-cases--list-item-first a:visited, .use-cases--list-item-second a:visited, .use-cases--list-item-third a:visited {
+  color: #b53409;
+  text-decoration: none;
+}
+/* line 31, ../sass/module/_block.scss */
+.spotbox a:hover, .spotbox-menu a:hover, .use-cases--list-item-first a:hover, .use-cases--list-item-second a:hover, .use-cases--list-item-third a:hover {
+  color: #be370a;
+  text-decoration: none;
+}
+/* line 36, ../sass/module/_block.scss */
+.spotbox a:focus, .spotbox-menu a:focus, .use-cases--list-item-first a:focus, .use-cases--list-item-second a:focus, .use-cases--list-item-third a:focus {
+  color: black;
+}
+/* line 40, ../sass/module/_block.scss */
+.spotbox a.active, .spotbox-menu a.active, .use-cases--list-item-first a.active, .use-cases--list-item-second a.active, .use-cases--list-item-third a.active {
+  font-family: "exo-demi-bold";
+  font-weight: normal;
+}
+/* line 44, ../sass/module/_block.scss */
+.spotbox i[class^="icon-"], .spotbox-menu i[class^="icon-"], .use-cases--list-item-first i[class^="icon-"], .use-cases--list-item-second i[class^="icon-"], .use-cases--list-item-third i[class^="icon-"] {
+  margin-right: 5px;
+  /* Icon gets cut off when it is the first item from the left */
+  padding-left: 1px;
+}
+
+/* %module--block headers */
+/* line 58, ../sass/module/_block.scss */
+.spotbox--header, .search-spotbox--header, .spotbox-menu--header {
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  background-color: #efefef;
+  border-bottom: 1px solid #d5d5d5;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding-top: 14px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+/* line 72, ../sass/module/_block.scss */
+.spotbox--header a:link, .search-spotbox--header a:link, .spotbox-menu--header a:link {
+  color: #404040;
+  text-decoration: none;
+}
+/* line 77, ../sass/module/_block.scss */
+.spotbox--header a:visited, .search-spotbox--header a:visited, .spotbox-menu--header a:visited {
+  color: #3b3b3b;
+  text-decoration: none;
+}
+/* line 82, ../sass/module/_block.scss */
+.spotbox--header a:hover, .search-spotbox--header a:hover, .spotbox-menu--header a:hover {
+  color: #be370a;
+  text-decoration: none;
+  /* Inherit hover color for header labels */
+}
+/* line 87, ../sass/module/_block.scss */
+.spotbox--header a:hover [class$="header-label"], .search-spotbox--header a:hover [class$="header-label"], .spotbox-menu--header a:hover [class$="header-label"] {
+  color: gray;
+}
+/* line 92, ../sass/module/_block.scss */
+.spotbox--header a:focus, .search-spotbox--header a:focus, .spotbox-menu--header a:focus {
+  color: black;
+}
+/* line 96, ../sass/module/_block.scss */
+.spotbox--header i[class^="icon-"], .search-spotbox--header i[class^="icon-"], .spotbox-menu--header i[class^="icon-"] {
+  margin-right: 8px;
+}
+
+/* line 102, ../sass/module/_block.scss */
+.spotbox--list-header {
+  font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 100%;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+/* %module--block content */
+/* line 120, ../sass/module/_block.scss */
+.spotbox--content a:link {
+  color: #e5420c;
+}
+/* line 124, ../sass/module/_block.scss */
+.spotbox--content a:visited {
+  color: #972c08;
+}
+/* line 128, ../sass/module/_block.scss */
+.spotbox--content a:hover {
+  color: #be370a;
+}
+
+/* %module--block list */
+/* line 156, ../sass/module/_block.scss */
+.spotbox--list, .spotbox-menu--list {
+  padding-left: 0;
+}
+/* line 159, ../sass/module/_block.scss */
+.spotbox--list a:link, .spotbox-menu--list a:link {
+  color: #e5420c;
+  text-decoration: none;
+}
+/* line 164, ../sass/module/_block.scss */
+.spotbox--list a:visited, .spotbox-menu--list a:visited {
+  color: #db3f0b;
+  text-decoration: none;
+}
+/* line 169, ../sass/module/_block.scss */
+.spotbox--list a:hover, .spotbox-menu--list a:hover {
+  color: #be370a;
+  text-decoration: none;
+}
+/* line 174, ../sass/module/_block.scss */
+.spotbox--list a:focus, .spotbox-menu--list a:focus {
+  color: black;
+}
+/* line 178, ../sass/module/_block.scss */
+.spotbox--list i[class^="icon-"], .spotbox-menu--list i[class^="icon-"] {
+  margin-right: 5px;
+  /* Icon gets cut off when it is the first item from the left */
+  padding-left: 1px;
+}
+
+/* line 186, ../sass/module/_block.scss */
+.spotbox--list-item, .spotbox-menu--list-item, .spotbox-menu--list-remove-all {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+/* line 192, ../sass/module/_block.scss */
+.last.spotbox--list-item, .last.spotbox-menu--list-item, .last.spotbox-menu--list-remove-all {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* line 200, ../sass/module/_block.scss */
+.spotbox--list-posted {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  margin-bottom: 0;
+}
+
+/* %module--block image */
+/* line 213, ../sass/module/_block.scss */
+.spotbox--image {
+  margin-bottom: 20px;
+}
+
+/* %module--block list image */
+/* line 219, ../sass/module/_block.scss */
+.spotbox--list-image {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  float: left;
+  margin-right: 15px;
+  max-width: 50px;
+  margin-top: 3px;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+/* line 233, ../sass/module/_block.scss */
+.spotbox--list-link a:link {
+  color: #e5420c;
+  text-decoration: none;
+}
+/* line 238, ../sass/module/_block.scss */
+.spotbox--list-link a:visited {
+  color: #db3f0b;
+  text-decoration: none;
+}
+/* line 243, ../sass/module/_block.scss */
+.spotbox--list-link a:hover {
+  color: #be370a;
+  text-decoration: none;
+}
+/* line 248, ../sass/module/_block.scss */
+.spotbox--list-link a:focus {
+  color: black;
+}
+
+/* %module--block footer */
+/* line 255, ../sass/module/_block.scss */
+.spotbox--footer {
+  border-top: 1px dashed rgba(0, 0, 0, 0.1);
+  clear: both;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* line 267, ../sass/module/_block.scss */
+.spotbox--read-more {
+  float: right;
 }
 
 /**
@@ -6280,24 +6254,79 @@ div.context-editor div.context-editable legend {
 }
 
 /**
- * Community
+ * Use cases
  *
  * @author magnify
  */
-/* Community
-   ========================================================================== */
-/* Community list
-   ========================================================================== */
-/* line 26, ../sass/module/_usecases.scss */
-.use-cases--empty-text {
-  font-size: 160%;
+/* line 9, ../sass/module/_usecases.scss */
+.use-cases--wrapper {
+  margin-top: -20px;
+  margin-right: -10px;
+  margin-left: -10px;
+  overflow: hidden;
 }
 
-/* line 73, ../sass/module/_usecases.scss */
-.use-cases--tag {
-  font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
-  font-weight: normal;
-  font-size: 130%;
+/* line 20, ../sass/module/_usecases.scss */
+.use-cases--list-item-first {
+  clear: left;
+  float: left;
+  width: 33.33333%;
+  margin-left: 0%;
+  margin-right: -33.33333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/* line 26, ../sass/module/_usecases.scss */
+.use-cases--list-item-second {
+  float: left;
+  width: 33.33333%;
+  margin-left: 33.33333%;
+  margin-right: -66.66667%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/* line 31, ../sass/module/_usecases.scss */
+.use-cases--list-item-third {
+  float: left;
+  width: 33.33333%;
+  margin-left: 66.66667%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/* line 40, ../sass/module/_usecases.scss */
+.use-cases--list-footer {
+  text-align: left;
 }
 
 /**
