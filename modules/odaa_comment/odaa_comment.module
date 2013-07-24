@@ -221,6 +221,29 @@ function _odaa_comment_hash_to_nid($hash, $title = FALSE) {
   }
   else {
     if ($title) {
+      
+      // Load current package list fron CKAN.
+      $cid = 'current_package_list_with_resources';
+      $cache = cache_get($cid);
+      if ($cache && $cache->expire > REQUEST_TIME) {
+        // Valid cache.
+        $data = $cache->data;
+      }
+      else {
+        // No cache, ask for recent package list.
+        $data = _odaa_user_api_call('/current_package_list_with_resources');
+        cache_set($cid, $data, 'cache', time() + 300);
+      }
+      
+      // Find dataset from $hash.
+      $url = "";
+      foreach ($data as $item) {
+        if ($item->id == $hash) {
+          $url = $item->name;
+          break;
+        }
+      }
+      
       // Create new node.
       $node = new stdClass();
       $node->type = 'dataset';
@@ -231,6 +254,7 @@ function _odaa_comment_hash_to_nid($hash, $title = FALSE) {
       $node->created = time();
       $node->language = 'und';
       $node->field_ckan_id['und'][0]['value'] = $hash;
+      $node->field_ckan_url['und'][0]['value'] = $url;
       node_save($node);
       
       return _odaa_comment_hash_to_nid($hash);
