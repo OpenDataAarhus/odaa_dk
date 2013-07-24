@@ -22,7 +22,7 @@
           <div class="page--content-wrapper">
             <section class="page--content">
               <h1 class="page--title">Use cases</h1>
-              <p>Open Source er fedt, åben data er fedt! Velkommen til ODAAs Community - fedt du kiggede forbi! :)</p>
+              <p>Her kan du se brugernes kreationer med data fra ODAA. Du kan også selv være med og oprette din egen use case.</p>
             </section>
             <section class="use-cases--wrapper">
               <div class="search-form--content-block">
@@ -48,7 +48,64 @@
                       </div>
                     </div>
                     <div class="use-cases--list-footer">
-                      <a href="#" class="use-cases--list-comments-link">12 kommentarer</a>|<a href="#" class="use-cases--list-read-more">Læs mere</a>
+                      <a href="#" class="use-cases--list-footer-link">12 kommentarer</a>
+                      <a href="#" class="use-cases--list-footer-link">Læs mere</a>
+                    </div>
+                  </li>
+                  <li class="use-cases--list-item">
+                    <div class="use-cases--list-image"><a href="#"><img src="http://backend.odaa.dk/sites/odaa.dk/files/vinderne_s_1.jpg" /></a></div>
+                    <div class="use-cases--list-content">
+                      <h3 class="use-cases--list-header"><a href="#">Finurlige fakta</a></h3>
+                      <p>Konkurrencen om en app bygget på Finurlige Faktas datasæt er nu afsluttet. Ved det fælles IT-forum og ODAA arrangement d. 25. juni på Aarhus Rådhus, blev det vindende forslag præsenteret.</p>
+                      <div class="use-cases--list-meta">
+                        <span class="use-cases--list-posted">20. juli 2013 @ 14:57</span>|<a href="#" class="use-cases--list-author">User name</a>
+                      </div>
+                    </div>
+                    <div class="use-cases--list-footer">
+                      <a href="#" class="use-cases--list-footer-link">12 kommentarer</a>
+                      <a href="#" class="use-cases--list-footer-link">Læs mere</a>
+                    </div>
+                  </li>
+                  <li class="use-cases--list-item">
+                    <div class="use-cases--list-image"><a href="#"><img src="http://backend.odaa.dk/sites/odaa.dk/files/vinderne_s_1.jpg" /></a></div>
+                    <div class="use-cases--list-content">
+                      <h3 class="use-cases--list-header"><a href="#">Finurlige fakta</a></h3>
+                      <p>Konkurrencen om en app bygget på Finurlige Faktas datasæt er nu afsluttet. Ved det fælles IT-forum og ODAA arrangement d. 25. juni på Aarhus Rådhus, blev det vindende forslag præsenteret.</p>
+                      <div class="use-cases--list-meta">
+                        <span class="use-cases--list-posted">20. juli 2013 @ 14:57</span>|<a href="#" class="use-cases--list-author">User name</a>
+                      </div>
+                    </div>
+                    <div class="use-cases--list-footer">
+                      <a href="#" class="use-cases--list-footer-link">12 kommentarer</a>
+                      <a href="#" class="use-cases--list-footer-link">Læs mere</a>
+                    </div>
+                  </li>
+                  <li class="use-cases--list-item">
+                    <div class="use-cases--list-image"><a href="#"><img src="http://backend.odaa.dk/sites/odaa.dk/files/vinderne_s_1.jpg" /></a></div>
+                    <div class="use-cases--list-content">
+                      <h3 class="use-cases--list-header"><a href="#">Finurlige fakta</a></h3>
+                      <p>Konkurrencen om en app bygget på Finurlige Faktas datasæt er nu afsluttet. Ved det fælles IT-forum og ODAA arrangement d. 25. juni på Aarhus Rådhus, blev det vindende forslag præsenteret.</p>
+                      <div class="use-cases--list-meta">
+                        <span class="use-cases--list-posted">20. juli 2013 @ 14:57</span>|<a href="#" class="use-cases--list-author">User name</a>
+                      </div>
+                    </div>
+                    <div class="use-cases--list-footer">
+                      <a href="#" class="use-cases--list-footer-link">12 kommentarer</a>
+                      <a href="#" class="use-cases--list-footer-link">Læs mere</a>
+                    </div>
+                  </li>
+                  <li class="use-cases--list-item">
+                    <div class="use-cases--list-image"><a href="#"><img src="http://backend.odaa.dk/sites/odaa.dk/files/vinderne_s_1.jpg" /></a></div>
+                    <div class="use-cases--list-content">
+                      <h3 class="use-cases--list-header"><a href="#">Finurlige fakta</a></h3>
+                      <p>Konkurrencen om en app bygget på Finurlige Faktas datasæt er nu afsluttet. Ved det fælles IT-forum og ODAA arrangement d. 25. juni på Aarhus Rådhus, blev det vindende forslag præsenteret.</p>
+                      <div class="use-cases--list-meta">
+                        <span class="use-cases--list-posted">20. juli 2013 @ 14:57</span>|<a href="#" class="use-cases--list-author">User name</a>
+                      </div>
+                    </div>
+                    <div class="use-cases--list-footer">
+                      <a href="#" class="use-cases--list-footer-link">12 kommentarer</a>
+                      <a href="#" class="use-cases--list-footer-link">Læs mere</a>
                     </div>
                   </li>
                 </ul>
@@ -65,11 +122,31 @@
         <div class="secondary-content">
           <div class="spotbox-menu">
             <div class="spotbox-menu--inner">
-              <h3 class="spotbox-menu--header"><i class="icon-user"></i>Username</h3>
+              <h3 class="spotbox-menu--header"><i class="icon-user"></i>Brugermenu</h3>
+              <ul class="spotbox-menu--list">
+                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-angle-right"></i>Se brugerprofil</a></li>
+                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-angle-right"></i>Rediger brugerprofil</a></li>
+                <li class="spotbox-menu--list-item last"><a href="#"><i class="icon-power-off"></i>Log ud</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="spotbox-menu">
+            <div class="spotbox-menu--inner">
+              <h3 class="spotbox-menu--header"><i class="icon-file-text-alt"></i>Mit indhold</h3>
               <ul class="spotbox-menu--list">
                 <li class="spotbox-menu--list-item"><a href="#"><i class="icon-angle-right"></i>Mine forumindlæg</a></li>
-                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-angle-right"></i>Mine use cases</a></li>
-                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-angle-right"></i>Log ud</a></li>
+                <li class="spotbox-menu--list-item"><a href="my-use-cases.php"><i class="icon-angle-right"></i>Mine use cases</a></li>
+                <li class="spotbox-menu--list-item last"><a href="#"><i class="icon-angle-right"></i>Mine datasæt</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="spotbox-menu">
+            <div class="spotbox-menu--inner">
+              <h3 class="spotbox-menu--header"><i class="icon-plus-sign"></i>Opret indhold</h3>
+              <ul class="spotbox-menu--list">
+                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-angle-right"></i>Mine forumindlæg</a></li>
+                <li class="spotbox-menu--list-item"><a href="my-use-cases.php"><i class="icon-angle-right"></i>Mine use cases</a></li>
+                <li class="spotbox-menu--list-item last"><a href="#"><i class="icon-angle-right"></i>Mine datasæt</a></li>
               </ul>
             </div>
           </div>

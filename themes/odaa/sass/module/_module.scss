@@ -92,6 +92,10 @@
     color: darken($base-primary-color, 75%);
   }
 
+  a.active {
+    @include font-bold();
+  }
+
   i[class^="icon-"] {
     margin-right: 5px;
     /* Icon gets cut off when it is the first item from the left */
@@ -410,8 +414,12 @@
   text-align: right;
 }
 
-%module-list-alternate-comments-link {
-  margin-right: $small-spacing;
+%module-list-alternate-footer-link {
+  margin-left: 15px;
+
+  i[class^="icon-"] {
+    margin-right: 5px;
+  }
 }
 
 %module-list-alternate-read-more {
