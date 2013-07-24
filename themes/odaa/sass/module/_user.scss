@@ -32,7 +32,9 @@
 /* User register
    ========================================================================== */
 .user-register--username-wrapper,
-.user-register--password-wrapper {
+.user-register--email-wrapper,
+.user-register--password-wrapper,
+.user-register--password-confirm-wrapper{
   margin-bottom: $large-spacing;
 }
 
@@ -42,4 +44,8 @@
 
 .user-register--submit {
   @extend .button;
+}
+
+.user-register--description {
+  @include opacity(.5);
 }

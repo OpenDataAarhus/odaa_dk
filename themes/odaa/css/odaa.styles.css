@@ -5806,15 +5806,23 @@ div.context-editor div.context-editable legend {
 
 /* User register
    ========================================================================== */
-/* line 35, ../sass/module/_user.scss */
+/* line 37, ../sass/module/_user.scss */
 .user-register--username-wrapper,
-.user-register--password-wrapper {
+.user-register--email-wrapper,
+.user-register--password-wrapper,
+.user-register--password-confirm-wrapper {
   margin-bottom: 20px;
 }
 
-/* line 39, ../sass/module/_user.scss */
+/* line 41, ../sass/module/_user.scss */
 .user-register--actions {
   text-align: right;
+}
+
+/* line 49, ../sass/module/_user.scss */
+.user-register--description {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
 }
 
 /**

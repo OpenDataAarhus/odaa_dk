@@ -4,7 +4,7 @@
   <?php include 'snippets/head.inc'; ?>
   <title>User register</title>
 </head>
-<body>
+<body class="user">
   <div id="page" class="page">
     <header class="site-header">
       <section class="header-wrapper">
