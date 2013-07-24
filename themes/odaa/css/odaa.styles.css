@@ -1425,7 +1425,7 @@ button.user-register--submit,
 /* Variables
    ========================================================================== */
 /* line 21, ../sass/framework/_labels.scss */
-.label, .label-inverted, .dataset--list-tag, .dataset--tags-list .dataset--tags-list-tag, .community--tag {
+.label, .label-inverted, .dataset--list-tag, .dataset--tags-list .dataset--tags-list-tag, .community--tag, .use-cases--tag {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
@@ -1442,22 +1442,22 @@ button.user-register--submit,
   /* Make sure it works on a link */
 }
 /* line 36, ../sass/framework/_labels.scss */
-.label a:link, .label-inverted a:link, .dataset--list-tag a:link, .dataset--tags-list .dataset--tags-list-tag a:link, .community--tag a:link, .label a:visited, .label-inverted a:visited, .dataset--list-tag a:visited, .dataset--tags-list .dataset--tags-list-tag a:visited, .community--tag a:visited, .label a:hover, .label-inverted a:hover, .dataset--list-tag a:hover, .dataset--tags-list .dataset--tags-list-tag a:hover, .community--tag a:hover {
+.label a:link, .label-inverted a:link, .dataset--list-tag a:link, .dataset--tags-list .dataset--tags-list-tag a:link, .community--tag a:link, .use-cases--tag a:link, .label a:visited, .label-inverted a:visited, .dataset--list-tag a:visited, .dataset--tags-list .dataset--tags-list-tag a:visited, .community--tag a:visited, .use-cases--tag a:visited, .label a:hover, .label-inverted a:hover, .dataset--list-tag a:hover, .dataset--tags-list .dataset--tags-list-tag a:hover, .community--tag a:hover, .use-cases--tag a:hover {
   color: white;
   text-decoration: none;
 }
 /* line 44, ../sass/framework/_labels.scss */
-.label:link, .label-inverted:link, .dataset--list-tag:link, .dataset--tags-list .dataset--tags-list-tag:link, .community--tag:link, .label:visited, .label-inverted:visited, .dataset--list-tag:visited, .dataset--tags-list .dataset--tags-list-tag:visited, .community--tag:visited {
+.label:link, .label-inverted:link, .dataset--list-tag:link, .dataset--tags-list .dataset--tags-list-tag:link, .community--tag:link, .use-cases--tag:link, .label:visited, .label-inverted:visited, .dataset--list-tag:visited, .dataset--tags-list .dataset--tags-list-tag:visited, .community--tag:visited, .use-cases--tag:visited {
   color: white;
 }
 /* line 48, ../sass/framework/_labels.scss */
-.label:hover, .label-inverted:hover, .dataset--list-tag:hover, .dataset--tags-list .dataset--tags-list-tag:hover, .community--tag:hover {
+.label:hover, .label-inverted:hover, .dataset--list-tag:hover, .dataset--tags-list .dataset--tags-list-tag:hover, .community--tag:hover, .use-cases--tag:hover {
   background-color: #b53409;
   color: white;
   text-decoration: none;
 }
 /* line 54, ../sass/framework/_labels.scss */
-.label i[class^="icon-"], .label-inverted i[class^="icon-"], .dataset--list-tag i[class^="icon-"], .dataset--tags-list .dataset--tags-list-tag i[class^="icon-"], .community--tag i[class^="icon-"] {
+.label i[class^="icon-"], .label-inverted i[class^="icon-"], .dataset--list-tag i[class^="icon-"], .dataset--tags-list .dataset--tags-list-tag i[class^="icon-"], .community--tag i[class^="icon-"], .use-cases--tag i[class^="icon-"] {
   margin-right: 5px;
 }
 
@@ -4032,12 +4032,12 @@ body {
   *position: relative;
   *zoom: 1;
 }
-/* line 46, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 46, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 #page:before, #page:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 #page:after {
   clear: both;
 }
@@ -4953,127 +4953,141 @@ body {
 /* Dataset labels
    ========================================================================== */
 /* line 358, ../sass/layout/_ckan.scss */
-.label[data-format=dwg], [data-format=dwg].label-inverted, [data-format=dwg].dataset--list-tag, .dataset--tags-list [data-format=dwg].dataset--tags-list-tag, [data-format=dwg].community--tag,
+.label[data-format=dwg], [data-format=dwg].label-inverted, [data-format=dwg].dataset--list-tag, .dataset--tags-list [data-format=dwg].dataset--tags-list-tag, [data-format=dwg].community--tag, [data-format=dwg].use-cases--tag,
 .label[data-format*=dwg],
 [data-format*=dwg].label-inverted,
 [data-format*=dwg].dataset--list-tag,
 .dataset--tags-list [data-format*=dwg].dataset--tags-list-tag,
-[data-format*=dwg].community--tag {
+[data-format*=dwg].community--tag,
+[data-format*=dwg].use-cases--tag {
   background-color: #aaa;
 }
 
 /* line 363, ../sass/layout/_ckan.scss */
-.label[data-format=html], [data-format=html].label-inverted, [data-format=html].dataset--list-tag, .dataset--tags-list [data-format=html].dataset--tags-list-tag, [data-format=html].community--tag,
+.label[data-format=html], [data-format=html].label-inverted, [data-format=html].dataset--list-tag, .dataset--tags-list [data-format=html].dataset--tags-list-tag, [data-format=html].community--tag, [data-format=html].use-cases--tag,
 .label[data-format*=html],
 [data-format*=html].label-inverted,
 [data-format*=html].dataset--list-tag,
 .dataset--tags-list [data-format*=html].dataset--tags-list-tag,
-[data-format*=html].community--tag {
+[data-format*=html].community--tag,
+[data-format*=html].use-cases--tag {
   background-color: #55a1ce;
 }
 
 /* line 368, ../sass/layout/_ckan.scss */
-.label[data-format=json], [data-format=json].label-inverted, [data-format=json].dataset--list-tag, .dataset--tags-list [data-format=json].dataset--tags-list-tag, [data-format=json].community--tag,
+.label[data-format=json], [data-format=json].label-inverted, [data-format=json].dataset--list-tag, .dataset--tags-list [data-format=json].dataset--tags-list-tag, [data-format=json].community--tag, [data-format=json].use-cases--tag,
 .label[data-format*=json],
 [data-format*=json].label-inverted,
 [data-format*=json].dataset--list-tag,
 .dataset--tags-list [data-format*=json].dataset--tags-list-tag,
-[data-format*=json].community--tag {
+[data-format*=json].community--tag,
+[data-format*=json].use-cases--tag {
   background-color: #ef7100;
 }
 
 /* line 373, ../sass/layout/_ckan.scss */
-.label[data-format=xml], [data-format=xml].label-inverted, [data-format=xml].dataset--list-tag, .dataset--tags-list [data-format=xml].dataset--tags-list-tag, [data-format=xml].community--tag,
+.label[data-format=xml], [data-format=xml].label-inverted, [data-format=xml].dataset--list-tag, .dataset--tags-list [data-format=xml].dataset--tags-list-tag, [data-format=xml].community--tag, [data-format=xml].use-cases--tag,
 .label[data-format*=xml],
 [data-format*=xml].label-inverted,
 [data-format*=xml].dataset--list-tag,
 .dataset--tags-list [data-format*=xml].dataset--tags-list-tag,
-[data-format*=xml].community--tag {
+[data-format*=xml].community--tag,
+[data-format*=xml].use-cases--tag {
   background-color: #ef7100;
 }
 
 /* line 378, ../sass/layout/_ckan.scss */
-.label[data-format=text], [data-format=text].label-inverted, [data-format=text].dataset--list-tag, .dataset--tags-list [data-format=text].dataset--tags-list-tag, [data-format=text].community--tag,
+.label[data-format=text], [data-format=text].label-inverted, [data-format=text].dataset--list-tag, .dataset--tags-list [data-format=text].dataset--tags-list-tag, [data-format=text].community--tag, [data-format=text].use-cases--tag,
 .label[data-format*=text],
 [data-format*=text].label-inverted,
 [data-format*=text].dataset--list-tag,
 .dataset--tags-list [data-format*=text].dataset--tags-list-tag,
-[data-format*=text].community--tag {
+[data-format*=text].community--tag,
+[data-format*=text].use-cases--tag {
   background-color: #74cbec;
 }
 
 /* line 383, ../sass/layout/_ckan.scss */
-.label[data-format=csv], [data-format=csv].label-inverted, [data-format=csv].dataset--list-tag, .dataset--tags-list [data-format=csv].dataset--tags-list-tag, [data-format=csv].community--tag,
+.label[data-format=csv], [data-format=csv].label-inverted, [data-format=csv].dataset--list-tag, .dataset--tags-list [data-format=csv].dataset--tags-list-tag, [data-format=csv].community--tag, [data-format=csv].use-cases--tag,
 .label[data-format*=csv],
 [data-format*=csv].label-inverted,
 [data-format*=csv].dataset--list-tag,
 .dataset--tags-list [data-format*=csv].dataset--tags-list-tag,
-[data-format*=csv].community--tag {
+[data-format*=csv].community--tag,
+[data-format*=csv].use-cases--tag {
   background-color: #dfb100;
 }
 
 /* line 388, ../sass/layout/_ckan.scss */
-.label[data-format=xls], [data-format=xls].label-inverted, [data-format=xls].dataset--list-tag, .dataset--tags-list [data-format=xls].dataset--tags-list-tag, [data-format=xls].community--tag,
+.label[data-format=xls], [data-format=xls].label-inverted, [data-format=xls].dataset--list-tag, .dataset--tags-list [data-format=xls].dataset--tags-list-tag, [data-format=xls].community--tag, [data-format=xls].use-cases--tag,
 .label[data-format*=xls],
 [data-format*=xls].label-inverted,
 [data-format*=xls].dataset--list-tag,
 .dataset--tags-list [data-format*=xls].dataset--tags-list-tag,
-[data-format*=xls].community--tag {
+[data-format*=xls].community--tag,
+[data-format*=xls].use-cases--tag {
   background-color: #2db55d;
 }
 
 /* line 393, ../sass/layout/_ckan.scss */
-.label[data-format=zip], [data-format=zip].label-inverted, [data-format=zip].dataset--list-tag, .dataset--tags-list [data-format=zip].dataset--tags-list-tag, [data-format=zip].community--tag,
+.label[data-format=zip], [data-format=zip].label-inverted, [data-format=zip].dataset--list-tag, .dataset--tags-list [data-format=zip].dataset--tags-list-tag, [data-format=zip].community--tag, [data-format=zip].use-cases--tag,
 .label[data-format*=zip],
 [data-format*=zip].label-inverted,
 [data-format*=zip].dataset--list-tag,
 .dataset--tags-list [data-format*=zip].dataset--tags-list-tag,
-[data-format*=zip].community--tag {
+[data-format*=zip].community--tag,
+[data-format*=zip].use-cases--tag {
   background-color: #686868;
 }
 
 /* line 398, ../sass/layout/_ckan.scss */
-.label[data-format=api], [data-format=api].label-inverted, [data-format=api].dataset--list-tag, .dataset--tags-list [data-format=api].dataset--tags-list-tag, [data-format=api].community--tag,
+.label[data-format=api], [data-format=api].label-inverted, [data-format=api].dataset--list-tag, .dataset--tags-list [data-format=api].dataset--tags-list-tag, [data-format=api].community--tag, [data-format=api].use-cases--tag,
 .label[data-format*=api],
 [data-format*=api].label-inverted,
 [data-format*=api].dataset--list-tag,
 .dataset--tags-list [data-format*=api].dataset--tags-list-tag,
-[data-format*=api].community--tag {
+[data-format*=api].community--tag,
+[data-format*=api].use-cases--tag {
   background-color: #ec96be;
 }
 
 /* line 403, ../sass/layout/_ckan.scss */
-.label[data-format=pdf], [data-format=pdf].label-inverted, [data-format=pdf].dataset--list-tag, .dataset--tags-list [data-format=pdf].dataset--tags-list-tag, [data-format=pdf].community--tag,
+.label[data-format=pdf], [data-format=pdf].label-inverted, [data-format=pdf].dataset--list-tag, .dataset--tags-list [data-format=pdf].dataset--tags-list-tag, [data-format=pdf].community--tag, [data-format=pdf].use-cases--tag,
 .label[data-format*=pdf],
 [data-format*=pdf].label-inverted,
 [data-format*=pdf].dataset--list-tag,
 .dataset--tags-list [data-format*=pdf].dataset--tags-list-tag,
-[data-format*=pdf].community--tag {
+[data-format*=pdf].community--tag,
+[data-format*=pdf].use-cases--tag {
   background-color: #e0051e;
 }
 
 /* line 411, ../sass/layout/_ckan.scss */
-.label[data-format=rdf], [data-format=rdf].label-inverted, [data-format=rdf].dataset--list-tag, .dataset--tags-list [data-format=rdf].dataset--tags-list-tag, [data-format=rdf].community--tag,
+.label[data-format=rdf], [data-format=rdf].label-inverted, [data-format=rdf].dataset--list-tag, .dataset--tags-list [data-format=rdf].dataset--tags-list-tag, [data-format=rdf].community--tag, [data-format=rdf].use-cases--tag,
 .label[data-format*=rdf],
 [data-format*=rdf].label-inverted,
 [data-format*=rdf].dataset--list-tag,
 .dataset--tags-list [data-format*=rdf].dataset--tags-list-tag,
 [data-format*=rdf].community--tag,
+[data-format*=rdf].use-cases--tag,
 .label[data-format*=nquad],
 [data-format*=nquad].label-inverted,
 [data-format*=nquad].dataset--list-tag,
 .dataset--tags-list [data-format*=nquad].dataset--tags-list-tag,
 [data-format*=nquad].community--tag,
+[data-format*=nquad].use-cases--tag,
 .label[data-format*=ntriples],
 [data-format*=ntriples].label-inverted,
 [data-format*=ntriples].dataset--list-tag,
 .dataset--tags-list [data-format*=ntriples].dataset--tags-list-tag,
 [data-format*=ntriples].community--tag,
+[data-format*=ntriples].use-cases--tag,
 .label[data-format*=turtle],
 [data-format*=turtle].label-inverted,
 [data-format*=turtle].dataset--list-tag,
 .dataset--tags-list [data-format*=turtle].dataset--tags-list-tag,
-[data-format*=turtle].community--tag {
+[data-format*=turtle].community--tag,
+[data-format*=turtle].use-cases--tag {
   background-color: #0b4498;
 }
 
@@ -5124,7 +5138,7 @@ body {
 }
 
 /* line 50, ../sass/layout/_drupal.scss */
-div.context-editor div.label, div.context-editor div.label-inverted, div.context-editor div.dataset--list-tag, div.context-editor .dataset--tags-list div.dataset--tags-list-tag, .dataset--tags-list div.context-editor div.dataset--tags-list-tag, div.context-editor div.community--tag {
+div.context-editor div.label, div.context-editor div.label-inverted, div.context-editor div.dataset--list-tag, div.context-editor .dataset--tags-list div.dataset--tags-list-tag, .dataset--tags-list div.context-editor div.dataset--tags-list-tag, div.context-editor div.community--tag, div.context-editor div.use-cases--tag {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -5134,7 +5148,7 @@ div.context-editor div.label, div.context-editor div.label-inverted, div.context
 }
 
 /* line 58, ../sass/layout/_drupal.scss */
-div.context-editor div.label.top, div.context-editor div.top.label-inverted, div.context-editor div.top.dataset--list-tag, div.context-editor .dataset--tags-list div.top.dataset--tags-list-tag, .dataset--tags-list div.context-editor div.top.dataset--tags-list-tag, div.context-editor div.top.community--tag {
+div.context-editor div.label.top, div.context-editor div.top.label-inverted, div.context-editor div.top.dataset--list-tag, div.context-editor .dataset--tags-list div.top.dataset--tags-list-tag, .dataset--tags-list div.context-editor div.top.dataset--tags-list-tag, div.context-editor div.top.community--tag, div.context-editor div.top.use-cases--tag {
   color: #404040;
 }
 
@@ -5272,7 +5286,7 @@ div.context-editor div.context-editable legend {
  * Used by CKAN for empty descriptions etc.
    ========================================================================== */
 /* line 24, ../sass/module/_module.scss */
-.spotbox--content-empty, .dataset--empty-text, .dataset--data-resources--list-item .dataset--data-resources--list-description-empty, .community--empty-text {
+.spotbox--content-empty, .dataset--empty-text, .dataset--data-resources--list-item .dataset--data-resources--list-description-empty, .community--empty-text, .use-cases--empty-text {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
   font-family: "exo-regular-italic";
@@ -5282,7 +5296,7 @@ div.context-editor div.context-editable legend {
 /* Section spacing
    ========================================================================== */
 /* line 32, ../sass/module/_module.scss */
-.page--section, .dataset--list-wrapper, .dataset--data-resources, .dataset--tags, .dataset--additional-info, .community--wrapper, .community--list-wrapper, .comments--wrapper, .comments--list-actions, .comments--list-item-actions, .comments--post-comment-wrapper {
+.page--section, .dataset--list-wrapper, .dataset--data-resources, .dataset--tags, .dataset--additional-info, .community--wrapper, .community--list-wrapper, .use-cases--wrapper, .use-cases--list-wrapper, .comments--wrapper, .comments--list-actions, .comments--list-item-actions, .comments--post-comment-wrapper {
   border-top: 1px dashed #e6e6e6;
   margin-top: 20px;
   padding-top: 20px;
@@ -5428,12 +5442,12 @@ div.context-editor div.context-editable legend {
 }
 /* line 210, ../sass/module/_module.scss */
 .spotbox--list a:link, .spotbox-menu--list a:link {
-  color: #404040;
+  color: #e5420c;
   text-decoration: none;
 }
 /* line 215, ../sass/module/_module.scss */
 .spotbox--list a:visited, .spotbox-menu--list a:visited {
-  color: #3b3b3b;
+  color: #db3f0b;
   text-decoration: none;
 }
 /* line 220, ../sass/module/_module.scss */
@@ -5535,18 +5549,18 @@ div.context-editor div.context-editable legend {
 /* %module-list-alternate
    ========================================================================== */
 /* line 325, ../sass/module/_module.scss */
-.dataset--list, .community--list {
+.dataset--list, .community--list, .use-cases--list {
   padding-left: 0;
 }
 
 /* line 329, ../sass/module/_module.scss */
-.dataset--list-heading, .community--list-heading {
+.dataset--list-heading, .community--list-heading, .use-cases--list-heading {
   font-size: 160%;
   margin-right: 5px;
 }
 
 /* line 334, ../sass/module/_module.scss */
-.dataset--list-item, .community--list-item {
+.dataset--list-item, .community--list-item, .use-cases--list-item {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -5557,7 +5571,7 @@ div.context-editor div.context-editable legend {
   padding: 20px;
 }
 /* line 343, ../sass/module/_module.scss */
-.dataset--list-item:hover, .community--list-item:hover {
+.dataset--list-item:hover, .community--list-item:hover, .use-cases--list-item:hover {
   border: 1px solid #d5d5d5;
 }
 
@@ -5591,78 +5605,86 @@ div.context-editor div.context-editable legend {
 }
 
 /* line 379, ../sass/module/_module.scss */
-.dataset--list-content, .community--list-content {
-  display: inline-block;
+.use-cases--list-image {
+  float: left;
+  margin-top: -5px;
+  margin-right: 20px;
   margin-bottom: 20px;
+  min-width: 60px;
+  width: 60px;
+}
+
+/* line 388, ../sass/module/_module.scss */
+.dataset--list-content, .community--list-content, .use-cases--list-content {
+  display: inline-block;
   max-width: 80%;
 }
 
-/* line 386, ../sass/module/_module.scss */
-.dataset--list-meta, .community--list-meta {
+/* line 394, ../sass/module/_module.scss */
+.dataset--list-meta, .community--list-meta, .use-cases--list-meta {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
-  margin-bottom: 5px;
 }
 
-/* line 392, ../sass/module/_module.scss */
-.dataset--list-posted, .community--list-posted {
+/* line 398, ../sass/module/_module.scss */
+.dataset--list-posted, .community--list-posted, .use-cases--list-posted {
   margin-right: 5px;
 }
 
-/* line 396, ../sass/module/_module.scss */
-.dataset--list-author, .community--list-author {
+/* line 402, ../sass/module/_module.scss */
+.dataset--list-author, .community--list-author, .use-cases--list-author {
   margin-left: 5px;
 }
 
-/* line 400, ../sass/module/_module.scss */
-.dataset--list-footer, .community--list-footer {
+/* line 406, ../sass/module/_module.scss */
+.dataset--list-footer, .community--list-footer, .use-cases--list-footer {
   border-top: 1px dashed #e6e6e6;
   margin-top: 20px;
   padding-top: 10px;
   text-align: right;
 }
 
-/* line 407, ../sass/module/_module.scss */
-.dataset--list-comments-link, .community--list-comments-link {
+/* line 413, ../sass/module/_module.scss */
+.dataset--list-comments-link, .community--list-comments-link, .use-cases--list-comments-link {
   margin-right: 5px;
 }
 
-/* line 411, ../sass/module/_module.scss */
-.dataset--list-read-more, .community--list-read-more {
+/* line 417, ../sass/module/_module.scss */
+.dataset--list-read-more, .community--list-read-more, .use-cases--list-read-more {
   margin-left: 5px;
 }
 
 /* List actions
    ========================================================================== */
-/* line 418, ../sass/module/_module.scss */
+/* line 424, ../sass/module/_module.scss */
 .list--actions, .comments--list-actions {
   margin-bottom: 20px;
   overflow: hidden;
 }
-/* line 431, ../sass/module/_module.scss */
+/* line 437, ../sass/module/_module.scss */
 .list--actions .list--action-sort-latest, .comments--list-actions .list--action-sort-latest {
   margin-right: 10px;
 }
-/* line 435, ../sass/module/_module.scss */
+/* line 441, ../sass/module/_module.scss */
 .list--actions .list--action-create, .comments--list-actions .list--action-create {
   float: right;
 }
 
 /* Pager
    ========================================================================== */
-/* line 446, ../sass/module/_module.scss */
+/* line 452, ../sass/module/_module.scss */
 .pager, .pagination {
   margin-top: 20px;
   padding-left: 0;
   text-align: center;
 }
-/* line 451, ../sass/module/_module.scss */
+/* line 457, ../sass/module/_module.scss */
 .pager li, .pagination li {
   display: inline-block;
   margin-left: -4px;
   margin-right: 4px;
 }
-/* line 458, ../sass/module/_module.scss */
+/* line 464, ../sass/module/_module.scss */
 .pager .pager-current, .pagination .pager-current,
 .pager a,
 .pagination a {
@@ -5673,21 +5695,21 @@ div.context-editor div.context-editable legend {
   padding-bottom: 5px;
   padding-left: 15px;
 }
-/* line 466, ../sass/module/_module.scss */
+/* line 472, ../sass/module/_module.scss */
 .pager .pager-current:hover, .pagination .pager-current:hover,
 .pager a:hover,
 .pagination a:hover {
   text-decoration: none;
 }
-/* line 471, ../sass/module/_module.scss */
+/* line 477, ../sass/module/_module.scss */
 .pager .pager-current, .pagination .pager-current {
   background-color: #e2e2e2;
 }
-/* line 475, ../sass/module/_module.scss */
+/* line 481, ../sass/module/_module.scss */
 .pager .disabled, .pagination .disabled {
   background-color: #fbfbfb;
 }
-/* line 478, ../sass/module/_module.scss */
+/* line 484, ../sass/module/_module.scss */
 .pager .disabled a:hover, .pagination .disabled a:hover {
   cursor: default;
   text-decoration: none;
@@ -6101,23 +6123,18 @@ div.context-editor div.context-editable legend {
   font-size: 160%;
 }
 
-/* line 36, ../sass/module/_dataset.scss */
-.dataset--list-content {
-  margin-bottom: 0;
-}
-
-/* line 67, ../sass/module/_dataset.scss */
+/* line 65, ../sass/module/_dataset.scss */
 .dataset--list-tags {
   float: left;
   padding-left: 0;
 }
 
-/* line 72, ../sass/module/_dataset.scss */
+/* line 70, ../sass/module/_dataset.scss */
 .dataset--list-tag-item {
   display: inline-block;
 }
 
-/* line 76, ../sass/module/_dataset.scss */
+/* line 74, ../sass/module/_dataset.scss */
 .dataset--list-tag {
   font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: normal;
@@ -6125,19 +6142,19 @@ div.context-editor div.context-editable legend {
 
 /* Dataset actions
    ========================================================================== */
-/* line 84, ../sass/module/_dataset.scss */
+/* line 82, ../sass/module/_dataset.scss */
 .dataset--list-actions {
   text-align: right;
 }
 
-/* line 88, ../sass/module/_dataset.scss */
+/* line 86, ../sass/module/_dataset.scss */
 .dataset--actions-sort {
   min-width: 35%;
 }
 
 /* Dataset tabs
    ========================================================================== */
-/* line 94, ../sass/module/_dataset.scss */
+/* line 92, ../sass/module/_dataset.scss */
 .dataset--tabs {
   -webkit-border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
@@ -6153,22 +6170,22 @@ div.context-editor div.context-editable legend {
   padding-left: 20px;
   /* Can't add a class because it is hardcoded in ODAA */
 }
-/* line 109, ../sass/module/_dataset.scss */
+/* line 107, ../sass/module/_dataset.scss */
 .dataset--tabs li {
   margin-right: 11px;
 }
-/* line 113, ../sass/module/_dataset.scss */
+/* line 111, ../sass/module/_dataset.scss */
 .dataset--tabs li a,
 .dataset--tabs li a:hover {
   border-top: 1px solid #d5d5d5;
   border-right: 1px solid #d5d5d5;
   border-left: 1px solid #d5d5d5;
 }
-/* line 120, ../sass/module/_dataset.scss */
+/* line 118, ../sass/module/_dataset.scss */
 .dataset--tabs li.active {
   margin-right: 11px;
 }
-/* line 124, ../sass/module/_dataset.scss */
+/* line 122, ../sass/module/_dataset.scss */
 .dataset--tabs li.active a,
 .dataset--tabs li.active a:hover {
   background-color: white;
@@ -6178,32 +6195,32 @@ div.context-editor div.context-editable legend {
 
 /* Dataset list resources
    ========================================================================== */
-/* line 139, ../sass/module/_dataset.scss */
+/* line 137, ../sass/module/_dataset.scss */
 .dataset--data-resources--list {
   padding-left: 0;
 }
 
-/* line 143, ../sass/module/_dataset.scss */
+/* line 141, ../sass/module/_dataset.scss */
 .dataset--data-resources--list-item {
   overflow: hidden;
   padding: 10px 10px 10px 60px;
   position: relative;
 }
-/* line 150, ../sass/module/_dataset.scss */
+/* line 148, ../sass/module/_dataset.scss */
 .dataset--data-resources--list-item .dataset--data-resources--list-info {
   float: left;
 }
-/* line 154, ../sass/module/_dataset.scss */
+/* line 152, ../sass/module/_dataset.scss */
 .dataset--data-resources--list-item .ckan--format-label {
   left: 10px;
   position: absolute;
   top: 10px;
 }
-/* line 160, ../sass/module/_dataset.scss */
+/* line 158, ../sass/module/_dataset.scss */
 .dataset--data-resources--list-item .dataset--data-resources--list-description {
   margin-bottom: 0;
 }
-/* line 168, ../sass/module/_dataset.scss */
+/* line 166, ../sass/module/_dataset.scss */
 .dataset--data-resources--list-item .dataset--data-resources--list-actions {
   float: right;
   margin-top: 2px;
@@ -6211,7 +6228,7 @@ div.context-editor div.context-editable legend {
 
 /* Dataset list tags
    ========================================================================== */
-/* line 190, ../sass/module/_dataset.scss */
+/* line 188, ../sass/module/_dataset.scss */
 .dataset--tags-list {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -6219,7 +6236,7 @@ div.context-editor div.context-editable legend {
   background-color: #f6f6f6;
   padding: 20px;
 }
-/* line 196, ../sass/module/_dataset.scss */
+/* line 194, ../sass/module/_dataset.scss */
 .dataset--tags-list .dataset--tags-list-item {
   display: inline-block;
   margin-right: 6px;
@@ -6248,6 +6265,27 @@ div.context-editor div.context-editable legend {
 
 /* line 75, ../sass/module/_community.scss */
 .community--tag {
+  font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 130%;
+}
+
+/**
+ * Community
+ *
+ * @author magnify
+ */
+/* Community
+   ========================================================================== */
+/* Community list
+   ========================================================================== */
+/* line 26, ../sass/module/_usecases.scss */
+.use-cases--empty-text {
+  font-size: 160%;
+}
+
+/* line 73, ../sass/module/_usecases.scss */
+.use-cases--tag {
   font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: normal;
   font-size: 130%;
