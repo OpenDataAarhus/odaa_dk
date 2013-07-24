@@ -76,7 +76,7 @@
   }
 
   function add_comment() {
-    var input = $('textarea').val().replace(/\n/g, '<br />');
+    var input = $('textarea').val().replace(/\n/g, '<br>');
     var title = $('h1.page--title').html();
     $.getJSON('/odaa_comment/add/' + title + '/' + hash + '/' + input, function (data) {
       if (data.status) {
