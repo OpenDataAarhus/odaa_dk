@@ -4,7 +4,7 @@
   <?php include 'snippets/head.inc'; ?>
   <title>User login</title>
 </head>
-<body>
+<body class="user">
   <div id="page" class="page">
     <header class="site-header">
       <section class="header-wrapper">
@@ -12,7 +12,10 @@
           <?php include 'snippets/logo.inc'; ?>
           <?php include 'snippets/search-form.inc'; ?>
           <?php echo main_menu(5); ?>
-          <?php include 'snippets/secondary-menu.inc'; ?>
+          <ul class="secondary-menu">
+            <li><a href="#" class="menu-item active"><span>Log ind</span></a></li>
+            <li><a href="#" class="menu-item last"><span>Opret bruger</span></a></li>
+          </ul>
         </div>
       </section>
     </header>
@@ -32,7 +35,8 @@
                   <input type="Password" />
                 </div>
                 <div class="user-login--actions">
-                  <span class="user-login--openid"><a href="#openid-login">Log in using OpenID</a></span>
+                  <a href="user-password.php" class="user-login--forgot-password">Glemt kodeord?</a>
+                  <a href="openid-login.php" class="user-login--openid">Log in using OpenID</a>
                   <input type="submit" value="Log ind" class="user-login--submit" />
                 </div>
               </form>
@@ -40,6 +44,15 @@
           </div>
         </div>
         <div class="secondary-content">
+          <div class="spotbox">
+            <div class="spotbox--inner">
+              <h3 class="spotbox--header">Brug for hjælp?</h3>
+              <div class="spotbox--content">
+                <p>Har du problemer med at logge ind eller oprette dig som bruger? Send os en besked så hjælper vi!</p>
+                <p><a href="#">Kontakt os</a></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
