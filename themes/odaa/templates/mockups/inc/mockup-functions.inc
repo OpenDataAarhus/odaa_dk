@@ -7,6 +7,7 @@
       'Forsiden' => 'forsiden.php',
       'Datasæt' => 'datasets.php',
       'Community' => 'community.php',
+      'Use cases' => 'use-cases.php',
       'Om ODAA' => 'about.php'
     );
 
