@@ -104,7 +104,11 @@ function odaa_preprocess_html(&$variables) {
 
   // Add the node type class (except for frontpage).
   if (isset($variables['page']['#type']) && empty($variables['is_front'])) {
-    $variables['classes_array'][] = drupal_html_class('node-type-' . $variables['page']['#type']);
+    if(arg(0) == 'user'){
+      $variables['classes_array'][] = 'user';
+    }else{
+      $variables['classes_array'][] = drupal_html_class('node-type-' . $variables['page']['#type']);
+    }
   }
 }
 
