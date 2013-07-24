@@ -208,12 +208,12 @@
   padding-left: 0;
 
   a:link {
-    color: $font-color-primary;
+    color: $link-color;
     text-decoration: none;
   }
 
   a:visited {
-    color: darken($font-color-primary, 2%);
+    color: darken($link-color, 2%);
     text-decoration: none;
   }
 
@@ -376,17 +376,23 @@
   }
 }
 
+%module-list-alternate-image {
+  float: left;
+  margin-top: -5px;
+  margin-right: $large-spacing;
+  margin-bottom: $large-spacing;
+  min-width: 60px;
+  width: 60px;
+}
+
 %module-list-alternate-content {
   display: inline-block;
-  margin-bottom: $large-spacing;
   max-width: 80%;
 }
 
 
 %module-list-alternate-meta {
   @include opacity(.75);
-
-  margin-bottom: $small-spacing;
 }
 
 %module-list-alternate-posted {
