@@ -49,7 +49,8 @@
                       </div>
                     </div>
                     <div class="community--list-footer">
-                      <a href="#" class="community--list-comments-link">12 kommentarer</a>|<a href="#" class="community--list-read-more">Læs mere</a>
+                      <a href="#" class="dataset--list-footer-link">12 kommentarer</a>
+                      <a href="dataset.php" class="dataset--list-footer-link">Se datasættet</a>                      
                     </div>
                   </li>
                   <li class="community--list-item">
@@ -62,7 +63,8 @@
                       </div>
                     </div>
                     <div class="community--list-footer">
-                      <a href="#" class="community--list-comments-link">0 kommentarer</a>|<a href="#" class="community--list-read-more">Læs mere</a>
+                      <a href="#" class="dataset--list-footer-link">12 kommentarer</a>
+                      <a href="dataset.php" class="dataset--list-footer-link">Se datasættet</a>                      
                     </div>
                   </li>
                   <li class="community--list-item">
@@ -74,7 +76,8 @@
                       </div>
                     </div>
                     <div class="community--list-footer">
-                      <a href="#" class="community--list-comments-link">12 kommentarer</a>|<a href="#" class="community--list-read-more">Læs mere</a>
+                      <a href="#" class="dataset--list-footer-link">12 kommentarer</a>
+                      <a href="dataset.php" class="dataset--list-footer-link">Se datasættet</a>                      
                     </div>
                   </li>
                   <li class="community--list-item">
@@ -87,7 +90,8 @@
                       </div>
                     </div>
                     <div class="community--list-footer">
-                      <a href="#" class="community--list-comments-link">12 kommentarer</a>|<a href="#" class="community--list-read-more">Læs mere</a>
+                      <a href="#" class="dataset--list-footer-link">12 kommentarer</a>
+                      <a href="dataset.php" class="dataset--list-footer-link">Se datasættet</a>                      
                     </div>
                   </li>
                   <li class="community--list-item">
@@ -100,7 +104,8 @@
                       </div>
                     </div>
                     <div class="community--list-footer">
-                      <a href="#" class="community--list-comments-link">0 kommentarer</a>|<a href="#" class="community--list-read-more">Læs mere</a>
+                      <a href="#" class="dataset--list-footer-link">12 kommentarer</a>
+                      <a href="dataset.php" class="dataset--list-footer-link">Se datasættet</a>                      
                     </div>
                   </li>
                   <li class="community--list-item">
@@ -112,7 +117,8 @@
                       </div>
                     </div>
                     <div class="community--list-footer">
-                      <a href="#" class="community--list-comments-link">12 kommentarer</a>|<a href="#" class="community--list-read-more">Læs mere</a>
+                      <a href="#" class="dataset--list-footer-link">12 kommentarer</a>
+                      <a href="dataset.php" class="dataset--list-footer-link">Se datasættet</a>                      
                     </div>
                   </li>
                 </ul>

@@ -8,67 +8,69 @@
 
 /* Community
    ========================================================================== */
-.community--wrapper {
+.use-cases--wrapper {
   @extend %section-spacing;
 }
 
 
 /* Community list
    ========================================================================== */
-.community--list-wrapper {
+.use-cases--list-wrapper {
   @extend %section-spacing;
 }
 
-.community--list-heading {
+.use-cases--list-heading {
   @extend %module-list-alternate-heading;
 }
 
-.community--empty-text {
+.use-cases--empty-text {
   @extend %empty-text;
 
   font-size: $font-size-larger;
 }
 
-.community--list {
+.use-cases--list {
   @extend %module-list-alternate;
-
-  margin-top: $large-spacing;
 }
 
-.community--list-item {
+.use-cases--list-item {
   @extend %module-list-alternate-item;
 }
 
-.community--list-icon {
-  @extend %module-list-alternate-icon;
+.use-cases--list-image {
+  @extend %module-list-alternate-image;
 }
 
-.community--list-content {
+.use-cases--list-content {
   @extend %module-list-alternate-content;
 }
 
 
-.community--list-meta {
+.use-cases--list-meta {
   @extend %module-list-alternate-meta;
 }
 
-.community--list-posted {
+.use-cases--list-posted {
   @extend %module-list-alternate-posted;
 }
 
-.community--list-author {
+.use-cases--list-author {
   @extend %module-list-alternate-author;
 }
 
-.community--list-footer {
+.use-cases--list-footer {
   @extend %module-list-alternate-footer;
 }
 
-.community--list-footer-link {
+.use-cases--list-footer-link {
   @extend %module-list-alternate-footer-link;
 }
 
-.community--tag {
+.use-cases--list-read-more {
+  @extend %module-list-alternate-read-more;
+}
+
+.use-cases--tag {
   @include font-normal();
   @extend .label;
 
