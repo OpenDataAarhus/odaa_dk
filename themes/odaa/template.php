@@ -176,7 +176,6 @@ function odaa_form_alter(&$form, &$form_state, $form_id){
     case 'user_login':
       unset($form['name']['#description']);
       unset($form['pass']['#description']);
-      unset($form['openid_links']);
       $form['#prefix']  =
           '<div class="page--content-wrapper">
              <section class="page--content">
@@ -184,8 +183,7 @@ function odaa_form_alter(&$form, &$form_state, $form_id){
       $form['#suffix']  =  '</div>';
       $form['actions']['#prefix']  = 
               '<div class="user-login--actions">
-              <a href="/user/password" class="user-login--forgot-password">'.t('Forgot password?').'</a>
-              <a href="#openid-login" class="user-login--openid">'.t('Log in using OpenID').'</a>';
+              <a href="/user/password" class="user-login--forgot-password">'.t('Forgot password?').'</a>';
       $form['actions']['#suffix']  = '</div>';
       break;
   }
