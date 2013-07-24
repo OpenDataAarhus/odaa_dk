@@ -4197,7 +4197,7 @@ body {
 
 /* Frontpage layout */
 /* line 106, ../sass/layout/_layout.scss */
-.front .primary-content {
+.front .primary-content, .user .primary-content {
   float: left;
   width: 66.66667%;
   margin-left: 0%;
@@ -4213,11 +4213,9 @@ body {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
-  padding-right: 0;
-  padding-left: 0;
 }
-/* line 113, ../sass/layout/_layout.scss */
-.front .secondary-content {
+/* line 110, ../sass/layout/_layout.scss */
+.front .secondary-content, .user .secondary-content {
   float: right;
   width: 33.33333%;
   margin-right: 0%;
@@ -4234,8 +4232,8 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 117, ../sass/layout/_layout.scss */
-.front .tertiary-content {
+/* line 114, ../sass/layout/_layout.scss */
+.front .tertiary-content, .user .tertiary-content {
   clear: left;
   float: left;
   width: 66.66667%;
@@ -4255,8 +4253,8 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 124, ../sass/layout/_layout.scss */
-.front .tertiary-content .spotbox:nth-child(odd) {
+/* line 121, ../sass/layout/_layout.scss */
+.front .tertiary-content .spotbox:nth-child(odd), .user .tertiary-content .spotbox:nth-child(odd) {
   clear: right;
   float: left;
   width: 50%;
@@ -4274,8 +4272,8 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 129, ../sass/layout/_layout.scss */
-.front .tertiary-content .spotbox:nth-child(even) {
+/* line 126, ../sass/layout/_layout.scss */
+.front .tertiary-content .spotbox:nth-child(even), .user .tertiary-content .spotbox:nth-child(even) {
   float: right;
   width: 50%;
   margin-right: 0%;
@@ -4293,8 +4291,9 @@ body {
   _overflow-y: visible;
 }
 
+/* User pages */
 /* Page layout */
-/* line 138, ../sass/layout/_layout.scss */
+/* line 140, ../sass/layout/_layout.scss */
 .node-type-page .primary-content {
   float: right;
   width: 75%;
@@ -4312,7 +4311,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 142, ../sass/layout/_layout.scss */
+/* line 144, ../sass/layout/_layout.scss */
 .node-type-page .secondary-content {
   float: left;
   width: 25%;
@@ -4330,7 +4329,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 146, ../sass/layout/_layout.scss */
+/* line 148, ../sass/layout/_layout.scss */
 .node-type-page .tertiary-content {
   clear: right;
   float: right;
@@ -4351,7 +4350,7 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 153, ../sass/layout/_layout.scss */
+/* line 155, ../sass/layout/_layout.scss */
 .node-type-page .tertiary-content .spotbox:nth-child(odd) {
   clear: left;
   float: left;
@@ -4370,7 +4369,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 158, ../sass/layout/_layout.scss */
+/* line 160, ../sass/layout/_layout.scss */
 .node-type-page .tertiary-content .spotbox:nth-child(even) {
   float: right;
   width: 50%;
@@ -5789,8 +5788,11 @@ div.context-editor div.context-editable legend {
   text-align: right;
 }
 
-/* line 24, ../sass/module/_user.scss */
+/* line 25, ../sass/module/_user.scss */
+.user-login--forgot-password,
 .user-login--openid {
+  float: left;
+  margin-top: 5px;
   margin-right: 10px;
 }
 
@@ -5944,14 +5946,16 @@ div.context-editor div.context-editable legend {
   _overflow: hidden;
   _overflow-y: visible;
   margin-top: 20px;
+  padding-right: 0;
+  padding-left: 0;
 }
 
-/* line 81, ../sass/module/_search.scss */
+/* line 83, ../sass/module/_search.scss */
 .search-spotbox--inner {
   overflow: hidden;
 }
 
-/* line 91, ../sass/module/_search.scss */
+/* line 93, ../sass/module/_search.scss */
 .search-spotbox--dataset-amount-wrapper {
   float: left;
   width: 25%;
@@ -5972,19 +5976,19 @@ div.context-editor div.context-editable legend {
   text-align: center;
 }
 
-/* line 98, ../sass/module/_search.scss */
+/* line 100, ../sass/module/_search.scss */
 .search-spotbox--dataset-amount {
   font-size: 400%;
   margin-bottom: 10px;
 }
 
-/* line 103, ../sass/module/_search.scss */
+/* line 105, ../sass/module/_search.scss */
 .search-spotbox--dataset-amount-text {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
 
-/* line 107, ../sass/module/_search.scss */
+/* line 109, ../sass/module/_search.scss */
 .search-spotbox--wrapper {
   float: left;
   width: 75%;
@@ -6005,7 +6009,7 @@ div.context-editor div.context-editable legend {
   padding-top: 22px;
   padding-left: 30px;
 }
-/* line 115, ../sass/module/_search.scss */
+/* line 117, ../sass/module/_search.scss */
 .search-spotbox--wrapper .search-form-text {
   min-width: 100%;
 }

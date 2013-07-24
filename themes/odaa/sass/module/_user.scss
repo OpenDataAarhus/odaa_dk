@@ -21,7 +21,10 @@
   text-align: right;
 }
 
+.user-login--forgot-password,
 .user-login--openid {
+  float: left;
+  margin-top: 5px;
   margin-right: 10px;
 }
 
