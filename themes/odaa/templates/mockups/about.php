@@ -4,15 +4,15 @@
   <?php include 'snippets/head.inc'; ?>
   <title>Om ODAA</title>
 </head>
-<body class="left-sidebar">
+<body>
   <div id="page" class="page">
     <header class="site-header">
       <section class="header-wrapper">
         <div class="header-inner">
           <?php include 'snippets/logo.inc'; ?>
           <?php include 'snippets/search-form.inc'; ?>
-          <?php echo main_menu(3); ?>
-          <?php include 'snippets/secondary-menu.inc'; ?>
+          <?php echo main_menu(4); ?>
+          <?php echo secondary_menu(false); ?>
         </div>
       </section>
     </header>
