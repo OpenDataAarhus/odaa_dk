@@ -28,7 +28,7 @@
                   <input type="text" />
                   <div class="user-register--description">Spaces are allowed; punctuation is not allowed except for periods, hyphens, apostrophes, and underscores.</div>
                 </div>
-                <div class="user-register--password-wrapper">
+                <div class="user-register--email-wrapper">
                   <label class="user-register--label">E-mail address</label>
                   <input type="text" />
                   <div class="user-register--description">A valid e-mail address. All e-mails from the system will be sent to this address. The e-mail address is not made public and will only be used if you wish to receive a new password or wish to receive certain news or notifications by e-mail.</div>
@@ -37,7 +37,7 @@
                   <label class="user-register--label">Password</label>
                   <input type="password" />
                 </div>
-                <div class="user-register--password-wrapper">
+                <div class="user-register--password-confirm-wrapper">
                   <label class="user-register--label">Confirm password</label>
                   <input type="password" />
                 </div>
