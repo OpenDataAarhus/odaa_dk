@@ -96,7 +96,7 @@ function _odaa_ckan_blocks_datasets() {
  *  Themed HTML
  */
 function _odaa_ckan_blocks_recent_dataset_changes() {
-  $cid = basename(__FILE__) . '_recent_dataset_changes';
+  $cid = 'current_package_list_with_resources';
   $cache = cache_get($cid);
   if ($cache && $cache->expire > REQUEST_TIME) {
     // Valid cache.
