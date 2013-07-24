@@ -76,6 +76,8 @@
   @include zen-grid-item(12, 1);
 
   margin-top: $large-spacing;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .search-spotbox--inner {

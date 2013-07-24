@@ -2,7 +2,7 @@
 <?php include './snippets/doctype.inc'; ?>
 <head profile="http://www.w3.org/1999/xhtml/vocab">
   <?php include 'snippets/head.inc'; ?>
-  <title>User login</title>
+  <title>User register</title>
 </head>
 <body class="user">
   <div id="page" class="page">
@@ -12,7 +12,7 @@
           <?php include 'snippets/logo.inc'; ?>
           <?php include 'snippets/search-form.inc'; ?>
           <?php echo main_menu(5); ?>
-          <?php echo secondary_menu(0); ?>
+          <?php echo secondary_menu(1); ?>
         </div>
       </section>
     </header>
@@ -21,20 +21,28 @@
         <div class="primary-content">
           <div class="page--content-wrapper">
             <section class="page--content">
-              <h1 class="page--title">User login</h1>
+              <h1 class="page--title">User register</h1>
               <form>
-                <div class="user-login--username-wrapper">
-                  <label class="user-login--label">Username</label>
+                <div class="user-register--username-wrapper">
+                  <label class="user-register--label">Username</label>
                   <input type="text" />
+                  <div class="user-register--description">Spaces are allowed; punctuation is not allowed except for periods, hyphens, apostrophes, and underscores.</div>
                 </div>
-                <div class="user-login--password-wrapper">
-                  <label class="user-login--label">Kodeord</label>
-                  <input type="Password" />
+                <div class="user-register--email-wrapper">
+                  <label class="user-register--label">E-mail address</label>
+                  <input type="text" />
+                  <div class="user-register--description">A valid e-mail address. All e-mails from the system will be sent to this address. The e-mail address is not made public and will only be used if you wish to receive a new password or wish to receive certain news or notifications by e-mail.</div>
                 </div>
-                <div class="user-login--actions">
-                  <a href="user-password.php" class="user-login--forgot-password">Glemt kodeord?</a>
-                  <a href="openid-login.php" class="user-login--openid">Log in using OpenID</a>
-                  <input type="submit" value="Log ind" class="user-login--submit" />
+                <div class="user-register--password-wrapper">
+                  <label class="user-register--label">Password</label>
+                  <input type="password" />
+                </div>
+                <div class="user-register--password-confirm-wrapper">
+                  <label class="user-register--label">Confirm password</label>
+                  <input type="password" />
+                </div>
+                <div class="user-register--actions">
+                  <input type="submit" value="Create new account" class="user-register--submit" />
                 </div>
               </form>
             </section>
