@@ -64,6 +64,15 @@ $spotbox-background-color:        $white;
   @extend %module--block--list-posted;
 }
 
+.spotbox--list-show-more {
+  @include font-bold();
+
+  border-top: 1px dashed transparentize($black, .9);
+  margin-top: $medium-spacing;
+  margin-bottom: 0;
+  padding-top: $medium-spacing;
+  text-align: right;
+}
 
 /* Spotbox images */
 .spotbox--image {
