@@ -238,7 +238,7 @@ function odaa_form_element($variables){
     case 'before':
     case 'invisible':
       $output .= ' ' . theme('form_element_label', $variables);
-      $output .= ' ' . $prefix . $element['#children'] . $suffix . "\n";
+      $output .= ' ' . $element['#children'] . "\n";
       break;
     case 'attribute':
       // Output no label and no required marker, only the children.
