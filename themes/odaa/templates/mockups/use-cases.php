@@ -105,8 +105,8 @@
           <div class="sub-menu-wrapper">
             <h2 class="sub-menu-header">Community</h2>
             <ul class="sub-menu">
-              <li><a href="#" class="menu-item active"><span>Use cases</span></a></li>
-              <li class="last"><a href="#" class="menu-item"><span>Forum</span></a>
+              <li><a href="use-cases.php" class="menu-item active"><span>Use cases</span></a></li>
+              <li class="last"><a href="forum.php" class="menu-item"><span>Forum</span></a>
             </ul>
           </div>
           <div class="spotbox-menu">
@@ -114,7 +114,7 @@
               <h3 class="spotbox-menu--header"><i class="icon-plus-sign"></i>Opret indhold</h3>
               <ul class="spotbox-menu--list">
                 <li class="spotbox-menu--list-item"><a href="#"><i class="icon-angle-right"></i>Opret forumindlæg</a></li>
-                <li class="spotbox-menu--list-item last"><a href="my-use-cases.php"><i class="icon-angle-right"></i>Opret use case</a></li>
+                <li class="spotbox-menu--list-item last"><a href="create-use-cases.php"><i class="icon-angle-right"></i>Opret use case</a></li>
               </ul>
             </div>
           </div>
