@@ -5345,7 +5345,7 @@ div.context-editor div.context-editable legend {
 /* Section spacing
    ========================================================================== */
 /* line 32, ../sass/module/_module.scss */
-.page--section, .user-profile--info, .user-profile--actions, .dataset--list-wrapper, .dataset--data-resources, .dataset--tags, .dataset--additional-info, .community--wrapper, .forum--wrapper, .forum--list-wrapper, .comments--wrapper, .comments--list-actions, .comments--list-item-actions, .comments--post-comment-wrapper {
+.page--section, .user-profile--info, .user-profile--actions, .dataset--list-wrapper, .dataset--data-resources, .dataset--tags, .dataset--additional-info, .community--wrapper, .forum--wrapper, .forum--list-wrapper, .use-cases--wrapper, .comments--wrapper, .comments--list-actions, .comments--list-item-actions, .comments--post-comment-wrapper {
   border-top: 1px dashed #e6e6e6;
   margin-top: 20px;
   padding-top: 20px;
@@ -6419,13 +6419,13 @@ div.context-editor div.context-editable legend {
  */
 /* line 9, ../sass/module/_usecases.scss */
 .use-cases--wrapper {
-  margin-top: -20px;
   margin-right: -10px;
   margin-left: -10px;
   overflow: hidden;
+  padding-top: 0;
 }
 
-/* line 20, ../sass/module/_usecases.scss */
+/* line 22, ../sass/module/_usecases.scss */
 .use-cases--list-item-first {
   clear: left;
   float: left;
@@ -6445,7 +6445,7 @@ div.context-editor div.context-editable legend {
   _overflow-y: visible;
 }
 
-/* line 26, ../sass/module/_usecases.scss */
+/* line 28, ../sass/module/_usecases.scss */
 .use-cases--list-item-second {
   float: left;
   width: 33.33333%;
@@ -6464,7 +6464,7 @@ div.context-editor div.context-editable legend {
   _overflow-y: visible;
 }
 
-/* line 31, ../sass/module/_usecases.scss */
+/* line 33, ../sass/module/_usecases.scss */
 .use-cases--list-item-third {
   float: left;
   width: 33.33333%;
@@ -6483,9 +6483,26 @@ div.context-editor div.context-editable legend {
   _overflow-y: visible;
 }
 
-/* line 40, ../sass/module/_usecases.scss */
+/* line 42, ../sass/module/_usecases.scss */
 .use-cases--list-footer {
   text-align: left;
+}
+
+/* line 52, ../sass/module/_usecases.scss */
+.use-cases--list-actions {
+  text-align: right;
+}
+
+/* line 56, ../sass/module/_usecases.scss */
+.use-cases--list-actions-label {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75;
+  margin-right: 10px;
+}
+
+/* line 62, ../sass/module/_usecases.scss */
+.use-cases--actions-sort {
+  min-width: 25%;
 }
 
 /**

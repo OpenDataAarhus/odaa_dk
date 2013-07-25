@@ -7,10 +7,12 @@
 
 
 .use-cases--wrapper {
-  margin-top: -20px;
+  @extend %section-spacing;
+
   margin-right: -10px;
   margin-left: -10px;
   overflow: hidden;
+  padding-top: 0;
 }
 
 %use-cases--list-item {
@@ -39,10 +41,24 @@
 
 .use-cases--list-footer {
   @extend %module-list-alternate-footer;
-  
+
   text-align: left;
 }
 
 .use-cases--list-footer-link {
   @extend %module-list-alternate-footer-link;
+}
+
+.use-cases--list-actions {
+  text-align: right;
+}
+
+.use-cases--list-actions-label {
+  @include opacity(.75);
+
+  margin-right: 10px;
+}
+
+.use-cases--actions-sort {
+  min-width: 25%;
 }
