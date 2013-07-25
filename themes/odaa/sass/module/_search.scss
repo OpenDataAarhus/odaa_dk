@@ -51,7 +51,7 @@
 
   .search-form--content-block--label {
     @include opacity(.75);
-    
+
     display: block;
   }
 
@@ -119,4 +119,23 @@
   .search-form-text {
     min-width: 100%;
   }
+}
+
+
+/* Search actions
+   ========================================================================== */
+.search--list-actions {
+  margin-bottom: $large-spacing;
+  overflow: hidden;
+  text-align: right;
+}
+
+.search--list-actions-label {
+  @include opacity(.75);
+
+  margin-right: 10px;
+}
+
+.search--actions-sort {
+  min-width: 25%;
 }

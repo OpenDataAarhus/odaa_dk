@@ -1014,10 +1014,8 @@ table tbody tr:hover th,
    ========================================================================== */
 /* line 29, ../sass/framework/_buttons.scss */
 .button, .form-submit, #context-inline-editor li.context-editable div.links .edit,
-#context-inline-editor li.context-editing div.links .done, .list--actions .list--action-sort-latest, .comments--list-actions .list--action-sort-latest,
-.list--actions .list--action-sort-hot,
-.comments--list-actions .list--action-sort-hot, .user-login--submit, .user-register--submit, .search-form--content-block .search-form--content-block--button,
-a.button, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview, .list--actions .list--action-create, .comments--list-actions .list--action-create, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download, .comments--post-comment-login,
+#context-inline-editor li.context-editing div.links .done, .user-login--submit, .user-register--submit, .search-form--content-block .search-form--content-block--button,
+a.button, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download, .comments--post-comment-login,
 .comments--post-comment-create-user {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1037,29 +1035,19 @@ a.button, .dataset--data-resources--list-item .dataset--data-resources--list-act
 }
 /* line 45, ../sass/framework/_buttons.scss */
 .button:focus, .form-submit:focus, #context-inline-editor li.context-editable div.links .edit:focus,
-#context-inline-editor li.context-editing div.links .done:focus, .list--actions .list--action-sort-latest:focus, .comments--list-actions .list--action-sort-latest:focus,
-.list--actions .list--action-sort-hot:focus,
-.comments--list-actions .list--action-sort-hot:focus, .user-login--submit:focus, .user-register--submit:focus, .search-form--content-block .search-form--content-block--button:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:focus, .list--actions .list--action-create:focus, .comments--list-actions .list--action-create:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:focus, .comments--post-comment-login:focus,
+#context-inline-editor li.context-editing div.links .done:focus, .user-login--submit:focus, .user-register--submit:focus, .search-form--content-block .search-form--content-block--button:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:focus, .comments--post-comment-login:focus,
 .comments--post-comment-create-user:focus, .button:hover, .form-submit:hover, #context-inline-editor li.context-editable div.links .edit:hover,
-#context-inline-editor li.context-editing div.links .done:hover, .list--actions .list--action-sort-latest:hover, .comments--list-actions .list--action-sort-latest:hover,
-.list--actions .list--action-sort-hot:hover,
-.comments--list-actions .list--action-sort-hot:hover, .user-login--submit:hover, .user-register--submit:hover, .search-form--content-block .search-form--content-block--button:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:hover, .list--actions .list--action-create:hover, .comments--list-actions .list--action-create:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:hover, .comments--post-comment-login:hover,
+#context-inline-editor li.context-editing div.links .done:hover, .user-login--submit:hover, .user-register--submit:hover, .search-form--content-block .search-form--content-block--button:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:hover, .comments--post-comment-login:hover,
 .comments--post-comment-create-user:hover, .button:active, .form-submit:active, #context-inline-editor li.context-editable div.links .edit:active,
-#context-inline-editor li.context-editing div.links .done:active, .list--actions .list--action-sort-latest:active, .comments--list-actions .list--action-sort-latest:active,
-.list--actions .list--action-sort-hot:active,
-.comments--list-actions .list--action-sort-hot:active, .user-login--submit:active, .user-register--submit:active, .search-form--content-block .search-form--content-block--button:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:active, .list--actions .list--action-create:active, .comments--list-actions .list--action-create:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:active, .comments--post-comment-login:active,
+#context-inline-editor li.context-editing div.links .done:active, .user-login--submit:active, .user-register--submit:active, .search-form--content-block .search-form--content-block--button:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:active, .comments--post-comment-login:active,
 .comments--post-comment-create-user:active {
   text-decoration: none;
 }
 /* line 51, ../sass/framework/_buttons.scss */
 .disabled.button, .disabled.form-submit, #context-inline-editor li.context-editable div.links .disabled.edit,
-#context-inline-editor li.context-editing div.links .disabled.done, .list--actions .disabled.list--action-sort-latest, .comments--list-actions .disabled.list--action-sort-latest,
-.list--actions .disabled.list--action-sort-hot,
-.comments--list-actions .disabled.list--action-sort-hot, .disabled.user-login--submit, .disabled.user-register--submit, .search-form--content-block .disabled.search-form--content-block--button, .dataset--data-resources--list-item .disabled.dataset--data-resources--list-actions-preview, .list--actions .disabled.list--action-create, .comments--list-actions .disabled.list--action-create, .dataset--data-resources--list-item .disabled.dataset--data-resources--list-actions-download, .disabled.comments--post-comment-login,
+#context-inline-editor li.context-editing div.links .disabled.done, .disabled.user-login--submit, .disabled.user-register--submit, .search-form--content-block .disabled.search-form--content-block--button, .dataset--data-resources--list-item .disabled.dataset--data-resources--list-actions-preview, .dataset--data-resources--list-item .disabled.dataset--data-resources--list-actions-download, .disabled.comments--post-comment-login,
 .disabled.comments--post-comment-create-user, [disabled].button, [disabled].form-submit, #context-inline-editor li.context-editable div.links [disabled].edit,
-#context-inline-editor li.context-editing div.links [disabled].done, .list--actions [disabled].list--action-sort-latest, .comments--list-actions [disabled].list--action-sort-latest,
-.list--actions [disabled].list--action-sort-hot,
-.comments--list-actions [disabled].list--action-sort-hot, [disabled].user-login--submit, [disabled].user-register--submit, .search-form--content-block [disabled].search-form--content-block--button, .dataset--data-resources--list-item [disabled].dataset--data-resources--list-actions-preview, .list--actions [disabled].list--action-create, .comments--list-actions [disabled].list--action-create, .dataset--data-resources--list-item [disabled].dataset--data-resources--list-actions-download, [disabled].comments--post-comment-login,
+#context-inline-editor li.context-editing div.links [disabled].done, [disabled].user-login--submit, [disabled].user-register--submit, .search-form--content-block [disabled].search-form--content-block--button, .dataset--data-resources--list-item [disabled].dataset--data-resources--list-actions-preview, .dataset--data-resources--list-item [disabled].dataset--data-resources--list-actions-download, [disabled].comments--post-comment-login,
 [disabled].comments--post-comment-create-user {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
@@ -1074,17 +1062,11 @@ a.button, .dataset--data-resources--list-item .dataset--data-resources--list-act
 /* Default button */
 /* line 98, ../sass/framework/_buttons.scss */
 .button, .form-submit, #context-inline-editor li.context-editable div.links .edit,
-#context-inline-editor li.context-editing div.links .done, .list--actions .list--action-sort-latest, .comments--list-actions .list--action-sort-latest,
-.list--actions .list--action-sort-hot,
-.comments--list-actions .list--action-sort-hot, .user-login--submit, .user-register--submit, .search-form--content-block .search-form--content-block--button,
+#context-inline-editor li.context-editing div.links .done, .user-login--submit, .user-register--submit, .search-form--content-block .search-form--content-block--button,
 a.button,
 a.form-submit,
 #context-inline-editor li.context-editable div.links a.edit,
 #context-inline-editor li.context-editing div.links a.done,
-.list--actions a.list--action-sort-latest,
-.comments--list-actions a.list--action-sort-latest,
-.list--actions a.list--action-sort-hot,
-.comments--list-actions a.list--action-sort-hot,
 a.user-login--submit,
 a.user-register--submit,
 .search-form--content-block a.search-form--content-block--button {
@@ -1100,20 +1082,12 @@ a.user-register--submit,
 }
 /* line 76, ../sass/framework/_buttons.scss */
 .button:link, .form-submit:link, #context-inline-editor li.context-editable div.links .edit:link,
-#context-inline-editor li.context-editing div.links .done:link, .list--actions .list--action-sort-latest:link, .comments--list-actions .list--action-sort-latest:link,
-.list--actions .list--action-sort-hot:link,
-.comments--list-actions .list--action-sort-hot:link, .user-login--submit:link, .user-register--submit:link, .search-form--content-block .search-form--content-block--button:link, .button:visited, .form-submit:visited, #context-inline-editor li.context-editable div.links .edit:visited,
-#context-inline-editor li.context-editing div.links .done:visited, .list--actions .list--action-sort-latest:visited, .comments--list-actions .list--action-sort-latest:visited,
-.list--actions .list--action-sort-hot:visited,
-.comments--list-actions .list--action-sort-hot:visited, .user-login--submit:visited, .user-register--submit:visited, .search-form--content-block .search-form--content-block--button:visited,
+#context-inline-editor li.context-editing div.links .done:link, .user-login--submit:link, .user-register--submit:link, .search-form--content-block .search-form--content-block--button:link, .button:visited, .form-submit:visited, #context-inline-editor li.context-editable div.links .edit:visited,
+#context-inline-editor li.context-editing div.links .done:visited, .user-login--submit:visited, .user-register--submit:visited, .search-form--content-block .search-form--content-block--button:visited,
 a.button:link,
 a.form-submit:link,
 #context-inline-editor li.context-editable div.links a.edit:link,
 #context-inline-editor li.context-editing div.links a.done:link,
-.list--actions a.list--action-sort-latest:link,
-.comments--list-actions a.list--action-sort-latest:link,
-.list--actions a.list--action-sort-hot:link,
-.comments--list-actions a.list--action-sort-hot:link,
 a.user-login--submit:link,
 a.user-register--submit:link,
 .search-form--content-block a.search-form--content-block--button:link,
@@ -1121,10 +1095,6 @@ a.button:visited,
 a.form-submit:visited,
 #context-inline-editor li.context-editable div.links a.edit:visited,
 #context-inline-editor li.context-editing div.links a.done:visited,
-.list--actions a.list--action-sort-latest:visited,
-.comments--list-actions a.list--action-sort-latest:visited,
-.list--actions a.list--action-sort-hot:visited,
-.comments--list-actions a.list--action-sort-hot:visited,
 a.user-login--submit:visited,
 a.user-register--submit:visited,
 .search-form--content-block a.search-form--content-block--button:visited {
@@ -1132,23 +1102,13 @@ a.user-register--submit:visited,
 }
 /* line 83, ../sass/framework/_buttons.scss */
 .button:focus, .form-submit:focus, #context-inline-editor li.context-editable div.links .edit:focus,
-#context-inline-editor li.context-editing div.links .done:focus, .list--actions .list--action-sort-latest:focus, .comments--list-actions .list--action-sort-latest:focus,
-.list--actions .list--action-sort-hot:focus,
-.comments--list-actions .list--action-sort-hot:focus, .user-login--submit:focus, .user-register--submit:focus, .search-form--content-block .search-form--content-block--button:focus, .button:hover, .form-submit:hover, #context-inline-editor li.context-editable div.links .edit:hover,
-#context-inline-editor li.context-editing div.links .done:hover, .list--actions .list--action-sort-latest:hover, .comments--list-actions .list--action-sort-latest:hover,
-.list--actions .list--action-sort-hot:hover,
-.comments--list-actions .list--action-sort-hot:hover, .user-login--submit:hover, .user-register--submit:hover, .search-form--content-block .search-form--content-block--button:hover, .button:active, .form-submit:active, #context-inline-editor li.context-editable div.links .edit:active,
-#context-inline-editor li.context-editing div.links .done:active, .list--actions .list--action-sort-latest:active, .comments--list-actions .list--action-sort-latest:active,
-.list--actions .list--action-sort-hot:active,
-.comments--list-actions .list--action-sort-hot:active, .user-login--submit:active, .user-register--submit:active, .search-form--content-block .search-form--content-block--button:active,
+#context-inline-editor li.context-editing div.links .done:focus, .user-login--submit:focus, .user-register--submit:focus, .search-form--content-block .search-form--content-block--button:focus, .button:hover, .form-submit:hover, #context-inline-editor li.context-editable div.links .edit:hover,
+#context-inline-editor li.context-editing div.links .done:hover, .user-login--submit:hover, .user-register--submit:hover, .search-form--content-block .search-form--content-block--button:hover, .button:active, .form-submit:active, #context-inline-editor li.context-editable div.links .edit:active,
+#context-inline-editor li.context-editing div.links .done:active, .user-login--submit:active, .user-register--submit:active, .search-form--content-block .search-form--content-block--button:active,
 a.button:focus,
 a.form-submit:focus,
 #context-inline-editor li.context-editable div.links a.edit:focus,
 #context-inline-editor li.context-editing div.links a.done:focus,
-.list--actions a.list--action-sort-latest:focus,
-.comments--list-actions a.list--action-sort-latest:focus,
-.list--actions a.list--action-sort-hot:focus,
-.comments--list-actions a.list--action-sort-hot:focus,
 a.user-login--submit:focus,
 a.user-register--submit:focus,
 .search-form--content-block a.search-form--content-block--button:focus,
@@ -1156,10 +1116,6 @@ a.button:hover,
 a.form-submit:hover,
 #context-inline-editor li.context-editable div.links a.edit:hover,
 #context-inline-editor li.context-editing div.links a.done:hover,
-.list--actions a.list--action-sort-latest:hover,
-.comments--list-actions a.list--action-sort-latest:hover,
-.list--actions a.list--action-sort-hot:hover,
-.comments--list-actions a.list--action-sort-hot:hover,
 a.user-login--submit:hover,
 a.user-register--submit:hover,
 .search-form--content-block a.search-form--content-block--button:hover,
@@ -1167,10 +1123,6 @@ a.button:active,
 a.form-submit:active,
 #context-inline-editor li.context-editable div.links a.edit:active,
 #context-inline-editor li.context-editing div.links a.done:active,
-.list--actions a.list--action-sort-latest:active,
-.comments--list-actions a.list--action-sort-latest:active,
-.list--actions a.list--action-sort-hot:active,
-.comments--list-actions a.list--action-sort-hot:active,
 a.user-login--submit:active,
 a.user-register--submit:active,
 .search-form--content-block a.search-form--content-block--button:active {
@@ -1183,17 +1135,11 @@ a.user-register--submit:active,
 }
 /* line 89, ../sass/framework/_buttons.scss */
 .button i[class^="icon-"], .form-submit i[class^="icon-"], #context-inline-editor li.context-editable div.links .edit i[class^="icon-"],
-#context-inline-editor li.context-editing div.links .done i[class^="icon-"], .list--actions .list--action-sort-latest i[class^="icon-"], .comments--list-actions .list--action-sort-latest i[class^="icon-"],
-.list--actions .list--action-sort-hot i[class^="icon-"],
-.comments--list-actions .list--action-sort-hot i[class^="icon-"], .user-login--submit i[class^="icon-"], .user-register--submit i[class^="icon-"], .search-form--content-block .search-form--content-block--button i[class^="icon-"],
+#context-inline-editor li.context-editing div.links .done i[class^="icon-"], .user-login--submit i[class^="icon-"], .user-register--submit i[class^="icon-"], .search-form--content-block .search-form--content-block--button i[class^="icon-"],
 a.button i[class^="icon-"],
 a.form-submit i[class^="icon-"],
 #context-inline-editor li.context-editable div.links a.edit i[class^="icon-"],
 #context-inline-editor li.context-editing div.links a.done i[class^="icon-"],
-.list--actions a.list--action-sort-latest i[class^="icon-"],
-.comments--list-actions a.list--action-sort-latest i[class^="icon-"],
-.list--actions a.list--action-sort-hot i[class^="icon-"],
-.comments--list-actions a.list--action-sort-hot i[class^="icon-"],
 a.user-login--submit i[class^="icon-"],
 a.user-register--submit i[class^="icon-"],
 .search-form--content-block a.search-form--content-block--button i[class^="icon-"] {
@@ -1202,9 +1148,7 @@ a.user-register--submit i[class^="icon-"],
 
 /* Theme button */
 /* line 103, ../sass/framework/_buttons.scss */
-.list--actions .list--action-sort-latest.active, .comments--list-actions .list--action-sort-latest.active,
-.list--actions .list--action-sort-hot.active,
-.comments--list-actions .list--action-sort-hot.active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview {
+.dataset--data-resources--list-item .dataset--data-resources--list-actions-preview {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e5420c), color-stop(100%, #9c2d08));
   background-image: -webkit-linear-gradient(#e5420c, #9c2d08);
   background-image: -moz-linear-gradient(#e5420c, #9c2d08);
@@ -1216,21 +1160,11 @@ a.user-register--submit i[class^="icon-"],
   color: white;
 }
 /* line 76, ../sass/framework/_buttons.scss */
-.list--actions .list--action-sort-latest.active:link, .comments--list-actions .list--action-sort-latest.active:link,
-.list--actions .list--action-sort-hot.active:link,
-.comments--list-actions .list--action-sort-hot.active:link, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:link, .list--actions .list--action-sort-latest.active:visited, .comments--list-actions .list--action-sort-latest.active:visited,
-.list--actions .list--action-sort-hot.active:visited,
-.comments--list-actions .list--action-sort-hot.active:visited, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:visited {
+.dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:link, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:visited {
   color: white;
 }
 /* line 83, ../sass/framework/_buttons.scss */
-.list--actions .list--action-sort-latest.active:focus, .comments--list-actions .list--action-sort-latest.active:focus,
-.list--actions .list--action-sort-hot.active:focus,
-.comments--list-actions .list--action-sort-hot.active:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:focus, .list--actions .list--action-sort-latest.active:hover, .comments--list-actions .list--action-sort-latest.active:hover,
-.list--actions .list--action-sort-hot.active:hover,
-.comments--list-actions .list--action-sort-hot.active:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:hover, .list--actions .list--action-sort-latest.active:active, .comments--list-actions .list--action-sort-latest.active:active,
-.list--actions .list--action-sort-hot.active:active,
-.comments--list-actions .list--action-sort-hot.active:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:active {
+.dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:active {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cd3b0b), color-stop(100%, #842607));
   background-image: -webkit-linear-gradient(#cd3b0b, #842607);
   background-image: -moz-linear-gradient(#cd3b0b, #842607);
@@ -1239,15 +1173,13 @@ a.user-register--submit i[class^="icon-"],
   background-color: #9c2d08;
 }
 /* line 89, ../sass/framework/_buttons.scss */
-.list--actions .list--action-sort-latest.active i[class^="icon-"], .comments--list-actions .list--action-sort-latest.active i[class^="icon-"],
-.list--actions .list--action-sort-hot.active i[class^="icon-"],
-.comments--list-actions .list--action-sort-hot.active i[class^="icon-"], .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview i[class^="icon-"] {
+.dataset--data-resources--list-item .dataset--data-resources--list-actions-preview i[class^="icon-"] {
   margin-right: 8px;
 }
 
 /* Action button */
 /* line 108, ../sass/framework/_buttons.scss */
-.list--actions .list--action-create, .comments--list-actions .list--action-create, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download, .comments--post-comment-login,
+.dataset--data-resources--list-item .dataset--data-resources--list-actions-download, .comments--post-comment-login,
 .comments--post-comment-create-user {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #96b000), color-stop(100%, #556300));
   background-image: -webkit-linear-gradient(#96b000, #556300);
@@ -1260,15 +1192,15 @@ a.user-register--submit i[class^="icon-"],
   color: white;
 }
 /* line 76, ../sass/framework/_buttons.scss */
-.list--actions .list--action-create:link, .comments--list-actions .list--action-create:link, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:link, .comments--post-comment-login:link,
-.comments--post-comment-create-user:link, .list--actions .list--action-create:visited, .comments--list-actions .list--action-create:visited, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:visited, .comments--post-comment-login:visited,
+.dataset--data-resources--list-item .dataset--data-resources--list-actions-download:link, .comments--post-comment-login:link,
+.comments--post-comment-create-user:link, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:visited, .comments--post-comment-login:visited,
 .comments--post-comment-create-user:visited {
   color: white;
 }
 /* line 83, ../sass/framework/_buttons.scss */
-.list--actions .list--action-create:focus, .comments--list-actions .list--action-create:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:focus, .comments--post-comment-login:focus,
-.comments--post-comment-create-user:focus, .list--actions .list--action-create:hover, .comments--list-actions .list--action-create:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:hover, .comments--post-comment-login:hover,
-.comments--post-comment-create-user:hover, .list--actions .list--action-create:active, .comments--list-actions .list--action-create:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:active, .comments--post-comment-login:active,
+.dataset--data-resources--list-item .dataset--data-resources--list-actions-download:focus, .comments--post-comment-login:focus,
+.comments--post-comment-create-user:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:hover, .comments--post-comment-login:hover,
+.comments--post-comment-create-user:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:active, .comments--post-comment-login:active,
 .comments--post-comment-create-user:active {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #809700), color-stop(100%, #3f4a00));
   background-image: -webkit-linear-gradient(#809700, #3f4a00);
@@ -1278,7 +1210,7 @@ a.user-register--submit i[class^="icon-"],
   background-color: #556300;
 }
 /* line 89, ../sass/framework/_buttons.scss */
-.list--actions .list--action-create i[class^="icon-"], .comments--list-actions .list--action-create i[class^="icon-"], .dataset--data-resources--list-item .dataset--data-resources--list-actions-download i[class^="icon-"], .comments--post-comment-login i[class^="icon-"],
+.dataset--data-resources--list-item .dataset--data-resources--list-actions-download i[class^="icon-"], .comments--post-comment-login i[class^="icon-"],
 .comments--post-comment-create-user i[class^="icon-"] {
   margin-right: 8px;
 }
@@ -1288,17 +1220,11 @@ a.user-register--submit i[class^="icon-"],
 /* Don't use native buttons on iOS */
 /* line 125, ../sass/framework/_buttons.scss */
 input[type=submit].button, input[type=submit].form-submit, #context-inline-editor li.context-editable div.links input[type=submit].edit,
-#context-inline-editor li.context-editing div.links input[type=submit].done, .list--actions input[type=submit].list--action-sort-latest, .comments--list-actions input[type=submit].list--action-sort-latest,
-.list--actions input[type=submit].list--action-sort-hot,
-.comments--list-actions input[type=submit].list--action-sort-hot, input[type=submit].user-login--submit, input[type=submit].user-register--submit, .search-form--content-block input[type=submit].search-form--content-block--button,
+#context-inline-editor li.context-editing div.links input[type=submit].done, input[type=submit].user-login--submit, input[type=submit].user-register--submit, .search-form--content-block input[type=submit].search-form--content-block--button,
 button.button,
 button.form-submit,
 #context-inline-editor li.context-editable div.links button.edit,
 #context-inline-editor li.context-editing div.links button.done,
-.list--actions button.list--action-sort-latest,
-.comments--list-actions button.list--action-sort-latest,
-.list--actions button.list--action-sort-hot,
-.comments--list-actions button.list--action-sort-hot,
 button.user-login--submit,
 button.user-register--submit,
 .search-form--content-block button.search-form--content-block--button {
@@ -5467,37 +5393,21 @@ div.context-editor div.context-editable legend {
   margin-right: 5px;
 }
 
-/* List actions
-   ========================================================================== */
-/* line 165, ../sass/module/_module.scss */
-.list--actions, .comments--list-actions {
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-/* line 178, ../sass/module/_module.scss */
-.list--actions .list--action-sort-latest, .comments--list-actions .list--action-sort-latest {
-  margin-right: 10px;
-}
-/* line 182, ../sass/module/_module.scss */
-.list--actions .list--action-create, .comments--list-actions .list--action-create {
-  float: right;
-}
-
 /* Pager
    ========================================================================== */
-/* line 193, ../sass/module/_module.scss */
+/* line 166, ../sass/module/_module.scss */
 .pager, .pagination {
   margin-top: 20px;
   padding-left: 0;
   text-align: center;
 }
-/* line 198, ../sass/module/_module.scss */
+/* line 171, ../sass/module/_module.scss */
 .pager li, .pagination li {
   display: inline-block;
   margin-left: -4px;
   margin-right: 4px;
 }
-/* line 205, ../sass/module/_module.scss */
+/* line 178, ../sass/module/_module.scss */
 .pager .pager-current, .pagination .pager-current,
 .pager a,
 .pagination a {
@@ -5508,21 +5418,21 @@ div.context-editor div.context-editable legend {
   padding-bottom: 5px;
   padding-left: 15px;
 }
-/* line 213, ../sass/module/_module.scss */
+/* line 186, ../sass/module/_module.scss */
 .pager .pager-current:hover, .pagination .pager-current:hover,
 .pager a:hover,
 .pagination a:hover {
   text-decoration: none;
 }
-/* line 218, ../sass/module/_module.scss */
+/* line 191, ../sass/module/_module.scss */
 .pager .pager-current, .pagination .pager-current {
   background-color: #e2e2e2;
 }
-/* line 222, ../sass/module/_module.scss */
+/* line 195, ../sass/module/_module.scss */
 .pager .disabled, .pagination .disabled {
   background-color: #fbfbfb;
 }
-/* line 225, ../sass/module/_module.scss */
+/* line 198, ../sass/module/_module.scss */
 .pager .disabled a:hover, .pagination .disabled a:hover {
   cursor: default;
   text-decoration: none;
@@ -6024,22 +5934,6 @@ div.context-editor div.context-editable legend {
 #context-inline-editor li.context-editing div.links .search-form .done,
 .search-spotbox--wrapper #context-inline-editor li.context-editing div.links .done,
 #context-inline-editor li.context-editing div.links .search-spotbox--wrapper .done,
-.search-form .list--actions .list--action-sort-latest,
-.list--actions .search-form .list--action-sort-latest,
-.search-spotbox--wrapper .list--actions .list--action-sort-latest,
-.list--actions .search-spotbox--wrapper .list--action-sort-latest,
-.search-form .comments--list-actions .list--action-sort-latest,
-.comments--list-actions .search-form .list--action-sort-latest,
-.search-spotbox--wrapper .comments--list-actions .list--action-sort-latest,
-.comments--list-actions .search-spotbox--wrapper .list--action-sort-latest,
-.search-form .list--actions .list--action-sort-hot,
-.list--actions .search-form .list--action-sort-hot,
-.search-spotbox--wrapper .list--actions .list--action-sort-hot,
-.list--actions .search-spotbox--wrapper .list--action-sort-hot,
-.search-form .comments--list-actions .list--action-sort-hot,
-.comments--list-actions .search-form .list--action-sort-hot,
-.search-spotbox--wrapper .comments--list-actions .list--action-sort-hot,
-.comments--list-actions .search-spotbox--wrapper .list--action-sort-hot,
 .search-form .user-login--submit,
 .search-spotbox--wrapper .user-login--submit,
 .search-form .user-register--submit,
@@ -6065,15 +5959,7 @@ div.context-editor div.context-editable legend {
 .search-form #context-inline-editor li.context-editing div.links .done,
 #context-inline-editor li.context-editing div.links .search-form .done,
 .search-spotbox--wrapper #context-inline-editor li.context-editing div.links .done,
-#context-inline-editor li.context-editing div.links .search-spotbox--wrapper .done, .search-form .list--actions .list--action-sort-latest, .list--actions .search-form .list--action-sort-latest, .search-spotbox--wrapper .list--actions .list--action-sort-latest, .list--actions .search-spotbox--wrapper .list--action-sort-latest, .search-form .comments--list-actions .list--action-sort-latest, .comments--list-actions .search-form .list--action-sort-latest, .search-spotbox--wrapper .comments--list-actions .list--action-sort-latest, .comments--list-actions .search-spotbox--wrapper .list--action-sort-latest,
-.search-form .list--actions .list--action-sort-hot,
-.list--actions .search-form .list--action-sort-hot,
-.search-spotbox--wrapper .list--actions .list--action-sort-hot,
-.list--actions .search-spotbox--wrapper .list--action-sort-hot,
-.search-form .comments--list-actions .list--action-sort-hot,
-.comments--list-actions .search-form .list--action-sort-hot,
-.search-spotbox--wrapper .comments--list-actions .list--action-sort-hot,
-.comments--list-actions .search-spotbox--wrapper .list--action-sort-hot, .search-form .user-login--submit, .search-spotbox--wrapper .user-login--submit, .search-form .user-register--submit, .search-spotbox--wrapper .user-register--submit, .search-form .search-form--content-block .search-form--content-block--button, .search-form--content-block .search-form .search-form--content-block--button, .search-spotbox--wrapper .search-form--content-block .search-form--content-block--button, .search-form--content-block .search-spotbox--wrapper .search-form--content-block--button {
+#context-inline-editor li.context-editing div.links .search-spotbox--wrapper .done, .search-form .user-login--submit, .search-spotbox--wrapper .user-login--submit, .search-form .user-register--submit, .search-spotbox--wrapper .user-register--submit, .search-form .search-form--content-block .search-form--content-block--button, .search-form--content-block .search-form .search-form--content-block--button, .search-spotbox--wrapper .search-form--content-block .search-form--content-block--button, .search-form--content-block .search-spotbox--wrapper .search-form--content-block--button {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -6202,6 +6088,27 @@ div.context-editor div.context-editable legend {
   min-width: 100%;
 }
 
+/* Search actions
+   ========================================================================== */
+/* line 127, ../sass/module/_search.scss */
+.search--list-actions {
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-align: right;
+}
+
+/* line 133, ../sass/module/_search.scss */
+.search--list-actions-label {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75;
+  margin-right: 10px;
+}
+
+/* line 139, ../sass/module/_search.scss */
+.search--actions-sort {
+  min-width: 25%;
+}
+
 /**
  * Search
  *
@@ -6237,11 +6144,7 @@ div.context-editor div.context-editable legend {
 /* line 22, ../sass/module/_newsletter.scss */
 .newsletter-signup .button, .newsletter-signup .form-submit, .newsletter-signup #context-inline-editor li.context-editable div.links .edit, #context-inline-editor li.context-editable div.links .newsletter-signup .edit,
 .newsletter-signup #context-inline-editor li.context-editing div.links .done,
-#context-inline-editor li.context-editing div.links .newsletter-signup .done, .newsletter-signup .list--actions .list--action-sort-latest, .list--actions .newsletter-signup .list--action-sort-latest, .newsletter-signup .comments--list-actions .list--action-sort-latest, .comments--list-actions .newsletter-signup .list--action-sort-latest,
-.newsletter-signup .list--actions .list--action-sort-hot,
-.list--actions .newsletter-signup .list--action-sort-hot,
-.newsletter-signup .comments--list-actions .list--action-sort-hot,
-.comments--list-actions .newsletter-signup .list--action-sort-hot, .newsletter-signup .user-login--submit, .newsletter-signup .user-register--submit, .newsletter-signup .search-form--content-block .search-form--content-block--button, .search-form--content-block .newsletter-signup .search-form--content-block--button {
+#context-inline-editor li.context-editing div.links .newsletter-signup .done, .newsletter-signup .user-login--submit, .newsletter-signup .user-register--submit, .newsletter-signup .search-form--content-block .search-form--content-block--button, .search-form--content-block .newsletter-signup .search-form--content-block--button {
   vertical-align: top;
   margin-top: 1px;
 }
@@ -6395,23 +6298,6 @@ div.context-editor div.context-editable legend {
    ========================================================================== */
 /* Forum list
    ========================================================================== */
-/* line 58, ../sass/module/_forum.scss */
-.forum--list-actions {
-  text-align: right;
-}
-
-/* line 62, ../sass/module/_forum.scss */
-.forum--list-actions-label {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
-  opacity: 0.75;
-  margin-right: 10px;
-}
-
-/* line 68, ../sass/module/_forum.scss */
-.forum--actions-sort {
-  min-width: 25%;
-}
-
 /**
  * Use cases
  *
@@ -6486,23 +6372,6 @@ div.context-editor div.context-editable legend {
 /* line 42, ../sass/module/_usecases.scss */
 .use-cases--list-footer {
   text-align: left;
-}
-
-/* line 52, ../sass/module/_usecases.scss */
-.use-cases--list-actions {
-  text-align: right;
-}
-
-/* line 56, ../sass/module/_usecases.scss */
-.use-cases--list-actions-label {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
-  opacity: 0.75;
-  margin-right: 10px;
-}
-
-/* line 62, ../sass/module/_usecases.scss */
-.use-cases--actions-sort {
-  min-width: 25%;
 }
 
 /**
