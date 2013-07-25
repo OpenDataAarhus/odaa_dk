@@ -79,7 +79,7 @@
     foreach ($logged_in_menu as $name => $url) {
       $count == $count_last ? $last = ' last' : $last = '';
 
-      if ($active != false && $count == $active) {
+      if ($count == $active) {
         $output.= '<li><a href="' . $url .'" class="menu-item active'.$last.'"><span>' . $name . '</span></a></li>';
       }
       else {
