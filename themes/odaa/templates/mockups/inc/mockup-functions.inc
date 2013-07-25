@@ -33,8 +33,7 @@
 
 
   // Secondary menu
-  function secondary_menu($active) {
-
+  function secondary_menu($active = NULL) {
     $secondary_menu = array(
       'Log ind' => 'user-login.php',
       'Opret bruger' => 'user-register.php'
@@ -48,7 +47,7 @@
     foreach ($secondary_menu as $name => $url) {
       $count == $count_last ? $last = ' last' : $last = '';
 
-      if ($active != false && $count == $active) {
+      if (!is_null($active) && $count == $active) {
         $output.= '<li><a href="' . $url .'" class="menu-item active'.$last.'"><span>' . $name . '</span></a></li>';
       }
       else {
@@ -64,8 +63,7 @@
   }
 
   // Logged in menu
-  function logged_in_menu($active) {
-
+  function logged_in_menu($active = NULL) {
     $logged_in_menu = array(
       'Min konto' => 'user-profile.php',
       'Log ud' => '#'
@@ -79,7 +77,7 @@
     foreach ($logged_in_menu as $name => $url) {
       $count == $count_last ? $last = ' last' : $last = '';
 
-      if ($count == $active) {
+      if (!is_null($active) && $count == $active) {
         $output.= '<li><a href="' . $url .'" class="menu-item active'.$last.'"><span>' . $name . '</span></a></li>';
       }
       else {
