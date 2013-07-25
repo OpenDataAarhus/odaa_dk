@@ -5962,9 +5962,10 @@ div.context-editor div.context-editable legend {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
+  padding-left: 0;
 }
 
-/* line 67, ../sass/module/_user.scss */
+/* line 69, ../sass/module/_user.scss */
 .user-profile--secondary-content {
   float: right;
   width: 50%;
@@ -5982,19 +5983,20 @@ div.context-editor div.context-editable legend {
   _overflow: hidden;
   _overflow-y: visible;
   margin-top: -20px;
+  padding-right: 0;
 }
 
-/* line 73, ../sass/module/_user.scss */
+/* line 76, ../sass/module/_user.scss */
 .user-profile--header-wrapper {
   overflow: hidden;
 }
 
-/* line 77, ../sass/module/_user.scss */
+/* line 80, ../sass/module/_user.scss */
 .user-profile--image {
   float: left;
 }
 
-/* line 81, ../sass/module/_user.scss */
+/* line 84, ../sass/module/_user.scss */
 .user-profile--title {
   float: left;
   margin-top: 20px;
@@ -6002,12 +6004,12 @@ div.context-editor div.context-editable legend {
   width: 75%;
 }
 
-/* line 88, ../sass/module/_user.scss */
+/* line 91, ../sass/module/_user.scss */
 .user-profile--info {
   clear: both;
 }
 
-/* line 94, ../sass/module/_user.scss */
+/* line 97, ../sass/module/_user.scss */
 .user-profile--actions {
   text-align: right;
 }

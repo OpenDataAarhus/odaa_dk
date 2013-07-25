@@ -62,12 +62,15 @@
 
 .user-profile--primary-content {
   @include zen-grid-item(6, 1);
+  
+  padding-left: 0;
 }
 
 .user-profile--secondary-content {
   @include zen-grid-item(6, 1, right);
 
   margin-top: -20px;
+  padding-right: 0;
 }
 
 .user-profile--header-wrapper {
