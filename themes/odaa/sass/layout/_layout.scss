@@ -163,16 +163,7 @@ body {
   }
 }
 
-/* User profile layout */
-.user-profile {
-  .primary-content {
-    @include zen-grid-item(9, 1, right);
-  }
-
-  .secondary-content {
-    @include zen-grid-item(3, 1);
-  }
-
+.community {
   .tertiary-content {
     @include zen-clear(right);
     @include zen-grid-item(9, 1, right);
@@ -180,13 +171,18 @@ body {
     padding-right: 0;
     padding-left: 0;
 
-    .spotbox:nth-child(odd) {
-      @include zen-clear(left);
-      @include zen-grid-item(6, 1);
+    .spotbox:nth-child(1) {
+      @include zen-grid-item(4, 1);
     }
 
-    .spotbox:nth-child(even) {
-      @include zen-grid-item(6, 1, right);
+    .spotbox:nth-child(2) {
+      @include zen-grid-item(4, 5, right);
+    }
+
+    .spotbox:nth-child(3) {
+      @include zen-grid-item(4, 1, right);
+
+      clear: none;
     }
   }
 }

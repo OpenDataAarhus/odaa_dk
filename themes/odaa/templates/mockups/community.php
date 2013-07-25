@@ -2,9 +2,9 @@
 <?php include './snippets/doctype.inc'; ?>
 <head profile="http://www.w3.org/1999/xhtml/vocab">
   <?php include 'snippets/head.inc'; ?>
-  <title>Welcome to dev.odaa.dk | dev.odaa.dk</title>
+  <title>Community</title>
 </head>
-<body class="left-sidebar">
+<body class="community">
   <div id="page" class="page">
     <header class="site-header">
       <section class="header-wrapper">
@@ -12,7 +12,7 @@
           <?php include 'snippets/logo.inc'; ?>
           <?php include 'snippets/search-form.inc'; ?>
           <?php echo main_menu(2); ?>
-          <?php echo secondary_menu(false); ?>
+          <?php echo secondary_menu(); ?>
         </div>
       </section>
     </header>
@@ -24,123 +24,105 @@
               <h1 class="page--title">Community</h1>
               <p>Open Source er fedt, åben data er fedt! Velkommen til ODAAs Community - fedt du kiggede forbi! :)</p>
             </section>
-            <section class="community--wrapper">
-              <div class="search-form--content-block">
-                <form>
-                  <label class="search-form--content-block--label">Søg i communitiet</label>
-                  <input type="text" placeholder="F.eks. på navn på datasæt, brugernavn eller lign." class="search-form--content-block--input" />
-                  <input type="submit" class="search-form--content-block--button" value="Søg" />
-                </form>
-              </div>
-              <div class="list--actions">
-                <a href="#" class="list--action-sort-latest active"><i class="icon-ok"></i>Sortér: Nyeste</a>
-                <a href="#" class="list--action-sort-hot"><i class="icon-comments-alt"></i>Sortér: Mest kommenterede</a>
-                <a href="#" class="list--action-create"><i class="icon-plus"></i>Opret indlæg</a>
-              </div>
-              <section class="community--list-wrapper">
-                <span class="community--list-heading">Filter:</span><span class="community--empty-text">Ingen</span>
-                <ul class="community--list">
-                  <li class="community--list-item">
-                    <div class="community--list-icon"><a href="#"><i class="icon-file"></i></a></div>
-                    <div class="community--list-content">
-                      <h3 class="community--list-header"><a href="#">Bålpladser i Aarhus</a></h3>
-                      <div class="community--list-meta">
-                        <span class="community--list-posted">20. juli 2013 @ 14:57</span>|<a href="#" class="community--list-author">User name</a>
-                      </div>
-                    </div>
-                    <div class="community--list-footer">
-                      <a href="#" class="dataset--list-footer-link">12 kommentarer</a>
-                      <a href="dataset.php" class="dataset--list-footer-link">Se datasættet</a>                      
-                    </div>
-                  </li>
-                  <li class="community--list-item">
-                    <div class="community--list-icon"><a href="#"><i class="icon-comment"></i></a></div>
-                    <div class="community--list-content">
-                      <h3 class="community--list-header"><a href="#">Gode idéer?</a></h3>
-                      <p>Jeg har tid og er klar på at lave noget sjovt med noget åben data. Nogen der har nogle gode idéer?</p>
-                      <div class="community--list-meta">
-                        <span class="community--list-posted">20. juli 2013 @ 14:57</span>|<a href="#" class="community--list-author">User name</a>
-                      </div>
-                    </div>
-                    <div class="community--list-footer">
-                      <a href="#" class="dataset--list-footer-link">12 kommentarer</a>
-                      <a href="dataset.php" class="dataset--list-footer-link">Se datasættet</a>                      
-                    </div>
-                  </li>
-                  <li class="community--list-item">
-                    <div class="community--list-icon"><a href="#"><i class="icon-file"></i></a></div>
-                    <div class="community--list-content">
-                      <h3 class="community--list-header"><a href="#">Bålpladser i Aarhus</a></h3>
-                      <div class="community--list-meta">
-                        <span class="community--list-posted">20. juli 2013 @ 14:57</span>|<a href="#" class="community--list-author">User name</a>
-                      </div>
-                    </div>
-                    <div class="community--list-footer">
-                      <a href="#" class="dataset--list-footer-link">12 kommentarer</a>
-                      <a href="dataset.php" class="dataset--list-footer-link">Se datasættet</a>                      
-                    </div>
-                  </li>
-                  <li class="community--list-item">
-                    <div class="community--list-icon"><a href="#"><i class="icon-user"></i></a></div>
-                    <div class="community--list-content">
-                      <h3 class="community--list-header"><a href="#">Proof of cencept på data fra skraldespande</a></h3>
-                      <p>Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                      <div class="community--list-meta">
-                        <span class="community--list-posted">20. juli 2013 @ 14:57</span>|<a href="#" class="community--list-author">User name</a>
-                      </div>
-                    </div>
-                    <div class="community--list-footer">
-                      <a href="#" class="dataset--list-footer-link">12 kommentarer</a>
-                      <a href="dataset.php" class="dataset--list-footer-link">Se datasættet</a>                      
-                    </div>
-                  </li>
-                  <li class="community--list-item">
-                    <div class="community--list-icon"><a href="#"><i class="icon-comment"></i></a></div>
-                    <div class="community--list-content">
-                      <h3 class="community--list-header"><a href="#">Gode idéer?</a></h3>
-                      <p>Jeg har tid og er klar på at lave noget sjovt med noget åben data. Nogen der har nogle gode idéer?</p>
-                      <div class="community--list-meta">
-                        <span class="community--list-posted">20. juli 2013 @ 14:57</span>|<a href="#" class="community--list-author">User name</a>
-                      </div>
-                    </div>
-                    <div class="community--list-footer">
-                      <a href="#" class="dataset--list-footer-link">12 kommentarer</a>
-                      <a href="dataset.php" class="dataset--list-footer-link">Se datasættet</a>                      
-                    </div>
-                  </li>
-                  <li class="community--list-item">
-                    <div class="community--list-icon"><a href="#"><i class="icon-file"></a></i></div>
-                    <div class="community--list-content">
-                      <h3 class="community--list-header"><a href="#">Bålpladser i Aarhus</a></h3>
-                      <div class="community--list-meta">
-                        <span class="community--list-posted">20. juli 2013 @ 14:57</span>|<a href="#" class="community--list-author">User name</a>
-                      </div>
-                    </div>
-                    <div class="community--list-footer">
-                      <a href="#" class="dataset--list-footer-link">12 kommentarer</a>
-                      <a href="dataset.php" class="dataset--list-footer-link">Se datasættet</a>                      
-                    </div>
-                  </li>
-                </ul>
-                <ul class="pager">
-                  <li class="pager-previous first">&nbsp;</li>
-                  <li class="pager-current">1</li>
-                  <li class="pager-item"><a href="#">2</a></li>
-                  <li class="pager-next last"><a href="#"><i class="icon-angle-right"></i></a></li>
-                </ul>
-              </section>
-            </section>
           </div>
         </div>
         <div class="secondary-content">
+          <div class="sub-menu-wrapper">
+            <h2 class="sub-menu-header">Community</h2>
+            <ul class="sub-menu">
+              <li><a href="use-cases.php" class="menu-item"><span>Use cases</span></a></li>
+              <li class="last"><a href="forum.php" class="menu-item"><span>Forum</span></a>
+            </ul>
+          </div>
           <div class="spotbox-menu">
             <div class="spotbox-menu--inner">
-              <h3 class="spotbox-menu--header"><i class="icon-filter"></i>Filtrér</h3>
+              <h3 class="spotbox-menu--header"><i class="icon-plus-sign"></i>Opret indhold</h3>
               <ul class="spotbox-menu--list">
-                <li class="spotbox-menu--list-item first"><a href="community.php" class="active"><i class="icon-check"></i>Alle</a></li>
-                <li class="spotbox-menu--list-item first"><a href="community-forum.php" class="active"><i class="icon-check"></i>Forum</a></li>
-                <li class="spotbox-menu--list-item"><a href="community-use-cases.php" class="active"><i class="icon-check"></i>Use cases</a></li>
-                <li class="spotbox-menu--list-item last"><a href="community-dataset.php" class="active"><i class="icon-check"></i>Datasæt</a></li>
+                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-angle-right"></i>Opret forumindlæg</a></li>
+                <li class="spotbox-menu--list-item last"><a href="create-use-cases.php"><i class="icon-angle-right"></i>Opret use case</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tertiary-content">
+          <div class="spotbox">
+            <div class="spotbox--inner">
+              <h2 class="spotbox--header"><a href="#"><i class="icon-comments-alt"></i>Forumindlæg</a></h2>
+              <ul class="spotbox--list">
+                <li class="spotbox--list-item first">
+                  <span class="spotbox--list-link"><a href="#comment1">Morbi leo risus</a></span>
+                  <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                </li>
+                <li class="spotbox--list-item">
+                  <span class="spotbox--list-link"><a href="#comment2">Porta ac consectetur ac</a></span>
+                  <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                </li>
+                <li class="spotbox--list-item">
+                  <span class="spotbox--list-link"><a href="#comment3">Vestibulum at eros</a></span>
+                  <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                </li>
+                <li class="spotbox--list-item">
+                  <span class="spotbox--list-link"><a href="#comment4">Nibh Dolor Ornare</a></span>
+                  <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                </li>
+                <li class="spotbox--list-item last">
+                  <span class="spotbox--list-link"><a href="#comment5">Ridiculus Euismod Lorem</a></span>
+                  <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="spotbox">
+            <div class="spotbox--inner">
+              <h2 class="spotbox--header"><a href="#"><i class="icon-file-alt"></i>Use cases</a></h2>
+              <ul class="spotbox--list">
+                <li class="spotbox--list-item first">
+                  <span class="spotbox--list-link"><a href="#comment1">Morbi leo risus</a></span>
+                  <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                </li>
+                <li class="spotbox--list-item">
+                  <span class="spotbox--list-link"><a href="#comment2">Porta ac consectetur ac</a></span>
+                  <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                </li>
+                <li class="spotbox--list-item">
+                  <span class="spotbox--list-link"><a href="#comment3">Vestibulum at eros</a></span>
+                  <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                </li>
+                <li class="spotbox--list-item">
+                  <span class="spotbox--list-link"><a href="#comment4">Nibh Dolor Ornare</a></span>
+                  <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                </li>
+                <li class="spotbox--list-item last">
+                  <span class="spotbox--list-link"><a href="#comment5">Ridiculus Euismod Lorem</a></span>
+                  <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="spotbox">
+            <div class="spotbox--inner">
+              <h2 class="spotbox--header"><a href="#"><i class="icon-sitemap"></i>Datasæt</a></h2>
+              <ul class="spotbox--list">
+                <li class="spotbox--list-item first">
+                  <span class="spotbox--list-link"><a href="#comment1">Morbi leo risus</a></span>
+                  <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                </li>
+                <li class="spotbox--list-item">
+                  <span class="spotbox--list-link"><a href="#comment2">Porta ac consectetur ac</a></span>
+                  <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                </li>
+                <li class="spotbox--list-item">
+                  <span class="spotbox--list-link"><a href="#comment3">Vestibulum at eros</a></span>
+                  <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                </li>
+                <li class="spotbox--list-item">
+                  <span class="spotbox--list-link"><a href="#comment4">Nibh Dolor Ornare</a></span>
+                  <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                </li>
+                <li class="spotbox--list-item last">
+                  <span class="spotbox--list-link"><a href="#comment5">Ridiculus Euismod Lorem</a></span>
+                  <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                </li>
               </ul>
             </div>
           </div>
