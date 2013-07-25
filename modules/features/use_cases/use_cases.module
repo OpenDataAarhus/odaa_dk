@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Use cases feature.
- */
-
-include_once 'use_cases.features.inc';
