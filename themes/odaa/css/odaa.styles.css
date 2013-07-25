@@ -4322,8 +4322,9 @@ body {
   _overflow-y: visible;
 }
 
-/* line 167, ../sass/layout/_layout.scss */
-.community .tertiary-content {
+/* Community layout */
+/* line 168, ../sass/layout/_layout.scss */
+.node-id-22 .tertiary-content {
   clear: right;
   float: right;
   width: 75%;
@@ -4343,8 +4344,8 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 174, ../sass/layout/_layout.scss */
-.community .tertiary-content .spotbox:nth-child(1) {
+/* line 175, ../sass/layout/_layout.scss */
+.node-id-22 .tertiary-content .spotbox:nth-child(1) {
   float: left;
   width: 33.33333%;
   margin-left: 0%;
@@ -4361,8 +4362,8 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 178, ../sass/layout/_layout.scss */
-.community .tertiary-content .spotbox:nth-child(2) {
+/* line 179, ../sass/layout/_layout.scss */
+.node-id-22 .tertiary-content .spotbox:nth-child(2) {
   float: right;
   width: 33.33333%;
   margin-right: 33.33333%;
@@ -4379,8 +4380,8 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 182, ../sass/layout/_layout.scss */
-.community .tertiary-content .spotbox:nth-child(3) {
+/* line 183, ../sass/layout/_layout.scss */
+.node-id-22 .tertiary-content .spotbox:nth-child(3) {
   float: right;
   width: 33.33333%;
   margin-right: 0%;
