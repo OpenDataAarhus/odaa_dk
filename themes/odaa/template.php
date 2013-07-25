@@ -34,6 +34,11 @@ function odaa_menu_tree__menu_block__3($variables) {
   return '<ul class="sub-menu">' . $variables['tree'] . '</ul>';
 }
 
+// User content menu
+function odaa_menu_tree__menu_block__4($variables) {
+  return '<ul class="spotbox--list">' . $variables['tree'] . '</ul>';
+}
+
 /**
  * Implements hook_theme().
  *
@@ -84,6 +89,39 @@ function odaa_menu_link($variables) {
 
 
 /**
+ * Implements theme_menu_link__menu_block().
+ */
+function odaa_menu_link__menu_block__4($variables) {
+
+  // Check if the class array is empty.
+  if(empty($variables['element']['#attributes']['class'])){
+    unset($variables['element']['#attributes']['class']);
+  }
+
+  $element = $variables['element'];
+
+  $sub_menu = '';
+
+  if ($element['#below']) {
+    $sub_menu = drupal_render($element['#below']);
+  }
+
+  // Add default class to a tag
+  $element['#localized_options']['attributes']['class'] = array(
+    'menu-item',
+  );
+
+  // Make sure text string is treated as html by l function.
+  $element['#localized_options']['html'] = true;
+
+  $element['#attributes']['class'][] = 'spotbox-menu--list-item';
+
+  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+  return '<li' . drupal_attributes($element['#attributes']) . '><span><i class="icon-angle-right"></i>' . $output . '</span>' . $sub_menu . "</li>\n";
+}
+
+
+/**
  * Implements template_preprocess_html().
  *
  * Add classes to body.
@@ -101,13 +139,13 @@ function odaa_preprocess_html(&$variables) {
   if (!empty($variables['logged_in'])) {
     $variables['classes_array'][] = 'logged-in';
   }
-  
+
   // Add first argument to body
   $url = arg();
   if (isset($url[1]) > 0) {
     $variables['classes_array'][] = 'node-id-' . $url[1];
   }
-  
+
   // Add the node type class (except for frontpage).
   if (isset($variables['page']['#type']) && empty($variables['is_front'])) {
     if(arg(0) == 'user'){
@@ -152,7 +190,7 @@ function odaa_comment_block() {
       '#theme' => 'odaa_comment_recent_inner',
       '#comment' => $comment,
     );
-    
+
     $items[] = array(
       'data' => $data,
       'attributes' => array(
@@ -191,7 +229,7 @@ function odaa_form_alter(&$form, &$form_state, $form_id){
              <section class="page--content">
                <h1 class="page--title">'.t('User login').'</h1>';
       $form['#suffix']  =  '</div>';
-      $form['actions']['#prefix']  = 
+      $form['actions']['#prefix']  =
               '<div class="user-login--actions">
               <a href="/user/password" class="user-login--forgot-password">'.t('Forgot password?').'</a>';
       $form['actions']['#suffix']  = '</div>';
