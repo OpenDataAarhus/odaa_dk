@@ -5378,7 +5378,7 @@ div.context-editor div.context-editable legend {
 /* Section spacing
    ========================================================================== */
 /* line 32, ../sass/module/_module.scss */
-.page--section, .user-profile--info, .user-profile--actions, .dataset--list-wrapper, .dataset--data-resources, .dataset--tags, .dataset--additional-info, .community--wrapper, .community--list-wrapper, .comments--wrapper, .comments--list-actions, .comments--list-item-actions, .comments--post-comment-wrapper {
+.page--section, .user-profile--info, .user-profile--actions, .dataset--list-wrapper, .dataset--data-resources, .dataset--tags, .dataset--additional-info, .community--wrapper, .community--list-wrapper, .forum--wrapper, .forum--list-wrapper, .comments--wrapper, .comments--list-actions, .comments--list-item-actions, .comments--post-comment-wrapper {
   border-top: 1px dashed #e6e6e6;
   margin-top: 20px;
   padding-top: 20px;
@@ -5406,18 +5406,18 @@ div.context-editor div.context-editable legend {
 /* %module-list-alternate
    ========================================================================== */
 /* line 62, ../sass/module/_module.scss */
-.dataset--list, .community--list {
+.dataset--list, .community--list, .forum--list {
   padding-left: 0;
 }
 
 /* line 66, ../sass/module/_module.scss */
-.dataset--list-heading, .community--list-heading {
+.dataset--list-heading, .community--list-heading, .forum--list-heading {
   font-size: 160%;
   margin-right: 5px;
 }
 
 /* line 71, ../sass/module/_module.scss */
-.dataset--list-item, .community--list-item {
+.dataset--list-item, .community--list-item, .forum--list-item {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -5428,7 +5428,7 @@ div.context-editor div.context-editable legend {
   padding: 20px;
 }
 /* line 80, ../sass/module/_module.scss */
-.dataset--list-item:hover, .community--list-item:hover {
+.dataset--list-item:hover, .community--list-item:hover, .forum--list-item:hover {
   border: 1px solid #d5d5d5;
 }
 
@@ -5462,29 +5462,29 @@ div.context-editor div.context-editable legend {
 }
 
 /* line 125, ../sass/module/_module.scss */
-.dataset--list-content, .community--list-content {
+.dataset--list-content, .community--list-content, .forum--list-content {
   display: inline-block;
   max-width: 80%;
 }
 
 /* line 131, ../sass/module/_module.scss */
-.dataset--list-meta, .community--list-meta {
+.dataset--list-meta, .community--list-meta, .forum--list-meta {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
 }
 
 /* line 135, ../sass/module/_module.scss */
-.dataset--list-posted, .community--list-posted {
+.dataset--list-posted, .community--list-posted, .forum--list-posted {
   margin-right: 5px;
 }
 
 /* line 139, ../sass/module/_module.scss */
-.dataset--list-author, .community--list-author {
+.dataset--list-author, .community--list-author, .forum--list-author {
   margin-left: 5px;
 }
 
 /* line 143, ../sass/module/_module.scss */
-.dataset--list-footer, .community--list-footer, .use-cases--list-footer {
+.dataset--list-footer, .community--list-footer, .forum--list-footer, .use-cases--list-footer {
   border-top: 1px dashed #e6e6e6;
   margin-top: 20px;
   padding-top: 10px;
@@ -5492,11 +5492,11 @@ div.context-editor div.context-editable legend {
 }
 
 /* line 150, ../sass/module/_module.scss */
-.dataset--list-footer-link, .community--list-footer-link, .use-cases--list-footer-link {
+.dataset--list-footer-link, .community--list-footer-link, .forum--list-footer-link, .use-cases--list-footer-link {
   margin-left: 15px;
 }
 /* line 153, ../sass/module/_module.scss */
-.dataset--list-footer-link i[class^="icon-"], .community--list-footer-link i[class^="icon-"], .use-cases--list-footer-link i[class^="icon-"] {
+.dataset--list-footer-link i[class^="icon-"], .community--list-footer-link i[class^="icon-"], .forum--list-footer-link i[class^="icon-"], .use-cases--list-footer-link i[class^="icon-"] {
   margin-right: 5px;
 }
 
@@ -6131,13 +6131,14 @@ div.context-editor div.context-editable legend {
 .search-form--content-block .search-form--content-block--label {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
+  display: block;
 }
-/* line 56, ../sass/module/_search.scss */
+/* line 58, ../sass/module/_search.scss */
 .search-form--content-block .search-form--content-block--input {
   display: inline;
   min-width: 90%;
 }
-/* line 61, ../sass/module/_search.scss */
+/* line 63, ../sass/module/_search.scss */
 .search-form--content-block .search-form--content-block--button {
   display: inline-block;
   margin-top: -2px;
@@ -6148,7 +6149,7 @@ div.context-editor div.context-editable legend {
 
 /* Search spotbox
    ========================================================================== */
-/* line 75, ../sass/module/_search.scss */
+/* line 77, ../sass/module/_search.scss */
 .search-spotbox {
   float: left;
   width: 100%;
@@ -6170,12 +6171,12 @@ div.context-editor div.context-editable legend {
   padding-left: 0;
 }
 
-/* line 83, ../sass/module/_search.scss */
+/* line 85, ../sass/module/_search.scss */
 .search-spotbox--inner {
   overflow: hidden;
 }
 
-/* line 93, ../sass/module/_search.scss */
+/* line 95, ../sass/module/_search.scss */
 .search-spotbox--dataset-amount-wrapper {
   float: left;
   width: 25%;
@@ -6196,19 +6197,19 @@ div.context-editor div.context-editable legend {
   text-align: center;
 }
 
-/* line 100, ../sass/module/_search.scss */
+/* line 102, ../sass/module/_search.scss */
 .search-spotbox--dataset-amount {
   font-size: 400%;
   margin-bottom: 10px;
 }
 
-/* line 105, ../sass/module/_search.scss */
+/* line 107, ../sass/module/_search.scss */
 .search-spotbox--dataset-amount-text {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
 
-/* line 109, ../sass/module/_search.scss */
+/* line 111, ../sass/module/_search.scss */
 .search-spotbox--wrapper {
   float: left;
   width: 75%;
@@ -6229,7 +6230,7 @@ div.context-editor div.context-editable legend {
   padding-top: 22px;
   padding-left: 30px;
 }
-/* line 117, ../sass/module/_search.scss */
+/* line 119, ../sass/module/_search.scss */
 .search-spotbox--wrapper .search-form-text {
   min-width: 100%;
 }
@@ -6435,6 +6436,32 @@ div.context-editor div.context-editable legend {
   font-family: "exo-regular", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: normal;
   font-size: 130%;
+}
+
+/**
+ * Forum
+ *
+ * @author magnify
+ */
+/* Forum
+   ========================================================================== */
+/* Forum list
+   ========================================================================== */
+/* line 58, ../sass/module/_forum.scss */
+.forum--list-actions {
+  text-align: right;
+}
+
+/* line 62, ../sass/module/_forum.scss */
+.forum--list-actions-label {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75;
+  margin-right: 10px;
+}
+
+/* line 68, ../sass/module/_forum.scss */
+.forum--actions-sort {
+  min-width: 25%;
 }
 
 /**
