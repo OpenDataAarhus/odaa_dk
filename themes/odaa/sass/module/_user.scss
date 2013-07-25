@@ -49,3 +49,53 @@
 .user-register--description {
   @include opacity(.5);
 }
+
+
+/* User profile
+   ========================================================================== */
+.user-profile--content-wrapper {
+  @extend %module-wrapper-style;
+
+  margin-top: $large-spacing;
+  overflow: hidden;
+}
+
+.user-profile--primary-content {
+  @include zen-grid-item(6, 1);
+  
+  padding-left: 0;
+}
+
+.user-profile--secondary-content {
+  @include zen-grid-item(6, 1, right);
+
+  margin-top: -20px;
+  padding-right: 0;
+}
+
+.user-profile--header-wrapper {
+  overflow: hidden;
+}
+
+.user-profile--image {
+  float: left;
+}
+
+.user-profile--title {
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 75%;
+}
+
+.user-profile--info {
+  @extend %section-spacing;
+
+  clear: both;
+}
+
+.user-profile--actions {
+  @extend %section-spacing;
+
+  text-align: right;
+}

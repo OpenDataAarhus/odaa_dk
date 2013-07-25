@@ -4396,6 +4396,102 @@ body {
   _overflow-y: visible;
 }
 
+/* User profile layout */
+/* line 168, ../sass/layout/_layout.scss */
+.user-profile .primary-content {
+  float: right;
+  width: 75%;
+  margin-right: 0%;
+  margin-left: -75%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 172, ../sass/layout/_layout.scss */
+.user-profile .secondary-content {
+  float: left;
+  width: 25%;
+  margin-left: 0%;
+  margin-right: -25%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 176, ../sass/layout/_layout.scss */
+.user-profile .tertiary-content {
+  clear: right;
+  float: right;
+  width: 75%;
+  margin-right: 0%;
+  margin-left: -75%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  padding-right: 0;
+  padding-left: 0;
+}
+/* line 183, ../sass/layout/_layout.scss */
+.user-profile .tertiary-content .spotbox:nth-child(odd) {
+  clear: left;
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+/* line 188, ../sass/layout/_layout.scss */
+.user-profile .tertiary-content .spotbox:nth-child(even) {
+  float: right;
+  width: 50%;
+  margin-right: 0%;
+  margin-left: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
 /**
  * Drupal
  *
@@ -5282,7 +5378,7 @@ div.context-editor div.context-editable legend {
 /* Section spacing
    ========================================================================== */
 /* line 32, ../sass/module/_module.scss */
-.page--section, .dataset--list-wrapper, .dataset--data-resources, .dataset--tags, .dataset--additional-info, .community--wrapper, .community--list-wrapper, .comments--wrapper, .comments--list-actions, .comments--list-item-actions, .comments--post-comment-wrapper {
+.page--section, .user-profile--info, .user-profile--actions, .dataset--list-wrapper, .dataset--data-resources, .dataset--tags, .dataset--additional-info, .community--wrapper, .community--list-wrapper, .comments--wrapper, .comments--list-actions, .comments--list-item-actions, .comments--post-comment-wrapper {
   border-top: 1px dashed #e6e6e6;
   margin-top: 20px;
   padding-top: 20px;
@@ -5471,7 +5567,7 @@ div.context-editor div.context-editable legend {
  * @author magnify
  */
 /* line 8, ../sass/module/_block.scss */
-.twitter-widget, .spotbox--inner, .search-spotbox--inner, .spotbox-menu--inner, .use-cases--list-item-inner, .page--content-wrapper, .comments {
+.twitter-widget, .spotbox--inner, .search-spotbox--inner, .spotbox-menu--inner, .use-cases--list-item-inner, .page--content-wrapper, .user-profile--content-wrapper, .comments {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -5742,42 +5838,53 @@ div.context-editor div.context-editable legend {
 
 /* Spotbox header */
 /* Spotbox list */
+/* line 67, ../sass/module/_spotbox.scss */
+.spotbox--list-show-more {
+  font-family: "exo-demi-bold";
+  font-weight: normal;
+  border-top: 1px dashed rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-top: 10px;
+  text-align: right;
+}
+
 /* Spotbox images */
 /* Spotbox footer */
 /* Spotbox menu
    ========================================================================== */
-/* line 120, ../sass/module/_spotbox.scss */
+/* line 129, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-item .active:link, .spotbox-menu--list-item .active:visited, .spotbox-menu--list-item .active:hover, .spotbox-menu--list-item .active:focus, .spotbox-menu--list-item .active:active {
   color: #be370a;
 }
 
-/* line 131, ../sass/module/_spotbox.scss */
+/* line 140, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-remove-all a:link,
 .spotbox-menu--list-remove-all a:visited,
 .spotbox-menu--list-remove-all a:focus {
   color: #404040;
 }
-/* line 136, ../sass/module/_spotbox.scss */
+/* line 145, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-remove-all a:hover,
 .spotbox-menu--list-remove-all a:active {
   color: #be370a;
 }
 
-/* line 141, ../sass/module/_spotbox.scss */
+/* line 150, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-show-more {
   border-top: 1px dashed rgba(0, 0, 0, 0.1);
   margin-top: 10px;
   margin-bottom: 0;
   padding-top: 10px;
 }
-/* line 149, ../sass/module/_spotbox.scss */
+/* line 158, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-show-more a:link,
 .spotbox-menu--list-show-more a:visited,
 .spotbox-menu--list-show-more a:focus {
   font-family: "exo-demi-bold";
   font-weight: normal;
 }
-/* line 154, ../sass/module/_spotbox.scss */
+/* line 163, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-show-more a:hover,
 .spotbox-menu--list-show-more a:active {
   color: #8e2907;
@@ -5828,6 +5935,83 @@ div.context-editor div.context-editable legend {
 .user-register--description {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
+}
+
+/* User profile
+   ========================================================================== */
+/* line 56, ../sass/module/_user.scss */
+.user-profile--content-wrapper {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* line 63, ../sass/module/_user.scss */
+.user-profile--primary-content {
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  padding-left: 0;
+}
+
+/* line 69, ../sass/module/_user.scss */
+.user-profile--secondary-content {
+  float: right;
+  width: 50%;
+  margin-right: 0%;
+  margin-left: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  margin-top: -20px;
+  padding-right: 0;
+}
+
+/* line 76, ../sass/module/_user.scss */
+.user-profile--header-wrapper {
+  overflow: hidden;
+}
+
+/* line 80, ../sass/module/_user.scss */
+.user-profile--image {
+  float: left;
+}
+
+/* line 84, ../sass/module/_user.scss */
+.user-profile--title {
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 75%;
+}
+
+/* line 91, ../sass/module/_user.scss */
+.user-profile--info {
+  clear: both;
+}
+
+/* line 97, ../sass/module/_user.scss */
+.user-profile--actions {
+  text-align: right;
 }
 
 /**

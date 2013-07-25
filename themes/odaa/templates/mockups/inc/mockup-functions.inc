@@ -4,7 +4,7 @@
   function main_menu($active) {
 
     $main_menu = array(
-      'Forsiden' => 'forsiden.php',
+      'Forsiden' => 'frontpage.php',
       'Datasæt' => 'datasets.php',
       'Community' => 'community.php',
       'Use cases' => 'use-cases.php',
@@ -67,8 +67,8 @@
   function logged_in_menu($active) {
 
     $logged_in_menu = array(
-      'Min konto' => 'user-login.php',
-      'Log ud' => 'user-register.php'
+      'Min konto' => 'user-profile.php',
+      'Log ud' => '#'
     );
 
     $output = '<ul class="secondary-menu">';
