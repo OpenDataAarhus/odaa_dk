@@ -101,7 +101,13 @@ function odaa_preprocess_html(&$variables) {
   if (!empty($variables['logged_in'])) {
     $variables['classes_array'][] = 'logged-in';
   }
-
+  
+  // Add first argument to body
+  $alias = explode('/', drupal_get_path_alias());
+  if (sizeof($alias) > 0) {
+    $variables['classes_array'][] = 'url-' . $alias[0];
+  }
+  
   // Add the node type class (except for frontpage).
   if (isset($variables['page']['#type']) && empty($variables['is_front'])) {
     if(arg(0) == 'user'){
