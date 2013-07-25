@@ -4,7 +4,7 @@
   <?php include 'snippets/head.inc'; ?>
   <title>Welcome to dev.odaa.dk | dev.odaa.dk</title>
 </head>
-<body class="left-sidebar">
+<body>
   <div id="page" class="page">
     <header class="site-header">
       <section class="header-wrapper">
@@ -12,7 +12,7 @@
           <?php include 'snippets/logo.inc'; ?>
           <?php include 'snippets/search-form.inc'; ?>
           <?php echo main_menu(3); ?>
-          <?php echo secondary_menu(false); ?>
+          <?php echo logged_in_menu(false); ?>
         </div>
       </section>
     </header>
@@ -102,24 +102,12 @@
           </div>
         </div>
         <div class="secondary-content">
-          <div class="spotbox-menu">
-            <div class="spotbox-menu--inner">
-              <h3 class="spotbox-menu--header"><i class="icon-user"></i>Brugermenu</h3>
-              <ul class="spotbox-menu--list">
-                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-angle-right"></i>Se brugerprofil</a></li>
-                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-angle-right"></i>Rediger brugerprofil</a></li>
-                <li class="spotbox-menu--list-item last"><a href="#"><i class="icon-power-off"></i>Log ud</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="spotbox-menu">
-            <div class="spotbox-menu--inner">
-              <h3 class="spotbox-menu--header"><i class="icon-file-text-alt"></i>Mit indhold</h3>
-              <ul class="spotbox-menu--list">
-                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-angle-right"></i>Mine forumindlæg</a></li>
-                <li class="spotbox-menu--list-item last"><a href="my-use-cases.php"><i class="icon-angle-right"></i>Mine use cases</a></li>
-              </ul>
-            </div>
+          <div class="sub-menu-wrapper">
+            <h2 class="sub-menu-header">Community</h2>
+            <ul class="sub-menu">
+              <li><a href="#" class="menu-item active"><span>Use cases</span></a></li>
+              <li class="last"><a href="#" class="menu-item"><span>Forumindlæg</span></a>
+            </ul>
           </div>
           <div class="spotbox-menu">
             <div class="spotbox-menu--inner">

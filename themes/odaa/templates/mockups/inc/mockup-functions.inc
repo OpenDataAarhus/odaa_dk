@@ -63,4 +63,35 @@
     return $output;
   }
 
+  // Logged in menu
+  function logged_in_menu($active) {
+
+    $logged_in_menu = array(
+      'Min konto' => 'user-login.php',
+      'Log ud' => 'user-register.php'
+    );
+
+    $output = '<ul class="secondary-menu">';
+
+    $count = 0;
+    $count_last = count($logged_in_menu) - 1;
+
+    foreach ($logged_in_menu as $name => $url) {
+      $count == $count_last ? $last = ' last' : $last = '';
+
+      if ($active != false && $count == $active) {
+        $output.= '<li><a href="' . $url .'" class="menu-item active'.$last.'"><span>' . $name . '</span></a></li>';
+      }
+      else {
+        $output.= '<li><a href="' . $url .'" class="menu-item'.$last.'"><span>' . $name . '</span></a></li>';
+      }
+
+      $count++;
+    }
+
+    $output.= '</ul>';
+
+    return $output;
+  }
+
 ?>
