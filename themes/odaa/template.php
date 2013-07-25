@@ -78,8 +78,8 @@ function odaa_menu_link($variables) {
   // Make sure text string is treated as html by l function.
   $element['#localized_options']['html'] = true;
 
-  $output = l('<span>'.$element['#title'].'</span>', $element['#href'], $element['#localized_options']);
-  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+  return '<li' . drupal_attributes($element['#attributes']) . '><span>' . $output . '</span>' . $sub_menu . "</li>\n";
 }
 
 
