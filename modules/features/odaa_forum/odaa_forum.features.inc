@@ -15,6 +15,13 @@ function odaa_forum_ctools_plugin_api() {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function odaa_forum_views_api() {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_node_info().
  */
 function odaa_forum_node_info() {

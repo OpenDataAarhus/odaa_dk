@@ -1,17 +1,17 @@
 <?php
 /**
  * @file
- * use_cases.views_default.inc
+ * odaa_use_cases.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function use_cases_views_default_views() {
+function odaa_use_cases_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'use_cases_list';
+  $view->name = 'odaa_use_cases_list';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
@@ -154,8 +154,8 @@ function use_cases_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'use-cases-list';
-  $export['use_cases_list'] = $view;
+  $handler->display->display_options['path'] = 'use-cases';
+  $export['odaa_use_cases_list'] = $view;
 
   return $export;
 }

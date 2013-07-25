@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * use_cases.features.user_permission.inc
+ * odaa_use_cases.features.user_permission.inc
  */
 
 /**
  * Implements hook_user_default_permissions().
  */
-function use_cases_user_default_permissions() {
+function odaa_use_cases_user_default_permissions() {
   $permissions = array();
 
   // Exported permission: create use_case content.

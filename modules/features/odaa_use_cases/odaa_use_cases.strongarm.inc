@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * use_cases.strongarm.inc
+ * odaa_use_cases.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function use_cases_strongarm() {
+function odaa_use_cases_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();

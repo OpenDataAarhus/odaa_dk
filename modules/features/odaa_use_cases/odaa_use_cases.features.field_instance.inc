@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * use_cases.features.field_instance.inc
+ * odaa_use_cases.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function use_cases_field_default_field_instances() {
+function odaa_use_cases_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'node-use_case-body'
