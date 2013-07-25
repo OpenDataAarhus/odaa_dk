@@ -236,7 +236,9 @@ function odaa_form_alter(&$form, &$form_state, $form_id){
       break;
       case 'views_exposed_form':
         $form['sort_by']['#attributes']['class'][] = 'search--actions-sort';
-       // $form['#info']['#attributes']['class'][] = 'search-form--content-block--input';
+        $form['title']['#attributes']['class'][] = 'search-form--content-block--input';
+        $form['submit']['#attributes']['class'][] = 'search-form--content-block--button';
+        unset($form['reset']);
       break;
   }
 }
