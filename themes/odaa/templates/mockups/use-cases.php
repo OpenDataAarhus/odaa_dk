@@ -106,7 +106,7 @@
             <h2 class="sub-menu-header">Community</h2>
             <ul class="sub-menu">
               <li><a href="#" class="menu-item active"><span>Use cases</span></a></li>
-              <li class="last"><a href="#" class="menu-item"><span>Forumindlæg</span></a>
+              <li class="last"><a href="#" class="menu-item"><span>Forum</span></a>
             </ul>
           </div>
           <div class="spotbox-menu">
