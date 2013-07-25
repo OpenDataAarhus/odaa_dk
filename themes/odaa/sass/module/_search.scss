@@ -51,6 +51,8 @@
 
   .search-form--content-block--label {
     @include opacity(.75);
+    
+    display: block;
   }
 
   .search-form--content-block--input {
