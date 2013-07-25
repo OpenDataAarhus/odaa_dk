@@ -47,7 +47,7 @@
         <div class="tertiary-content">
           <div class="spotbox">
             <div class="spotbox--inner">
-              <h2 class="spotbox--header"><a href="#"><i class="icon-comments-alt"></i>Forumindlæg</a></h2>
+              <h2 class="spotbox--header"><i class="icon-comments-alt"></i>Forumindlæg</h2>
               <ul class="spotbox--list">
                 <li class="spotbox--list-item first">
                   <span class="spotbox--list-link"><a href="#comment1">Morbi leo risus</a></span>
@@ -70,11 +70,12 @@
                   <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
                 </li>
               </ul>
+              <p class="spotbox--list-show-more"><a href="#"><i class="icon-angle-right"></i>Se mere</a></p>
             </div>
           </div>
           <div class="spotbox">
             <div class="spotbox--inner">
-              <h2 class="spotbox--header"><a href="#"><i class="icon-file-alt"></i>Use cases</a></h2>
+              <h2 class="spotbox--header"><i class="icon-file-alt"></i>Use cases</h2>
               <ul class="spotbox--list">
                 <li class="spotbox--list-item first">
                   <span class="spotbox--list-link"><a href="#comment1">Morbi leo risus</a></span>
@@ -97,11 +98,12 @@
                   <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
                 </li>
               </ul>
+              <p class="spotbox--list-show-more"><a href="#"><i class="icon-angle-right"></i>Se mere</a></p>
             </div>
           </div>
           <div class="spotbox">
             <div class="spotbox--inner">
-              <h2 class="spotbox--header"><a href="#"><i class="icon-sitemap"></i>Datasæt</a></h2>
+              <h2 class="spotbox--header"><i class="icon-sitemap"></i>Datasæt</h2>
               <ul class="spotbox--list">
                 <li class="spotbox--list-item first">
                   <span class="spotbox--list-link"><a href="#comment1">Morbi leo risus</a></span>
@@ -124,6 +126,7 @@
                   <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
                 </li>
               </ul>
+              <p class="spotbox--list-show-more"><a href="#"><i class="icon-angle-right"></i>Se mere</a></p>
             </div>
           </div>
         </div>
