@@ -210,6 +210,9 @@ function odaa_form_alter(&$form, &$form_state, $form_id){
  */
 
 function odaa_form_element($variables){
+  print '<pre>';
+  print_r($variables);
+  print '</pre>';
  $element = &$variables['element'];
 
   // This function is invoked as theme wrapper, but the rendered form element
@@ -234,21 +237,31 @@ function odaa_form_element($variables){
   if (!empty($element['#attributes']['disabled'])) {
     $attributes['class'][] = 'form-disabled';
   }
-  $output = '' . "\n";
+  $output ="\n";
 
   // If #title is not set, we don't display any label or required marker.
   if (!isset($element['#title'])) {
     $element['#title_display'] = 'none';
   }
+  //$prefix = isset($element['#field_prefix']) ? '<span class="field-prefix">' . $element['#field_prefix'] . '</span> ' : '';
+  //$suffix = isset($element['#field_suffix']) ? ' <span class="field-suffix">' . $element['#field_suffix'] . '</span>' : '';
+
   switch ($element['#title_display']) {
     case 'before':
     case 'invisible':
       $output .= ' ' . theme('form_element_label', $variables);
-      $output .= ' ' . $element['#children'] . "\n";
+      $output .= ' ' . $element['#children'] .  "\n";
       break;
+
+    case 'after':
+      $output .= ' ' . $element['#children'];
+      $output .= ' ' . theme('form_element_label', $variables) . "\n";
+      break;
+
+    case 'none':
     case 'attribute':
       // Output no label and no required marker, only the children.
-      $output .= ' ' . $prefix . $element['#children'] . $suffix . "\n";
+      $output .= ' ' . $element['#children'] . "\n";
       break;
   }
 
@@ -259,5 +272,4 @@ function odaa_form_element($variables){
   $output .= "\n";
 
   return $output;
-  
-  }
+}
