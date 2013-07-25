@@ -190,6 +190,11 @@ function odaa_form_alter(&$form, &$form_state, $form_id){
               <a href="/user/password" class="user-login--forgot-password">'.t('Forgot password?').'</a>';
       $form['actions']['#suffix']  = '</div>';
       break;
+      case 'views_exposed_form':
+        echo '<pre>';
+        //print_r($form);
+        echo '</pre>';
+      break;
   }
 }
 
@@ -197,23 +202,19 @@ function odaa_form_alter(&$form, &$form_state, $form_id){
 /**
  * Implements hook_form_element().
  */
-/*
-function odaa_form_element($variables){
-         echo '<pre>';
-        //print_r($variables);
-        echo '</pre>';
-  switch ($variables['element']['#title']) {
-    case 'Username':
-      $variables['#attributes']['class'] = 'another-class';
-        echo '<pre>';
-        print_r($variables['element']);
-        echo '</pre>';
-      return theme_form_element($variables);
-      break;
-    case 'Password':
-      $variables['attributes']['class'][] = 'another-class';
-        //print_r($variables['element']);
-      return theme_form_element($variables);
-      break;
+
+function odaa_form($variables){
+    echo '<pre>';
+      print_r($variables);
+    echo '</pre>';
+      $element = $variables['element'];
+  if (isset($element['#action'])) {
+    $element['#attributes']['action'] = drupal_strip_dangerous_protocols($element['#action']);
   }
-}*/
+  element_set_attributes($element, array('method', 'id'));
+  if (empty($element['#attributes']['accept-charset'])) {
+    $element['#attributes']['accept-charset'] = "UTF-8";
+  }
+  // Anonymous DIV to satisfy XHTML compliance.
+  return '<form' . drupal_attributes($element['#attributes']) . '><div>' . $element['#children'] . '</div></form>';
+}
