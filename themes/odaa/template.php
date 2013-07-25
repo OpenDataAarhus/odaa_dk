@@ -210,9 +210,6 @@ function odaa_form_alter(&$form, &$form_state, $form_id){
  */
 
 function odaa_form_element($variables){
-  print '<pre>';
-  print_r($variables);
-  print '</pre>';
  $element = &$variables['element'];
 
   // This function is invoked as theme wrapper, but the rendered form element
