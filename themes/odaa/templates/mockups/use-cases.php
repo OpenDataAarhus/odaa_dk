@@ -2,7 +2,7 @@
 <?php include './snippets/doctype.inc'; ?>
 <head profile="http://www.w3.org/1999/xhtml/vocab">
   <?php include 'snippets/head.inc'; ?>
-  <title>Welcome to dev.odaa.dk | dev.odaa.dk</title>
+  <title>Use cases</title>
 </head>
 <body>
   <div id="page" class="page">
