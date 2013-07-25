@@ -24,11 +24,14 @@ function odaa_use_cases_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Use cases';
   $handler->display->display_options['css_class'] = 'page--content-wrapper';
+  $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['expose_sort_order'] = FALSE;
+  $handler->display->display_options['exposed_form']['options']['autosubmit_hide'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '12';
   $handler->display->display_options['style_plugin'] = 'default';
@@ -120,6 +123,20 @@ function odaa_use_cases_views_default_views() {
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Sort criterion: Content: Comment count */
+  $handler->display->display_options['sorts']['comment_count']['id'] = 'comment_count';
+  $handler->display->display_options['sorts']['comment_count']['table'] = 'node_comment_statistics';
+  $handler->display->display_options['sorts']['comment_count']['field'] = 'comment_count';
+  $handler->display->display_options['sorts']['comment_count']['order'] = 'DESC';
+  $handler->display->display_options['sorts']['comment_count']['exposed'] = TRUE;
+  $handler->display->display_options['sorts']['comment_count']['expose']['label'] = 'Comment count';
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created_1']['id'] = 'created_1';
+  $handler->display->display_options['sorts']['created_1']['table'] = 'node';
+  $handler->display->display_options['sorts']['created_1']['field'] = 'created';
+  $handler->display->display_options['sorts']['created_1']['order'] = 'DESC';
+  $handler->display->display_options['sorts']['created_1']['exposed'] = TRUE;
+  $handler->display->display_options['sorts']['created_1']['expose']['label'] = 'Post date';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
