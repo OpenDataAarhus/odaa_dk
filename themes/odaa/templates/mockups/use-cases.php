@@ -117,8 +117,7 @@
               <h3 class="spotbox-menu--header"><i class="icon-file-text-alt"></i>Mit indhold</h3>
               <ul class="spotbox-menu--list">
                 <li class="spotbox-menu--list-item"><a href="#"><i class="icon-angle-right"></i>Mine forumindlæg</a></li>
-                <li class="spotbox-menu--list-item"><a href="my-use-cases.php"><i class="icon-angle-right"></i>Mine use cases</a></li>
-                <li class="spotbox-menu--list-item last"><a href="#"><i class="icon-angle-right"></i>Mine datasæt</a></li>
+                <li class="spotbox-menu--list-item last"><a href="my-use-cases.php"><i class="icon-angle-right"></i>Mine use cases</a></li>
               </ul>
             </div>
           </div>
@@ -126,9 +125,8 @@
             <div class="spotbox-menu--inner">
               <h3 class="spotbox-menu--header"><i class="icon-plus-sign"></i>Opret indhold</h3>
               <ul class="spotbox-menu--list">
-                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-angle-right"></i>Mine forumindlæg</a></li>
-                <li class="spotbox-menu--list-item"><a href="my-use-cases.php"><i class="icon-angle-right"></i>Mine use cases</a></li>
-                <li class="spotbox-menu--list-item last"><a href="#"><i class="icon-angle-right"></i>Mine datasæt</a></li>
+                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-angle-right"></i>Opret forumindlæg</a></li>
+                <li class="spotbox-menu--list-item last"><a href="my-use-cases.php"><i class="icon-angle-right"></i>Opret use case</a></li>
               </ul>
             </div>
           </div>
