@@ -113,7 +113,8 @@
             <h2 class="sub-menu-header">Community</h2>
             <ul class="sub-menu">
               <li><a href="use-cases.php" class="menu-item active"><span>Use cases</span></a></li>
-              <li class="last"><a href="forum.php" class="menu-item"><span>Forum</span></a>
+              <li><a href="forum.php" class="menu-item"><span>Forum</span></a>
+              <li class="last"><a href="datasets.php" class="menu-item"><span>Datasæt</span></a>
             </ul>
           </div>
           <div class="spotbox-menu">
