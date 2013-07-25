@@ -17,7 +17,7 @@
  *   data including the contexts and all of the other panes being displayed.
  */
 ?>
-<div class="sub-menu-wrapper">
+<div class="<?php print $classes; ?>"<?php print $attributes; ?> rel="<?php print $block_html_id; ?>">
   <?php if ($block->subject): ?>
     <h2 class="sub-menu-header"><?php print $block->subject ?></h2>
   <?php endif;?>

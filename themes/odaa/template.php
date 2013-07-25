@@ -166,6 +166,10 @@ function odaa_preprocess_block(&$variables) {
       $variables['classes_array'][] = 'search-spotbox';
       break;
 
+    case 3: // Sub menu
+      $variables['classes_array'][] = 'sub-menu-wrapper';
+      break;    
+    
     default:
       $variables['classes_array'][] = 'spotbox';
       break;
