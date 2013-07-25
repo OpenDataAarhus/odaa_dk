@@ -103,9 +103,9 @@ function odaa_preprocess_html(&$variables) {
   }
   
   // Add first argument to body
-  $alias = explode('/', drupal_get_path_alias());
-  if (sizeof($alias) > 0) {
-    $variables['classes_array'][] = 'url-' . $alias[0];
+  $url = arg();
+  if (isset($url[1]) > 0) {
+    $variables['classes_array'][] = 'node-id-' . $url[1];
   }
   
   // Add the node type class (except for frontpage).
