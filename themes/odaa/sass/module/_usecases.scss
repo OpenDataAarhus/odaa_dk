@@ -48,17 +48,3 @@
 .use-cases--list-footer-link {
   @extend %module-list-alternate-footer-link;
 }
-
-.use-cases--list-actions {
-  text-align: right;
-}
-
-.use-cases--list-actions-label {
-  @include opacity(.75);
-
-  margin-right: 10px;
-}
-
-.use-cases--actions-sort {
-  min-width: 25%;
-}

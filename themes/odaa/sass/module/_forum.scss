@@ -54,17 +54,3 @@
 .forum--list-footer-link {
   @extend %module-list-alternate-footer-link;
 }
-
-.forum--list-actions {
-  text-align: right;
-}
-
-.forum--list-actions-label {
-  @include opacity(.75);
-
-  margin-right: 10px;
-}
-
-.forum--actions-sort {
-  min-width: 25%;
-}

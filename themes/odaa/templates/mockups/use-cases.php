@@ -31,9 +31,9 @@
                 <input type="submit" class="search-form--content-block--button" value="Søg" />
               </form>
             </div>
-            <div class="use-cases--list-actions">
-              <label class="use-cases--list-actions-label">Sortér efter:</label>
-              <select name="sort" class="use-cases--actions-sort">
+            <div class="search--list-actions">
+              <label class="search--list-actions-label">Sortér efter:</label>
+              <select name="sort" class="search--actions-sort">
                 <option selected="selected">Nyeste</option>
                 <option>Mest kommenterede</option>
               </select>
