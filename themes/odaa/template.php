@@ -263,9 +263,11 @@ function odaa_form_alter(&$form, &$form_state, $form_id){
       unset($form['account']['account']);
       $form['#prefix']  =
         '<div class="page--content-wrapper">
-          <section class="page--content">
-            <h1 class="page--title">'.t('User register').'</h1>';
-      $form['#suffix']  =  '</div>';
+           <section class="page--content">
+             <h1 class="page--title">'.t('User register').'</h1>';
+      $form['#suffix']  =
+          '</section>
+         </div>';
       break;
     case 'user_login':
       unset($form['name']['#description']);
@@ -278,7 +280,9 @@ function odaa_form_alter(&$form, &$form_state, $form_id){
       $form['actions']['#prefix']  =
               '<div class="user-login--actions">
               <a href="/user/password" class="user-login--forgot-password">'.t('Forgot password?').'</a>';
-      $form['actions']['#suffix']  = '</div>';
+      $form['#suffix']  =
+          '</section>
+         </div>';
       break;
     case 'user_pass':
       unset($form['name']['#description']);
@@ -286,7 +290,9 @@ function odaa_form_alter(&$form, &$form_state, $form_id){
         '<div class="page--content-wrapper">
           <section class="page--content">
             <h1 class="page--title">'.t('User register').'</h1>';
-      $form['#suffix']  =  '</div>';
+      $form['#suffix']  =
+          '</section>
+         </div>';
       break;
     case 'views_exposed_form':
       $form['sort_by']['#attributes']['class'][] = 'search--actions-sort';
