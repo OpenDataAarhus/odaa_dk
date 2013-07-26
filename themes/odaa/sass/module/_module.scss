@@ -160,9 +160,23 @@
 }
 
 
+/* List actions
+   ========================================================================== */
+.list--action-sort-latest,
+.list--action-sort-hot {
+  @extend .button;
+  
+  &.active {
+    @extend %button-theme;
+  }
+}
+
+.list--action-create {
+  @extend %button-action;
+}
+
 /* Pager
    ========================================================================== */
-
 .pager {
   margin-top: $large-spacing;
   padding-left: 0;
