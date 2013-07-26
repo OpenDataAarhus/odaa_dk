@@ -1,0 +1,16 @@
+name = ODAA User setup
+description = Context setup for user
+core = 7.x
+package = ODAA
+php = 5.2.4
+version = 7.x-1.0
+project = odaa_user_setup
+dependencies[] = context
+dependencies[] = ctools
+dependencies[] = heartbeat
+dependencies[] = menu_block
+dependencies[] = nodespotbox
+features[context][] = logged_in_user
+features[context][] = user
+features[ctools][] = context:context:3
+features[features_api][] = api:2
