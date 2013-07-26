@@ -66,12 +66,13 @@ function odaa_theme() {
  * Implements theme_menu_link().
  */
 function odaa_menu_link($variables) {
+  return _odaa_menu_styling($variables, 'menu-item');
+}
 
-  // Check if the class array is empty.
-  if(empty($variables['element']['#attributes']['class'])){
-    unset($variables['element']['#attributes']['class']);
-  }
-
+/**
+ * Helper function for menu blocks
+ */
+function _odaa_menu_styling($variables, $class, $icon = FALSE, $span = FALSE) {
   $element = $variables['element'];
 
   $sub_menu = '';
@@ -81,87 +82,35 @@ function odaa_menu_link($variables) {
   }
 
   // Add default class to a tag
-  $element['#localized_options']['attributes']['class'] = array(
-    'menu-item',
-  );
+  $element['#localized_options']['attributes']['class'][] = $class;
 
   // Make sure text string is treated as html by l function.
   $element['#localized_options']['html'] = true;
 
   $output = l($element['#title'], $element['#href'], $element['#localized_options']);
-  return '<li' . drupal_attributes($element['#attributes']) . '><span>' . $output . '</span>' . $sub_menu . "</li>\n";
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . (($span)?'<span>':'') . $output . (($span)?'</span>':'') . $sub_menu . "</li>\n";
 }
-
 
 /**
  * Implements theme_menu_link__menu_block().
- *
- * TODO: Refactor so we don't need a function for each menu.
  */
 function odaa_menu_link__menu_block__4($variables) {
-
-  // Check if the class array is empty.
-  if(empty($variables['element']['#attributes']['class'])){
-    unset($variables['element']['#attributes']['class']);
-  }
-
-  $element = $variables['element'];
-
-  $sub_menu = '';
-
-  if ($element['#below']) {
-    $sub_menu = drupal_render($element['#below']);
-  }
-
-  // Add default class to a tag
-  $element['#localized_options']['attributes']['class'] = array(
-    'menu-item',
-  );
-
-  // Make sure text string is treated as html by l function.
-  $element['#localized_options']['html'] = true;
-
-  $element['#attributes']['class'][] = 'spotbox-menu--list-item';
-
-  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
-  return '<li' . drupal_attributes($element['#attributes']) . '><span><i class="icon-angle-right"></i>' . $output . '</span>' . $sub_menu . "</li>\n";
+  return _odaa_menu_styling($variables, 'spotbox-menu--list-item', TRUE);
 }
 
 /**
  * Implements theme_menu_link__menu_block().
- *
- * TODO: Refactor so we don't need a function for each menu.
 */
 function odaa_menu_link__menu_block__5($variables) {
-
-  // Check if the class array is empty.
-  if(empty($variables['element']['#attributes']['class'])){
-    unset($variables['element']['#attributes']['class']);
-  }
-
-  $element = $variables['element'];
-
-  $sub_menu = '';
-
-  if ($element['#below']) {
-    $sub_menu = drupal_render($element['#below']);
-  }
-
-  // Add default class to a tag
-  $element['#localized_options']['attributes']['class'] = array(
-    'menu-item',
-  );
-
-  // Make sure text string is treated as html by l function.
-  $element['#localized_options']['html'] = true;
-
-  $element['#attributes']['class'][] = 'spotbox-menu--list-item';
-
-  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
-  return '<li' . drupal_attributes($element['#attributes']) . '><span><i class="icon-angle-right"></i>' . $output . '</span>' . $sub_menu . "</li>\n";
+  return _odaa_menu_styling($variables, 'spotbox-menu--list-item', TRUE);
 }
 
-
+/**
+ * Implements theme_menu_link__menu_block().
+*/
+function odaa_menu_link__menu_block__6($variables) {
+  return _odaa_menu_styling($variables, 'spotbox-menu--list-item', TRUE);
+}
 
 /**
  * Implements template_preprocess_html().
@@ -181,7 +130,7 @@ function odaa_preprocess_html(&$variables) {
   if (!empty($variables['logged_in'])) {
     $variables['classes_array'][] = 'logged-in';
   }
-  
+
   // Add first argument to body
   $url = arg();
   if (isset($url[1])) {

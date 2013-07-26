@@ -23,7 +23,10 @@
    ========================================================================== */
 .comments--list-actions {
   @extend %section-spacing;
-  @extend .list--actions;
+
+  .list--action-create {
+    float: right;
+  }
 }
 
 .comments--list {

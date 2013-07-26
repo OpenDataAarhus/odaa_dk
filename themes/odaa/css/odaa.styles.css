@@ -1014,8 +1014,9 @@ table tbody tr:hover th,
    ========================================================================== */
 /* line 29, ../sass/framework/_buttons.scss */
 .button, .form-submit, #context-inline-editor li.context-editable div.links .edit,
-#context-inline-editor li.context-editing div.links .done, .user-login--submit, .user-register--submit, .search-form--content-block .search-form--content-block--button,
-a.button, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download, .comments--post-comment-login,
+#context-inline-editor li.context-editing div.links .done, .list--action-sort-latest,
+.list--action-sort-hot, .user-login--submit, .user-register--submit, .search-form--content-block .search-form--content-block--button,
+a.button, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview, .list--action-create, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download, .comments--post-comment-login,
 .comments--post-comment-create-user {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1035,19 +1036,24 @@ a.button, .dataset--data-resources--list-item .dataset--data-resources--list-act
 }
 /* line 45, ../sass/framework/_buttons.scss */
 .button:focus, .form-submit:focus, #context-inline-editor li.context-editable div.links .edit:focus,
-#context-inline-editor li.context-editing div.links .done:focus, .user-login--submit:focus, .user-register--submit:focus, .search-form--content-block .search-form--content-block--button:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:focus, .comments--post-comment-login:focus,
+#context-inline-editor li.context-editing div.links .done:focus, .list--action-sort-latest:focus,
+.list--action-sort-hot:focus, .user-login--submit:focus, .user-register--submit:focus, .search-form--content-block .search-form--content-block--button:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:focus, .list--action-create:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:focus, .comments--post-comment-login:focus,
 .comments--post-comment-create-user:focus, .button:hover, .form-submit:hover, #context-inline-editor li.context-editable div.links .edit:hover,
-#context-inline-editor li.context-editing div.links .done:hover, .user-login--submit:hover, .user-register--submit:hover, .search-form--content-block .search-form--content-block--button:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:hover, .comments--post-comment-login:hover,
+#context-inline-editor li.context-editing div.links .done:hover, .list--action-sort-latest:hover,
+.list--action-sort-hot:hover, .user-login--submit:hover, .user-register--submit:hover, .search-form--content-block .search-form--content-block--button:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:hover, .list--action-create:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:hover, .comments--post-comment-login:hover,
 .comments--post-comment-create-user:hover, .button:active, .form-submit:active, #context-inline-editor li.context-editable div.links .edit:active,
-#context-inline-editor li.context-editing div.links .done:active, .user-login--submit:active, .user-register--submit:active, .search-form--content-block .search-form--content-block--button:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:active, .comments--post-comment-login:active,
+#context-inline-editor li.context-editing div.links .done:active, .list--action-sort-latest:active,
+.list--action-sort-hot:active, .user-login--submit:active, .user-register--submit:active, .search-form--content-block .search-form--content-block--button:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:active, .list--action-create:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:active, .comments--post-comment-login:active,
 .comments--post-comment-create-user:active {
   text-decoration: none;
 }
 /* line 51, ../sass/framework/_buttons.scss */
 .disabled.button, .disabled.form-submit, #context-inline-editor li.context-editable div.links .disabled.edit,
-#context-inline-editor li.context-editing div.links .disabled.done, .disabled.user-login--submit, .disabled.user-register--submit, .search-form--content-block .disabled.search-form--content-block--button, .dataset--data-resources--list-item .disabled.dataset--data-resources--list-actions-preview, .dataset--data-resources--list-item .disabled.dataset--data-resources--list-actions-download, .disabled.comments--post-comment-login,
+#context-inline-editor li.context-editing div.links .disabled.done, .disabled.list--action-sort-latest,
+.disabled.list--action-sort-hot, .disabled.user-login--submit, .disabled.user-register--submit, .search-form--content-block .disabled.search-form--content-block--button, .dataset--data-resources--list-item .disabled.dataset--data-resources--list-actions-preview, .disabled.list--action-create, .dataset--data-resources--list-item .disabled.dataset--data-resources--list-actions-download, .disabled.comments--post-comment-login,
 .disabled.comments--post-comment-create-user, [disabled].button, [disabled].form-submit, #context-inline-editor li.context-editable div.links [disabled].edit,
-#context-inline-editor li.context-editing div.links [disabled].done, [disabled].user-login--submit, [disabled].user-register--submit, .search-form--content-block [disabled].search-form--content-block--button, .dataset--data-resources--list-item [disabled].dataset--data-resources--list-actions-preview, .dataset--data-resources--list-item [disabled].dataset--data-resources--list-actions-download, [disabled].comments--post-comment-login,
+#context-inline-editor li.context-editing div.links [disabled].done, [disabled].list--action-sort-latest,
+[disabled].list--action-sort-hot, [disabled].user-login--submit, [disabled].user-register--submit, .search-form--content-block [disabled].search-form--content-block--button, .dataset--data-resources--list-item [disabled].dataset--data-resources--list-actions-preview, [disabled].list--action-create, .dataset--data-resources--list-item [disabled].dataset--data-resources--list-actions-download, [disabled].comments--post-comment-login,
 [disabled].comments--post-comment-create-user {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
@@ -1062,11 +1068,14 @@ a.button, .dataset--data-resources--list-item .dataset--data-resources--list-act
 /* Default button */
 /* line 98, ../sass/framework/_buttons.scss */
 .button, .form-submit, #context-inline-editor li.context-editable div.links .edit,
-#context-inline-editor li.context-editing div.links .done, .user-login--submit, .user-register--submit, .search-form--content-block .search-form--content-block--button,
+#context-inline-editor li.context-editing div.links .done, .list--action-sort-latest,
+.list--action-sort-hot, .user-login--submit, .user-register--submit, .search-form--content-block .search-form--content-block--button,
 a.button,
 a.form-submit,
 #context-inline-editor li.context-editable div.links a.edit,
 #context-inline-editor li.context-editing div.links a.done,
+a.list--action-sort-latest,
+a.list--action-sort-hot,
 a.user-login--submit,
 a.user-register--submit,
 .search-form--content-block a.search-form--content-block--button {
@@ -1082,12 +1091,16 @@ a.user-register--submit,
 }
 /* line 76, ../sass/framework/_buttons.scss */
 .button:link, .form-submit:link, #context-inline-editor li.context-editable div.links .edit:link,
-#context-inline-editor li.context-editing div.links .done:link, .user-login--submit:link, .user-register--submit:link, .search-form--content-block .search-form--content-block--button:link, .button:visited, .form-submit:visited, #context-inline-editor li.context-editable div.links .edit:visited,
-#context-inline-editor li.context-editing div.links .done:visited, .user-login--submit:visited, .user-register--submit:visited, .search-form--content-block .search-form--content-block--button:visited,
+#context-inline-editor li.context-editing div.links .done:link, .list--action-sort-latest:link,
+.list--action-sort-hot:link, .user-login--submit:link, .user-register--submit:link, .search-form--content-block .search-form--content-block--button:link, .button:visited, .form-submit:visited, #context-inline-editor li.context-editable div.links .edit:visited,
+#context-inline-editor li.context-editing div.links .done:visited, .list--action-sort-latest:visited,
+.list--action-sort-hot:visited, .user-login--submit:visited, .user-register--submit:visited, .search-form--content-block .search-form--content-block--button:visited,
 a.button:link,
 a.form-submit:link,
 #context-inline-editor li.context-editable div.links a.edit:link,
 #context-inline-editor li.context-editing div.links a.done:link,
+a.list--action-sort-latest:link,
+a.list--action-sort-hot:link,
 a.user-login--submit:link,
 a.user-register--submit:link,
 .search-form--content-block a.search-form--content-block--button:link,
@@ -1095,6 +1108,8 @@ a.button:visited,
 a.form-submit:visited,
 #context-inline-editor li.context-editable div.links a.edit:visited,
 #context-inline-editor li.context-editing div.links a.done:visited,
+a.list--action-sort-latest:visited,
+a.list--action-sort-hot:visited,
 a.user-login--submit:visited,
 a.user-register--submit:visited,
 .search-form--content-block a.search-form--content-block--button:visited {
@@ -1102,13 +1117,18 @@ a.user-register--submit:visited,
 }
 /* line 83, ../sass/framework/_buttons.scss */
 .button:focus, .form-submit:focus, #context-inline-editor li.context-editable div.links .edit:focus,
-#context-inline-editor li.context-editing div.links .done:focus, .user-login--submit:focus, .user-register--submit:focus, .search-form--content-block .search-form--content-block--button:focus, .button:hover, .form-submit:hover, #context-inline-editor li.context-editable div.links .edit:hover,
-#context-inline-editor li.context-editing div.links .done:hover, .user-login--submit:hover, .user-register--submit:hover, .search-form--content-block .search-form--content-block--button:hover, .button:active, .form-submit:active, #context-inline-editor li.context-editable div.links .edit:active,
-#context-inline-editor li.context-editing div.links .done:active, .user-login--submit:active, .user-register--submit:active, .search-form--content-block .search-form--content-block--button:active,
+#context-inline-editor li.context-editing div.links .done:focus, .list--action-sort-latest:focus,
+.list--action-sort-hot:focus, .user-login--submit:focus, .user-register--submit:focus, .search-form--content-block .search-form--content-block--button:focus, .button:hover, .form-submit:hover, #context-inline-editor li.context-editable div.links .edit:hover,
+#context-inline-editor li.context-editing div.links .done:hover, .list--action-sort-latest:hover,
+.list--action-sort-hot:hover, .user-login--submit:hover, .user-register--submit:hover, .search-form--content-block .search-form--content-block--button:hover, .button:active, .form-submit:active, #context-inline-editor li.context-editable div.links .edit:active,
+#context-inline-editor li.context-editing div.links .done:active, .list--action-sort-latest:active,
+.list--action-sort-hot:active, .user-login--submit:active, .user-register--submit:active, .search-form--content-block .search-form--content-block--button:active,
 a.button:focus,
 a.form-submit:focus,
 #context-inline-editor li.context-editable div.links a.edit:focus,
 #context-inline-editor li.context-editing div.links a.done:focus,
+a.list--action-sort-latest:focus,
+a.list--action-sort-hot:focus,
 a.user-login--submit:focus,
 a.user-register--submit:focus,
 .search-form--content-block a.search-form--content-block--button:focus,
@@ -1116,6 +1136,8 @@ a.button:hover,
 a.form-submit:hover,
 #context-inline-editor li.context-editable div.links a.edit:hover,
 #context-inline-editor li.context-editing div.links a.done:hover,
+a.list--action-sort-latest:hover,
+a.list--action-sort-hot:hover,
 a.user-login--submit:hover,
 a.user-register--submit:hover,
 .search-form--content-block a.search-form--content-block--button:hover,
@@ -1123,6 +1145,8 @@ a.button:active,
 a.form-submit:active,
 #context-inline-editor li.context-editable div.links a.edit:active,
 #context-inline-editor li.context-editing div.links a.done:active,
+a.list--action-sort-latest:active,
+a.list--action-sort-hot:active,
 a.user-login--submit:active,
 a.user-register--submit:active,
 .search-form--content-block a.search-form--content-block--button:active {
@@ -1135,11 +1159,14 @@ a.user-register--submit:active,
 }
 /* line 89, ../sass/framework/_buttons.scss */
 .button i[class^="icon-"], .form-submit i[class^="icon-"], #context-inline-editor li.context-editable div.links .edit i[class^="icon-"],
-#context-inline-editor li.context-editing div.links .done i[class^="icon-"], .user-login--submit i[class^="icon-"], .user-register--submit i[class^="icon-"], .search-form--content-block .search-form--content-block--button i[class^="icon-"],
+#context-inline-editor li.context-editing div.links .done i[class^="icon-"], .list--action-sort-latest i[class^="icon-"],
+.list--action-sort-hot i[class^="icon-"], .user-login--submit i[class^="icon-"], .user-register--submit i[class^="icon-"], .search-form--content-block .search-form--content-block--button i[class^="icon-"],
 a.button i[class^="icon-"],
 a.form-submit i[class^="icon-"],
 #context-inline-editor li.context-editable div.links a.edit i[class^="icon-"],
 #context-inline-editor li.context-editing div.links a.done i[class^="icon-"],
+a.list--action-sort-latest i[class^="icon-"],
+a.list--action-sort-hot i[class^="icon-"],
 a.user-login--submit i[class^="icon-"],
 a.user-register--submit i[class^="icon-"],
 .search-form--content-block a.search-form--content-block--button i[class^="icon-"] {
@@ -1148,7 +1175,8 @@ a.user-register--submit i[class^="icon-"],
 
 /* Theme button */
 /* line 103, ../sass/framework/_buttons.scss */
-.dataset--data-resources--list-item .dataset--data-resources--list-actions-preview {
+.list--action-sort-latest.active,
+.list--action-sort-hot.active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e5420c), color-stop(100%, #9c2d08));
   background-image: -webkit-linear-gradient(#e5420c, #9c2d08);
   background-image: -moz-linear-gradient(#e5420c, #9c2d08);
@@ -1160,11 +1188,16 @@ a.user-register--submit i[class^="icon-"],
   color: white;
 }
 /* line 76, ../sass/framework/_buttons.scss */
-.dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:link, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:visited {
+.list--action-sort-latest.active:link,
+.list--action-sort-hot.active:link, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:link, .list--action-sort-latest.active:visited,
+.list--action-sort-hot.active:visited, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:visited {
   color: white;
 }
 /* line 83, ../sass/framework/_buttons.scss */
-.dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:active {
+.list--action-sort-latest.active:focus,
+.list--action-sort-hot.active:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:focus, .list--action-sort-latest.active:hover,
+.list--action-sort-hot.active:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:hover, .list--action-sort-latest.active:active,
+.list--action-sort-hot.active:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:active {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cd3b0b), color-stop(100%, #842607));
   background-image: -webkit-linear-gradient(#cd3b0b, #842607);
   background-image: -moz-linear-gradient(#cd3b0b, #842607);
@@ -1173,13 +1206,14 @@ a.user-register--submit i[class^="icon-"],
   background-color: #9c2d08;
 }
 /* line 89, ../sass/framework/_buttons.scss */
-.dataset--data-resources--list-item .dataset--data-resources--list-actions-preview i[class^="icon-"] {
+.list--action-sort-latest.active i[class^="icon-"],
+.list--action-sort-hot.active i[class^="icon-"], .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview i[class^="icon-"] {
   margin-right: 8px;
 }
 
 /* Action button */
 /* line 108, ../sass/framework/_buttons.scss */
-.dataset--data-resources--list-item .dataset--data-resources--list-actions-download, .comments--post-comment-login,
+.list--action-create, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download, .comments--post-comment-login,
 .comments--post-comment-create-user {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #96b000), color-stop(100%, #556300));
   background-image: -webkit-linear-gradient(#96b000, #556300);
@@ -1192,15 +1226,15 @@ a.user-register--submit i[class^="icon-"],
   color: white;
 }
 /* line 76, ../sass/framework/_buttons.scss */
-.dataset--data-resources--list-item .dataset--data-resources--list-actions-download:link, .comments--post-comment-login:link,
-.comments--post-comment-create-user:link, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:visited, .comments--post-comment-login:visited,
+.list--action-create:link, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:link, .comments--post-comment-login:link,
+.comments--post-comment-create-user:link, .list--action-create:visited, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:visited, .comments--post-comment-login:visited,
 .comments--post-comment-create-user:visited {
   color: white;
 }
 /* line 83, ../sass/framework/_buttons.scss */
-.dataset--data-resources--list-item .dataset--data-resources--list-actions-download:focus, .comments--post-comment-login:focus,
-.comments--post-comment-create-user:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:hover, .comments--post-comment-login:hover,
-.comments--post-comment-create-user:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:active, .comments--post-comment-login:active,
+.list--action-create:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:focus, .comments--post-comment-login:focus,
+.comments--post-comment-create-user:focus, .list--action-create:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:hover, .comments--post-comment-login:hover,
+.comments--post-comment-create-user:hover, .list--action-create:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:active, .comments--post-comment-login:active,
 .comments--post-comment-create-user:active {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #809700), color-stop(100%, #3f4a00));
   background-image: -webkit-linear-gradient(#809700, #3f4a00);
@@ -1210,7 +1244,7 @@ a.user-register--submit i[class^="icon-"],
   background-color: #556300;
 }
 /* line 89, ../sass/framework/_buttons.scss */
-.dataset--data-resources--list-item .dataset--data-resources--list-actions-download i[class^="icon-"], .comments--post-comment-login i[class^="icon-"],
+.list--action-create i[class^="icon-"], .dataset--data-resources--list-item .dataset--data-resources--list-actions-download i[class^="icon-"], .comments--post-comment-login i[class^="icon-"],
 .comments--post-comment-create-user i[class^="icon-"] {
   margin-right: 8px;
 }
@@ -1220,11 +1254,14 @@ a.user-register--submit i[class^="icon-"],
 /* Don't use native buttons on iOS */
 /* line 125, ../sass/framework/_buttons.scss */
 input[type=submit].button, input[type=submit].form-submit, #context-inline-editor li.context-editable div.links input[type=submit].edit,
-#context-inline-editor li.context-editing div.links input[type=submit].done, input[type=submit].user-login--submit, input[type=submit].user-register--submit, .search-form--content-block input[type=submit].search-form--content-block--button,
+#context-inline-editor li.context-editing div.links input[type=submit].done, input[type=submit].list--action-sort-latest,
+input[type=submit].list--action-sort-hot, input[type=submit].user-login--submit, input[type=submit].user-register--submit, .search-form--content-block input[type=submit].search-form--content-block--button,
 button.button,
 button.form-submit,
 #context-inline-editor li.context-editable div.links button.edit,
 #context-inline-editor li.context-editing div.links button.done,
+button.list--action-sort-latest,
+button.list--action-sort-hot,
 button.user-login--submit,
 button.user-register--submit,
 .search-form--content-block button.search-form--content-block--button {
@@ -3290,7 +3327,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 /* line 245, ../sass/framework/fontawesome/scss/_icons.scss */
-.icon-angle-right:before, .sub-menu > li .menu-item:before {
+.icon-angle-right:before, .sub-menu > li .menu-item:before, .spotbox-menu--list-item:before {
   content: "\f105";
 }
 
@@ -5282,41 +5319,42 @@ div.context-editor div.context-editable legend {
   border-top: 1px dashed #e6e6e6;
   margin-top: 20px;
   padding-top: 20px;
+  overflow: hidden;
 }
 
 /* Zebra stribed list
    ========================================================================== */
-/* line 42, ../sass/module/_module.scss */
+/* line 43, ../sass/module/_module.scss */
 .dataset--data-resources--list-item:nth-child(odd) {
   background-color: #f6f6f6;
 }
-/* line 45, ../sass/module/_module.scss */
+/* line 46, ../sass/module/_module.scss */
 .dataset--data-resources--list-item:nth-child(odd):hover {
   background-color: #e9e9e9;
 }
-/* line 50, ../sass/module/_module.scss */
+/* line 51, ../sass/module/_module.scss */
 .dataset--data-resources--list-item:nth-child(even) {
   background-color: #fbfbfb;
 }
-/* line 53, ../sass/module/_module.scss */
+/* line 54, ../sass/module/_module.scss */
 .dataset--data-resources--list-item:nth-child(even):hover {
   background-color: #e2e2e2;
 }
 
 /* %module-list-alternate
    ========================================================================== */
-/* line 62, ../sass/module/_module.scss */
+/* line 63, ../sass/module/_module.scss */
 .dataset--list, .forum--list {
   padding-left: 0;
 }
 
-/* line 66, ../sass/module/_module.scss */
+/* line 67, ../sass/module/_module.scss */
 .dataset--list-heading, .forum--list-heading {
   font-size: 160%;
   margin-right: 5px;
 }
 
-/* line 71, ../sass/module/_module.scss */
+/* line 72, ../sass/module/_module.scss */
 .dataset--list-item, .forum--list-item {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -5327,12 +5365,12 @@ div.context-editor div.context-editable legend {
   overflow: hidden;
   padding: 20px;
 }
-/* line 80, ../sass/module/_module.scss */
+/* line 81, ../sass/module/_module.scss */
 .dataset--list-item:hover, .forum--list-item:hover {
   border: 1px solid #d5d5d5;
 }
 
-/* line 85, ../sass/module/_module.scss */
+/* line 86, ../sass/module/_module.scss */
 .dataset--list-icon {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -5352,38 +5390,38 @@ div.context-editor div.context-editable legend {
   text-align: center;
   width: 60px;
 }
-/* line 101, ../sass/module/_module.scss */
+/* line 102, ../sass/module/_module.scss */
 .dataset--list-icon:hover {
   background-color: #809700;
 }
-/* line 110, ../sass/module/_module.scss */
+/* line 111, ../sass/module/_module.scss */
 .dataset--list-icon a:link, .dataset--list-icon a:visited, .dataset--list-icon a:hover, .dataset--list-icon a:focus, .dataset--list-icon a:active {
   color: white;
 }
 
-/* line 125, ../sass/module/_module.scss */
+/* line 126, ../sass/module/_module.scss */
 .dataset--list-content, .forum--list-content {
   display: inline-block;
   max-width: 80%;
 }
 
-/* line 131, ../sass/module/_module.scss */
+/* line 132, ../sass/module/_module.scss */
 .dataset--list-meta, .forum--list-meta {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
 }
 
-/* line 135, ../sass/module/_module.scss */
+/* line 136, ../sass/module/_module.scss */
 .dataset--list-posted, .forum--list-posted {
   margin-right: 5px;
 }
 
-/* line 139, ../sass/module/_module.scss */
+/* line 140, ../sass/module/_module.scss */
 .dataset--list-author, .forum--list-author {
   margin-left: 5px;
 }
 
-/* line 143, ../sass/module/_module.scss */
+/* line 144, ../sass/module/_module.scss */
 .dataset--list-footer, .forum--list-footer, .use-cases--list-footer {
   border-top: 1px dashed #e6e6e6;
   margin-top: 20px;
@@ -5391,30 +5429,32 @@ div.context-editor div.context-editable legend {
   text-align: right;
 }
 
-/* line 150, ../sass/module/_module.scss */
+/* line 151, ../sass/module/_module.scss */
 .dataset--list-footer-link, .forum--list-footer-link, .use-cases--list-footer-link {
   margin-left: 15px;
 }
-/* line 153, ../sass/module/_module.scss */
+/* line 154, ../sass/module/_module.scss */
 .dataset--list-footer-link i[class^="icon-"], .forum--list-footer-link i[class^="icon-"], .use-cases--list-footer-link i[class^="icon-"] {
   margin-right: 5px;
 }
 
+/* List actions
+   ========================================================================== */
 /* Pager
    ========================================================================== */
-/* line 166, ../sass/module/_module.scss */
+/* line 181, ../sass/module/_module.scss */
 .pager, .pagination {
   margin-top: 20px;
   padding-left: 0;
   text-align: center;
 }
-/* line 171, ../sass/module/_module.scss */
+/* line 186, ../sass/module/_module.scss */
 .pager li, .pagination li {
   display: inline-block;
   margin-left: -4px;
   margin-right: 4px;
 }
-/* line 178, ../sass/module/_module.scss */
+/* line 193, ../sass/module/_module.scss */
 .pager .pager-current, .pagination .pager-current,
 .pager a,
 .pagination a {
@@ -5425,21 +5465,21 @@ div.context-editor div.context-editable legend {
   padding-bottom: 5px;
   padding-left: 15px;
 }
-/* line 186, ../sass/module/_module.scss */
+/* line 201, ../sass/module/_module.scss */
 .pager .pager-current:hover, .pagination .pager-current:hover,
 .pager a:hover,
 .pagination a:hover {
   text-decoration: none;
 }
-/* line 191, ../sass/module/_module.scss */
+/* line 206, ../sass/module/_module.scss */
 .pager .pager-current, .pagination .pager-current {
   background-color: #e2e2e2;
 }
-/* line 195, ../sass/module/_module.scss */
+/* line 210, ../sass/module/_module.scss */
 .pager .disabled, .pagination .disabled {
   background-color: #fbfbfb;
 }
-/* line 198, ../sass/module/_module.scss */
+/* line 213, ../sass/module/_module.scss */
 .pager .disabled a:hover, .pagination .disabled a:hover {
   cursor: default;
   text-decoration: none;
@@ -5601,18 +5641,19 @@ div.context-editor div.context-editable legend {
 /* line 186, ../sass/module/_block.scss */
 .spotbox--list-item, .spotbox-menu--list-item, .spotbox-menu--list-remove-all {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+  display: block;
   margin-bottom: 10px;
   overflow: hidden;
   padding-bottom: 10px;
 }
-/* line 192, ../sass/module/_block.scss */
+/* line 193, ../sass/module/_block.scss */
 .last.spotbox--list-item, .last.spotbox-menu--list-item, .last.spotbox-menu--list-remove-all {
   border-bottom: 0;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-/* line 200, ../sass/module/_block.scss */
+/* line 201, ../sass/module/_block.scss */
 .spotbox--list-posted {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
@@ -5620,13 +5661,13 @@ div.context-editor div.context-editable legend {
 }
 
 /* %module--block image */
-/* line 213, ../sass/module/_block.scss */
+/* line 214, ../sass/module/_block.scss */
 .spotbox--image {
   margin-bottom: 20px;
 }
 
 /* %module--block list image */
-/* line 219, ../sass/module/_block.scss */
+/* line 220, ../sass/module/_block.scss */
 .spotbox--list-image {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -5640,28 +5681,28 @@ div.context-editor div.context-editable legend {
   vertical-align: top;
 }
 
-/* line 233, ../sass/module/_block.scss */
+/* line 234, ../sass/module/_block.scss */
 .spotbox--list-link a:link {
   color: #e5420c;
   text-decoration: none;
 }
-/* line 238, ../sass/module/_block.scss */
+/* line 239, ../sass/module/_block.scss */
 .spotbox--list-link a:visited {
   color: #db3f0b;
   text-decoration: none;
 }
-/* line 243, ../sass/module/_block.scss */
+/* line 244, ../sass/module/_block.scss */
 .spotbox--list-link a:hover {
   color: #be370a;
   text-decoration: none;
 }
-/* line 248, ../sass/module/_block.scss */
+/* line 249, ../sass/module/_block.scss */
 .spotbox--list-link a:focus {
   color: black;
 }
 
 /* %module--block footer */
-/* line 255, ../sass/module/_block.scss */
+/* line 256, ../sass/module/_block.scss */
 .spotbox--footer {
   border-top: 1px dashed rgba(0, 0, 0, 0.1);
   clear: both;
@@ -5673,7 +5714,7 @@ div.context-editor div.context-editable legend {
   padding-bottom: 15px;
 }
 
-/* line 267, ../sass/module/_block.scss */
+/* line 268, ../sass/module/_block.scss */
 .spotbox--read-more {
   float: right;
 }
@@ -5737,38 +5778,47 @@ div.context-editor div.context-editable legend {
 /* Spotbox footer */
 /* Spotbox menu
    ========================================================================== */
-/* line 129, ../sass/module/_spotbox.scss */
+/* line 121, ../sass/module/_spotbox.scss */
+.spotbox-menu--list-item {
+  /* If the class is on the element */
+}
+/* line 125, ../sass/module/_spotbox.scss */
+.spotbox-menu--list-item:before {
+  font-family: "FontAwesome";
+  margin-right: 5px;
+}
+/* line 136, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-item .active:link, .spotbox-menu--list-item .active:visited, .spotbox-menu--list-item .active:hover, .spotbox-menu--list-item .active:focus, .spotbox-menu--list-item .active:active {
   color: #be370a;
 }
 
-/* line 140, ../sass/module/_spotbox.scss */
+/* line 147, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-remove-all a:link,
 .spotbox-menu--list-remove-all a:visited,
 .spotbox-menu--list-remove-all a:focus {
   color: #404040;
 }
-/* line 145, ../sass/module/_spotbox.scss */
+/* line 152, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-remove-all a:hover,
 .spotbox-menu--list-remove-all a:active {
   color: #be370a;
 }
 
-/* line 150, ../sass/module/_spotbox.scss */
+/* line 157, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-show-more {
   border-top: 1px dashed rgba(0, 0, 0, 0.1);
   margin-top: 10px;
   margin-bottom: 0;
   padding-top: 10px;
 }
-/* line 158, ../sass/module/_spotbox.scss */
+/* line 165, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-show-more a:link,
 .spotbox-menu--list-show-more a:visited,
 .spotbox-menu--list-show-more a:focus {
   font-family: "exo-demi-bold";
   font-weight: normal;
 }
-/* line 163, ../sass/module/_spotbox.scss */
+/* line 170, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-show-more a:hover,
 .spotbox-menu--list-show-more a:active {
   color: #8e2907;
@@ -5941,6 +5991,10 @@ div.context-editor div.context-editable legend {
 #context-inline-editor li.context-editing div.links .search-form .done,
 .search-spotbox--wrapper #context-inline-editor li.context-editing div.links .done,
 #context-inline-editor li.context-editing div.links .search-spotbox--wrapper .done,
+.search-form .list--action-sort-latest,
+.search-spotbox--wrapper .list--action-sort-latest,
+.search-form .list--action-sort-hot,
+.search-spotbox--wrapper .list--action-sort-hot,
 .search-form .user-login--submit,
 .search-spotbox--wrapper .user-login--submit,
 .search-form .user-register--submit,
@@ -5966,7 +6020,9 @@ div.context-editor div.context-editable legend {
 .search-form #context-inline-editor li.context-editing div.links .done,
 #context-inline-editor li.context-editing div.links .search-form .done,
 .search-spotbox--wrapper #context-inline-editor li.context-editing div.links .done,
-#context-inline-editor li.context-editing div.links .search-spotbox--wrapper .done, .search-form .user-login--submit, .search-spotbox--wrapper .user-login--submit, .search-form .user-register--submit, .search-spotbox--wrapper .user-register--submit, .search-form .search-form--content-block .search-form--content-block--button, .search-form--content-block .search-form .search-form--content-block--button, .search-spotbox--wrapper .search-form--content-block .search-form--content-block--button, .search-form--content-block .search-spotbox--wrapper .search-form--content-block--button {
+#context-inline-editor li.context-editing div.links .search-spotbox--wrapper .done, .search-form .list--action-sort-latest, .search-spotbox--wrapper .list--action-sort-latest,
+.search-form .list--action-sort-hot,
+.search-spotbox--wrapper .list--action-sort-hot, .search-form .user-login--submit, .search-spotbox--wrapper .user-login--submit, .search-form .user-register--submit, .search-spotbox--wrapper .user-register--submit, .search-form .search-form--content-block .search-form--content-block--button, .search-form--content-block .search-form .search-form--content-block--button, .search-spotbox--wrapper .search-form--content-block .search-form--content-block--button, .search-form--content-block .search-spotbox--wrapper .search-form--content-block--button {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -6151,7 +6207,8 @@ div.context-editor div.context-editable legend {
 /* line 22, ../sass/module/_newsletter.scss */
 .newsletter-signup .button, .newsletter-signup .form-submit, .newsletter-signup #context-inline-editor li.context-editable div.links .edit, #context-inline-editor li.context-editable div.links .newsletter-signup .edit,
 .newsletter-signup #context-inline-editor li.context-editing div.links .done,
-#context-inline-editor li.context-editing div.links .newsletter-signup .done, .newsletter-signup .user-login--submit, .newsletter-signup .user-register--submit, .newsletter-signup .search-form--content-block .search-form--content-block--button, .search-form--content-block .newsletter-signup .search-form--content-block--button {
+#context-inline-editor li.context-editing div.links .newsletter-signup .done, .newsletter-signup .list--action-sort-latest,
+.newsletter-signup .list--action-sort-hot, .newsletter-signup .user-login--submit, .newsletter-signup .user-register--submit, .newsletter-signup .search-form--content-block .search-form--content-block--button, .search-form--content-block .newsletter-signup .search-form--content-block--button {
   vertical-align: top;
   margin-top: 1px;
 }
@@ -6398,22 +6455,27 @@ div.context-editor div.context-editable legend {
 
 /* Comments list
    ========================================================================== */
-/* line 29, ../sass/module/_comment.scss */
+/* line 27, ../sass/module/_comment.scss */
+.comments--list-actions .list--action-create {
+  float: right;
+}
+
+/* line 32, ../sass/module/_comment.scss */
 .comments--list {
   padding-left: 0;
 }
 
-/* line 33, ../sass/module/_comment.scss */
+/* line 36, ../sass/module/_comment.scss */
 .comments--list-item {
   margin-bottom: 30px;
 }
 
-/* line 37, ../sass/module/_comment.scss */
+/* line 40, ../sass/module/_comment.scss */
 .comments--list-image {
   float: left;
 }
 
-/* line 41, ../sass/module/_comment.scss */
+/* line 44, ../sass/module/_comment.scss */
 .comments--list-author {
   display: inline-block;
   margin-top: 3px;
@@ -6421,13 +6483,13 @@ div.context-editor div.context-editable legend {
   margin-left: 10px;
 }
 
-/* line 48, ../sass/module/_comment.scss */
+/* line 51, ../sass/module/_comment.scss */
 .comments--list-posted {
   float: right;
   margin-top: 6px;
 }
 
-/* line 53, ../sass/module/_comment.scss */
+/* line 56, ../sass/module/_comment.scss */
 .comments--list-content {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -6437,37 +6499,37 @@ div.context-editor div.context-editable legend {
   padding: 20px;
 }
 
-/* line 65, ../sass/module/_comment.scss */
+/* line 68, ../sass/module/_comment.scss */
 .comments--list-quote {
   float: left;
 }
-/* line 68, ../sass/module/_comment.scss */
+/* line 71, ../sass/module/_comment.scss */
 .comments--list-quote i[class^="icon-"] {
   margin-right: 5px;
 }
-/* line 75, ../sass/module/_comment.scss */
+/* line 78, ../sass/module/_comment.scss */
 .comments--list-quote:link, .comments--list-quote:visited, .comments--list-quote:hover, .comments--list-quote:active {
   text-decoration: none;
 }
 
-/* line 80, ../sass/module/_comment.scss */
+/* line 83, ../sass/module/_comment.scss */
 .comments--list-rate-up, .comments--list-rate-up-none {
   color: #bcbcbc;
   display: block;
   font-size: 200%;
   text-align: right;
 }
-/* line 86, ../sass/module/_comment.scss */
+/* line 89, ../sass/module/_comment.scss */
 .comments--list-rate-up i[class^="icon-"], .comments--list-rate-up-none i[class^="icon-"] {
   margin-right: 5px;
 }
-/* line 91, ../sass/module/_comment.scss */
+/* line 94, ../sass/module/_comment.scss */
 .comments--list-rate-up a:link, .comments--list-rate-up-none a:link,
 .comments--list-rate-up a:visited,
 .comments--list-rate-up-none a:visited {
   color: #96b000;
 }
-/* line 96, ../sass/module/_comment.scss */
+/* line 99, ../sass/module/_comment.scss */
 .comments--list-rate-up a:hover, .comments--list-rate-up-none a:hover,
 .comments--list-rate-up a:active,
 .comments--list-rate-up-none a:active {
@@ -6475,12 +6537,12 @@ div.context-editor div.context-editable legend {
   text-decoration: none;
 }
 
-/* line 106, ../sass/module/_comment.scss */
+/* line 109, ../sass/module/_comment.scss */
 .comments--list-rate-up-none a:link,
 .comments--list-rate-up-none a:visited {
   color: #bcbcbc;
 }
-/* line 111, ../sass/module/_comment.scss */
+/* line 114, ../sass/module/_comment.scss */
 .comments--list-rate-up-none a:hover,
 .comments--list-rate-up-none a:active {
   color: #a2a2a2;
@@ -6488,13 +6550,13 @@ div.context-editor div.context-editable legend {
 
 /* Post comment
    ========================================================================== */
-/* line 125, ../sass/module/_comment.scss */
+/* line 128, ../sass/module/_comment.scss */
 .comments--post-comment-header a:hover,
 .comments--post-comment-header a:active {
   text-decoration: none;
 }
 
-/* line 130, ../sass/module/_comment.scss */
+/* line 133, ../sass/module/_comment.scss */
 .comments--post-comment, .comments--post-comment-not-logged-in {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -6503,17 +6565,17 @@ div.context-editor div.context-editable legend {
   padding: 20px;
 }
 
-/* line 137, ../sass/module/_comment.scss */
+/* line 140, ../sass/module/_comment.scss */
 .comments--post-comment-not-logged-in {
   text-align: center;
 }
 
-/* line 148, ../sass/module/_comment.scss */
+/* line 151, ../sass/module/_comment.scss */
 .comments--post-field-wrapper {
   margin-bottom: 20px;
 }
 
-/* line 152, ../sass/module/_comment.scss */
+/* line 155, ../sass/module/_comment.scss */
 .comments--post-comment-actions {
   text-align: right;
 }

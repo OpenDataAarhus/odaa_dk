@@ -120,7 +120,14 @@ $spotbox-background-color:        $white;
 
 .spotbox-menu--list-item {
   @extend %module--block--list-item;
+  @extend .icon-angle-right;
 
+  &:before {
+    font-family: $base-icon-library-font;
+    margin-right: 5px;
+  }
+
+  /* If the class is on the element */
   .active {
     &:link,
     &:visited,

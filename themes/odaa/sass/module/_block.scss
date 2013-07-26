@@ -185,6 +185,7 @@
 
 %module--block--list-item {
   border-bottom: 1px dashed transparentize($black, .9);
+  display: block;
   margin-bottom: $medium-spacing;
   overflow: hidden;
   padding-bottom: $medium-spacing;

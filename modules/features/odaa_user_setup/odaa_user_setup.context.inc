@@ -35,29 +35,29 @@ function odaa_user_setup_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'heartbeat-useractivity' => array(
-          'module' => 'heartbeat',
-          'delta' => 'useractivity',
-          'region' => 'content',
-          'weight' => '-10',
-        ),
-        'heartbeat-nodeactivity' => array(
-          'module' => 'heartbeat',
-          'delta' => 'nodeactivity',
-          'region' => 'content',
-          'weight' => '-9',
-        ),
-        'menu-menu-user-accounting' => array(
-          'module' => 'menu',
-          'delta' => 'menu-user-accounting',
+        'menu_block-6' => array(
+          'module' => 'menu_block',
+          'delta' => '6',
           'region' => 'secondary_content',
-          'weight' => 0,
+          'weight' => '-10',
         ),
         'menu_block-4' => array(
           'module' => 'menu_block',
           'delta' => '4',
           'region' => 'secondary_content',
-          'weight' => 1,
+          'weight' => '-9',
+        ),
+        'heartbeat-useractivity' => array(
+          'module' => 'heartbeat',
+          'delta' => 'useractivity',
+          'region' => 'tertiary_content',
+          'weight' => '-10',
+        ),
+        'heartbeat-nodeactivity' => array(
+          'module' => 'heartbeat',
+          'delta' => 'nodeactivity',
+          'region' => 'tertiary_content',
+          'weight' => '-9',
         ),
       ),
     ),

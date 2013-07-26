@@ -4,7 +4,7 @@
   <?php include 'snippets/head.inc'; ?>
   <title>Community</title>
 </head>
-<body class="community">
+<body class="node-id-22">
   <div id="page" class="page">
     <header class="site-header">
       <section class="header-wrapper">
@@ -39,8 +39,8 @@
             <div class="spotbox-menu--inner">
               <h3 class="spotbox-menu--header"><i class="icon-plus-sign"></i>Opret indhold</h3>
               <ul class="spotbox-menu--list">
-                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-angle-right"></i>Opret forumindlæg</a></li>
-                <li class="spotbox-menu--list-item last"><a href="create-use-cases.php"><i class="icon-angle-right"></i>Opret use case</a></li>
+                <li><a href="#" class="spotbox-menu--list-item">Opret forumindlæg</a></li>
+                <li><a href="create-use-cases.php" class="spotbox-menu--list-item last"></i>Opret use case</a></li>
               </ul>
             </div>
           </div>
