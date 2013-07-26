@@ -88,7 +88,7 @@ function _odaa_menu_styling($variables, $class, $icon = FALSE, $span = FALSE) {
   $element['#localized_options']['html'] = true;
 
   $output = l($element['#title'], $element['#href'], $element['#localized_options']);
-  return '<li' . drupal_attributes($element['#attributes']) . '>' . (($span)?'<span>':'') . (($icon)?'<i class="icon-angle-right"></i>':'') . $output . (($span)?'</span>':'') . $sub_menu . "</li>\n";
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . (($span)?'<span>':'') . $output . (($span)?'</span>':'') . $sub_menu . "</li>\n";
 }
 
 /**
@@ -130,7 +130,7 @@ function odaa_preprocess_html(&$variables) {
   if (!empty($variables['logged_in'])) {
     $variables['classes_array'][] = 'logged-in';
   }
-  
+
   // Add first argument to body
   $url = arg();
   if (isset($url[1])) {
