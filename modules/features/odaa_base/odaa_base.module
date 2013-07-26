@@ -1,0 +1,16 @@
+<?php
+/**
+ * @file
+ * Code for the Odaa base feature.
+ */
+
+include_once 'odaa_base.features.inc';
+
+/**
+* Implements hook_date_format_types().
+*/
+function odaa_base_date_format_types() {
+  return array(
+    'odaa_long' => t('Odaa long'),
+  );
+}
