@@ -51,13 +51,13 @@ function odaa_user_setup_context_default_contexts() {
           'module' => 'menu',
           'delta' => 'menu-user-accounting',
           'region' => 'secondary_content',
-          'weight' => '-10',
+          'weight' => 0,
         ),
-        'menu-menu-user-content' => array(
-          'module' => 'menu',
-          'delta' => 'menu-user-content',
+        'menu_block-4' => array(
+          'module' => 'menu_block',
+          'delta' => '4',
           'region' => 'secondary_content',
-          'weight' => '-9',
+          'weight' => 1,
         ),
       ),
     ),
