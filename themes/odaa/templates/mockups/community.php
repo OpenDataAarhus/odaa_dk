@@ -4,7 +4,7 @@
   <?php include 'snippets/head.inc'; ?>
   <title>Community</title>
 </head>
-<body class="community">
+<body class="node-id-22">
   <div id="page" class="page">
     <header class="site-header">
       <section class="header-wrapper">
