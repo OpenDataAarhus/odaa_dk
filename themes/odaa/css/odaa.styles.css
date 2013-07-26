@@ -3290,7 +3290,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 /* line 245, ../sass/framework/fontawesome/scss/_icons.scss */
-.icon-angle-right:before, .sub-menu > li .menu-item:before {
+.icon-angle-right:before, .sub-menu > li .menu-item:before, .spotbox-menu--list-item:before {
   content: "\f105";
 }
 
@@ -5601,18 +5601,19 @@ div.context-editor div.context-editable legend {
 /* line 186, ../sass/module/_block.scss */
 .spotbox--list-item, .spotbox-menu--list-item, .spotbox-menu--list-remove-all {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+  display: block;
   margin-bottom: 10px;
   overflow: hidden;
   padding-bottom: 10px;
 }
-/* line 192, ../sass/module/_block.scss */
+/* line 193, ../sass/module/_block.scss */
 .last.spotbox--list-item, .last.spotbox-menu--list-item, .last.spotbox-menu--list-remove-all {
   border-bottom: 0;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-/* line 200, ../sass/module/_block.scss */
+/* line 201, ../sass/module/_block.scss */
 .spotbox--list-posted {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
@@ -5620,13 +5621,13 @@ div.context-editor div.context-editable legend {
 }
 
 /* %module--block image */
-/* line 213, ../sass/module/_block.scss */
+/* line 214, ../sass/module/_block.scss */
 .spotbox--image {
   margin-bottom: 20px;
 }
 
 /* %module--block list image */
-/* line 219, ../sass/module/_block.scss */
+/* line 220, ../sass/module/_block.scss */
 .spotbox--list-image {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -5640,28 +5641,28 @@ div.context-editor div.context-editable legend {
   vertical-align: top;
 }
 
-/* line 233, ../sass/module/_block.scss */
+/* line 234, ../sass/module/_block.scss */
 .spotbox--list-link a:link {
   color: #e5420c;
   text-decoration: none;
 }
-/* line 238, ../sass/module/_block.scss */
+/* line 239, ../sass/module/_block.scss */
 .spotbox--list-link a:visited {
   color: #db3f0b;
   text-decoration: none;
 }
-/* line 243, ../sass/module/_block.scss */
+/* line 244, ../sass/module/_block.scss */
 .spotbox--list-link a:hover {
   color: #be370a;
   text-decoration: none;
 }
-/* line 248, ../sass/module/_block.scss */
+/* line 249, ../sass/module/_block.scss */
 .spotbox--list-link a:focus {
   color: black;
 }
 
 /* %module--block footer */
-/* line 255, ../sass/module/_block.scss */
+/* line 256, ../sass/module/_block.scss */
 .spotbox--footer {
   border-top: 1px dashed rgba(0, 0, 0, 0.1);
   clear: both;
@@ -5673,7 +5674,7 @@ div.context-editor div.context-editable legend {
   padding-bottom: 15px;
 }
 
-/* line 267, ../sass/module/_block.scss */
+/* line 268, ../sass/module/_block.scss */
 .spotbox--read-more {
   float: right;
 }
@@ -5737,38 +5738,47 @@ div.context-editor div.context-editable legend {
 /* Spotbox footer */
 /* Spotbox menu
    ========================================================================== */
-/* line 129, ../sass/module/_spotbox.scss */
+/* line 121, ../sass/module/_spotbox.scss */
+.spotbox-menu--list-item {
+  /* If the class is on the element */
+}
+/* line 125, ../sass/module/_spotbox.scss */
+.spotbox-menu--list-item:before {
+  font-family: "FontAwesome";
+  margin-right: 5px;
+}
+/* line 136, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-item .active:link, .spotbox-menu--list-item .active:visited, .spotbox-menu--list-item .active:hover, .spotbox-menu--list-item .active:focus, .spotbox-menu--list-item .active:active {
   color: #be370a;
 }
 
-/* line 140, ../sass/module/_spotbox.scss */
+/* line 147, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-remove-all a:link,
 .spotbox-menu--list-remove-all a:visited,
 .spotbox-menu--list-remove-all a:focus {
   color: #404040;
 }
-/* line 145, ../sass/module/_spotbox.scss */
+/* line 152, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-remove-all a:hover,
 .spotbox-menu--list-remove-all a:active {
   color: #be370a;
 }
 
-/* line 150, ../sass/module/_spotbox.scss */
+/* line 157, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-show-more {
   border-top: 1px dashed rgba(0, 0, 0, 0.1);
   margin-top: 10px;
   margin-bottom: 0;
   padding-top: 10px;
 }
-/* line 158, ../sass/module/_spotbox.scss */
+/* line 165, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-show-more a:link,
 .spotbox-menu--list-show-more a:visited,
 .spotbox-menu--list-show-more a:focus {
   font-family: "exo-demi-bold";
   font-weight: normal;
 }
-/* line 163, ../sass/module/_spotbox.scss */
+/* line 170, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-show-more a:hover,
 .spotbox-menu--list-show-more a:active {
   color: #8e2907;
