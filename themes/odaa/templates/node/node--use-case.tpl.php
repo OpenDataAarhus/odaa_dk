@@ -86,16 +86,12 @@
   hide($content['comments']);
   hide($content['links']);
 ?>
-
-<?php
-  // If it is they frontpage don't print anything, we will handling it with
-  // context
-  if (!$is_front):
-?>
-  <div class="page--content-wrapper">
-    <section class="page--content">
-      <h1 class="page--title"><?php print $title; ?></h1>
-      <?php print render($content); ?>
-    </section>
-  </div>
-<?php endif; ?>
+<div class="page--content-wrapper">
+  <section class="page--content">
+    <h1 class="page--title"><?php print $title; ?></h1>
+    <?php print render($content); ?>
+  </section>
+  <section class="comments">
+     <?php print render($content['comments']); ?>       
+  </section>
+</div>
