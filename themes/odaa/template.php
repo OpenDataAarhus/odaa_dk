@@ -280,6 +280,14 @@ function odaa_form_alter(&$form, &$form_state, $form_id){
               <a href="/user/password" class="user-login--forgot-password">'.t('Forgot password?').'</a>';
       $form['actions']['#suffix']  = '</div>';
       break;
+    case 'user_pass':
+      unset($form['name']['#description']);
+      $form['#prefix']  =
+        '<div class="page--content-wrapper">
+          <section class="page--content">
+            <h1 class="page--title">'.t('User register').'</h1>';
+      $form['#suffix']  =  '</div>';
+      break;
     case 'views_exposed_form':
       $form['sort_by']['#attributes']['class'][] = 'search--actions-sort';
       $form['title']['#attributes']['class'][] = 'search-form--content-block--input';
