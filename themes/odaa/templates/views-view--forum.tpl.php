@@ -31,7 +31,7 @@
   <section class="page--content">
     <h1 class="page--title"><?php echo t('Forum');?></h1>
     <?php if ($header): ?>
-      <?php print $header; ?>
+      <p><?php print $header; ?></p>
     <?php endif; ?>
   </section>
   <?php if ($exposed): ?>

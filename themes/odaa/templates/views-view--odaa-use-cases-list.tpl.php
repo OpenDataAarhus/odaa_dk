@@ -36,7 +36,9 @@
   <?php if ($header): ?>
   <section class="page--content">
     <h1 class="page--title"><?php echo t('Use cases');?></h1>
-    <p><?php print $header; ?></p>
+    <?php if ($header): ?>
+      <p><?php print $header; ?></p>
+    <?php endif; ?>
   </section>
   <?php endif; ?>
 
