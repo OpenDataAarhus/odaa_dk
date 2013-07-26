@@ -5319,41 +5319,42 @@ div.context-editor div.context-editable legend {
   border-top: 1px dashed #e6e6e6;
   margin-top: 20px;
   padding-top: 20px;
+  overflow: hidden;
 }
 
 /* Zebra stribed list
    ========================================================================== */
-/* line 42, ../sass/module/_module.scss */
+/* line 43, ../sass/module/_module.scss */
 .dataset--data-resources--list-item:nth-child(odd) {
   background-color: #f6f6f6;
 }
-/* line 45, ../sass/module/_module.scss */
+/* line 46, ../sass/module/_module.scss */
 .dataset--data-resources--list-item:nth-child(odd):hover {
   background-color: #e9e9e9;
 }
-/* line 50, ../sass/module/_module.scss */
+/* line 51, ../sass/module/_module.scss */
 .dataset--data-resources--list-item:nth-child(even) {
   background-color: #fbfbfb;
 }
-/* line 53, ../sass/module/_module.scss */
+/* line 54, ../sass/module/_module.scss */
 .dataset--data-resources--list-item:nth-child(even):hover {
   background-color: #e2e2e2;
 }
 
 /* %module-list-alternate
    ========================================================================== */
-/* line 62, ../sass/module/_module.scss */
+/* line 63, ../sass/module/_module.scss */
 .dataset--list, .forum--list {
   padding-left: 0;
 }
 
-/* line 66, ../sass/module/_module.scss */
+/* line 67, ../sass/module/_module.scss */
 .dataset--list-heading, .forum--list-heading {
   font-size: 160%;
   margin-right: 5px;
 }
 
-/* line 71, ../sass/module/_module.scss */
+/* line 72, ../sass/module/_module.scss */
 .dataset--list-item, .forum--list-item {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -5364,12 +5365,12 @@ div.context-editor div.context-editable legend {
   overflow: hidden;
   padding: 20px;
 }
-/* line 80, ../sass/module/_module.scss */
+/* line 81, ../sass/module/_module.scss */
 .dataset--list-item:hover, .forum--list-item:hover {
   border: 1px solid #d5d5d5;
 }
 
-/* line 85, ../sass/module/_module.scss */
+/* line 86, ../sass/module/_module.scss */
 .dataset--list-icon {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -5389,38 +5390,38 @@ div.context-editor div.context-editable legend {
   text-align: center;
   width: 60px;
 }
-/* line 101, ../sass/module/_module.scss */
+/* line 102, ../sass/module/_module.scss */
 .dataset--list-icon:hover {
   background-color: #809700;
 }
-/* line 110, ../sass/module/_module.scss */
+/* line 111, ../sass/module/_module.scss */
 .dataset--list-icon a:link, .dataset--list-icon a:visited, .dataset--list-icon a:hover, .dataset--list-icon a:focus, .dataset--list-icon a:active {
   color: white;
 }
 
-/* line 125, ../sass/module/_module.scss */
+/* line 126, ../sass/module/_module.scss */
 .dataset--list-content, .forum--list-content {
   display: inline-block;
   max-width: 80%;
 }
 
-/* line 131, ../sass/module/_module.scss */
+/* line 132, ../sass/module/_module.scss */
 .dataset--list-meta, .forum--list-meta {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
 }
 
-/* line 135, ../sass/module/_module.scss */
+/* line 136, ../sass/module/_module.scss */
 .dataset--list-posted, .forum--list-posted {
   margin-right: 5px;
 }
 
-/* line 139, ../sass/module/_module.scss */
+/* line 140, ../sass/module/_module.scss */
 .dataset--list-author, .forum--list-author {
   margin-left: 5px;
 }
 
-/* line 143, ../sass/module/_module.scss */
+/* line 144, ../sass/module/_module.scss */
 .dataset--list-footer, .forum--list-footer, .use-cases--list-footer {
   border-top: 1px dashed #e6e6e6;
   margin-top: 20px;
@@ -5428,11 +5429,11 @@ div.context-editor div.context-editable legend {
   text-align: right;
 }
 
-/* line 150, ../sass/module/_module.scss */
+/* line 151, ../sass/module/_module.scss */
 .dataset--list-footer-link, .forum--list-footer-link, .use-cases--list-footer-link {
   margin-left: 15px;
 }
-/* line 153, ../sass/module/_module.scss */
+/* line 154, ../sass/module/_module.scss */
 .dataset--list-footer-link i[class^="icon-"], .forum--list-footer-link i[class^="icon-"], .use-cases--list-footer-link i[class^="icon-"] {
   margin-right: 5px;
 }
@@ -5441,19 +5442,19 @@ div.context-editor div.context-editable legend {
    ========================================================================== */
 /* Pager
    ========================================================================== */
-/* line 180, ../sass/module/_module.scss */
+/* line 181, ../sass/module/_module.scss */
 .pager, .pagination {
   margin-top: 20px;
   padding-left: 0;
   text-align: center;
 }
-/* line 185, ../sass/module/_module.scss */
+/* line 186, ../sass/module/_module.scss */
 .pager li, .pagination li {
   display: inline-block;
   margin-left: -4px;
   margin-right: 4px;
 }
-/* line 192, ../sass/module/_module.scss */
+/* line 193, ../sass/module/_module.scss */
 .pager .pager-current, .pagination .pager-current,
 .pager a,
 .pagination a {
@@ -5464,21 +5465,21 @@ div.context-editor div.context-editable legend {
   padding-bottom: 5px;
   padding-left: 15px;
 }
-/* line 200, ../sass/module/_module.scss */
+/* line 201, ../sass/module/_module.scss */
 .pager .pager-current:hover, .pagination .pager-current:hover,
 .pager a:hover,
 .pagination a:hover {
   text-decoration: none;
 }
-/* line 205, ../sass/module/_module.scss */
+/* line 206, ../sass/module/_module.scss */
 .pager .pager-current, .pagination .pager-current {
   background-color: #e2e2e2;
 }
-/* line 209, ../sass/module/_module.scss */
+/* line 210, ../sass/module/_module.scss */
 .pager .disabled, .pagination .disabled {
   background-color: #fbfbfb;
 }
-/* line 212, ../sass/module/_module.scss */
+/* line 213, ../sass/module/_module.scss */
 .pager .disabled a:hover, .pagination .disabled a:hover {
   cursor: default;
   text-decoration: none;
