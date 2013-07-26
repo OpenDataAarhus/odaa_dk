@@ -4131,7 +4131,7 @@ body {
 
 /* Frontpage layout */
 /* line 106, ../sass/layout/_layout.scss */
-.front .primary-content, .user .primary-content {
+.front .primary-content {
   float: left;
   width: 66.66667%;
   margin-left: 0%;
@@ -4149,7 +4149,7 @@ body {
   _overflow-y: visible;
 }
 /* line 110, ../sass/layout/_layout.scss */
-.front .secondary-content, .user .secondary-content {
+.front .secondary-content {
   float: right;
   width: 33.33333%;
   margin-right: 0%;
@@ -4167,7 +4167,7 @@ body {
   _overflow-y: visible;
 }
 /* line 114, ../sass/layout/_layout.scss */
-.front .tertiary-content, .user .tertiary-content {
+.front .tertiary-content {
   clear: left;
   float: left;
   width: 66.66667%;
@@ -4188,7 +4188,7 @@ body {
   padding-left: 0;
 }
 /* line 121, ../sass/layout/_layout.scss */
-.front .tertiary-content .spotbox:nth-child(odd), .user .tertiary-content .spotbox:nth-child(odd) {
+.front .tertiary-content .spotbox:nth-child(odd) {
   clear: right;
   float: left;
   width: 50%;
@@ -4207,7 +4207,7 @@ body {
   _overflow-y: visible;
 }
 /* line 126, ../sass/layout/_layout.scss */
-.front .tertiary-content .spotbox:nth-child(even), .user .tertiary-content .spotbox:nth-child(even) {
+.front .tertiary-content .spotbox:nth-child(even) {
   float: right;
   width: 50%;
   margin-right: 0%;
@@ -4225,9 +4225,8 @@ body {
   _overflow-y: visible;
 }
 
-/* User pages */
 /* Page layout */
-/* line 140, ../sass/layout/_layout.scss */
+/* line 135, ../sass/layout/_layout.scss */
 .node-type-page .primary-content {
   float: right;
   width: 75%;
@@ -4245,7 +4244,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 144, ../sass/layout/_layout.scss */
+/* line 139, ../sass/layout/_layout.scss */
 .node-type-page .secondary-content {
   float: left;
   width: 25%;
@@ -4263,7 +4262,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 148, ../sass/layout/_layout.scss */
+/* line 143, ../sass/layout/_layout.scss */
 .node-type-page .tertiary-content {
   clear: right;
   float: right;
@@ -4284,7 +4283,7 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 155, ../sass/layout/_layout.scss */
+/* line 150, ../sass/layout/_layout.scss */
 .node-type-page .tertiary-content .spotbox:nth-child(odd) {
   clear: left;
   float: left;
@@ -4303,7 +4302,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 160, ../sass/layout/_layout.scss */
+/* line 155, ../sass/layout/_layout.scss */
 .node-type-page .tertiary-content .spotbox:nth-child(even) {
   float: right;
   width: 50%;
@@ -4323,7 +4322,7 @@ body {
 }
 
 /* Community layout */
-/* line 168, ../sass/layout/_layout.scss */
+/* line 164, ../sass/layout/_layout.scss */
 .node-id-22 .tertiary-content {
   clear: right;
   float: right;
@@ -4344,7 +4343,7 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 175, ../sass/layout/_layout.scss */
+/* line 171, ../sass/layout/_layout.scss */
 .node-id-22 .tertiary-content .spotbox:nth-child(1) {
   float: left;
   width: 33.33333%;
@@ -4362,7 +4361,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 179, ../sass/layout/_layout.scss */
+/* line 175, ../sass/layout/_layout.scss */
 .node-id-22 .tertiary-content .spotbox:nth-child(2) {
   float: right;
   width: 33.33333%;
@@ -4380,7 +4379,7 @@ body {
   _overflow: hidden;
   _overflow-y: visible;
 }
-/* line 183, ../sass/layout/_layout.scss */
+/* line 179, ../sass/layout/_layout.scss */
 .node-id-22 .tertiary-content .spotbox:nth-child(3) {
   float: right;
   width: 33.33333%;

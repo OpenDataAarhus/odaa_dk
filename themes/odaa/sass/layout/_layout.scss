@@ -129,11 +129,6 @@ body {
   }
 }
 
-/* User pages */
-.user {
-  @extend .front;
-}
-
 
 /* Page layout */
 .node-type-page {
@@ -162,6 +157,7 @@ body {
     }
   }
 }
+
 
 /* Community layout */
 .node-id-22 {
