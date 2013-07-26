@@ -8,6 +8,7 @@ project = odaa_user_setup
 dependencies[] = context
 dependencies[] = ctools
 dependencies[] = heartbeat
+dependencies[] = menu
 dependencies[] = menu_block
 dependencies[] = nodespotbox
 features[context][] = logged_in_user
