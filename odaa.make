@@ -210,6 +210,12 @@ projects[menu_item_visibility][version] = "1.0-beta1"
 projects[cookiecontrol][subdir] = "contrib"
 projects[cookiecontrol][version] = "1.6"
 
+projects[better_formats][subdir] = "contrib"
+projects[better_formats][version] = "1.0-beta1"
+
+projects[comment_goodness][subdir] = "contrib"
+projects[comment_goodness][version] = "1.4"
+
 ; Libraries
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.zip"
