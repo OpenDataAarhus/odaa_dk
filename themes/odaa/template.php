@@ -168,10 +168,15 @@ function odaa_preprocess_block(&$variables) {
 }
 
 function odaa_preprocess_page(&$variables, $hook) {
-  // Unset default frontpage message
+  // Unset default frontpage message.
   if (isset($variables['is_front'])) {
     unset($variables['page']['content']['system_main']['default_message']);
-  } 
+  }
+
+  // Template suggestion for add content node.
+  if ((arg(0) == 'node') && (arg(1) == 'add')) {
+    $variables['template_files'][] =  '##NAME##';
+  }
 }
 
 /**
