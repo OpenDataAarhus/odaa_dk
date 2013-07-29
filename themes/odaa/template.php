@@ -168,8 +168,10 @@ function odaa_preprocess_block(&$variables) {
 }
 
 function odaa_preprocess_page(&$variables, $hook) {
-  if (isset($variables['is_front']))
+  // Unset default frontpage message
+  if (isset($variables['is_front'])) {
     unset($variables['page']['content']['system_main']['default_message']);
+  } 
 }
 
 /**
