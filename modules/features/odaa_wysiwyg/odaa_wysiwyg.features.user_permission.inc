@@ -27,7 +27,6 @@ function odaa_wysiwyg_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
