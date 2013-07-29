@@ -216,6 +216,9 @@ projects[better_formats][version] = "1.0-beta1"
 projects[comment_goodness][subdir] = "contrib"
 projects[comment_goodness][version] = "1.4"
 
+projects[menu_token][subdir] = "contrib"
+projects[menu_token][version] = "1.0-beta5"
+
 ; Libraries
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.zip"
