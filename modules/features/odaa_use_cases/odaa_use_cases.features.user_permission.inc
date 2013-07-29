@@ -13,7 +13,9 @@ function odaa_use_cases_user_default_permissions() {
   // Exported permission: create use_case content.
   $permissions['create use_case content'] = array(
     'name' => 'create use_case content',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'node',
   );
 
@@ -41,7 +43,9 @@ function odaa_use_cases_user_default_permissions() {
   // Exported permission: edit own use_case content.
   $permissions['edit own use_case content'] = array(
     'name' => 'edit own use_case content',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'node',
   );
 
