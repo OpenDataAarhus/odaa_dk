@@ -91,7 +91,7 @@
     <h1 class="page--title"><?php print $title; ?></h1>
     <?php print render($content); ?>
   </section>
-  <section class="comments">
-     <?php print render($content['comments']); ?>       
-  </section>
 </div>
+<section class="comments">
+    <?php print render($content['comments']); ?>
+</section>
