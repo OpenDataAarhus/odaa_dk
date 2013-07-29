@@ -30,13 +30,9 @@ function odaa_ckan_comment_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'list';
-  $handler->display->display_options['style_options']['row_class'] = 'spotbox--list-item';
-  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
-  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['style_options']['class'] = 'spotbox--list';
   $handler->display->display_options['style_options']['wrapper_class'] = '';
   $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   /* Relationship: Comment: Content */
   $handler->display->display_options['relationships']['nid']['id'] = 'nid';
   $handler->display->display_options['relationships']['nid']['table'] = 'comment';
@@ -51,12 +47,20 @@ function odaa_ckan_comment_views_default_views() {
   $handler->display->display_options['fields']['field_ckan_url']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ckan_url']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ckan_url']['element_default_classes'] = FALSE;
+  /* Field: Comment: ID */
+  $handler->display->display_options['fields']['cid']['id'] = 'cid';
+  $handler->display->display_options['fields']['cid']['table'] = 'comment';
+  $handler->display->display_options['fields']['cid']['field'] = 'cid';
+  $handler->display->display_options['fields']['cid']['label'] = '';
+  $handler->display->display_options['fields']['cid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['cid']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['cid']['link_to_comment'] = FALSE;
   /* Field: Comment: Title */
   $handler->display->display_options['fields']['subject']['id'] = 'subject';
   $handler->display->display_options['fields']['subject']['table'] = 'comment';
   $handler->display->display_options['fields']['subject']['field'] = 'subject';
   $handler->display->display_options['fields']['subject']['label'] = '';
-  $handler->display->display_options['fields']['subject']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['subject']['exclude'] = TRUE;
   $handler->display->display_options['fields']['subject']['alter']['path'] = 'dataset/[field_ckan_url]';
   $handler->display->display_options['fields']['subject']['alter']['absolute'] = TRUE;
   $handler->display->display_options['fields']['subject']['alter']['link_class'] = 'spotbox-list-link';
@@ -65,6 +69,19 @@ function odaa_ckan_comment_views_default_views() {
   $handler->display->display_options['fields']['subject']['element_class'] = 'spotbox-list-link';
   $handler->display->display_options['fields']['subject']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['subject']['link_to_comment'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['relationship'] = 'nid';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<a href="[path]#comment-[cid]">[subject]</a>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Field: Comment: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'comment';

@@ -10,7 +10,7 @@
       var directive = {
         'ul.comments--list': {
           'i<-data': {
-            '.comments--list--cid' : 'i.cid',
+            //'.comments--list--cid' : 'i.cid',
             '.comments--list-author' : 'i.author',
             '.comments--list-posted' : 'i.date',
             '.comments--list-content' : 'i.subject'
