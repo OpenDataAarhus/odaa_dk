@@ -36,15 +36,6 @@
 
         return false;
       });
-
-      // Delete a comment.
-      $('div.comment a.delete').live('click', function(e) {
-        e.preventDefault();
-        var cid = $(this).parent().find('.cid').html();
-        delete_comment(cid);
-
-        return false;
-      });
     }
     else if ($('.dataset--list-wrapper').length) {
       $('li.dataset--list-item').each(function (id, item) {
@@ -60,19 +51,6 @@
       });
     }
   });
-
-  function delete_comment(cid) {
-    $.getJSON('/odaa_comment/delete/' + cid, function(data) {
-      if (data.status) {
-       $('div.cid').each(function(index, value) {
-          if ($(value).html() === cid) {
-            // remove div (comment)
-            $(value).parent().empty();
-          }
-        });
-      }
-   });
-  }
 
   function add_comment() {
     var input = $('textarea').val().replace(/\n/g, '<br>');
