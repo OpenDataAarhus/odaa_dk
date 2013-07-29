@@ -63,8 +63,8 @@
   <?php if($picture) :?>
     <a href="#" class="comments--list-image"><?php print $picture ?></a>
   <?php endif;?>
-  <h3 class="comments--list-author"><a href="#"><?php echo $author;?></a></h3>
-  <a href="#postcomment" class="comments--list-posted"><?php echo format_date($content['comment_body']['#object']->created, 'odaa_time'); ?></a>
+  <h3 class="comments--list-author"><?php echo $author;?></h3>
+  <div class="comments--list-posted"><?php echo format_date($content['comment_body']['#object']->created, 'odaa_time'); ?></div>
   <div class="comments--list-content">
     <?php
       // We hide the comments and links now so that we can render them later.

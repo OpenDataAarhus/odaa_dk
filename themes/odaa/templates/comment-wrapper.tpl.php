@@ -37,7 +37,7 @@
  */
 ?>
 <div id="comments" class="<?php print $classes; ?>"<?php print $attributes; ?>>
-  <?php if ($content['comments'] && $node->type != 'forum'): ?>
+  <?php if ($content['comments']): ?>
     <?php print render($title_prefix); ?>
     <h2 class="section-title"><?php print t('Comments and debate'); ?></h2>
     <p><?php print t('Join the debate! Remember to hold a proper tone as to maintain a constructive debate :)');?></p>
