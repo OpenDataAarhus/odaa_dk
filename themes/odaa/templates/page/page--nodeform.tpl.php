@@ -87,8 +87,13 @@
           <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
         <?php endif; ?>
 
-        <?php if (!empty($page['content'])): ?>
-          <?php print render($page['content']); ?>
+        <?php if (!empty($page['content'])): ?>          
+          <div class="page--content-wrapper">
+            <section class="page--content">
+              <h1 class="page--title"><?php print $title; ?></h1>
+              <?php print render($page['content']); ?>
+            </section>
+          </div>
         <?php endif ?>
       </div>
       <div class="secondary-content">

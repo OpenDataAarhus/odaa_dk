@@ -166,7 +166,9 @@ function odaa_preprocess_block(&$variables) {
       break;
   }
 }
-
+/**
+ * Implements template_preprocess_pageß().
+ */
 function odaa_preprocess_page(&$variables, $hook) {
   // Unset default frontpage message.
   if (isset($variables['is_front'])) {
@@ -174,10 +176,17 @@ function odaa_preprocess_page(&$variables, $hook) {
   }
 
   // Template suggestion for add content node.
-  if ((arg(0) == 'node') && (arg(1) == 'add')) {
-    $variables['template_files'][] =  '##NAME##';
+  if ((arg(0) == 'node') && (arg(1) == 'add') || (arg(0) == 'node') && (arg(2) == 'edit')) {
+    $variables['theme_hook_suggestions'][] =  'page__nodeform';
   }
 }
+/**
+ * Implements template_preprocess_region().
+ */
+function odaa_preprocess_region(&$variables, $hook) {
+  //print_r($variables['elements']['#region']);
+}
+
 
 /**
  * Returns HTML for a list of recent comments to be displayed in the comment block.

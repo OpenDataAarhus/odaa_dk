@@ -24,6 +24,7 @@
   regions[content]           = Primary content
   regions[secondary_content] = Secondary content
   regions[tertiary_content]  = Tertiary content
+  regions[footer]            = Footer
 
 ;----------// Context locked regions
 regions_locked[] = header
