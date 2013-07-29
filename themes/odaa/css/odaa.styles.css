@@ -2567,12 +2567,12 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 /* line 89, ../sass/framework/fontawesome/scss/_icons.scss */
-.icon-remove-sign:before, .messages.error:before {
+.icon-remove-sign:before, .messages.error:before, .view-empty:before {
   content: "\f057";
 }
 
 /* line 90, ../sass/framework/fontawesome/scss/_icons.scss */
-.icon-ok-sign:before, .messages.status:before {
+.icon-ok-sign:before, .messages.status:before, .status.view-empty:before {
   content: "\f058";
 }
 
@@ -2688,7 +2688,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 /* line 114, ../sass/framework/fontawesome/scss/_icons.scss */
-.icon-warning-sign:before, .messages.warning:before {
+.icon-warning-sign:before, .messages.warning:before, .warning.view-empty:before {
   content: "\f071";
 }
 
@@ -4472,7 +4472,7 @@ body {
 }
 
 /* line 22, ../sass/layout/_drupal_system_messages.scss */
-.messages {
+.messages, .view-empty {
   position: relative;
   overflow: hidden;
   margin-top: 20px;
@@ -4484,7 +4484,7 @@ body {
   padding-left: 60px;
 }
 /* line 33, ../sass/layout/_drupal_system_messages.scss */
-.messages:before {
+.messages:before, .view-empty:before {
   position: absolute;
   top: 30%;
   left: 20px;
@@ -4493,92 +4493,107 @@ body {
   margin-right: 15px;
 }
 /* line 47, ../sass/layout/_drupal_system_messages.scss */
-.messages.status,
-.messages .ok {
+.messages.status, .status.view-empty,
+.messages .ok,
+.view-empty .ok {
   color: white;
 }
 /* line 52, ../sass/layout/_drupal_system_messages.scss */
-.messages.status,
-.messages table tr.ok {
+.messages.status, .status.view-empty,
+.messages table tr.ok,
+.view-empty table tr.ok {
   background-color: #528c10;
 }
 /* line 61, ../sass/layout/_drupal_system_messages.scss */
-.messages.warning,
-.messages .warning {
+.messages.warning, .warning.view-empty,
+.messages .warning,
+.view-empty .warning {
   color: black;
 }
 /* line 65, ../sass/layout/_drupal_system_messages.scss */
-.messages.warning a:link,
-.messages .warning a:link {
+.messages.warning a:link, .warning.view-empty a:link,
+.messages .warning a:link,
+.view-empty .warning a:link {
   color: black;
 }
 /* line 69, ../sass/layout/_drupal_system_messages.scss */
-.messages.warning a:visited,
-.messages .warning a:visited {
+.messages.warning a:visited, .warning.view-empty a:visited,
+.messages .warning a:visited,
+.view-empty .warning a:visited {
   color: black;
 }
 /* line 73, ../sass/layout/_drupal_system_messages.scss */
-.messages.warning a:hover,
-.messages .warning a:hover {
+.messages.warning a:hover, .warning.view-empty a:hover,
+.messages .warning a:hover,
+.view-empty .warning a:hover {
   color: #404040;
 }
 /* line 77, ../sass/layout/_drupal_system_messages.scss */
-.messages.warning a:focus,
-.messages .warning a:focus {
+.messages.warning a:focus, .warning.view-empty a:focus,
+.messages .warning a:focus,
+.view-empty .warning a:focus {
   color: #404040;
 }
 /* line 81, ../sass/layout/_drupal_system_messages.scss */
-.messages.warning a:active,
-.messages .warning a:active {
+.messages.warning a:active, .warning.view-empty a:active,
+.messages .warning a:active,
+.view-empty .warning a:active {
   color: #404040;
 }
 /* line 87, ../sass/layout/_drupal_system_messages.scss */
-.messages.warning,
-.messages table tr.warning {
+.messages.warning, .warning.view-empty,
+.messages table tr.warning,
+.view-empty table tr.warning {
   background-color: #f0cb28;
 }
 /* line 96, ../sass/layout/_drupal_system_messages.scss */
-.messages.error,
-.messages .error {
+.messages.error, .view-empty,
+.messages .error,
+.view-empty .error,
+.messages .view-empty,
+.view-empty .view-empty {
   color: white;
 }
 /* line 101, ../sass/layout/_drupal_system_messages.scss */
-.messages.error,
-.messages table tr.error {
+.messages.error, .view-empty,
+.messages table tr.error,
+.view-empty table tr.error,
+.messages table tr.view-empty,
+.view-empty table tr.view-empty {
   background-color: #a32e10;
 }
 /* line 105, ../sass/layout/_drupal_system_messages.scss */
-.messages.error p.error {
+.messages.error p.error, .view-empty p.error, .messages.error p.view-empty, .view-empty p.view-empty {
   color: white;
 }
 /* line 109, ../sass/layout/_drupal_system_messages.scss */
-.messages ul {
+.messages ul, .view-empty ul {
   margin: 0;
   padding: 0;
 }
 /* line 113, ../sass/layout/_drupal_system_messages.scss */
-.messages ul li {
+.messages ul li, .view-empty ul li {
   list-style-image: none;
 }
 /* line 118, ../sass/layout/_drupal_system_messages.scss */
-.messages a:link {
+.messages a:link, .view-empty a:link {
   color: white;
   text-decoration: underline;
 }
 /* line 123, ../sass/layout/_drupal_system_messages.scss */
-.messages a:visited {
+.messages a:visited, .view-empty a:visited {
   color: white;
 }
 /* line 127, ../sass/layout/_drupal_system_messages.scss */
-.messages a:hover {
+.messages a:hover, .view-empty a:hover {
   color: #bfbfbf;
 }
 /* line 131, ../sass/layout/_drupal_system_messages.scss */
-.messages a:focus {
+.messages a:focus, .view-empty a:focus {
   color: #bfbfbf;
 }
 /* line 135, ../sass/layout/_drupal_system_messages.scss */
-.messages a:active {
+.messages a:active, .view-empty a:active {
   background-color: transparent;
   color: #bfbfbf;
 }
@@ -5108,15 +5123,26 @@ body {
  *
  * @author magnify
  */
+/* Search
+   ========================================================================== */
+/* line 11, ../sass/layout/_drupal.scss */
+.search-form--content-block .form-item .search-form--content-block--input {
+  /* Because of div wrappers we can't easily get the button displayed next to
+   * the input so we make the input width 100% instead */
+  min-width: 100%;
+}
+
+/* Views
+   ========================================================================== */
 /* User login
    ========================================================================== */
-/* line 12, ../sass/layout/_drupal.scss */
+/* line 29, ../sass/layout/_drupal.scss */
 #user-login-form .item-list ul {
   padding-left: 0;
 }
 
 /* Form actions */
-/* line 19, ../sass/layout/_drupal.scss */
+/* line 36, ../sass/layout/_drupal.scss */
 .form-actions {
   text-align: right;
 }
@@ -5124,7 +5150,7 @@ body {
 /* Form submit buttons */
 /* Context override
    ========================================================================== */
-/* line 31, ../sass/layout/_drupal.scss */
+/* line 48, ../sass/layout/_drupal.scss */
 .context-editor-title {
   border-bottom: 1px dashed #e6e6e6;
   font-size: 110%;
@@ -5132,21 +5158,21 @@ body {
   margin-bottom: 10px;
 }
 
-/* line 38, ../sass/layout/_drupal.scss */
+/* line 55, ../sass/layout/_drupal.scss */
 .context-help {
   /* For now we hide the help, the text is way to long and should only be
    * visible if looking for it */
   display: none !important;
 }
 
-/* line 44, ../sass/layout/_drupal.scss */
+/* line 61, ../sass/layout/_drupal.scss */
 .editing-context-label {
   /* Hide the "Now editing" text, the markup order makes it difficult to
    * show it in an optimal position */
   display: none !important;
 }
 
-/* line 50, ../sass/layout/_drupal.scss */
+/* line 67, ../sass/layout/_drupal.scss */
 #context-inline-editor li {
   border-bottom: 1px dashed #e6e6e6;
   margin-bottom: 10px;
@@ -5156,7 +5182,7 @@ body {
   padding-left: 10px;
 }
 
-/* line 59, ../sass/layout/_drupal.scss */
+/* line 76, ../sass/layout/_drupal.scss */
 div.context-editor div.label, div.context-editor div.label-inverted, div.context-editor div.dataset--list-tag, div.context-editor .dataset--tags-list div.dataset--tags-list-tag, .dataset--tags-list div.context-editor div.dataset--tags-list-tag {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -5166,28 +5192,28 @@ div.context-editor div.label, div.context-editor div.label-inverted, div.context
   padding: 0;
 }
 
-/* line 67, ../sass/layout/_drupal.scss */
+/* line 84, ../sass/layout/_drupal.scss */
 div.context-editor div.label.top, div.context-editor div.top.label-inverted, div.context-editor div.top.dataset--list-tag, div.context-editor .dataset--tags-list div.top.dataset--tags-list-tag, .dataset--tags-list div.context-editor div.top.dataset--tags-list-tag {
   color: #404040;
 }
 
-/* line 72, ../sass/layout/_drupal.scss */
+/* line 89, ../sass/layout/_drupal.scss */
 #context-inline-editor li.context-editable div.links .edit,
 #context-inline-editor li.context-editing div.links .done {
   padding: 3px 20px;
 }
 
-/* line 78, ../sass/layout/_drupal.scss */
+/* line 95, ../sass/layout/_drupal.scss */
 #context-inline-editor li.context-editing div.links .edit.active {
   /* Hide the edit button when editing */
   display: none;
 }
 
-/* line 84, ../sass/layout/_drupal.scss */
+/* line 101, ../sass/layout/_drupal.scss */
 div.context-editor div.context-editable fieldset {
   padding: 0;
 }
-/* line 88, ../sass/layout/_drupal.scss */
+/* line 105, ../sass/layout/_drupal.scss */
 div.context-editor div.context-editable legend {
   margin: 0;
   padding: 0;

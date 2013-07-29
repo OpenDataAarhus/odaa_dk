@@ -6,6 +6,23 @@
 
 
 
+/* Search
+   ========================================================================== */
+.search-form--content-block .form-item .search-form--content-block--input {
+  /* Because of div wrappers we can't easily get the button displayed next to
+   * the input so we make the input width 100% instead */
+  min-width: 100%;
+}
+
+
+/* Views
+   ========================================================================== */
+.view-empty {
+  @extend .messages;
+  @extend .error;
+}
+
+
 /* User login
    ========================================================================== */
 #user-login-form {
