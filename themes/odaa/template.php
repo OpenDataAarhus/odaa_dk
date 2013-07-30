@@ -44,6 +44,11 @@ function odaa_menu_tree__menu_block__5($variables) {
   return '<ul class="spotbox--list">' . $variables['tree'] . '</ul>';
 }
 
+// Community sub menu
+function odaa_menu_tree__menu_block__7($variables) {
+  return '<ul class="sub-menu">' . $variables['tree'] . '</ul>';
+}
+
 /**
  * Implements hook_theme().
  *
@@ -160,6 +165,10 @@ function odaa_preprocess_block(&$variables) {
     case 3: // Sub menu
       $variables['classes_array'][] = 'sub-menu-wrapper';
       break;
+    
+    case 7: // Community sub menu
+      $variables['classes_array'][] = 'sub-menu-wrapper';
+      break;    
 
     default:
       $variables['classes_array'][] = 'spotbox';
