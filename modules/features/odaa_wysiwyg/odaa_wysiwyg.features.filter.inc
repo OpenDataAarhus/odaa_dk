@@ -253,7 +253,7 @@ h2,h3,h4,h5,h6,br,span,em,strong,u,cite,code,blockquote,ul,ol,li,dl,dt,dd,table,
         'weight' => -48,
         'status' => 1,
         'settings' => array(
-          'allowed_html' => '<a> <p> <br> <em> <strong> <blockquote> <code> <ul> <li> <table> <tr> <th> <td>',
+          'allowed_html' => '<a> <p> <br> <em> <strong> <blockquote> <code> <h3> <h4> <h5> <h6> <ul> <li> <table> <tr> <th> <td>',
           'filter_html_help' => 0,
           'filter_html_nofollow' => 0,
         ),
