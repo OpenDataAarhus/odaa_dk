@@ -129,10 +129,14 @@ function odaa_use_cases_views_default_views() {
   $handler->display->display_options['fields']['field_body']['field'] = 'field_body';
   $handler->display->display_options['fields']['field_body']['ui_name'] = 'Body';
   $handler->display->display_options['fields']['field_body']['label'] = '';
+  $handler->display->display_options['fields']['field_body']['alter']['trim_whitespace'] = TRUE;
+  $handler->display->display_options['fields']['field_body']['alter']['max_length'] = '100';
+  $handler->display->display_options['fields']['field_body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_body']['element_type'] = '0';
   $handler->display->display_options['fields']['field_body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_body']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_body']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_body']['type'] = 'text_plain';
   /* Felt: Comment count and link */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';

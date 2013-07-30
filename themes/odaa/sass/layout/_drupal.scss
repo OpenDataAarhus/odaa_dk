@@ -6,6 +6,17 @@
 
 
 
+/* Fields
+   ========================================================================== */
+.field-image-content {
+  margin-bottom: $large-spacing;
+
+  img {
+    @include border-radius($base-border-radius);
+  }
+}
+
+
 /* Search
    ========================================================================== */
 .search-form--content-block .form-item .search-form--content-block--input {
@@ -91,6 +102,14 @@
   .description {
     @include opacity(.5);
     @extend %section-spacing;
+  }
+
+  .button {
+    margin-left: $medium-spacing;
+  }
+
+  .button.remove {
+    @extend %button-danger;
   }
 }
 
