@@ -22,21 +22,27 @@ function odaa_use_cases_user_default_permissions() {
   // Exported permission: delete any use_case content.
   $permissions['delete any use_case content'] = array(
     'name' => 'delete any use_case content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: delete own use_case content.
   $permissions['delete own use_case content'] = array(
     'name' => 'delete own use_case content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: edit any use_case content.
   $permissions['edit any use_case content'] = array(
     'name' => 'edit any use_case content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
