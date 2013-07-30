@@ -10,8 +10,8 @@
 function odaa_use_cases_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-use_case-body'
-  $field_instances['node-use_case-body'] = array(
+  // Exported field_instance: 'node-use_case-field_body'
+  $field_instances['node-use_case-field_body'] = array(
     'bundle' => 'use_case',
     'default_value' => NULL,
     'deleted' => 0,
@@ -22,34 +22,55 @@ function odaa_use_cases_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
-        'weight' => 0,
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'body',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_body',
     'label' => 'Body',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
-      'display_summary' => TRUE,
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'editor_html' => 0,
+          'filtered_html' => 0,
+          'full_html' => 0,
+          'plain_text' => 0,
+          'user_input' => 'user_input',
+        ),
+        'allowed_formats_toggle' => 1,
+        'default_order_toggle' => 1,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'editor_html' => array(
+              'weight' => -47,
+            ),
+            'filtered_html' => array(
+              'weight' => -48,
+            ),
+            'full_html' => array(
+              'weight' => -46,
+            ),
+            'plain_text' => array(
+              'weight' => -49,
+            ),
+            'user_input' => array(
+              'weight' => -50,
+            ),
+          ),
+        ),
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
+        'rows' => 5,
       ),
-      'type' => 'text_textarea_with_summary',
+      'type' => 'text_textarea',
       'weight' => 2,
     ),
   );
@@ -65,7 +86,7 @@ function odaa_use_cases_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'odaa_panorama_large',
         ),
         'type' => 'image',
         'weight' => 1,
@@ -95,7 +116,7 @@ function odaa_use_cases_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'media',
+      'module' => 'image',
       'settings' => array(
         'allowed_schemes' => array(
           'public' => 'public',
@@ -109,17 +130,18 @@ function odaa_use_cases_field_default_field_instances() {
           'video' => 0,
         ),
         'browser_plugins' => array(
-          'media_browser_plus--media_browser_my_files' => 'media_browser_plus--media_browser_my_files',
-          'media_browser_plus--media_browser_thumbnails' => 'media_browser_plus--media_browser_thumbnails',
+          'media_browser_plus--media_browser_my_files' => 0,
+          'media_browser_plus--media_browser_thumbnails' => 0,
           'media_default--media_browser_1' => 0,
           'media_default--media_browser_my_files' => 0,
           'media_internet' => 0,
           'upload' => 'upload',
           'youtube' => 0,
         ),
+        'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'media_generic',
+      'type' => 'image_image',
       'weight' => 1,
     ),
   );
