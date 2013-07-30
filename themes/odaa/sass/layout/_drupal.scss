@@ -32,6 +32,67 @@
 }
 
 
+/* Throbber
+   ========================================================================== */
+.ajax-progress .throbber {
+  @extend .icon-spinner;
+
+  /* Make sure the background image is not displayed */
+  background: none !important;
+  display: inline-block;
+  font-size: $font-size-larger;
+  height: 15px;
+  margin: 2px;
+  position: relative;
+  top: 5px;
+  width: 15px;
+
+  /* Required for extending icon */
+  &:before {
+    @extend .icon-spin;
+
+    font-family: $base-icon-library-font;
+  }
+}
+
+
+/* Forms
+   ========================================================================== */
+.form-actions {
+  input {
+    margin-left: $medium-spacing;
+  }
+
+  #edit-submit {
+    @extend %button-action;
+
+    float: right;
+  }
+}
+
+.field-type-image {
+  @include border-radius($base-border-radius);
+
+  border: 1px solid transparentize($black, .6);
+  margin-top: $large-spacing;
+  margin-bottom: $large-spacing;
+  padding: $large-spacing;
+
+  .form-file {
+    @extend %button;
+
+    margin-right: $large-spacing;
+    padding-top: 9px;
+    padding-button: 9px;
+  }
+
+  .description {
+    @include opacity(.5);
+    @extend %section-spacing;
+  }
+}
+
+
 /* Form actions */
 .form-actions {
   text-align: right;

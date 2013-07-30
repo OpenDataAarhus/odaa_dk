@@ -1016,8 +1016,8 @@ table tbody tr:hover th,
 .button, .form-submit, #context-inline-editor li.context-editable div.links .edit,
 #context-inline-editor li.context-editing div.links .done, .list--action-sort-latest,
 .list--action-sort-hot, .user-login--submit, .user-register--submit, .search-form--content-block .search-form--content-block--button,
-a.button, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview, .list--action-create, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download, .comments--post-comment-login,
-.comments--post-comment-create-user {
+a.button, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview, .form-actions #edit-submit, .list--action-create, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download, .comments--post-comment-login,
+.comments--post-comment-create-user, .field-type-image .form-file {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -1037,24 +1037,24 @@ a.button, .dataset--data-resources--list-item .dataset--data-resources--list-act
 /* line 45, ../sass/framework/_buttons.scss */
 .button:focus, .form-submit:focus, #context-inline-editor li.context-editable div.links .edit:focus,
 #context-inline-editor li.context-editing div.links .done:focus, .list--action-sort-latest:focus,
-.list--action-sort-hot:focus, .user-login--submit:focus, .user-register--submit:focus, .search-form--content-block .search-form--content-block--button:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:focus, .list--action-create:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:focus, .comments--post-comment-login:focus,
-.comments--post-comment-create-user:focus, .button:hover, .form-submit:hover, #context-inline-editor li.context-editable div.links .edit:hover,
+.list--action-sort-hot:focus, .user-login--submit:focus, .user-register--submit:focus, .search-form--content-block .search-form--content-block--button:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:focus, .form-actions #edit-submit:focus, .list--action-create:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:focus, .comments--post-comment-login:focus,
+.comments--post-comment-create-user:focus, .field-type-image .form-file:focus, .button:hover, .form-submit:hover, #context-inline-editor li.context-editable div.links .edit:hover,
 #context-inline-editor li.context-editing div.links .done:hover, .list--action-sort-latest:hover,
-.list--action-sort-hot:hover, .user-login--submit:hover, .user-register--submit:hover, .search-form--content-block .search-form--content-block--button:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:hover, .list--action-create:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:hover, .comments--post-comment-login:hover,
-.comments--post-comment-create-user:hover, .button:active, .form-submit:active, #context-inline-editor li.context-editable div.links .edit:active,
+.list--action-sort-hot:hover, .user-login--submit:hover, .user-register--submit:hover, .search-form--content-block .search-form--content-block--button:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:hover, .form-actions #edit-submit:hover, .list--action-create:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:hover, .comments--post-comment-login:hover,
+.comments--post-comment-create-user:hover, .field-type-image .form-file:hover, .button:active, .form-submit:active, #context-inline-editor li.context-editable div.links .edit:active,
 #context-inline-editor li.context-editing div.links .done:active, .list--action-sort-latest:active,
-.list--action-sort-hot:active, .user-login--submit:active, .user-register--submit:active, .search-form--content-block .search-form--content-block--button:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:active, .list--action-create:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:active, .comments--post-comment-login:active,
-.comments--post-comment-create-user:active {
+.list--action-sort-hot:active, .user-login--submit:active, .user-register--submit:active, .search-form--content-block .search-form--content-block--button:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-preview:active, .form-actions #edit-submit:active, .list--action-create:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:active, .comments--post-comment-login:active,
+.comments--post-comment-create-user:active, .field-type-image .form-file:active {
   text-decoration: none;
 }
 /* line 51, ../sass/framework/_buttons.scss */
 .disabled.button, .disabled.form-submit, #context-inline-editor li.context-editable div.links .disabled.edit,
 #context-inline-editor li.context-editing div.links .disabled.done, .disabled.list--action-sort-latest,
-.disabled.list--action-sort-hot, .disabled.user-login--submit, .disabled.user-register--submit, .search-form--content-block .disabled.search-form--content-block--button, .dataset--data-resources--list-item .disabled.dataset--data-resources--list-actions-preview, .disabled.list--action-create, .dataset--data-resources--list-item .disabled.dataset--data-resources--list-actions-download, .disabled.comments--post-comment-login,
-.disabled.comments--post-comment-create-user, [disabled].button, [disabled].form-submit, #context-inline-editor li.context-editable div.links [disabled].edit,
+.disabled.list--action-sort-hot, .disabled.user-login--submit, .disabled.user-register--submit, .search-form--content-block .disabled.search-form--content-block--button, .dataset--data-resources--list-item .disabled.dataset--data-resources--list-actions-preview, .form-actions .disabled#edit-submit, .disabled.list--action-create, .dataset--data-resources--list-item .disabled.dataset--data-resources--list-actions-download, .disabled.comments--post-comment-login,
+.disabled.comments--post-comment-create-user, .field-type-image .disabled.form-file, [disabled].button, [disabled].form-submit, #context-inline-editor li.context-editable div.links [disabled].edit,
 #context-inline-editor li.context-editing div.links [disabled].done, [disabled].list--action-sort-latest,
-[disabled].list--action-sort-hot, [disabled].user-login--submit, [disabled].user-register--submit, .search-form--content-block [disabled].search-form--content-block--button, .dataset--data-resources--list-item [disabled].dataset--data-resources--list-actions-preview, [disabled].list--action-create, .dataset--data-resources--list-item [disabled].dataset--data-resources--list-actions-download, [disabled].comments--post-comment-login,
-[disabled].comments--post-comment-create-user {
+[disabled].list--action-sort-hot, [disabled].user-login--submit, [disabled].user-register--submit, .search-form--content-block [disabled].search-form--content-block--button, .dataset--data-resources--list-item [disabled].dataset--data-resources--list-actions-preview, .form-actions [disabled]#edit-submit, [disabled].list--action-create, .dataset--data-resources--list-item [disabled].dataset--data-resources--list-actions-download, [disabled].comments--post-comment-login,
+[disabled].comments--post-comment-create-user, .field-type-image [disabled].form-file {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
   -webkit-box-shadow: none;
@@ -1213,7 +1213,7 @@ a.user-register--submit i[class^="icon-"],
 
 /* Action button */
 /* line 108, ../sass/framework/_buttons.scss */
-.list--action-create, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download, .comments--post-comment-login,
+.form-actions #edit-submit, .list--action-create, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download, .comments--post-comment-login,
 .comments--post-comment-create-user {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #96b000), color-stop(100%, #556300));
   background-image: -webkit-linear-gradient(#96b000, #556300);
@@ -1226,15 +1226,15 @@ a.user-register--submit i[class^="icon-"],
   color: white;
 }
 /* line 76, ../sass/framework/_buttons.scss */
-.list--action-create:link, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:link, .comments--post-comment-login:link,
-.comments--post-comment-create-user:link, .list--action-create:visited, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:visited, .comments--post-comment-login:visited,
+.form-actions #edit-submit:link, .list--action-create:link, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:link, .comments--post-comment-login:link,
+.comments--post-comment-create-user:link, .form-actions #edit-submit:visited, .list--action-create:visited, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:visited, .comments--post-comment-login:visited,
 .comments--post-comment-create-user:visited {
   color: white;
 }
 /* line 83, ../sass/framework/_buttons.scss */
-.list--action-create:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:focus, .comments--post-comment-login:focus,
-.comments--post-comment-create-user:focus, .list--action-create:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:hover, .comments--post-comment-login:hover,
-.comments--post-comment-create-user:hover, .list--action-create:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:active, .comments--post-comment-login:active,
+.form-actions #edit-submit:focus, .list--action-create:focus, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:focus, .comments--post-comment-login:focus,
+.comments--post-comment-create-user:focus, .form-actions #edit-submit:hover, .list--action-create:hover, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:hover, .comments--post-comment-login:hover,
+.comments--post-comment-create-user:hover, .form-actions #edit-submit:active, .list--action-create:active, .dataset--data-resources--list-item .dataset--data-resources--list-actions-download:active, .comments--post-comment-login:active,
 .comments--post-comment-create-user:active {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #809700), color-stop(100%, #3f4a00));
   background-image: -webkit-linear-gradient(#809700, #3f4a00);
@@ -1244,7 +1244,7 @@ a.user-register--submit i[class^="icon-"],
   background-color: #556300;
 }
 /* line 89, ../sass/framework/_buttons.scss */
-.list--action-create i[class^="icon-"], .dataset--data-resources--list-item .dataset--data-resources--list-actions-download i[class^="icon-"], .comments--post-comment-login i[class^="icon-"],
+.form-actions #edit-submit i[class^="icon-"], .list--action-create i[class^="icon-"], .dataset--data-resources--list-item .dataset--data-resources--list-actions-download i[class^="icon-"], .comments--post-comment-login i[class^="icon-"],
 .comments--post-comment-create-user i[class^="icon-"] {
   margin-right: 8px;
 }
@@ -1925,9 +1925,13 @@ a [class*=" icon-"] {
   line-height: .9em;
 }
 /* line 42, ../sass/framework/fontawesome/scss/_bootstrap.scss */
-.btn [class^="icon-"].icon-spin,
-.btn [class*=" icon-"].icon-spin, .nav [class^="icon-"].icon-spin,
-.nav [class*=" icon-"].icon-spin {
+.btn [class^="icon-"].icon-spin, .btn .ajax-progress [class^="icon-"].throbber:before, .ajax-progress .btn [class^="icon-"].throbber:before,
+.btn [class*=" icon-"].icon-spin,
+.btn .ajax-progress [class*=" icon-"].throbber:before,
+.ajax-progress .btn [class*=" icon-"].throbber:before, .nav [class^="icon-"].icon-spin, .nav .ajax-progress [class^="icon-"].throbber:before, .ajax-progress .nav [class^="icon-"].throbber:before,
+.nav [class*=" icon-"].icon-spin,
+.nav .ajax-progress [class*=" icon-"].throbber:before,
+.ajax-progress .nav [class*=" icon-"].throbber:before {
   display: inline-block;
 }
 
@@ -1947,8 +1951,10 @@ a [class*=" icon-"] {
   margin-top: .18em;
 }
 /* line 57, ../sass/framework/fontawesome/scss/_bootstrap.scss */
-.btn [class^="icon-"].icon-spin.icon-large,
-.btn [class*=" icon-"].icon-spin.icon-large {
+.btn [class^="icon-"].icon-spin.icon-large, .btn .ajax-progress [class^="icon-"].icon-large.throbber:before, .ajax-progress .btn [class^="icon-"].icon-large.throbber:before,
+.btn [class*=" icon-"].icon-spin.icon-large,
+.btn .ajax-progress [class*=" icon-"].icon-large.throbber:before,
+.ajax-progress .btn [class*=" icon-"].icon-large.throbber:before {
   line-height: .8em;
 }
 
@@ -2020,7 +2026,7 @@ a [class*=" icon-"] {
 
 /* Animated rotating icon */
 /* line 8, ../sass/framework/fontawesome/scss/_extras.scss */
-.icon-spin {
+.icon-spin, .ajax-progress .throbber:before {
   display: inline-block;
   -moz-animation: spin 2s infinite linear;
   -o-animation: spin 2s infinite linear;
@@ -2031,7 +2037,9 @@ a [class*=" icon-"] {
 /* Prevent stack and spinners from being taken inline when inside a link */
 /* line 18, ../sass/framework/fontawesome/scss/_extras.scss */
 a .icon-stack,
-a .icon-spin {
+a .icon-spin,
+a .ajax-progress .throbber:before,
+.ajax-progress a .throbber:before {
   display: inline-block;
   text-decoration: none;
 }
@@ -3377,7 +3385,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 /* line 255, ../sass/framework/fontawesome/scss/_icons.scss */
-.icon-spinner:before {
+.icon-spinner:before, .ajax-progress .throbber:before {
   content: "\f110";
 }
 
@@ -5141,8 +5149,61 @@ body {
   padding-left: 0;
 }
 
+/* Throbber
+   ========================================================================== */
+/* line 37, ../sass/layout/_drupal.scss */
+.ajax-progress .throbber {
+  /* Make sure the background image is not displayed */
+  background: none !important;
+  display: inline-block;
+  font-size: 160%;
+  height: 15px;
+  margin: 2px;
+  position: relative;
+  top: 5px;
+  width: 15px;
+  /* Required for extending icon */
+}
+/* line 51, ../sass/layout/_drupal.scss */
+.ajax-progress .throbber:before {
+  font-family: "FontAwesome";
+}
+
+/* Forms
+   ========================================================================== */
+/* line 62, ../sass/layout/_drupal.scss */
+.form-actions input {
+  margin-left: 10px;
+}
+/* line 66, ../sass/layout/_drupal.scss */
+.form-actions #edit-submit {
+  float: right;
+}
+
+/* line 73, ../sass/layout/_drupal.scss */
+.field-type-image {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+/* line 81, ../sass/layout/_drupal.scss */
+.field-type-image .form-file {
+  margin-right: 20px;
+  padding-top: 9px;
+  padding-button: 9px;
+}
+/* line 89, ../sass/layout/_drupal.scss */
+.field-type-image .description {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+
 /* Form actions */
-/* line 36, ../sass/layout/_drupal.scss */
+/* line 97, ../sass/layout/_drupal.scss */
 .form-actions {
   text-align: right;
 }
@@ -5150,7 +5211,7 @@ body {
 /* Form submit buttons */
 /* Context override
    ========================================================================== */
-/* line 48, ../sass/layout/_drupal.scss */
+/* line 109, ../sass/layout/_drupal.scss */
 .context-editor-title {
   border-bottom: 1px dashed #e6e6e6;
   font-size: 110%;
@@ -5158,21 +5219,21 @@ body {
   margin-bottom: 10px;
 }
 
-/* line 55, ../sass/layout/_drupal.scss */
+/* line 116, ../sass/layout/_drupal.scss */
 .context-help {
   /* For now we hide the help, the text is way to long and should only be
    * visible if looking for it */
   display: none !important;
 }
 
-/* line 61, ../sass/layout/_drupal.scss */
+/* line 122, ../sass/layout/_drupal.scss */
 .editing-context-label {
   /* Hide the "Now editing" text, the markup order makes it difficult to
    * show it in an optimal position */
   display: none !important;
 }
 
-/* line 67, ../sass/layout/_drupal.scss */
+/* line 128, ../sass/layout/_drupal.scss */
 #context-inline-editor li {
   border-bottom: 1px dashed #e6e6e6;
   margin-bottom: 10px;
@@ -5182,7 +5243,7 @@ body {
   padding-left: 10px;
 }
 
-/* line 76, ../sass/layout/_drupal.scss */
+/* line 137, ../sass/layout/_drupal.scss */
 div.context-editor div.label, div.context-editor div.label-inverted, div.context-editor div.dataset--list-tag, div.context-editor .dataset--tags-list div.dataset--tags-list-tag, .dataset--tags-list div.context-editor div.dataset--tags-list-tag {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -5192,28 +5253,28 @@ div.context-editor div.label, div.context-editor div.label-inverted, div.context
   padding: 0;
 }
 
-/* line 84, ../sass/layout/_drupal.scss */
+/* line 145, ../sass/layout/_drupal.scss */
 div.context-editor div.label.top, div.context-editor div.top.label-inverted, div.context-editor div.top.dataset--list-tag, div.context-editor .dataset--tags-list div.top.dataset--tags-list-tag, .dataset--tags-list div.context-editor div.top.dataset--tags-list-tag {
   color: #404040;
 }
 
-/* line 89, ../sass/layout/_drupal.scss */
+/* line 150, ../sass/layout/_drupal.scss */
 #context-inline-editor li.context-editable div.links .edit,
 #context-inline-editor li.context-editing div.links .done {
   padding: 3px 20px;
 }
 
-/* line 95, ../sass/layout/_drupal.scss */
+/* line 156, ../sass/layout/_drupal.scss */
 #context-inline-editor li.context-editing div.links .edit.active {
   /* Hide the edit button when editing */
   display: none;
 }
 
-/* line 101, ../sass/layout/_drupal.scss */
+/* line 162, ../sass/layout/_drupal.scss */
 div.context-editor div.context-editable fieldset {
   padding: 0;
 }
-/* line 105, ../sass/layout/_drupal.scss */
+/* line 166, ../sass/layout/_drupal.scss */
 div.context-editor div.context-editable legend {
   margin: 0;
   padding: 0;
@@ -5341,7 +5402,7 @@ div.context-editor div.context-editable legend {
 /* Section spacing
    ========================================================================== */
 /* line 32, ../sass/module/_module.scss */
-.page--section, .user-profile--info, .user-profile--actions, .dataset--list-wrapper, .dataset--data-resources, .dataset--tags, .dataset--additional-info, .community--wrapper, .forum--wrapper, .forum--list-wrapper, .use-cases--wrapper, .comments--wrapper, .comments--list-actions, .comments--list-item-actions, .comments--post-comment-wrapper {
+.field-type-image .description, .page--section, .user-profile--info, .user-profile--actions, .dataset--list-wrapper, .dataset--data-resources, .dataset--tags, .dataset--additional-info, .community--wrapper, .forum--wrapper, .forum--list-wrapper, .use-cases--wrapper, .comments--wrapper, .comments--list-actions, .comments--list-item-actions, .comments--post-comment-wrapper {
   border-top: 1px dashed #e6e6e6;
   margin-top: 20px;
   padding-top: 20px;
