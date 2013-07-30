@@ -70,4 +70,9 @@ textarea {
     background-color: lighten($gray-light, 5%);
     border: 1px solid $gray-light;
   }
+  
+  &.error {
+    background-color: lighten($red, 50%);
+    border: 1px solid $red;    
+  }
 }

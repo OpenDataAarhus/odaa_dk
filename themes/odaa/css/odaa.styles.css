@@ -805,6 +805,31 @@ textarea[disabled] {
   background-color: #fbfbfb;
   border: 1px solid #efefef;
 }
+/* line 74, ../sass/framework/_forms.scss */
+input[type="text"].error, input[type="text"].view-empty,
+input[type="password"].error,
+input[type="password"].view-empty,
+input[type="date"].error,
+input[type="date"].view-empty,
+input[type="datetime"].error,
+input[type="datetime"].view-empty,
+input[type="email"].error,
+input[type="email"].view-empty,
+input[type="number"].error,
+input[type="number"].view-empty,
+input[type="search"].error,
+input[type="search"].view-empty,
+input[type="tel"].error,
+input[type="tel"].view-empty,
+input[type="time"].error,
+input[type="time"].view-empty,
+input[type="url"].error,
+input[type="url"].view-empty,
+textarea.error,
+textarea.view-empty {
+  background-color: #f8c7ba;
+  border: 1px solid #a32e10;
+}
 
 /**
  * Tables
