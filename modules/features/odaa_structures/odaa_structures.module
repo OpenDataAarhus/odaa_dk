@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Odaa structures feature.
+ */
+
+include_once 'odaa_structures.features.inc';

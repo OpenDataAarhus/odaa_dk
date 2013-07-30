@@ -1,0 +1,14 @@
+name = ODAA structures
+description = For structural elements such as panels and context
+core = 7.x
+package = ODAA
+php = 5.2.4
+version = 7.x-1.0
+project = odaa_structures
+dependencies[] = context
+dependencies[] = ctools
+dependencies[] = menu_block
+features[context][] = user_sub
+features[ctools][] = context:context:3
+features[features_api][] = api:2
+project path = sites/odaa.dk/modules/features
