@@ -20,7 +20,6 @@ function odaa_user_setup_context_default_contexts() {
     'path' => array(
       'values' => array(
         'user' => 'user',
-        'user/*' => 'user/*',
       ),
     ),
     'user' => array(
