@@ -222,6 +222,9 @@ projects[menu_token][version] = "1.0-beta5"
 projects[markdown][subdir] = "contrib"
 projects[markdown][version] = "1.1"
 
+projects[menu_trail_by_path][subdir] = "contrib"
+projects[menu_trail_by_path][version] = "2.0"
+
 ; Libraries
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.zip"
