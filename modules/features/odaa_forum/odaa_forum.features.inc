@@ -26,8 +26,8 @@ function odaa_forum_views_api() {
  */
 function odaa_forum_node_info() {
   $items = array(
-    'forum' => array(
-      'name' => t('Forum'),
+    'forum_topic' => array(
+      'name' => t('Forum topic'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
