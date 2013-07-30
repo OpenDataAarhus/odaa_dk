@@ -6,6 +6,13 @@
 
 
 
+/* Fields
+   ========================================================================== */
+.field-image-content {
+  margin-bottom: $large-spacing;
+}
+
+
 /* Search
    ========================================================================== */
 .search-form--content-block .form-item .search-form--content-block--input {
@@ -91,6 +98,14 @@
   .description {
     @include opacity(.5);
     @extend %section-spacing;
+  }
+
+  .button {
+    margin-left: $medium-spacing;
+  }
+
+  .button.remove {
+    @extend %button-danger;
   }
 }
 
