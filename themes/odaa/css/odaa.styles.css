@@ -566,12 +566,14 @@ strong {
 }
 
 /* line 90, ../sass/framework/_base.scss */
-em, blockquote p {
+em, blockquote p,
+code p {
   font-family: "exo-regular-italic";
   font-weight: normal;
 }
 /* line 93, ../sass/framework/_base.scss */
-em strong, blockquote p strong {
+em strong, blockquote p strong,
+code p strong {
   font-family: "exo-demi-bold";
   font-weight: normal;
 }
@@ -624,52 +626,60 @@ img {
   vertical-align: middle;
 }
 
-/* Lists
+/* Blockquote and code
    ========================================================================== */
-/* line 155, ../sass/framework/_base.scss */
-blockquote {
+/* line 159, ../sass/framework/_base.scss */
+code {
+  display: block;
+}
+
+/* line 166, ../sass/framework/_base.scss */
+blockquote,
+code {
   margin-top: 30px;
   margin-right: 0;
   margin-bottom: 20px;
   margin-left: 0;
   padding: 0;
 }
-/* line 164, ../sass/framework/_base.scss */
-blockquote:before {
+/* line 173, ../sass/framework/_base.scss */
+blockquote:before,
+code:before {
   font-family: "FontAwesome";
   margin-right: 20px;
 }
-/* line 173, ../sass/framework/_base.scss */
-blockquote p {
+/* line 182, ../sass/framework/_base.scss */
+blockquote p,
+code p {
   margin-bottom: 0;
   margin-left: 60px;
 }
 
 /* Lists
    ========================================================================== */
-/* line 185, ../sass/framework/_base.scss */
+/* line 194, ../sass/framework/_base.scss */
 ul {
   margin: 0;
   padding-left: 20px;
 }
-/* line 189, ../sass/framework/_base.scss */
+/* line 198, ../sass/framework/_base.scss */
 ul li {
   list-style: none;
 }
 
 /* Make sure lists in content get the icon */
-/* line 197, ../sass/framework/_base.scss */
+/* line 206, ../sass/framework/_base.scss */
 .content ul {
   margin-bottom: 10px;
 }
-/* line 201, ../sass/framework/_base.scss */
+/* line 210, ../sass/framework/_base.scss */
 .content li {
   list-style: disc outside;
 }
 
 /* Fieldset
    ========================================================================== */
-/* line 211, ../sass/framework/_base.scss */
+/* line 220, ../sass/framework/_base.scss */
 fieldset {
   border-color: #efefef;
   margin-top: 0;
@@ -682,7 +692,7 @@ fieldset {
   padding-left: 20px;
 }
 
-/* line 223, ../sass/framework/_base.scss */
+/* line 232, ../sass/framework/_base.scss */
 legend {
   font-family: "exo-demi-bold";
   font-weight: normal;
@@ -696,7 +706,7 @@ legend {
 
 /* Selection color
    ========================================================================== */
-/* line 240, ../sass/framework/_base.scss */
+/* line 249, ../sass/framework/_base.scss */
 ::-moz-selection,
 ::selection {
   background-color: #ffff99;
@@ -1887,7 +1897,8 @@ a [class*=" icon-"] {
 }
 
 /* line 67, ../sass/framework/fontawesome/scss/_core.scss */
-.icon-muted, blockquote:before {
+.icon-muted, blockquote:before,
+code:before {
   color: #eeeeee;
 }
 
@@ -1923,11 +1934,13 @@ a [class*=" icon-"] {
 }
 
 /* line 90, ../sass/framework/fontawesome/scss/_core.scss */
-.icon-3x, blockquote:before {
+.icon-3x, blockquote:before,
+code:before {
   font-size: 3em;
 }
 /* line 92, ../sass/framework/fontawesome/scss/_core.scss */
-.icon-3x.icon-border, blockquote.icon-border:before {
+.icon-3x.icon-border, blockquote.icon-border:before,
+code.icon-border:before {
   border-width: 3px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1964,14 +1977,17 @@ a [class*=" icon-"] {
 }
 
 /* line 119, ../sass/framework/fontawesome/scss/_core.scss */
-.pull-left, blockquote:before {
+.pull-left, blockquote:before,
+code:before {
   float: left;
 }
 
 /* line 123, ../sass/framework/fontawesome/scss/_core.scss */
 [class^="icon-"].pull-left, blockquote[class^="icon-"]:before,
+code[class^="icon-"]:before,
 [class*=" icon-"].pull-left,
-blockquote[class*=" icon-"]:before {
+blockquote[class*=" icon-"]:before,
+code[class*=" icon-"]:before {
   margin-right: .3em;
 }
 /* line 126, ../sass/framework/fontawesome/scss/_core.scss */
@@ -2043,9 +2059,11 @@ blockquote[class*=" icon-"]:before {
 }
 
 /* line 55, ../sass/framework/fontawesome/scss/_bootstrap.scss */
-.btn [class^="icon-"].pull-left.icon-2x, .btn blockquote[class^="icon-"].icon-2x:before, .btn [class^="icon-"].pull-right.icon-2x,
+.btn [class^="icon-"].pull-left.icon-2x, .btn blockquote[class^="icon-"].icon-2x:before,
+.btn code[class^="icon-"].icon-2x:before, .btn [class^="icon-"].pull-right.icon-2x,
 .btn [class*=" icon-"].pull-left.icon-2x,
 .btn blockquote[class*=" icon-"].icon-2x:before,
+.btn code[class*=" icon-"].icon-2x:before,
 .btn [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
@@ -2058,9 +2076,11 @@ blockquote[class*=" icon-"]:before {
 }
 
 /* line 64, ../sass/framework/fontawesome/scss/_bootstrap.scss */
-.btn.btn-small [class^="icon-"].pull-left.icon-2x, .btn.btn-small blockquote[class^="icon-"].icon-2x:before, .btn.btn-small [class^="icon-"].pull-right.icon-2x,
+.btn.btn-small [class^="icon-"].pull-left.icon-2x, .btn.btn-small blockquote[class^="icon-"].icon-2x:before,
+.btn.btn-small code[class^="icon-"].icon-2x:before, .btn.btn-small [class^="icon-"].pull-right.icon-2x,
 .btn.btn-small [class*=" icon-"].pull-left.icon-2x,
 .btn.btn-small blockquote[class*=" icon-"].icon-2x:before,
+.btn.btn-small code[class*=" icon-"].icon-2x:before,
 .btn.btn-small [class*=" icon-"].pull-right.icon-2x {
   margin-top: .25em;
 }
@@ -2071,16 +2091,20 @@ blockquote[class*=" icon-"]:before {
   margin-top: 0;
 }
 /* line 73, ../sass/framework/fontawesome/scss/_bootstrap.scss */
-.btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn.btn-large blockquote[class^="icon-"].icon-2x:before, .btn.btn-large [class^="icon-"].pull-right.icon-2x,
+.btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn.btn-large blockquote[class^="icon-"].icon-2x:before,
+.btn.btn-large code[class^="icon-"].icon-2x:before, .btn.btn-large [class^="icon-"].pull-right.icon-2x,
 .btn.btn-large [class*=" icon-"].pull-left.icon-2x,
 .btn.btn-large blockquote[class*=" icon-"].icon-2x:before,
+.btn.btn-large code[class*=" icon-"].icon-2x:before,
 .btn.btn-large [class*=" icon-"].pull-right.icon-2x {
   margin-top: .05em;
 }
 /* line 75, ../sass/framework/fontawesome/scss/_bootstrap.scss */
 .btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn.btn-large blockquote[class^="icon-"].icon-2x:before,
+.btn.btn-large code[class^="icon-"].icon-2x:before,
 .btn.btn-large [class*=" icon-"].pull-left.icon-2x,
-.btn.btn-large blockquote[class*=" icon-"].icon-2x:before {
+.btn.btn-large blockquote[class*=" icon-"].icon-2x:before,
+.btn.btn-large code[class*=" icon-"].icon-2x:before {
   margin-right: .2em;
 }
 /* line 76, ../sass/framework/fontawesome/scss/_bootstrap.scss */
@@ -3568,7 +3592,7 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 }
 
 /* line 272, ../sass/framework/fontawesome/scss/_icons.scss */
-.icon-code:before {
+.icon-code:before, code:before {
   content: "\f121";
 }
 

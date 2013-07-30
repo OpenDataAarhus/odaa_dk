@@ -149,12 +149,21 @@ img {
 }
 
 
-/* Lists
+/* Blockquote and code
    ========================================================================== */
 
 blockquote {
   @extend .icon-quote-left;
+}
 
+code {
+  @extend .icon-code;
+  
+  display: block;
+}
+
+blockquote,
+code {
   margin-top: 30px;
   margin-right: 0;
   margin-bottom: 20px;
