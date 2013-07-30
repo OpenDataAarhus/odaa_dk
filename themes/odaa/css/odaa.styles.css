@@ -805,6 +805,31 @@ textarea[disabled] {
   background-color: #fbfbfb;
   border: 1px solid #efefef;
 }
+/* line 74, ../sass/framework/_forms.scss */
+input[type="text"].error, input[type="text"].view-empty,
+input[type="password"].error,
+input[type="password"].view-empty,
+input[type="date"].error,
+input[type="date"].view-empty,
+input[type="datetime"].error,
+input[type="datetime"].view-empty,
+input[type="email"].error,
+input[type="email"].view-empty,
+input[type="number"].error,
+input[type="number"].view-empty,
+input[type="search"].error,
+input[type="search"].view-empty,
+input[type="tel"].error,
+input[type="tel"].view-empty,
+input[type="time"].error,
+input[type="time"].view-empty,
+input[type="url"].error,
+input[type="url"].view-empty,
+textarea.error,
+textarea.view-empty {
+  background-color: #f8c7ba;
+  border: 1px solid #a32e10;
+}
 
 /**
  * Tables
@@ -5209,13 +5234,14 @@ body {
 /* Form actions */
 /* line 99, ../sass/layout/_drupal.scss */
 .form-actions {
+  padding-top: 20px;
   text-align: right;
 }
 
 /* Form submit buttons */
 /* Context override
    ========================================================================== */
-/* line 111, ../sass/layout/_drupal.scss */
+/* line 112, ../sass/layout/_drupal.scss */
 .context-editor-title {
   border-bottom: 1px dashed #e6e6e6;
   font-size: 110%;
@@ -5223,21 +5249,21 @@ body {
   margin-bottom: 10px;
 }
 
-/* line 118, ../sass/layout/_drupal.scss */
+/* line 119, ../sass/layout/_drupal.scss */
 .context-help {
   /* For now we hide the help, the text is way to long and should only be
    * visible if looking for it */
   display: none !important;
 }
 
-/* line 124, ../sass/layout/_drupal.scss */
+/* line 125, ../sass/layout/_drupal.scss */
 .editing-context-label {
   /* Hide the "Now editing" text, the markup order makes it difficult to
    * show it in an optimal position */
   display: none !important;
 }
 
-/* line 130, ../sass/layout/_drupal.scss */
+/* line 131, ../sass/layout/_drupal.scss */
 #context-inline-editor li {
   border-bottom: 1px dashed #e6e6e6;
   margin-bottom: 10px;
@@ -5247,7 +5273,7 @@ body {
   padding-left: 10px;
 }
 
-/* line 139, ../sass/layout/_drupal.scss */
+/* line 140, ../sass/layout/_drupal.scss */
 div.context-editor div.label, div.context-editor div.label-inverted, div.context-editor div.dataset--list-tag, div.context-editor .dataset--tags-list div.dataset--tags-list-tag, .dataset--tags-list div.context-editor div.dataset--tags-list-tag {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -5257,28 +5283,28 @@ div.context-editor div.label, div.context-editor div.label-inverted, div.context
   padding: 0;
 }
 
-/* line 147, ../sass/layout/_drupal.scss */
+/* line 148, ../sass/layout/_drupal.scss */
 div.context-editor div.label.top, div.context-editor div.top.label-inverted, div.context-editor div.top.dataset--list-tag, div.context-editor .dataset--tags-list div.top.dataset--tags-list-tag, .dataset--tags-list div.context-editor div.top.dataset--tags-list-tag {
   color: #404040;
 }
 
-/* line 152, ../sass/layout/_drupal.scss */
+/* line 153, ../sass/layout/_drupal.scss */
 #context-inline-editor li.context-editable div.links .edit,
 #context-inline-editor li.context-editing div.links .done {
   padding: 3px 20px;
 }
 
-/* line 158, ../sass/layout/_drupal.scss */
+/* line 159, ../sass/layout/_drupal.scss */
 #context-inline-editor li.context-editing div.links .edit.active {
   /* Hide the edit button when editing */
   display: none;
 }
 
-/* line 164, ../sass/layout/_drupal.scss */
+/* line 165, ../sass/layout/_drupal.scss */
 div.context-editor div.context-editable fieldset {
   padding: 0;
 }
-/* line 168, ../sass/layout/_drupal.scss */
+/* line 169, ../sass/layout/_drupal.scss */
 div.context-editor div.context-editable legend {
   margin: 0;
   padding: 0;
