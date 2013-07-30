@@ -204,7 +204,7 @@ function odaa_use_cases_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'use-cases';
+  $handler->display->display_options['path'] = 'community/use-cases';
   $translatables['odaa_use_cases_list'] = array(
     t('Master'),
     t('Use cases'),
