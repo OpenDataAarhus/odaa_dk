@@ -15,7 +15,17 @@ function odaa_use_cases_field_default_field_instances() {
     'bundle' => 'use_case',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => '<strong>Limited markdown is available, quick tips:</strong>
+<ul>
+  <li>Enter = new paragraph</li>
+  <li>Shift + enter = new line</li>
+  <li>*Single asterisks* or _single underscores_ = <em>Emphasis</em></li>
+  <li>**Double** or __double__ = <strong>Strong</strong></li>
+  <li>This is [a link](http://the.link.example.com "The optional title text")</li>
+</ul>
+<p>For complete details on the Markdown syntax, see the <a href="http://daringfireball.net/projects/markdown/syntax">Markdown documentation</a> and <a href="http://michelf.com/projects/php-markdown/extra/">Markdown Extra documentation</a> for tables and more.</p>
+<p>Allowed elements: links, emphasized text, strong text, blockquote, code snippets, lists, tables</p>
+<p>Web- and e-mails is automatically converted to links.</p>',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -144,6 +154,17 @@ function odaa_use_cases_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('<strong>Limited markdown is available, quick tips:</strong>
+<ul>
+  <li>Enter = new paragraph</li>
+  <li>Shift + enter = new line</li>
+  <li>*Single asterisks* or _single underscores_ = <em>Emphasis</em></li>
+  <li>**Double** or __double__ = <strong>Strong</strong></li>
+  <li>This is [a link](http://the.link.example.com "The optional title text")</li>
+</ul>
+<p>For complete details on the Markdown syntax, see the <a href="http://daringfireball.net/projects/markdown/syntax">Markdown documentation</a> and <a href="http://michelf.com/projects/php-markdown/extra/">Markdown Extra documentation</a> for tables and more.</p>
+<p>Allowed elements: links, emphasized text, strong text, blockquote, code snippets, lists, tables</p>
+<p>Web- and e-mails is automatically converted to links.</p>');
   t('Body');
   t('Image');
 
