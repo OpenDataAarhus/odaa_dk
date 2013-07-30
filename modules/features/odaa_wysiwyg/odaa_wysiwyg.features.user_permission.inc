@@ -31,5 +31,14 @@ function odaa_wysiwyg_user_default_permissions() {
     'module' => 'filter',
   );
 
+  // Exported permission: use text format user_input.
+  $permissions['use text format user_input'] = array(
+    'name' => 'use text format user_input',
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'filter',
+  );
+
   return $permissions;
 }
