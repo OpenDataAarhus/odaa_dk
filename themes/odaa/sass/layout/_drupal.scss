@@ -113,6 +113,11 @@
   }
 }
 
+.text-format-wrapper .filter-wrapper {
+  /* Hide the input filter selector for textareas */
+  display: none;
+}
+
 
 /* Form actions */
 .form-actions {
