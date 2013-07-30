@@ -164,7 +164,7 @@ function odaa_forum_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'forum' => 'forum',
+    'forum_topic' => 'forum_topic',
   );
   /* Filterkriterie: Indhold: Titel */
   $handler->display->display_options['filters']['title']['id'] = 'title';
