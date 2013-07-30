@@ -149,6 +149,35 @@ img {
 }
 
 
+/* Lists
+   ========================================================================== */
+
+blockquote {
+  @extend .icon-quote-left;
+
+  margin-top: 30px;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+  padding: 0;
+
+  &:before {
+    @extend .icon-3x;
+    @extend .icon-muted;
+    @extend .pull-left;
+
+    font-family: $base-icon-library-font;
+    margin-right: 20px;
+  }
+
+  p {
+    @extend em;
+
+    margin-bottom: 0;
+    margin-left: 60px;
+  }
+}
+
 
 /* Lists
    ========================================================================== */
