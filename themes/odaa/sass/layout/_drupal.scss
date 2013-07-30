@@ -60,7 +60,7 @@
    ========================================================================== */
 .form-actions {
   overflow: hidden;
-  
+
   input {
     margin-left: $medium-spacing;
   }
@@ -97,6 +97,7 @@
 
 /* Form actions */
 .form-actions {
+  padding-top: $large-spacing;
   text-align: right;
 }
 
