@@ -15,7 +15,7 @@ function odaa_use_cases_field_default_field_instances() {
     'bundle' => 'use_case',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<strong>Limited markdown is available, quick tips:</strong>
+    'description' => '<strong>Limited markdown is available:</strong>
 <ul>
   <li>Enter = new paragraph</li>
   <li>Shift + enter = new line</li>
@@ -154,7 +154,7 @@ function odaa_use_cases_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('<strong>Limited markdown is available, quick tips:</strong>
+  t('<strong>Limited markdown is available:</strong>
 <ul>
   <li>Enter = new paragraph</li>
   <li>Shift + enter = new line</li>
