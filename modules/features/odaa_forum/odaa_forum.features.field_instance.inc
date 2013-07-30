@@ -15,7 +15,10 @@ function odaa_forum_field_default_field_instances() {
     'bundle' => 'forum_topic',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => '<p>Markdown is available, see <a href="http://daringfireball.net/projects/markdown/syntax">Markdown documentation</a> and <a href="http://michelf.com/projects/php-markdown/extra/">Markdown Extra documentation</a>.</p>
+<p>Allowed elements: links, emphasis, code, blockquotes, headers (h3 - h6), lists, tables</p>
+<p>Shift + enter = new line</p>
+<p>Web- and e-mails is automatically converted to links.</p>',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -39,48 +42,52 @@ function odaa_forum_field_default_field_instances() {
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
-          'editor_html' => 'editor_html',
-          'full_html' => 'full_html',
-          'plain_text' => 'plain_text',
+          'editor_html' => 0,
+          'full_html' => 0,
+          'plain_text' => 0,
           'user_input' => 'user_input',
         ),
-        'allowed_formats_toggle' => 0,
-        'default_order_toggle' => 0,
+        'allowed_formats_toggle' => 1,
+        'default_order_toggle' => 1,
         'default_order_wrapper' => array(
           'formats' => array(
             'editor_html' => array(
-              'weight' => -9,
+              'weight' => -49,
             ),
             'full_html' => array(
-              'weight' => -10,
+              'weight' => -48,
             ),
             'plain_text' => array(
-              'weight' => -6,
+              'weight' => -47,
             ),
             'user_input' => array(
-              'weight' => -7,
+              'weight' => -50,
             ),
           ),
         ),
       ),
-      'text_processing' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 5,
+        'rows' => 7,
       ),
       'type' => 'text_textarea',
-      'weight' => 3,
+      'weight' => 2,
     ),
   );
 
   // Exported field_instance: 'node-forum_topic-field_category'
   $field_instances['node-forum_topic-field_category'] = array(
     'bundle' => 'forum_topic',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'tid' => 3,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -101,7 +108,7 @@ function odaa_forum_field_default_field_instances() {
     'fences_wrapper' => 'div',
     'field_name' => 'field_category',
     'label' => 'Kategori',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -116,6 +123,10 @@ function odaa_forum_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('<p>Markdown is available, see <a href="http://daringfireball.net/projects/markdown/syntax">Markdown documentation</a> and <a href="http://michelf.com/projects/php-markdown/extra/">Markdown Extra documentation</a>.</p>
+<p>Allowed elements: links, emphasis, code, blockquotes, headers (h3 - h6), lists, tables</p>
+<p>Shift + enter = new line</p>
+<p>Web- and e-mails is automatically converted to links.</p>');
   t('Body');
   t('Kategori');
 
