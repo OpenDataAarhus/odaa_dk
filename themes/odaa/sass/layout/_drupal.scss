@@ -59,6 +59,8 @@
 /* Forms
    ========================================================================== */
 .form-actions {
+  overflow: hidden;
+  
   input {
     margin-left: $medium-spacing;
   }
