@@ -184,9 +184,24 @@ function odaa_forum_views_default_views() {
     5 => 0,
   );
 
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page');
+  /* Display: Forum all */
+  $handler = $view->new_display('page', 'Forum all', 'page');
   $handler->display->display_options['path'] = 'forum';
+
+  /* Display: Forum user */
+  $handler = $view->new_display('page', 'Forum user', 'page_1');
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Kontekstuelt filter: Indhold: Forfatter uid */
+  $handler->display->display_options['arguments']['uid']['id'] = 'uid';
+  $handler->display->display_options['arguments']['uid']['table'] = 'node';
+  $handler->display->display_options['arguments']['uid']['field'] = 'uid';
+  $handler->display->display_options['arguments']['uid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['uid']['exception']['title'] = 'Alle';
+  $handler->display->display_options['arguments']['uid']['default_argument_type'] = 'current_user';
+  $handler->display->display_options['arguments']['uid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['uid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['uid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['path'] = 'user/forum-topics';
   $translatables['forum'] = array(
     t('Master'),
     t('Forum'),
@@ -217,7 +232,9 @@ function odaa_forum_views_default_views() {
     t('Oprettelsesdato'),
     t('Kommentarantal'),
     t('Søg i communitiet'),
-    t('Page'),
+    t('Forum all'),
+    t('Forum user'),
+    t('Alle'),
   );
   $export['forum'] = $view;
 
