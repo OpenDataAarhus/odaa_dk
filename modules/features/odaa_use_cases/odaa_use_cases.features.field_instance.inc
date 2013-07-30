@@ -21,7 +21,7 @@ function odaa_use_cases_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
-        'type' => 'text_plain',
+        'type' => 'text_default',
         'weight' => 2,
       ),
     ),
@@ -34,18 +34,15 @@ function odaa_use_cases_field_default_field_instances() {
       'better_formats' => array(
         'allowed_formats' => array(
           'editor_html' => 0,
-          'filtered_html' => 0,
           'full_html' => 0,
-          'plain_text' => 'plain_text',
+          'plain_text' => 0,
+          'user_input' => 'user_input',
         ),
         'allowed_formats_toggle' => 1,
-        'default_order_toggle' => 0,
+        'default_order_toggle' => 1,
         'default_order_wrapper' => array(
           'formats' => array(
             'editor_html' => array(
-              'weight' => 0,
-            ),
-            'filtered_html' => array(
               'weight' => 0,
             ),
             'full_html' => array(
@@ -54,20 +51,23 @@ function odaa_use_cases_field_default_field_instances() {
             'plain_text' => array(
               'weight' => 10,
             ),
+            'user_input' => array(
+              'weight' => -7,
+            ),
           ),
         ),
       ),
-      'text_processing' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 5,
+        'rows' => 7,
       ),
       'type' => 'text_textarea',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -137,7 +137,7 @@ function odaa_use_cases_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 2,
+      'weight' => 1,
     ),
   );
 
