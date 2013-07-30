@@ -53,7 +53,8 @@
       text-decoration: none;
     }
 
-    &.active {
+    &.active,
+    &.active-trail {
       background-color: $base-primary-color;
       color: $white;
 
@@ -139,7 +140,8 @@
         margin-right: 10px;
       }
 
-      &.active {
+      &.active,
+      &.active-trail {
         @include font-bold();
 
         color: $link-color;
