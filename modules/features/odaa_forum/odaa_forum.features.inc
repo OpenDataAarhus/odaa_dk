@@ -27,11 +27,11 @@ function odaa_forum_views_api() {
 function odaa_forum_node_info() {
   $items = array(
     'forum_topic' => array(
-      'name' => t('Forum topic'),
+      'name' => t('Forumemne'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
   );

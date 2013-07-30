@@ -21,7 +21,7 @@ function odaa_use_cases_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'text_plain',
         'weight' => 2,
       ),
     ),
@@ -36,32 +36,28 @@ function odaa_use_cases_field_default_field_instances() {
           'editor_html' => 0,
           'filtered_html' => 0,
           'full_html' => 0,
-          'plain_text' => 0,
-          'user_input' => 'user_input',
+          'plain_text' => 'plain_text',
         ),
         'allowed_formats_toggle' => 1,
-        'default_order_toggle' => 1,
+        'default_order_toggle' => 0,
         'default_order_wrapper' => array(
           'formats' => array(
             'editor_html' => array(
-              'weight' => -47,
+              'weight' => 0,
             ),
             'filtered_html' => array(
-              'weight' => -48,
+              'weight' => 0,
             ),
             'full_html' => array(
-              'weight' => -46,
+              'weight' => 1,
             ),
             'plain_text' => array(
-              'weight' => -49,
-            ),
-            'user_input' => array(
-              'weight' => -50,
+              'weight' => 10,
             ),
           ),
         ),
       ),
-      'text_processing' => 1,
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -71,7 +67,7 @@ function odaa_use_cases_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 2,
+      'weight' => 1,
     ),
   );
 
@@ -116,7 +112,7 @@ function odaa_use_cases_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'media',
       'settings' => array(
         'allowed_schemes' => array(
           'public' => 'public',
@@ -130,19 +126,18 @@ function odaa_use_cases_field_default_field_instances() {
           'video' => 0,
         ),
         'browser_plugins' => array(
-          'media_browser_plus--media_browser_my_files' => 0,
-          'media_browser_plus--media_browser_thumbnails' => 0,
+          'media_browser_plus--media_browser_my_files' => 'media_browser_plus--media_browser_my_files',
+          'media_browser_plus--media_browser_thumbnails' => 'media_browser_plus--media_browser_thumbnails',
           'media_default--media_browser_1' => 0,
           'media_default--media_browser_my_files' => 0,
           'media_internet' => 0,
           'upload' => 'upload',
           'youtube' => 0,
         ),
-        'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'image_image',
-      'weight' => 1,
+      'type' => 'media_generic',
+      'weight' => 2,
     ),
   );
 
