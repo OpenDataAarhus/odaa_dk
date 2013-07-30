@@ -10,6 +10,10 @@
    ========================================================================== */
 .field-image-content {
   margin-bottom: $large-spacing;
+
+  img {
+    @include border-radius($base-border-radius);
+  }
 }
 
 

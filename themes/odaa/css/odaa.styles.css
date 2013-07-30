@@ -1276,6 +1276,57 @@ a.user-register--submit i[class^="icon-"],
 
 /* Warning button */
 /* Danger button */
+/* line 118, ../sass/framework/_buttons.scss */
+.field-type-image .button.remove, .field-type-image .remove.form-submit, .field-type-image #context-inline-editor li.context-editable div.links .remove.edit, #context-inline-editor li.context-editable div.links .field-type-image .remove.edit,
+.field-type-image #context-inline-editor li.context-editing div.links .remove.done,
+#context-inline-editor li.context-editing div.links .field-type-image .remove.done, .field-type-image .remove.list--action-sort-latest,
+.field-type-image .remove.list--action-sort-hot, .field-type-image .remove.user-login--submit, .field-type-image .remove.user-register--submit, .field-type-image .search-form--content-block .remove.search-form--content-block--button, .search-form--content-block .field-type-image .remove.search-form--content-block--button {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e5420c), color-stop(100%, #9c2d08));
+  background-image: -webkit-linear-gradient(#e5420c, #9c2d08);
+  background-image: -moz-linear-gradient(#e5420c, #9c2d08);
+  background-image: -o-linear-gradient(#e5420c, #9c2d08);
+  background-image: linear-gradient(#e5420c, #9c2d08);
+  /* Make sure buttons get a background color in IE */
+  background-color: #e5420c;
+  border: 0;
+  color: white;
+}
+/* line 76, ../sass/framework/_buttons.scss */
+.field-type-image .button.remove:link, .field-type-image .remove.form-submit:link, .field-type-image #context-inline-editor li.context-editable div.links .remove.edit:link, #context-inline-editor li.context-editable div.links .field-type-image .remove.edit:link,
+.field-type-image #context-inline-editor li.context-editing div.links .remove.done:link,
+#context-inline-editor li.context-editing div.links .field-type-image .remove.done:link, .field-type-image .remove.list--action-sort-latest:link,
+.field-type-image .remove.list--action-sort-hot:link, .field-type-image .remove.user-login--submit:link, .field-type-image .remove.user-register--submit:link, .field-type-image .search-form--content-block .remove.search-form--content-block--button:link, .search-form--content-block .field-type-image .remove.search-form--content-block--button:link, .field-type-image .button.remove:visited, .field-type-image .remove.form-submit:visited, .field-type-image #context-inline-editor li.context-editable div.links .remove.edit:visited, #context-inline-editor li.context-editable div.links .field-type-image .remove.edit:visited,
+.field-type-image #context-inline-editor li.context-editing div.links .remove.done:visited,
+#context-inline-editor li.context-editing div.links .field-type-image .remove.done:visited, .field-type-image .remove.list--action-sort-latest:visited,
+.field-type-image .remove.list--action-sort-hot:visited, .field-type-image .remove.user-login--submit:visited, .field-type-image .remove.user-register--submit:visited, .field-type-image .search-form--content-block .remove.search-form--content-block--button:visited, .search-form--content-block .field-type-image .remove.search-form--content-block--button:visited {
+  color: white;
+}
+/* line 83, ../sass/framework/_buttons.scss */
+.field-type-image .button.remove:focus, .field-type-image .remove.form-submit:focus, .field-type-image #context-inline-editor li.context-editable div.links .remove.edit:focus, #context-inline-editor li.context-editable div.links .field-type-image .remove.edit:focus,
+.field-type-image #context-inline-editor li.context-editing div.links .remove.done:focus,
+#context-inline-editor li.context-editing div.links .field-type-image .remove.done:focus, .field-type-image .remove.list--action-sort-latest:focus,
+.field-type-image .remove.list--action-sort-hot:focus, .field-type-image .remove.user-login--submit:focus, .field-type-image .remove.user-register--submit:focus, .field-type-image .search-form--content-block .remove.search-form--content-block--button:focus, .search-form--content-block .field-type-image .remove.search-form--content-block--button:focus, .field-type-image .button.remove:hover, .field-type-image .remove.form-submit:hover, .field-type-image #context-inline-editor li.context-editable div.links .remove.edit:hover, #context-inline-editor li.context-editable div.links .field-type-image .remove.edit:hover,
+.field-type-image #context-inline-editor li.context-editing div.links .remove.done:hover,
+#context-inline-editor li.context-editing div.links .field-type-image .remove.done:hover, .field-type-image .remove.list--action-sort-latest:hover,
+.field-type-image .remove.list--action-sort-hot:hover, .field-type-image .remove.user-login--submit:hover, .field-type-image .remove.user-register--submit:hover, .field-type-image .search-form--content-block .remove.search-form--content-block--button:hover, .search-form--content-block .field-type-image .remove.search-form--content-block--button:hover, .field-type-image .button.remove:active, .field-type-image .remove.form-submit:active, .field-type-image #context-inline-editor li.context-editable div.links .remove.edit:active, #context-inline-editor li.context-editable div.links .field-type-image .remove.edit:active,
+.field-type-image #context-inline-editor li.context-editing div.links .remove.done:active,
+#context-inline-editor li.context-editing div.links .field-type-image .remove.done:active, .field-type-image .remove.list--action-sort-latest:active,
+.field-type-image .remove.list--action-sort-hot:active, .field-type-image .remove.user-login--submit:active, .field-type-image .remove.user-register--submit:active, .field-type-image .search-form--content-block .remove.search-form--content-block--button:active, .search-form--content-block .field-type-image .remove.search-form--content-block--button:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cd3b0b), color-stop(100%, #842607));
+  background-image: -webkit-linear-gradient(#cd3b0b, #842607);
+  background-image: -moz-linear-gradient(#cd3b0b, #842607);
+  background-image: -o-linear-gradient(#cd3b0b, #842607);
+  background-image: linear-gradient(#cd3b0b, #842607);
+  background-color: #9c2d08;
+}
+/* line 89, ../sass/framework/_buttons.scss */
+.field-type-image .button.remove i[class^="icon-"], .field-type-image .remove.form-submit i[class^="icon-"], .field-type-image #context-inline-editor li.context-editable div.links .remove.edit i[class^="icon-"], #context-inline-editor li.context-editable div.links .field-type-image .remove.edit i[class^="icon-"],
+.field-type-image #context-inline-editor li.context-editing div.links .remove.done i[class^="icon-"],
+#context-inline-editor li.context-editing div.links .field-type-image .remove.done i[class^="icon-"], .field-type-image .remove.list--action-sort-latest i[class^="icon-"],
+.field-type-image .remove.list--action-sort-hot i[class^="icon-"], .field-type-image .remove.user-login--submit i[class^="icon-"], .field-type-image .remove.user-register--submit i[class^="icon-"], .field-type-image .search-form--content-block .remove.search-form--content-block--button i[class^="icon-"], .search-form--content-block .field-type-image .remove.search-form--content-block--button i[class^="icon-"] {
+  margin-right: 8px;
+}
+
 /* Don't use native buttons on iOS */
 /* line 125, ../sass/framework/_buttons.scss */
 input[type=submit].button, input[type=submit].form-submit, #context-inline-editor li.context-editable div.links input[type=submit].edit,
@@ -5156,9 +5207,22 @@ body {
  *
  * @author magnify
  */
-/* Search
+/* Fields
    ========================================================================== */
 /* line 11, ../sass/layout/_drupal.scss */
+.field-image-content {
+  margin-bottom: 20px;
+}
+/* line 14, ../sass/layout/_drupal.scss */
+.field-image-content img {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* Search
+   ========================================================================== */
+/* line 22, ../sass/layout/_drupal.scss */
 .search-form--content-block .form-item .search-form--content-block--input {
   /* Because of div wrappers we can't easily get the button displayed next to
    * the input so we make the input width 100% instead */
@@ -5169,14 +5233,14 @@ body {
    ========================================================================== */
 /* User login
    ========================================================================== */
-/* line 29, ../sass/layout/_drupal.scss */
+/* line 40, ../sass/layout/_drupal.scss */
 #user-login-form .item-list ul {
   padding-left: 0;
 }
 
 /* Throbber
    ========================================================================== */
-/* line 37, ../sass/layout/_drupal.scss */
+/* line 48, ../sass/layout/_drupal.scss */
 .ajax-progress .throbber {
   /* Make sure the background image is not displayed */
   background: none !important;
@@ -5189,27 +5253,27 @@ body {
   width: 15px;
   /* Required for extending icon */
 }
-/* line 51, ../sass/layout/_drupal.scss */
+/* line 62, ../sass/layout/_drupal.scss */
 .ajax-progress .throbber:before {
   font-family: "FontAwesome";
 }
 
 /* Forms
    ========================================================================== */
-/* line 61, ../sass/layout/_drupal.scss */
+/* line 72, ../sass/layout/_drupal.scss */
 .form-actions {
   overflow: hidden;
 }
-/* line 64, ../sass/layout/_drupal.scss */
+/* line 75, ../sass/layout/_drupal.scss */
 .form-actions input {
   margin-left: 10px;
 }
-/* line 68, ../sass/layout/_drupal.scss */
+/* line 79, ../sass/layout/_drupal.scss */
 .form-actions #edit-submit {
   float: right;
 }
 
-/* line 75, ../sass/layout/_drupal.scss */
+/* line 86, ../sass/layout/_drupal.scss */
 .field-type-image {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -5219,20 +5283,27 @@ body {
   margin-bottom: 20px;
   padding: 20px;
 }
-/* line 83, ../sass/layout/_drupal.scss */
+/* line 94, ../sass/layout/_drupal.scss */
 .field-type-image .form-file {
   margin-right: 20px;
   padding-top: 9px;
   padding-button: 9px;
 }
-/* line 91, ../sass/layout/_drupal.scss */
+/* line 102, ../sass/layout/_drupal.scss */
 .field-type-image .description {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
+/* line 107, ../sass/layout/_drupal.scss */
+.field-type-image .button, .field-type-image .form-submit, .field-type-image #context-inline-editor li.context-editable div.links .edit, #context-inline-editor li.context-editable div.links .field-type-image .edit,
+.field-type-image #context-inline-editor li.context-editing div.links .done,
+#context-inline-editor li.context-editing div.links .field-type-image .done, .field-type-image .list--action-sort-latest,
+.field-type-image .list--action-sort-hot, .field-type-image .user-login--submit, .field-type-image .user-register--submit, .field-type-image .search-form--content-block .search-form--content-block--button, .search-form--content-block .field-type-image .search-form--content-block--button {
+  margin-left: 10px;
+}
 
 /* Form actions */
-/* line 99, ../sass/layout/_drupal.scss */
+/* line 118, ../sass/layout/_drupal.scss */
 .form-actions {
   padding-top: 20px;
   text-align: right;
@@ -5241,7 +5312,7 @@ body {
 /* Form submit buttons */
 /* Context override
    ========================================================================== */
-/* line 112, ../sass/layout/_drupal.scss */
+/* line 131, ../sass/layout/_drupal.scss */
 .context-editor-title {
   border-bottom: 1px dashed #e6e6e6;
   font-size: 110%;
@@ -5249,21 +5320,21 @@ body {
   margin-bottom: 10px;
 }
 
-/* line 119, ../sass/layout/_drupal.scss */
+/* line 138, ../sass/layout/_drupal.scss */
 .context-help {
   /* For now we hide the help, the text is way to long and should only be
    * visible if looking for it */
   display: none !important;
 }
 
-/* line 125, ../sass/layout/_drupal.scss */
+/* line 144, ../sass/layout/_drupal.scss */
 .editing-context-label {
   /* Hide the "Now editing" text, the markup order makes it difficult to
    * show it in an optimal position */
   display: none !important;
 }
 
-/* line 131, ../sass/layout/_drupal.scss */
+/* line 150, ../sass/layout/_drupal.scss */
 #context-inline-editor li {
   border-bottom: 1px dashed #e6e6e6;
   margin-bottom: 10px;
@@ -5273,7 +5344,7 @@ body {
   padding-left: 10px;
 }
 
-/* line 140, ../sass/layout/_drupal.scss */
+/* line 159, ../sass/layout/_drupal.scss */
 div.context-editor div.label, div.context-editor div.label-inverted, div.context-editor div.dataset--list-tag, div.context-editor .dataset--tags-list div.dataset--tags-list-tag, .dataset--tags-list div.context-editor div.dataset--tags-list-tag {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -5283,28 +5354,28 @@ div.context-editor div.label, div.context-editor div.label-inverted, div.context
   padding: 0;
 }
 
-/* line 148, ../sass/layout/_drupal.scss */
+/* line 167, ../sass/layout/_drupal.scss */
 div.context-editor div.label.top, div.context-editor div.top.label-inverted, div.context-editor div.top.dataset--list-tag, div.context-editor .dataset--tags-list div.top.dataset--tags-list-tag, .dataset--tags-list div.context-editor div.top.dataset--tags-list-tag {
   color: #404040;
 }
 
-/* line 153, ../sass/layout/_drupal.scss */
+/* line 172, ../sass/layout/_drupal.scss */
 #context-inline-editor li.context-editable div.links .edit,
 #context-inline-editor li.context-editing div.links .done {
   padding: 3px 20px;
 }
 
-/* line 159, ../sass/layout/_drupal.scss */
+/* line 178, ../sass/layout/_drupal.scss */
 #context-inline-editor li.context-editing div.links .edit.active {
   /* Hide the edit button when editing */
   display: none;
 }
 
-/* line 165, ../sass/layout/_drupal.scss */
+/* line 184, ../sass/layout/_drupal.scss */
 div.context-editor div.context-editable fieldset {
   padding: 0;
 }
-/* line 169, ../sass/layout/_drupal.scss */
+/* line 188, ../sass/layout/_drupal.scss */
 div.context-editor div.context-editable legend {
   margin: 0;
   padding: 0;
@@ -6484,7 +6555,7 @@ div.context-editor div.context-editable legend {
  *
  * @author magnify
  */
-/* line 9, ../sass/module/_usecases.scss */
+/* line 13, ../sass/module/_usecases.scss */
 .use-cases--wrapper {
   margin-right: -10px;
   margin-left: -10px;
