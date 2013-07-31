@@ -44,6 +44,11 @@ function odaa_menu_tree__menu_block__5($variables) {
   return '<ul class="spotbox--list">' . $variables['tree'] . '</ul>';
 }
 
+// User accounting
+function odaa_menu_tree__menu_block__6($variables) {
+  return '<ul class="spotbox--list">' . $variables['tree'] . '</ul>';
+}
+
 // Community sub menu
 function odaa_menu_tree__menu_block__7($variables) {
   return '<ul class="sub-menu">' . $variables['tree'] . '</ul>';
