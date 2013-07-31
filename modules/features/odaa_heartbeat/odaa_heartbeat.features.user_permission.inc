@@ -19,6 +19,15 @@ function odaa_heartbeat_user_default_permissions() {
     'module' => 'heartbeat',
   );
 
+  // Exported permission: add heartbeat comment.
+  $permissions['add heartbeat comment'] = array(
+    'name' => 'add heartbeat comment',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'heartbeat_comments',
+  );
+
   // Exported permission: admin heartbeat configure.
   $permissions['admin heartbeat configure'] = array(
     'name' => 'admin heartbeat configure',
@@ -46,6 +55,15 @@ function odaa_heartbeat_user_default_permissions() {
     'module' => 'heartbeat',
   );
 
+  // Exported permission: admin heartbeat plugins.
+  $permissions['admin heartbeat plugins'] = array(
+    'name' => 'admin heartbeat plugins',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'heartbeat_plugins',
+  );
+
   // Exported permission: admin heartbeat streams.
   $permissions['admin heartbeat streams'] = array(
     'name' => 'admin heartbeat streams',
@@ -62,6 +80,42 @@ function odaa_heartbeat_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'heartbeat',
+  );
+
+  // Exported permission: administer heartbeat comments.
+  $permissions['administer heartbeat comments'] = array(
+    'name' => 'administer heartbeat comments',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'heartbeat_comments',
+  );
+
+  // Exported permission: delete any comment.
+  $permissions['delete any comment'] = array(
+    'name' => 'delete any comment',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'heartbeat_comments',
+  );
+
+  // Exported permission: delete own comments.
+  $permissions['delete own comments'] = array(
+    'name' => 'delete own comments',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'heartbeat_comments',
+  );
+
+  // Exported permission: post activity statuses.
+  $permissions['post activity statuses'] = array(
+    'name' => 'post activity statuses',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'heartbeat_plugins',
   );
 
   // Exported permission: view Node activity stream.
