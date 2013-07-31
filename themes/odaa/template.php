@@ -272,7 +272,3 @@ function odaa_form_alter(&$form, &$form_state, $form_id){
     break;
   }
 }
-
-function odaa_preprocess_comment(&$variables){
-
-}
