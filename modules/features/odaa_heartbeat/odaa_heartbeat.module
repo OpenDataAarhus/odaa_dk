@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ODAA heartbeat feature.
+ */
+
+include_once 'odaa_heartbeat.features.inc';
