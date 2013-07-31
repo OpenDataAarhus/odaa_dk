@@ -79,7 +79,7 @@
   </header>
   <div class="content-wrapper">
     <div class="content-inner">
-      <?php if ($breadcrumb): ?>
+      <?php if ($breadcrumb && !$is_front): ?>
         <div class="breadcrumb"><?php print $breadcrumb; ?></div>
       <?php endif; ?>
       
