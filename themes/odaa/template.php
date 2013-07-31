@@ -165,10 +165,6 @@ function odaa_preprocess_block(&$variables) {
     case 3: // Sub menu
       $variables['classes_array'][] = 'sub-menu-wrapper';
       break;
-    
-    case 7: // Community sub menu
-      $variables['classes_array'][] = 'sub-menu-wrapper';
-      break;    
 
     default:
       $variables['classes_array'][] = 'spotbox';
