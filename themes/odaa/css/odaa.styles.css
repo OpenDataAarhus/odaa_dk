@@ -4571,6 +4571,20 @@ body {
 }
 
 /**
+ * Breadcrumb
+ *
+ * @author magnify
+ */
+/* line 8, ../sass/layout/_breadcrumb.scss */
+.breadcrumb {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/**
  * Drupal
  *
  * Overrides for Drupal system messages
