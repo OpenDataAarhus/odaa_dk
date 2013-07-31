@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the ODAA User setup feature.
- */
-
-include_once 'odaa_user_setup.features.inc';
