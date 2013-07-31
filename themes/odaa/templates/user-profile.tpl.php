@@ -35,25 +35,25 @@
  */
 ?>
 <?php global $user;?>
+<?php if(arg(0) == 'user' && is_numeric(arg(1))) :?>
+  <?php $userpage_id = arg(1);?>
+  <?php $userpage_obj  = user_load($userpage_id);?>
+<?php endif;?>
 <div class="user-profile--content-wrapper">
   <section class="user-profile--primary-content">
     <div class="user-profile--header-wrapper">
       <div class="user-profile--image"><img src="//gravatar.com/avatar/f9879d71855b5ff21e4963273a886bfc?s=75&amp;d=identicon"></div>
-      <h1 class="user-profile--title">Bruger navn</h1>
+      <h1 class="user-profile--title"><?php echo $userpage_obj->name;?></h1>
     </div>
     <section class="user-profile--info">
-      <h3>###THIS IS UNFINISHED###</h3>
-      <p><strong>Navn:</strong> Ornare Euismod</p>
-      <p><strong>E-mail:</strong> mail@example.com</p>
-      <p><strong>Medlem i:</strong> 2 uger 2 dage</p>
-      <?php if($user->uid ==arg(1)) :?>
+      <p><strong><?php echo t('Name');?>:</strong> <?php echo $userpage_obj->name;?></p>
+      <p><strong><?php echo t('Email');?>:</strong> <?php echo $userpage_obj->mail;?></p>
+      <p><strong><?php echo t('Member for');?>:</strong> <?php print render($user_profile['summary']['member_for']['#markup']); ?></p>
+      <?php if($user->uid == $userpage_id) :?>
         <div class="user-profile--actions">
-          <a href="user/<?php echo $user->uid;?>/edit" class="button">Redigér profil</a>
+          <a href="user/<?php echo $user->uid;?>/edit" class="button"><?php echo t('Edit profile');?></a>
         </div>
       <?php endif;?>
     </section>
   </section>
-  <div class="profile"<?php print $attributes; ?>>
-    <?php print render($user_profile); ?>
-  </div>
 </div>
