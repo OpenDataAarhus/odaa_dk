@@ -19,15 +19,6 @@ function odaa_heartbeat_user_default_permissions() {
     'module' => 'heartbeat',
   );
 
-  // Exported permission: add heartbeat comment.
-  $permissions['add heartbeat comment'] = array(
-    'name' => 'add heartbeat comment',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'heartbeat_comments',
-  );
-
   // Exported permission: admin heartbeat configure.
   $permissions['admin heartbeat configure'] = array(
     'name' => 'admin heartbeat configure',
@@ -55,15 +46,6 @@ function odaa_heartbeat_user_default_permissions() {
     'module' => 'heartbeat',
   );
 
-  // Exported permission: admin heartbeat plugins.
-  $permissions['admin heartbeat plugins'] = array(
-    'name' => 'admin heartbeat plugins',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'heartbeat_plugins',
-  );
-
   // Exported permission: admin heartbeat streams.
   $permissions['admin heartbeat streams'] = array(
     'name' => 'admin heartbeat streams',
@@ -82,39 +64,10 @@ function odaa_heartbeat_user_default_permissions() {
     'module' => 'heartbeat',
   );
 
-  // Exported permission: administer heartbeat comments.
-  $permissions['administer heartbeat comments'] = array(
-    'name' => 'administer heartbeat comments',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'heartbeat_comments',
-  );
-
-  // Exported permission: delete any comment.
-  $permissions['delete any comment'] = array(
-    'name' => 'delete any comment',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'heartbeat_comments',
-  );
-
-  // Exported permission: post activity statuses.
-  $permissions['post activity statuses'] = array(
-    'name' => 'post activity statuses',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'heartbeat_plugins',
-  );
-
   // Exported permission: view Node activity stream.
   $permissions['view Node activity stream'] = array(
     'name' => 'view Node activity stream',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'heartbeat',
   );
 
@@ -130,27 +83,21 @@ function odaa_heartbeat_user_default_permissions() {
   // Exported permission: view Site activity stream.
   $permissions['view Site activity stream'] = array(
     'name' => 'view Site activity stream',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'heartbeat',
   );
 
   // Exported permission: view User activity stream.
   $permissions['view User activity stream'] = array(
     'name' => 'view User activity stream',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'heartbeat',
   );
 
   // Exported permission: view User relations activity stream.
   $permissions['view User relations activity stream'] = array(
     'name' => 'view User relations activity stream',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'heartbeat',
   );
 
