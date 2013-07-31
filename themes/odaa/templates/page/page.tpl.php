@@ -83,7 +83,7 @@
       <div class="primary-content">
 
         <?php if (!$is_front): ?>
-          <?php if (!empty($tabs['#primary']) && $user->uid > 0): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
+          <?php if (!empty($tabs['#primary']) && $user->uid > 0 && arg(0)!= 'user'): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
           <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
         <?php endif; ?>
 

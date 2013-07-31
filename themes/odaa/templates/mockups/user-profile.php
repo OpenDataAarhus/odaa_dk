@@ -35,56 +35,92 @@
                 </div>
               </section>
             </section>
-            <aside class="user-profile--secondary-content">
-              <div class="spotbox">
-                <div class="spotbox--inner">
-                  <h2 class="spotbox--header"><a href="#"><i class="icon-time"></i>Seneste aktivitet</a></h2>
-                  <ul class="spotbox--list">
-                    <li class="spotbox--list-item first">
-                      <span class="spotbox--list-link">Nyt forumindlæg: <a href="#comment1">Morbi leo risus</a></span>
-                      <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
-                    </li>
-                    <li class="spotbox--list-item">
-                      <span class="spotbox--list-link">Kommenterede: <a href="#comment2">Porta ac consectetur ac</a></span>
-                      <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
-                    </li>
-                    <li class="spotbox--list-item">
-                      <span class="spotbox--list-link">Ny use case: <a href="#comment3">Vestibulum at eros</a></span>
-                      <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
-                    </li>
-                    <li class="spotbox--list-item">
-                      <span class="spotbox--list-link">Kommenterede: <a href="#comment4">Nibh Dolor Ornare</a></span>
-                      <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
-                    </li>
-                    <li class="spotbox--list-item last">
-                      <span class="spotbox--list-link">Kommenterede: <a href="#comment5">Ridiculus Euismod Lorem</a></span>
-                      <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
-                    </li>
-                    <p class="spotbox--list-show-more"><a href="#"><i class="icon-angle-right"></i>Se mere</a></p>
-                  </ul>
-                </div>
-              </div>
-            </aside>
           </div>
         </div>
         <div class="secondary-content">
           <div class="spotbox-menu">
             <div class="spotbox-menu--inner">
-              <h3 class="spotbox-menu--header"><i class="icon-user"></i>Bruger navn</h3>
-              <ul class="spotbox-menu--list">
-                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-angle-right"></i>Min konto</a></li>
-                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-angle-right"></i>Rediger profil</a></li>
-                <li class="spotbox-menu--list-item last"><a href="#"><i class="icon-power-off"></i>Log ud</a></li>
+              <h3 class="spotbox-menu--header">Bruger navn</h3>
+              <ul class="spotbox-list">
+                <li class=""><a class="spotbox-menu--list-item" href="#">Min konto</a></li>
+                <li class=""><a class="spotbox-menu--list-item" href="#">Rediger profil</a></li>
+                <li class="last"><a class="spotbox-menu--list-item" href="#">Log ud</a></li>
               </ul>
             </div>
+          </div>
+          <div class="spotbox-menu">
+            <div class="spotbox--inner">
+            <h2 class="spotbox-menu--header"><i class="icon-plus-sign"></i>User actions</h2>
+            <ul class="spotbox--list"><li class="first leaf menu-mlid-527"><a href="/node/add/forum-topic" title="" class="spotbox-menu--list-item">Opret forumindlæg</a></li>
+            <li class="last leaf menu-mlid-528"><a href="/node/add/use-case" title="" class="spotbox-menu--list-item">Opret use case</a></li>
+            </ul><a id="context-block-menu_block-5" class="context-block editable edit-user_sub"></a>  </div>
           </div>
           <div class="spotbox-menu">
             <div class="spotbox-menu--inner">
               <h3 class="spotbox-menu--header"><i class="icon-file-text-alt"></i>Mit indhold</h3>
               <ul class="spotbox-menu--list">
-                <li class="spotbox-menu--list-item"><a href="#"><i class="icon-angle-right"></i>Mine forumindlæg</a></li>
-                <li class="spotbox-menu--list-item last"><a href="my-use-cases.php"><i class="icon-angle-right"></i>Mine use cases</a></li>
+                <li class=""><a class="spotbox-menu--list-item" href="#">Mine forumindlæg</a></li>
+                <li class="last"><a class="spotbox-menu--list-item" href="my-use-cases.php">Mine use cases</a></li>
               </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tertiary-content">
+          <div class="spotbox">
+              <div class="spotbox--inner">
+                <h2 class="spotbox--header"><a href="#"><i class="icon-time"></i>User activity</a></h2>
+                <ul class="spotbox--list">
+                  <li class="spotbox--list-item first">
+                    <span class="spotbox--list-link">Nyt forumindlæg: <a href="#comment1">Morbi leo risus</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                  </li>
+                  <li class="spotbox--list-item">
+                    <span class="spotbox--list-link">Kommenterede: <a href="#comment2">Porta ac consectetur ac</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                  </li>
+                  <li class="spotbox--list-item">
+                    <span class="spotbox--list-link">Ny use case: <a href="#comment3">Vestibulum at eros</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                  </li>
+                  <li class="spotbox--list-item">
+                    <span class="spotbox--list-link">Kommenterede: <a href="#comment4">Nibh Dolor Ornare</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                  </li>
+                  <li class="spotbox--list-item last">
+                    <span class="spotbox--list-link">Kommenterede: <a href="#comment5">Ridiculus Euismod Lorem</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                  </li>
+                  <p class="spotbox--list-show-more"><a href="#"><i class="icon-angle-right"></i>Se mere</a></p>
+                </ul>
+              </div>
+            </div>
+            <div class="spotbox">
+              <div class="spotbox--inner">
+                <h2 class="spotbox--header"><a href="#"><i class="icon-time"></i>Node activity</a></h2>
+                <ul class="spotbox--list">
+                  <li class="spotbox--list-item first">
+                    <span class="spotbox--list-link">Nyt forumindlæg: <a href="#comment1">Morbi leo risus</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                  </li>
+                  <li class="spotbox--list-item">
+                    <span class="spotbox--list-link">Kommenterede: <a href="#comment2">Porta ac consectetur ac</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                  </li>
+                  <li class="spotbox--list-item">
+                    <span class="spotbox--list-link">Ny use case: <a href="#comment3">Vestibulum at eros</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                  </li>
+                  <li class="spotbox--list-item">
+                    <span class="spotbox--list-link">Kommenterede: <a href="#comment4">Nibh Dolor Ornare</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                  </li>
+                  <li class="spotbox--list-item last">
+                    <span class="spotbox--list-link">Kommenterede: <a href="#comment5">Ridiculus Euismod Lorem</a></span>
+                    <p class="spotbox--list-posted">54 minutter 32 sekunder siden</p>
+                  </li>
+                  <p class="spotbox--list-show-more"><a href="#"><i class="icon-angle-right"></i>Se mere</a></p>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

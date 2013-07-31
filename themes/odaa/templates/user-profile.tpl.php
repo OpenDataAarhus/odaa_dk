@@ -34,7 +34,25 @@
  * @ingroup themeable
  */
 ?>
+<?php global $user;?>
 <div class="user-profile--content-wrapper">
+  <section class="user-profile--primary-content">
+    <div class="user-profile--header-wrapper">
+      <div class="user-profile--image"><img src="//gravatar.com/avatar/f9879d71855b5ff21e4963273a886bfc?s=75&amp;d=identicon"></div>
+      <h1 class="user-profile--title">Bruger navn</h1>
+    </div>
+    <section class="user-profile--info">
+      <h3>###THIS IS UNFINISHED###</h3>
+      <p><strong>Navn:</strong> Ornare Euismod</p>
+      <p><strong>E-mail:</strong> mail@example.com</p>
+      <p><strong>Medlem i:</strong> 2 uger 2 dage</p>
+      <?php if($user->uid ==arg(1)) :?>
+        <div class="user-profile--actions">
+          <a href="user/<?php echo $user->uid;?>/edit" class="button">Redigér profil</a>
+        </div>
+      <?php endif;?>
+    </section>
+  </section>
   <div class="profile"<?php print $attributes; ?>>
     <?php print render($user_profile); ?>
   </div>
