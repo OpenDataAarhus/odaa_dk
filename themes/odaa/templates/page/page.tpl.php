@@ -79,6 +79,10 @@
   </header>
   <div class="content-wrapper">
     <div class="content-inner">
+      <?php if ($breadcrumb && !$is_front): ?>
+        <div class="breadcrumb"><?php print $breadcrumb; ?></div>
+      <?php endif; ?>
+
       <?php print $messages; ?>
       <div class="primary-content">
 

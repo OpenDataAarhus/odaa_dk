@@ -44,6 +44,11 @@ function odaa_menu_tree__menu_block__5($variables) {
   return '<ul class="spotbox--list">' . $variables['tree'] . '</ul>';
 }
 
+// Community sub menu
+function odaa_menu_tree__menu_block__7($variables) {
+  return '<ul class="sub-menu">' . $variables['tree'] . '</ul>';
+}
+
 /**
  * Implements hook_theme().
  *
@@ -268,6 +273,22 @@ function odaa_form_alter(&$form, &$form_state, $form_id){
   }
 }
 
-function odaa_preprocess_comment(&$variables){
+function odaa_breadcrumb($variables) {
+  $breadcrumb = $variables['breadcrumb'];
 
+  if (!empty($breadcrumb)) {
+    $menu_title = menu_get_active_title();
+
+    if (!empty($menu_title)) {
+      // Add the menu title of the current page to the breadcrumb.
+      $breadcrumb[] = menu_get_active_title();
+    }
+    else {
+      // Add the title of the current page to the breadcrumb.
+      $breadcrumb[] = drupal_get_title();
+    }
+
+    $output = implode(' / ', $breadcrumb);
+    return $output;
+  }
 }

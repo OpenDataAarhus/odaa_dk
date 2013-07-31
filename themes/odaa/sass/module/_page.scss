@@ -18,7 +18,15 @@
 .page--content {
   /* Headers in page content */
   h3 {
-    margin-top: 20px;
+    margin-top: $large-spacing;
+  }
+  
+  ul {
+    margin-bottom: $medium-spacing;
+  }
+  
+  li {
+    list-style: circle;
   }
 }
 

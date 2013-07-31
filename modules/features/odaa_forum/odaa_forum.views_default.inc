@@ -15,7 +15,7 @@ function odaa_forum_views_default_views() {
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'Forum';
+  $view->human_name = 'Forum posts (filter: user)';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -186,7 +186,7 @@ function odaa_forum_views_default_views() {
 
   /* Display: Forum all */
   $handler = $view->new_display('page', 'Forum all', 'page');
-  $handler->display->display_options['path'] = 'forum';
+  $handler->display->display_options['path'] = 'community/forum';
 
   /* Display: Forum user */
   $handler = $view->new_display('page', 'Forum user', 'page_1');

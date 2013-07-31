@@ -74,9 +74,9 @@ function odaa_media_image_default_styles() {
   $styles['odaa_panorama_large'] = array(
     'name' => 'odaa_panorama_large',
     'effects' => array(
-      3 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
+      4 => array(
+        'label' => 'Skalér og beskær',
+        'help' => 'Skalering og beskæring bevarer billedets højde-bredde-forhold og beskærer derefter den største dimension. Det er nyttigt til at generere kvadratiske thumbnails uden at forvrænge billedet.',
         'effect callback' => 'image_scale_and_crop_effect',
         'dimensions callback' => 'image_resize_dimensions',
         'form callback' => 'image_resize_form',
@@ -85,7 +85,7 @@ function odaa_media_image_default_styles() {
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 1200,
-          'height' => 480,
+          'height' => 300,
         ),
         'weight' => 1,
       ),
@@ -96,9 +96,9 @@ function odaa_media_image_default_styles() {
   $styles['odaa_panorama_medium'] = array(
     'name' => 'odaa_panorama_medium',
     'effects' => array(
-      2 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
+      5 => array(
+        'label' => 'Skalér og beskær',
+        'help' => 'Skalering og beskæring bevarer billedets højde-bredde-forhold og beskærer derefter den største dimension. Det er nyttigt til at generere kvadratiske thumbnails uden at forvrænge billedet.',
         'effect callback' => 'image_scale_and_crop_effect',
         'dimensions callback' => 'image_resize_dimensions',
         'form callback' => 'image_resize_form',
@@ -107,7 +107,7 @@ function odaa_media_image_default_styles() {
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 1000,
-          'height' => 400,
+          'height' => 250,
         ),
         'weight' => 1,
       ),
@@ -118,9 +118,9 @@ function odaa_media_image_default_styles() {
   $styles['odaa_panorama_small'] = array(
     'name' => 'odaa_panorama_small',
     'effects' => array(
-      1 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
+      6 => array(
+        'label' => 'Skalér og beskær',
+        'help' => 'Skalering og beskæring bevarer billedets højde-bredde-forhold og beskærer derefter den største dimension. Det er nyttigt til at generere kvadratiske thumbnails uden at forvrænge billedet.',
         'effect callback' => 'image_scale_and_crop_effect',
         'dimensions callback' => 'image_resize_dimensions',
         'form callback' => 'image_resize_form',
@@ -129,7 +129,7 @@ function odaa_media_image_default_styles() {
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 500,
-          'height' => 200,
+          'height' => 125,
         ),
         'weight' => 1,
       ),

@@ -204,5 +204,74 @@ h2,h3,h4,h5,h6,br,span,em,strong,u,cite,code,blockquote,ul,ol,li,dl,dt,dd,table,
     ),
   );
 
+  // Exported format: Plain text.
+  $formats['plain_text'] = array(
+    'format' => 'plain_text',
+    'name' => 'Plain text',
+    'cache' => 1,
+    'status' => 1,
+    'weight' => -6,
+    'filters' => array(
+      'filter_autop' => array(
+        'weight' => -48,
+        'status' => 1,
+        'settings' => array(),
+      ),
+      'filter_url' => array(
+        'weight' => -47,
+        'status' => 1,
+        'settings' => array(
+          'filter_url_length' => 72,
+        ),
+      ),
+      'filter_html' => array(
+        'weight' => -46,
+        'status' => 1,
+        'settings' => array(
+          'allowed_html' => '<a> <em> <strong> <blockquote> <code> <ul> <ol> <li> <p> <br>',
+          'filter_html_help' => 0,
+          'filter_html_nofollow' => 0,
+        ),
+      ),
+    ),
+  );
+
+  // Exported format: User input.
+  $formats['user_input'] = array(
+    'format' => 'user_input',
+    'name' => 'User input',
+    'cache' => 1,
+    'status' => 1,
+    'weight' => -7,
+    'filters' => array(
+      'filter_markdown' => array(
+        'weight' => -49,
+        'status' => 1,
+        'settings' => array(),
+      ),
+      'filter_html' => array(
+        'weight' => -48,
+        'status' => 1,
+        'settings' => array(
+          'allowed_html' => '<a> <p> <br> <em> <strong> <blockquote> <code> <h3> <h4> <h5> <h6> <ul> <li> <table> <tr> <th> <td>',
+          'filter_html_help' => 0,
+          'filter_html_nofollow' => 0,
+        ),
+      ),
+      'filter_autop' => array(
+        'weight' => -45,
+        'status' => 1,
+        'settings' => array(),
+      ),
+      'filter_url' => array(
+        'weight' => -44,
+        'status' => 1,
+        'settings' => array(
+          'filter_url_length' => 72,
+        ),
+      ),
+    ),
+  );
+
   return $formats;
 }
