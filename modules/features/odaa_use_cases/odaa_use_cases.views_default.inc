@@ -50,13 +50,24 @@ function odaa_use_cases_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['row_class'] = 'use-cases--list-item-inner';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Header: Global: Text area */
+  /* Overskrift: Global: Tekstområde */
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['content'] = 'Here you can find the user creations with data from Odaa. You can also join in and create your own use cases.';
   $handler->display->display_options['header']['area']['format'] = 'editor_html';
-  /* Field: Comment count (excluded) */
+  /* Felt: Path (excluded) */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['ui_name'] = 'Path (excluded)';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['alter']['text'] = '[path]';
+  $handler->display->display_options['fields']['path']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['path']['element_default_classes'] = FALSE;
+  /* Felt: Comment count (excluded) */
   $handler->display->display_options['fields']['comment_count']['id'] = 'comment_count';
   $handler->display->display_options['fields']['comment_count']['table'] = 'node_comment_statistics';
   $handler->display->display_options['fields']['comment_count']['field'] = 'comment_count';
@@ -71,7 +82,7 @@ function odaa_use_cases_views_default_views() {
   $handler->display->display_options['fields']['comment_count']['element_wrapper_class'] = 'use-cases--list-footer-link';
   $handler->display->display_options['fields']['comment_count']['separator'] = '';
   $handler->display->display_options['fields']['comment_count']['suffix'] = ' comments';
-  /* Field: Link (excluded) */
+  /* Felt: Link (excluded) */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
@@ -84,18 +95,7 @@ function odaa_use_cases_views_default_views() {
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['element_wrapper_class'] = 'use-cases--list-footer-link';
   $handler->display->display_options['fields']['view_node']['text'] = 'Læs mere';
-  /* Field: Path (excluded) */
-  $handler->display->display_options['fields']['path']['id'] = 'path';
-  $handler->display->display_options['fields']['path']['table'] = 'node';
-  $handler->display->display_options['fields']['path']['field'] = 'path';
-  $handler->display->display_options['fields']['path']['ui_name'] = 'Path (excluded)';
-  $handler->display->display_options['fields']['path']['label'] = '';
-  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['path']['alter']['text'] = '[path]';
-  $handler->display->display_options['fields']['path']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['path']['element_default_classes'] = FALSE;
-  /* Field: Title */
+  /* Felt: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -106,7 +106,7 @@ function odaa_use_cases_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h3';
   $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'use-cases--list-header';
-  /* Field: Image */
+  /* Felt: Image */
   $handler->display->display_options['fields']['field_image_content']['id'] = 'field_image_content';
   $handler->display->display_options['fields']['field_image_content']['table'] = 'field_data_field_image_content';
   $handler->display->display_options['fields']['field_image_content']['field'] = 'field_image_content';
@@ -123,7 +123,7 @@ function odaa_use_cases_views_default_views() {
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_image_content']['field_api_classes'] = TRUE;
-  /* Field: Body */
+  /* Felt: Body */
   $handler->display->display_options['fields']['field_body']['id'] = 'field_body';
   $handler->display->display_options['fields']['field_body']['table'] = 'field_data_field_body';
   $handler->display->display_options['fields']['field_body']['field'] = 'field_body';
@@ -137,7 +137,7 @@ function odaa_use_cases_views_default_views() {
   $handler->display->display_options['fields']['field_body']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_body']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_body']['type'] = 'text_plain';
-  /* Field: Comment count and link */
+  /* Felt: Comment count and link */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
@@ -151,40 +151,50 @@ function odaa_use_cases_views_default_views() {
   $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_wrapper_class'] = 'use-cases--list-footer';
   $handler->display->display_options['fields']['nothing']['element_default_classes'] = FALSE;
-  /* Sort criterion: Content: Post date */
+  /* Sorteringskriterie: Indhold: Oprettelsesdato */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Sort criterion: Content: Comment count */
+  /* Sorteringskriterie: Indhold: Kommentarantal */
   $handler->display->display_options['sorts']['comment_count']['id'] = 'comment_count';
   $handler->display->display_options['sorts']['comment_count']['table'] = 'node_comment_statistics';
   $handler->display->display_options['sorts']['comment_count']['field'] = 'comment_count';
   $handler->display->display_options['sorts']['comment_count']['order'] = 'DESC';
   $handler->display->display_options['sorts']['comment_count']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['comment_count']['expose']['label'] = 'Kommentarantal';
-  /* Sort criterion: Content: Post date */
+  /* Sorteringskriterie: Indhold: Oprettelsesdato */
   $handler->display->display_options['sorts']['created_1']['id'] = 'created_1';
   $handler->display->display_options['sorts']['created_1']['table'] = 'node';
   $handler->display->display_options['sorts']['created_1']['field'] = 'created';
   $handler->display->display_options['sorts']['created_1']['order'] = 'DESC';
   $handler->display->display_options['sorts']['created_1']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['created_1']['expose']['label'] = 'Oprettelsesdato';
-  /* Filter criterion: Content: Published */
+  /* Kontekstuelt filter: Indhold: Forfatter uid */
+  $handler->display->display_options['arguments']['uid']['id'] = 'uid';
+  $handler->display->display_options['arguments']['uid']['table'] = 'node';
+  $handler->display->display_options['arguments']['uid']['field'] = 'uid';
+  $handler->display->display_options['arguments']['uid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['uid']['exception']['title'] = 'Alle';
+  $handler->display->display_options['arguments']['uid']['default_argument_type'] = 'current_user';
+  $handler->display->display_options['arguments']['uid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['uid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['uid']['summary_options']['items_per_page'] = '25';
+  /* Filterkriterie: Indhold: Udgivet */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
+  /* Filterkriterie: Indhold: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'use_case' => 'use_case',
   );
-  /* Filter criterion: Search: Search Terms */
+  /* Filterkriterie: Søg: Søgeord */
   $handler->display->display_options['filters']['keys']['id'] = 'keys';
   $handler->display->display_options['filters']['keys']['table'] = 'search_index';
   $handler->display->display_options['filters']['keys']['field'] = 'keys';
@@ -202,9 +212,13 @@ function odaa_use_cases_views_default_views() {
     5 => 0,
   );
 
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page');
+  /* Display: Use cases all */
+  $handler = $view->new_display('page', 'Use cases all', 'page');
   $handler->display->display_options['path'] = 'community/use-cases';
+
+  /* Display: Use cases user */
+  $handler = $view->new_display('page', 'Use cases user', 'page_1');
+  $handler->display->display_options['path'] = 'user/use-cases';
   $translatables['odaa_use_cases_list'] = array(
     t('Master'),
     t('Use cases'),
@@ -222,18 +236,19 @@ function odaa_use_cases_views_default_views() {
     t('næste ›'),
     t('sidste »'),
     t('Here you can find the user creations with data from Odaa. You can also join in and create your own use cases.'),
+    t('[path]'),
     t('<a href="[path]" class="use-cases--list-footer-link">[comment_count]</a>'),
     t('.'),
     t(' comments'),
     t('Læs mere'),
-    t('[path]'),
     t('[comment_count]
 [view_node]'),
     t('Kommentarantal'),
     t('Oprettelsesdato'),
+    t('Alle'),
     t('Search in use cases'),
-    t('Page'),
-    t('more'),
+    t('Use cases all'),
+    t('Use cases user'),
   );
   $export['odaa_use_cases_list'] = $view;
 
