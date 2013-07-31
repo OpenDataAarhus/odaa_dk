@@ -170,16 +170,6 @@ function odaa_use_cases_views_default_views() {
   $handler->display->display_options['sorts']['created_1']['order'] = 'DESC';
   $handler->display->display_options['sorts']['created_1']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['created_1']['expose']['label'] = 'Oprettelsesdato';
-  /* Kontekstuelt filter: Indhold: Forfatter uid */
-  $handler->display->display_options['arguments']['uid']['id'] = 'uid';
-  $handler->display->display_options['arguments']['uid']['table'] = 'node';
-  $handler->display->display_options['arguments']['uid']['field'] = 'uid';
-  $handler->display->display_options['arguments']['uid']['default_action'] = 'default';
-  $handler->display->display_options['arguments']['uid']['exception']['title'] = 'Alle';
-  $handler->display->display_options['arguments']['uid']['default_argument_type'] = 'current_user';
-  $handler->display->display_options['arguments']['uid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['uid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['uid']['summary_options']['items_per_page'] = '25';
   /* Filterkriterie: Indhold: Udgivet */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -218,6 +208,17 @@ function odaa_use_cases_views_default_views() {
 
   /* Display: Use cases user */
   $handler = $view->new_display('page', 'Use cases user', 'page_1');
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Kontekstuelt filter: Indhold: Forfatter uid */
+  $handler->display->display_options['arguments']['uid']['id'] = 'uid';
+  $handler->display->display_options['arguments']['uid']['table'] = 'node';
+  $handler->display->display_options['arguments']['uid']['field'] = 'uid';
+  $handler->display->display_options['arguments']['uid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['uid']['exception']['title'] = 'Alle';
+  $handler->display->display_options['arguments']['uid']['default_argument_type'] = 'current_user';
+  $handler->display->display_options['arguments']['uid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['uid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['uid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['path'] = 'user/use-cases';
   $translatables['odaa_use_cases_list'] = array(
     t('Master'),
@@ -245,10 +246,10 @@ function odaa_use_cases_views_default_views() {
 [view_node]'),
     t('Kommentarantal'),
     t('Oprettelsesdato'),
-    t('Alle'),
     t('Search in use cases'),
     t('Use cases all'),
     t('Use cases user'),
+    t('Alle'),
   );
   $export['odaa_use_cases_list'] = $view;
 
