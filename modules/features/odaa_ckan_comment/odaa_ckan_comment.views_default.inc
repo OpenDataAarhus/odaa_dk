@@ -24,30 +24,42 @@ function odaa_ckan_comment_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Latest comments';
   $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'mere';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Udfør';
+  $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Gendan';
+  $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = 'Sortér efter';
+  $handler->display->display_options['exposed_form']['options']['sort_asc_label'] = 'Stigende';
+  $handler->display->display_options['exposed_form']['options']['sort_desc_label'] = 'Faldende';
   $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_label'] = 'Antal elementer';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all_label'] = '- Alle -';
+  $handler->display->display_options['pager']['options']['expose']['offset_label'] = 'Forskydning';
+  $handler->display->display_options['pager']['options']['tags']['first'] = '« første';
+  $handler->display->display_options['pager']['options']['tags']['previous'] = '‹ forrige';
+  $handler->display->display_options['pager']['options']['tags']['next'] = 'næste ›';
+  $handler->display->display_options['pager']['options']['tags']['last'] = 'sidste »';
   $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['style_options']['row_class'] = 'spotbox--list-item';
   $handler->display->display_options['style_options']['class'] = 'spotbox--list';
   $handler->display->display_options['style_options']['wrapper_class'] = '';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Relationship: Comment: Content */
+  /* Forbindelse: Kommentar: Indhold */
   $handler->display->display_options['relationships']['nid']['id'] = 'nid';
   $handler->display->display_options['relationships']['nid']['table'] = 'comment';
   $handler->display->display_options['relationships']['nid']['field'] = 'nid';
   $handler->display->display_options['relationships']['nid']['required'] = TRUE;
-  /* Field: Content: CKAN URL */
-  $handler->display->display_options['fields']['field_ckan_url']['id'] = 'field_ckan_url';
-  $handler->display->display_options['fields']['field_ckan_url']['table'] = 'field_data_field_ckan_url';
-  $handler->display->display_options['fields']['field_ckan_url']['field'] = 'field_ckan_url';
-  $handler->display->display_options['fields']['field_ckan_url']['relationship'] = 'nid';
-  $handler->display->display_options['fields']['field_ckan_url']['label'] = '';
-  $handler->display->display_options['fields']['field_ckan_url']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_ckan_url']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_ckan_url']['element_default_classes'] = FALSE;
-  /* Field: Comment: ID */
+  /* Felt: Excluded path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['relationship'] = 'nid';
+  $handler->display->display_options['fields']['path']['ui_name'] = 'Excluded path';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  /* Felt: Kommentar: ID */
   $handler->display->display_options['fields']['cid']['id'] = 'cid';
   $handler->display->display_options['fields']['cid']['table'] = 'comment';
   $handler->display->display_options['fields']['cid']['field'] = 'cid';
@@ -55,12 +67,13 @@ function odaa_ckan_comment_views_default_views() {
   $handler->display->display_options['fields']['cid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['cid']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['cid']['link_to_comment'] = FALSE;
-  /* Field: Comment: Title */
+  /* Felt: Kommentar: Titel */
   $handler->display->display_options['fields']['subject']['id'] = 'subject';
   $handler->display->display_options['fields']['subject']['table'] = 'comment';
   $handler->display->display_options['fields']['subject']['field'] = 'subject';
   $handler->display->display_options['fields']['subject']['label'] = '';
-  $handler->display->display_options['fields']['subject']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['subject']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['subject']['alter']['text'] = '<a href="[path]">[subject]</a>';
   $handler->display->display_options['fields']['subject']['alter']['path'] = 'dataset/[field_ckan_url]';
   $handler->display->display_options['fields']['subject']['alter']['absolute'] = TRUE;
   $handler->display->display_options['fields']['subject']['alter']['link_class'] = 'spotbox-list-link';
@@ -69,20 +82,7 @@ function odaa_ckan_comment_views_default_views() {
   $handler->display->display_options['fields']['subject']['element_class'] = 'spotbox-list-link';
   $handler->display->display_options['fields']['subject']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['subject']['link_to_comment'] = FALSE;
-  /* Field: Content: Path */
-  $handler->display->display_options['fields']['path']['id'] = 'path';
-  $handler->display->display_options['fields']['path']['table'] = 'node';
-  $handler->display->display_options['fields']['path']['field'] = 'path';
-  $handler->display->display_options['fields']['path']['relationship'] = 'nid';
-  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
-  /* Field: Global: Custom text */
-  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<a href="[path]#comment-[cid]">[subject]</a>';
-  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Field: Comment: Post date */
+  /* Felt: Kommentar: Oprettelsesdato */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'comment';
   $handler->display->display_options['fields']['created']['field'] = 'created';
@@ -93,19 +93,19 @@ function odaa_ckan_comment_views_default_views() {
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'time ago';
-  /* Sort criterion: Comment: Post date */
+  /* Sorteringskriterie: Kommentar: Oprettelsesdato */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'comment';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Filter criterion: Comment: Approved */
+  /* Filterkriterie: Kommentar: Godkendt */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'comment';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Published */
+  /* Filterkriterie: Indhold: Udgivet */
   $handler->display->display_options['filters']['status_node']['id'] = 'status_node';
   $handler->display->display_options['filters']['status_node']['table'] = 'node';
   $handler->display->display_options['filters']['status_node']['field'] = 'status';
@@ -116,6 +116,27 @@ function odaa_ckan_comment_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block_1');
+  $translatables['ckan'] = array(
+    t('Master'),
+    t('Latest comments'),
+    t('mere'),
+    t('Udfør'),
+    t('Gendan'),
+    t('Sortér efter'),
+    t('Stigende'),
+    t('Faldende'),
+    t('Antal elementer'),
+    t('- Alle -'),
+    t('Forskydning'),
+    t('« første'),
+    t('‹ forrige'),
+    t('næste ›'),
+    t('sidste »'),
+    t('Indhold'),
+    t('Sti'),
+    t('<a href="[path]">[subject]</a>'),
+    t('Block'),
+  );
   $export['ckan'] = $view;
 
   return $export;
