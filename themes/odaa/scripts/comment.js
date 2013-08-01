@@ -17,10 +17,10 @@
           }
         }
       };
-      console.log(directive);
+      
       // Compile template.
       template = $('.comments--wrapper').compile(directive);
-
+    console.log(template);
       // Remove template.
       $('.comments--list').empty();
 
