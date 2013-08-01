@@ -8,7 +8,7 @@
 
       // Build template.
       var directive = {
-        'ul.comments--list': {
+        'li.comments--list-item': {
           'i<-data': {
             '.comments--list-author' : 'i.author',
             '.comments--list-posted' : 'i.date',
@@ -43,9 +43,9 @@
         var hash = $(item).attr('data-hash');
         $.getJSON('/odaa_comment/count/'+hash, function (data) {
           if (data.status) {
-            var html = $(item).find('.dataset--list-footer-link').html();
+            var html = $(item).find('.dataset--list-footer-commentcount').html();
             html = html.replace('--', data.data.count);
-            $(item).find('.dataset--list-footer-link').html(html);
+            $(item).find('.dataset--list-footer-commentcount').html(html);
           }
         });
       });
