@@ -15,10 +15,12 @@ function odaa_forum_field_default_field_instances() {
     'bundle' => 'forum_topic',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<p>Markdown is available, see <a href="http://daringfireball.net/projects/markdown/syntax">Markdown documentation</a> and <a href="http://michelf.com/projects/php-markdown/extra/">Markdown Extra documentation</a>.</p>
-<p>Allowed elements: links, emphasis, code, blockquotes, headers (h3 - h6), lists, tables</p>
-<p>Shift + enter = new line</p>
-<p>Web- and e-mails is automatically converted to links.</p>',
+    'description' => '<p>Limited Markdown formatting is available, see <a href="http://daringfireball.net/projects/markdown/syntax">Markdown documentation</a> and <a href="http://michelf.com/projects/php-markdown/extra/">Markdown Extra documentation</a>.</p>
+<ul>
+  <li>Allowed elements: links, emphasis, code, blockquotes, headers (h3 - h6), lists, tables</li>
+  <li>Shift + enter = new line</li>
+  <li>Web- and e-mails is automatically converted to links.</li>
+</ul>',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -123,10 +125,12 @@ function odaa_forum_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('<p>Markdown is available, see <a href="http://daringfireball.net/projects/markdown/syntax">Markdown documentation</a> and <a href="http://michelf.com/projects/php-markdown/extra/">Markdown Extra documentation</a>.</p>
-<p>Allowed elements: links, emphasis, code, blockquotes, headers (h3 - h6), lists, tables</p>
-<p>Shift + enter = new line</p>
-<p>Web- and e-mails is automatically converted to links.</p>');
+  t('<p>Limited Markdown formatting is available, see <a href="http://daringfireball.net/projects/markdown/syntax">Markdown documentation</a> and <a href="http://michelf.com/projects/php-markdown/extra/">Markdown Extra documentation</a>.</p>
+<ul>
+  <li>Allowed elements: links, emphasis, code, blockquotes, headers (h3 - h6), lists, tables</li>
+  <li>Shift + enter = new line</li>
+  <li>Web- and e-mails is automatically converted to links.</li>
+</ul>');
   t('Body');
   t('Kategori');
 
