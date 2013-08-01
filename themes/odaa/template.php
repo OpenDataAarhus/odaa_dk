@@ -189,6 +189,11 @@ function odaa_preprocess_page(&$variables, $hook) {
   if ((arg(0) == 'node') && (arg(1) == 'add') || (arg(0) == 'node') && (arg(2) == 'edit')) {
     $variables['theme_hook_suggestions'][] =  'page__nodeform';
   }
+  
+  // Template suggestion for edit user.
+  if ((arg(0) == 'user') && (arg(2) == 'edit')) {
+    $variables['theme_hook_suggestions'][] =  'page__user_edit';
+  }  
 }
 /**
  * Implements template_preprocess_region().
