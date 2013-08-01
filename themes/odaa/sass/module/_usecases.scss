@@ -17,6 +17,10 @@
   margin-left: -10px;
   overflow: hidden;
   padding-top: 0;
+
+  .use-cases--list-item-inner {
+    min-height: 341px;
+  }
 }
 
 .use-cases--list-item-first {

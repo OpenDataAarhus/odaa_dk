@@ -69,6 +69,21 @@
 
 /* Forms
    ========================================================================== */
+
+.node-form {
+  .form-item-title {
+    margin-bottom: $large-spacing;
+  }
+
+  .form-wrapper {
+    margin-bottom: $large-spacing;
+  }
+
+  .description {
+    @include opacity(.65);
+  }
+}
+
 .form-actions {
   overflow: hidden;
 
