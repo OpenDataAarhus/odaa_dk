@@ -70,17 +70,19 @@
 /* Forms
    ========================================================================== */
 
-.node-form {
-  .form-item-title {
-    margin-bottom: $large-spacing;
-  }
-
-  .form-wrapper {
+.node-form,
+#user-profile-form {
+  .form-item {
     margin-bottom: $large-spacing;
   }
 
   .description {
     @include opacity(.65);
+  }
+
+  .password-strength,
+  .password-confirm {
+    margin-top: 0;
   }
 }
 
