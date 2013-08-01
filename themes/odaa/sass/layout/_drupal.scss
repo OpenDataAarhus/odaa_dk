@@ -69,6 +69,13 @@
 
 /* Forms
    ========================================================================== */
+
+.node-form {
+  .form-wrapper {
+    margin-bottom: $large-spacing;
+  }
+}
+
 .form-actions {
   overflow: hidden;
 
