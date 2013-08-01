@@ -5,18 +5,19 @@
     if ($('.comments--wrapper').length) {
       // Find hash.
       hash = $('.comments--wrapper').attr('data');
-
+      
       // Build template.
       var directive = {
         'li.comments--list-item': {
           'i<-data': {
+            '#comments--list-id' : 'i.cid',
             '.comments--list-author' : 'i.author',
             '.comments--list-posted' : 'i.date',
             '.comments--list-content' : 'i.subject'
           }
         }
       };
-
+      console.log(directive);
       // Compile template.
       template = $('.comments--wrapper').compile(directive);
 
