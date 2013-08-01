@@ -10,7 +10,6 @@
       var directive = {
         'li.comments--list-item': {
           'i<-data': {
-            '#comments--list-id' : 'i.cid',
             '.comments--list-author' : 'i.author',
             '.comments--list-posted' : 'i.date',
             '.comments--list-content' : 'i.subject'
@@ -20,7 +19,7 @@
       
       // Compile template.
       template = $('.comments--wrapper').compile(directive);
-    console.log(template);
+
       // Remove template.
       $('.comments--list').empty();
 
