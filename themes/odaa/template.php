@@ -76,6 +76,7 @@ function odaa_theme() {
  * Implements theme_menu_link().
  */
 function odaa_menu_link($variables) {
+   print '1-';
   return _odaa_menu_styling($variables, 'menu-item');
 }
 
@@ -105,7 +106,6 @@ function _odaa_menu_styling($variables, $class, $icon = FALSE, $span = FALSE) {
  * Implements theme_menu_link__menu_block().
  */
 function odaa_menu_link__menu_block__4($variables) {
-  print '1-';
   return _odaa_menu_styling($variables, 'spotbox-menu--list-item', TRUE);
 }
 
