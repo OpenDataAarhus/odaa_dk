@@ -10,7 +10,7 @@
       var directive = {
         'li.comments--list-item': {
           'i<-data': {
-            '.comments--list-id' : 'i.cid',
+            'comments--list-id' : 'i.cid',
             '.comments--list-author' : 'i.author',
             '.comments--list-posted' : 'i.date',
             '.comments--list-content' : 'i.subject'
@@ -29,15 +29,6 @@
 
       // Update formular.
       update_comment_form();
-
-      //replace comment id
-      $('.comments--list-item').each(function (id, item) {
-        // Find hash
-          var html = $(item).find('.comments--list-id').html();
-          console.log(html);
-          //html = html.replace('--', data.data.count);
-          //$(item).find('.dataset--list-footer-commentcount').html(html);
-      });
 
       // Submit formular.
       $('.comments--post-comment form').live('submit', function(e) {
