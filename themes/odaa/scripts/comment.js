@@ -20,7 +20,7 @@
       
       // Compile template.
       template = $('.comments--wrapper').compile(directive);
-    console.log(template);
+
       // Remove template.
       $('.comments--list').empty();
 
@@ -29,6 +29,15 @@
 
       // Update formular.
       update_comment_form();
+
+      //replace comment id
+      $('.comments--list-item').each(function (id, item) {
+        // Find hash
+          var html = $(item).find('.comments--list-id').html();
+          console.log(html);
+          //html = html.replace('--', data.data.count);
+          //$(item).find('.dataset--list-footer-commentcount').html(html);
+      });
 
       // Submit formular.
       $('.comments--post-comment form').live('submit', function(e) {
