@@ -71,6 +71,10 @@
    ========================================================================== */
 
 .node-form {
+  .form-item-title {
+    margin-bottom: $large-spacing;
+  }
+
   .form-wrapper {
     margin-bottom: $large-spacing;
   }
