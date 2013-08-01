@@ -76,7 +76,6 @@ function odaa_theme() {
  * Implements theme_menu_link().
  */
 function odaa_menu_link($variables) {
-   print '1-';
   return _odaa_menu_styling($variables, 'menu-item');
 }
 
@@ -84,6 +83,7 @@ function odaa_menu_link($variables) {
  * Helper function for menu blocks
  */
 function _odaa_menu_styling($variables, $class, $icon = FALSE, $span = FALSE) {
+  print '1-';
   $element = $variables['element'];
 
   $sub_menu = '';
