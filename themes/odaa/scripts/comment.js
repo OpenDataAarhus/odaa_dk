@@ -5,18 +5,18 @@
     if ($('.comments--wrapper').length) {
       // Find hash.
       hash = $('.comments--wrapper').attr('data');
+
       // Build template.
       var directive = {
-        'li.comments--list-item': {
+        'ul.comments--list': {
           'i<-data': {
-            '.comments--list-cid' : 'i.cid',
             '.comments--list-author' : 'i.author',
             '.comments--list-posted' : 'i.date',
             '.comments--list-content' : 'i.subject'
           }
         }
       };
-      
+
       // Compile template.
       template = $('.comments--wrapper').compile(directive);
 
@@ -43,9 +43,9 @@
         var hash = $(item).attr('data-hash');
         $.getJSON('/odaa_comment/count/'+hash, function (data) {
           if (data.status) {
-            var html = $(item).find('.dataset--list-footer-commentcount').html();
+            var html = $(item).find('.dataset--list-footer-link').html();
             html = html.replace('--', data.data.count);
-            $(item).find('.dataset--list-footer-commentcount').html(html);
+            $(item).find('.dataset--list-footer-link').html(html);
           }
         });
       });
