@@ -42,7 +42,6 @@
 <div class="user-profile--content-wrapper">
   <section class="user-profile--primary-content">
     <div class="user-profile--header-wrapper">
-      <div class="user-profile--image"><img src="//gravatar.com/avatar/f9879d71855b5ff21e4963273a886bfc?s=75&amp;d=identicon"></div>
       <h1 class="user-profile--title"><?php echo $userpage_obj->name;?></h1>
     </div>
     <section class="user-profile--info">
@@ -51,7 +50,7 @@
       <p><strong><?php echo t('Member for');?>:</strong> <?php print render($user_profile['summary']['member_for']['#markup']); ?></p>
       <?php if($user->uid == $userpage_id) :?>
         <div class="user-profile--actions">
-          <a href="user/<?php echo $user->uid;?>/edit" class="button"><?php echo t('Edit profile');?></a>
+          <?php print l(t('Edit profile'), "user/{$user->uid}/edit", array('attributes' => array('class' => 'button'))); ?>
         </div>
       <?php endif;?>
     </section>
