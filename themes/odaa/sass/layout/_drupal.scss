@@ -74,6 +74,10 @@
   .form-wrapper {
     margin-bottom: $large-spacing;
   }
+
+  .description {
+    @include opacity(.65);
+  }
 }
 
 .form-actions {
