@@ -123,20 +123,20 @@ function odaa_use_cases_views_default_views() {
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_image_content']['field_api_classes'] = TRUE;
-  /* Felt: Body */
-  $handler->display->display_options['fields']['field_body']['id'] = 'field_body';
-  $handler->display->display_options['fields']['field_body']['table'] = 'field_data_field_body';
-  $handler->display->display_options['fields']['field_body']['field'] = 'field_body';
-  $handler->display->display_options['fields']['field_body']['ui_name'] = 'Body';
-  $handler->display->display_options['fields']['field_body']['label'] = '';
-  $handler->display->display_options['fields']['field_body']['alter']['trim_whitespace'] = TRUE;
-  $handler->display->display_options['fields']['field_body']['alter']['max_length'] = '100';
-  $handler->display->display_options['fields']['field_body']['alter']['trim'] = TRUE;
-  $handler->display->display_options['fields']['field_body']['element_type'] = '0';
-  $handler->display->display_options['fields']['field_body']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_body']['element_wrapper_type'] = '0';
-  $handler->display->display_options['fields']['field_body']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_body']['type'] = 'text_plain';
+  /* Felt: Description */
+  $handler->display->display_options['fields']['field_description']['id'] = 'field_description';
+  $handler->display->display_options['fields']['field_description']['table'] = 'field_data_field_description';
+  $handler->display->display_options['fields']['field_description']['field'] = 'field_description';
+  $handler->display->display_options['fields']['field_description']['ui_name'] = 'Description';
+  $handler->display->display_options['fields']['field_description']['label'] = '';
+  $handler->display->display_options['fields']['field_description']['alter']['trim_whitespace'] = TRUE;
+  $handler->display->display_options['fields']['field_description']['alter']['max_length'] = '125';
+  $handler->display->display_options['fields']['field_description']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['field_description']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['field_description']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_description']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_description']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_description']['element_default_classes'] = FALSE;
   /* Felt: Comment count and link */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
@@ -191,7 +191,7 @@ function odaa_use_cases_views_default_views() {
   $handler->display->display_options['filters']['keys']['operator'] = 'required';
   $handler->display->display_options['filters']['keys']['exposed'] = TRUE;
   $handler->display->display_options['filters']['keys']['expose']['operator_id'] = 'keys_op';
-  $handler->display->display_options['filters']['keys']['expose']['label'] = 'Search in use cases';
+  $handler->display->display_options['filters']['keys']['expose']['label'] = 'Søg i use cases';
   $handler->display->display_options['filters']['keys']['expose']['operator'] = 'keys_op';
   $handler->display->display_options['filters']['keys']['expose']['identifier'] = 'keys';
   $handler->display->display_options['filters']['keys']['expose']['remember_roles'] = array(
@@ -246,7 +246,7 @@ function odaa_use_cases_views_default_views() {
 [view_node]'),
     t('Kommentarantal'),
     t('Oprettelsesdato'),
-    t('Search in use cases'),
+    t('Søg i use cases'),
     t('Use cases all'),
     t('Use cases user'),
     t('Alle'),
