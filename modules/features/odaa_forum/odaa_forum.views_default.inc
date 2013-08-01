@@ -173,7 +173,7 @@ function odaa_forum_views_default_views() {
   $handler->display->display_options['filters']['title']['operator'] = 'contains';
   $handler->display->display_options['filters']['title']['exposed'] = TRUE;
   $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
-  $handler->display->display_options['filters']['title']['expose']['label'] = 'Søg i communitiet';
+  $handler->display->display_options['filters']['title']['expose']['label'] = 'Søg i forum';
   $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
   $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
   $handler->display->display_options['filters']['title']['expose']['remember_roles'] = array(
@@ -231,7 +231,7 @@ function odaa_forum_views_default_views() {
 </div>'),
     t('Oprettelsesdato'),
     t('Kommentarantal'),
-    t('Søg i communitiet'),
+    t('Søg i forum'),
     t('Forum all'),
     t('more'),
     t('Forum user'),
