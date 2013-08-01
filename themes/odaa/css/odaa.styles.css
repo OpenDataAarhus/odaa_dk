@@ -5897,7 +5897,8 @@ div.context-editor div.context-editable legend {
 }
 
 /* line 186, ../sass/module/_block.scss */
-.spotbox--list-item, .spotbox-menu--list-item, .spotbox-menu--list-remove-all {
+.spotbox--list-item, .spotbox-menu--list-item,
+.spotbox-menu--filter-list-item, .spotbox-menu--list-remove-all {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
   display: block;
   margin-bottom: 10px;
@@ -5905,7 +5906,8 @@ div.context-editor div.context-editable legend {
   padding-bottom: 10px;
 }
 /* line 193, ../sass/module/_block.scss */
-.last.spotbox--list-item, .last.spotbox-menu--list-item, .last.spotbox-menu--list-remove-all {
+.last.spotbox--list-item, .last.spotbox-menu--list-item,
+.last.spotbox-menu--filter-list-item, .last.spotbox-menu--list-remove-all {
   border-bottom: 0;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -6044,47 +6046,54 @@ div.context-editor div.context-editable legend {
 /* Spotbox footer */
 /* Spotbox menu
    ========================================================================== */
-/* line 121, ../sass/module/_spotbox.scss */
-.spotbox-menu--list-item {
-  /* If the class is on the element */
-}
-/* line 125, ../sass/module/_spotbox.scss */
+/* line 124, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-item:before {
   font-family: "FontAwesome";
   margin-right: 5px;
 }
-/* line 136, ../sass/module/_spotbox.scss */
-.spotbox-menu--list-item .active:link, .spotbox-menu--list-item .active:visited, .spotbox-menu--list-item .active:hover, .spotbox-menu--list-item .active:focus, .spotbox-menu--list-item .active:active {
+
+/* line 131, ../sass/module/_spotbox.scss */
+.spotbox-menu--list-item,
+.spotbox-menu--filter-list-item {
+  /* If the class is on the element */
+}
+/* line 140, ../sass/module/_spotbox.scss */
+.spotbox-menu--list-item .active:link, .spotbox-menu--list-item .active:visited, .spotbox-menu--list-item .active:hover, .spotbox-menu--list-item .active:focus, .spotbox-menu--list-item .active:active,
+.spotbox-menu--filter-list-item .active:link,
+.spotbox-menu--filter-list-item .active:visited,
+.spotbox-menu--filter-list-item .active:hover,
+.spotbox-menu--filter-list-item .active:focus,
+.spotbox-menu--filter-list-item .active:active {
   color: #be370a;
 }
 
-/* line 147, ../sass/module/_spotbox.scss */
+/* line 151, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-remove-all a:link,
 .spotbox-menu--list-remove-all a:visited,
 .spotbox-menu--list-remove-all a:focus {
   color: #404040;
 }
-/* line 152, ../sass/module/_spotbox.scss */
+/* line 156, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-remove-all a:hover,
 .spotbox-menu--list-remove-all a:active {
   color: #be370a;
 }
 
-/* line 157, ../sass/module/_spotbox.scss */
+/* line 161, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-show-more {
   border-top: 1px dashed rgba(0, 0, 0, 0.1);
   margin-top: 10px;
   margin-bottom: 0;
   padding-top: 10px;
 }
-/* line 165, ../sass/module/_spotbox.scss */
+/* line 169, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-show-more a:link,
 .spotbox-menu--list-show-more a:visited,
 .spotbox-menu--list-show-more a:focus {
   font-family: "exo-demi-bold";
   font-weight: normal;
 }
-/* line 170, ../sass/module/_spotbox.scss */
+/* line 174, ../sass/module/_spotbox.scss */
 .spotbox-menu--list-show-more a:hover,
 .spotbox-menu--list-show-more a:active {
   color: #8e2907;
