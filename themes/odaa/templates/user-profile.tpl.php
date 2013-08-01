@@ -42,7 +42,6 @@
 <div class="user-profile--content-wrapper">
   <section class="user-profile--primary-content">
     <div class="user-profile--header-wrapper">
-      <div class="user-profile--image"><img src="//gravatar.com/avatar/f9879d71855b5ff21e4963273a886bfc?s=75&amp;d=identicon"></div>
       <h1 class="user-profile--title"><?php echo $userpage_obj->name;?></h1>
     </div>
     <section class="user-profile--info">
