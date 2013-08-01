@@ -10,7 +10,7 @@
       var directive = {
         'li.comments--list-item': {
           'i<-data': {
-            '<div class="comments--list-id"></div>' : 'i.cid',
+            'comments--list-id' : 'comment-'+'i.cid',
             '.comments--list-author' : 'i.author',
             '.comments--list-posted' : 'i.date',
             '.comments--list-content' : 'i.subject'
