@@ -13,6 +13,7 @@
   stylesheets[all][] = system.messages.css
   stylesheets[all][] = system.menus.css
   stylesheets[all][] = system.theme.css
+  stylesheets[all][] = search.css
 
 
 ;----------// JavaScripts
