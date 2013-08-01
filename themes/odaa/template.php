@@ -280,7 +280,23 @@ function odaa_form_alter(&$form, &$form_state, $form_id){
 
 function odaa_breadcrumb($variables) {
   $breadcrumb = $variables['breadcrumb'];
+  $separator = '/';
 
+  // Edit node breadcrumb
+  if (arg(2) === 'edit') {
+    // Store home
+    $home = $breadcrumb[0];
+
+    // Empty the array
+    $breadcrumb = array();
+
+    // Add home
+    $breadcrumb[] = $home;
+
+    // Add custom text
+    $breadcrumb[] = t('Edit');
+  }
+  
   if (!empty($breadcrumb)) {
     $menu_title = menu_get_active_title();
 
@@ -292,8 +308,9 @@ function odaa_breadcrumb($variables) {
       // Add the title of the current page to the breadcrumb.
       $breadcrumb[] = drupal_get_title();
     }
-
-    $output = implode(' / ', $breadcrumb);
-    return $output;
   }
+
+
+  $output = implode(' / ', $breadcrumb);
+  return $output;
 }
