@@ -83,7 +83,6 @@ function odaa_menu_link($variables) {
  * Helper function for menu blocks
  */
 function _odaa_menu_styling($variables, $class, $icon = FALSE, $span = FALSE) {
-  print '1-';
   $element = $variables['element'];
 
   $sub_menu = '';
