@@ -152,7 +152,7 @@ function odaa_heartbeat_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<h2 class="spotbox--header"><a href="#"><i class="icon-time"></i>User activity</a></h2>';
+  $handler->display->display_options['header']['area']['content'] = 'Brugeraktivitet';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Felt: Heartbeat activity: Activity message */
@@ -193,7 +193,7 @@ function odaa_heartbeat_views_default_views() {
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = '<h2 class="spotbox--header"><a href="#"><i class="icon-time"></i>Node activity</a></h2>';
+  $handler->display->display_options['header']['area']['content'] = 'Node activity';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Felt: Heartbeat activity: Activity message */
@@ -245,9 +245,8 @@ function odaa_heartbeat_views_default_views() {
     t('Alle'),
     t('Feed'),
     t('User activity'),
-    t('<h2 class="spotbox--header"><a href="#"><i class="icon-time"></i>User activity</a></h2>'),
+    t('Brugeraktivitet'),
     t('Node activity'),
-    t('<h2 class="spotbox--header"><a href="#"><i class="icon-time"></i>Node activity</a></h2>'),
   );
   $export['heartbeat_custom_view'] = $view;
 
