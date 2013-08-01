@@ -27,8 +27,9 @@
  * @ingroup views_templates
  */
 ?>
+
 <?php if ($header): ?>
-  <?php print $header; ?>
+  <h2 class="spotbox--header"><a href="#"><i class="icon-time"></i><?php print strip_tags($header); ?></a></h2>
 <?php endif; ?>
 <?php if ($exposed): ?>
   <?php print $exposed; ?>
