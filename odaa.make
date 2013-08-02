@@ -222,6 +222,8 @@ projects[menu_token][version] = "1.0-beta5"
 projects[rules][subdir] = "contrib"
 projects[rules][version] = "2.3"
 
+projects[konamicode][subdir] = "contrib"
+projects[konamicode][version] = "1.7"
 
 ; Libraries
 libraries[ckeditor][download][type] = "get"
