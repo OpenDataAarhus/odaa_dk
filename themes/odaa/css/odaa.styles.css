@@ -4172,12 +4172,12 @@ body {
   *position: relative;
   *zoom: 1;
 }
-/* line 46, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 46, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 #page:before, #page:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 #page:after {
   clear: both;
 }
@@ -5453,10 +5453,14 @@ body {
 #user-login-form .item-list ul {
   padding-left: 0;
 }
+/* line 44, ../sass/layout/_drupal.scss */
+#user-login-form .item-list li {
+  list-style: disc inside;
+}
 
 /* Throbber
    ========================================================================== */
-/* line 48, ../sass/layout/_drupal.scss */
+/* line 52, ../sass/layout/_drupal.scss */
 .ajax-progress .throbber {
   /* Make sure the background image is not displayed */
   background: none !important;
@@ -5469,25 +5473,25 @@ body {
   width: 15px;
   /* Required for extending icon */
 }
-/* line 62, ../sass/layout/_drupal.scss */
+/* line 66, ../sass/layout/_drupal.scss */
 .ajax-progress .throbber:before {
   font-family: "FontAwesome";
 }
 
 /* Forms
    ========================================================================== */
-/* line 75, ../sass/layout/_drupal.scss */
+/* line 79, ../sass/layout/_drupal.scss */
 .node-form .form-item,
 #user-profile-form .form-item {
   margin-bottom: 20px;
 }
-/* line 79, ../sass/layout/_drupal.scss */
+/* line 83, ../sass/layout/_drupal.scss */
 .node-form .description,
 #user-profile-form .description {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
 }
-/* line 84, ../sass/layout/_drupal.scss */
+/* line 88, ../sass/layout/_drupal.scss */
 .node-form .password-strength,
 .node-form .password-confirm,
 #user-profile-form .password-strength,
@@ -5495,20 +5499,20 @@ body {
   margin-top: 0;
 }
 
-/* line 89, ../sass/layout/_drupal.scss */
+/* line 93, ../sass/layout/_drupal.scss */
 .form-actions {
   overflow: hidden;
 }
-/* line 92, ../sass/layout/_drupal.scss */
+/* line 96, ../sass/layout/_drupal.scss */
 .form-actions input {
   margin-left: 10px;
 }
-/* line 96, ../sass/layout/_drupal.scss */
+/* line 100, ../sass/layout/_drupal.scss */
 .form-actions #edit-submit {
   float: right;
 }
 
-/* line 103, ../sass/layout/_drupal.scss */
+/* line 107, ../sass/layout/_drupal.scss */
 .field-type-image {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -5518,18 +5522,18 @@ body {
   margin-bottom: 20px;
   padding: 20px;
 }
-/* line 111, ../sass/layout/_drupal.scss */
+/* line 115, ../sass/layout/_drupal.scss */
 .field-type-image .form-file {
   margin-right: 20px;
   padding-top: 9px;
   padding-button: 9px;
 }
-/* line 119, ../sass/layout/_drupal.scss */
+/* line 123, ../sass/layout/_drupal.scss */
 .field-type-image .description {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
-/* line 124, ../sass/layout/_drupal.scss */
+/* line 128, ../sass/layout/_drupal.scss */
 .field-type-image .button, .field-type-image .form-submit, .field-type-image #context-inline-editor li.context-editable div.links .edit, #context-inline-editor li.context-editable div.links .field-type-image .edit,
 .field-type-image #context-inline-editor li.context-editing div.links .done,
 #context-inline-editor li.context-editing div.links .field-type-image .done, .field-type-image .list--action-sort-latest,
@@ -5537,14 +5541,14 @@ body {
   margin-left: 10px;
 }
 
-/* line 133, ../sass/layout/_drupal.scss */
+/* line 137, ../sass/layout/_drupal.scss */
 .text-format-wrapper .filter-wrapper {
   /* Hide the input filter selector for textareas */
   display: none;
 }
 
 /* Form actions */
-/* line 140, ../sass/layout/_drupal.scss */
+/* line 144, ../sass/layout/_drupal.scss */
 .form-actions {
   padding-top: 20px;
   text-align: right;
@@ -5553,7 +5557,7 @@ body {
 /* Form submit buttons */
 /* Context override
    ========================================================================== */
-/* line 153, ../sass/layout/_drupal.scss */
+/* line 157, ../sass/layout/_drupal.scss */
 .context-editor-title {
   border-bottom: 1px dashed #e6e6e6;
   font-size: 110%;
@@ -5561,21 +5565,21 @@ body {
   margin-bottom: 10px;
 }
 
-/* line 160, ../sass/layout/_drupal.scss */
+/* line 164, ../sass/layout/_drupal.scss */
 .context-help {
   /* For now we hide the help, the text is way to long and should only be
    * visible if looking for it */
   display: none !important;
 }
 
-/* line 166, ../sass/layout/_drupal.scss */
+/* line 170, ../sass/layout/_drupal.scss */
 .editing-context-label {
   /* Hide the "Now editing" text, the markup order makes it difficult to
    * show it in an optimal position */
   display: none !important;
 }
 
-/* line 172, ../sass/layout/_drupal.scss */
+/* line 176, ../sass/layout/_drupal.scss */
 #context-inline-editor li {
   border-bottom: 1px dashed #e6e6e6;
   margin-bottom: 10px;
@@ -5585,7 +5589,7 @@ body {
   padding-left: 10px;
 }
 
-/* line 181, ../sass/layout/_drupal.scss */
+/* line 185, ../sass/layout/_drupal.scss */
 div.context-editor div.label, div.context-editor div.label-inverted, div.context-editor div.dataset--list-tag, div.context-editor .dataset--tags-list div.dataset--tags-list-tag, .dataset--tags-list div.context-editor div.dataset--tags-list-tag {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -5595,28 +5599,28 @@ div.context-editor div.label, div.context-editor div.label-inverted, div.context
   padding: 0;
 }
 
-/* line 189, ../sass/layout/_drupal.scss */
+/* line 193, ../sass/layout/_drupal.scss */
 div.context-editor div.label.top, div.context-editor div.top.label-inverted, div.context-editor div.top.dataset--list-tag, div.context-editor .dataset--tags-list div.top.dataset--tags-list-tag, .dataset--tags-list div.context-editor div.top.dataset--tags-list-tag {
   color: #404040;
 }
 
-/* line 194, ../sass/layout/_drupal.scss */
+/* line 198, ../sass/layout/_drupal.scss */
 #context-inline-editor li.context-editable div.links .edit,
 #context-inline-editor li.context-editing div.links .done {
   padding: 3px 20px;
 }
 
-/* line 200, ../sass/layout/_drupal.scss */
+/* line 204, ../sass/layout/_drupal.scss */
 #context-inline-editor li.context-editing div.links .edit.active {
   /* Hide the edit button when editing */
   display: none;
 }
 
-/* line 206, ../sass/layout/_drupal.scss */
+/* line 210, ../sass/layout/_drupal.scss */
 div.context-editor div.context-editable fieldset {
   padding: 0;
 }
-/* line 210, ../sass/layout/_drupal.scss */
+/* line 214, ../sass/layout/_drupal.scss */
 div.context-editor div.context-editable legend {
   margin: 0;
   padding: 0;
