@@ -128,6 +128,9 @@ function odaa_menu_link__menu_block__6($variables) {
  * Add classes to body.
  */
 function odaa_preprocess_html(&$variables) {
+  // Add conditional CSS for IE.
+  drupal_add_css(path_to_theme() . '/css/odaa.ie8.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
+
   // Remove default classes.
   $variables['classes_array'] = array();
 
@@ -189,11 +192,11 @@ function odaa_preprocess_page(&$variables, $hook) {
   if ((arg(0) == 'node') && (arg(1) == 'add') || (arg(0) == 'node') && (arg(2) == 'edit')) {
     $variables['theme_hook_suggestions'][] =  'page__nodeform';
   }
-  
+
   // Template suggestion for edit user.
   if ((arg(0) == 'user') && (arg(2) == 'edit')) {
     $variables['theme_hook_suggestions'][] =  'page__user_edit';
-  }  
+  }
 }
 /**
  * Implements template_preprocess_region().
@@ -305,7 +308,7 @@ function odaa_breadcrumb($variables) {
     // Add custom text
     $breadcrumb[] = t('Edit');
   }
-  
+
   if (!empty($breadcrumb)) {
     $menu_title = menu_get_active_title();
 

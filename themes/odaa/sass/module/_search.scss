@@ -37,6 +37,12 @@
     min-width: 75px;
     padding-bottom: 9px;
   }
+
+  /* Media queries */
+  @include small-medium() {
+    @include zen-clear(both);
+    @include zen-grid-item(12, 1);
+  }
 }
 
 
