@@ -69,7 +69,7 @@
   }
 
   /* Media queries */
-  @include small-medium() {
+  @include small() {
     @include zen-clear(both);
     @include zen-grid-item(12, 1);
   }
@@ -112,10 +112,6 @@
   background-color: $white;
   border: 1px solid $gray;
   margin-top: $large-spacing;
-
-  @include small-medium() {
-    display: none;
-  }
 }
 
 .sub-menu-header {
