@@ -17,6 +17,8 @@
 
 
 ;----------// JavaScripts
+  scripts[] = scripts/html5shiv_min.js
+  scripts[] = scripts/selectivizr_min.js
 
 
 ;----------// Regions
