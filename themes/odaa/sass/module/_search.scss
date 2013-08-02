@@ -8,6 +8,7 @@
 
 /* Search form
    ========================================================================== */
+
 .search-form {
   @include zen-grid-item(6, 1, right);
   @include opacity(.9);
@@ -48,6 +49,7 @@
 
 /* Search form in content
    ========================================================================== */
+
 .search-form--content-block {
   @include border-radius($base-border-radius);
 
@@ -80,6 +82,7 @@
 
 /* Search spotbox
    ========================================================================== */
+
 .search-spotbox {
   @include zen-grid-item(12, 1);
 
