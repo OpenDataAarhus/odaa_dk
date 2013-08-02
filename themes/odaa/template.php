@@ -278,7 +278,11 @@ function odaa_form_alter(&$form, &$form_state, $form_id){
       $form['sort_by']['#attributes']['class'][] = 'search--actions-sort';
       $form['title']['#attributes']['class'][] = 'search-form--content-block--input';
       $form['submit']['#attributes']['class'][] = 'search-form--content-block--button';
-      unset($form['reset']);
+      unset($form['reset']);   
+    break;
+    case 'user_login_block':
+      $form['#prefix']  = '<div class="page--content-wrapper"><section class="login">';
+      $form['#suffix']  = '</section></div>';
     break;
   }
 }
