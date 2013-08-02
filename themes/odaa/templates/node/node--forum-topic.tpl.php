@@ -86,6 +86,7 @@
   hide($content['comments']);
   hide($content['links']);
 ?>
+<?php global $user;?>
 <div class="page--content-wrapper">
   <section class="page--content">
     <h1 class="page--title"><?php print $title; ?></h1>
@@ -93,5 +94,8 @@
   </section>
 </div>
 <section class="comments">
-    <?php print render($content['comments']); ?>
+  <?php if ($user->uid == 0 && empty($content['comments']['comments'])): ?>
+    <?php echo t('No comments yet, you can be the first!');?>
+  <?php endif; ?>
+  <?php print render($content['comments']); ?>
 </section>

@@ -47,9 +47,13 @@
     <a href="#postcomment" class="list--action-create"><i class="icon-comment-alt"></i>Skriv kommentar</a>
   </div>
   <div class="comments--wrapper">
-    <ul class="comments--list">
-      <?php print render($content['comments']); ?>
-    </ul>
+    <?php if(!empty($content['comments'])) :?>
+      <ul class="comments--list">
+        <?php print render($content['comments']); ?>
+      </ul>
+    <?php else : ?>
+      <?php echo t('No comments yet, you can be the first!');?>
+    <?php endif;?>
   </div>
   <?php if ($content['comment_form']): ?>
     <section id="postcomment" class="comments--post-comment-wrapper">
