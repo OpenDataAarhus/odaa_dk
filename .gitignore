@@ -6,3 +6,4 @@ drushrc.php
 modules/contrib
 libraries
 nbproject
+.DS_Store
