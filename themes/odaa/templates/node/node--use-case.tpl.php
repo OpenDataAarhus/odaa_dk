@@ -93,5 +93,8 @@
   </section>
 </div>
 <section class="comments">
-    <?php print render($content['comments']); ?>       
+  <?php if ($user->uid == 0 && empty($content['comments']['comments'])): ?>
+    <?php echo t('No comments yet, you can be the first!');?>
+  <?php endif; ?>
+  <?php print render($content['comments']); ?>
 </section>
