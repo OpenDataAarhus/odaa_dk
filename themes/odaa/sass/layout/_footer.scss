@@ -50,7 +50,7 @@
   text-align: right;
 
   /* Media queries */
-  @include small-medium() {
+  @include small() {
     @include zen-clear(both);
     @include zen-grid-item(12, 1);
   }
@@ -67,7 +67,7 @@
 	text-align: right;
 
   /* Media queries */
-  @include small-medium() {
+  @include small() {
     @include zen-clear(both);
     @include zen-grid-item(12, 1);
   }

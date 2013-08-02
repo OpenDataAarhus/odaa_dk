@@ -1641,7 +1641,7 @@ button.user-register--submit,
 .main-menu .menu-item.last, .secondary-menu .menu-item.last {
   margin-right: 0;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   /* line 11, ../sass/framework/_navigation.scss */
   .main-menu, .secondary-menu {
     clear: both;
@@ -1732,14 +1732,8 @@ button.user-register--submit,
   border: 1px solid #d5d5d5;
   margin-top: 20px;
 }
-@media only screen and (max-width: 768px) {
-  /* line 108, ../sass/framework/_navigation.scss */
-  .sub-menu-wrapper {
-    display: none;
-  }
-}
 
-/* line 121, ../sass/framework/_navigation.scss */
+/* line 117, ../sass/framework/_navigation.scss */
 .sub-menu-header {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(100%, #ffffff));
   background-image: -webkit-linear-gradient(#f2f2f2, #ffffff);
@@ -1759,18 +1753,18 @@ button.user-register--submit,
   padding-left: 20px;
 }
 
-/* line 133, ../sass/framework/_navigation.scss */
+/* line 129, ../sass/framework/_navigation.scss */
 .sub-menu {
   padding-left: 0;
 }
-/* line 136, ../sass/framework/_navigation.scss */
+/* line 132, ../sass/framework/_navigation.scss */
 .sub-menu > li {
   /* Level 1 */
   /* We want the border bottom to have full width so we have to increase
      padding left according to the nesting level. */
   /* Level 2 */
 }
-/* line 138, ../sass/framework/_navigation.scss */
+/* line 134, ../sass/framework/_navigation.scss */
 .sub-menu > li .menu-item {
   border-top: 1px dashed #e6e6e6;
   color: #404040;
@@ -1779,49 +1773,49 @@ button.user-register--submit,
   padding-bottom: 8px;
   padding-left: 20px;
 }
-/* line 148, ../sass/framework/_navigation.scss */
+/* line 144, ../sass/framework/_navigation.scss */
 .sub-menu > li .menu-item:before {
   float: left;
   font-family: "FontAwesome";
   font-size: 130%;
   margin-right: 10px;
 }
-/* line 156, ../sass/framework/_navigation.scss */
+/* line 152, ../sass/framework/_navigation.scss */
 .sub-menu > li .menu-item.active, .sub-menu > li .menu-item.active-trail {
   font-family: "exo-demi-bold";
   font-weight: normal;
   color: #e5420c;
 }
-/* line 162, ../sass/framework/_navigation.scss */
+/* line 158, ../sass/framework/_navigation.scss */
 .sub-menu > li .menu-item:hover {
   text-decoration: none;
   color: #be370a;
 }
-/* line 172, ../sass/framework/_navigation.scss */
+/* line 168, ../sass/framework/_navigation.scss */
 .sub-menu > li ul {
   /* Level 3 */
 }
-/* line 173, ../sass/framework/_navigation.scss */
+/* line 169, ../sass/framework/_navigation.scss */
 .sub-menu > li ul .menu-item {
   padding-left: 40px;
 }
-/* line 179, ../sass/framework/_navigation.scss */
+/* line 175, ../sass/framework/_navigation.scss */
 .sub-menu > li ul ul .menu-item {
   padding-left: 60px;
 }
-/* line 186, ../sass/framework/_navigation.scss */
+/* line 182, ../sass/framework/_navigation.scss */
 .sub-menu > li li:hover {
   background-color: #ebebeb;
 }
-/* line 191, ../sass/framework/_navigation.scss */
+/* line 187, ../sass/framework/_navigation.scss */
 .sub-menu > li li li:hover {
   background-color: #d6d6d6;
 }
-/* line 197, ../sass/framework/_navigation.scss */
+/* line 193, ../sass/framework/_navigation.scss */
 .sub-menu > li:hover {
   background-color: whitesmoke;
 }
-/* line 202, ../sass/framework/_navigation.scss */
+/* line 198, ../sass/framework/_navigation.scss */
 .sub-menu > li.last:hover {
   -webkit-border-radius: 0 0 5px 5px;
   -moz-border-radius: 0 0 5px 5px;
@@ -4227,7 +4221,7 @@ body {
   padding-left: 0;
   /* Media queries */
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   /* line 47, ../sass/layout/_layout.scss */
   .logo {
     clear: both;
@@ -4635,7 +4629,7 @@ body {
   clear: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   /* line 200, ../sass/layout/_layout.scss */
   .page .primary-content,
   .page .secondary-content,
@@ -5690,7 +5684,7 @@ div.context-editor div.context-editable legend {
   text-align: right;
   /* Media queries */
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   /* line 44, ../sass/layout/_footer.scss */
   .awards {
     clear: both;
@@ -5737,7 +5731,7 @@ div.context-editor div.context-editable legend {
   text-align: right;
   /* Media queries */
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   /* line 61, ../sass/layout/_footer.scss */
   .powered-by {
     clear: both;
@@ -6522,7 +6516,7 @@ div.context-editor div.context-editable legend {
   min-width: 75px;
   padding-bottom: 9px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   /* line 11, ../sass/module/_search.scss */
   .search-form, .search-spotbox--wrapper {
     clear: both;
@@ -6726,7 +6720,7 @@ div.context-editor div.context-editable legend {
   vertical-align: top;
   margin-top: 1px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   /* line 11, ../sass/module/_newsletter.scss */
   .newsletter-signup {
     clear: both;

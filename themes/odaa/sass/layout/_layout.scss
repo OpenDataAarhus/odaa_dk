@@ -50,7 +50,7 @@ body {
   padding-left: 0;
 
   /* Media queries */
-  @include small-medium() {
+  @include small() {
     @include zen-clear(both);
     @include zen-grid-item(12, 1);
   }
@@ -194,7 +194,7 @@ body {
 .front,
 .node-type-page,
 .node-id-22 {
-  @include small-medium() {
+  @include small() {
     .primary-content,
     .secondary-content,
     .tertiary-content {
