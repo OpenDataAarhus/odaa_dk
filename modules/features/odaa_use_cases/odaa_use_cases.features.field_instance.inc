@@ -15,7 +15,7 @@ function odaa_use_cases_field_default_field_instances() {
     'bundle' => 'use_case',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<p>This is the more in depth description of the use case. This should probably contain all kinds of information, links images and other fancy stuff. Notice that limited Markdown formatting is available, see <a href="http://daringfireball.net/projects/markdown/syntax">Markdown documentation</a> and <a href="http://michelf.com/projects/php-markdown/extra/">Markdown Extra documentation</a>.</p>
+    'description' => '<p>This is the more in depth description of the use case. This should probably contain all kinds of information, links images and other fancy stuff. Notice that limited Markdown formatting is available, see <a href="http://daringfireball.net/projects/markdown/syntax" target="_blank">Markdown documentation</a> and <a href="http://michelf.com/projects/php-markdown/extra/" target="_blank">Markdown Extra documentation</a>.</p>
 <ul>
   <li>Allowed elements: links, emphasis, code, blockquotes, headers (h3 - h6), lists, tables</li>
   <li>Shift + enter = new line</li>
@@ -190,7 +190,7 @@ function odaa_use_cases_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('<p>This is the more in depth description of the use case. This should probably contain all kinds of information, links images and other fancy stuff. Notice that limited Markdown formatting is available, see <a href="http://daringfireball.net/projects/markdown/syntax">Markdown documentation</a> and <a href="http://michelf.com/projects/php-markdown/extra/">Markdown Extra documentation</a>.</p>
+  t('<p>This is the more in depth description of the use case. This should probably contain all kinds of information, links images and other fancy stuff. Notice that limited Markdown formatting is available, see <a href="http://daringfireball.net/projects/markdown/syntax" target="_blank">Markdown documentation</a> and <a href="http://michelf.com/projects/php-markdown/extra/" target="_blank">Markdown Extra documentation</a>.</p>
 <ul>
   <li>Allowed elements: links, emphasis, code, blockquotes, headers (h3 - h6), lists, tables</li>
   <li>Shift + enter = new line</li>
