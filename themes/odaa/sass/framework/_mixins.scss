@@ -6,6 +6,16 @@
 
 
 
+/* Breakpoints
+   ========================================================================== */
+
+$breakpoint-low:                  580px;
+$breakpoint-small:                480px;
+$breakpoint-medium:               768px;
+$breakpoint-large:                940px;
+$breakpoint-x-large:              1210px;
+
+
 /* Media query
    ========================================================================== */
 
@@ -18,10 +28,6 @@
 	@else if $media == small-medium {
 		@media only screen and (max-width: $breakpoint-medium) { @content; }
 	}
-
-  @if $media == small-medium-low {
-    @media only screen and (max-height: $breakpoint-low) and (max-width: $breakpoint-medium) { @content; }
-  }
 
 	@else if $media == medium {
 		@media only screen and (min-width: $breakpoint-small + 1) and (max-width: $breakpoint-medium) { @content; }
@@ -83,7 +89,7 @@
 
 
 /* Typography mixins
- * 
+ *
  * These are mixins to allow for use in media queries
    ========================================================================== */
 
