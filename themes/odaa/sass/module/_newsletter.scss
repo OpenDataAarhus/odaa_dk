@@ -24,4 +24,10 @@
     vertical-align: top;
     margin-top: 1px; //adjust so button align with input field.
   }
+
+  /* Media queries */
+  @include small-medium() {
+    @include zen-clear(both);
+    @include zen-grid-item(12, 1);
+  }
 }

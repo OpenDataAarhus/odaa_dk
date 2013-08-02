@@ -69,9 +69,14 @@
   }
 
   /* Media queries */
+  @include small-medium() {
+    @include zen-clear(both);
+    @include zen-grid-item(12, 1);
+  }
+
   @include medium-large() {
     @include zen-grid-item(9, 1);
-    
+
     padding-top: $large-spacing;
   }
 }

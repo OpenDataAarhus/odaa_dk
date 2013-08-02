@@ -48,6 +48,12 @@ body {
   @include zen-grid-item(3, 1);
 
   padding-left: 0;
+
+  /* Media queries */
+  @include small-medium() {
+    @include zen-clear(both);
+    @include zen-grid-item(12, 1);
+  }
 }
 
 
@@ -180,6 +186,27 @@ body {
       @include zen-grid-item(4, 1, right);
 
       clear: none;
+    }
+  }
+}
+
+.page,
+.front,
+.node-type-page,
+.node-id-22 {
+  @include small-medium() {
+    .primary-content,
+    .secondary-content,
+    .tertiary-content {
+      @include zen-clear(both);
+      @include zen-grid-item(12, 1);
+
+      .spotbox,
+      .spotbox:nth-child(odd),
+      .spotbox:nth-child(even) {
+        @include zen-clear(both);
+        @include zen-grid-item(12, 1);
+      }
     }
   }
 }
