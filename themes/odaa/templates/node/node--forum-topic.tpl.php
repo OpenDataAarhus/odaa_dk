@@ -86,16 +86,32 @@
   hide($content['comments']);
   hide($content['links']);
 ?>
+<?php if($variables['elements']['#view_mode'] == 'full') : ?>
 <?php global $user;?>
-<div class="page--content-wrapper">
-  <section class="page--content">
-    <h1 class="page--title"><?php print $title; ?></h1>
-    <?php print render($content); ?>
-  </section>
-</div>
-<section class="comments">
-  <?php if ($user->uid == 0 && empty($content['comments']['comments'])): ?>
-    <?php echo t('No comments yet, you can be the first!');?>
-  <?php endif; ?>
-  <?php print render($content['comments']); ?>
-</section>
+  <div class="page--content-wrapper">
+    <section class="page--content">
+      <h1 class="page--title"><?php print $title; ?></h1>
+      <?php print render($content); ?>
+    </section>
+  </div>
+  <div class="page--content-wrapper">
+    <section class="comments">
+      <?php if ($user->uid == 0 && empty($content['comments']['comments'])): ?>
+        <?php echo t('No comments yet, you can be the first!');?>
+      <?php endif; ?>
+      <?php print render($content['comments']); ?>
+    </section>
+  </div>
+<?php endif;?>
+
+
+<?php if($variables['elements']['#view_mode'] == 'teaser') : ?>
+  <div class="page--content-wrapper">
+    <section class="page--content">
+      <h3 class="page--title"><a href="<?php echo $node_url;?>"><?php print $title; ?></a></h3>
+      <div class="forum--list-meta">
+        <span class="forum--list-posted"><?php echo format_date($created, 'long');?></span> | <?php echo $name;?>
+      </div>
+    </section>
+  </div>
+<?php endif;?>
