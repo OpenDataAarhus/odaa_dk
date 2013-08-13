@@ -76,6 +76,7 @@
       else {
         // No access, show login link and hide formular.
         $('.comments--post-comment-wrapper').hide();
+        $('.list--action-create').hide();
         $('.comments--post-comment-login').show();
         $('div.comments--wrapper').addClass('comments--wrapper-empty');
       }
