@@ -43,9 +43,11 @@
     <p><?php print t('Join the debate! Remember to hold a proper tone as to maintain a constructive debate :)');?></p>
     <?php print render($title_suffix); ?>
   <?php endif; ?>
-  <div class="comments--list-actions">
-    <a href="#postcomment" class="list--action-create"><i class="icon-comment-alt"></i>Skriv kommentar</a>
-  </div>
+  <?php if ($content['comment_form']): ?>
+    <div class="comments--list-actions">
+      <a href="#postcomment" class="list--action-create"><i class="icon-comment-alt"></i>Skriv kommentar</a>
+    </div>
+  <?php endif; ?>
   <div class="comments--wrapper">
     <?php if(!empty($content['comments'])) :?>
       <ul class="comments--list">
@@ -62,6 +64,13 @@
         <?php print render($content['comment_form']); ?>
       </div>
     </section>
+  <?php else: ?>
+    <section id="postcomment" class="comments--post-comment-wrapper">
+      <h2 class="comments--post-comment-header"><?php print t('Not logged in'); ?></h2>
+      <div class="comments--post-comment">
+        <p><?php print t('Please use the following link to login'); ?>: <a href="/user">Login</a></p>
+      </div>
+    </section>    
   <?php endif; ?>
 </div>
 
