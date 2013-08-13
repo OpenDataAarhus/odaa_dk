@@ -89,7 +89,7 @@
       else {
         // No access, show login link and hide formular.
         $('.list--action-create').hide();
-        $('.comments--post-comment-login').show();
+        $('.comments--post-comment-not-logged-in').show();
         $('.comments--post-comment-wrapper').hide();
       }
     });
