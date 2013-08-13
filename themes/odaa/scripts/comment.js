@@ -74,10 +74,6 @@
         $('.comments--list').show();
       }
       else {
-        // No access, show login link and hide formular.
-        $('.comments--post-comment-wrapper').hide();
-        $('.list--action-create').hide();
-        $('.comments--post-comment-login').show();
         $('div.comments--wrapper').addClass('comments--wrapper-empty');
       }
     });
@@ -91,7 +87,9 @@
         $('.js-comment-mail').html(data.account.mail);
       }
       else {
-        // Hide formular.
+        // No access, show login link and hide formular.
+        $('.list--action-create').hide();
+        $('.comments--post-comment-login').show();
         $('.comments--post-comment-wrapper').hide();
       }
     });
