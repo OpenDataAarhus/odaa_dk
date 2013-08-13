@@ -411,3 +411,12 @@
 .label[data-format*=turtle] {
   background-color: #0b4498;
 }
+
+
+/* Forms
+   ========================================================================== */
+.control-group {
+  select {
+    width: 100%;
+  }
+}
