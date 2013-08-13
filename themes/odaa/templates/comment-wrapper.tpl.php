@@ -65,11 +65,9 @@
       </div>
     </section>
   <?php else: ?>
-    <section id="postcomment" class="comments--post-comment-wrapper">
+    <section id="postcomment" class="comments--post-comment-not-logged-in">
       <h2 class="comments--post-comment-header"><?php print t('Not logged in'); ?></h2>
-      <div class="comments--post-comment">
         <p><?php print t('Please use the following link to login'); ?>: <a href="/user">Login</a></p>
-      </div>
     </section>    
   <?php endif; ?>
 </div>
