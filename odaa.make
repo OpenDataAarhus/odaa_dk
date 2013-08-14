@@ -225,6 +225,9 @@ projects[rules][version] = "2.3"
 projects[konamicode][subdir] = "contrib"
 projects[konamicode][version] = "1.7"
 
+projects[heartbeat][subdir] = "contrib"
+projects[heartbeat][version] = "1.1"
+
 ; Libraries
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.2/ckeditor_3.6.2.zip"
