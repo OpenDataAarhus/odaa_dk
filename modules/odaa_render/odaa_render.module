@@ -1,23 +1,19 @@
 <?php
 /**
  * @file
- * CKAN requires to validate session data, for a SSO.
- * Drupal will register new users to CKAN on login.
+ * Render region(s) and output them.
  */
 
 /**
  * Implements hook_page_alter().
  *
- * This function ensures that either regions are render and returned as JSON or
- * that the core content is returned with out the regions, which will be load be
- * by an ajax callback later.
+ * This function ensures that either regions are render and returned as JSON.
  */
 function odaa_render_page_alter(&$page) {
   if (isset($_GET['regions'])) {
     // Run drupal_page_alter on themes, as they will always come last. In the
     // drupal_alter function, but we need to have all regions avaliable now. So
-    // do the same as drupal_alter does with the themes. An better solution may
-    // exists..
+    // do the same as drupal_alter does with the themes. 
     odaa_render_theme_page_alter('page_alter', $page);
     $main_content_display = &drupal_static('system_main_content_added', FALSE);
     if (!$main_content_display) {
@@ -25,7 +21,7 @@ function odaa_render_page_alter(&$page) {
     }
 
     // Make sure that all page level hook_preprocess_page and hook_process_page
-    // are executed to ensure suff like menus and other theme variables are
+    // are executed to ensure stuff like menus and other theme variables are
     // genenrated for use in the regions rendered later on. This code is
     // basically taken from theme.inc.
     $hooks = theme_get_registry(FALSE);
@@ -82,12 +78,7 @@ function odaa_render_page_alter(&$page) {
       }
     }
 
-    // @todo: Fix form callback URI's as they will contain the ajax callback
-    // parameters, when rendered below. SOLUTION: use post's not get's.
-
-    // @todo: move parsing of parameters into own fuction.
-
-    // Check if a preset was in the ajax callback
+    // Check if a preset was in the call.
     $regions = array();
     // Check if any regions was in the ajax callback.
     $names = explode(',', check_plain($_GET['regions']));
