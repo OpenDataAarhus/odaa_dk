@@ -9,6 +9,10 @@
     var commentsContent = $('.js-comments-content');
 
     if (commentsContent.length) {
+      // Set variables.
+      var commentInput = $('#edit-comment-body').find('textarea');
+      var commentInputValue = commentInput.val();
+
       // Create actions wrapper.
       $('<div />', {
         'class' : 'comments--list-item-actions'
@@ -27,11 +31,8 @@
         // Get content of comment.
         var commentQuoteContent = $(this)
         .parents('.js-comments-content')
-        .find('p')
-        .text();
-
-        var commentInput = $('#edit-comment-body').find('textarea');
-        var commentInputValue = $('#edit-comment-body').find('textarea').val();
+        .find('.field-comment-body')
+        .html();
 
         commentInput.val(commentInputValue + '<blockquote>' + commentQuoteContent + '</blockquote>\n');
       });
