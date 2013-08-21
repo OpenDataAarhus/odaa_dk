@@ -63,6 +63,7 @@ function odaa_comment_menu() {
  *  JSON data containing comment(s)
  */
 function _odaa_comment_view($hash) {
+  global $user;
   // Find node matching hash.
   $nid = _odaa_comment_hash_to_nid($hash);
 
@@ -85,10 +86,11 @@ function _odaa_comment_view($hash) {
           // 20. juli 2013 @ 14:57
           $date = format_date($comment->created, 'custom', 'j. F Y @ G:i');
           $data['data'][] = array(
-              'cid' => $comment->cid,
-              'author' => $comment->name,
-              'subject' => $comment->subject,
-              'date' => $date,
+            'cid' => $comment->cid,
+            'author' => $comment->name,
+            'subject' => $comment->subject,
+            'date' => $date,
+            'owner' => ($user->uid == $comment->uid)?TRUE:FALSE,
           );
         }
       }
