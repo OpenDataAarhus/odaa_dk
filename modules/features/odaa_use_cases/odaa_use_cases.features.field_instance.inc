@@ -84,10 +84,9 @@ function odaa_use_cases_field_default_field_instances() {
     'description' => 'Describe your use case so it seems interesting and makes people click it! The description is displayed below the image in the use case block on the use cases page.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'text',
+        'label' => 'hidden',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 3,
       ),
     ),
