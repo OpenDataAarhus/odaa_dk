@@ -67,9 +67,22 @@
   <div class="comments--list-posted"><?php echo format_date($content['comment_body']['#object']->created, 'odaa_time'); ?></div>
   <div class="comments--list-content js-comments-content">
     <?php
-      // We hide the comments and links now so that we can render them later.
+      // Hide links so we can render them later.
       hide($content['links']);
+
+      // Unset reply link.
+      if (isset($content['links']['comment']['#links']['comment-reply'])) {
+        unset($content['links']['comment']['#links']['comment-reply']);
+      }
+
+      // Print content.
       print render($content);
     ?>
+    <div class="comments--list-item-actions">
+      <?php
+        // Print links.
+        print render($content['links']);
+      ?>
+    </div>
   </div>
 </li>

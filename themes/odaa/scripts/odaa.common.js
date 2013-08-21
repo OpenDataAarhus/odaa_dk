@@ -13,19 +13,13 @@
       var commentInput = $('#edit-comment-body').find('textarea');
       var commentInputValue = commentInput.val();
 
-      // Create actions wrapper.
-      $('<div />', {
-        'class' : 'comments--list-item-actions'
-      })
-      .appendTo(commentsContent);
-
       // Add quote link to actions wrapper.
       $('<a />', {
         'class' : 'comments--list-quote',
         'href' : Drupal.t('#postcomment'),
         'text' : Drupal.t('Quote')
       })
-      .appendTo($('.comments--list-item-actions'))
+      .prependTo($('.comments--list-item-actions'))
       .prepend('<i class="icon-quote-left"></i>')
       .click(function() {
         // Get content of comment.
@@ -36,6 +30,18 @@
 
         commentInput.val(commentInputValue + '<blockquote>' + commentQuoteContent + '</blockquote>\n');
       });
+
+      // Add icons to links.
+      var commentEditLink = $('.comments--list .comment-edit a');
+      var commentDeleteLink = $('.comments--list .comment-delete a');
+
+      if (commentEditLink.length) {
+        commentEditLink.prepend('<i class="icon-edit"></i>');
+      }
+
+      if (commentDeleteLink.length) {
+        commentDeleteLink.prepend('<i class="icon-remove-sign "></i>');
+      }
     }
   });
 })(jQuery);

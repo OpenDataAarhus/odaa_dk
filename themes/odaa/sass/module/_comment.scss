@@ -63,15 +63,15 @@
 
 .comments--list-item-actions {
   @extend %section-spacing;
-}
-
-.comments--list-quote {
-  float: left;
 
   i[class^="icon-"] {
     margin-right: 5px;
     margin-left: 1px;
   }
+}
+
+.comments--list-quote {
+  float: left;
 
   &:link,
   &:visited,
