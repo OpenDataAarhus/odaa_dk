@@ -197,6 +197,11 @@ function odaa_preprocess_page(&$variables, $hook) {
   if ((arg(0) == 'user') && (arg(2) == 'edit')) {
     $variables['theme_hook_suggestions'][] =  'page__user_edit';
   }
+
+  // Template suggestion for edot comment node.
+  if ((arg(0) == 'comment') && (arg(2) == 'edit')) {
+    $variables['theme_hook_suggestions'][] =  'page__comment__nodeform';
+  }
 }
 
 /**
@@ -282,7 +287,7 @@ function odaa_form_alter(&$form, &$form_state, $form_id){
       $form['sort_by']['#attributes']['class'][] = 'search--actions-sort';
       $form['title']['#attributes']['class'][] = 'search-form--content-block--input';
       $form['submit']['#attributes']['class'][] = 'search-form--content-block--button';
-      unset($form['reset']);   
+      unset($form['reset']);
     break;
     case 'user_login_block':
       $form['#prefix']  = '<div class="page--content-wrapper"><section class="login">';
