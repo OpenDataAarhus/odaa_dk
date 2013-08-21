@@ -65,7 +65,7 @@
   <?php endif;?>
   <h3 class="comments--list-author"><?php echo $author;?></h3>
   <div class="comments--list-posted"><?php echo format_date($content['comment_body']['#object']->created, 'odaa_time'); ?></div>
-  <div class="comments--list-content">
+  <div class="comments--list-content js-comments-content">
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['links']);

@@ -5,7 +5,7 @@
     if ($('.comments--wrapper').length) {
       // Find hash.
       hash = $('.comments--wrapper').attr('data');
-      
+
       // Build template.
       var directive = {
         'li.comments--list-item': {
@@ -16,7 +16,7 @@
           }
         }
       };
-      
+
       // Compile template.
       template = $('.comments--wrapper').compile(directive);
 

@@ -17,6 +17,7 @@
 
 
 ;----------// JavaScripts
+  scripts[] = scripts/odaa.common.js
   scripts[] = scripts/html5shiv.min.js
   scripts[] = scripts/selectivizr.min.js
 
