@@ -51,13 +51,13 @@ function odaa_use_cases_views_default_views() {
   $handler->display->display_options['style_options']['row_class'] = 'spotbox--list-item';
   $handler->display->display_options['style_options']['class'] = 'spotbox--list';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Header: Global: Text area */
+  /* Overskrift: Global: Tekstområde */
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['content'] = 'Here you can find the user creations with data from Odaa. You can also join in and create your own use cases.';
   $handler->display->display_options['header']['area']['format'] = 'editor_html';
-  /* Field: Path (excluded) */
+  /* Felt: Path (excluded) */
   $handler->display->display_options['fields']['path']['id'] = 'path';
   $handler->display->display_options['fields']['path']['table'] = 'node';
   $handler->display->display_options['fields']['path']['field'] = 'path';
@@ -68,7 +68,7 @@ function odaa_use_cases_views_default_views() {
   $handler->display->display_options['fields']['path']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['path']['element_default_classes'] = FALSE;
-  /* Field: Comment count (excluded) */
+  /* Felt: Comment count (excluded) */
   $handler->display->display_options['fields']['comment_count']['id'] = 'comment_count';
   $handler->display->display_options['fields']['comment_count']['table'] = 'node_comment_statistics';
   $handler->display->display_options['fields']['comment_count']['field'] = 'comment_count';
@@ -83,7 +83,7 @@ function odaa_use_cases_views_default_views() {
   $handler->display->display_options['fields']['comment_count']['element_wrapper_class'] = 'use-cases--list-footer-link';
   $handler->display->display_options['fields']['comment_count']['separator'] = '';
   $handler->display->display_options['fields']['comment_count']['suffix'] = ' comments';
-  /* Field: Link (excluded) */
+  /* Felt: Link (excluded) */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
@@ -96,7 +96,7 @@ function odaa_use_cases_views_default_views() {
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['element_wrapper_class'] = 'use-cases--list-footer-link';
   $handler->display->display_options['fields']['view_node']['text'] = 'Læs mere';
-  /* Field: Title */
+  /* Felt: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -107,7 +107,7 @@ function odaa_use_cases_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h3';
   $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'use-cases--list-header';
-  /* Field: Image */
+  /* Felt: Image */
   $handler->display->display_options['fields']['field_image_content']['id'] = 'field_image_content';
   $handler->display->display_options['fields']['field_image_content']['table'] = 'field_data_field_image_content';
   $handler->display->display_options['fields']['field_image_content']['field'] = 'field_image_content';
@@ -124,7 +124,7 @@ function odaa_use_cases_views_default_views() {
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_image_content']['field_api_classes'] = TRUE;
-  /* Field: Description */
+  /* Felt: Description */
   $handler->display->display_options['fields']['field_description']['id'] = 'field_description';
   $handler->display->display_options['fields']['field_description']['table'] = 'field_data_field_description';
   $handler->display->display_options['fields']['field_description']['field'] = 'field_description';
@@ -138,7 +138,7 @@ function odaa_use_cases_views_default_views() {
   $handler->display->display_options['fields']['field_description']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_description']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_description']['element_default_classes'] = FALSE;
-  /* Field: Comment count and link */
+  /* Felt: Comment count and link */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
@@ -152,40 +152,40 @@ function odaa_use_cases_views_default_views() {
   $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_wrapper_class'] = 'use-cases--list-footer';
   $handler->display->display_options['fields']['nothing']['element_default_classes'] = FALSE;
-  /* Sort criterion: Content: Post date */
+  /* Sorteringskriterie: Indhold: Oprettelsesdato */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Sort criterion: Content: Comment count */
+  /* Sorteringskriterie: Indhold: Kommentarantal */
   $handler->display->display_options['sorts']['comment_count']['id'] = 'comment_count';
   $handler->display->display_options['sorts']['comment_count']['table'] = 'node_comment_statistics';
   $handler->display->display_options['sorts']['comment_count']['field'] = 'comment_count';
   $handler->display->display_options['sorts']['comment_count']['order'] = 'DESC';
   $handler->display->display_options['sorts']['comment_count']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['comment_count']['expose']['label'] = 'Kommentarantal';
-  /* Sort criterion: Content: Post date */
+  /* Sorteringskriterie: Indhold: Oprettelsesdato */
   $handler->display->display_options['sorts']['created_1']['id'] = 'created_1';
   $handler->display->display_options['sorts']['created_1']['table'] = 'node';
   $handler->display->display_options['sorts']['created_1']['field'] = 'created';
   $handler->display->display_options['sorts']['created_1']['order'] = 'DESC';
   $handler->display->display_options['sorts']['created_1']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['created_1']['expose']['label'] = 'Oprettelsesdato';
-  /* Filter criterion: Content: Published */
+  /* Filterkriterie: Indhold: Udgivet */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
+  /* Filterkriterie: Indhold: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'use_case' => 'use_case',
   );
-  /* Filter criterion: Search: Search Terms */
+  /* Filterkriterie: Søg: Søgeord */
   $handler->display->display_options['filters']['keys']['id'] = 'keys';
   $handler->display->display_options['filters']['keys']['table'] = 'search_index';
   $handler->display->display_options['filters']['keys']['field'] = 'keys';
@@ -232,7 +232,7 @@ function odaa_use_cases_views_default_views() {
   $handler->display->display_options['fields']['comment_count']['label'] = '';
   $handler->display->display_options['fields']['comment_count']['exclude'] = TRUE;
   $handler->display->display_options['fields']['comment_count']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['comment_count']['alter']['text'] = '<a href="[path]" class="use-cases--list-footer-link">[comment_count]</a>';
+  $handler->display->display_options['fields']['comment_count']['alter']['text'] = '<a href="[path]#comments" class="use-cases--list-footer-link">[comment_count]</a>';
   $handler->display->display_options['fields']['comment_count']['alter']['absolute'] = TRUE;
   $handler->display->display_options['fields']['comment_count']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['comment_count']['element_wrapper_type'] = '0';
@@ -366,7 +366,7 @@ function odaa_use_cases_views_default_views() {
   /* Display: Use cases user */
   $handler = $view->new_display('page', 'Use cases user', 'page_1');
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: Author uid */
+  /* Kontekstuelt filter: Indhold: Forfatter uid */
   $handler->display->display_options['arguments']['uid']['id'] = 'uid';
   $handler->display->display_options['arguments']['uid']['table'] = 'node';
   $handler->display->display_options['arguments']['uid']['field'] = 'uid';
@@ -458,7 +458,7 @@ function odaa_use_cases_views_default_views() {
     t('Oprettelsesdato'),
     t('Søg i use cases'),
     t('Use cases all'),
-    t('more'),
+    t('<a href="[path]#comments" class="use-cases--list-footer-link">[comment_count]</a>'),
     t('Use cases user'),
     t('Alle'),
     t('Use cases latest list'),
