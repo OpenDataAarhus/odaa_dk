@@ -68,6 +68,15 @@ function odaa_forum_views_default_views() {
   $handler->display->display_options['relationships']['uid']['table'] = 'node';
   $handler->display->display_options['relationships']['uid']['field'] = 'uid';
   $handler->display->display_options['relationships']['uid']['required'] = TRUE;
+  /* Felt: Link (excluded) */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['ui_name'] = 'Link (excluded)';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['path']['element_default_classes'] = FALSE;
   /* Felt: Indhold: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -136,7 +145,7 @@ function odaa_forum_views_default_views() {
   $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_1']['label'] = '';
   $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<div class="forum--list-footer">
-  <a href="#" class="dataset--list-footer-link">[comment_count] kommentarer</a>
+  <a href="[path]#comments" class="dataset--list-footer-link">[comment_count] kommentarer</a>
   <!--<a href="dataset.php" class="dataset--list-footer-link">Se forumindlæg</a>-->
 </div>';
   $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
@@ -281,7 +290,7 @@ function odaa_forum_views_default_views() {
     t('.'),
     t(','),
     t('<div class="forum--list-footer">
-  <a href="#" class="dataset--list-footer-link">[comment_count] kommentarer</a>
+  <a href="[path]#comments" class="dataset--list-footer-link">[comment_count] kommentarer</a>
   <!--<a href="dataset.php" class="dataset--list-footer-link">Se forumindlæg</a>-->
 </div>'),
     t('Oprettelsesdato'),
