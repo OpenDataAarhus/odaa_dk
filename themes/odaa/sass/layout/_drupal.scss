@@ -240,4 +240,11 @@ div.context-editor div.context-editable {
     display: inline;
     margin-left: 10px;
   }
+
+  /* Used when display in CKAN */
+  &.hide {
+    .links {
+      display: none;
+    }
+  }
 }
