@@ -17,6 +17,7 @@
 
 
 ;----------// JavaScripts
+  scripts[] = scripts/pure.min.js
   scripts[] = scripts/comment.js
   scripts[] = scripts/html5shiv.min.js
   scripts[] = scripts/selectivizr.min.js

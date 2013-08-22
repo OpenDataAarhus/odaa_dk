@@ -1,3 +1,18 @@
+// Function for adding a quote to textarea.
+function add_comment_quote(element) {
+  // Set variables.
+  var commentInput = $('.comments--post-comment textarea');
+  var commentInputValue = commentInput.val();
+
+  // Get content of comment.
+  var commentQuoteContent = $(element)
+  .parents('.js-comments-content')
+  .find('.field-comment-body')
+  .html();
+
+  commentInput.val(commentInputValue + '<blockquote>' + commentQuoteContent + '</blockquote>\n');
+}
+
 (function($) {
   var template;
   var hash;
@@ -45,7 +60,7 @@
       });
 
       // Create actions links.
-      setCommentActionLinks();
+      set_comment_action_links();
 
     }
     else if ($('.dataset--list-wrapper').length) {
@@ -106,7 +121,7 @@
     });
   }
 
-  function setCommentActionLinks() {
+  function set_comment_action_links() {
     /*
      * Comment actions links.
      */
@@ -124,7 +139,7 @@
       .prependTo($('.comments--list-item-actions'))
       .prepend('<i class="icon-quote-left"></i>')
       .live('click', function() {
-        addCommentQuote(this);
+        add_comment_quote(this);
       });
 
       // Add icons to links.
@@ -140,19 +155,4 @@
       }
     }
   }
-
-  function addCommentQuote(element) {
-    // Set variables.
-    var commentInput = $('.comments--post-comment textarea');
-    var commentInputValue = commentInput.val();
-
-    // Get content of comment.
-    var commentQuoteContent = $(element)
-    .parents('.js-comments-content')
-    .find('.field-comment-body')
-    .html();
-
-    commentInput.val(commentInputValue + '<blockquote>' + commentQuoteContent + '</blockquote>\n');
-  }
-
 })(jQuery);
