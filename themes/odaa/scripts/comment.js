@@ -16,7 +16,7 @@
             '.comment-delete a@href+' : 'i.cid',
             '.comment-edit a@href+' : 'i.cid',
             '.comments--list-item-actions@class+' : function(arg) {
-              console.log('hi: ' + arg);
+              console.log(arg.item);
               if (arg.item.owner == false) {
                 return 'hide';
               }
