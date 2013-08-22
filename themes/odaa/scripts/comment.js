@@ -123,8 +123,8 @@
       // Add quote link to actions wrapper.
       $('<a />', {
         'class' : 'comments--list-quote',
-        'href' : Drupal.t('#postcomment'),
-        'text' : Drupal.t('Quote')
+        'href' : '#postcomment',
+        'text' : 'Quote'
       })
       .prependTo($('.comments--list-item-actions'))
       .prepend('<i class="icon-quote-left"></i>')
