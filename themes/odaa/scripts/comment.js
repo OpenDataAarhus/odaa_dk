@@ -13,11 +13,8 @@
             '.comments--list-author' : 'i.author',
             '.comments--list-posted' : 'i.date',
             '.comments--list-content' : 'i.subject',
-            '.comments--list-item-actions' : function (owner) {
-              if (!owner) {
-                return '';
-              }
-            },
+            '.comment-delete a@href+' : 'i.cid'
+            }
           }
         }
       };
