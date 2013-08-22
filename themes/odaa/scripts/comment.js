@@ -13,7 +13,7 @@
             '.comments--list-author' : 'i.author',
             '.comments--list-posted' : 'i.date',
             '.comments--list-content' : 'i.subject',
-            '.omments--list-item-actions' : function (owner) {
+            '.comments--list-item-actions' : function (owner) {
               return owner?true:false;
             },
             '.comment-delete a@href+' : 'i.cid' + '/delete',
