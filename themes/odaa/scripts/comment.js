@@ -13,11 +13,11 @@
             '.comments--list-author' : 'i.author',
             '.comments--list-posted' : 'i.date',
             '.comments--list-content' : 'i.subject',
-            '.comment-delete a@href+' : 'i.cid',
-            '.comment-edit a@href+' : 'i.cid',
+            '.comment-delete a@href+' : '#{i.cid}/delete',
+            '.comment-edit a@href+' : '#{i.cid}/edit',
             '.comments--list-item-actions@class+' : function(arg) {
-              if (arg.item.owner == false) {
-                return 'hide';
+              if (arg.item.owner === false) {
+                return ' hide';
               }
             }
           }
