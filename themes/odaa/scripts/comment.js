@@ -14,7 +14,12 @@
             '.comments--list-posted' : 'i.date',
             '.comments--list-content' : 'i.subject',
             '.comment-delete a@href+' : 'i.cid',
-            '.comment-edit a@href+' : 'i.cid'
+            '.comment-edit a@href+' : 'i.cid',
+            '.comments--list-item-actions@class+' : function() {
+              if (item.owner == FALSE) {
+                return 'hide';
+              }
+            }
           }
         }
       };
