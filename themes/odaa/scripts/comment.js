@@ -15,8 +15,8 @@
             '.comments--list-content' : 'i.subject',
             '.comment-delete a@href+' : 'i.cid',
             '.comment-edit a@href+' : 'i.cid',
-            '.comments--list-item-actions@class+' : function() {
-              if (item.owner == FALSE) {
+            '.comments--list-item-actions@class+' : function(arg) {
+              if (arg.item.owner == FALSE) {
                 return 'hide';
               }
             }
