@@ -13,7 +13,8 @@
             '.comments--list-author' : 'i.author',
             '.comments--list-posted' : 'i.date',
             '.comments--list-content' : 'i.subject',
-            '.comment-delete a@href+' : 'i.cid'
+            '.comment-delete a@href+' : 'i.cid',
+            '.comment-edit a@href+' : 'i.cid'
           }
         }
       };
