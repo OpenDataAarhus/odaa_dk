@@ -16,6 +16,17 @@
   }
 }
 
+.field-body,
+.field-comment-body {
+  ul {
+    margin-bottom: $medium-spacing;
+  }
+
+  li {
+    list-style: circle;
+  }
+}
+
 
 /* Search
    ========================================================================== */
