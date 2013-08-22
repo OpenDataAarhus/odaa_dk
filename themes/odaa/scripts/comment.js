@@ -16,8 +16,6 @@
             '.comments--list-item-actions' : function (owner) {
               return owner?true:false;
             },
-            '.comment-delete a@href+' : 'i.cid' + '/delete',
-            '.comment-edit a@href+' : 'i.cid' + '/edit',
           }
         }
       };
