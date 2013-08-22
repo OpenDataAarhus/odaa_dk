@@ -2,6 +2,9 @@
   var template;
   var hash;
   $(document).ready(function($) {
+    
+    setCommentActionLinks();
+    
     if ($('.comments--wrapper').length) {
       // Find hash.
       hash = $('.comments--wrapper').attr('data');
@@ -84,6 +87,8 @@
         $('div.comments--wrapper').addClass('comments--wrapper-empty');
       }
     });
+    
+    setCommentActionLinks();
   }
 
   function update_comment_form() {

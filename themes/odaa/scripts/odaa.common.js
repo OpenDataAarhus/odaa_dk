@@ -1,6 +1,6 @@
 (function($) {
 
-  $(document).ready(function($) {
+  function setCommentActionLinks() {
     /*
      * Comment actions links.
      */
@@ -43,5 +43,7 @@
         commentDeleteLink.prepend('<i class="icon-remove-sign "></i>');
       }
     }
-  });
+  }
+  
+  
 })(jQuery);
