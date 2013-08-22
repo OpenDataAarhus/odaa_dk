@@ -2,9 +2,6 @@
   var template;
   var hash;
   $(document).ready(function($) {
-    
-    setCommentActionLinks();
-    
     if ($('.comments--wrapper').length) {
       // Find hash.
       hash = $('.comments--wrapper').attr('data');
@@ -46,6 +43,10 @@
 
         return false;
       });
+
+      // Create actions links.
+      setCommentActionLinks();
+
     }
     else if ($('.dataset--list-wrapper').length) {
       $('li.dataset--list-item').each(function (id, item) {
@@ -87,8 +88,6 @@
         $('div.comments--wrapper').addClass('comments--wrapper-empty');
       }
     });
-    
-    setCommentActionLinks();
   }
 
   function update_comment_form() {
@@ -106,7 +105,7 @@
       }
     });
   }
-  
+
   function setCommentActionLinks() {
     /*
      * Comment actions links.
@@ -116,10 +115,6 @@
     var commentsContent = $('.js-comments-content');
 
     if (commentsContent.length) {
-      // Set variables.
-      var commentInput = $('.comments--post-comment textarea');
-      var commentInputValue = commentInput.val();
-
       // Add quote link to actions wrapper.
       $('<a />', {
         'class' : 'comments--list-quote',
@@ -129,13 +124,7 @@
       .prependTo($('.comments--list-item-actions'))
       .prepend('<i class="icon-quote-left"></i>')
       .live('click', function() {
-        // Get content of comment.
-        var commentQuoteContent = $(this)
-        .parents('.js-comments-content')
-        .find('.field-comment-body')
-        .html();
-
-        commentInput.val(commentInputValue + '<blockquote>' + commentQuoteContent + '</blockquote>\n');
+        addCommentQuote(this);
       });
 
       // Add icons to links.
@@ -151,4 +140,19 @@
       }
     }
   }
+
+  function addCommentQuote(element) {
+    // Set variables.
+    var commentInput = $('.comments--post-comment textarea');
+    var commentInputValue = commentInput.val();
+
+    // Get content of comment.
+    var commentQuoteContent = $(element)
+    .parents('.js-comments-content')
+    .find('.field-comment-body')
+    .html();
+
+    commentInput.val(commentInputValue + '<blockquote>' + commentQuoteContent + '</blockquote>\n');
+  }
+
 })(jQuery);
