@@ -21,7 +21,7 @@
       })
       .prependTo($('.comments--list-item-actions'))
       .prepend('<i class="icon-quote-left"></i>')
-      .click(function() {
+      .live('click', function() {
         // Get content of comment.
         var commentQuoteContent = $(this)
         .parents('.js-comments-content')
