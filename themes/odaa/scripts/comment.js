@@ -3,8 +3,6 @@
   var hash;
   $(document).ready(function($) {
     
-    setCommentActionLinks();
-    
     if ($('.comments--wrapper').length) {
       // Find hash.
       hash = $('.comments--wrapper').attr('data');
