@@ -31,6 +31,9 @@ projects[context_inline_editor][subdir] = "contrib"
 projects[context_inline_editor][version] = "1.x-dev"
 projects[context_inline_editor][patch][0] = "http://drupal.org/files/filter_context_1327672-5.patch"
 
+projects[context_error][subdir] = "contrib"
+projects[context_error][version] = "1.0"
+
 projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.3"
 
