@@ -1,18 +1,3 @@
-// Function for adding a quote to textarea.
-function add_comment_quote(element) {
-  // Set variables.
-  var commentInput = $('.comments--post-comment textarea');
-  var commentInputValue = commentInput.val();
-
-  // Get content of comment.
-  var commentQuoteContent = $(element)
-  .parents('.js-comments-content')
-  .find('.field-comment-body')
-  .html();
-
-  commentInput.val(commentInputValue + '<blockquote>' + commentQuoteContent + '</blockquote>\n');
-}
-
 (function($) {
   var template;
   var hash;
@@ -130,29 +115,21 @@ function add_comment_quote(element) {
     var commentsContent = $('.js-comments-content');
 
     if (commentsContent.length) {
+      // Set variables.
+      var commentInput = $('.comments--post-comment textarea');
+      var commentInputValue = commentInput.val();
+
       // Add quote link to actions wrapper.
-      $('<a />', {
-        'class' : 'comments--list-quote',
-        'href' : '#postcomment',
-        'text' : 'Quote'
-      })
-      .prependTo($('.comments--list-item-actions'))
-      .prepend('<i class="icon-quote-left"></i>')
-      .live('click', function() {
-        add_comment_quote(this);
+      $('comments--list-quote')
+      .click(function() {
+        // Get content of comment.
+        var commentQuoteContent = $(this)
+        .parents('.js-comments-content')
+        .find('.field-comment-body')
+        .html();
+
+        commentInput.val(commentInputValue + '<blockquote>' + commentQuoteContent + '</blockquote>\n');
       });
-
-      // Add icons to links.
-      var commentEditLink = $('.comments--list .comment-edit a');
-      var commentDeleteLink = $('.comments--list .comment-delete a');
-
-      if (commentEditLink.length) {
-        commentEditLink.prepend('<i class="icon-edit"></i>');
-      }
-
-      if (commentDeleteLink.length) {
-        commentDeleteLink.prepend('<i class="icon-remove-sign "></i>');
-      }
     }
   }
 })(jQuery);
