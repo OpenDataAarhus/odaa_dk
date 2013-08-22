@@ -14,7 +14,6 @@
             '.comments--list-posted' : 'i.date',
             '.comments--list-content' : 'i.subject',
             '.comment-delete a@href+' : 'i.cid'
-            }
           }
         }
       };
