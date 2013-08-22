@@ -10,7 +10,7 @@
 
     if (commentsContent.length) {
       // Set variables.
-      var commentInput = $('#edit-comment-body').find('textarea');
+      var commentInput = $('.comments--post-comment textarea');
       var commentInputValue = commentInput.val();
 
       // Add quote link to actions wrapper.
