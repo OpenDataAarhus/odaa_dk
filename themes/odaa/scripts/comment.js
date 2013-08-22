@@ -14,7 +14,9 @@
             '.comments--list-posted' : 'i.date',
             '.comments--list-content' : 'i.subject',
             '.comments--list-item-actions' : function (owner) {
-              return owner?true:false;
+              if (!owner) {
+                return '';
+              }
             },
           }
         }
