@@ -73,11 +73,11 @@ function _odaa_comment_view($hash) {
   if (isset($nid)) {
     // Get comment id's.
     $comment_ids = db_select('comment', 'c')
-      ->fields('c', array('uid'))
+      ->fields('c', array('cid'))
       ->condition('nid', $nid)
       ->condition('status', '1')
       ->execute()
-      ->fetchAll();
+      ->fetchCol();
 
     // If any comments ids found load the comment entities.
     if (!empty($comment_ids)) {
@@ -157,7 +157,7 @@ function _odaa_comment_count($hash) {
  * @return mixed
  *  JSON status
  */
-function _odaa_comment_add($title, $hash, $message) {
+function _odaa_comment_add() {
   // Check that the post contains a hash value.
   if (isset($_POST['hash'])) {
 
@@ -169,7 +169,7 @@ function _odaa_comment_add($title, $hash, $message) {
       global $user;
 
       // Create comment.
-      $comment = (object) array(
+      $comment = (object)array(
         'nid' => $nid,
         'cid' => 0,
         'pid' => 0,

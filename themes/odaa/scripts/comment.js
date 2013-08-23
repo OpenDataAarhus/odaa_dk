@@ -12,7 +12,7 @@
           'i<-data': {
             '.comments--list-author' : 'i.author',
             '.comments--list-posted' : 'i.date',
-            '.comments--list-content p' : 'i.subject',
+            '.comments--list-content p' : 'i.message',
             '.comment-delete a@href+' : '#{i.cid}/delete',
             '.comment-edit a@href+' : '#{i.cid}/edit',
             '.comments--list-item-actions@class+' : function(arg) {
