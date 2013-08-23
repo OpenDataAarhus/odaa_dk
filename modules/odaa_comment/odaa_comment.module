@@ -178,7 +178,7 @@ function _odaa_comment_add() {
         'is_anonymous' => 0,
         'homepage' => '',
         'status' => COMMENT_PUBLISHED,
-        'subject' => substr(check_plain($_POST['message']), 0, 100) . '...',
+        'subject' => substr(check_plain($_POST['message']), 0, 60) . '...',
         'language' => LANGUAGE_NONE,
         'comment_body' => array(
           LANGUAGE_NONE => array(
