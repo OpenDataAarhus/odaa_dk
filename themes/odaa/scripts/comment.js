@@ -2,9 +2,6 @@
   var template;
   var hash;
   $(document).ready(function($) {
-    
-    setCommentActionLinks();
-    
     if ($('.comments--wrapper').length) {
       // Find hash.
       hash = $('.comments--wrapper').attr('data');
@@ -15,7 +12,7 @@
           'i<-data': {
             '.comments--list-author' : 'i.author',
             '.comments--list-posted' : 'i.date',
-            '.comments--list-content p' : 'i.subject',
+            '.comments--list-content p' : 'i.message',
             '.comment-delete a@href+' : '#{i.cid}/delete',
             '.comment-edit a@href+' : '#{i.cid}/edit',
             '.comments--list-item-actions@class+' : function(arg) {
@@ -46,6 +43,9 @@
 
         return false;
       });
+
+      // Create actions links.
+      set_comment_action_links();
     }
     else if ($('.dataset--list-wrapper').length) {
       $('li.dataset--list-item').each(function (id, item) {
@@ -63,14 +63,26 @@
   });
 
   function add_comment() {
-    var input = $('textarea').val().replace(/\n/g, '<br>');
+    var message = $('textarea').val().replace(/\n/g, '<br />').replace(/\s{2,}/g, ' ');
     var title = $('h1.page--title').html();
-    $.getJSON('/odaa_comment/add/' + title + '/' + hash + '/' + input, function (data) {
-      if (data.status) {
-        // Comment added. Reset.
-        $('textarea').val('');
-        generate_comments(hash);
-      }
+    var data = {
+      'title' : title,
+      'hash' : hash,
+      'message' : message
+    };
+
+    $.ajax({
+      type: 'POST',
+      url: '/odaa_comment/add',
+      data: data,
+      success: function (data) {
+        if (data.status) {
+          // Comment added. Reset.
+          $('textarea').val('');
+          generate_comments(hash);
+        }
+      },
+      dataType: "json"
     });
   }
 
@@ -87,8 +99,6 @@
         $('div.comments--wrapper').addClass('comments--wrapper-empty');
       }
     });
-    
-    setCommentActionLinks();
   }
 
   function update_comment_form() {
@@ -106,49 +116,22 @@
       }
     });
   }
-  
-  function setCommentActionLinks() {
-    /*
-     * Comment actions links.
-     */
 
+  function set_comment_action_links() {
     // Set variables.
-    var commentsContent = $('.js-comments-content');
+    var commentInput = $('.comments--post-comment textarea');
+    var commentInputValue = commentInput.val();
 
-    if (commentsContent.length) {
-      // Set variables.
-      var commentInput = $('.comments--post-comment textarea');
-      var commentInputValue = commentInput.val();
+    // Add quote link to actions wrapper.
+    $('.comments--list-quote')
+    .live('click', function() {
+      // Get content of comment.
+      var commentQuoteContent = $(this)
+      .parents('.js-comments-content')
+      .find('.field-comment-body')
+      .html();
 
-      // Add quote link to actions wrapper.
-      $('<a />', {
-        'class' : 'comments--list-quote',
-        'href' : '#postcomment',
-        'text' : 'Quote'
-      })
-      .prependTo($('.comments--list-item-actions'))
-      .prepend('<i class="icon-quote-left"></i>')
-      .live('click', function() {
-        // Get content of comment.
-        var commentQuoteContent = $(this)
-        .parents('.js-comments-content')
-        .find('.field-comment-body')
-        .html();
-
-        commentInput.val(commentInputValue + '<blockquote>' + commentQuoteContent + '</blockquote>\n');
-      });
-
-      // Add icons to links.
-      var commentEditLink = $('.comments--list .comment-edit a');
-      var commentDeleteLink = $('.comments--list .comment-delete a');
-
-      if (commentEditLink.length) {
-        commentEditLink.prepend('<i class="icon-edit"></i>');
-      }
-
-      if (commentDeleteLink.length) {
-        commentDeleteLink.prepend('<i class="icon-remove-sign "></i>');
-      }
-    }
+      commentInput.val(commentInputValue + '<blockquote>' + commentQuoteContent + '</blockquote>\n');
+    });
   }
 })(jQuery);

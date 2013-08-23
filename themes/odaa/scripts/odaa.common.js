@@ -1,6 +1,6 @@
 (function($) {
 
-  function setCommentActionLinks() {
+  function set_comment_action_links() {
     /*
      * Comment actions links.
      */
@@ -21,7 +21,7 @@
       })
       .prependTo($('.comments--list-item-actions'))
       .prepend('<i class="icon-quote-left"></i>')
-      .live('click', function() {
+      .click(function() {
         // Get content of comment.
         var commentQuoteContent = $(this)
         .parents('.js-comments-content')
@@ -44,9 +44,9 @@
       }
     }
   }
-  
-  $(function() {
-    setCommentActionLinks();
+
+  $(document).ready(function($) {
+    set_comment_action_links($);
   });
-  
+
 })(jQuery);

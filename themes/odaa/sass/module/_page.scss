@@ -9,27 +9,29 @@
 /* Page
    ========================================================================== */
 
-.page--content-wrapper {
-  @extend %module-wrapper-style;
+.primary-content {
+  .page--content-wrapper {
+    @extend %module-wrapper-style;
 
-  margin-top: $large-spacing;
-}
-
-.page--content {
-  /* Headers in page content */
-  h3 {
     margin-top: $large-spacing;
   }
-  
-  ul {
-    margin-bottom: $medium-spacing;
-  }
-  
-  li {
-    list-style: circle;
-  }
-}
 
-.page--section {
-  @extend %section-spacing;
+  .page--content {
+    /* Headers in page content */
+    h3 {
+      margin-top: $large-spacing;
+    }
+
+    ul {
+      margin-bottom: $medium-spacing;
+    }
+
+    li {
+      list-style: circle;
+    }
+  }
+
+  .page--section {
+    @extend %section-spacing;
+  }
 }
