@@ -120,7 +120,9 @@ function _odaa_comment_count($hash) {
     $count = db_select('comment', 'c')
       ->fields('c', array('uid'))
       ->condition('nid', $nid)
-      ->countQuery();
+      ->countQuery()
+      ->execute()
+      ->fetchField();
 
     // Load comment id(s) to node.
     if ($count) {
