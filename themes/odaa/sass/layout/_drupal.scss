@@ -243,8 +243,6 @@ div.context-editor div.context-editable {
 
   /* Used when display in CKAN */
   &.hide {
-    .links {
-      display: none;
-    }
+    display: none;
   }
 }
