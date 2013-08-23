@@ -5,12 +5,26 @@
  */
 
 /**
+ * Prevents gloabal redirect clean urls if regions argument is present.
+ * 
+ * @param string $alias
+ * @param type $options
+ * @param type $current_path
+ */
+function odaa_render_url_outbound_alter(&$alias, $options, $current_path) {
+  if (isset($_GET['regions']) && !empty($alias)) {
+    $alias = '';
+  }
+}
+
+/**
  * Implements hook_page_alter().
  *
  * This function ensures that either regions are render and returned as JSON.
  */
 function odaa_render_page_alter(&$page) {
   if (isset($_GET['regions'])) {
+    
     // Run drupal_page_alter on themes, as they will always come last. In the
     // drupal_alter function, but we need to have all regions avaliable now. So
     // do the same as drupal_alter does with the themes. 
