@@ -63,14 +63,26 @@
   });
 
   function add_comment() {
-    var input = $('textarea').val().replace(/\n/g, '<br />').replace(/\s{2,}/g, ' ');
+    var message = $('textarea').val().replace(/\n/g, '<br />').replace(/\s{2,}/g, ' ');
     var title = $('h1.page--title').html();
-    $.getJSON('/odaa_comment/add/' + title + '/' + hash + '/' + input, function (data) {
-      if (data.status) {
-        // Comment added. Reset.
-        $('textarea').val('');
-        generate_comments(hash);
-      }
+    var data = {
+      'title' : title,
+      'hash' : hash,
+      'message' : message
+    };
+
+    $.ajax({
+      type: 'POST',
+      url: '/odaa_comment/add',
+      data: data,
+      success: function (data) {
+        if (data.status) {
+          // Comment added. Reset.
+          $('textarea').val('');
+          generate_comments(hash);
+        }
+      },
+      dataType: "json"
     });
   }
 

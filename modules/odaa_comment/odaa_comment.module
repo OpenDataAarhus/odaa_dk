@@ -10,7 +10,7 @@
  */
 function odaa_comment_menu() {
   $items = array();
-  
+
   $items['odaa_comment/view/%'] = array(
     'title' => 'View comment',
     'page callback' => '_odaa_comment_view',
@@ -18,7 +18,7 @@ function odaa_comment_menu() {
     'access arguments' => array('access content'),
     'type' => MENU_CALLBACK,
   );
-  
+
   $items['odaa_comment/count/%'] = array(
     'title' => 'View comment',
     'page callback' => '_odaa_comment_count',
@@ -26,15 +26,14 @@ function odaa_comment_menu() {
     'access arguments' => array('access content'),
     'type' => MENU_CALLBACK,
   );
-  
-  $items['odaa_comment/add/%/%/%'] = array(
+
+  $items['odaa_comment/add'] = array(
     'title' => 'Add comment',
     'page callback' => '_odaa_comment_add',
-    'page arguments' => array(2, 3, 4),
     'access arguments' => array('post comments'),
     'type' => MENU_CALLBACK,
   );
-  
+
   $items['odaa_comment/delete/%'] = array(
     'title' => 'Delete comment',
     'page callback' => '_odaa_comment_delete',
@@ -42,20 +41,20 @@ function odaa_comment_menu() {
     'access arguments' => array('access content'),
     'type' => MENU_CALLBACK,
   );
-  
+
   $items['odaa_comment/get_user'] = array(
     'title' => 'Get username and e-mail',
     'page callback' => '_odaa_comment_get_user',
     'access arguments' => array('access content'),
     'type' => MENU_CALLBACK,
   );
-  
+
   return $items;
 }
 
 /**
  * Load comments for a dataset.
- * 
+ *
  * @param string $hash
  *  CKAN dataset id
  * @return mixed
@@ -100,33 +99,44 @@ function _odaa_comment_view($hash) {
   return drupal_json_output($data);
 }
 
- function _odaa_comment_count($hash) {
+/**
+ * Count the number of comments attched to a given entity.
+ *
+ * @param type $hash
+ * @return string json encoded
+ */
+function _odaa_comment_count($hash) {
   // Find node matching hash.
   $nid = _odaa_comment_hash_to_nid($hash);
 
   $data = array(
-      'status' => TRUE,
-      'data' => array(),
+    'status' => TRUE,
+    'data' => array(),
   );
+
   $data['data']['count'] = 0;
   if (!empty($nid)) {
-  // Load node.
-    $node = node_load($nid);
+    // Load node.
+    $count = db_select('comment', 'c')
+      ->fields('c', array('uid'))
+      ->condition('nid', $nid)
+      ->countQuery();
+
     // Load comment id(s) to node.
-    $comment_ids = comment_get_thread($node, COMMENT_MODE_FLAT, 100);
-    if (!empty($comment_ids)) {
-        // Build data array.
-        $data['status'] = TRUE;
-        $data['data']['count'] = count($comment_ids);
-      }
+    if ($count) {
+      // Build data array.
+      $data['status'] = TRUE;
+      $data['data']['count'] = $count;
+    }
   }
+
   // Always return in JSON format.
   return drupal_json_output($data);
 }
 
 /**
  * Add comment to dataset.
- * 
+ *
  * @global mixed $user
  *  Drupal user object
  * @param string $hash
@@ -137,10 +147,11 @@ function _odaa_comment_view($hash) {
  *  JSON status
  */
 function _odaa_comment_add($title, $hash, $message) {
-  // Find node matching hash.
-  $nid = _odaa_comment_hash_to_nid($hash, $title);
-  
-  if (isset($nid)) {
+  if (isset($_POST['hash'])) {
+
+    // Find node matching hash.
+    $nid = _odaa_comment_hash_to_nid($_POST['hash'], $_POST['title']);
+
     // Load $user object.
     global $user;
 
@@ -154,14 +165,14 @@ function _odaa_comment_add($title, $hash, $message) {
       'is_anonymous' => 0,
       'homepage' => '',
       'status' => COMMENT_PUBLISHED,
-      'subject' => $message,
+      'subject' => $_POST['message'],
       'language' => LANGUAGE_NONE,
     );
 
     // Save comment.
     comment_submit($comment);
     comment_save($comment);
-    
+
     return drupal_json_output(array('status' => TRUE));
   }
   else {
@@ -171,7 +182,7 @@ function _odaa_comment_add($title, $hash, $message) {
 
 /**
  * Deletes a comment from dataset.
- * 
+ *
  * @param int $cid
  *  Comment id
  * @return mixed
@@ -180,14 +191,14 @@ function _odaa_comment_add($title, $hash, $message) {
 function _odaa_comment_delete($cid) {
   // User object.
   global $user;
-  
+
   // Load current comment.
   $comment = comment_load($cid);
-  
+
   if ($comment->uid == $user->uid) {
     // Author of comment match.
     comment_delete($cid);
-    
+
     return drupal_json_output(array('status' => TRUE));
   }
   else {
@@ -198,7 +209,7 @@ function _odaa_comment_delete($cid) {
 /*
  * Helper function to find node ID from hash.
  * Create new node if node id is not found and $title is set.
- * 
+ *
  * @param string $hash
  *  CKAN dataset id
  * @param string $title
@@ -215,7 +226,7 @@ function _odaa_comment_hash_to_nid($hash, $title = FALSE) {
     ->fieldCondition('field_ckan_id', 'value', $hash, '=');
 
   $result = $query->execute();
-  
+
   if (isset($result['node'])) {
     // Found the node.
     $element = array_shift($result['node']);
@@ -223,7 +234,7 @@ function _odaa_comment_hash_to_nid($hash, $title = FALSE) {
   }
   else {
     if ($title) {
-      
+
       // Load current package list fron CKAN.
       $cid = 'current_package_list_with_resources';
       $cache = cache_get($cid);
@@ -236,7 +247,7 @@ function _odaa_comment_hash_to_nid($hash, $title = FALSE) {
         $data = _odaa_user_api_call('/current_package_list_with_resources');
         cache_set($cid, $data, 'cache', time() + 300);
       }
-      
+
       // Find dataset from $hash.
       $url = "";
       foreach ($data as $item) {
@@ -245,7 +256,7 @@ function _odaa_comment_hash_to_nid($hash, $title = FALSE) {
           break;
         }
       }
-      
+
       // Create new node.
       $node = new stdClass();
       $node->type = 'dataset';
@@ -258,9 +269,9 @@ function _odaa_comment_hash_to_nid($hash, $title = FALSE) {
       $node->field_ckan_id['und'][0]['value'] = $hash;
       $node->field_ckan_url['und'][0]['value'] = $url;
       node_save($node);
-      
+
       return _odaa_comment_hash_to_nid($hash);
-           
+
     } else {
       return FALSE;
     }
@@ -272,7 +283,7 @@ function _odaa_comment_hash_to_nid($hash, $title = FALSE) {
  */
 function _odaa_comment_get_user() {
   global $user;
-  
+
   if (!empty($user->uid)) {
     $account = array(
         'name' => $user->name,
