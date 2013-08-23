@@ -71,10 +71,15 @@ function _odaa_comment_view($hash) {
       'data' => array(),
   );
   if (isset($nid)) {
-    // Load node.
-    $node = node_load($nid);
-    // Load comment id(s) to node.
-    $comment_ids = comment_get_thread($node, COMMENT_MODE_FLAT, 100);
+    // Get comment id's.
+    $comment_ids = db_select('comment', 'c')
+      ->fields('c', array('uid'))
+      ->condition('nid', $nid)
+      ->condition('status', '1')
+      ->execute()
+      ->fetchAll();
+
+    // If any comments ids found load the comment entities.
     if (!empty($comment_ids)) {
       // Comments found, load them.
       $comments = comment_load_multiple($comment_ids);
@@ -82,14 +87,17 @@ function _odaa_comment_view($hash) {
         // Build data array.
         $data['status'] = TRUE;
         foreach ($comments as $comment) {
-          // 20. juli 2013 @ 14:57
+          // Format the date to match frontend.
           $date = format_date($comment->created, 'custom', 'j. F Y @ G:i');
+
+          // Build return data based on the comment.
           $data['data'][] = array(
             'cid' => $comment->cid,
             'author' => $comment->name,
             'subject' => $comment->subject,
+            'message' => $comment->comment_body['und']['value'],
             'date' => $date,
-            'owner' => ($user->uid == $comment->uid)?TRUE:FALSE,
+            'owner' => ($user->uid == $comment->uid) ? TRUE : FALSE,
           );
         }
       }
@@ -120,6 +128,7 @@ function _odaa_comment_count($hash) {
     $count = db_select('comment', 'c')
       ->fields('c', array('uid'))
       ->condition('nid', $nid)
+      ->condition('status', '1')
       ->countQuery()
       ->execute()
       ->fetchField();
@@ -149,33 +158,44 @@ function _odaa_comment_count($hash) {
  *  JSON status
  */
 function _odaa_comment_add($title, $hash, $message) {
+  // Check that the post contains a hash value.
   if (isset($_POST['hash'])) {
 
     // Find node matching hash.
     $nid = _odaa_comment_hash_to_nid($_POST['hash'], $_POST['title']);
 
-    // Load $user object.
-    global $user;
+    if ($nid) {
+      // Load $user object.
+      global $user;
 
-    // Create comment.
-    $comment = (object) array(
-      'nid' => $nid,
-      'cid' => 0,
-      'pid' => 0,
-      'uid' => $user->uid,
-      'mail' => '',
-      'is_anonymous' => 0,
-      'homepage' => '',
-      'status' => COMMENT_PUBLISHED,
-      'subject' => $_POST['message'],
-      'language' => LANGUAGE_NONE,
-    );
+      // Create comment.
+      $comment = (object) array(
+        'nid' => $nid,
+        'cid' => 0,
+        'pid' => 0,
+        'uid' => $user->uid,
+        'mail' => '',
+        'is_anonymous' => 0,
+        'homepage' => '',
+        'status' => COMMENT_PUBLISHED,
+        'subject' => substr(check_plain($_POST['message']), 0, 100) . '...',
+        'language' => LANGUAGE_NONE,
+        'comment_body' => array(
+          LANGUAGE_NONE => array(
+            0 => array (
+              'value' => $_POST['message'],
+              'format' => 'user_input'
+            )
+          )
+        ),
+      );
 
-    // Save comment.
-    comment_submit($comment);
-    comment_save($comment);
+      // Save comment.
+      comment_submit($comment);
+      comment_save($comment);
 
-    return drupal_json_output(array('status' => TRUE));
+      return drupal_json_output(array('status' => TRUE));
+    }
   }
   else {
     return drupal_json_output(array('status' => FALSE));
@@ -288,8 +308,8 @@ function _odaa_comment_get_user() {
 
   if (!empty($user->uid)) {
     $account = array(
-        'name' => $user->name,
-        'mail' => $user->mail,
+      'name' => $user->name,
+      'mail' => $user->mail,
     );
 
     drupal_json_output(array('status' => TRUE, 'account' => $account));
