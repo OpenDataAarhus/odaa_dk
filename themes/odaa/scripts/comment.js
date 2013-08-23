@@ -46,7 +46,6 @@
 
       // Create actions links.
       set_comment_action_links();
-
     }
     else if ($('.dataset--list-wrapper').length) {
       $('li.dataset--list-item').each(function (id, item) {
@@ -64,7 +63,7 @@
   });
 
   function add_comment() {
-    var input = $('textarea').val().replace(/\n/g, '<br>');
+    var input = $('textarea').val().replace(/\n/g, '<br />').replace(/\s{2,}/g, ' ');
     var title = $('h1.page--title').html();
     $.getJSON('/odaa_comment/add/' + title + '/' + hash + '/' + input, function (data) {
       if (data.status) {
