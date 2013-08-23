@@ -1,0 +1,5 @@
+name = Odaa CKAN Blocks
+description = Simple API integration to CKAN to display minor statistics from CKAN.
+core = 7.x
+version = 7.x-1.0
+requires = odaa_user

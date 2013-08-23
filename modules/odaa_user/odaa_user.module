@@ -1,0 +1,175 @@
+<?php
+/**
+ * @file
+ * CKAN requires to validate session data, for a SSO.
+ * Drupal will register new users to CKAN on login.
+ */
+
+/**
+ * Implements hook_user_login().
+ * 
+ * @see http://docs.ckan.org/en/latest/api.html#ckan.logic.action.update.user_update
+ * @see http://docs.ckan.org/en/latest/api.html#ckan.logic.action.create.user_create
+ */
+function odaa_user_user_login(&$edit, $account) {
+  // First lets check if the user is created.
+  $username =_odaa_user_get_ckan_find_user($account->name);
+  if ($username != FALSE) {
+    // User exist in CKAN, update.
+  }
+  else {
+    // User does not exists in CKAN, lets create one.
+    $options = array(
+      'name' => $account->name,
+      'email' => $account->mail,
+      'password' => md5(uniqid()),
+    );
+    $data = _odaa_user_api_call('/user_create', $options);
+  }
+}
+
+/**
+ * Implements hook_menu().
+ */
+function odaa_user_menu() {
+  $items = array();
+  
+  $items['odaa_user/%'] = array(
+    'title' => 'Validate session',
+    'page callback' => '_odaa_user_validate_session',
+    'page arguments' => array(1),
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  
+  // Admin page.
+  $items['admin/config/system/odaa'] = array(
+    'title' => 'Odaa',
+    'description' => t('Odaa CKAN configuration'),
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('odaa_user_admin'),
+    'access arguments' => array('administer content'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+  
+  return $items;
+}
+
+/**
+ * Administrative configuration form.
+ *
+ * @return 
+ *   System Settings Form.
+ */
+function odaa_user_admin() {
+  $form = array();
+  
+  $form['odaa_user_api_key'] = array(
+    '#type' => 'textfield',
+    '#title' => t('API key'),
+    '#default_value' => variable_get('odaa_user_api_key', ''),
+    '#required' => TRUE,
+  );
+
+  $form['odaa_user_ckan_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('CKAN URL'),
+    '#default_value' => variable_get('odaa_user_ckan_url', ''),
+    '#required' => TRUE,
+  );
+
+  return system_settings_form($form);
+}
+
+/**
+ * Convert session id to user id.
+ * 
+ * @param string $session_id
+ *  Drupal session id
+ * @return mixed
+ *  JSON Drupal user id
+ */
+function _odaa_user_validate_session($session_id) {
+  $uid = db_select('sessions', 's')
+    ->fields('s', array('uid'))
+    ->condition('sid', $session_id)
+    ->execute()
+    ->fetchField();
+  
+  if ($uid) {
+    $account = user_load($uid);
+
+    if ($account->status) { 
+      drupal_json_output(array('username' => $account->name));
+      exit();
+    }
+  }
+  drupal_json_output(array('status' => FALSE));
+}
+
+/**
+ * Internal function for API calls to CKAN.
+ * 
+ * @param string $call
+ * @param array $data
+ * 
+ * @return mixed
+ *  FALSE if no data.
+ *  CKAN data array.
+ */
+function _odaa_user_api_call($call, $data = NULL) {
+  $api_key = variable_get('odaa_user_api_key', '');
+  
+  $options = array(
+    'headers' => array(
+      'Content-Type' => 'application/json', 
+      'Accept' => 'application/json', 
+      'X-CKAN-API-Key' => $api_key,
+    ),
+    'method' => 'POST',
+    'timeout' => 15,
+  );
+
+  if ($data != NULL) {
+    // Inserting post data.
+    $options['data'] = json_encode($data);
+  }
+  
+  $url = variable_get('odaa_user_ckan_url', '');
+  
+  $output = drupal_http_request($url.$call, $options);
+  
+  if (($data = json_decode($output->data)) !== FALSE) {
+    // Data is JSON.
+    if ($data->success == 1) {
+      // Successfull request.
+      return $data->result;
+    }
+  }
+  
+  return FALSE;
+}
+
+/**
+ * Interal function to check if username exists in CKAN.
+ * 
+ * @param string $username
+ * 
+ * @return FALSE or user object
+ *  FALSE if username not found.
+ *  CKAN data with user array.
+ * 
+ * @see http://docs.ckan.org/en/latest/api.html#ckan.logic.action.get.user_list
+ */
+function _odaa_user_get_ckan_find_user($username) {
+  // Get user_list.
+  $users = _odaa_user_api_call('/user_list');
+  foreach ($users as $user) {
+    if ($user->name == $username) {
+      // User found.
+      return $user;
+    }
+  }
+  
+  return FALSE;
+}

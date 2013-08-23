@@ -1,0 +1,101 @@
+/**
+ * User
+ *
+ * @author magnify
+ */
+
+
+
+/* User login
+   ========================================================================== */
+.user-login--username-wrapper,
+.user-login--password-wrapper {
+  margin-bottom: $large-spacing;
+}
+
+.user-login--actions {
+  text-align: right;
+}
+
+.user-login--forgot-password,
+.user-login--openid {
+  float: left;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.user-login--submit {
+  @extend .button;
+}
+
+
+/* User register
+   ========================================================================== */
+.user-register--username-wrapper,
+.user-register--email-wrapper,
+.user-register--password-wrapper,
+.user-register--password-confirm-wrapper{
+  margin-bottom: $large-spacing;
+}
+
+.user-register--actions {
+  text-align: right;
+}
+
+.user-register--submit {
+  @extend .button;
+}
+
+.user-register--description {
+  @include opacity(.5);
+}
+
+
+/* User profile
+   ========================================================================== */
+.user-profile--content-wrapper {
+  @extend %module-wrapper-style;
+
+  margin-top: $large-spacing;
+  overflow: hidden;
+}
+
+.user-profile--primary-content {
+  @include zen-grid-item(6, 1);
+  
+  padding-left: 0;
+}
+
+.user-profile--secondary-content {
+  @include zen-grid-item(6, 1, right);
+
+  margin-top: -20px;
+  padding-right: 0;
+}
+
+.user-profile--header-wrapper {
+  overflow: hidden;
+}
+
+.user-profile--image {
+  float: left;
+}
+
+.user-profile--title {
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 75%;
+}
+
+.user-profile--info {
+  @extend %section-spacing;
+
+  clear: both;
+}
+
+.user-profile--actions {
+  @extend %section-spacing;
+
+  text-align: right;
+}

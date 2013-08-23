@@ -4,6 +4,8 @@ core = 7.x
 api = 2
 
 ; Projects
+projects[drupal][version] = "7.22"
+
 projects[apachesolr][subdir] = "contrib"
 projects[apachesolr][version] = "1.3"
 
@@ -28,6 +30,9 @@ projects[context_filter][version] = "1.x-dev"
 projects[context_inline_editor][subdir] = "contrib"
 projects[context_inline_editor][version] = "1.x-dev"
 projects[context_inline_editor][patch][0] = "http://drupal.org/files/filter_context_1327672-5.patch"
+
+projects[context_error][subdir] = "contrib"
+projects[context_error][version] = "1.0"
 
 projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.3"
@@ -69,7 +74,7 @@ projects[field_group][subdir] = "contrib"
 projects[field_group][version] = "1.1"
 
 projects[file_entity][subdir] = "contrib"
-projects[file_entity][version] = "2.0-unstable7"
+projects[file_entity][version] = "2.x-dev"
 
 projects[flexslider][subdir] = "contrib"
 projects[flexslider][version] = "1.0-rc3"
@@ -108,8 +113,11 @@ projects[location][version] = "3.0-rc2"
 projects[mailchimp][subdir] = "contrib"
 projects[mailchimp][version] = "2.10"
 
+projects[media_browser_plus][subdir] = "contrib"
+projects[media_browser_plus][version] = "3.x-dev"
+
 projects[media][subdir] = "contrib"
-projects[media][version] = "2.0-unstable7"
+projects[media][version] = "2.x-dev"
 
 projects[mediaelement][subdir] = "contrib"
 projects[mediaelement][version] = "1.2"
@@ -180,12 +188,48 @@ projects[views][version] = "3.7"
 projects[views_slideshow][subdir] = "contrib"
 projects[views_slideshow][version] = "3.0"
 
+projects[views_bulk_operations][subdir] = "contrib"
+projects[views_bulk_operations][version] = "3.x-dev"
+
+projects[views_tree][subdir] = "contrib"
+projects[views_tree][version] = "2.x-dev"
+
 projects[webform][subdir] = "contrib"
 projects[webform][version] = "3.19"
 
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.2"
 projects[wysiwyg][patch][0] = "http://drupal.org/files/746524-143-D7.patch"
+
+projects[wysiwyg_filter][subdir] = "contrib"
+projects[wysiwyg_filter][version] = "1.6-rc2"
+
+projects[fences][subdir] = "contrib"
+projects[fences][version] = "1.0"
+
+projects[menu_item_visibility][subdir] = "contrib"
+projects[menu_item_visibility][version] = "1.0-beta1"
+
+projects[cookiecontrol][subdir] = "contrib"
+projects[cookiecontrol][version] = "1.6"
+
+projects[better_formats][subdir] = "contrib"
+projects[better_formats][version] = "1.0-beta1"
+
+projects[comment_goodness][subdir] = "contrib"
+projects[comment_goodness][version] = "1.4"
+
+projects[menu_token][subdir] = "contrib"
+projects[menu_token][version] = "1.0-beta5"
+
+projects[rules][subdir] = "contrib"
+projects[rules][version] = "2.3"
+
+projects[konamicode][subdir] = "contrib"
+projects[konamicode][version] = "1.7"
+
+projects[heartbeat][subdir] = "contrib"
+projects[heartbeat][version] = "1.1"
 
 ; Libraries
 libraries[ckeditor][download][type] = "get"

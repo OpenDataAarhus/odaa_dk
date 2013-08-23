@@ -5,3 +5,5 @@ drushrc.php
 .sass-cache
 modules/contrib
 libraries
+nbproject
+.DS_Store
