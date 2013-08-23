@@ -95,7 +95,7 @@ function _odaa_comment_view($hash) {
             'cid' => $comment->cid,
             'author' => $comment->name,
             'subject' => $comment->subject,
-            'message' => $comment->comment_body['und']['value'],
+            'message' => $comment->comment_body['und'][0]['value'],
             'date' => $date,
             'owner' => ($user->uid == $comment->uid) ? TRUE : FALSE,
           );
