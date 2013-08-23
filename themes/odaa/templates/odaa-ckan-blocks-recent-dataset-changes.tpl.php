@@ -1,4 +1,4 @@
-<h2 class="spotbox--header"><a href="#"><i class="icon-sitemap"></i><?php print t('Latest dataset'); ?></a></h2>
+<h2 class="spotbox--header"><a href="/dataset"><i class="icon-sitemap"></i><?php print t('Latest dataset'); ?></a></h2>
 <?php if (!empty($list)): ?>
   <ul class="spotbox--list">
     <?php $size = (count($list) < 10)?count($list):10; ?>
