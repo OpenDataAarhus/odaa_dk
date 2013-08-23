@@ -107,29 +107,20 @@
   }
 
   function set_comment_action_links() {
-    /*
-     * Comment actions links.
-     */
-
     // Set variables.
-    var commentsContent = $('.js-comments-content');
+    var commentInput = $('.comments--post-comment textarea');
+    var commentInputValue = commentInput.val();
 
-    if (commentsContent.length) {
-      // Set variables.
-      var commentInput = $('.comments--post-comment textarea');
-      var commentInputValue = commentInput.val();
+    // Add quote link to actions wrapper.
+    $('.comments--list-quote')
+    .live('click', function() {
+      // Get content of comment.
+      var commentQuoteContent = $(this)
+      .parents('.js-comments-content')
+      .find('.field-comment-body')
+      .html();
 
-      // Add quote link to actions wrapper.
-      $('comments--list-quote')
-      .click(function() {
-        // Get content of comment.
-        var commentQuoteContent = $(this)
-        .parents('.js-comments-content')
-        .find('.field-comment-body')
-        .html();
-
-        commentInput.val(commentInputValue + '<blockquote>' + commentQuoteContent + '</blockquote>\n');
-      });
-    }
+      commentInput.val(commentInputValue + '<blockquote>' + commentQuoteContent + '</blockquote>\n');
+    });
   }
 })(jQuery);
