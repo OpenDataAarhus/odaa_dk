@@ -11,9 +11,9 @@
  * @param type $options
  * @param type $current_path
  */
-function odaa_render_url_outbound_alter(&$alias, $options, $current_path) {
+function odaa_render_url_outbound_alter(&$alias, &$options, $current_path) {
   if (isset($_GET['regions']) && !empty($alias)) {
-    $alias = '';
+    $alias = $current_path;
   }
 }
 
