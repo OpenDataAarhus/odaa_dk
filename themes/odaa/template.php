@@ -87,7 +87,7 @@ function _odaa_menu_styling($variables, $class, $icon = FALSE, $span = FALSE) {
 
   $sub_menu = '';
 
-  if ($element['#below']) {
+  if (isset($element['#below'])) {
     $sub_menu = drupal_render($element['#below']);
   }
 
@@ -165,18 +165,20 @@ function odaa_preprocess_html(&$variables) {
  * Implements template_preprocess_block().
  */
 function odaa_preprocess_block(&$variables) {
-  switch ($variables['block']->delta) {
-    case 'datasets':
-      $variables['classes_array'][] = 'search-spotbox';
-      break;
+  if (isset($variables['block']->delta)) {
+    switch ($variables['block']->delta) {
+      case 'datasets':
+        $variables['classes_array'][] = 'search-spotbox';
+        break;
 
-    case 3: // Sub menu
-      $variables['classes_array'][] = 'sub-menu-wrapper';
-      break;
+      case 3: // Sub menu
+        $variables['classes_array'][] = 'sub-menu-wrapper';
+        break;
 
-    default:
-      $variables['classes_array'][] = 'spotbox';
-      break;
+      default:
+        $variables['classes_array'][] = 'spotbox';
+        break;
+    }
   }
 }
 /**
@@ -205,14 +207,6 @@ function odaa_preprocess_page(&$variables, $hook) {
 }
 
 /**
- * Implements template_preprocess_region().
- */
-function odaa_preprocess_region(&$variables, $hook) {
-  //print_r($variables['elements']['#region']);
-}
-
-
-/**
  * Returns HTML for a list of recent comments to be displayed in the comment block.
  *
  * @ingroup themeable
@@ -234,7 +228,7 @@ function odaa_comment_block() {
     );
   }
 
-  if ($items) {
+  if (isset($items)) {
     return theme('odaa_comment_recent_list', array('items' => $items));
   }
   else {
@@ -332,7 +326,6 @@ function odaa_breadcrumb($variables) {
       $breadcrumb[] = drupal_get_title();
     }
   }
-
 
   $output = implode(' / ', $breadcrumb);
   return $output;
