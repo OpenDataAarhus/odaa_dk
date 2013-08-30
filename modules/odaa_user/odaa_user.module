@@ -142,7 +142,7 @@ function _odaa_user_api_call($call, $data = NULL) {
     'timeout' => 15,
   );
 
-  if ($data != NULL) {
+  if (isset($data)) {
     // Inserting post data.
     $options['data'] = json_encode($data);
   }

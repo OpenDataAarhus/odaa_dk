@@ -108,9 +108,11 @@ function _odaa_ckan_blocks_recent_dataset_changes() {
     cache_set($cid, $data, 'cache', time() + 300);
   }
 
-  foreach ($data as $d_key => $dataset) {
-    // Add format_interval aka since.
-    $data[$d_key]->format_interval = format_interval(time() - strtotime($dataset->metadata_modified), 2);
+  if (isset($data)) {
+    foreach ($data as $d_key => $dataset) {
+      // Add format_interval aka since.
+      $data[$d_key]->format_interval = format_interval(time() - strtotime($dataset->metadata_modified), 2);
+    }
   }
 
   // Theme datasets and return it.
