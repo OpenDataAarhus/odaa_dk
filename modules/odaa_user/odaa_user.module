@@ -48,11 +48,23 @@ function odaa_user_menu() {
     'description' => t('Odaa CKAN configuration'),
     'page callback' => 'drupal_get_form',
     'page arguments' => array('odaa_user_admin'),
-    'access arguments' => array('administer content'),
+    'access arguments' => array('administer odaa'),
     'type' => MENU_NORMAL_ITEM,
   );
   
   return $items;
+}
+
+/**
+ * Implements hook_permission().
+ */
+function odaa_user_permission() {
+  return array(
+    'administer odaa' => array(
+      'title' => t('Administer ODAA'),
+      'description' => t('Perform administration tasks for ODAA.'),
+    ),
+  );
 }
 
 /**
@@ -130,7 +142,7 @@ function _odaa_user_api_call($call, $data = NULL) {
     'timeout' => 15,
   );
 
-  if ($data != NULL) {
+  if (isset($data)) {
     // Inserting post data.
     $options['data'] = json_encode($data);
   }
