@@ -25,6 +25,12 @@ function odaa_user_user_login(&$edit, $account) {
       'password' => md5(uniqid()),
     );
     $data = _odaa_user_api_call('/user_create', $options);
+    if ($data) {
+      watchdog('odaa_user', '<pre>' . print_r($data, true) . '</pre>');
+    }
+    else {
+      watchdog('odaa_user', 'User create call failed for user: %name', array('%name' => $account->name), WATCHDOG_ERROR);
+    }
   }
 }
 
