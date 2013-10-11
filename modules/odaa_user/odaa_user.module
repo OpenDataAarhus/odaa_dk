@@ -14,16 +14,20 @@
 function odaa_user_user_login(&$edit, $account) {
   // First lets check if the user is created.
   $username = _odaa_user_get_ckan_find_user($account->name);
+  $options = array(
+    'name' => $account->name,
+    'email' => $account->mail,
+    'password' => $edit['values']['password'],
+  );
   if ($username != FALSE) {
     // User exist in CKAN, update.
+    $data = _odaa_user_api_call('/user_update', $options);
+    if (!$data) {
+      watchdog('odaa_user', 'User update call failed for user: %name', array('%name' => $account->name), WATCHDOG_ERROR);
+    }
   }
   else {
     // User does not exists in CKAN, lets create one.
-    $options = array(
-      'name' => $account->name,
-      'email' => $account->mail,
-      'password' => md5(uniqid()),
-    );
     $data = _odaa_user_api_call('/user_create', $options);
     if (!$data) {
       watchdog('odaa_user', 'User create call failed for user: %name', array('%name' => $account->name), WATCHDOG_ERROR);
