@@ -13,7 +13,7 @@
  */
 function odaa_user_user_login(&$edit, $account) {
   // First lets check if the user is created.
-  $username =_odaa_user_get_ckan_find_user($account->name);
+  $username = _odaa_user_get_ckan_find_user($account->name);
   if ($username != FALSE) {
     // User exist in CKAN, update.
   }
@@ -36,7 +36,7 @@ function odaa_user_user_login(&$edit, $account) {
  */
 function odaa_user_menu() {
   $items = array();
-  
+
   $items['odaa_user/%'] = array(
     'title' => 'Validate session',
     'page callback' => '_odaa_user_validate_session',
@@ -44,17 +44,17 @@ function odaa_user_menu() {
     'access arguments' => array('access content'),
     'type' => MENU_CALLBACK,
   );
-  
+
   // Admin page.
   $items['admin/config/system/odaa'] = array(
     'title' => 'Odaa',
-    'description' => t('Odaa CKAN configuration'),
+    'description' => 'Odaa CKAN configuration',
     'page callback' => 'drupal_get_form',
     'page arguments' => array('odaa_user_admin'),
     'access arguments' => array('administer odaa'),
     'type' => MENU_NORMAL_ITEM,
   );
-  
+
   return $items;
 }
 
@@ -73,12 +73,12 @@ function odaa_user_permission() {
 /**
  * Administrative configuration form.
  *
- * @return 
+ * @return array
  *   System Settings Form.
  */
 function odaa_user_admin() {
   $form = array();
-  
+
   $form['odaa_user_api_key'] = array(
     '#type' => 'textfield',
     '#title' => t('API key'),
@@ -100,9 +100,10 @@ function odaa_user_admin() {
  * Convert session id to user id.
  * 
  * @param string $session_id
- *  Drupal session id
+ *   Drupal session id
+ *
  * @return mixed
- *  JSON Drupal user id
+ *   JSON Drupal user id
  */
 function _odaa_user_validate_session($session_id) {
   $uid = db_select('sessions', 's')
@@ -110,11 +111,11 @@ function _odaa_user_validate_session($session_id) {
     ->condition('sid', $session_id)
     ->execute()
     ->fetchField();
-  
+
   if ($uid) {
     $account = user_load($uid);
 
-    if ($account->status) { 
+    if ($account->status) {
       drupal_json_output(array('username' => $account->name));
       exit();
     }
@@ -126,34 +127,35 @@ function _odaa_user_validate_session($session_id) {
  * Internal function for API calls to CKAN.
  * 
  * @param string $call
+ *   The request URL
  * @param array $data
+ *   Array contaning options.
  * 
  * @return mixed
- *  FALSE if no data.
- *  CKAN data array.
+ *   FALSE if no data or CKAN data array.
  */
-function _odaa_user_api_call($call, $data = NULL) {
+function _odaa_user_api_call($call, $data = array()) {
   $api_key = variable_get('odaa_user_api_key', '');
-  
+
   $options = array(
     'headers' => array(
-      'Content-Type' => 'application/json', 
-      'Accept' => 'application/json', 
+      'Content-Type' => 'application/json',
+      'Accept' => 'application/json',
       'X-CKAN-API-Key' => $api_key,
     ),
     'method' => 'POST',
     'timeout' => 15,
   );
 
-  if (isset($data)) {
+  if (!empty($data)) {
     // Inserting post data.
     $options['data'] = json_encode($data);
   }
-  
+
   $url = variable_get('odaa_user_ckan_url', '');
-  
-  $output = drupal_http_request($url.$call, $options);
-  
+
+  $output = drupal_http_request($url . $call, $options);
+
   if (($data = json_decode($output->data)) !== FALSE) {
     // Data is JSON.
     if ($data->success == 1) {
@@ -161,9 +163,9 @@ function _odaa_user_api_call($call, $data = NULL) {
       return $data->result;
     }
   }
-  
+
   watchdog('odaa_user', check_plain($data->error->message));
-  
+
   return FALSE;
 }
 
@@ -171,10 +173,10 @@ function _odaa_user_api_call($call, $data = NULL) {
  * Interal function to check if username exists in CKAN.
  * 
  * @param string $username
+ *   The username to find.
  * 
- * @return FALSE or user object
- *  FALSE if username not found.
- *  CKAN data with user array.
+ * @return mixed
+ *   FALSE if username not found or CKAN data with user array.
  * 
  * @see http://docs.ckan.org/en/latest/api.html#ckan.logic.action.get.user_list
  */
@@ -187,6 +189,6 @@ function _odaa_user_get_ckan_find_user($username) {
       return $user;
     }
   }
-  
+
   return FALSE;
 }
