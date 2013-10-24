@@ -48,6 +48,7 @@
       <p><strong><?php echo t('Name');?>:</strong> <?php echo $userpage_obj->name;?></p>
       <p><strong><?php echo t('Email');?>:</strong> <?php echo $userpage_obj->mail;?></p>
       <p><strong><?php echo t('Member for');?>:</strong> <?php print render($user_profile['summary']['member_for']['#markup']); ?></p>
+      <p><strong><?php echo t('CKAN API Key'); ?>:</strong> <?php print (isset($userpage_obj->field_ckan_api_key['und'][0]['safe_value'])) ? $userpage_obj->field_ckan_api_key['und'][0]['safe_value'] : ''; ?></p>
       <?php if($user->uid == $userpage_id) :?>
         <div class="user-profile--actions">
           <?php print l(t('Edit profile'), "user/{$user->uid}/edit", array('attributes' => array('class' => 'button'))); ?>
