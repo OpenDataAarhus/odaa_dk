@@ -7,7 +7,7 @@
 
 /**
  * Implements hook_user_login().
- * 
+ *
  * @see http://docs.ckan.org/en/latest/api.html#ckan.logic.action.update.user_update
  * @see http://docs.ckan.org/en/latest/api.html#ckan.logic.action.create.user_create
  */
@@ -107,7 +107,7 @@ function odaa_user_admin() {
 
 /**
  * Convert session id to user id.
- * 
+ *
  * @param string $session_id
  *   Drupal session id
  *
@@ -134,12 +134,12 @@ function _odaa_user_validate_session($session_id) {
 
 /**
  * Internal function for API calls to CKAN.
- * 
+ *
  * @param string $call
  *   The request URL
  * @param array $data
  *   Array contaning options.
- * 
+ *
  * @return mixed
  *   FALSE if no data or CKAN data array.
  */
@@ -165,28 +165,33 @@ function _odaa_user_api_call($call, $data = array()) {
 
   $output = drupal_http_request($url . $call, $options);
 
-  if (($data = json_decode($output->data)) !== FALSE) {
-    // Data is JSON.
-    if ($data->success == 1) {
-      // Successfull request.
-      return $data->result;
+  // Verify that the request returned correct.
+  if ($output->code == 200) {
+    // Verify that the data is JSON.
+    if (($data = json_decode($output->data)) !== FALSE) {
+      // Data is JSON.
+      if ($data->success == 1) {
+        // Successfull request.
+        return $data->result;
+      }
     }
   }
 
-  watchdog('odaa_user', check_plain($data->error->message));
+  // Log errors.
+  watchdog('odaa_user', check_plain($output->error));
 
   return FALSE;
 }
 
 /**
  * Interal function to check if username exists in CKAN.
- * 
+ *
  * @param string $username
  *   The username to find.
- * 
+ *
  * @return mixed
  *   FALSE if username not found or CKAN data with user array.
- * 
+ *
  * @see http://docs.ckan.org/en/latest/api.html#ckan.logic.action.get.user_list
  */
 function _odaa_user_get_ckan_find_user($username) {
