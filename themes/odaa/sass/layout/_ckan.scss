@@ -37,6 +37,12 @@
 .js .table-toggle-less .toggle-seperator {
   display: none;
 }
+.js .js-hide {
+  display: none;
+}
+.js .js-hide.active {
+  display: block;
+}
 
 
 /* Extend pager
