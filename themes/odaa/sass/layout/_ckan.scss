@@ -37,6 +37,12 @@
 .js .table-toggle-less .toggle-seperator {
   display: none;
 }
+.js .js-hide {
+  display: none;
+}
+.js .js-hide.active {
+  display: block;
+}
 
 
 /* Extend pager
@@ -426,10 +432,7 @@
 .modal {
   position: fixed;
   left: 50%;
-<<<<<<< HEAD
-=======
   top: 10%;
->>>>>>> development
   z-index: 1050;
   width: 560px;
   margin-left: -280px;
