@@ -88,12 +88,12 @@ function odaa_ckan_comment_views_default_views() {
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'time ago';
-  /* Sorteringskriterie: Indhold: Opdateret/kommenteret dato */
-  $handler->display->display_options['sorts']['last_updated']['id'] = 'last_updated';
-  $handler->display->display_options['sorts']['last_updated']['table'] = 'node_comment_statistics';
-  $handler->display->display_options['sorts']['last_updated']['field'] = 'last_updated';
-  $handler->display->display_options['sorts']['last_updated']['relationship'] = 'nid';
-  $handler->display->display_options['sorts']['last_updated']['order'] = 'DESC';
+  /* Sorteringskriterie: Indhold: Tidspunkt for seneste kommentar */
+  $handler->display->display_options['sorts']['last_comment_timestamp']['id'] = 'last_comment_timestamp';
+  $handler->display->display_options['sorts']['last_comment_timestamp']['table'] = 'node_comment_statistics';
+  $handler->display->display_options['sorts']['last_comment_timestamp']['field'] = 'last_comment_timestamp';
+  $handler->display->display_options['sorts']['last_comment_timestamp']['relationship'] = 'nid';
+  $handler->display->display_options['sorts']['last_comment_timestamp']['order'] = 'DESC';
   /* Filterkriterie: Kommentar: Godkendt */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'comment';
