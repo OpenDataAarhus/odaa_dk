@@ -123,6 +123,49 @@ function odaa_forum_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-forum_topic-field_file_upload'
+  $field_instances['node-forum_topic-field_file_upload'] = array(
+    'bundle' => 'forum_topic',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_file_upload',
+    'label' => 'File upload',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'txt pdf doc docx',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'file',
+      'settings' => array(
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'file_generic',
+      'weight' => 3,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('<p>Limited Markdown formatting is available, see <a href="http://daringfireball.net/projects/markdown/syntax" target="_blank">Markdown documentation</a> and <a href="http://michelf.com/projects/php-markdown/extra/" target="_blank">Markdown Extra documentation</a>.</p>
@@ -132,6 +175,7 @@ function odaa_forum_field_default_field_instances() {
   <li>Web- and e-mails is automatically converted to links.</li>
 </ul>');
   t('Body');
+  t('File upload');
   t('Kategori');
 
   return $field_instances;
