@@ -7,3 +7,4 @@ modules/contrib
 libraries
 nbproject
 .DS_Store
+.idea
