@@ -16,7 +16,7 @@ function odaa_user_user_login(&$edit, $account) {
   $user = _odaa_user_get_ckan_find_user($account->name);
   $options = array(
     'email' => $account->mail,
-    'password' => $edit['values']['pass'],
+    'password' => md5(uniqid()),
   );
   if ($user != FALSE) {
     // User exist in CKAN, update.
