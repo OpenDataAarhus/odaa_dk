@@ -20,7 +20,7 @@ function odaa_user_user_login(&$edit, $account) {
   );
   if ($user != FALSE) {
     // User exist in CKAN, update.
-    $options['id'] = $account->name;
+    $options['id'] = strtolower($account->name);
     $data = _odaa_user_api_call('/user_update', $options);
     if (!$data) {
       watchdog('odaa_user', 'User update call failed for user: %name', array('%name' => $account->name), WATCHDOG_ERROR);
