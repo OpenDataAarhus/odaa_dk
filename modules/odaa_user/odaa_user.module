@@ -28,7 +28,7 @@ function odaa_user_user_login(&$edit, $account) {
   }
   else {
     // User does not exists in CKAN, lets create one.
-    $options['name'] = $account->name;
+    $options['name'] = strtolower($account->name);
     $data = _odaa_user_api_call('/user_create', $options);
     if (!$data) {
       watchdog('odaa_user', 'User create call failed for user: %name', array('%name' => $account->name), WATCHDOG_ERROR);
