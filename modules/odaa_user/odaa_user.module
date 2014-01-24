@@ -35,8 +35,12 @@ function odaa_user_user_login(&$edit, $account) {
     }
   }
 
+  // Save API key from CKAN.
+  if (!empty($data->apikey)) {
+    $account->field_ckan_api_key['und'][0]['value'] = $data->apikey;
+  }
+
   // Save user account.
-  $account->field_ckan_api_key['und'][0]['value'] = $data->apikey ;
   user_save($account);
 }
 
