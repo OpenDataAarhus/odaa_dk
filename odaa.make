@@ -6,14 +6,14 @@ api = 2
 ; Projects
 projects[drupal][version] = "7.26"
 
-; UPDATE pr 2014/03/12
 
-; We are aware there are still major WYSIWYG issues with the current code and are working hard to resolve them. Upgrade to alpha2/3 at your own risk.
+; UPDATE pr 2014/03/14
+
+; media/file_entity should have same versions
 projects[media][subdir] = "contrib"
-;projects[media][version] = "2.x-dev"
-projects[media][version] = "2.0-unstable7"
-projects[media][patch][0] = "http://drupal.org/files/1846674-media-file_entity_default_allowed_extensions-8.patch"
-projects[media][patch][1] = "http://drupal.org/files/1846674-media-file_entity_default_allowed_extensions.patch"
+projects[media][version] = "2.x-dev"
+projects[file_entity][subdir] = "contrib"
+projects[file_entity][version] = "2.x-dev"
 
 
 projects[bu][subdir] = "contrib"
@@ -113,9 +113,6 @@ projects[feeds][version] = "2.0-alpha8"
 
 projects[field_group][subdir] = "contrib"
 projects[field_group][version] = "1.1"
-
-projects[file_entity][subdir] = "contrib"
-projects[file_entity][version] = "2.x-dev"
 
 projects[flexslider][subdir] = "contrib"
 projects[flexslider][version] = "1.0-rc3"
