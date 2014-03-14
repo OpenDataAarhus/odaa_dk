@@ -12,10 +12,14 @@ projects[drupal][version] = "7.26"
 ; media/file_entity should have same versions
 projects[media][subdir] = "contrib"
 projects[media][version] = "2.x-dev"
+
 projects[file_entity][subdir] = "contrib"
 projects[file_entity][version] = "2.x-dev"
 
+projects[media_youtube][subdir] = "contrib"
+projects[media_youtube][version] = "2.x-dev"
 
+;;
 projects[bu][subdir] = "contrib"
 projects[bu][version] = "1.2"
 
@@ -37,8 +41,6 @@ projects[rules][version] = "2.6"
 projects[module_filter][subdir] = "contrib"
 projects[module_filter][version] = "1.8"
 
-projects[media_youtube][subdir] = "contrib"
-projects[media_youtube][version] = "2.0-rc4"
 
 projects[markdown][subdir] = "contrib"
 projects[markdown][version] = "1.2"
