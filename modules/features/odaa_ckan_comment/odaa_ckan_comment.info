@@ -7,7 +7,6 @@ version = 7.x-1.0
 project = odaa_ckan_comment
 dependencies[] = ctools
 dependencies[] = features
-dependencies[] = node
 dependencies[] = strongarm
 dependencies[] = text
 dependencies[] = views

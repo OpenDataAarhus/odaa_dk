@@ -28,16 +28,38 @@ function odaa_user_user_login(&$edit, $account) {
   }
   else {
     // User does not exists in CKAN, lets create one.
-    $options['name'] = $account->name;
+    $options['name'] = strtolower($account->name);
     $data = _odaa_user_api_call('/user_create', $options);
     if (!$data) {
       watchdog('odaa_user', 'User create call failed for user: %name', array('%name' => $account->name), WATCHDOG_ERROR);
     }
   }
 
+  // Save API key from CKAN.
+  if (!empty($data->apikey)) {
+    $account->field_ckan_api_key['und'][0]['value'] = $data->apikey;
+  }
+
   // Save user account.
-  $account->field_ckan_api_key['und'][0]['value'] = $data->apikey ;
   user_save($account);
+}
+
+/*
+ * Implements hook_form_FORM_ID_alter().
+ */
+function odaa_user_form_user_register_form_alter(&$form, $form_state) {
+  $form['#validate'][] = 'odaa_user_register_form_validate';
+}
+
+/*
+ * Validate function for user registration.
+ *
+ * Check if username contains uppercase letters.
+ */
+function odaa_user_register_form_validate($form, &$form_state) {
+  if (preg_match('/[A-Z]/', $form_state['values']['name'])) {
+    form_set_error('name', t('Username must be in lowercase'));
+  }
 }
 
 /**
