@@ -19,9 +19,6 @@
   projects[bu][subdir] = "contrib"
   projects[bu][version] = "1.2"
 
-  projects[captcha][subdir] = "contrib"
-  projects[captcha][version] = "1.1"
-
   projects[coder][subdir] = "contrib"
   projects[coder][version] = "2.0-beta2"
 
@@ -108,8 +105,8 @@
   projects[heartbeat][subdir] = "contrib"
   projects[heartbeat][version] = "1.1"
 
-  projects[httpbl][subdir] = "contrib"
-  projects[httpbl][version] = "1.0"
+  projects[honeypot][subdir] = "contrib"
+  projects[honeypot][version] = "1.17"
 
   projects[html5_tools][subdir] = "contrib"
   projects[html5_tools][version] = "1.2"
