@@ -16,6 +16,7 @@ function odaa_notifications_flag_default_flags() {
     'global' => 0,
     'types' => array(
       0 => 'forum_topic',
+      1 => 'use_case',
     ),
     'flag_short' => 'Follow',
     'flag_long' => '',
@@ -40,11 +41,11 @@ function odaa_notifications_flag_default_flags() {
     'access_author' => '',
     'show_contextual_link' => 0,
     'i18n' => 0,
+    'api_version' => 3,
     'module' => 'odaa_notifications',
     'locked' => array(
       0 => 'name',
     ),
-    'api_version' => 3,
   );
   return $flags;
 

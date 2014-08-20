@@ -1,7 +1,7 @@
 name = ODAA Notifications
 core = 7.x
 package = ODAA
-version = 7.x-0.2
+version = 7.x-0.3
 project = odaa_notifications
 dependencies[] = comment
 dependencies[] = entity
@@ -10,5 +10,3 @@ dependencies[] = mimemail
 dependencies[] = rules
 features[features_api][] = api:2
 features[flag][] = follow
-features[rules_config][] = rules_notify_on_new_comments
-features[rules_config][] = rules_send_mail_to_subscribers
