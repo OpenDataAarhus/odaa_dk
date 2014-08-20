@@ -7,7 +7,7 @@
  base theme = odaa
 
 ;----------// Stylesheets
- stylesheets[all][] = css/odaa.styles.css
+ stylesheets[all][] = css/styles.css
 
 ;----------// Override stylesheets
  stylesheets[all][] = system.messages.css
