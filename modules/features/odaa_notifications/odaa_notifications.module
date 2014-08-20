@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ODAA Notifications feature.
+ */
+
+include_once 'odaa_notifications.features.inc';
