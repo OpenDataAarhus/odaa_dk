@@ -16,7 +16,7 @@
 /**
  * Implements theme_menu_tree().
  *
- * Addes wrapper clases for the main menu and secondary menu.
+ * Adds wrapper classes for the main menu and secondary menu.
  */
 
 // Main menu
@@ -80,7 +80,7 @@ function odaa_menu_link($variables) {
 }
 
 /**
- * Helper function for menu blocks
+ * Helper function for menu blocks.
  */
 function _odaa_menu_styling($variables, $class, $icon = FALSE, $span = FALSE) {
   $element = $variables['element'];
@@ -91,14 +91,14 @@ function _odaa_menu_styling($variables, $class, $icon = FALSE, $span = FALSE) {
     $sub_menu = drupal_render($element['#below']);
   }
 
-  // Add default class to a tag
+  // Add default class to a tag.
   $element['#localized_options']['attributes']['class'][] = $class;
 
   // Make sure text string is treated as html by l function.
-  $element['#localized_options']['html'] = true;
+  $element['#localized_options']['html'] = TRUE;
 
   $output = l($element['#title'], $element['#href'], $element['#localized_options']);
-  return '<li' . drupal_attributes($element['#attributes']) . '>' . (($span)?'<span>':'') . $output . (($span)?'</span>':'') . $sub_menu . "</li>\n";
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . (($span) ? '<span>' : '') . $output . (($span) ? '</span>' : '') . $sub_menu . "</li>\n";
 }
 
 /**
@@ -110,14 +110,14 @@ function odaa_menu_link__menu_block__4($variables) {
 
 /**
  * Implements theme_menu_link__menu_block().
-*/
+ */
 function odaa_menu_link__menu_block__5($variables) {
   return _odaa_menu_styling($variables, 'spotbox-menu--list-item', TRUE);
 }
 
 /**
  * Implements theme_menu_link__menu_block().
-*/
+ */
 function odaa_menu_link__menu_block__6($variables) {
   return _odaa_menu_styling($variables, 'spotbox-menu--list-item', TRUE);
 }
@@ -129,7 +129,15 @@ function odaa_menu_link__menu_block__6($variables) {
  */
 function odaa_preprocess_html(&$variables) {
   // Add conditional CSS for IE.
-  drupal_add_css(path_to_theme() . '/css/odaa.ie8.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
+  drupal_add_css(path_to_theme() . '/css/odaa.ie8.css', array(
+    'group' => CSS_THEME,
+    'browsers' => array(
+      'IE' => 'lte IE 8',
+      '!IE' => FALSE,
+    ),
+    'weight' => 999,
+    'preprocess' => FALSE,
+  ));
 
   // Remove default classes.
   $variables['classes_array'] = array();
@@ -144,17 +152,18 @@ function odaa_preprocess_html(&$variables) {
     $variables['classes_array'][] = 'logged-in';
   }
 
-  // Add first argument to body
+  // Add first argument to body.
   $url = arg();
   if (isset($url[1])) {
     $variables['classes_array'][] = 'node-id-' . $url[1];
   }
 
-  // Add the node type class (except for frontpage).
+  // Add the node type class (except for front page).
   if (isset($variables['page']['#type']) && empty($variables['is_front'])) {
-    if(arg(0) == 'user'){
+    if (arg(0) == 'user') {
       $variables['classes_array'][] = 'user';
-    }else{
+    }
+    else {
       $variables['classes_array'][] = drupal_html_class('node-type-' . $variables['page']['#type']);
     }
   }
@@ -171,7 +180,8 @@ function odaa_preprocess_block(&$variables) {
         $variables['classes_array'][] = 'search-spotbox';
         break;
 
-      case 3: // Sub menu
+      case 3:
+        // Sub menu.
         $variables['classes_array'][] = 'sub-menu-wrapper';
         break;
 
@@ -185,29 +195,30 @@ function odaa_preprocess_block(&$variables) {
  * Implements template_preprocess_pageß().
  */
 function odaa_preprocess_page(&$variables, $hook) {
-  // Unset default frontpage message.
+  // Unset default front page message.
   if (isset($variables['is_front'])) {
     unset($variables['page']['content']['system_main']['default_message']);
   }
 
   // Template suggestion for add content node.
   if ((arg(0) == 'node') && (arg(1) == 'add') || (arg(0) == 'node') && (arg(2) == 'edit')) {
-    $variables['theme_hook_suggestions'][] =  'page__nodeform';
+    $variables['theme_hook_suggestions'][] = 'page__nodeform';
   }
 
   // Template suggestion for edit user.
   if ((arg(0) == 'user') && (arg(2) == 'edit')) {
-    $variables['theme_hook_suggestions'][] =  'page__user_edit';
+    $variables['theme_hook_suggestions'][] = 'page__user_edit';
   }
 
   // Template suggestion for edot comment node.
   if ((arg(0) == 'comment') && (arg(2) == 'edit')) {
-    $variables['theme_hook_suggestions'][] =  'page__comment__nodeform';
+    $variables['theme_hook_suggestions'][] = 'page__comment__nodeform';
   }
 }
 
 /**
- * Returns HTML for a list of recent comments to be displayed in the comment block.
+ * Returns HTML for a list of recent comments to be displayed in the comment
+ * block.
  *
  * @ingroup themeable
  */
@@ -244,73 +255,62 @@ function odaa_form_alter(&$form, &$form_state, $form_id){
   switch ($form_id) {
     case 'user_register_form':
       unset($form['account']['account']);
-      $form['#prefix']  =
-        '<div class="page--content-wrapper">
-           <section class="page--content">
-             <h1 class="page--title">'.t('User register').'</h1>';
-      $form['#suffix']  =
-          '</section>
-         </div>';
+      $form['#prefix'] = '<div class="page--content-wrapper"><section class="page--content"><h1 class="page--title">' . t('User register') . '</h1>';
+      $form['#suffix'] = '</section></div>';
       break;
+
     case 'user_login':
       unset($form['name']['#description']);
       unset($form['pass']['#description']);
-      $form['#prefix']  =
-          '<div class="page--content-wrapper">
-             <section class="page--content">
-               <h1 class="page--title">'.t('User login').'</h1>';
-      $form['#suffix']  =  '</div>';
-      $form['actions']['#prefix']  =
-              '<div class="user-login--actions">
-              <a href="/user/password" class="user-login--forgot-password">'.t('Forgot password?').'</a>';
-      $form['#suffix']  =
-          '</section>
-         </div>';
+      $form['#prefix'] = '<div class="page--content-wrapper"><section class="page--content"><h1 class="page--title">' . t('User login') . '</h1>';
+      $form['#suffix'] = '</div>';
+      $form['actions']['#prefix'] = '<div class="user-login--actions"><a href="/user/password" class="user-login--forgot-password">' . t('Forgot password?') . '</a>';
+      $form['#suffix'] = '</section></div>';
       break;
+
     case 'user_pass':
       unset($form['name']['#description']);
-      $form['#prefix']  =
-        '<div class="page--content-wrapper">
-          <section class="page--content">
-            <h1 class="page--title">'.t('User register').'</h1>';
-      $form['#suffix']  =
-          '</section>
-         </div>';
+      $form['#prefix'] = '<div class="page--content-wrapper"><section class="page--content"><h1 class="page--title">' . t('User register') . '</h1>';
+      $form['#suffix'] = '</section></div>';
       break;
+
     case 'views_exposed_form':
       $form['sort_by']['#attributes']['class'][] = 'search--actions-sort';
       $form['title']['#attributes']['class'][] = 'search-form--content-block--input';
       $form['submit']['#attributes']['class'][] = 'search-form--content-block--button';
       unset($form['reset']);
-    break;
+      break;
+
     case 'user_login_block':
       unset($form['name']['#description']);
-      $form['#prefix']  =
-        '<div class="page--content-wrapper">
-          <section class="page--content">';
-      $form['#suffix']  =
-          '</section>
-         </div>';
+      $form['#prefix'] = '<div class="page--content-wrapper"><section class="page--content">';
+      $form['#suffix'] = '</section></div>';
       break;
   }
 }
 
+/**
+ * MISSING DOCUMENTATION.
+ *
+ * @param $variables
+ *
+ * @return string
+ */
 function odaa_breadcrumb($variables) {
   $breadcrumb = $variables['breadcrumb'];
-  $separator = '/';
 
-  // Edit node breadcrumb
+  // Edit node breadcrumb.
   if (arg(2) === 'edit') {
-    // Store home
+    // Store home.
     $home = $breadcrumb[0];
 
-    // Empty the array
+    // Empty the array.
     $breadcrumb = array();
 
-    // Add home
+    // Add home.
     $breadcrumb[] = $home;
 
-    // Add custom text
+    // Add custom text.
     $breadcrumb[] = t('Edit');
   }
 
