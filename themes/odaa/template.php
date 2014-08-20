@@ -129,7 +129,7 @@ function odaa_menu_link__menu_block__6($variables) {
  */
 function odaa_preprocess_html(&$variables) {
   // Add conditional CSS for IE.
-  drupal_add_css(path_to_theme() . '/css/odaa.ie8.css', array(
+  drupal_add_css(path_to_theme() . '/css/ie8.css', array(
     'group' => CSS_THEME,
     'browsers' => array(
       'IE' => 'lte IE 8',
