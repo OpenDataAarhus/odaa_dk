@@ -1,0 +1,205 @@
+/**
+ * Dataset
+ *
+ * @author magnify
+ */
+
+
+/* Dataset list
+   ========================================================================== */
+.dataset--list-wrapper {
+  @extend %section-spacing;
+}
+
+.dataset--list-heading {
+  @extend %module-list-alternate-heading;
+}
+
+.dataset--empty-text {
+  @extend %empty-text;
+
+  font-size: $font-size-larger;
+}
+
+.dataset--list {
+  @extend %module-list-alternate;
+}
+
+.dataset--list-item {
+  @extend %module-list-alternate-item;
+}
+
+.dataset--list-icon {
+  @extend %module-list-alternate-icon;
+}
+
+.dataset--list-content {
+  @extend %module-list-alternate-content;
+}
+
+
+.dataset--list-meta {
+  @extend %module-list-alternate-meta;
+}
+
+.dataset--list-posted {
+  @extend %module-list-alternate-posted;
+}
+
+.dataset--list-author {
+  @extend %module-list-alternate-author;
+}
+
+.dataset--list-footer {
+  @extend %module-list-alternate-footer;
+}
+
+.dataset--list-footer-link {
+  @extend %module-list-alternate-footer-link;
+}
+
+.dataset--list-tags {
+  float: left;
+  padding-left: 0;
+}
+
+.dataset--list-tag-item {
+  display: inline-block;
+}
+
+.dataset--list-tag {
+  @include font-normal();
+  @extend .label;
+}
+
+
+/* Dataset actions
+   ========================================================================== */
+.dataset--list-actions {
+  text-align: right;
+}
+
+.dataset--actions-sort {
+  min-width: 35%;
+}
+
+/* Dataset tabs
+   ========================================================================== */
+.dataset--tabs {
+  @include border-radius($base-border-radius $base-border-radius 0 0);
+  @extend .tabs;
+
+  background-color: $gray-light;
+  border-bottom: 1px solid $gray;
+  margin-top: -$large-spacing;
+  margin-bottom: $large-spacing;
+  margin-right: -$large-spacing;
+  margin-left: -$large-spacing;
+  padding-top: $large-spacing;
+  padding-right: $large-spacing;
+  padding-left: $large-spacing;
+
+  /* Can't add a class because it is hardcoded in ODAA */
+  li {
+    margin-right: 11px;
+
+    a,
+    a:hover {
+      border-top: 1px solid $gray;
+      border-right: 1px solid $gray;
+      border-left: 1px solid $gray;
+    }
+  }
+
+  li.active {
+    margin-right: 11px;
+
+    a,
+    a:hover {
+      background-color: $white;
+      border-bottom: 1px solid $white;
+      margin-bottom: -1px;
+    }
+  }
+}
+
+
+/* Dataset list resources
+   ========================================================================== */
+.dataset--data-resources {
+  @extend %section-spacing;
+}
+
+.dataset--data-resources--list {
+  padding-left: 0;
+}
+
+.dataset--data-resources--list-item {
+  @extend %zebra-list;
+
+  overflow: hidden;
+  padding: $medium-spacing $medium-spacing $medium-spacing 60px;
+  position: relative;
+
+  .dataset--data-resources--list-info {
+    float: left;
+  }
+
+  .ckan--format-label {
+    left: 10px;
+    position: absolute;
+    top: 10px;
+  }
+
+  .dataset--data-resources--list-description {
+    margin-bottom: 0;
+  }
+
+  .dataset--data-resources--list-description-empty {
+    @extend %empty-text;
+  }
+
+  .dataset--data-resources--list-actions {
+    float: right;
+    margin-top: 2px;
+  }
+
+  .dataset--data-resources--list-actions-preview {
+    @extend %button-theme;
+  }
+
+  .dataset--data-resources--list-actions-download {
+    @extend %button-action;
+  }
+}
+
+
+
+/* Dataset list tags
+   ========================================================================== */
+.dataset--tags {
+  @extend %section-spacing;
+}
+
+.dataset--tags-list {
+  @include border-radius($base-border-radius);
+
+  background-color: $base-color-odd;
+  padding: $large-spacing;
+
+  .dataset--tags-list-item {
+    display: inline-block;
+    margin-right: 6px;
+  }
+
+  .dataset--tags-list-tag {
+    @extend .label;
+  }
+}
+
+
+/* Dataset list tags
+   ========================================================================== */
+.dataset--additional-info {
+  @extend %section-spacing;
+}
