@@ -1,0 +1,212 @@
+/**
+ * Layout
+ *
+ * Base layout stuff
+ *
+ * @author magnify
+ */
+
+
+/* Body */
+body {
+  background: url('../images/pw-maze-white-pattern.png');
+}
+
+
+/* Page
+   ========================================================================== */
+#page {
+  @include zen-grid-container;
+}
+
+
+/* Site header
+   ========================================================================== */
+.site-header {
+  background-color: $white;
+}
+
+.header-wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+.header-inner {
+  overflow: hidden;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+
+/* Logo
+   ========================================================================== */
+
+.logo {
+  @include zen-grid-item(3, 1);
+
+  padding-left: 0;
+
+  /* Media queries */
+  @include small() {
+    @include zen-clear(both);
+    @include zen-grid-item(12, 1);
+  }
+}
+
+
+/* Content
+   ========================================================================== */
+
+.content-wrapper {
+  border-top: 20px solid transparentize($base-tertiary-color, .7);
+  clear: both;
+  overflow: hidden;
+  padding-bottom: $large-spacing;
+}
+
+.content-inner {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  overflow: visible;
+}
+
+
+/* Layouts
+   ========================================================================== */
+
+/* Default layout */
+.page {
+  .primary-content {
+    @include zen-grid-item(9, 1, right);
+  }
+
+  .secondary-content {
+    @include zen-grid-item(3, 1);
+  }
+
+  .tertiary-content {
+    @include zen-clear(right);
+    @include zen-grid-item(9, 1, right);
+
+    padding-right: 0;
+    padding-left: 0;
+
+    .spotbox:nth-child(odd) {
+      @include zen-clear(left);
+      @include zen-grid-item(6, 1);
+    }
+
+    .spotbox:nth-child(even) {
+      @include zen-grid-item(6, 1, right);
+    }
+  }
+}
+
+
+/* Frontpage layout */
+.front {
+  .primary-content {
+    @include zen-grid-item(8, 1);
+  }
+
+  .secondary-content {
+    @include zen-grid-item(4, 1, right);
+  }
+
+  .tertiary-content {
+    @include zen-clear(left);
+    @include zen-grid-item(8, 1);
+
+    padding-right: 0;
+    padding-left: 0;
+
+    .spotbox:nth-child(odd) {
+      @include zen-clear(right);
+      @include zen-grid-item(6, 1);
+    }
+
+    .spotbox:nth-child(even) {
+      @include zen-grid-item(6, 1, right);
+    }
+  }
+}
+
+
+/* Page layout */
+.node-type-page {
+  .primary-content {
+    @include zen-grid-item(9, 1, right);
+  }
+
+  .secondary-content {
+    @include zen-grid-item(3, 1);
+  }
+
+  .tertiary-content {
+    @include zen-clear(right);
+    @include zen-grid-item(9, 1, right);
+
+    padding-right: 0;
+    padding-left: 0;
+
+    .spotbox:nth-child(odd) {
+      @include zen-clear(left);
+      @include zen-grid-item(6, 1);
+    }
+
+    .spotbox:nth-child(even) {
+      @include zen-grid-item(6, 1, right);
+    }
+  }
+}
+
+
+/* Community layout */
+.node-id-22 {
+  .tertiary-content {
+    @include zen-clear(right);
+    @include zen-grid-item(9, 1, right);
+
+    padding-right: 0;
+    padding-left: 0;
+
+    .spotbox:nth-child(1) {
+      @include zen-grid-item(4, 1);
+    }
+
+    .spotbox:nth-child(2) {
+      @include zen-grid-item(4, 5, right);
+    }
+
+    .spotbox:nth-child(3) {
+      @include zen-grid-item(4, 1, right);
+
+      clear: none;
+    }
+  }
+}
+
+.page,
+.front,
+.node-type-page,
+.node-id-22 {
+  @include small() {
+    .primary-content,
+    .secondary-content,
+    .tertiary-content {
+      @include zen-clear(both);
+      @include zen-grid-item(12, 1);
+
+      .spotbox,
+      .spotbox:nth-child(odd),
+      .spotbox:nth-child(even) {
+        @include zen-clear(both);
+        @include zen-grid-item(12, 1);
+      }
+    }
+  }
+}

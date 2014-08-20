@@ -1,0 +1,250 @@
+/**
+ * Drupal
+ *
+ * @author magnify
+ */
+
+
+
+/* Fields
+   ========================================================================== */
+.field-image-content {
+  margin-bottom: $large-spacing;
+
+  img {
+    @include border-radius($base-border-radius);
+  }
+}
+
+.field-body,
+.field-comment-body {
+  ul {
+    margin-bottom: $medium-spacing;
+  }
+
+  li {
+    list-style: circle;
+  }
+}
+
+
+/* Search
+   ========================================================================== */
+.search-form--content-block .form-item .search-form--content-block--input {
+  /* Because of div wrappers we can't easily get the button displayed next to
+   * the input so we make the input width 100% instead */
+  min-width: 100%;
+}
+
+
+/* Views
+   ========================================================================== */
+.view-empty {
+  @extend .messages;
+  @extend .error;
+}
+
+
+/* User login
+   ========================================================================== */
+#user-login-form {
+  .item-list ul {
+    padding-left: 0;
+  }
+
+  .item-list li {
+    list-style: disc inside;
+  }
+}
+
+
+/* Throbber
+   ========================================================================== */
+.ajax-progress .throbber {
+  @extend .icon-spinner;
+
+  /* Make sure the background image is not displayed */
+  background: none !important;
+  display: inline-block;
+  font-size: $font-size-larger;
+  height: 15px;
+  margin: 2px;
+  position: relative;
+  top: 5px;
+  width: 15px;
+
+  /* Required for extending icon */
+  &:before {
+    @extend .icon-spin;
+
+    font-family: $base-icon-library-font;
+  }
+}
+
+
+/* Forms
+   ========================================================================== */
+
+.node-form,
+#user-profile-form {
+  .form-item {
+    margin-bottom: $large-spacing;
+  }
+
+  .description {
+    @include opacity(.65);
+  }
+
+  .password-strength,
+  .password-confirm {
+    margin-top: 0;
+  }
+}
+
+.form-actions {
+  overflow: hidden;
+
+  input {
+    margin-left: $medium-spacing;
+  }
+
+  #edit-submit {
+    @extend %button-action;
+
+    float: right;
+  }
+}
+
+.field-type-image {
+  @include border-radius($base-border-radius);
+
+  border: 1px solid transparentize($black, .6);
+  margin-top: $large-spacing;
+  margin-bottom: $large-spacing;
+  padding: $large-spacing;
+
+  .form-file {
+    @extend %button;
+
+    margin-right: $large-spacing;
+    padding-top: 9px;
+    padding-button: 9px;
+  }
+
+  .description {
+    @include opacity(.5);
+    @extend %section-spacing;
+  }
+
+  .button {
+    margin-left: $medium-spacing;
+  }
+
+  .button.remove {
+    @extend %button-danger;
+  }
+}
+
+.text-format-wrapper .filter-wrapper {
+  /* Hide the input filter selector for textareas */
+  display: none;
+}
+
+
+/* Form actions */
+.form-actions {
+  padding-top: $large-spacing;
+  text-align: right;
+}
+
+/* Form submit buttons */
+.form-submit {
+  @extend .button;
+}
+
+
+/* Context override
+   ========================================================================== */
+.context-editor-title {
+  border-bottom: $base-border-style;
+  font-size: $font-size-medium;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.context-help {
+  /* For now we hide the help, the text is way to long and should only be
+   * visible if looking for it */
+  display: none !important;
+}
+
+.editing-context-label {
+  /* Hide the "Now editing" text, the markup order makes it difficult to
+   * show it in an optimal position */
+  display: none !important;
+}
+
+#context-inline-editor li {
+  border-bottom: $base-border-style;
+  margin-bottom: 10px;
+  margin-left: 0;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+div.context-editor div.label {
+  @include border-radius(0);
+
+  background-color: transparent;
+  clear: both;
+  padding: 0;
+}
+
+div.context-editor div.label.top {
+  color: $font-color-primary;
+}
+
+#context-inline-editor li.context-editable div.links .edit,
+#context-inline-editor li.context-editing div.links .done {
+  @extend .button;
+
+  padding: 3px 20px;
+}
+
+#context-inline-editor li.context-editing div.links .edit.active {
+  /* Hide the edit button when editing */
+  display: none;
+}
+
+div.context-editor div.context-editable {
+  fieldset {
+    padding: 0;
+  }
+
+  legend {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+/* Comments */
+.comments--list-item-actions {
+  .links {
+    display: inline;
+    padding-left: 0;
+  }
+
+  li {
+    display: inline;
+    margin-left: 10px;
+  }
+
+  /* Used when display in CKAN */
+  &.hide {
+    .links {
+      display: none;
+    }
+  }
+}

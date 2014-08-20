@@ -1,0 +1,54 @@
+/**
+ * Use cases
+ *
+ * @author magnify
+ */
+
+
+
+%use-cases--list-item {
+  @extend %module--block;
+}
+
+.use-cases--wrapper {
+  @extend %section-spacing;
+
+  margin-right: -10px;
+  margin-left: -10px;
+  overflow: hidden;
+  padding-top: 0;
+
+  .use-cases--list-item-inner {
+    min-height: 341px;
+  }
+}
+
+.use-cases--list-item-first {
+  @include zen-clear(left);
+  @include zen-grid-item(4, 1);
+  @extend %use-cases--list-item;
+}
+
+.use-cases--list-item-second {
+  @include zen-grid-item(4, 5);
+  @extend %use-cases--list-item;
+}
+
+.use-cases--list-item-third {
+  @include zen-grid-item(4, 9);
+  @extend %use-cases--list-item;
+}
+
+.use-cases--list-item-inner {
+  @extend %module--block--inner;
+}
+
+.use-cases--list-footer {
+  @extend %module-list-alternate-footer;
+
+  text-align: left;
+}
+
+.use-cases--list-footer-link {
+  @extend %module-list-alternate-footer-link;
+}

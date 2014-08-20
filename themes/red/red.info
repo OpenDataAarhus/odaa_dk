@@ -1,0 +1,16 @@
+;----------// Theme Information
+ name = Red test theme
+ description = Theme for the Open Data Aarhus project
+ core = 7.x
+ release = 7.x-1.x
+
+ base theme = odaa
+
+;----------// Stylesheets
+ stylesheets[all][] = css/odaa.styles.css
+
+;----------// Override stylesheets
+ stylesheets[all][] = system.messages.css
+ stylesheets[all][] = system.menus.css
+ stylesheets[all][] = system.theme.css
+ stylesheets[all][] = search.css

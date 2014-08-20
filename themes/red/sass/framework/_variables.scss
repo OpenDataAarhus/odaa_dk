@@ -1,0 +1,109 @@
+/**
+ * Variables
+ *
+ * @author magnify
+ */
+
+
+
+/* Spacing variables
+   ========================================================================== */
+
+$large-spacing:                   20px;
+$medium-spacing:                  10px;
+$small-spacing:                   5px;
+
+
+
+/* Zen Grid variables
+   ========================================================================== */
+
+$zen-column-count: 12;
+$zen-gutter-width: 20px;
+$box-sizing-polyfill-path: "/sites/odaa.dk/themes/odaa/scripts/boxsizing.htc";
+
+
+/* Standard color definitions
+   ========================================================================== */
+
+$white:                          #fff !default;
+$black:                          #000 !default;
+$gray:                           #d5d5d5 !default;
+$gray-light:                     lighten($gray, 10%);
+$gray-lighter:                   lighten($gray, 15%);
+$gray-dark:                      darken($gray, 10%);
+$gray-darker:                    darken($gray, 25%);
+$gray-darkest:                   darken($gray, 35%);
+$red:                            #a32e10;
+$green:                          #528c10;
+$yellow:                         #f0cb28;
+
+
+
+/* Theme color definitions
+   ========================================================================== */
+
+$base-primary-color:             #96b000; //Orange
+$base-secondary-color:           $white;
+$base-tertiary-color:            #e5420c; //Green
+$base-color-odd:                 darken($gray-lighter, 2%);
+$base-color-even:                $gray-lighter;
+
+
+/* Font library
+   ========================================================================== */
+
+$base-icon-library-font:         "FontAwesome";
+
+
+
+/* Typography
+   ========================================================================== */
+
+$font-regular:                    "exo-regular";
+$font-regular-italic:             "exo-regular-italic";
+$font-bold:                       "exo-demi-bold";
+$font-bold-italic:                "exo-demi-bold_italic";
+$font-color-primary:              darken($white, 75%);
+$font-color-secondary:            transparentize($black, .3);
+$font-alternate:                  "LaconicRegular";
+
+
+/* Font variables
+   ========================================================================== */
+
+$base-font-size:                  14px;
+$base-line-height:                24px;
+$base-font-family:                $font-regular, "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+$base-font-weight-normal:         normal;
+$base-font-weight-bold:           normal;
+
+
+
+/* Font sizes
+   ========================================================================== */
+
+$font-size-giga:                  200%;
+$font-size-largest:               170%;
+$font-size-larger:                160%;
+$font-size-large:                 130%;
+$font-size-medium:                110%;
+$font-size-reset:                 100%;
+$font-size-small:                 85%;
+$font-size-tiny:                  75%;
+
+
+/* Layout
+   ========================================================================== */
+
+$base-border-radius:              5px;
+$base-box-shadow:                 0 0 5px $gray;
+$base-border-style:               1px dashed darken($white, 10%);
+
+
+
+/* Links
+   ========================================================================== */
+
+$link-color:                      $base-primary-color;
+$link-color-hover:                darken($base-primary-color, 8%);

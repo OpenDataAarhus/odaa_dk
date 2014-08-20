@@ -1,0 +1,177 @@
+/**
+ * Spotbox [refactored]
+ *
+ * @author magnify
+ */
+
+
+$spotbox-background-color:        $white;
+
+
+/* Spotbox
+   ========================================================================== */
+.spotbox {
+  @extend %module--block;
+}
+
+.spotbox--content {
+  a:link {
+    color: $link-color;
+  }
+
+  a:visited {
+    color: darken($link-color, 5%);
+  }
+}
+
+
+.spotbox--inner {
+  @extend %module--block--inner;
+
+  background-color: $spotbox-background-color;
+}
+
+
+/* Spotbox header */
+.spotbox--header {
+  @extend %module--block--header;
+}
+
+.spotbox--list-header {
+  @extend %module--block--list-header;
+}
+
+
+.spotbox--content {
+  @extend %module--block--content;
+}
+
+.spotbox--content-empty {
+  @extend %empty-text;
+}
+
+
+/* Spotbox list */
+.spotbox--list {
+  @extend %module--block--list;
+}
+
+.spotbox--list-item {
+  @extend %module--block--list-item;
+}
+
+.spotbox--list-posted {
+  @extend %module--block--list-posted;
+}
+
+.spotbox--list-show-more {
+  @include font-bold();
+
+  border-top: 1px dashed transparentize($black, .9);
+  margin-top: $medium-spacing;
+  margin-bottom: 0;
+  padding-top: $medium-spacing;
+  text-align: right;
+}
+
+/* Spotbox images */
+.spotbox--image {
+  @extend %module--block--image;
+}
+
+
+.spotbox--list-image {
+  @extend %module--block--list-image;
+}
+
+
+.spotbox--list-link {
+  @extend %module--block--list-link;
+}
+
+
+/* Spotbox footer */
+.spotbox--footer {
+  @extend %module--block--footer;
+}
+
+.spotbox--read-more {
+  @extend %module--block--read-more;
+}
+
+
+/* Spotbox menu
+   ========================================================================== */
+.spotbox-menu {
+  @extend %module--block;
+}
+
+.spotbox-menu--inner {
+  @extend %module--block--inner;
+}
+
+.spotbox-menu--header {
+  @extend %module--block--header;
+}
+
+.spotbox-menu--list {
+  @extend %module--block--list;
+}
+
+.spotbox-menu--list-item {
+  @extend .icon-angle-right;
+
+  &:before {
+    font-family: $base-icon-library-font;
+    margin-right: 5px;
+  }
+}
+
+.spotbox-menu--list-item,
+.spotbox-menu--filter-list-item {
+  @extend %module--block--list-item;
+
+  /* If the class is on the element */
+  .active {
+    &:link,
+    &:visited,
+    &:hover,
+    &:focus,
+    &:active {
+      color: $link-color-hover;
+    }
+  }
+}
+
+.spotbox-menu--list-remove-all {
+  @extend %module--block--list-item;
+
+  a:link,
+  a:visited,
+  a:focus {
+    color: $font-color-primary;
+  }
+
+  a:hover,
+  a:active {
+    color: $link-color-hover;
+  }
+}
+
+.spotbox-menu--list-show-more {
+  border-top: 1px dashed transparentize($black, .9);
+  margin-top: $medium-spacing;
+  margin-bottom: 0;
+  padding-top: $medium-spacing;
+
+  a:link,
+  a:visited,
+  a:focus {
+    @include font-bold();
+  }
+
+  a:hover,
+  a:active {
+    color: darken($link-color-hover, 10%);
+  }
+}
