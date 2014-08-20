@@ -1,0 +1,34 @@
+<?php
+/**
+ * @file
+ *
+ * Serv dynmaic css file.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function odaa_css_menu() {
+  $items = array();
+
+  $items['css'] = array(
+    'title' => 'CSS',
+    'page callback' => 'odaa_css_css',
+    'access arguments' => array('access content'),
+    'type' => MENU_SUGGESTED_ITEM,
+  );
+
+  return $items;
+}
+
+/**
+ * Serv theme css file.
+ */
+function odaa_css_css() {
+  $css_path = drupal_get_path('theme', $GLOBALS['theme_key']) . '/css/styles.css';
+  if (file_exists($css_path)) {
+    $output = file_get_contents($css_path);
+
+    echo $output; exit();
+  }
+}
