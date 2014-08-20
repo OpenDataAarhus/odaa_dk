@@ -222,6 +222,9 @@ projects[scheduler][version] = "1.1"
 projects[strongarm][subdir] = "contrib"
 projects[strongarm][version] = "2.0"
 
+projects[themekey][subdir] = "contrib"
+projects[themekey][version] = "3.2"
+
 projects[token][subdir] = "contrib"
 projects[token][version] = "1.5"
 
