@@ -1,3 +1,9 @@
+<?php
+/**
+ * @file
+ * MISSING DOCUMENTATION.
+ */
+?>
 <div class="search-spotbox">
   <div class="search-spotbox--inner">
     <h3 class="search-spotbox--header"><?php print t('Search for'); ?></h3>

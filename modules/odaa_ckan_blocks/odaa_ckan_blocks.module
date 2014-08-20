@@ -51,13 +51,13 @@ function odaa_ckan_blocks_theme() {
     'odaa_ckan_blocks_datasets' => array(
       'variables' => array('count' => NULL),
       'template' => 'odaa-ckan-blocks-datasets',
-      'path' => $module_path.'/templates',
+      'path' => $module_path . '/templates',
     ),
     // Recent changes template.
     'odaa_ckan_blocks_recent_dataset_changes' => array(
       'variables' => array('list' => NULL),
       'template' => 'odaa-ckan-blocks-recent-dataset-changes',
-      'path' => $module_path.'/templates',
+      'path' => $module_path . '/templates',
     ),
   );
 }
@@ -68,7 +68,7 @@ function odaa_ckan_blocks_theme() {
  * Cached for 5 minutes.
  *
  * @return string
- *  Themed HTML.
+ *   Themed HTML.
  */
 function _odaa_ckan_blocks_datasets() {
   $cid = basename(__FILE__) . '_datasets';
@@ -84,7 +84,10 @@ function _odaa_ckan_blocks_datasets() {
   }
 
   // Theme datasets and return it.
-  return array('#theme' => 'odaa_ckan_blocks_datasets', '#count' => sizeof($data));
+  return array(
+    '#theme' => 'odaa_ckan_blocks_datasets',
+    '#count' => count($data),
+  );
 }
 
 /**
@@ -93,7 +96,7 @@ function _odaa_ckan_blocks_datasets() {
  * Cached for 5 minutes.
  *
  * @return string
- *  Themed HTML
+ *   Themed HTML.
  */
 function _odaa_ckan_blocks_recent_dataset_changes() {
   $cid = 'current_package_list_with_resources';

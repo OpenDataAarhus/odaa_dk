@@ -53,13 +53,13 @@ function odaa_comment_menu() {
 }
 
 /**
- * Load comments for a dataset.
+ * Load comments for a data-set.
  *
  * @param string $hash
- *  CKAN dataset id
+ *   CKAN data-set id.
+ *
  * @return mixed
- *  JSON status code
- *  JSON data containing comment(s)
+ *   JSON status code. JSON data containing comment(s)
  */
 function _odaa_comment_view($hash) {
   global $user;
@@ -67,9 +67,10 @@ function _odaa_comment_view($hash) {
   $nid = _odaa_comment_hash_to_nid($hash);
 
   $data = array(
-      'status' => FALSE,
-      'data' => array(),
+    'status' => FALSE,
+    'data' => array(),
   );
+
   if (isset($nid)) {
     // Get comment id's.
     $comment_ids = db_select('comment', 'c')
@@ -104,14 +105,17 @@ function _odaa_comment_view($hash) {
     }
   }
   // Always return in JSON format.
-  return drupal_json_output($data);
+  drupal_json_output($data);
 }
 
 /**
- * Count the number of comments attched to a given entity.
+ * Count the number of comments attached to a given entity.
  *
- * @param type $hash
- * @return string json encoded
+ * @param string $hash
+ *   CKAN data-set id.
+ *
+ * @return string
+ *  JSON encoded.
  */
 function _odaa_comment_count($hash) {
   // Find node matching hash.
@@ -142,20 +146,14 @@ function _odaa_comment_count($hash) {
   }
 
   // Always return in JSON format.
-  return drupal_json_output($data);
+  drupal_json_output($data);
 }
 
 /**
- * Add comment to dataset.
+ * Add comment to data-set.
  *
- * @global mixed $user
- *  Drupal user object
- * @param string $hash
- *  CKAN dataset id
- * @param string $message
- *  Comment message
  * @return mixed
- *  JSON status
+ *   JSON status.
  */
 function _odaa_comment_add() {
   // Check that the post contains a hash value.
@@ -169,7 +167,7 @@ function _odaa_comment_add() {
       global $user;
 
       // Create comment.
-      $comment = (object)array(
+      $comment = (object) array(
         'nid' => $nid,
         'cid' => 0,
         'pid' => 0,
@@ -182,11 +180,11 @@ function _odaa_comment_add() {
         'language' => LANGUAGE_NONE,
         'comment_body' => array(
           LANGUAGE_NONE => array(
-            0 => array (
+            0 => array(
               'value' => $_POST['message'],
-              'format' => 'user_input'
-            )
-          )
+              'format' => 'user_input',
+            ),
+          ),
         ),
       );
 
@@ -194,21 +192,22 @@ function _odaa_comment_add() {
       comment_submit($comment);
       comment_save($comment);
 
-      return drupal_json_output(array('status' => TRUE));
+      drupal_json_output(array('status' => TRUE));
     }
   }
   else {
-    return drupal_json_output(array('status' => FALSE));
+    drupal_json_output(array('status' => FALSE));
   }
 }
 
 /**
- * Deletes a comment from dataset.
+ * Deletes a comment from data-set.
  *
  * @param int $cid
- *  Comment id
+ *   Comment id.
+ *
  * @return mixed
- *  JSON status
+ *   JSON status.
  */
 function _odaa_comment_delete($cid) {
   // User object.
@@ -217,27 +216,29 @@ function _odaa_comment_delete($cid) {
   // Load current comment.
   $comment = comment_load($cid);
 
-  if ($comment->uid == $user->uid) {
+  if ($comment && $comment->uid == $user->uid) {
     // Author of comment match.
     comment_delete($cid);
 
-    return drupal_json_output(array('status' => TRUE));
+    drupal_json_output(array('status' => TRUE));
   }
   else {
-    return drupal_json_output(array('status' => FALSE));
+    drupal_json_output(array('status' => FALSE));
   }
 }
 
-/*
+/**
  * Helper function to find node ID from hash.
+ *
  * Create new node if node id is not found and $title is set.
  *
  * @param string $hash
- *  CKAN dataset id
- * @param string $title
- *  Node title
+ *   CKAN dataset id.
+ * @param mixed $title
+ *   Node title.
+ *
  * @return mixed
- *  Node id or FALSE
+ *   Node id or FALSE.
  */
 function _odaa_comment_hash_to_nid($hash, $title = FALSE) {
   // Find node matching hash.
@@ -257,7 +258,7 @@ function _odaa_comment_hash_to_nid($hash, $title = FALSE) {
   else {
     if ($title) {
 
-      // Load current package list fron CKAN.
+      // Load current package list from CKAN.
       $cid = 'current_package_list_with_resources';
       $cache = cache_get($cid);
       if ($cache && $cache->expire > REQUEST_TIME) {
@@ -293,8 +294,8 @@ function _odaa_comment_hash_to_nid($hash, $title = FALSE) {
       node_save($node);
 
       return _odaa_comment_hash_to_nid($hash);
-
-    } else {
+    }
+    else {
       return FALSE;
     }
   }

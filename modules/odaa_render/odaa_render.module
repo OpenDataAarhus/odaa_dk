@@ -5,7 +5,7 @@
  */
 
 /**
- * Prevents gloabal redirect clean urls if regions argument is present.
+ * Prevents global redirect clean urls if regions argument is present.
  * 
  * @param string $alias
  * @param type $options
@@ -24,10 +24,9 @@ function odaa_render_url_outbound_alter(&$alias, &$options, $current_path) {
  */
 function odaa_render_page_alter(&$page) {
   if (isset($_GET['regions'])) {
-    
     // Run drupal_page_alter on themes, as they will always come last. In the
-    // drupal_alter function, but we need to have all regions avaliable now. So
-    // do the same as drupal_alter does with the themes. 
+    // drupal_alter function, but we need to have all regions available now. So
+    // do the same as drupal_alter does with the themes.
     odaa_render_theme_page_alter('page_alter', $page);
     $main_content_display = &drupal_static('system_main_content_added', FALSE);
     if (!$main_content_display) {
@@ -36,7 +35,7 @@ function odaa_render_page_alter(&$page) {
 
     // Make sure that all page level hook_preprocess_page and hook_process_page
     // are executed to ensure stuff like menus and other theme variables are
-    // genenrated for use in the regions rendered later on. This code is
+    // generated for use in the regions rendered later on. This code is
     // basically taken from theme.inc.
     $hooks = theme_get_registry(FALSE);
     $hook = 'page';
@@ -115,12 +114,13 @@ function odaa_render_page_alter(&$page) {
  * Find the render array for regions in the page render array.
  *
  * @param array $data
- *  Page render array.
+ *   Page render array.
  * @param array $regions
- *  The regions which should be extracted from the array, the key an value
- *  should be the same (e.g 'menu' => 'menu').
+ *   The regions which should be extracted from the array, the key an value
+ *   should be the same (e.g 'menu' => 'menu').
+ *
  * @return array
- *  Regions found indexed by region name.
+ *   Regions found indexed by region name.
  */
 function odaa_render_find_regions(&$data, $regions) {
   // @todo: apply cache to speed up walker based on preset. Make it optional.
@@ -128,13 +128,11 @@ function odaa_render_find_regions(&$data, $regions) {
   $keys = array_keys($data);
   foreach ($keys as $key) {
     if ((!preg_match('/^#/', $key)) && is_array($data[$key])) {
-      
-      if (isset($regions[$key])) {
-      
-        $array[$key] = $data[$key];
-        // $array[] = render array for region.
 
-        // pop $regions
+      if (isset($regions[$key])) {
+        $array[$key] = $data[$key];
+
+        // Pop $regions.
         unset($regions[$key]);
 
         // If $regions empty break loop, no more finding need.
@@ -150,12 +148,9 @@ function odaa_render_find_regions(&$data, $regions) {
 
 /**
  * Calls theme alters and makes sure that the theme gets a change to alter
- * regions befor they are rendered.
+ * regions before they are rendered.
  *
- * @global type $theme
- * @global type $base_theme_info
- * @staticvar type $drupal_static_fast
- * @param type $hook
+ * @param string $hook
  * @param type $data
  */
 function odaa_render_theme_page_alter($hook, &$data) {
