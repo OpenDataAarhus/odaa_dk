@@ -1,0 +1,12 @@
+name = ODAA Notifications
+core = 7.x
+package = ODAA
+version = 7.x-0.3
+project = odaa_notifications
+dependencies[] = comment
+dependencies[] = entity
+dependencies[] = flag
+dependencies[] = mimemail
+dependencies[] = rules
+features[features_api][] = api:2
+features[flag][] = follow
