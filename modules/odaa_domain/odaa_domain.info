@@ -2,4 +2,5 @@ name = Odaa domain
 description = Serv dynmaic content based on hostname
 core = 7.x
 version = 7.x-1.0
+package = Odaa
 dependencies[] = domain
