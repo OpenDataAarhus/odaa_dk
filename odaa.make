@@ -59,8 +59,8 @@ projects[date][version] = "2.6"
 projects[devel][subdir] = "contrib"
 projects[devel][version] = "1.3"
 
-projects[devel_themer][subdir] = "contrib"
-projects[devel_themer][version] = "1.x-dev"
+projects[domain][subdir] = "contrib"
+projects[domain][version] = "3.11"
 
 projects[diff][subdir] = "contrib"
 projects[diff][version] = "3.2"
@@ -221,9 +221,6 @@ projects[scheduler][version] = "1.1"
 
 projects[strongarm][subdir] = "contrib"
 projects[strongarm][version] = "2.0"
-
-projects[themekey][subdir] = "contrib"
-projects[themekey][version] = "3.2"
 
 projects[token][subdir] = "contrib"
 projects[token][version] = "1.5"
