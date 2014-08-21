@@ -49,7 +49,9 @@ function odaa_domain_menu() {
  * Serv theme css file.
  */
 function odaa_domain_serv_file($type) {
-  $file = arg(1);
+  $file = arg();
+  array_shift($file);
+  $file = implode('/', $file);
   $file_path = drupal_get_path('theme', $GLOBALS['theme_key']) . '/' . $type . '/' . $file;
   if (file_exists($file_path)) {
     $output = file_get_contents($file_path);
