@@ -30,6 +30,7 @@ function odaa_domain_css() {
   if (file_exists($css_path)) {
     $output = file_get_contents($css_path);
 
+    drupal_add_http_header('Content-Type', 'text/css');
     echo $output; exit();
   }
 }
