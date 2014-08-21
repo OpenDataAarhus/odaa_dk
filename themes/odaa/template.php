@@ -330,3 +330,19 @@ function odaa_breadcrumb($variables) {
   $output = implode(' / ', $breadcrumb);
   return $output;
 }
+
+/**
+ * Implements hook_preprocess_region().
+ *
+ * Add theme logo path and image to navigation region.
+ */
+function odaa_preprocess_region(&$variables) {
+  if ($variables['region'] == 'navigation') {
+    global $theme_key;
+    $uri = theme_get_setting('logo_path', $theme_key);
+    $variables['logo'] = file_create_url($uri);
+    if (empty($uri)) {
+      $variables['logo'] = drupal_get_path('theme', $theme_key) . '/logo.png';
+    }
+  }
+}

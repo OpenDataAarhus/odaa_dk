@@ -1,11 +1,11 @@
 ;----------// Theme Information
- name = ODAA - Open Data Aarhus
- description = Theme for the Open Data Aarhus project
- core = 7.x
- release = 7.x-1.x
+name = ODAA - Open Data Aarhus
+description = Theme for the Open Data Aarhus project
+core = 7.x
+release = 7.x-1.x
 
 ;----------// Stylesheets
- stylesheets[all][] = css/styles.css
+stylesheets[all][] = css/styles.css
 
 ;----------// Override stylesheets
 stylesheets[all][] = system.messages.css
