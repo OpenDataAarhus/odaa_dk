@@ -2,18 +2,18 @@
 /**
  * @file
  *
- * Serv dynmaic css file.
+ * Serv dynmaic content based on hostname
  */
 
 /**
  * Implements hook_menu().
  */
-function odaa_css_menu() {
+function odaa_domain_menu() {
   $items = array();
 
   $items['css'] = array(
     'title' => 'CSS',
-    'page callback' => 'odaa_css_css',
+    'page callback' => 'odaa_domain_css',
     'access arguments' => array('access content'),
     'type' => MENU_SUGGESTED_ITEM,
   );
@@ -24,7 +24,7 @@ function odaa_css_menu() {
 /**
  * Serv theme css file.
  */
-function odaa_css_css() {
+function odaa_domain_css() {
   $css_path = drupal_get_path('theme', $GLOBALS['theme_key']) . '/css/styles.css';
   if (file_exists($css_path)) {
     $output = file_get_contents($css_path);
@@ -32,3 +32,12 @@ function odaa_css_css() {
     echo $output; exit();
   }
 }
+
+function odaa_domain_form_system_site_information_settings_alter(&$form, &$form_state, $form_id) {
+  $form['ckan_organization'] = array(
+    '#type' => 'textfield',
+    '#title' => 'CKAN Organization',
+    '#default_value' => variable_get('ckan_organization'),
+  );
+}
+
