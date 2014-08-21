@@ -25,7 +25,7 @@ function odaa_domain_menu() {
  * Serv theme css file.
  */
 function odaa_domain_css() {
-  $file = arg(1)
+  $file = arg(1);
   $css_path = drupal_get_path('theme', $GLOBALS['theme_key']) . '/css/' . $file;
   if (file_exists($css_path)) {
     $output = file_get_contents($css_path);
