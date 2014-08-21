@@ -33,11 +33,17 @@ function odaa_domain_css() {
   }
 }
 
+/**
+ * Implements hook_form_system_site_information_settings_alter().
+ *
+ * Add field to filter content base on ckan organization.
+ */
 function odaa_domain_form_system_site_information_settings_alter(&$form, &$form_state, $form_id) {
-  $form['ckan_organization'] = array(
+  $form['site_information']['ckan_organization'] = array(
     '#type' => 'textfield',
-    '#title' => 'CKAN Organization',
-    '#default_value' => variable_get('ckan_organization'),
+    '#title' => t('CKAN Organization'),
+    '#description' => t('The name/string used to filter on organizations in ckan (e.g. aarhus-kommune).'),
+    '#default_value' => variable_get('ckan_organization', ''),
   );
 }
 
