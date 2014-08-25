@@ -114,3 +114,20 @@ function odaa_domain_domain_conf() {
 
   return $form;
 }
+
+/**
+ * Implements hook_menu_block_tree_alter().
+ *
+ * Adds the organization to the dataset menu item link.
+ */
+function odaa_domain_menu_block_tree_alter(&$tree, &$config) {
+  if ($config['menu_name'] == 'main-menu') {
+    foreach ($tree as $key => $item) {
+      if ($item['link']['link_path'] == 'node/7') {
+        $ckan_organization = variable_get('ckan_organization', FALSE);
+//        $tree[$key]['link']['link_path'] .= $ckan_organization ? '?organization=' . $ckan_organization : '';
+        $tree[$key]['link']['href'] .= $ckan_organization ? '?organization=' . $ckan_organization : '';
+      }
+    }
+  }
+}
