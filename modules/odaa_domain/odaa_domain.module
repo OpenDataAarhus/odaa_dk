@@ -116,18 +116,17 @@ function odaa_domain_domain_conf() {
 }
 
 /**
- * Implements hook_menu_block_tree_alter().
+ * Implements hook_preprocess_page().
  *
  * Adds the organization to the dataset menu item link.
  */
-function odaa_domain_menu_block_tree_alter(&$tree, &$config) {
-  if ($config['menu_name'] == 'main-menu') {
-    foreach ($tree as $key => $item) {
-      if ($item['link']['link_path'] == 'node/7') {
-        $ckan_organization = variable_get('ckan_organization', FALSE);
-//        $tree[$key]['link']['link_path'] .= $ckan_organization ? '?organization=' . $ckan_organization : '';
-        $tree[$key]['link']['href'] .= $ckan_organization ? '?organization=' . $ckan_organization : '';
-      }
-    }
+function odaa_domain_preprocess_page(&$variables) {
+  $ckan_organization = variable_get('ckan_organization', FALSE);
+  if ($ckan_organization) {
+    $variables['page']['navigation']['menu_block_1']['#content']['503']['#localized_options'] = array(
+      'query' => array(
+        'organization' => $ckan_organization,
+      ),
+    );
   }
 }
