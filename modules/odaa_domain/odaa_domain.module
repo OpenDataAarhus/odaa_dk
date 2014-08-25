@@ -1,8 +1,7 @@
 <?php
 /**
  * @file
- *
- * Serv dynmaic content based on hostname
+ * Serv dynamic content based on hostname
  */
 
 /**
@@ -91,16 +90,27 @@ function odaa_domain_serv_logo() {
 }
 
 /**
- * Implements hook_form_system_site_information_settings_alter().
+ * Implements hook_domain_conf().
  *
  * Add field to filter content base on ckan organization.
  */
-function odaa_domain_form_system_site_information_settings_alter(&$form, &$form_state, $form_id) {
-  $form['site_information']['ckan_organization'] = array(
-    '#type' => 'textfield',
-    '#title' => t('CKAN Organization'),
-    '#description' => t('The name/string used to filter on organizations in ckan (e.g. aarhus-kommune).'),
-    '#default_value' => variable_get('ckan_organization', ''),
+function odaa_domain_domain_conf() {
+  $form['ckan'] = array(
+    '#weight' => '-50',
+    '#type' => 'fieldset',
+    '#title' => t('CKAN intergration'),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
   );
-}
 
+  $form['ckan']['ckan_organization'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Organization'),
+    '#default_value' => variable_get('ckan_organization', ''),
+    '#size' => 30,
+    '#maxlength' => 255,
+    '#description' => t('The name/string used to filter on organizations in ckan (e.g. aarhus-kommune).'),
+  );
+
+  return $form;
+}
