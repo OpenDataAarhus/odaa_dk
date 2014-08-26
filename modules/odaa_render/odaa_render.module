@@ -43,7 +43,7 @@ function odaa_render_page_alter(&$page) {
 
     // Merge in argument defaults.
     $variables = array();
-    $variables[$info['render element']] = $page;
+    $variables[$info['render element']] = &$page;
     if (!empty($info['variables'])) {
       $variables += $info['variables'];
     }
