@@ -175,19 +175,23 @@ function odaa_preprocess_html(&$variables) {
  */
 function odaa_preprocess_block(&$variables) {
   if (isset($variables['block']->delta)) {
-    switch ($variables['block']->delta) {
-      case 'datasets':
-        $variables['classes_array'][] = 'search-spotbox';
-        break;
+    if ($variables['block']->delta == 3 && $variables['block']->module == 'menu_block') {
+      // Sub menu.
+      $variables['classes_array'][] = 'sub-menu-wrapper';
+    }
+    else {
+      switch ($variables['block']->delta) {
+        case 'datasets':
+          $variables['classes_array'][] = 'search-spotbox';
+          break;
 
-      case 3:
-        // Sub menu.
-        $variables['classes_array'][] = 'sub-menu-wrapper';
-        break;
-
-      default:
-        $variables['classes_array'][] = 'spotbox';
-        break;
+        default:
+          $variables['title_attributes_array']['class'] = array(
+            'spotbox--header',
+          );
+          $variables['classes_array'][] = 'spotbox';
+          break;
+      }
     }
   }
 }
