@@ -1,0 +1,487 @@
+/**
+ * CKAN
+ *
+ * @author magnify
+ */
+
+
+/* Toggle
+   ========================================================================== */
+.js .table-toggle-more .toggle-more {
+  display: none;
+}
+.js .table-toggle-more .show-more {
+  display: inline;
+}
+.js .table-toggle-more .show-less {
+  display: none;
+}
+.js .table-toggle-more .toggle-seperator {
+  display: table-row;
+}
+.js .table-toggle-more .toggle-seperator td {
+  height: 11px;
+  padding: 0;
+  background-image: url("../images/ckan-table-seperator.png");
+}
+.js .table .toggle-show td {
+  background: none;
+  text-align: center;
+}
+.js .table-toggle-less .show-less {
+  display: inline;
+}
+.js .table-toggle-less .show-more {
+  display: none;
+}
+.js .table-toggle-less .toggle-seperator {
+  display: none;
+}
+.js .js-hide {
+  display: none;
+}
+.js .js-hide.active {
+  display: block;
+}
+
+
+/* Extend pager
+   ========================================================================== */
+.pagination {
+  @extend .pager;
+
+  .active  {
+    a:link,
+    a:visited {
+      background-color: darken($gray-light, 5%);
+      color: $font-color-primary;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+
+/* Format labels
+   ========================================================================== */
+.ckan--format-label {
+  background: url("../images/ckan-sprite-resource-icons.png") no-repeat scroll 0 0 transparent;
+  display: inline-block;
+  height: 16px;
+  position: relative;
+  text-indent: -900em;
+  top: 2px;
+  vertical-align: text-bottom;
+  width: 16px;
+}
+
+.ckan--format-label {
+  background-position: 0 -62px;
+  height: 35px;
+  width: 32px;
+}
+
+.ckan--format-label[data-format="rdf"],
+.ckan--format-label[data-format*="rdf"] {
+  background-position: -32px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+.ckan--format-label[data-format="pdf"],
+.ckan--format-label[data-format*="pdf"] {
+  background-position: -64px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+.ckan--format-label[data-format="api"],
+.ckan--format-label[data-format*="api"] {
+  background-position: -96px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+.ckan--format-label[data-format="zip"],
+.ckan--format-label[data-format*="zip"] {
+  background-position: -128px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+.ckan--format-label[data-format="xls"],
+.ckan--format-label[data-format*="xls"] {
+  background-position: -160px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+.ckan--format-label[data-format="csv"],
+.ckan--format-label[data-format*="csv"] {
+  background-position: -192px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+.ckan--format-label[data-format="txt"],
+.ckan--format-label[data-format*="txt"] {
+  background-position: -224px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+.ckan--format-label[data-format="xml"],
+.ckan--format-label[data-format*="xml"] {
+  background-position: -256px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+.ckan--format-label[data-format="json"],
+.ckan--format-label[data-format*="json"] {
+  background-position: -288px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+.ckan--format-label[data-format="html"],
+.ckan--format-label[data-format*="html"] {
+  background-position: -320px -62px;
+  height: 35px;
+  width: 32px;
+}
+
+
+/* Dataset activity icons
+ *
+ * TODO: Clean this mess up when get the time
+   ========================================================================== */
+.dataset--activity {
+  margin: 10px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.dataset--activity .dataset--activity-item {
+  border-bottom: $base-border-style;
+  margin: 0 0 15px 0;
+  position: relative;
+  padding-bottom: $large-spacing;
+  *zoom: 1;
+
+  &:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.dataset--activity .dataset--activity-item:before,
+.dataset--activity .dataset--activity-item:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.dataset--activity .dataset--activity-item:after {
+  clear: both;
+}
+
+.dataset--activity .dataset--activity-item .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  font-weight: normal;
+  margin-right: 10px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+  padding-left: 1px;
+  padding-bottom: 1px;
+}
+
+.dataset--activity .dataset--activity-item .gravatar {
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  left: 40px;
+  position: absolute;
+  top: 0;
+}
+
+.dataset--activity .dataset--activity-item p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 5px 0 0 80px;
+}
+
+.dataset--activity .dataset--activity-item .dataset--activity-date {
+  color: #999;
+  display: block;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.dataset--activity .dataset--activity-item .new {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  top: -3px;
+  left: -3px;
+  width: 10px;
+  height: 10px;
+  background-color: #A35647;
+  border: 1px solid #FFF;
+  text-indent: -1000px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.dataset--activity .load-less {
+  margin-bottom: 15px;
+}
+
+.dataset--activity .dataset--activity-item .icon {
+  background-color: #999999;
+}
+
+.dataset--activity .dataset--activity-item.added-tag .icon {
+  background-color: #6995A6;
+}
+
+.dataset--activity .dataset--activity-item.changed-group .icon {
+  background-color: #767DCE;
+}
+
+.dataset--activity .dataset--activity-item.changed-package .icon {
+  background-color: #8C76CE;
+}
+
+.dataset--activity .dataset--activity-item.changed-package_extra .icon {
+  background-color: #769ACE;
+}
+
+.dataset--activity .dataset--activity-item.changed-resource .icon {
+  background-color: #AA76CE;
+}
+
+.dataset--activity .dataset--activity-item.changed-user .icon {
+  background-color: #76B8CE;
+}
+
+.dataset--activity .dataset--activity-item.changed-organization .icon {
+  background-color: #699FA6;
+}
+
+.dataset--activity .dataset--activity-item.deleted-group .icon {
+  background-color: #B95252;
+}
+
+.dataset--activity .dataset--activity-item.deleted-package .icon {
+  background-color: #B97452;
+}
+
+.dataset--activity .dataset--activity-item.deleted-package_extra .icon {
+  background-color: #B95274;
+}
+
+.dataset--activity .dataset--activity-item.deleted-resource .icon {
+  background-color: #B99752;
+}
+
+.dataset--activity .dataset--activity-item.deleted-organization .icon {
+  background-color: #B95297;
+}
+
+.dataset--activity .dataset--activity-item.new-group .icon {
+  background-color: #69A67A;
+}
+
+.dataset--activity .dataset--activity-item.new-package .icon {
+  background-color: #69A68E;
+}
+
+.dataset--activity .dataset--activity-item.new-package_extra .icon {
+  background-color: #6CA669;
+}
+
+.dataset--activity .dataset--activity-item.new-resource .icon {
+  background-color: #81A669;
+}
+
+.dataset--activity .dataset--activity-item.new-user .icon {
+  background-color: #69A6A3;
+}
+
+.dataset--activity .dataset--activity-item.new-organization .icon {
+  background-color: #81A669;
+}
+
+.dataset--activity .dataset--activity-item.removed-tag .icon {
+  background-color: #B95297;
+}
+
+.dataset--activity .dataset--activity-item.deleted-related-item .icon {
+  background-color: #B9B952;
+}
+
+.dataset--activity .dataset--activity-item.follow-dataset .icon {
+  background-color: #767DCE;
+}
+
+.dataset--activity .dataset--activity-item.follow-user .icon {
+  background-color: #8C76CE;
+}
+
+.dataset--activity .dataset--activity-item.new-related-item .icon {
+  background-color: #95A669;
+}
+
+.dataset--activity .dataset--activity-item.follow-group .icon {
+  background-color: #8BA669;
+}
+
+
+/* Dataset labels
+   ========================================================================== */
+.label[data-format=dwg],
+.label[data-format*=dwg] {
+  background-color: #aaa;
+}
+
+.label[data-format=html],
+.label[data-format*=html] {
+  background-color: #55a1ce;
+}
+
+.label[data-format=json],
+.label[data-format*=json] {
+  background-color: #ef7100;
+}
+
+.label[data-format=xml],
+.label[data-format*=xml] {
+  background-color: #ef7100;
+}
+
+.label[data-format=text],
+.label[data-format*=text] {
+  background-color: #74cbec;
+}
+
+.label[data-format=csv],
+.label[data-format*=csv] {
+  background-color: #dfb100;
+}
+
+.label[data-format=xls],
+.label[data-format*=xls] {
+  background-color: #2db55d;
+}
+
+.label[data-format=zip],
+.label[data-format*=zip] {
+  background-color: #686868;
+}
+
+.label[data-format=api],
+.label[data-format*=api] {
+  background-color: #ec96be;
+}
+
+.label[data-format=pdf],
+.label[data-format*=pdf] {
+  background-color: #e0051e;
+}
+
+.label[data-format=rdf],
+.label[data-format*=rdf],
+.label[data-format*=nquad],
+.label[data-format*=ntriples],
+.label[data-format*=turtle] {
+  background-color: #0b4498;
+}
+
+
+/* Forms
+   ========================================================================== */
+.control-group {
+  .select2-container {
+    max-width: 100%;
+  }
+}
+
+/* Modal
+   ========================================================================== */
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  z-index: 1050;
+  width: 560px;
+  margin-left: -280px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0,0,0,0.3);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+  box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  outline: none;
+}
+
+.modal-header .close {
+  margin-top: 2px;
+}
+
+.modal-header {
+  padding: 9px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-header h3 {
+  margin: 0;
+  line-height: 30px;
+}
+
+.modal-body {
+  position: relative;
+  overflow-y: auto;
+  max-height: 400px;
+  padding: 15px;
+}
+
+.modal-backdrop, .modal-backdrop.fade.in {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000000;
+}

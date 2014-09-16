@@ -1,0 +1,132 @@
+<?php
+/**
+ * @file
+ * Serv dynamic content based on hostname
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function odaa_domain_menu() {
+  $items = array();
+
+  $items['css'] = array(
+    'title' => 'CSS',
+    'page callback' => 'odaa_domain_serv_file',
+    'page arguments' => array('css'),
+    'access arguments' => array('access content'),
+    'type' => MENU_SUGGESTED_ITEM,
+  );
+
+  $items['scripts'] = array(
+    'title' => 'Scripts',
+    'page callback' => 'odaa_domain_serv_file',
+    'page arguments' => array('scripts'),
+    'access arguments' => array('access content'),
+    'type' => MENU_SUGGESTED_ITEM,
+  );
+
+  $items['images'] = array(
+    'title' => 'Images',
+    'page callback' => 'odaa_domain_serv_file',
+    'page arguments' => array('images'),
+    'access arguments' => array('access content'),
+    'type' => MENU_SUGGESTED_ITEM,
+  );
+
+  $items['font'] = array(
+    'title' => 'Font',
+    'page callback' => 'odaa_domain_serv_file',
+    'page arguments' => array('font'),
+    'access arguments' => array('access content'),
+    'type' => MENU_SUGGESTED_ITEM,
+  );
+
+  $items['logo'] = array(
+    'title' => 'Font',
+    'page callback' => 'odaa_domain_serv_logo',
+    'access arguments' => array('access content'),
+    'type' => MENU_SUGGESTED_ITEM,
+  );
+
+  return $items;
+}
+
+/**
+ * Serv theme files.
+ */
+function odaa_domain_serv_file($type) {
+  global $theme_key;
+  $file = arg();
+  array_shift($file);
+  $file = implode('/', $file);
+  $file_path = drupal_get_path('theme', $theme_key) . '/' . $type . '/' . $file;
+  if (file_exists($file_path)) {
+    $output = file_get_contents($file_path);
+
+    drupal_add_http_header('Content-Type', file_get_mimetype($file_path));
+    echo $output;
+    return;
+  }
+}
+
+/**
+ * Serv log file.
+ */
+function odaa_domain_serv_logo() {
+  global $theme_key;
+  $file_path = theme_get_setting('logo_path', $theme_key);
+  if (empty($file)) {
+    $file_path = drupal_get_path('theme', $theme_key) . '/logo.png';
+  }
+
+  if (file_exists($file_path)) {
+    $output = file_get_contents($file_path);
+
+    drupal_add_http_header('Content-Type', file_get_mimetype($file_path));
+    echo $output;
+    return;
+  }
+}
+
+/**
+ * Implements hook_domain_conf().
+ *
+ * Add field to filter content base on ckan organization.
+ */
+function odaa_domain_domain_conf() {
+  $form['ckan'] = array(
+    '#weight' => '-50',
+    '#type' => 'fieldset',
+    '#title' => t('CKAN intergration'),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+  );
+
+  $form['ckan']['ckan_organization'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Organization'),
+    '#default_value' => variable_get('ckan_organization', ''),
+    '#size' => 30,
+    '#maxlength' => 255,
+    '#description' => t('The name/string used to filter on organizations in ckan (e.g. aarhus-kommune).'),
+  );
+
+  return $form;
+}
+
+/**
+ * Implements hook_preprocess_page().
+ *
+ * Adds the organization to the dataset menu item link.
+ */
+function odaa_domain_preprocess_page(&$variables) {
+  $ckan_organization = variable_get('ckan_organization', FALSE);
+  if ($ckan_organization) {
+    $variables['page']['navigation']['menu_block_1']['#content']['503']['#localized_options'] = array(
+      'query' => array(
+        'organization' => $ckan_organization,
+      ),
+    );
+  }
+}

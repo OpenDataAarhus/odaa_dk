@@ -1,0 +1,150 @@
+/**
+ * Search
+ *
+ * @author magnify
+ */
+
+
+
+/* Search form
+   ========================================================================== */
+
+.search-form {
+  @include zen-grid-item(6, 1, right);
+  @include opacity(.9);
+
+  padding-right: 0;
+  width: auto;
+
+  .search-form-text,
+  .button {
+    float: left;
+  }
+
+  .search-form-text {
+    @include box-sizing(border-box);
+
+    border: 1px solid transparentize($black, .75);
+    margin-bottom: 20px;
+    min-width: 400px;
+    padding-right: 85px;
+  }
+
+  .button {
+    @include box-sizing(border-box);
+
+    border: 1px solid transparentize($black, .5);
+    margin-left: -75px;
+    min-width: 75px;
+    padding-bottom: 9px;
+  }
+
+  /* Media queries */
+  @include small() {
+    @include zen-clear(both);
+    @include zen-grid-item(12, 1);
+  }
+}
+
+
+/* Search form in content
+   ========================================================================== */
+
+.search-form--content-block {
+  @include border-radius($base-border-radius);
+
+  background-color: $gray-light;
+  margin-bottom: $large-spacing;
+  padding: $large-spacing;
+
+  .search-form--content-block--label {
+    @include opacity(.75);
+
+    display: block;
+  }
+
+  .search-form--content-block--input {
+    display: inline;
+    min-width: 90%;
+  }
+
+  .search-form--content-block--button {
+    @extend .button;
+
+    display: inline-block;
+    margin-top: -2px;
+    padding-top: 11px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+
+/* Search spotbox
+   ========================================================================== */
+
+.search-spotbox {
+  @include zen-grid-item(12, 1);
+
+  margin-top: $large-spacing;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.search-spotbox--inner {
+  @extend .spotbox--inner;
+
+  overflow: hidden;
+}
+
+.search-spotbox--header {
+  @extend .spotbox--header;
+}
+
+.search-spotbox--dataset-amount-wrapper {
+  @include zen-grid-item(3, 1);
+
+  margin-top: 30px;
+  text-align: center;
+}
+
+.search-spotbox--dataset-amount {
+  font-size: 400%;
+  margin-bottom: 10px;
+}
+
+.search-spotbox--dataset-amount-text {
+  @include opacity(.5);
+}
+
+.search-spotbox--wrapper {
+  @include zen-grid-item(9, 4);
+  @extend .search-form;
+
+  border-left: 1px solid $gray;
+  padding-top: 22px;
+  padding-left: 30px;
+
+  .search-form-text {
+    min-width: 100%;
+  }
+}
+
+
+/* Search actions
+   ========================================================================== */
+.search--list-actions {
+  margin-bottom: $large-spacing;
+  overflow: hidden;
+  text-align: right;
+}
+
+.search--list-actions-label {
+  @include opacity(.75);
+
+  margin-right: 10px;
+}
+
+.search--actions-sort {
+  min-width: 25%;
+}

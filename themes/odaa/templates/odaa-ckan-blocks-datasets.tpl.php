@@ -6,6 +6,9 @@
 <div class="search-spotbox--wrapper">
   <form action="/dataset" method="get">
     <input type="text" name="q" placeholder="<?php print t('Search for dataset'); ?> ..." class="search-form-text">
+    <?php if ($ckan_organization): ?>
+      <input type="hidden" name="organization" value="<?php print $ckan_organization ?>">
+    <?php endif; ?>
     <input type="submit" value="Søg" class="button">
   </form>
 </div>

@@ -18,6 +18,7 @@ function odaa_user_user_login(&$edit, $account) {
     'email' => $account->mail,
     'password' => md5(uniqid()),
   );
+
   if ($user != FALSE) {
     // User exist in CKAN, update.
     $options['id'] = strtolower($account->name);
@@ -44,14 +45,14 @@ function odaa_user_user_login(&$edit, $account) {
   user_save($account);
 }
 
-/*
+/**
  * Implements hook_form_FORM_ID_alter().
  */
 function odaa_user_form_user_register_form_alter(&$form, $form_state) {
   $form['#validate'][] = 'odaa_user_register_form_validate';
 }
 
-/*
+/**
  * Validate function for user registration.
  *
  * Check if username contains uppercase letters.
@@ -160,7 +161,7 @@ function _odaa_user_validate_session($session_id) {
  * @param string $call
  *   The request URL
  * @param array $data
- *   Array contaning options.
+ *   Array containing options.
  *
  * @return mixed
  *   FALSE if no data or CKAN data array.
@@ -184,7 +185,6 @@ function _odaa_user_api_call($call, $data = array()) {
   }
 
   $url = variable_get('odaa_user_ckan_url', '');
-
   $output = drupal_http_request($url . $call, $options);
 
   // Verify that the request returned correct.
@@ -193,20 +193,20 @@ function _odaa_user_api_call($call, $data = array()) {
     if (($data = json_decode($output->data)) !== FALSE) {
       // Data is JSON.
       if ($data->success == 1) {
-        // Successfull request.
+        // Successful request.
         return $data->result;
       }
     }
   }
 
   // Log errors.
-  watchdog('odaa_user', check_plain($output->error));
+  watchdog('odaa_user', check_plain($output->error), array(), WATCHDOG_ERROR);
 
   return FALSE;
 }
 
 /**
- * Interal function to check if username exists in CKAN.
+ * Internal function to check if username exists in CKAN.
  *
  * @param string $username
  *   The username to find.

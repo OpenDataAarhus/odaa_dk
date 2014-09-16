@@ -49,15 +49,15 @@ function odaa_ckan_blocks_theme() {
   return array(
     // Dataset template.
     'odaa_ckan_blocks_datasets' => array(
-      'variables' => array('count' => NULL),
+      'variables' => array('count' => NULL, 'ckan_organization' => NULL),
       'template' => 'odaa-ckan-blocks-datasets',
-      'path' => $module_path.'/templates',
+      'path' => $module_path . '/templates',
     ),
     // Recent changes template.
     'odaa_ckan_blocks_recent_dataset_changes' => array(
       'variables' => array('list' => NULL),
       'template' => 'odaa-ckan-blocks-recent-dataset-changes',
-      'path' => $module_path.'/templates',
+      'path' => $module_path . '/templates',
     ),
   );
 }
@@ -68,7 +68,7 @@ function odaa_ckan_blocks_theme() {
  * Cached for 5 minutes.
  *
  * @return string
- *  Themed HTML.
+ *   Themed HTML.
  */
 function _odaa_ckan_blocks_datasets() {
   $cid = basename(__FILE__) . '_datasets';
@@ -83,8 +83,14 @@ function _odaa_ckan_blocks_datasets() {
     cache_set($cid, $data, 'cache', time() + 300);
   }
 
+  $ckan_organization = variable_get('ckan_organization');
+
   // Theme datasets and return it.
-  return array('#theme' => 'odaa_ckan_blocks_datasets', '#count' => sizeof($data));
+  return array(
+    '#theme' => 'odaa_ckan_blocks_datasets',
+    '#count' => count($data),
+    '#ckan_organization' => $ckan_organization,
+  );
 }
 
 /**
@@ -93,7 +99,7 @@ function _odaa_ckan_blocks_datasets() {
  * Cached for 5 minutes.
  *
  * @return string
- *  Themed HTML
+ *   Themed HTML.
  */
 function _odaa_ckan_blocks_recent_dataset_changes() {
   $cid = 'current_package_list_with_resources';
@@ -108,13 +114,25 @@ function _odaa_ckan_blocks_recent_dataset_changes() {
     cache_set($cid, $data, 'cache', time() + 300);
   }
 
+  $ckan_organization = variable_get('ckan_organization');
   if (isset($data)) {
     foreach ($data as $d_key => $dataset) {
+      // Check if $ckan_organization is setup.
+      if (!empty($ckan_organization)) {
+        // Remove unwanted datasets from list.
+        if ($dataset->organization->name != $ckan_organization) {
+          unset($data[$d_key]);
+          continue;
+        }
+      }
       // Add format_interval aka since.
       $data[$d_key]->format_interval = format_interval(time() - strtotime($dataset->metadata_modified), 2);
     }
   }
 
   // Theme datasets and return it.
-  return array('#theme' => 'odaa_ckan_blocks_recent_dataset_changes', '#list' => $data);
+  return array(
+    '#theme' => 'odaa_ckan_blocks_recent_dataset_changes',
+    '#list' => $data,
+  );
 }

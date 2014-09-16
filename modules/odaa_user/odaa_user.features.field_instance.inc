@@ -10,7 +10,7 @@
 function odaa_user_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'user-user-field_ckan_api_key'
+  // Exported field_instance: 'user-user-field_ckan_api_key'.
   $field_instances['user-user-field_ckan_api_key'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -71,7 +71,7 @@ function odaa_user_field_default_field_instances() {
     ),
   );
 
-  // Translatables
+  // Translatable.
   // Included for use with string extractors like potx.
   t('CKAN API key');
 

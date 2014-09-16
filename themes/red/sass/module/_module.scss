@@ -1,0 +1,217 @@
+/**
+ * Module
+ *
+ * Shared module styling
+ *
+ * @author magnify
+ */
+
+
+
+/* Twitter widget
+   ========================================================================== */
+.twitter-widget {
+  @extend %module-wrapper-style;
+
+  margin-top: $large-spacing;
+}
+
+
+/* Empty text
+ *
+ * Used by CKAN for empty descriptions etc.
+   ========================================================================== */
+%empty-text {
+  @include opacity(.5);
+  @include font-italic();
+}
+
+
+/* Section spacing
+   ========================================================================== */
+%section-spacing {
+  border-top: $base-border-style;
+  margin-top: $large-spacing;
+  padding-top: $large-spacing;
+  overflow: hidden;
+}
+
+
+/* Zebra stribed list
+   ========================================================================== */
+%zebra-list {
+  &:nth-child(odd) {
+    background-color: $base-color-odd;
+
+    &:hover {
+      background-color: darken($base-color-odd, 5%);
+    }
+  }
+
+  &:nth-child(even) {
+    background-color: $base-color-even;
+
+    &:hover {
+      background-color: darken($base-color-even, 10%);
+    }
+  }
+}
+
+
+/* %module-list-alternate
+   ========================================================================== */
+%module-list-alternate {
+  padding-left: 0;
+}
+
+%module-list-alternate-heading {
+  font-size: $font-size-larger;
+  margin-right: 5px;
+}
+
+%module-list-alternate-item {
+  @include border-radius($base-border-radius);
+
+  background-color: $gray-lighter;
+  border: 1px solid $gray-light;
+  margin-bottom: $large-spacing;
+  overflow: hidden;
+  padding: $large-spacing;
+
+  &:hover {
+    border: 1px solid $gray;
+  }
+}
+
+%module-list-alternate-icon {
+  @include border-radius($base-border-radius);
+  @include box-sizing(border-box);
+
+  background-color: $base-tertiary-color;
+  color: $white;
+  font-size: 250%;
+  float: left;
+  margin-top: -5px;
+  margin-right: $large-spacing;
+  margin-bottom: $large-spacing;
+  min-width: 60px;
+  padding: $medium-spacing;
+  text-align: center;
+  width: 60px;
+
+  &:hover {
+    background-color: darken($base-tertiary-color, 5%);
+  }
+
+  a {
+    &:link,
+    &:visited,
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+    }
+  }
+}
+
+%module-list-alternate-image {
+  float: left;
+  margin-top: -5px;
+  margin-right: $large-spacing;
+  margin-bottom: $large-spacing;
+  min-width: 60px;
+  width: 60px;
+}
+
+%module-list-alternate-content {
+  display: inline-block;
+  max-width: 80%;
+}
+
+
+%module-list-alternate-meta {
+  @include opacity(.75);
+}
+
+%module-list-alternate-posted {
+  margin-right: $small-spacing;
+}
+
+%module-list-alternate-author {
+  margin-left: $small-spacing;
+}
+
+%module-list-alternate-footer {
+  border-top: $base-border-style;
+  margin-top: $large-spacing;
+  padding-top: $medium-spacing;
+  text-align: right;
+}
+
+%module-list-alternate-footer-link {
+  margin-left: 15px;
+
+  i[class^="icon-"] {
+    margin-right: 5px;
+  }
+}
+
+%module-list-alternate-read-more {
+  margin-left: $small-spacing;
+}
+
+
+/* List actions
+   ========================================================================== */
+.list--action-sort-latest,
+.list--action-sort-hot {
+  @extend .button;
+  
+  &.active {
+    @extend %button-theme;
+  }
+}
+
+.list--action-create {
+  @extend %button-action;
+}
+
+/* Pager
+   ========================================================================== */
+.pager {
+  margin-top: $large-spacing;
+  padding-left: 0;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    margin-left: -4px;
+    margin-right: 4px;
+  }
+
+  .pager-current,
+  a {
+    background-color: $gray-light;
+    display: inline-block;
+    padding-top: $small-spacing;
+    padding-right: 15px;
+    padding-bottom: $small-spacing;
+    padding-left: 15px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .pager-current {
+    background-color: darken($gray-light, 5%);
+  }
+
+  .disabled {
+    background-color: $gray-lighter;
+  }
+  .disabled a:hover {
+    cursor: default;
+    text-decoration: none;
+  }
+}

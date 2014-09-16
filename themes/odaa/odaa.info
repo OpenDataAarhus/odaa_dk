@@ -1,34 +1,32 @@
 ;----------// Theme Information
-  name        = ODAA - Open Data Aarhus
-  description = Theme for the Open Data Aarhus project
-  core        = 7.x
-  release     = 7.x-1.x
-
+name = ODAA - Open Data Aarhus
+description = Theme for the Open Data Aarhus project
+core = 7.x
+release = 7.x-1.x
 
 ;----------// Stylesheets
-  stylesheets[all][] = css/odaa.styles.css
-
+stylesheets[all][] = css/styles.css
 
 ;----------// Override stylesheets
-  stylesheets[all][] = system.messages.css
-  stylesheets[all][] = system.menus.css
-  stylesheets[all][] = system.theme.css
-  stylesheets[all][] = search.css
+stylesheets[all][] = system.messages.css
+stylesheets[all][] = system.menus.css
+stylesheets[all][] = system.theme.css
+stylesheets[all][] = search.css
 
 
 ;----------// JavaScripts
-  scripts[] = scripts/odaa.common.js
-  scripts[] = scripts/html5shiv.min.js
-  scripts[] = scripts/selectivizr.min.js
+scripts[] = scripts/common.js
+scripts[] = scripts/html5shiv.min.js
+scripts[] = scripts/selectivizr.min.js
 
 
 ;----------// Regions
-  regions[header]            = Header
-  regions[navigation]        = Navigation
-  regions[content]           = Primary content
-  regions[secondary_content] = Secondary content
-  regions[tertiary_content]  = Tertiary content
-  regions[footer]            = Footer
+regions[header] = Header
+regions[navigation] = Navigation
+regions[content] = Primary content
+regions[secondary_content] = Secondary content
+regions[tertiary_content]  = Tertiary content
+regions[footer] = Footer
 
 ;----------// Context locked regions
 regions_locked[] = header

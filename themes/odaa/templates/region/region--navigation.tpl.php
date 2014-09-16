@@ -30,7 +30,7 @@
 ?>
 <section class="header-wrapper">
     <div class="header-inner">
-      <a href="/" class="logo"><img alt="" src="/sites/odaa.dk/themes/odaa/logo.png"></a>
+      <a href="/" class="logo"><img alt="" src="<?php print $logo; ?>"></a>
       <div class="search-form">
         <form action="/dataset" method="get">
           <input type="text" name="q" placeholder="<?php print t('Search for dataset'); ?>..." class="search-form-text" />

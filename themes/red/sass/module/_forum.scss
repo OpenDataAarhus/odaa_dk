@@ -1,0 +1,56 @@
+/**
+ * Forum
+ *
+ * @author magnify
+ */
+
+
+
+/* Forum
+   ========================================================================== */
+.forum--wrapper {
+  @extend %section-spacing;
+}
+
+
+/* Forum list
+   ========================================================================== */
+.forum--list-wrapper {
+  @extend %section-spacing;
+}
+
+.forum--list-heading {
+  @extend %module-list-alternate-heading;
+}
+
+.forum--list {
+  @extend %module-list-alternate;
+}
+
+.forum--list-item {
+  @extend %module-list-alternate-item;
+}
+
+.forum--list-content {
+  @extend %module-list-alternate-content;
+}
+
+.forum--list-meta {
+  @extend %module-list-alternate-meta;
+}
+
+.forum--list-posted {
+  @extend %module-list-alternate-posted;
+}
+
+.forum--list-author {
+  @extend %module-list-alternate-author;
+}
+
+.forum--list-footer {
+  @extend %module-list-alternate-footer;
+}
+
+.forum--list-footer-link {
+  @extend %module-list-alternate-footer-link;
+}

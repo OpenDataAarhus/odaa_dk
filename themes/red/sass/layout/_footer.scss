@@ -1,0 +1,74 @@
+/**
+ * Footer
+ *
+ * @author zorp
+ */
+
+
+.site-footer {
+  border-top: 20px solid transparentize($base-tertiary-color, .65);
+  color: $black;
+}
+
+.footer-wrapper {
+  background-color: transparentize($base-tertiary-color, .3);
+  position: relative;
+}
+
+.footer-inner {
+  @include box-sizing(border-box);
+
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  padding-top: 40px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+}
+
+
+/* Logo img in footer
+   ========================================================================== */
+.footer-logo {
+	margin-right: 20px;
+
+	&.last {
+		margin-right: 0;
+	}
+}
+
+/* Awards block
+   ========================================================================== */
+.awards {
+  @include zen-grid-item(6, 1, right);
+
+  /* Adjust height to align bottom with newsletter signup form */
+  padding-top: 3px;
+  padding-right: 0;
+  text-align: right;
+
+  /* Media queries */
+  @include small() {
+    @include zen-clear(both);
+    @include zen-grid-item(12, 1);
+  }
+}
+
+/* Powered by block
+   ========================================================================== */
+.powered-by {
+	@include zen-clear();
+  @include zen-grid-item(12, 1);
+
+  padding-right: 0;
+  margin-top: 40px;
+	text-align: right;
+
+  /* Media queries */
+  @include small() {
+    @include zen-clear(both);
+    @include zen-grid-item(12, 1);
+  }
+}
